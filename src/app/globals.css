@@ -1,3 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --deep-jungle: #2d3530;
+  --forest-canopy: #3a4740;
+  --golden-savannah: #c4a35a;
+  --warm-ivory: #f7f4ed;
+  --logo-sage: #4f5d56;
+  --sunset-bronze: #a68b52;
+  --driftwood: #5c4d42;
+  --misty-sage: #6b7a72;
+  --savannah-dust: #ebe7df;
+  --cats-cream: #faf8f5;
+  --cats-cream-dark: #f0ece4;
+  --cats-gold: #d4a017;
+  --cats-green: #1a3d2b;
+  --cats-green-light: #2d6a4f;
+  --gold-primary: #c4a35a;
+  
+  --color-deep-jungle: var(--deep-jungle);
+  --color-forest-canopy: var(--forest-canopy);
+  --color-golden-savannah: var(--golden-savannah);
+  --color-warm-ivory: var(--warm-ivory);
+  --color-logo-sage: var(--logo-sage);
+  --color-sunset-bronze: var(--sunset-bronze);
+  --color-driftwood: var(--driftwood);
+  --color-misty-sage: var(--misty-sage);
+  --color-savannah-dust: var(--savannah-dust);
+  --color-soft-amber: #d4a017;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-stone-900;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* WhatsApp floating button animation */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  80%, 100% { transform: scale(2); opacity: 0; }
+}
