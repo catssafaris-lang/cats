@@ -19,169 +19,113 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+function CheckIcon({ className = 'h-5 w-5' }: { className?: string }) {
+  return <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>;
+}
+
+function XIcon({ className = 'h-5 w-5' }: { className?: string }) {
+  return <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>;
+}
+
 export default async function SafariDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const safari = getSafariBySlug(slug);
   if (!safari) notFound();
 
+  const description = safari.description ?? '';
+  const inquirySubject = encodeURIComponent(`Inquiry: ${safari.title}`);
+
   return (
-    <>
-      {/* Hero */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-end text-white overflow-hidden">
-        <Image src={safari.image} alt={safari.title} fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
-          <div className="flex flex-wrap gap-3 mb-4">
-            <span className="px-3 py-1 bg-[var(--golden-savannah)] rounded-full text-xs font-semibold">{safari.duration} {safari.durationUnit === 'hours' ? 'Hours' : 'Days'}</span>
-            <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-semibold capitalize">{safari.destination}</span>
+    <main className="bg-[var(--warm-ivory)] text-[var(--cats-green)]">
+      <section className="relative flex h-[50vh] min-h-[350px] items-end overflow-hidden text-white">
+        <Image src={safari.image} alt={safari.title} fill priority className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-transparent" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-10">
+          <div className="flex flex-wrap gap-2 text-sm font-semibold">
+            <span className="rounded-full bg-[var(--golden-savannah)] px-4 py-2">{safari.duration} {safari.durationUnit}</span>
+            <span className="rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm">{safari.destination}</span>
           </div>
-          <h1 className="font-playfair text-3xl md:text-5xl font-bold mb-4">{safari.title}</h1>
-          {safari.subtitle && <p className="text-lg text-white/80 max-w-2xl">{safari.subtitle}</p>}
+          <h1 className="mt-4 max-w-4xl font-playfair text-4xl leading-tight sm:text-5xl lg:text-6xl">{safari.title}</h1>
+          {safari.subtitle && <p className="mt-3 max-w-2xl text-lg text-white/90">{safari.subtitle}</p>}
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Main Content */}
-          <div className="lg:col-span-2">
-            {/* Description */}
-            <section className="mb-12">
-              <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-4">Overview</h2>
-              <p className="text-stone-600 leading-relaxed">{safari.description}</p>
-            </section>
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 lg:grid-cols-3 lg:gap-14 lg:py-16">
+        <div className="space-y-12 lg:col-span-2">
+          <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Overview</h2>
+            <p className="mt-4 whitespace-pre-line leading-8 text-stone-600">{description.replace(/\*\*/g, '')}</p>
+          </section>
 
-            {/* Parks */}
-            <section className="mb-12">
-              <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-4">Parks & Reserves</h2>
-              <div className="flex flex-wrap gap-2">
-                {safari.parks.map((park) => (
-                  <span key={park} className="px-4 py-2 bg-[var(--savannah-dust)] rounded-full text-sm font-medium text-[var(--driftwood)]">{park}</span>
-                ))}
-              </div>
-            </section>
-
-            {/* Highlights */}
-            <section className="mb-12">
-              <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-4">Safari Highlights</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {safari.highlights.map((h) => (
-                  <div key={h} className="flex items-start gap-3 p-3 bg-[var(--warm-ivory)] rounded-xl">
-                    <svg className="w-5 h-5 text-[var(--golden-savannah)] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                    <span className="text-sm text-stone-700">{h}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Wildlife */}
-            {safari.wildlifeHighlights && safari.wildlifeHighlights.length > 0 && (
-              <section className="mb-12">
-                <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-4">Wildlife You&apos;ll Encounter</h2>
-                <div className="flex flex-wrap gap-2">
-                  {safari.wildlifeHighlights.map((w) => (
-                    <span key={w} className="px-3 py-1.5 bg-emerald-50 text-emerald-800 rounded-full text-sm font-medium">{w}</span>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Itinerary */}
-            <section className="mb-12">
-              <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-6">Day-by-Day Itinerary</h2>
-              <div className="space-y-6">
-                {safari.itinerary.map((day) => (
-                  <div key={day.day} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-[var(--golden-savannah)] rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <span className="text-white font-bold text-lg">{day.day}</span>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-bold text-lg text-stone-900 mb-2">{day.title}</h3>
-                        <div className="text-stone-600 text-sm leading-relaxed whitespace-pre-line">{day.description.replace(/## /g, '').replace(/\*\*/g, '')}</div>
-                        {day.meals && day.meals.length > 0 && (
-                          <div className="mt-3 flex flex-wrap gap-2">
-                            {day.meals.map((m) => (
-                              <span key={m} className="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-full text-xs font-medium">{m}</span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Gallery */}
-            {safari.gallery && safari.gallery.length > 0 && (
-              <section className="mb-12">
-                <h2 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)] mb-6">Gallery</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {safari.gallery.map((img, i) => (
-                    <div key={i} className="relative h-48 rounded-xl overflow-hidden">
-                      <Image src={img} alt={`${safari.title} gallery ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-300" />
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-28 space-y-6">
-              {/* Price Card */}
-              <div className="bg-white rounded-2xl shadow-lg border border-stone-100 p-6">
-                <div className="text-center mb-6">
-                  <p className="text-sm text-stone-500 mb-1">Starting from</p>
-                  <p className="text-4xl font-bold text-[var(--golden-savannah)]">${safari.priceFrom.toLocaleString()}</p>
-                  <p className="text-sm text-stone-500">per person</p>
-                </div>
-                <Link
-                  href={`/contact?subject=Inquiry: ${safari.title}`}
-                  className="block w-full py-3.5 bg-[var(--golden-savannah)] text-white text-center font-semibold rounded-full hover:shadow-lg transition-all"
-                >
-                  Request Quote
-                </Link>
-                <a
-                  href="https://wa.me/254723951388"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full mt-3 py-3.5 bg-green-500 text-white text-center font-semibold rounded-full hover:shadow-lg transition-all"
-                >
-                  WhatsApp Us
-                </a>
-              </div>
-
-              {/* Inclusions */}
-              <div className="bg-white rounded-2xl shadow-sm border border-stone-100 p-6">
-                <h3 className="font-bold text-lg text-stone-900 mb-4">Inclusions</h3>
-                <ul className="space-y-2">
-                  {safari.inclusions.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-stone-600">
-                      <svg className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Exclusions */}
-              <div className="bg-white rounded-2xl shadow-sm border border-stone-100 p-6">
-                <h3 className="font-bold text-lg text-stone-900 mb-4">Exclusions</h3>
-                <ul className="space-y-2">
-                  {safari.exclusions.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-stone-600">
-                      <svg className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Parks &amp; Reserves</h2>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {safari.parks.map((park) => <span key={park} className="rounded-full bg-[var(--savannah-dust)] px-4 py-2 text-sm text-[var(--driftwood)]">{park}</span>)}
             </div>
-          </div>
+          </section>
+
+          <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Safari Highlights</h2>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {safari.highlights.map((highlight) => <div key={highlight} className="flex items-start gap-3 rounded-xl bg-[var(--warm-ivory)] p-3 text-sm text-stone-700"><CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-[var(--golden-savannah)]" /><span>{highlight}</span></div>)}
+            </div>
+          </section>
+
+          {safari.wildlifeHighlights && safari.wildlifeHighlights.length > 0 && <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Wildlife You&apos;ll Encounter</h2>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {safari.wildlifeHighlights.map((animal) => <span key={animal} className="rounded-full bg-emerald-50 px-4 py-2 text-sm text-emerald-800">{animal}</span>)}
+            </div>
+          </section>}
+
+          <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Day-by-Day Itinerary</h2>
+            <div className="mt-5 space-y-5">
+              {safari.itinerary.map((day) => <article key={day.day} className="rounded-2xl border border-[var(--savannah-dust)] bg-white p-6 shadow-sm">
+                <div className="flex gap-5">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[var(--golden-savannah)] text-lg font-bold text-white">{day.day}</div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg font-bold text-[var(--cats-green)]">{day.title}</h3>
+                    <p className="mt-2 whitespace-pre-line leading-7 text-stone-600">{day.description.replace(/\*\*/g, '')}</p>
+                    {day.meals && day.meals.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{day.meals.map((meal) => <span key={meal} className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800">{meal}</span>)}</div>}
+                  </div>
+                </div>
+              </article>)}
+            </div>
+          </section>
+
+          {safari.gallery && safari.gallery.length > 0 && <section>
+            <h2 className="font-playfair text-3xl text-[var(--forest-canopy)]">Gallery</h2>
+            <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-3">
+              {safari.gallery.map((image, index) => <div key={`${image}-${index}`} className="group relative h-48 overflow-hidden rounded-xl"><Image src={image} alt={`${safari.title} gallery image ${index + 1}`} fill className="object-cover transition duration-500 group-hover:scale-105" sizes="(min-width: 768px) 33vw, 50vw" /></div>)}
+            </div>
+          </section>}
+
+
         </div>
+
+        <aside className="space-y-6 lg:col-span-1">
+          <div className="sticky top-28 space-y-6">
+            <section className="rounded-2xl border border-[var(--savannah-dust)] bg-white p-6 shadow-lg">
+              <p className="text-sm text-stone-500">Starting from</p>
+              <p className="mt-1 text-4xl font-bold text-[var(--golden-savannah)]">${safari.priceFrom.toLocaleString()}</p>
+              <p className="mt-1 text-sm text-stone-500">per person</p>
+              <Link href={`/contact?subject=${inquirySubject}`} className="mt-6 block rounded-full bg-[var(--golden-savannah)] px-5 py-3 text-center font-semibold text-white transition hover:brightness-95">Request Quote</Link>
+              <Link href="https://wa.me/254723951388" className="mt-3 block rounded-full bg-green-500 px-5 py-3 text-center font-semibold text-white transition hover:bg-green-600">WhatsApp Us</Link>
+            </section>
+
+            <section className="rounded-2xl border border-[var(--savannah-dust)] bg-white p-6 shadow-sm">
+              <h2 className="font-playfair text-2xl text-[var(--forest-canopy)]">Inclusions</h2>
+              <ul className="mt-4 space-y-3">{safari.inclusions.map((item) => <li key={item} className="flex items-start gap-2 text-sm text-stone-600"><CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-green-600" /><span>{item}</span></li>)}</ul>
+            </section>
+
+            <section className="rounded-2xl border border-[var(--savannah-dust)] bg-white p-6 shadow-sm">
+              <h2 className="font-playfair text-2xl text-[var(--forest-canopy)]">Exclusions</h2>
+              <ul className="mt-4 space-y-3">{safari.exclusions.map((item) => <li key={item} className="flex items-start gap-2 text-sm text-stone-600"><XIcon className="mt-0.5 h-4 w-4 shrink-0 text-red-500" /><span>{item}</span></li>)}</ul>
+            </section>
+          </div>
+        </aside>
       </div>
-    </>
+    </main>
   );
 }

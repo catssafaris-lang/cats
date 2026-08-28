@@ -2,136 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const destinations = [
-  { name: 'Kenya Safaris', href: '/kenya-safaris' },
-  { name: 'Tanzania Safaris', href: '/tanzania-safaris' },
-  { name: 'Kenya & Uganda', href: '/kenya-uganda-safaris' },
-  { name: 'Kenya & Rwanda', href: '/kenya-rwanda-safaris' },
-  { name: 'Beach Holidays', href: '/kenya-safaris?type=beach' },
-  { name: 'Mountain Climbing', href: '/mountain-climbing' },
+  { name: 'Kenya Safaris', href: '/kenya-safaris' }, { name: 'Tanzania Safaris', href: '/tanzania-safaris' }, { name: 'Kenya & Uganda', href: '/kenya-uganda-safaris' }, { name: 'Kenya & Rwanda', href: '/kenya-rwanda-safaris' }, { name: 'Beach Holidays', href: '/kenya-safaris?type=beach' }, { name: 'Mountain Climbing', href: '/mountain-climbing' },
 ];
-
 const experiences = [
-  { name: 'Bird Watching', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania' },
-  { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' },
-  { name: 'Wellness Travel', href: '/holiday-experiences/wellness-travel' },
-  { name: 'Flight Safaris', href: '/kenya-flight-safaris' },
-  { name: 'Transport Solutions', href: '/transport-solutions' },
+  { name: 'Bird Watching', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania' }, { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' }, { name: 'Wellness Travel', href: '/holiday-experiences/wellness-travel' }, { name: 'Flight Safaris', href: '/kenya-flight-safaris' }, { name: 'Transport Solutions', href: '/transport-solutions' },
 ];
-
 const quickLinks = [
-  { name: 'About Us', href: '/about' },
-  { name: 'Contact Us', href: '/contact' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'FAQs', href: '/faqs' },
-  { name: 'Kenya Lodges', href: '/travel-info/kenya-lodges' },
-  { name: 'Tanzania Lodges', href: '/travel-info/tanzania-lodges' },
-  { name: 'Payment Methods', href: '/payment-methods' },
+  { name: 'About Us', href: '/about' }, { name: 'Contact Us', href: '/contact' }, { name: 'Blog', href: '/blog' }, { name: 'Kenya Lodges', href: '/travel-info/kenya-lodges' }, { name: 'Tanzania Lodges', href: '/travel-info/tanzania-lodges' }, { name: 'Payment Methods', href: '/payment-methods' },
 ];
+function FacebookIcon() { return <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.55.45-1 1-1Z" /></svg>; }
+function InstagramIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" /></svg>; }
+function PhoneIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.23a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" /></svg>; }
+function MailIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>; }
 
-export default function Footer() {
-  return (
-    <footer className="bg-gradient-to-b from-stone-900 to-stone-950 text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <Image
-                src="/images/cats-logo.jpg"
-                alt="Collective African Tours & Safaris Logo"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
-              <span className="font-bold text-lg">C.A.T.S Safaris</span>
-            </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Collective African Tours & Safaris — 15 years of crafting unforgettable
-              safari experiences across East Africa.
-            </p>
-            <div className="flex gap-3">
-              <a
-                href="https://www.facebook.com/CATSAFARISKENYA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors"
-                aria-label="Facebook"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-              </a>
-              <a
-                href="https://www.instagram.com/catssafaris"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors"
-                aria-label="Instagram"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/></svg>
-              </a>
-            </div>
-          </div>
+function Column({ title, links }: { title: string; links: { name: string; href: string }[] }) { return <div><h3 className="mb-5 text-lg font-bold text-white">{title}<span className="mt-2 block h-0.5 w-10 bg-[var(--golden-savannah)]" /></h3><ul className="space-y-3">{links.map((item) => <li key={item.name}><Link href={item.href} className="text-sm text-gray-400 transition hover:text-[var(--golden-savannah)]">{item.name}</Link></li>)}</ul></div>; }
 
-          {/* Destinations */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Destinations</h3>
-            <ul className="space-y-3">
-              {destinations.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-gray-400 text-sm hover:text-amber-500 transition-colors">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Safari Experiences */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Safari Experiences</h3>
-            <ul className="space-y-3">
-              {experiences.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-gray-400 text-sm hover:text-amber-500 transition-colors">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-gray-400 text-sm hover:text-amber-500 transition-colors">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6 space-y-2">
-              <a href="https://g.page/r/CbOO5qcPRnPrEBM/review" target="_blank" rel="noopener noreferrer" className="block text-xs text-amber-400/90 hover:text-amber-300">
-                GOOGLE REVIEW
-              </a>
-              <a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d33351225-Collective_African_Tours_Safaris_C_A_T_S-Nairobi.html" target="_blank" rel="noopener noreferrer" className="block text-xs text-amber-400/90 hover:text-amber-300">
-                REVIEW US
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom */}
-        <div className="border-t border-white/10 mt-12 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            Kenya & Tanzania Safari Tours with C.A.T.S
-          </p>
-          <p className="text-gray-500 text-xs mt-2">
-            &copy; {new Date().getFullYear()} Collective African Tours & Safaris. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+export default function Footer() { return <footer className="relative bg-[var(--cats-green)] text-white"><svg className="absolute -top-px left-0 h-12 w-full -translate-y-full" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path fill="var(--cats-cream)" d="M0 25C200 65 400 65 600 25s400-40 600 0V60H0Z" /></svg><div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 pb-12 pt-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 lg:px-8"><div><Link href="/" className="mb-5 flex items-center gap-3"><Image src="/images/cats-logo.jpg" alt="C.A.T.S Safaris" width={52} height={52} className="rounded-full" /><span className="text-xl font-bold">C.A.T.S Safaris</span></Link><p className="max-w-xs text-sm leading-6 text-gray-400">Collective African Tours &amp; Safaris — 15 years of crafting unforgettable safari experiences across East Africa.</p><div className="mt-5 flex gap-3"><a href="https://www.facebook.com/CATSAFARISKENYA" aria-label="Facebook" className="text-gray-400 hover:text-[var(--golden-savannah)]"><FacebookIcon /></a><a href="https://www.instagram.com/catssafaris" aria-label="Instagram" className="text-gray-400 hover:text-[var(--golden-savannah)]"><InstagramIcon /></a></div></div><Column title="Destinations" links={destinations} /><Column title="Safari Experiences" links={experiences} /><div><Column title="Quick Links" links={quickLinks} /><div className="mt-7 space-y-3 text-sm text-gray-400"><a href="tel:+254723951388" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><PhoneIcon />+254 723 951 388</a><a href="mailto:info@catssafaris.com" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><MailIcon />info@catssafaris.com</a><p>Nairobi, Kenya</p><div className="flex flex-col gap-2 pt-1"><a href="https://g.page/r/CbOO5qcPRnPrEBM/review" className="hover:text-[var(--golden-savannah)]">Google Review</a><a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d33351225-Collective_African_Tours_Safaris_C_A_T_S-Nairobi.html" className="hover:text-[var(--golden-savannah)]">TripAdvisor Review</a></div></div></div></div><div className="border-t border-white/10 px-6 py-5 text-xs text-gray-400 lg:px-8"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-2 md:flex-row"><span>© 2026 Collective African Tours &amp; Safaris. All rights reserved.</span><span>Kenya &amp; Tanzania Safari Tours with C.A.T.S</span></div></div></footer>; }

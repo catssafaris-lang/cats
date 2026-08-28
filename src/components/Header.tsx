@@ -1,201 +1,50 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const navLinks = [
-  {
-    name: 'Kenya Safaris',
-    href: '/kenya-safaris',
-    children: [
-      { name: 'Kenya Safari Tours', href: '/kenya-safaris' },
-      { name: 'Kenya Flight Safaris', href: '/kenya-flight-safaris' },
-    ],
-  },
-  {
-    name: 'Tanzania Safaris',
-    href: '/tanzania-safaris',
-    children: [
-      { name: 'Tanzania Safari Tours', href: '/tanzania-safaris' },
-      { name: 'Zanzibar Beach Holidays', href: '/holiday-experiences/zanzibar-beach-holidays' },
-    ],
-  },
-  {
-    name: 'Combined Safaris',
-    href: '#',
-    children: [
-      { name: 'Kenya & Uganda', href: '/kenya-uganda-safaris' },
-      { name: 'Kenya & Rwanda', href: '/kenya-rwanda-safaris' },
-    ],
-  },
-  {
-    name: 'Experiences',
-    href: '/holiday-experiences',
-    children: [
-      { name: 'All Experiences', href: '/holiday-experiences' },
-      { name: 'Bird Watching', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania' },
-      { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' },
-      { name: 'Wellness Travel', href: '/holiday-experiences/wellness-travel' },
-    ],
-  },
-  {
-    name: 'Travel Info',
-    href: '#',
-    children: [
-      { name: 'Kenya Lodges', href: '/travel-info/kenya-lodges' },
-      { name: 'Tanzania Lodges', href: '/travel-info/tanzania-lodges' },
-      { name: 'Transport Solutions', href: '/transport-solutions' },
-      { name: 'Mountain Climbing', href: '/mountain-climbing' },
-      { name: 'Payment Methods', href: '/payment-methods' },
-    ],
-  },
-  { name: 'Flight Booking', href: '/flights' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
+type NavLink = { name: string; href: string; children?: { name: string; href: string }[] };
+
+const navLinks: NavLink[] = [
+  { name: 'Kenya Safaris', href: '/kenya-safaris', children: [{ name: 'Kenya Safari Tours', href: '/kenya-safaris' }, { name: 'Kenya Flight Safaris', href: '/kenya-flight-safaris' }] },
+  { name: 'Tanzania Safaris', href: '/tanzania-safaris', children: [{ name: 'Tanzania Safari Tours', href: '/tanzania-safaris' }, { name: 'Zanzibar Beach Holidays', href: '/holiday-experiences/zanzibar-beach-holidays' }] },
+  { name: 'Combined Safaris', href: '#', children: [{ name: 'Kenya & Uganda', href: '/kenya-uganda-safaris' }, { name: 'Kenya & Rwanda', href: '/kenya-rwanda-safaris' }] },
+  { name: 'Experiences', href: '/holiday-experiences', children: [{ name: 'All Experiences', href: '/holiday-experiences' }, { name: 'Bird Watching', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania' }, { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' }, { name: 'Wellness Travel', href: '/holiday-experiences/wellness-travel' }] },
+  { name: 'Travel Info', href: '#', children: [{ name: 'Kenya Lodges', href: '/travel-info/kenya-lodges' }, { name: 'Tanzania Lodges', href: '/travel-info/tanzania-lodges' }, { name: 'Transport Solutions', href: '/transport-solutions' }, { name: 'Mountain Climbing', href: '/mountain-climbing' }, { name: 'Payment Methods', href: '/payment-methods' }] },
+  { name: 'Flights', href: '/flights' }, { name: 'Blog', href: '/blog' }, { name: 'About', href: '/about' }, { name: 'Contact', href: '/contact' },
 ];
+
+function PhoneIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.23a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" /></svg>; }
+function MailIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>; }
+function FacebookIcon() { return <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true"><path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.55.45-1 1-1Z" /></svg>; }
+function InstagramIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" /></svg>; }
+function Chevron({ open = false }: { open?: boolean }) { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`h-3.5 w-3.5 transition-transform ${open ? 'rotate-180' : ''}`}><path d="m6 9 6 6 6-6" /></svg>; }
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
-    >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <Image
-              src="/images/cats-logo.jpg"
-              alt="C.A.T.S Safaris"
-              width={48}
-              height={48}
-              className="rounded-full"
-            />
-            <div className="hidden sm:block">
-              <span className={`font-bold text-lg ${scrolled ? 'text-stone-900' : 'text-white'}`}>
-                C.A.T.S Safaris
-              </span>
-            </div>
-          </Link>
-
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1 min-w-0 flex-1 justify-end">
-            {navLinks.map((link) => (
-              <div
-                key={link.name}
-                className="relative"
-                onMouseEnter={() => link.children && setOpenDropdown(link.name)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
-                <Link
-                  href={link.href}
-                  className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors whitespace-nowrap ${
-                    scrolled
-                      ? 'text-stone-700 hover:text-amber-600 hover:bg-amber-50'
-                      : 'text-white/90 hover:text-amber-400'
-                  }`}
-                >
-                  {link.name}
-                  {link.children && (
-                    <svg className="inline-block w-3 h-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  )}
-                </Link>
-
-                {/* Dropdown */}
-                {link.children && openDropdown === link.name && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-stone-100 py-2 z-50">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-4 py-2.5 text-sm text-stone-700 hover:bg-amber-50 hover:text-amber-700 transition-colors"
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            <Link
-              href="/contact"
-              className="ml-2 px-5 py-2.5 bg-[var(--golden-savannah)] text-white text-sm font-semibold rounded-full hover:shadow-lg transition-all"
-            >
-              Plan My Safari
-            </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 rounded-lg"
-            aria-label="Toggle menu"
-          >
-            <svg className={`w-6 h-6 ${scrolled ? 'text-stone-900' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {mobileOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-stone-100 shadow-xl max-h-[80vh] overflow-y-auto">
-          <div className="px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <div key={link.name}>
-                <Link
-                  href={link.href}
-                  onClick={() => !link.children && setMobileOpen(false)}
-                  className="block px-4 py-3 text-stone-700 font-medium hover:bg-amber-50 rounded-lg"
-                >
-                  {link.name}
-                </Link>
-                {link.children && (
-                  <div className="pl-6 space-y-1">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="block px-4 py-2 text-sm text-stone-500 hover:text-amber-600"
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="block mx-4 mt-4 px-5 py-3 bg-[var(--golden-savannah)] text-white text-center font-semibold rounded-full"
-            >
-              Plan My Safari
-            </Link>
-          </div>
-        </div>
-      )}
-    </header>
-  );
+  return <header className="relative z-50">
+    <div className={`hidden sm:flex items-center justify-between bg-[var(--cats-green)] px-6 py-2 text-xs text-white transition-transform duration-300 lg:px-10 ${scrolled ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className="flex items-center gap-5"><a href="tel:+254723951388" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><PhoneIcon />+254 723 951 388</a><span className="h-4 w-px bg-white/30" /><a href="mailto:info@catssafaris.com" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><MailIcon />info@catssafaris.com</a></div>
+      <div className="flex items-center gap-4"><a href="https://www.facebook.com/CATSAFARISKENYA" aria-label="Facebook"><FacebookIcon /></a><a href="https://www.instagram.com/catssafaris" aria-label="Instagram"><InstagramIcon /></a></div>
+    </div>
+    <nav className={`border-b border-stone-200 bg-white transition-shadow duration-300 ${scrolled ? 'fixed inset-x-0 top-0 shadow-lg' : ''}`}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <Link href="/" className="flex shrink-0 items-center gap-2" onClick={() => setMobileOpen(false)}><Image src="/images/cats-logo.jpg" alt="C.A.T.S Safaris" width={50} height={50} className="rounded-full" /><span className="text-lg font-bold text-[var(--cats-green)] sm:text-xl">C.A.T.S Safaris</span></Link>
+        <div className="hidden items-center gap-1 lg:flex">{navLinks.map((link) => <div key={link.name} className="group relative"><Link href={link.href} className="flex items-center gap-1 px-2 py-4 text-sm font-medium text-stone-700 hover:text-[var(--cats-green)]">{link.name}{link.children && <Chevron />}</Link>{link.children && <div className="invisible absolute right-0 top-full min-w-56 translate-y-2 rounded-lg bg-white p-2 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{link.children.map((child) => <Link key={child.name} href={child.href} className="block rounded-md px-3 py-2 text-sm text-stone-700 hover:bg-[var(--warm-ivory)] hover:text-[var(--cats-green)]">{child.name}</Link>)}</div>}</div>)}<Link href="/contact" className="ml-3 rounded-full bg-[var(--golden-savannah)] px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-90">Plan My Safari</Link></div>
+        <button type="button" aria-label={mobileOpen ? 'Close menu' : 'Open menu'} onClick={() => setMobileOpen(!mobileOpen)} className="rounded-md p-2 text-[var(--cats-green)] lg:hidden">{mobileOpen ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M6 6 18 18M6 18 18 6" /></svg> : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M4 6h16M4 12h16M4 18h16" /></svg>}</button>
+      </div>
+      {mobileOpen && <div className="border-t border-stone-100 bg-white px-4 pb-4 lg:hidden">{navLinks.map((link) => <div key={link.name} className="border-b border-stone-100"><div className="flex items-center justify-between"><Link href={link.href} onClick={() => !link.children && setMobileOpen(false)} className="flex-1 py-3 text-sm font-medium text-stone-700">{link.name}</Link>{link.children && <button type="button" aria-label={`Expand ${link.name}`} onClick={() => setExpanded(expanded === link.name ? null : link.name)} className="p-3"><Chevron open={expanded === link.name} /></button>}</div>{link.children && expanded === link.name && <div className="pb-2 pl-4">{link.children.map((child) => <Link key={child.name} href={child.href} onClick={() => setMobileOpen(false)} className="block py-2 text-sm text-stone-600">{child.name}</Link>)}</div>}</div>)}<Link href="/contact" onClick={() => setMobileOpen(false)} className="mt-4 block rounded-full bg-[var(--golden-savannah)] px-5 py-3 text-center text-sm font-semibold text-white">Plan My Safari</Link></div>}
+    </nav>
+  </header>;
 }

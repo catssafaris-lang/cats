@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useMemo, useState } from 'react';
 import type { Safari } from '@/data/safaris';
 
 interface Props {
@@ -14,98 +14,107 @@ interface Props {
   destination: string;
 }
 
-export default function SafariListingPage({ title, subtitle, description, heroImage, safaris, destination }: Props) {
+export default function SafariListingPage({
+  title,
+  subtitle,
+  description,
+  heroImage,
+  safaris,
+  destination,
+}: Props) {
   const [search, setSearch] = useState('');
   const [durationFilter, setDurationFilter] = useState('all');
 
-  const filtered = useMemo(() => {
-    return safaris.filter((s) => {
-      const matchesSearch = !search || s.title.toLowerCase().includes(search.toLowerCase()) || s.parks.some(p => p.toLowerCase().includes(search.toLowerCase()));
-      const matchesDuration = durationFilter === 'all' ||
-        (durationFilter === 'short' && s.duration <= 3) ||
-        (durationFilter === 'medium' && s.duration >= 4 && s.duration <= 7) ||
-        (durationFilter === 'long' && s.duration >= 8);
+  const filteredSafaris = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    return safaris.filter((safari) => {
+      const searchable = `${safari.title} ${safari.parks.join(' ')}`.toLowerCase();
+      const matchesSearch = !query || searchable.includes(query);
+      const matchesDuration =
+        durationFilter === 'all' ||
+        (durationFilter === 'short' && safari.duration >= 1 && safari.duration <= 3) ||
+        (durationFilter === 'medium' && safari.duration >= 4 && safari.duration <= 7) ||
+        (durationFilter === 'long' && safari.duration >= 8);
       return matchesSearch && matchesDuration;
     });
-  }, [safaris, search, durationFilter]);
+  }, [durationFilter, safaris, search]);
 
   return (
-    <>
-      {/* Hero */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center text-white overflow-hidden">
-        <Image src={heroImage} alt={title} fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-amber-400 font-semibold uppercase tracking-wider mb-3">{subtitle}</p>
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-4">{title}</h1>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">{description}</p>
+    <main className="bg-[var(--warm-ivory)]">
+      <section className="relative flex h-[50vh] min-h-[350px] items-center justify-center overflow-hidden text-center text-white">
+        <Image src={heroImage} alt={title} fill priority className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60" />
+        <div className="relative z-10 mx-auto max-w-4xl px-6">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--golden-savannah)]">{subtitle}</p>
+          <h1 className="font-playfair text-4xl leading-tight sm:text-5xl lg:text-6xl">{title}</h1>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/90 sm:text-lg">{description}</p>
+        </div>
+        <svg className="absolute bottom-0 z-10 h-16 w-full" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z" fill="var(--warm-ivory)" />
+        </svg>
+      </section>
+
+      <section className="sticky top-16 z-30 border-b border-[var(--savannah-dust)] bg-white" aria-label="Filter safaris">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-4 sm:flex-row sm:items-center">
+          <label className="relative min-w-0 flex-1">
+            <span className="sr-only">Search safaris</span>
+            <input
+              type="search"
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+              placeholder="Search safaris or parks"
+              className="w-full rounded-full border border-[var(--savannah-dust)] bg-[var(--cats-cream)] px-5 py-3 text-sm text-[var(--driftwood)] outline-none transition focus:ring-2 focus:ring-[var(--golden-savannah)]"
+            />
+          </label>
+          <label>
+            <span className="sr-only">Filter by duration</span>
+            <select
+              value={durationFilter}
+              onChange={(event) => setDurationFilter(event.target.value)}
+              className="w-full rounded-full border border-[var(--savannah-dust)] bg-[var(--cats-cream)] px-5 py-3 text-sm text-[var(--driftwood)] outline-none focus:ring-2 focus:ring-[var(--golden-savannah)] sm:w-44"
+            >
+              <option value="all">All durations</option>
+              <option value="short">1–3 days</option>
+              <option value="medium">4–7 days</option>
+              <option value="long">8+ days</option>
+            </select>
+          </label>
+          <p className="whitespace-nowrap text-sm text-[var(--forest-canopy)]">
+            {filteredSafaris.length} {filteredSafaris.length === 1 ? 'safari' : 'safaris'}
+          </p>
         </div>
       </section>
 
-      {/* Filters */}
-      <section className="py-8 bg-white border-b border-stone-100 sticky top-20 z-30 backdrop-blur-md bg-white/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row gap-4 items-center">
-          <input
-            type="text"
-            placeholder="Search safaris..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 px-4 py-2.5 border border-stone-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--golden-savannah)] focus:border-transparent"
-          />
-          <select
-            value={durationFilter}
-            onChange={(e) => setDurationFilter(e.target.value)}
-            className="px-4 py-2.5 border border-stone-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--golden-savannah)]"
-          >
-            <option value="all">All Durations</option>
-            <option value="short">1-3 Days</option>
-            <option value="medium">4-7 Days</option>
-            <option value="long">8+ Days</option>
-          </select>
-          <span className="text-sm text-stone-500">{filtered.length} safaris</span>
-        </div>
-      </section>
-
-      {/* Safari Grid */}
-      <section className="py-16 bg-[var(--warm-ivory)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filtered.map((safari) => (
-              <Link
-                key={safari.slug}
-                href={`/safari/${safari.slug}`}
-                className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-stone-100"
-              >
-                <div className="relative h-56 overflow-hidden">
-                  <Image src={safari.image} alt={safari.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-stone-700 capitalize">{safari.destination}</span>
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
+        {filteredSafaris.length > 0 ? (
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {filteredSafaris.map((safari) => (
+              <article key={safari.slug} className="overflow-hidden rounded-2xl bg-white shadow-md transition hover:shadow-xl">
+                <Link href={`/safari/${safari.slug}`} className="group block">
+                  <div className="relative h-56 overflow-hidden">
+                    <Image src={safari.image} alt={safari.title} fill className="object-cover transition duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[var(--forest-canopy)]">{safari.destination || destination}</span>
+                    <span className="absolute right-4 top-4 rounded-full bg-[var(--golden-savannah)] px-3 py-1 text-xs font-semibold text-white">{safari.duration} {safari.durationUnit}</span>
                   </div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-[var(--golden-savannah)] rounded-full text-xs font-semibold text-white">{safari.duration} {safari.durationUnit === 'hours' ? 'hrs' : 'Days'}</span>
+                  <div className="p-6">
+                    <h2 className="font-playfair text-2xl font-bold text-[var(--cats-green)] transition group-hover:text-[var(--golden-savannah)]">{safari.title}</h2>
+                    <p className="mt-2 text-sm text-stone-500">{safari.parks.join(' • ')}</p>
+                    <div className="mt-6 flex items-center justify-between gap-4">
+                      <p className="text-lg font-bold text-[var(--cats-green)]">From ${safari.priceFrom.toLocaleString()}</p>
+                      <span className="text-sm font-semibold text-[var(--golden-savannah)]">View Details</span>
+                    </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg text-stone-900 group-hover:text-[var(--golden-savannah)] transition-colors line-clamp-2 mb-2">{safari.title}</h3>
-                  <p className="text-sm text-stone-500 mb-4 line-clamp-2">{safari.parks.join(' • ')}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-[var(--golden-savannah)] font-bold text-lg">From ${safari.priceFrom.toLocaleString()}</span>
-                    <span className="text-sm text-stone-400 group-hover:text-[var(--golden-savannah)] flex items-center gap-1.5 transition-all">
-                      View Details
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                    </span>
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              </article>
             ))}
           </div>
-          {filtered.length === 0 && (
-            <div className="text-center py-16">
-              <p className="text-stone-500 text-lg">No safaris match your search. Try adjusting your filters.</p>
-            </div>
-          )}
-        </div>
+        ) : (
+          <div className="py-20 text-center text-[var(--driftwood)]">
+            <h2 className="font-playfair text-2xl text-[var(--cats-green)]">No safaris found</h2>
+            <p className="mt-2">Try adjusting your search or duration filter.</p>
+          </div>
+        )}
       </section>
-    </>
+    </main>
   );
 }
