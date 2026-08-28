@@ -1,23 +1,49 @@
-import { safaris } from '@/data/safaris';
-import SafariListingPage from '@/components/SafariListingPage';
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
+import KenyaUgandaSafarisContent from './KenyaUgandaSafarisContent';
 
 export const metadata: Metadata = {
-  title: 'Kenya & Uganda Safari Tours | Gorilla Trekking',
-  description: 'Combined Kenya & Uganda safaris — Big Five game drives and mountain gorilla trekking.',
-  alternates: { canonical: '/kenya-uganda-safaris' },
+  title: 'Kenya & Uganda Safaris | C.A.T.S | Gorilla Trekking & Wildlife Tours',
+  description:
+    'Combine Kenya wildlife safaris with Uganda mountain gorilla trekking. C.A.T.S coordinates seamless cross-border adventures from the Masai Mara to Bwindi Impenetrable Forest.',
+  keywords: [
+    'Kenya Uganda safari',
+    'gorilla trekking Uganda',
+    'Bwindi gorilla safari',
+    'Kenya Uganda combined safari',
+    'Big Five gorilla trekking',
+    'East Africa safari',
+    'CATS safaris',
+    'Masai Mara Bwindi',
+  ],
 };
 
-export default function Page() {
-  const filtered = safaris.filter((s) => s.destination === 'kenya-uganda');
+export default function KenyaUgandaSafarisPage() {
   return (
-    <SafariListingPage
-      title="Kenya & Uganda Safaris"
-      subtitle="Combined Adventures"
-      description="Big Five safaris in Kenya meets mountain gorilla trekking in Uganda's Bwindi Impenetrable Forest."
-      heroImage="https://images.pexels.com/photos/38294689/pexels-photo-38294689.jpeg?auto=compress&cs=tinysrgb&w=800"
-      safaris={filtered}
-      destination="kenya-uganda"
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://www.catssafaris.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Kenya & Uganda Safaris',
+                item: 'https://www.catssafaris.com/kenya-uganda-safaris',
+              },
+            ],
+          }),
+        }}
+      />
+      <KenyaUgandaSafarisContent />
+    </>
   );
 }
