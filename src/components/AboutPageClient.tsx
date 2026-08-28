@@ -1164,13 +1164,13 @@ export default function AboutPageClient() {
           {/* What's Included */}
           <div className="bg-[var(--color-forest-canopy)] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
             <div className="absolute -right-20 -top-20 opacity-5">
-              <Image
-                src="/images/cats-logo.jpg"
-                alt="Watermark"
-                width={300}
-                height={300}
-                className="rounded-full"
-              />
+              <svg viewBox="0 0 48 48" width={300} height={300} aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M24 3c-1.1 3.6-2.3 6-4.6 8-1.9-1.4-4.4-2-6.9-1.2 1.1 2.1 3 3.5 5.2 4-2.6.7-4.9 2.5-6.2 5 2.6.5 5.2-.1 7.3-1.6-.5 2.6.1 5.4 1.8 7.6-2.9-.2-5.8.9-7.8 3.1 2.7 1.1 5.7.9 8.2-.4-1.2 2.4-1.3 5.3-.1 7.9 2.1-1.4 3.5-3.5 4.1-5.9.6 2.4 2 4.5 4.1 5.9 1.2-2.6 1.1-5.5-.1-7.9 2.5 1.3 5.5 1.5 8.2.4-2-2.2-4.9-3.3-7.8-3.1 1.7-2.2 2.3-5 1.8-7.6 2.1 1.5 4.7 2.1 7.3 1.6-1.3-2.5-3.6-4.3-6.2-5 2.2-.5 4.1-1.9 5.2-4-2.5-.8-5-.2-6.9 1.2-2.3-2-3.5-4.4-4.6-8Z"
+                />
+                <rect x="22.2" y="24" width="1.6" height="21" fill="currentColor" />
+              </svg>
             </div>
             <h2 className="text-sm font-bold tracking-[0.2em] text-[var(--golden-savannah)] mb-2 uppercase">
               Transparent Value

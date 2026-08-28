@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.catssafaris.com'),
   openGraph: { type: 'website', locale: 'en_US', url: 'https://www.catssafaris.com', siteName: 'C.A.T.S Safaris' },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/images/cats-logo.jpg' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
