@@ -1,0 +1,27 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Safari Booking Terms & Conditions | C.A.T.S Safaris',
+  description: 'C.A.T.S Safaris booking terms: deposits, payments, cancellations, insurance, pricing and safari package inclusions.',
+  alternates: { canonical: '/travel-info/booking-terms' },
+}
+
+export default function BookingTermsPage() {
+  return <main className="bg-[var(--warm-ivory)] text-[var(--forest-canopy)]">
+    <section className="bg-[var(--forest-canopy)] pt-40 pb-20 px-6"><div className="mx-auto max-w-5xl">
+      <p className="text-[var(--golden-savannah)] uppercase tracking-[0.22em] text-sm">Travel information</p>
+      <h1 className="font-playfair mt-4 text-5xl md:text-6xl text-white">Booking Terms & Conditions</h1>
+      <p className="mt-6 max-w-3xl text-lg text-white/80">Clear terms for thoughtfully planned Kenya, Tanzania, Uganda and Rwanda safari holidays.</p>
+    </div></section>
+    <section className="mx-auto max-w-5xl px-6 py-16 space-y-10 leading-8">
+      <p>These terms apply to safari bookings made with Collective African Tours & Safaris (C.A.T.S). Your booking is confirmed once we issue written confirmation and receive the required deposit. Please read them alongside your itinerary and supplier information before travelling.</p>
+      <div className="grid gap-6 md:grid-cols-2"><article className="bg-[var(--savannah-dust)] p-7"><h2 className="font-playfair text-3xl">Reservations & payment</h2><p className="mt-4">A 40% deposit secures your safari, subject to availability. The remaining 60% is due 60 days before departure. For bookings made within 60 days, full payment is required at confirmation. We accept M-Pesa, bank transfer, Wise and credit card payments; any bank, card or transfer charges are the traveller’s responsibility. Quoted prices are in USD, valid for 30 days unless stated otherwise, and may change before confirmation if accommodation, exchange conditions or government park fees change.</p></article><article className="bg-[var(--savannah-dust)] p-7"><h2 className="font-playfair text-3xl">Package inclusions</h2><p className="mt-4">Your itinerary confirms what is included, typically accommodation, stated meals, transport, guide/driver services, game drives and listed park fees. Unless specifically listed, international flights, visas, travel insurance, drinks, gratuities, personal purchases, optional activities and excess baggage are excluded.</p></article></div>
+      <article><h2 className="font-playfair text-3xl">Cancellations, amendments & groups</h2><p className="mt-3">Cancellation requests must be made in writing. More than 60 days before departure, payments are refunded less reasonable administration and unrecoverable supplier charges. From 30–60 days, 50% of the safari price is refundable; fewer than 30 days before departure, no refund is due. Non-refundable permits, flights and supplier deposits remain non-refundable at all times. We will try to accommodate date or itinerary changes, but they depend on availability and may incur supplier charges or revised prices. Group bookings may carry separate payment schedules and cancellation conditions; the agreed group proposal takes precedence.</p></article>
+      <article><h2 className="font-playfair text-3xl">Insurance, health & traveller responsibility</h2><p className="mt-3">Comprehensive travel insurance, including medical treatment, emergency evacuation, cancellation and baggage cover, is strongly recommended. C.A.T.S does not provide medical or evacuation cover and is not liable for such costs. Travellers are responsible for passports, visas, vaccinations, medication and meeting entry requirements. Parents or guardians remain responsible for minors. Some parks and lodges allow children under five without a park fee or at reduced rates, while child rates commonly apply from ages 5–12; rules, rooms and activity minimum ages vary by property and country.</p></article>
+      <article><h2 className="font-playfair text-3xl">Force majeure & liability</h2><p className="mt-3">Safari travel involves changing weather, wildlife, roads and operational conditions. C.A.T.S may alter an itinerary where necessary for safety or practical reasons. We are not responsible for events outside our reasonable control, including natural events, political disruption, disease outbreaks, strikes, border restrictions, flight delays, lost baggage, supplier failures or wildlife sightings that cannot be guaranteed. Liability, where legally permitted, is limited to the value of services supplied by C.A.T.S; nothing excludes liability that cannot lawfully be excluded.</p></article>
+      <article><h2 className="font-playfair text-3xl">Concerns & governing law</h2><p className="mt-3">Please raise any issue with your safari guide or our office promptly so we can seek a practical solution during your trip. If unresolved, email a written complaint with supporting details to info@catssafaris.com within 30 days of return. These terms are governed by the laws of Kenya, and Kenyan courts have jurisdiction, subject to applicable consumer law.</p></article>
+      <div className="border-t border-[var(--golden-savannah)] pt-8 flex flex-wrap gap-4"><Link href="/contact" className="rounded-full bg-[var(--golden-savannah)] px-6 py-3 font-semibold">Plan with C.A.T.S Safaris</Link><a href="mailto:info@catssafaris.com" className="py-3 font-semibold underline">info@catssafaris.com</a></div>
+    </section>
+  </main>
+}
