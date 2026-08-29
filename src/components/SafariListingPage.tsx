@@ -54,7 +54,7 @@ export default function SafariListingPage({
         </svg>
       </section>
 
-      <section className="sticky top-16 z-30 border-b border-[var(--savannah-dust)] bg-white" aria-label="Filter safaris">
+      <section className="sticky top-16 z-30 border-b border-[var(--savannah-dust)] bg-[var(--warm-ivory)]" aria-label="Filter safaris">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-4 sm:flex-row sm:items-center">
           <label className="relative min-w-0 flex-1">
             <span className="sr-only">Search safaris</span>

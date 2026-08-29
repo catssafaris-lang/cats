@@ -56,7 +56,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-[var(--warm-ivory)] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center"><p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--golden-savannah)]">Explore East Africa</p><h2 className="font-playfair text-4xl font-semibold text-[var(--forest-canopy)] sm:text-5xl">Iconic Destinations</h2><div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[var(--golden-savannah)]" /></div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">{destinations.map((destination) => <Link key={destination.name} href={destination.href} className="group relative h-80 overflow-hidden rounded-2xl shadow-md transition hover:shadow-xl"><Image src={destination.image} alt={destination.name} fill className="object-cover transition duration-700 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" /><h3 className="absolute bottom-6 left-6 text-xl font-bold text-white">{destination.name}</h3></Link>)}</div>

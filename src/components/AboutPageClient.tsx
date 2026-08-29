@@ -322,7 +322,7 @@ export default function AboutPageClient() {
 
 
             {/* MISSION, VISION & CORE VALUES */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-[var(--warm-ivory)]">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-sm font-bold tracking-[0.2em] text-[var(--color-sunset-bronze)] mb-2 uppercase">What Drives Us</h2>
@@ -667,7 +667,7 @@ export default function AboutPageClient() {
             </section>
 
             {/* 9. WHY CHOOSE US & WHATS INCLUDED */}
-            <section className="py-24 bg-white border-y border-[var(--color-savannah-dust)]">
+            <section className="py-24 bg-[var(--warm-ivory)] border-y border-[var(--color-savannah-dust)]">
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16">
                     {/* Why Us */}
                     <div>

@@ -30,7 +30,7 @@
 }
 
 @layer base {
-  body { @apply antialiased text-stone-900; font-family: var(--font-inter), system-ui, sans-serif; }
+  body { @apply antialiased text-stone-900 bg-[#f7f4ed]; font-family: var(--font-inter), system-ui, sans-serif; }
   h1, h2, h3, h4, h5, h6 { font-family: var(--font-playfair), Georgia, serif; }
 }
 

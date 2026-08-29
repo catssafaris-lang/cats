@@ -226,7 +226,7 @@ export default function RwandaLodgesPage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="bg-white border-b">
+      <section className="bg-[var(--warm-ivory)] border-b">
         <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-3 gap-4 text-center">
           <div>
             <div className="text-2xl md:text-3xl font-bold text-[#A68B52]">{totalLodges}</div>
