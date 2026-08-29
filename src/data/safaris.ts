@@ -1823,7 +1823,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
         ],
         priceFrom: 1770,
         currency: 'USD',
-        image: 'https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=80',
+        image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-Kenya-the-shoulder-of-Kilimanjaro-scaled.jpg',
         gallery: [
             'https://images.pexels.com/photos/35568137/pexels-photo-35568137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             'https://images.pexels.com/photos/20847185/pexels-photo-20847185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -5098,7 +5098,7 @@ After a full breakfast back at the lodge, you take one last drive through the co
         ],
         priceFrom: 1770,
         currency: 'USD',
-        image: 'https://images.unsplash.com/photo-1535680671320-c566e5ecddf7?w=800&auto=format&fit=crop&q=80',
+        image: 'https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg',
         gallery: [
             'https://images.pexels.com/photos/15993988/pexels-photo-15993988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             'https://images.pexels.com/photos/14510921/pexels-photo-14510921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -6088,7 +6088,7 @@ As the 4:00 PM light turns the baobabs to amber, you begin the return journey. T
             'Mount Kenya mole-rat (endemic species)',
             'Buffalo and elephant tracks in the montane zone',
         ],
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop&q=80',
+        image: 'https://images.pexels.com/photos/20847185/pexels-photo-20847185.jpeg',
         gallery: [
             'https://images.pexels.com/photos/15994021/pexels-photo-15994021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             'https://images.pexels.com/photos/14510921/pexels-photo-14510921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
