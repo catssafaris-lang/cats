@@ -17,21 +17,21 @@ const C = {
 /* ═══════════════════  DESKTOP DROPDOWN  ═══════════════════ */
 function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: () => void }) {
   const [flyoutItem, setFlyoutItem] = useState<NavDropdownItem | null>(null);
-  const isSafari = section.name === 'Safari Experiences';
+  const isKenyaSafaris = section.name === 'Kenya Safaris';
   const isExperiences = section.name === 'Experiences';
 
   return (
     <div
       className="absolute top-full left-0 mt-0 z-50"
-      style={{ minWidth: 280 }}
+      style={{ minWidth: 260 }}
     >
       <div
         className="flex rounded-lg shadow-2xl border overflow-hidden mt-2"
         style={{ background: C.panel, borderColor: C.gold + '30' }}
       >
-        {/* ── Safari Experiences: vertical list ── */}
-        {isSafari && (
-          <div className="py-3" style={{ width: 300 }}>
+        {/* ── Kenya Safaris: vertical list with Nairobi flyout ── */}
+        {isKenyaSafaris && (
+          <div className="py-3" style={{ width: 280 }}>
             {section.dropdown!.map((item) => {
               const hasChildren = !!item.children?.length;
               return (
@@ -39,7 +39,6 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
                   key={item.name}
                   className="relative"
                   onMouseEnter={() => hasChildren ? setFlyoutItem(item) : setFlyoutItem(null)}
-                  onMouseLeave={() => {}}
                 >
                   <Link
                     href={item.href}
@@ -69,10 +68,10 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
         )}
 
         {/* ── Flyout for Nairobi Kenya Safaris only ── */}
-        {isSafari && flyoutItem?.children && (
+        {isKenyaSafaris && flyoutItem?.children && (
           <div
             className="py-3 border-l"
-            style={{ width: 240, borderColor: C.gold + '20' }}
+            style={{ width: 220, borderColor: C.gold + '20' }}
           >
             {flyoutItem.children.map((child) => (
               <Link
@@ -98,7 +97,7 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
 
         {/* ── Experiences: 2-col grid with descriptions ── */}
         {isExperiences && (
-          <div className="p-4 grid grid-cols-2 gap-x-4 gap-y-1" style={{ width: 560 }}>
+          <div className="p-4 grid grid-cols-2 gap-x-4 gap-y-1" style={{ width: 540 }}>
             {section.dropdown!.map((item) => (
               <Link
                 key={item.name}
@@ -123,8 +122,8 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
         )}
 
         {/* ── Travel Info / Flights: simple list ── */}
-        {!isSafari && !isExperiences && (
-          <div className="py-3" style={{ width: 280 }}>
+        {!isKenyaSafaris && !isExperiences && (
+          <div className="py-3" style={{ width: 260 }}>
             {section.dropdown!.map((item) => (
               <Link
                 key={item.name}
@@ -317,36 +316,36 @@ export default function Header() {
 
       {/* ── Main nav bar ── */}
       <header className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-16">
+          {/* Logo — compact, left-aligned */}
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0 mr-4">
             <Image
               src="/images/cats-logo.png"
               alt="Collective African Tours & Safaris"
-              width={48}
-              height={48}
-              className="w-12 h-12 object-contain"
+              width={44}
+              height={44}
+              className="w-11 h-11 object-contain"
               priority
             />
             <div className="hidden sm:block">
-              <span className="text-lg font-bold hidden lg:inline" style={{ color: C.green }}>
+              <span className="text-base font-bold hidden xl:inline whitespace-nowrap" style={{ color: C.green }}>
                 Collective African Tours & Safaris
               </span>
-              <span className="text-lg font-bold lg:hidden" style={{ color: C.green }}>
+              <span className="text-base font-bold xl:hidden whitespace-nowrap" style={{ color: C.green }}>
                 C.A.T.S Safaris
               </span>
             </div>
           </Link>
 
-          {/* Desktop nav */}
-          <nav ref={navRef} className="hidden lg:flex items-center gap-1">
+          {/* Desktop nav — pushed right, compact spacing */}
+          <nav ref={navRef} className="hidden lg:flex items-center gap-0 ml-auto">
             {navigationData.map((section) => {
               if (!section.dropdown) {
                 return (
                   <Link
                     key={section.name}
                     href={section.href!}
-                    className="px-3 py-2 text-sm font-medium rounded transition-colors hover:bg-gray-100"
+                    className="px-2 xl:px-2.5 py-2 text-[13px] font-medium rounded transition-colors hover:bg-gray-100 whitespace-nowrap"
                     style={{ color: C.green }}
                   >
                     {section.name}
@@ -363,7 +362,7 @@ export default function Header() {
                   onMouseLeave={scheduleClose}
                 >
                   <button
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded transition-colors hover:bg-gray-100"
+                    className="flex items-center gap-0.5 px-2 xl:px-2.5 py-2 text-[13px] font-medium rounded transition-colors hover:bg-gray-100 whitespace-nowrap"
                     style={{ color: isActive ? C.gold : C.green }}
                     onClick={() => setActiveDropdown(isActive ? null : section.name)}
                   >
@@ -391,7 +390,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 ml-auto"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
