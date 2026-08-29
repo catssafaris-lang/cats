@@ -7,11 +7,13 @@ import { navigationData, NavSection, NavDropdownItem } from '@/data/navigation';
 
 /* ── CATS Palette ── */
 const C = {
-  green: '#2d5016',
+  brown: '#5a3e28',
   gold: '#c8a45a',
   ivory: '#faf8f0',
+  beige: '#f7f4ed',
   panel: '#3b2f1e',
   panelHover: '#4d3e2b',
+  darkText: '#3a3027',
 };
 
 /* ═══════════════════  DESKTOP DROPDOWN  ═══════════════════ */
@@ -300,8 +302,8 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top bar ── */}
-      <div style={{ background: C.green }} className="hidden md:block">
+      {/* ── Top bar — brown ── */}
+      <div style={{ background: C.brown }} className="hidden md:block">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs py-1.5" style={{ color: C.ivory + 'CC' }}>
           <div className="flex items-center gap-4">
             <a href="mailto:info@catssafaris.com" className="hover:underline">info@catssafaris.com</a>
@@ -314,30 +316,30 @@ export default function Header() {
         </div>
       </div>
 
-      {/* ── Main nav bar ── */}
-      <header className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-16">
-          {/* Logo — compact, left-aligned */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0 mr-4">
+      {/* ── Main nav bar — beige ── */}
+      <header className="sticky top-0 z-50 shadow-sm" style={{ background: C.beige }}>
+        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[72px]">
+          {/* Logo — new full horizontal logo */}
+          <Link href="/" className="flex-shrink-0 mr-4">
             <Image
-              src="/images/cats-logo.png"
-              alt="Collective African Tours & Safaris"
-              width={44}
-              height={44}
-              className="w-11 h-11 object-contain"
+              src="/cats-logo-full.jpg"
+              alt="Collective African Tours & Safaris (C.A.T.S)"
+              width={260}
+              height={56}
+              className="h-14 w-auto object-contain hidden sm:block"
               priority
             />
-            <div className="hidden sm:block">
-              <span className="text-base font-bold hidden xl:inline whitespace-nowrap" style={{ color: C.green }}>
-                Collective African Tours & Safaris
-              </span>
-              <span className="text-base font-bold xl:hidden whitespace-nowrap" style={{ color: C.green }}>
-                C.A.T.S Safaris
-              </span>
-            </div>
+            <Image
+              src="/cats-logo-full.jpg"
+              alt="C.A.T.S Safaris"
+              width={180}
+              height={44}
+              className="h-11 w-auto object-contain sm:hidden"
+              priority
+            />
           </Link>
 
-          {/* Desktop nav — pushed right, compact spacing */}
+          {/* Desktop nav — right-aligned, compact */}
           <nav ref={navRef} className="hidden lg:flex items-center gap-0 ml-auto">
             {navigationData.map((section) => {
               if (!section.dropdown) {
@@ -345,8 +347,14 @@ export default function Header() {
                   <Link
                     key={section.name}
                     href={section.href!}
-                    className="px-2 xl:px-2.5 py-2 text-[13px] font-medium rounded transition-colors hover:bg-gray-100 whitespace-nowrap"
-                    style={{ color: C.green }}
+                    className="px-2 xl:px-2.5 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                    style={{ color: C.darkText }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = C.brown;
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = C.darkText;
+                    }}
                   >
                     {section.name}
                   </Link>
@@ -362,8 +370,8 @@ export default function Header() {
                   onMouseLeave={scheduleClose}
                 >
                   <button
-                    className="flex items-center gap-0.5 px-2 xl:px-2.5 py-2 text-[13px] font-medium rounded transition-colors hover:bg-gray-100 whitespace-nowrap"
-                    style={{ color: isActive ? C.gold : C.green }}
+                    className="flex items-center gap-0.5 px-2 xl:px-2.5 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                    style={{ color: isActive ? C.gold : C.darkText }}
                     onClick={() => setActiveDropdown(isActive ? null : section.name)}
                   >
                     {section.name}
@@ -394,7 +402,7 @@ export default function Header() {
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke={C.green} strokeWidth={2}>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke={C.darkText} strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
