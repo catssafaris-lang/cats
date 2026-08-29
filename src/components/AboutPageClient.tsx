@@ -462,6 +462,35 @@ export default function AboutPageClient() {
                 </div>
             </section>
 
+            {/* MEET DAVID */}
+            <section className="py-24 bg-[var(--color-warm-ivory)]">
+                <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-[240px_1fr] gap-10 items-center">
+                    <div className="relative mx-auto h-56 w-56 overflow-hidden rounded-full border-4 border-[var(--color-sunset-bronze)]/30 shadow-lg">
+                        <Image
+                            src="https://ik.imagekit.io/axd1riwnv/david-thuo.jpg"
+                            alt="David, part of the C.A.T.S Safaris team"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div>
+                        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-sunset-bronze)]">Meet David</p>
+                        <h2 className="text-3xl font-bold text-[var(--color-forest-canopy)] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            A Human Touch Behind the Collective
+                        </h2>
+                        <p className="mb-4 leading-relaxed text-stone-700">
+                            David is one of the familiar faces behind C.A.T.S. With years of hands-on experience across Kenya&apos;s national parks, conservancies, and coastal retreats, his warm, practical approach helps travellers turn a first idea into a journey that feels genuinely theirs. He works alongside our wider team and trusted partners across East Africa to keep every detail — from game-drive timing to lodge selection — moving seamlessly.
+                        </p>
+                        <p className="mb-6 leading-relaxed text-stone-700">
+                            Whether you&apos;re planning a first-time Masai Mara safari, a multi-country gorilla trekking expedition, or a family beach holiday on the Kenyan coast, David and the C.A.T.S team are here to make it personal.
+                        </p>
+                        <Link href="/contact" className="inline-block rounded-full bg-[var(--color-sunset-bronze)] px-7 py-3 font-semibold text-white hover:shadow-lg transition-shadow">
+                            Talk with Our Team
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* 5. WHO TRAVELS WITH US */}
             <section className="py-24 bg-[var(--color-warm-ivory)]">
                 <div className="max-w-7xl mx-auto px-4">
