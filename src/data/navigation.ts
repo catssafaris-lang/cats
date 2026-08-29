@@ -20,7 +20,7 @@ export interface NavSection {
 
 export const navigationData: NavSection[] = [
   {
-    name: 'Safari Experiences',
+    name: 'Kenya Safaris',
     dropdown: [
       {
         name: 'Nairobi Kenya Safaris',
@@ -42,14 +42,14 @@ export const navigationData: NavSection[] = [
       { name: 'Safaris from Diani Beach', href: '/kenya-safaris/safaris-from-diani' },
       { name: 'Kenya Beach to Nairobi Safaris', href: '/kenya-safaris/beach-to-nairobi' },
       { name: 'Kenya Safaris and Diani Beach', href: '/kenya-safaris/kenya-and-diani' },
-      { name: 'Tanzania Safaris', href: '/tanzania-safaris' },
-      { name: 'Kenya-Tanzania Safaris', href: '/tanzania-safaris' },
+      { name: 'Zanzibar Beach Holidays', href: '/kenya-safaris/zanzibar' },
       { name: 'Uganda Safaris', href: '/kenya-uganda-safaris' },
       { name: 'Rwanda Safaris', href: '/kenya-rwanda-safaris' },
-      { name: 'Mountain Climbing', href: '/mountain-climbing' },
-      { name: 'Zanzibar Beach Holidays', href: '/kenya-safaris/zanzibar' },
     ],
   },
+  { name: 'Tanzania Safaris', href: '/tanzania-safaris' },
+  { name: 'Kenya-Tanzania Safaris', href: '/kenya-tanzania-safaris' },
+  { name: 'Mountain Climbing', href: '/mountain-climbing' },
   {
     name: 'Experiences',
     dropdown: [
