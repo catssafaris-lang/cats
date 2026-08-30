@@ -15474,4 +15474,8215 @@ export const safariPricing: Record<string, SafariPricingEntry> = {
       ]
     }
   }
+,
+  "8-day-kenya-tanzania-wildlife-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 4380,
+                          "comfort": 4820,
+                          "luxury": 5300,
+                          "superior_luxury": 6630
+                      },
+                      "2": {
+                          "economy": 2740,
+                          "comfort": 3010,
+                          "luxury": 3320,
+                          "superior_luxury": 4140
+                      },
+                      "3": {
+                          "economy": 2580,
+                          "comfort": 2830,
+                          "luxury": 3120,
+                          "superior_luxury": 3900
+                      },
+                      "4": {
+                          "economy": 2490,
+                          "comfort": 2740,
+                          "luxury": 3020,
+                          "superior_luxury": 3770
+                      },
+                      "5": {
+                          "economy": 2440,
+                          "comfort": 2680,
+                          "luxury": 2950,
+                          "superior_luxury": 3690
+                      },
+                      "6-7": {
+                          "economy": 2360,
+                          "comfort": 2590,
+                          "luxury": 2850,
+                          "superior_luxury": 3560
+                      },
+                      "srs": {
+                          "economy": 280,
+                          "comfort": 360,
+                          "luxury": 440,
+                          "superior_luxury": 560
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 4820,
+                          "comfort": 5300,
+                          "luxury": 5840,
+                          "superior_luxury": 7290
+                      },
+                      "2": {
+                          "economy": 3010,
+                          "comfort": 3320,
+                          "luxury": 3650,
+                          "superior_luxury": 4560
+                      },
+                      "3": {
+                          "economy": 2830,
+                          "comfort": 3120,
+                          "luxury": 3430,
+                          "superior_luxury": 4290
+                      },
+                      "4": {
+                          "economy": 2740,
+                          "comfort": 3020,
+                          "luxury": 3320,
+                          "superior_luxury": 4150
+                      },
+                      "5": {
+                          "economy": 2680,
+                          "comfort": 2950,
+                          "luxury": 3250,
+                          "superior_luxury": 4060
+                      },
+                      "6-7": {
+                          "economy": 2590,
+                          "comfort": 2850,
+                          "luxury": 3140,
+                          "superior_luxury": 3920
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 400,
+                          "luxury": 480,
+                          "superior_luxury": 620
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 5480,
+                          "comfort": 6030,
+                          "luxury": 6630,
+                          "superior_luxury": 8290
+                      },
+                      "2": {
+                          "economy": 3430,
+                          "comfort": 3770,
+                          "luxury": 4140,
+                          "superior_luxury": 5180
+                      },
+                      "3": {
+                          "economy": 3220,
+                          "comfort": 3540,
+                          "luxury": 3900,
+                          "superior_luxury": 4870
+                      },
+                      "4": {
+                          "economy": 3120,
+                          "comfort": 3430,
+                          "luxury": 3770,
+                          "superior_luxury": 4710
+                      },
+                      "5": {
+                          "economy": 3050,
+                          "comfort": 3350,
+                          "luxury": 3690,
+                          "superior_luxury": 4610
+                      },
+                      "6-7": {
+                          "economy": 2950,
+                          "comfort": 3240,
+                          "luxury": 3560,
+                          "superior_luxury": 4460
+                      },
+                      "srs": {
+                          "economy": 350,
+                          "comfort": 450,
+                          "luxury": 550,
+                          "superior_luxury": 700
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 6360,
+                          "comfort": 6990,
+                          "luxury": 7690,
+                          "superior_luxury": 9610
+                      },
+                      "2": {
+                          "economy": 3970,
+                          "comfort": 4370,
+                          "luxury": 4810,
+                          "superior_luxury": 6010
+                      },
+                      "3": {
+                          "economy": 3730,
+                          "comfort": 4110,
+                          "luxury": 4520,
+                          "superior_luxury": 5650
+                      },
+                      "4": {
+                          "economy": 3620,
+                          "comfort": 3980,
+                          "luxury": 4370,
+                          "superior_luxury": 5470
+                      },
+                      "5": {
+                          "economy": 3540,
+                          "comfort": 3890,
+                          "luxury": 4280,
+                          "superior_luxury": 5350
+                      },
+                      "6-7": {
+                          "economy": 3420,
+                          "comfort": 3760,
+                          "luxury": 4130,
+                          "superior_luxury": 5170
+                      },
+                      "srs": {
+                          "economy": 410,
+                          "comfort": 520,
+                          "luxury": 640,
+                          "superior_luxury": 810
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Mara Chui Camp",
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Mara Sopa Lodge",
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Mara Serena Safari Lodge",
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Oliver's Camp"
+          ]
+      }
+  },
+  "6-day-beach-to-nairobi-grand-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "2": {
+                          "economy": 1250,
+                          "comfort": 1380,
+                          "luxury": 1510,
+                          "superior_luxury": 1890
+                      },
+                      "3": {
+                          "economy": 1180,
+                          "comfort": 1290,
+                          "luxury": 1420,
+                          "superior_luxury": 1780
+                      },
+                      "4": {
+                          "economy": 1140,
+                          "comfort": 1250,
+                          "luxury": 1380,
+                          "superior_luxury": 1720
+                      },
+                      "5": {
+                          "economy": 1110,
+                          "comfort": 1220,
+                          "luxury": 1350,
+                          "superior_luxury": 1680
+                      },
+                      "6-7": {
+                          "economy": 1080,
+                          "comfort": 1180,
+                          "luxury": 1300,
+                          "superior_luxury": 1630
+                      },
+                      "srs": {
+                          "economy": 210,
+                          "comfort": 270,
+                          "luxury": 330,
+                          "superior_luxury": 420
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2200,
+                          "comfort": 2420,
+                          "luxury": 2660,
+                          "superior_luxury": 3330
+                      },
+                      "2": {
+                          "economy": 1380,
+                          "comfort": 1510,
+                          "luxury": 1660,
+                          "superior_luxury": 2080
+                      },
+                      "3": {
+                          "economy": 1290,
+                          "comfort": 1420,
+                          "luxury": 1560,
+                          "superior_luxury": 1950
+                      },
+                      "4": {
+                          "economy": 1250,
+                          "comfort": 1380,
+                          "luxury": 1510,
+                          "superior_luxury": 1890
+                      },
+                      "5": {
+                          "economy": 1220,
+                          "comfort": 1350,
+                          "luxury": 1480,
+                          "superior_luxury": 1850
+                      },
+                      "6-7": {
+                          "economy": 1180,
+                          "comfort": 1300,
+                          "luxury": 1430,
+                          "superior_luxury": 1790
+                      },
+                      "srs": {
+                          "economy": 230,
+                          "comfort": 300,
+                          "luxury": 360,
+                          "superior_luxury": 460
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2500,
+                          "comfort": 2750,
+                          "luxury": 3030,
+                          "superior_luxury": 3780
+                      },
+                      "2": {
+                          "economy": 1560,
+                          "comfort": 1720,
+                          "luxury": 1890,
+                          "superior_luxury": 2360
+                      },
+                      "3": {
+                          "economy": 1470,
+                          "comfort": 1620,
+                          "luxury": 1780,
+                          "superior_luxury": 2220
+                      },
+                      "4": {
+                          "economy": 1420,
+                          "comfort": 1560,
+                          "luxury": 1720,
+                          "superior_luxury": 2150
+                      },
+                      "5": {
+                          "economy": 1390,
+                          "comfort": 1530,
+                          "luxury": 1680,
+                          "superior_luxury": 2100
+                      },
+                      "6-7": {
+                          "economy": 1340,
+                          "comfort": 1480,
+                          "luxury": 1630,
+                          "superior_luxury": 2030
+                      },
+                      "srs": {
+                          "economy": 260,
+                          "comfort": 340,
+                          "luxury": 410,
+                          "superior_luxury": 530
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2900,
+                          "comfort": 3190,
+                          "luxury": 3510,
+                          "superior_luxury": 4390
+                      },
+                      "2": {
+                          "economy": 1810,
+                          "comfort": 1990,
+                          "luxury": 2190,
+                          "superior_luxury": 2740
+                      },
+                      "3": {
+                          "economy": 1700,
+                          "comfort": 1870,
+                          "luxury": 2060,
+                          "superior_luxury": 2580
+                      },
+                      "4": {
+                          "economy": 1650,
+                          "comfort": 1810,
+                          "luxury": 2000,
+                          "superior_luxury": 2490
+                      },
+                      "5": {
+                          "economy": 1610,
+                          "comfort": 1770,
+                          "luxury": 1950,
+                          "superior_luxury": 2440
+                      },
+                      "6-7": {
+                          "economy": 1560,
+                          "comfort": 1710,
+                          "luxury": 1890,
+                          "superior_luxury": 2360
+                      },
+                      "srs": {
+                          "economy": 300,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Voi Safari Lodge",
+              "Ngulia Safari Lodge",
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Naivasha Kongoni Lodge",
+              "Mara Chui Camp"
+          ],
+          "comfort": [
+              "Sentrim Tsavo Camp",
+              "Severin Safari Camp",
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Lake Naivasha Country Club",
+              "Mara Sopa Lodge"
+          ],
+          "luxury": [
+              "Satao Camp",
+              "Sarova Salt Lick Game Lodge",
+              "Amboseli Serena Safari Lodge",
+              "Lake Nakuru Sopa Lodge",
+              "Lake Naivasha Sopa Lodge",
+              "Mara Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Finch Hattons",
+              "Tawi Lodge",
+              "Enashipai Resort & Spa",
+              "Karen Blixen Camp",
+              "Governors Camp"
+          ]
+      }
+  },
+  "7-day-coast-to-mara-nairobi-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2480,
+                          "comfort": 2730,
+                          "luxury": 3000,
+                          "superior_luxury": 3750
+                      },
+                      "2": {
+                          "economy": 1550,
+                          "comfort": 1710,
+                          "luxury": 1880,
+                          "superior_luxury": 2340
+                      },
+                      "3": {
+                          "economy": 1460,
+                          "comfort": 1600,
+                          "luxury": 1760,
+                          "superior_luxury": 2200
+                      },
+                      "4": {
+                          "economy": 1410,
+                          "comfort": 1550,
+                          "luxury": 1710,
+                          "superior_luxury": 2130
+                      },
+                      "5": {
+                          "economy": 1380,
+                          "comfort": 1520,
+                          "luxury": 1670,
+                          "superior_luxury": 2090
+                      },
+                      "6-7": {
+                          "economy": 1330,
+                          "comfort": 1470,
+                          "luxury": 1610,
+                          "superior_luxury": 2020
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 320,
+                          "luxury": 390,
+                          "superior_luxury": 490
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2730,
+                          "comfort": 3000,
+                          "luxury": 3300,
+                          "superior_luxury": 4130
+                      },
+                      "2": {
+                          "economy": 1710,
+                          "comfort": 1880,
+                          "luxury": 2060,
+                          "superior_luxury": 2580
+                      },
+                      "3": {
+                          "economy": 1600,
+                          "comfort": 1760,
+                          "luxury": 1940,
+                          "superior_luxury": 2420
+                      },
+                      "4": {
+                          "economy": 1550,
+                          "comfort": 1710,
+                          "luxury": 1880,
+                          "superior_luxury": 2350
+                      },
+                      "5": {
+                          "economy": 1520,
+                          "comfort": 1670,
+                          "luxury": 1840,
+                          "superior_luxury": 2300
+                      },
+                      "6-7": {
+                          "economy": 1470,
+                          "comfort": 1610,
+                          "luxury": 1770,
+                          "superior_luxury": 2220
+                      },
+                      "srs": {
+                          "economy": 270,
+                          "comfort": 350,
+                          "luxury": 420,
+                          "superior_luxury": 540
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 3100,
+                          "comfort": 3410,
+                          "luxury": 3750,
+                          "superior_luxury": 4690
+                      },
+                      "2": {
+                          "economy": 1940,
+                          "comfort": 2130,
+                          "luxury": 2340,
+                          "superior_luxury": 2930
+                      },
+                      "3": {
+                          "economy": 1820,
+                          "comfort": 2000,
+                          "luxury": 2200,
+                          "superior_luxury": 2750
+                      },
+                      "4": {
+                          "economy": 1760,
+                          "comfort": 1940,
+                          "luxury": 2130,
+                          "superior_luxury": 2670
+                      },
+                      "5": {
+                          "economy": 1720,
+                          "comfort": 1900,
+                          "luxury": 2090,
+                          "superior_luxury": 2610
+                      },
+                      "6-7": {
+                          "economy": 1670,
+                          "comfort": 1830,
+                          "luxury": 2020,
+                          "superior_luxury": 2520
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3600,
+                          "comfort": 3960,
+                          "luxury": 4350,
+                          "superior_luxury": 5440
+                      },
+                      "2": {
+                          "economy": 2250,
+                          "comfort": 2470,
+                          "luxury": 2720,
+                          "superior_luxury": 3400
+                      },
+                      "3": {
+                          "economy": 2110,
+                          "comfort": 2320,
+                          "luxury": 2560,
+                          "superior_luxury": 3200
+                      },
+                      "4": {
+                          "economy": 2050,
+                          "comfort": 2250,
+                          "luxury": 2470,
+                          "superior_luxury": 3090
+                      },
+                      "5": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "6-7": {
+                          "economy": 1930,
+                          "comfort": 2130,
+                          "luxury": 2340,
+                          "superior_luxury": 2920
+                      },
+                      "srs": {
+                          "economy": 360,
+                          "comfort": 460,
+                          "luxury": 560,
+                          "superior_luxury": 710
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Voi Safari Lodge",
+              "Ngulia Safari Lodge",
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Naivasha Kongoni Lodge",
+              "Mara Chui Camp"
+          ],
+          "comfort": [
+              "Sentrim Tsavo Camp",
+              "Severin Safari Camp",
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Lake Naivasha Country Club",
+              "Mara Sopa Lodge"
+          ],
+          "luxury": [
+              "Satao Camp",
+              "Sarova Salt Lick Game Lodge",
+              "Amboseli Serena Safari Lodge",
+              "Lake Nakuru Sopa Lodge",
+              "Lake Naivasha Sopa Lodge",
+              "Mara Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Finch Hattons",
+              "Tawi Lodge",
+              "Enashipai Resort & Spa",
+              "Karen Blixen Camp",
+              "Governors Camp"
+          ]
+      }
+  },
+  "9-day-ultimate-coast-to-nairobi-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 3200,
+                          "comfort": 3520,
+                          "luxury": 3870,
+                          "superior_luxury": 4840
+                      },
+                      "2": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "3": {
+                          "economy": 1880,
+                          "comfort": 2070,
+                          "luxury": 2270,
+                          "superior_luxury": 2840
+                      },
+                      "4": {
+                          "economy": 1820,
+                          "comfort": 2000,
+                          "luxury": 2200,
+                          "superior_luxury": 2750
+                      },
+                      "5": {
+                          "economy": 1780,
+                          "comfort": 1960,
+                          "luxury": 2150,
+                          "superior_luxury": 2690
+                      },
+                      "6-7": {
+                          "economy": 1720,
+                          "comfort": 1890,
+                          "luxury": 2080,
+                          "superior_luxury": 2600
+                      },
+                      "srs": {
+                          "economy": 320,
+                          "comfort": 410,
+                          "luxury": 500,
+                          "superior_luxury": 630
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 3520,
+                          "comfort": 3870,
+                          "luxury": 4260,
+                          "superior_luxury": 5320
+                      },
+                      "2": {
+                          "economy": 2200,
+                          "comfort": 2420,
+                          "luxury": 2660,
+                          "superior_luxury": 3330
+                      },
+                      "3": {
+                          "economy": 2070,
+                          "comfort": 2270,
+                          "luxury": 2500,
+                          "superior_luxury": 3130
+                      },
+                      "4": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "5": {
+                          "economy": 1960,
+                          "comfort": 2150,
+                          "luxury": 2370,
+                          "superior_luxury": 2960
+                      },
+                      "6-7": {
+                          "economy": 1890,
+                          "comfort": 2080,
+                          "luxury": 2290,
+                          "superior_luxury": 2860
+                      },
+                      "srs": {
+                          "economy": 350,
+                          "comfort": 450,
+                          "luxury": 540,
+                          "superior_luxury": 690
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 4000,
+                          "comfort": 4400,
+                          "luxury": 4840,
+                          "superior_luxury": 6050
+                      },
+                      "2": {
+                          "economy": 2500,
+                          "comfort": 2750,
+                          "luxury": 3030,
+                          "superior_luxury": 3780
+                      },
+                      "3": {
+                          "economy": 2350,
+                          "comfort": 2590,
+                          "luxury": 2840,
+                          "superior_luxury": 3550
+                      },
+                      "4": {
+                          "economy": 2280,
+                          "comfort": 2500,
+                          "luxury": 2750,
+                          "superior_luxury": 3440
+                      },
+                      "5": {
+                          "economy": 2230,
+                          "comfort": 2450,
+                          "luxury": 2690,
+                          "superior_luxury": 3370
+                      },
+                      "6-7": {
+                          "economy": 2150,
+                          "comfort": 2370,
+                          "luxury": 2600,
+                          "superior_luxury": 3250
+                      },
+                      "srs": {
+                          "economy": 390,
+                          "comfort": 510,
+                          "luxury": 620,
+                          "superior_luxury": 790
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 4640,
+                          "comfort": 5100,
+                          "luxury": 5610,
+                          "superior_luxury": 7020
+                      },
+                      "2": {
+                          "economy": 2900,
+                          "comfort": 3190,
+                          "luxury": 3510,
+                          "superior_luxury": 4390
+                      },
+                      "3": {
+                          "economy": 2730,
+                          "comfort": 3000,
+                          "luxury": 3300,
+                          "superior_luxury": 4120
+                      },
+                      "4": {
+                          "economy": 2640,
+                          "comfort": 2900,
+                          "luxury": 3190,
+                          "superior_luxury": 3990
+                      },
+                      "5": {
+                          "economy": 2580,
+                          "comfort": 2840,
+                          "luxury": 3120,
+                          "superior_luxury": 3900
+                      },
+                      "6-7": {
+                          "economy": 2490,
+                          "comfort": 2740,
+                          "luxury": 3020,
+                          "superior_luxury": 3770
+                      },
+                      "srs": {
+                          "economy": 460,
+                          "comfort": 590,
+                          "luxury": 720,
+                          "superior_luxury": 910
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Voi Safari Lodge",
+              "Ngulia Safari Lodge",
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Naivasha Kongoni Lodge",
+              "Mara Chui Camp"
+          ],
+          "comfort": [
+              "Sentrim Tsavo Camp",
+              "Severin Safari Camp",
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Lake Naivasha Country Club",
+              "Mara Sopa Lodge"
+          ],
+          "luxury": [
+              "Satao Camp",
+              "Sarova Salt Lick Game Lodge",
+              "Amboseli Serena Safari Lodge",
+              "Lake Nakuru Sopa Lodge",
+              "Lake Naivasha Sopa Lodge",
+              "Mara Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Finch Hattons",
+              "Tawi Lodge",
+              "Enashipai Resort & Spa",
+              "Karen Blixen Camp",
+              "Governors Camp"
+          ]
+      }
+  },
+  "4-day-masai-mara-group-safari-mombasa": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "2": {
+                          "economy": 640,
+                          "comfort": 700,
+                          "luxury": 770,
+                          "superior_luxury": 970
+                      },
+                      "3": {
+                          "economy": 600,
+                          "comfort": 660,
+                          "luxury": 730,
+                          "superior_luxury": 910
+                      },
+                      "4": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 700,
+                          "superior_luxury": 880
+                      },
+                      "5": {
+                          "economy": 570,
+                          "comfort": 630,
+                          "luxury": 690,
+                          "superior_luxury": 860
+                      },
+                      "6-7": {
+                          "economy": 550,
+                          "comfort": 610,
+                          "luxury": 670,
+                          "superior_luxury": 830
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "2": {
+                          "economy": 700,
+                          "comfort": 770,
+                          "luxury": 850,
+                          "superior_luxury": 1060
+                      },
+                      "3": {
+                          "economy": 660,
+                          "comfort": 730,
+                          "luxury": 800,
+                          "superior_luxury": 1000
+                      },
+                      "4": {
+                          "economy": 640,
+                          "comfort": 700,
+                          "luxury": 780,
+                          "superior_luxury": 970
+                      },
+                      "5": {
+                          "economy": 630,
+                          "comfort": 690,
+                          "luxury": 760,
+                          "superior_luxury": 950
+                      },
+                      "6-7": {
+                          "economy": 610,
+                          "comfort": 670,
+                          "luxury": 730,
+                          "superior_luxury": 920
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1280,
+                          "comfort": 1410,
+                          "luxury": 1550,
+                          "superior_luxury": 1940
+                      },
+                      "2": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "3": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1140
+                      },
+                      "4": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "5": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 860,
+                          "superior_luxury": 1080
+                      },
+                      "6-7": {
+                          "economy": 690,
+                          "comfort": 760,
+                          "luxury": 830,
+                          "superior_luxury": 1040
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1480,
+                          "comfort": 1630,
+                          "luxury": 1800,
+                          "superior_luxury": 2250
+                      },
+                      "2": {
+                          "economy": 930,
+                          "comfort": 1020,
+                          "luxury": 1120,
+                          "superior_luxury": 1400
+                      },
+                      "3": {
+                          "economy": 870,
+                          "comfort": 960,
+                          "luxury": 1060,
+                          "superior_luxury": 1320
+                      },
+                      "4": {
+                          "economy": 840,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "5": {
+                          "economy": 830,
+                          "comfort": 910,
+                          "luxury": 1000,
+                          "superior_luxury": 1250
+                      },
+                      "6-7": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Mara Chui Camp",
+              "Jambo Mara Safari Lodge",
+              "Olorien Camp"
+          ],
+          "comfort": [
+              "Mara Sopa Lodge",
+              "Sentrim Mara Camp",
+              "Basecamp Masai Mara"
+          ],
+          "luxury": [
+              "Mara Serena Safari Lodge",
+              "Keekorok Lodge",
+              "Fig Tree Camp"
+          ],
+          "superior_luxury": [
+              "Karen Blixen Camp",
+              "Governors Camp",
+              "Fairmont Mara Safari Club"
+          ]
+      }
+  },
+  "2-day-ngorongoro-crater-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "2": {
+                          "economy": 620,
+                          "comfort": 680,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "3": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 710,
+                          "superior_luxury": 880
+                      },
+                      "4": {
+                          "economy": 560,
+                          "comfort": 620,
+                          "luxury": 680,
+                          "superior_luxury": 850
+                      },
+                      "5": {
+                          "economy": 550,
+                          "comfort": 610,
+                          "luxury": 670,
+                          "superior_luxury": 830
+                      },
+                      "6-7": {
+                          "economy": 530,
+                          "comfort": 590,
+                          "luxury": 650,
+                          "superior_luxury": 810
+                      },
+                      "srs": {
+                          "economy": 70,
+                          "comfort": 90,
+                          "luxury": 110,
+                          "superior_luxury": 140
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "2": {
+                          "economy": 680,
+                          "comfort": 750,
+                          "luxury": 830,
+                          "superior_luxury": 1030
+                      },
+                      "3": {
+                          "economy": 640,
+                          "comfort": 710,
+                          "luxury": 780,
+                          "superior_luxury": 970
+                      },
+                      "4": {
+                          "economy": 620,
+                          "comfort": 680,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "5": {
+                          "economy": 610,
+                          "comfort": 670,
+                          "luxury": 730,
+                          "superior_luxury": 920
+                      },
+                      "6-7": {
+                          "economy": 590,
+                          "comfort": 650,
+                          "luxury": 710,
+                          "superior_luxury": 890
+                      },
+                      "srs": {
+                          "economy": 80,
+                          "comfort": 100,
+                          "luxury": 120,
+                          "superior_luxury": 150
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1240,
+                          "comfort": 1360,
+                          "luxury": 1500,
+                          "superior_luxury": 1880
+                      },
+                      "2": {
+                          "economy": 780,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "3": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "4": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 850,
+                          "superior_luxury": 1070
+                      },
+                      "5": {
+                          "economy": 690,
+                          "comfort": 760,
+                          "luxury": 830,
+                          "superior_luxury": 1040
+                      },
+                      "6-7": {
+                          "economy": 670,
+                          "comfort": 730,
+                          "luxury": 810,
+                          "superior_luxury": 1010
+                      },
+                      "srs": {
+                          "economy": 90,
+                          "comfort": 110,
+                          "luxury": 140,
+                          "superior_luxury": 180
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2180
+                      },
+                      "2": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "3": {
+                          "economy": 850,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "4": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "5": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "6-7": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "srs": {
+                          "economy": 100,
+                          "comfort": 130,
+                          "luxury": 160,
+                          "superior_luxury": 200
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Rhino Lodge",
+              "Ngorongoro Wildlife Lodge",
+              "Hhando Coffee Lodge"
+          ],
+          "comfort": [
+              "Ngorongoro Sopa Lodge",
+              "Ngorongoro Farm House",
+              "Kitela Lodge"
+          ],
+          "luxury": [
+              "Ngorongoro Serena Safari Lodge",
+              "Lemala Ngorongoro Tented Camp",
+              "The Manor at Ngorongoro"
+          ],
+          "superior_luxury": [
+              "&Beyond Ngorongoro Crater Lodge",
+              "The Highlands Ngorongoro",
+              "Entamanu Ngorongoro"
+          ]
+      }
+  },
+  "3-day-serengeti-fly-in-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2080,
+                          "comfort": 2290,
+                          "luxury": 2520,
+                          "superior_luxury": 3150
+                      },
+                      "2": {
+                          "economy": 1300,
+                          "comfort": 1430,
+                          "luxury": 1570,
+                          "superior_luxury": 1970
+                      },
+                      "3": {
+                          "economy": 1220,
+                          "comfort": 1340,
+                          "luxury": 1480,
+                          "superior_luxury": 1850
+                      },
+                      "4": {
+                          "economy": 1180,
+                          "comfort": 1300,
+                          "luxury": 1430,
+                          "superior_luxury": 1790
+                      },
+                      "5": {
+                          "economy": 1160,
+                          "comfort": 1270,
+                          "luxury": 1400,
+                          "superior_luxury": 1750
+                      },
+                      "6-7": {
+                          "economy": 1120,
+                          "comfort": 1230,
+                          "luxury": 1350,
+                          "superior_luxury": 1690
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2290,
+                          "comfort": 2520,
+                          "luxury": 2770,
+                          "superior_luxury": 3460
+                      },
+                      "2": {
+                          "economy": 1430,
+                          "comfort": 1570,
+                          "luxury": 1730,
+                          "superior_luxury": 2160
+                      },
+                      "3": {
+                          "economy": 1340,
+                          "comfort": 1480,
+                          "luxury": 1630,
+                          "superior_luxury": 2030
+                      },
+                      "4": {
+                          "economy": 1300,
+                          "comfort": 1430,
+                          "luxury": 1570,
+                          "superior_luxury": 1970
+                      },
+                      "5": {
+                          "economy": 1270,
+                          "comfort": 1400,
+                          "luxury": 1540,
+                          "superior_luxury": 1920
+                      },
+                      "6-7": {
+                          "economy": 1230,
+                          "comfort": 1350,
+                          "luxury": 1490,
+                          "superior_luxury": 1860
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2600,
+                          "comfort": 2860,
+                          "luxury": 3150,
+                          "superior_luxury": 3930
+                      },
+                      "2": {
+                          "economy": 1630,
+                          "comfort": 1790,
+                          "luxury": 1970,
+                          "superior_luxury": 2460
+                      },
+                      "3": {
+                          "economy": 1530,
+                          "comfort": 1680,
+                          "luxury": 1850,
+                          "superior_luxury": 2310
+                      },
+                      "4": {
+                          "economy": 1480,
+                          "comfort": 1630,
+                          "luxury": 1790,
+                          "superior_luxury": 2240
+                      },
+                      "5": {
+                          "economy": 1450,
+                          "comfort": 1590,
+                          "luxury": 1750,
+                          "superior_luxury": 2190
+                      },
+                      "6-7": {
+                          "economy": 1400,
+                          "comfort": 1540,
+                          "luxury": 1690,
+                          "superior_luxury": 2110
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3020,
+                          "comfort": 3320,
+                          "luxury": 3650,
+                          "superior_luxury": 4560
+                      },
+                      "2": {
+                          "economy": 1890,
+                          "comfort": 2070,
+                          "luxury": 2280,
+                          "superior_luxury": 2850
+                      },
+                      "3": {
+                          "economy": 1770,
+                          "comfort": 1950,
+                          "luxury": 2140,
+                          "superior_luxury": 2680
+                      },
+                      "4": {
+                          "economy": 1720,
+                          "comfort": 1890,
+                          "luxury": 2080,
+                          "superior_luxury": 2590
+                      },
+                      "5": {
+                          "economy": 1680,
+                          "comfort": 1850,
+                          "luxury": 2030,
+                          "superior_luxury": 2540
+                      },
+                      "6-7": {
+                          "economy": 1620,
+                          "comfort": 1780,
+                          "luxury": 1960,
+                          "superior_luxury": 2450
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Seronera Wildlife Lodge",
+              "Ikoma Wild Camp",
+              "ThornTree Camp"
+          ],
+          "comfort": [
+              "Serengeti Sopa Lodge",
+              "Serengeti Safari Camp",
+              "Kati Kati Tented Camp"
+          ],
+          "luxury": [
+              "Serengeti Serena Safari Lodge",
+              "Four Seasons Safari Lodge Serengeti",
+              "Lemala Nanyukie"
+          ],
+          "superior_luxury": [
+              "Singita Sabora Tented Camp",
+              "&Beyond Serengeti Under Canvas",
+              "One Nature Nyaruswiga Serengeti"
+          ]
+      }
+  },
+  "4-day-tarangire-serengeti-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1840,
+                          "comfort": 2020,
+                          "luxury": 2230,
+                          "superior_luxury": 2780
+                      },
+                      "2": {
+                          "economy": 1150,
+                          "comfort": 1270,
+                          "luxury": 1390,
+                          "superior_luxury": 1740
+                      },
+                      "3": {
+                          "economy": 1080,
+                          "comfort": 1190,
+                          "luxury": 1310,
+                          "superior_luxury": 1640
+                      },
+                      "4": {
+                          "economy": 1050,
+                          "comfort": 1150,
+                          "luxury": 1270,
+                          "superior_luxury": 1580
+                      },
+                      "5": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "6-7": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2020,
+                          "comfort": 2230,
+                          "luxury": 2450,
+                          "superior_luxury": 3060
+                      },
+                      "2": {
+                          "economy": 1270,
+                          "comfort": 1390,
+                          "luxury": 1530,
+                          "superior_luxury": 1910
+                      },
+                      "3": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1440,
+                          "superior_luxury": 1800
+                      },
+                      "4": {
+                          "economy": 1150,
+                          "comfort": 1270,
+                          "luxury": 1390,
+                          "superior_luxury": 1740
+                      },
+                      "5": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "6-7": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2300,
+                          "comfort": 2530,
+                          "luxury": 2780,
+                          "superior_luxury": 3480
+                      },
+                      "2": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2170
+                      },
+                      "3": {
+                          "economy": 1350,
+                          "comfort": 1490,
+                          "luxury": 1640,
+                          "superior_luxury": 2040
+                      },
+                      "4": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1980
+                      },
+                      "5": {
+                          "economy": 1280,
+                          "comfort": 1410,
+                          "luxury": 1550,
+                          "superior_luxury": 1940
+                      },
+                      "6-7": {
+                          "economy": 1240,
+                          "comfort": 1360,
+                          "luxury": 1500,
+                          "superior_luxury": 1870
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2670,
+                          "comfort": 2930,
+                          "luxury": 3230,
+                          "superior_luxury": 4040
+                      },
+                      "2": {
+                          "economy": 1670,
+                          "comfort": 1830,
+                          "luxury": 2020,
+                          "superior_luxury": 2520
+                      },
+                      "3": {
+                          "economy": 1570,
+                          "comfort": 1720,
+                          "luxury": 1900,
+                          "superior_luxury": 2370
+                      },
+                      "4": {
+                          "economy": 1520,
+                          "comfort": 1670,
+                          "luxury": 1840,
+                          "superior_luxury": 2300
+                      },
+                      "5": {
+                          "economy": 1480,
+                          "comfort": 1630,
+                          "luxury": 1800,
+                          "superior_luxury": 2240
+                      },
+                      "6-7": {
+                          "economy": 1430,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2170
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "Singita Sabora Tented Camp",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  },
+  "5-day-serengeti-migration-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2510,
+                          "comfort": 2760,
+                          "luxury": 3040,
+                          "superior_luxury": 3800
+                      },
+                      "2": {
+                          "economy": 1570,
+                          "comfort": 1730,
+                          "luxury": 1900,
+                          "superior_luxury": 2370
+                      },
+                      "3": {
+                          "economy": 1480,
+                          "comfort": 1620,
+                          "luxury": 1790,
+                          "superior_luxury": 2230
+                      },
+                      "4": {
+                          "economy": 1430,
+                          "comfort": 1570,
+                          "luxury": 1730,
+                          "superior_luxury": 2160
+                      },
+                      "5": {
+                          "economy": 1400,
+                          "comfort": 1540,
+                          "luxury": 1690,
+                          "superior_luxury": 2110
+                      },
+                      "6-7": {
+                          "economy": 1350,
+                          "comfort": 1490,
+                          "luxury": 1630,
+                          "superior_luxury": 2040
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2760,
+                          "comfort": 3040,
+                          "luxury": 3340,
+                          "superior_luxury": 4180
+                      },
+                      "2": {
+                          "economy": 1730,
+                          "comfort": 1900,
+                          "luxury": 2090,
+                          "superior_luxury": 2610
+                      },
+                      "3": {
+                          "economy": 1620,
+                          "comfort": 1790,
+                          "luxury": 1960,
+                          "superior_luxury": 2460
+                      },
+                      "4": {
+                          "economy": 1570,
+                          "comfort": 1730,
+                          "luxury": 1900,
+                          "superior_luxury": 2380
+                      },
+                      "5": {
+                          "economy": 1540,
+                          "comfort": 1690,
+                          "luxury": 1860,
+                          "superior_luxury": 2320
+                      },
+                      "6-7": {
+                          "economy": 1490,
+                          "comfort": 1630,
+                          "luxury": 1800,
+                          "superior_luxury": 2250
+                      },
+                      "srs": {
+                          "economy": 190,
+                          "comfort": 250,
+                          "luxury": 300,
+                          "superior_luxury": 390
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 3140,
+                          "comfort": 3450,
+                          "luxury": 3800,
+                          "superior_luxury": 4750
+                      },
+                      "2": {
+                          "economy": 1960,
+                          "comfort": 2160,
+                          "luxury": 2370,
+                          "superior_luxury": 2970
+                      },
+                      "3": {
+                          "economy": 1840,
+                          "comfort": 2030,
+                          "luxury": 2230,
+                          "superior_luxury": 2790
+                      },
+                      "4": {
+                          "economy": 1790,
+                          "comfort": 1960,
+                          "luxury": 2160,
+                          "superior_luxury": 2700
+                      },
+                      "5": {
+                          "economy": 1750,
+                          "comfort": 1920,
+                          "luxury": 2110,
+                          "superior_luxury": 2640
+                      },
+                      "6-7": {
+                          "economy": 1690,
+                          "comfort": 1860,
+                          "luxury": 2040,
+                          "superior_luxury": 2550
+                      },
+                      "srs": {
+                          "economy": 220,
+                          "comfort": 280,
+                          "luxury": 340,
+                          "superior_luxury": 440
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3640,
+                          "comfort": 4010,
+                          "luxury": 4410,
+                          "superior_luxury": 5510
+                      },
+                      "2": {
+                          "economy": 2280,
+                          "comfort": 2500,
+                          "luxury": 2750,
+                          "superior_luxury": 3440
+                      },
+                      "3": {
+                          "economy": 2140,
+                          "comfort": 2350,
+                          "luxury": 2590,
+                          "superior_luxury": 3240
+                      },
+                      "4": {
+                          "economy": 2070,
+                          "comfort": 2280,
+                          "luxury": 2510,
+                          "superior_luxury": 3130
+                      },
+                      "5": {
+                          "economy": 2030,
+                          "comfort": 2230,
+                          "luxury": 2450,
+                          "superior_luxury": 3060
+                      },
+                      "6-7": {
+                          "economy": 1960,
+                          "comfort": 2150,
+                          "luxury": 2370,
+                          "superior_luxury": 2960
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 330,
+                          "luxury": 400,
+                          "superior_luxury": 510
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "Singita Sabora Tented Camp",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  },
+  "6-day-tanzania-luxury-lodge-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 3280,
+                          "comfort": 3610,
+                          "luxury": 3970,
+                          "superior_luxury": 4960
+                      },
+                      "2": {
+                          "economy": 2050,
+                          "comfort": 2260,
+                          "luxury": 2480,
+                          "superior_luxury": 3100
+                      },
+                      "3": {
+                          "economy": 1930,
+                          "comfort": 2120,
+                          "luxury": 2330,
+                          "superior_luxury": 2910
+                      },
+                      "4": {
+                          "economy": 1870,
+                          "comfort": 2050,
+                          "luxury": 2260,
+                          "superior_luxury": 2820
+                      },
+                      "5": {
+                          "economy": 1820,
+                          "comfort": 2010,
+                          "luxury": 2210,
+                          "superior_luxury": 2760
+                      },
+                      "6-7": {
+                          "economy": 1760,
+                          "comfort": 1940,
+                          "luxury": 2130,
+                          "superior_luxury": 2670
+                      },
+                      "srs": {
+                          "economy": 210,
+                          "comfort": 270,
+                          "luxury": 330,
+                          "superior_luxury": 420
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 3610,
+                          "comfort": 3970,
+                          "luxury": 4370,
+                          "superior_luxury": 5460
+                      },
+                      "2": {
+                          "economy": 2260,
+                          "comfort": 2480,
+                          "luxury": 2730,
+                          "superior_luxury": 3410
+                      },
+                      "3": {
+                          "economy": 2120,
+                          "comfort": 2330,
+                          "luxury": 2560,
+                          "superior_luxury": 3210
+                      },
+                      "4": {
+                          "economy": 2050,
+                          "comfort": 2260,
+                          "luxury": 2480,
+                          "superior_luxury": 3100
+                      },
+                      "5": {
+                          "economy": 2010,
+                          "comfort": 2210,
+                          "luxury": 2430,
+                          "superior_luxury": 3040
+                      },
+                      "6-7": {
+                          "economy": 1940,
+                          "comfort": 2130,
+                          "luxury": 2350,
+                          "superior_luxury": 2930
+                      },
+                      "srs": {
+                          "economy": 230,
+                          "comfort": 300,
+                          "luxury": 360,
+                          "superior_luxury": 460
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 4100,
+                          "comfort": 4510,
+                          "luxury": 4960,
+                          "superior_luxury": 6200
+                      },
+                      "2": {
+                          "economy": 2560,
+                          "comfort": 2820,
+                          "luxury": 3100,
+                          "superior_luxury": 3880
+                      },
+                      "3": {
+                          "economy": 2410,
+                          "comfort": 2650,
+                          "luxury": 2910,
+                          "superior_luxury": 3640
+                      },
+                      "4": {
+                          "economy": 2330,
+                          "comfort": 2570,
+                          "luxury": 2820,
+                          "superior_luxury": 3530
+                      },
+                      "5": {
+                          "economy": 2280,
+                          "comfort": 2510,
+                          "luxury": 2760,
+                          "superior_luxury": 3450
+                      },
+                      "6-7": {
+                          "economy": 2200,
+                          "comfort": 2420,
+                          "luxury": 2670,
+                          "superior_luxury": 3330
+                      },
+                      "srs": {
+                          "economy": 260,
+                          "comfort": 340,
+                          "luxury": 410,
+                          "superior_luxury": 530
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 4760,
+                          "comfort": 5230,
+                          "luxury": 5750,
+                          "superior_luxury": 7190
+                      },
+                      "2": {
+                          "economy": 2970,
+                          "comfort": 3270,
+                          "luxury": 3600,
+                          "superior_luxury": 4500
+                      },
+                      "3": {
+                          "economy": 2790,
+                          "comfort": 3070,
+                          "luxury": 3380,
+                          "superior_luxury": 4230
+                      },
+                      "4": {
+                          "economy": 2700,
+                          "comfort": 2980,
+                          "luxury": 3270,
+                          "superior_luxury": 4090
+                      },
+                      "5": {
+                          "economy": 2650,
+                          "comfort": 2910,
+                          "luxury": 3200,
+                          "superior_luxury": 4000
+                      },
+                      "6-7": {
+                          "economy": 2560,
+                          "comfort": 2810,
+                          "luxury": 3090,
+                          "superior_luxury": 3870
+                      },
+                      "srs": {
+                          "economy": 300,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Lake Manyara Wildlife Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Lake Manyara Serena Safari Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Gibb's Farm"
+          ]
+      }
+  },
+  "8-day-tanzania-photography-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 4160,
+                          "comfort": 4580,
+                          "luxury": 5030,
+                          "superior_luxury": 6290
+                      },
+                      "2": {
+                          "economy": 2600,
+                          "comfort": 2860,
+                          "luxury": 3150,
+                          "superior_luxury": 3930
+                      },
+                      "3": {
+                          "economy": 2440,
+                          "comfort": 2690,
+                          "luxury": 2960,
+                          "superior_luxury": 3700
+                      },
+                      "4": {
+                          "economy": 2370,
+                          "comfort": 2600,
+                          "luxury": 2860,
+                          "superior_luxury": 3580
+                      },
+                      "5": {
+                          "economy": 2310,
+                          "comfort": 2550,
+                          "luxury": 2800,
+                          "superior_luxury": 3500
+                      },
+                      "6-7": {
+                          "economy": 2240,
+                          "comfort": 2460,
+                          "luxury": 2710,
+                          "superior_luxury": 3380
+                      },
+                      "srs": {
+                          "economy": 280,
+                          "comfort": 360,
+                          "luxury": 440,
+                          "superior_luxury": 560
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 4580,
+                          "comfort": 5030,
+                          "luxury": 5540,
+                          "superior_luxury": 6920
+                      },
+                      "2": {
+                          "economy": 2860,
+                          "comfort": 3150,
+                          "luxury": 3460,
+                          "superior_luxury": 4330
+                      },
+                      "3": {
+                          "economy": 2690,
+                          "comfort": 2960,
+                          "luxury": 3250,
+                          "superior_luxury": 4070
+                      },
+                      "4": {
+                          "economy": 2600,
+                          "comfort": 2860,
+                          "luxury": 3150,
+                          "superior_luxury": 3940
+                      },
+                      "5": {
+                          "economy": 2550,
+                          "comfort": 2800,
+                          "luxury": 3080,
+                          "superior_luxury": 3850
+                      },
+                      "6-7": {
+                          "economy": 2460,
+                          "comfort": 2710,
+                          "luxury": 2980,
+                          "superior_luxury": 3720
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 400,
+                          "luxury": 480,
+                          "superior_luxury": 620
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 5200,
+                          "comfort": 5720,
+                          "luxury": 6290,
+                          "superior_luxury": 7870
+                      },
+                      "2": {
+                          "economy": 3250,
+                          "comfort": 3580,
+                          "luxury": 3930,
+                          "superior_luxury": 4920
+                      },
+                      "3": {
+                          "economy": 3060,
+                          "comfort": 3360,
+                          "luxury": 3700,
+                          "superior_luxury": 4620
+                      },
+                      "4": {
+                          "economy": 2960,
+                          "comfort": 3250,
+                          "luxury": 3580,
+                          "superior_luxury": 4470
+                      },
+                      "5": {
+                          "economy": 2890,
+                          "comfort": 3180,
+                          "luxury": 3500,
+                          "superior_luxury": 4370
+                      },
+                      "6-7": {
+                          "economy": 2800,
+                          "comfort": 3070,
+                          "luxury": 3380,
+                          "superior_luxury": 4230
+                      },
+                      "srs": {
+                          "economy": 350,
+                          "comfort": 450,
+                          "luxury": 550,
+                          "superior_luxury": 700
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 6030,
+                          "comfort": 6640,
+                          "luxury": 7300,
+                          "superior_luxury": 9120
+                      },
+                      "2": {
+                          "economy": 3770,
+                          "comfort": 4150,
+                          "luxury": 4560,
+                          "superior_luxury": 5700
+                      },
+                      "3": {
+                          "economy": 3540,
+                          "comfort": 3900,
+                          "luxury": 4290,
+                          "superior_luxury": 5360
+                      },
+                      "4": {
+                          "economy": 3430,
+                          "comfort": 3770,
+                          "luxury": 4150,
+                          "superior_luxury": 5190
+                      },
+                      "5": {
+                          "economy": 3360,
+                          "comfort": 3690,
+                          "luxury": 4060,
+                          "superior_luxury": 5070
+                      },
+                      "6-7": {
+                          "economy": 3240,
+                          "comfort": 3570,
+                          "luxury": 3920,
+                          "superior_luxury": 4900
+                      },
+                      "srs": {
+                          "economy": 410,
+                          "comfort": 520,
+                          "luxury": 640,
+                          "superior_luxury": 810
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Lake Manyara Wildlife Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Lake Manyara Serena Safari Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Gibb's Farm"
+          ]
+      }
+  },
+  "10-day-tanzania-safari-and-zanzibar-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 3520,
+                          "comfort": 3870,
+                          "luxury": 4260,
+                          "superior_luxury": 5320
+                      },
+                      "2": {
+                          "economy": 2200,
+                          "comfort": 2420,
+                          "luxury": 2660,
+                          "superior_luxury": 3330
+                      },
+                      "3": {
+                          "economy": 2070,
+                          "comfort": 2270,
+                          "luxury": 2500,
+                          "superior_luxury": 3130
+                      },
+                      "4": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "5": {
+                          "economy": 1960,
+                          "comfort": 2150,
+                          "luxury": 2370,
+                          "superior_luxury": 2960
+                      },
+                      "6-7": {
+                          "economy": 1890,
+                          "comfort": 2080,
+                          "luxury": 2290,
+                          "superior_luxury": 2860
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 320,
+                          "luxury": 390,
+                          "superior_luxury": 490
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 3870,
+                          "comfort": 4260,
+                          "luxury": 4690,
+                          "superior_luxury": 5860
+                      },
+                      "2": {
+                          "economy": 2420,
+                          "comfort": 2660,
+                          "luxury": 2930,
+                          "superior_luxury": 3660
+                      },
+                      "3": {
+                          "economy": 2270,
+                          "comfort": 2500,
+                          "luxury": 2750,
+                          "superior_luxury": 3440
+                      },
+                      "4": {
+                          "economy": 2200,
+                          "comfort": 2420,
+                          "luxury": 2660,
+                          "superior_luxury": 3330
+                      },
+                      "5": {
+                          "economy": 2150,
+                          "comfort": 2370,
+                          "luxury": 2610,
+                          "superior_luxury": 3260
+                      },
+                      "6-7": {
+                          "economy": 2080,
+                          "comfort": 2290,
+                          "luxury": 2520,
+                          "superior_luxury": 3150
+                      },
+                      "srs": {
+                          "economy": 270,
+                          "comfort": 350,
+                          "luxury": 420,
+                          "superior_luxury": 540
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 4400,
+                          "comfort": 4840,
+                          "luxury": 5320,
+                          "superior_luxury": 6660
+                      },
+                      "2": {
+                          "economy": 2750,
+                          "comfort": 3030,
+                          "luxury": 3330,
+                          "superior_luxury": 4160
+                      },
+                      "3": {
+                          "economy": 2590,
+                          "comfort": 2840,
+                          "luxury": 3130,
+                          "superior_luxury": 3910
+                      },
+                      "4": {
+                          "economy": 2500,
+                          "comfort": 2750,
+                          "luxury": 3030,
+                          "superior_luxury": 3790
+                      },
+                      "5": {
+                          "economy": 2450,
+                          "comfort": 2690,
+                          "luxury": 2960,
+                          "superior_luxury": 3700
+                      },
+                      "6-7": {
+                          "economy": 2370,
+                          "comfort": 2600,
+                          "luxury": 2860,
+                          "superior_luxury": 3580
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 5100,
+                          "comfort": 5610,
+                          "luxury": 6180,
+                          "superior_luxury": 7720
+                      },
+                      "2": {
+                          "economy": 3190,
+                          "comfort": 3510,
+                          "luxury": 3860,
+                          "superior_luxury": 4820
+                      },
+                      "3": {
+                          "economy": 3000,
+                          "comfort": 3300,
+                          "luxury": 3630,
+                          "superior_luxury": 4540
+                      },
+                      "4": {
+                          "economy": 2900,
+                          "comfort": 3190,
+                          "luxury": 3510,
+                          "superior_luxury": 4390
+                      },
+                      "5": {
+                          "economy": 2840,
+                          "comfort": 3120,
+                          "luxury": 3440,
+                          "superior_luxury": 4290
+                      },
+                      "6-7": {
+                          "economy": 2740,
+                          "comfort": 3020,
+                          "luxury": 3320,
+                          "superior_luxury": 4150
+                      },
+                      "srs": {
+                          "economy": 360,
+                          "comfort": 460,
+                          "luxury": 560,
+                          "superior_luxury": 710
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge",
+              "Amaan Beach Bungalows"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge",
+              "DoubleTree Resort by Hilton Zanzibar"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Sea Cliff Resort & Spa"
+          ],
+          "superior_luxury": [
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "The Residence Zanzibar",
+              "Park Hyatt Zanzibar"
+          ]
+      }
+  },
+  "12-day-tanzania-grand-expedition": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 5600,
+                          "comfort": 6160,
+                          "luxury": 6780,
+                          "superior_luxury": 8470
+                      },
+                      "2": {
+                          "economy": 3500,
+                          "comfort": 3850,
+                          "luxury": 4240,
+                          "superior_luxury": 5290
+                      },
+                      "3": {
+                          "economy": 3290,
+                          "comfort": 3620,
+                          "luxury": 3980,
+                          "superior_luxury": 4980
+                      },
+                      "4": {
+                          "economy": 3190,
+                          "comfort": 3500,
+                          "luxury": 3850,
+                          "superior_luxury": 4820
+                      },
+                      "5": {
+                          "economy": 3120,
+                          "comfort": 3430,
+                          "luxury": 3770,
+                          "superior_luxury": 4710
+                      },
+                      "6-7": {
+                          "economy": 3010,
+                          "comfort": 3310,
+                          "luxury": 3640,
+                          "superior_luxury": 4550
+                      },
+                      "srs": {
+                          "economy": 390,
+                          "comfort": 500,
+                          "luxury": 610,
+                          "superior_luxury": 770
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 6160,
+                          "comfort": 6780,
+                          "luxury": 7450,
+                          "superior_luxury": 9320
+                      },
+                      "2": {
+                          "economy": 3850,
+                          "comfort": 4240,
+                          "luxury": 4660,
+                          "superior_luxury": 5820
+                      },
+                      "3": {
+                          "economy": 3620,
+                          "comfort": 3980,
+                          "luxury": 4380,
+                          "superior_luxury": 5470
+                      },
+                      "4": {
+                          "economy": 3500,
+                          "comfort": 3850,
+                          "luxury": 4240,
+                          "superior_luxury": 5300
+                      },
+                      "5": {
+                          "economy": 3430,
+                          "comfort": 3770,
+                          "luxury": 4150,
+                          "superior_luxury": 5180
+                      },
+                      "6-7": {
+                          "economy": 3310,
+                          "comfort": 3640,
+                          "luxury": 4010,
+                          "superior_luxury": 5010
+                      },
+                      "srs": {
+                          "economy": 420,
+                          "comfort": 540,
+                          "luxury": 670,
+                          "superior_luxury": 850
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 7000,
+                          "comfort": 7700,
+                          "luxury": 8470,
+                          "superior_luxury": 10590
+                      },
+                      "2": {
+                          "economy": 4380,
+                          "comfort": 4810,
+                          "luxury": 5290,
+                          "superior_luxury": 6620
+                      },
+                      "3": {
+                          "economy": 4110,
+                          "comfort": 4520,
+                          "luxury": 4980,
+                          "superior_luxury": 6220
+                      },
+                      "4": {
+                          "economy": 3980,
+                          "comfort": 4380,
+                          "luxury": 4820,
+                          "superior_luxury": 6020
+                      },
+                      "5": {
+                          "economy": 3890,
+                          "comfort": 4280,
+                          "luxury": 4710,
+                          "superior_luxury": 5890
+                      },
+                      "6-7": {
+                          "economy": 3760,
+                          "comfort": 4140,
+                          "luxury": 4550,
+                          "superior_luxury": 5690
+                      },
+                      "srs": {
+                          "economy": 480,
+                          "comfort": 620,
+                          "luxury": 760,
+                          "superior_luxury": 960
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 8120,
+                          "comfort": 8930,
+                          "luxury": 9830,
+                          "superior_luxury": 12280
+                      },
+                      "2": {
+                          "economy": 5080,
+                          "comfort": 5580,
+                          "luxury": 6140,
+                          "superior_luxury": 7680
+                      },
+                      "3": {
+                          "economy": 4770,
+                          "comfort": 5250,
+                          "luxury": 5770,
+                          "superior_luxury": 7220
+                      },
+                      "4": {
+                          "economy": 4620,
+                          "comfort": 5080,
+                          "luxury": 5590,
+                          "superior_luxury": 6990
+                      },
+                      "5": {
+                          "economy": 4520,
+                          "comfort": 4970,
+                          "luxury": 5470,
+                          "superior_luxury": 6830
+                      },
+                      "6-7": {
+                          "economy": 4360,
+                          "comfort": 4800,
+                          "luxury": 5280,
+                          "superior_luxury": 6600
+                      },
+                      "srs": {
+                          "economy": 560,
+                          "comfort": 720,
+                          "luxury": 880,
+                          "superior_luxury": 1120
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge",
+              "Amaan Beach Bungalows"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge",
+              "DoubleTree Resort by Hilton Zanzibar"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Sea Cliff Resort & Spa"
+          ],
+          "superior_luxury": [
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "The Residence Zanzibar",
+              "Park Hyatt Zanzibar"
+          ]
+      }
+  },
+  "14-day-ultimate-tanzania-safari-and-zanzibar": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 6000,
+                          "comfort": 6600,
+                          "luxury": 7260,
+                          "superior_luxury": 9080
+                      },
+                      "2": {
+                          "economy": 3750,
+                          "comfort": 4130,
+                          "luxury": 4540,
+                          "superior_luxury": 5670
+                      },
+                      "3": {
+                          "economy": 3530,
+                          "comfort": 3880,
+                          "luxury": 4270,
+                          "superior_luxury": 5330
+                      },
+                      "4": {
+                          "economy": 3410,
+                          "comfort": 3750,
+                          "luxury": 4130,
+                          "superior_luxury": 5160
+                      },
+                      "5": {
+                          "economy": 3340,
+                          "comfort": 3670,
+                          "luxury": 4040,
+                          "superior_luxury": 5050
+                      },
+                      "6-7": {
+                          "economy": 3230,
+                          "comfort": 3550,
+                          "luxury": 3900,
+                          "superior_luxury": 4880
+                      },
+                      "srs": {
+                          "economy": 390,
+                          "comfort": 500,
+                          "luxury": 610,
+                          "superior_luxury": 770
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 6600,
+                          "comfort": 7260,
+                          "luxury": 7990,
+                          "superior_luxury": 9980
+                      },
+                      "2": {
+                          "economy": 4130,
+                          "comfort": 4540,
+                          "luxury": 4990,
+                          "superior_luxury": 6240
+                      },
+                      "3": {
+                          "economy": 3880,
+                          "comfort": 4270,
+                          "luxury": 4690,
+                          "superior_luxury": 5860
+                      },
+                      "4": {
+                          "economy": 3750,
+                          "comfort": 4130,
+                          "luxury": 4540,
+                          "superior_luxury": 5680
+                      },
+                      "5": {
+                          "economy": 3670,
+                          "comfort": 4040,
+                          "luxury": 4440,
+                          "superior_luxury": 5550
+                      },
+                      "6-7": {
+                          "economy": 3550,
+                          "comfort": 3900,
+                          "luxury": 4290,
+                          "superior_luxury": 5370
+                      },
+                      "srs": {
+                          "economy": 420,
+                          "comfort": 540,
+                          "luxury": 670,
+                          "superior_luxury": 850
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 7500,
+                          "comfort": 8250,
+                          "luxury": 9080,
+                          "superior_luxury": 11340
+                      },
+                      "2": {
+                          "economy": 4690,
+                          "comfort": 5160,
+                          "luxury": 5670,
+                          "superior_luxury": 7090
+                      },
+                      "3": {
+                          "economy": 4410,
+                          "comfort": 4850,
+                          "luxury": 5330,
+                          "superior_luxury": 6660
+                      },
+                      "4": {
+                          "economy": 4270,
+                          "comfort": 4690,
+                          "luxury": 5160,
+                          "superior_luxury": 6450
+                      },
+                      "5": {
+                          "economy": 4170,
+                          "comfort": 4590,
+                          "luxury": 5050,
+                          "superior_luxury": 6310
+                      },
+                      "6-7": {
+                          "economy": 4030,
+                          "comfort": 4430,
+                          "luxury": 4880,
+                          "superior_luxury": 6100
+                      },
+                      "srs": {
+                          "economy": 480,
+                          "comfort": 620,
+                          "luxury": 760,
+                          "superior_luxury": 960
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 8700,
+                          "comfort": 9570,
+                          "luxury": 10530,
+                          "superior_luxury": 13160
+                      },
+                      "2": {
+                          "economy": 5440,
+                          "comfort": 5980,
+                          "luxury": 6580,
+                          "superior_luxury": 8220
+                      },
+                      "3": {
+                          "economy": 5110,
+                          "comfort": 5620,
+                          "luxury": 6180,
+                          "superior_luxury": 7730
+                      },
+                      "4": {
+                          "economy": 4950,
+                          "comfort": 5440,
+                          "luxury": 5990,
+                          "superior_luxury": 7480
+                      },
+                      "5": {
+                          "economy": 4840,
+                          "comfort": 5320,
+                          "luxury": 5860,
+                          "superior_luxury": 7320
+                      },
+                      "6-7": {
+                          "economy": 4680,
+                          "comfort": 5140,
+                          "luxury": 5660,
+                          "superior_luxury": 7070
+                      },
+                      "srs": {
+                          "economy": 560,
+                          "comfort": 720,
+                          "luxury": 880,
+                          "superior_luxury": 1120
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge",
+              "Amaan Beach Bungalows"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge",
+              "DoubleTree Resort by Hilton Zanzibar"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Sea Cliff Resort & Spa"
+          ],
+          "superior_luxury": [
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "The Residence Zanzibar",
+              "Park Hyatt Zanzibar"
+          ]
+      }
+  },
+  "4-day-ngorongoro-and-manyara-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1840,
+                          "comfort": 2020,
+                          "luxury": 2230,
+                          "superior_luxury": 2780
+                      },
+                      "2": {
+                          "economy": 1150,
+                          "comfort": 1270,
+                          "luxury": 1390,
+                          "superior_luxury": 1740
+                      },
+                      "3": {
+                          "economy": 1080,
+                          "comfort": 1190,
+                          "luxury": 1310,
+                          "superior_luxury": 1640
+                      },
+                      "4": {
+                          "economy": 1050,
+                          "comfort": 1150,
+                          "luxury": 1270,
+                          "superior_luxury": 1580
+                      },
+                      "5": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "6-7": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2020,
+                          "comfort": 2230,
+                          "luxury": 2450,
+                          "superior_luxury": 3060
+                      },
+                      "2": {
+                          "economy": 1270,
+                          "comfort": 1390,
+                          "luxury": 1530,
+                          "superior_luxury": 1910
+                      },
+                      "3": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1440,
+                          "superior_luxury": 1800
+                      },
+                      "4": {
+                          "economy": 1150,
+                          "comfort": 1270,
+                          "luxury": 1390,
+                          "superior_luxury": 1740
+                      },
+                      "5": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "6-7": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2300,
+                          "comfort": 2530,
+                          "luxury": 2780,
+                          "superior_luxury": 3480
+                      },
+                      "2": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2170
+                      },
+                      "3": {
+                          "economy": 1350,
+                          "comfort": 1490,
+                          "luxury": 1640,
+                          "superior_luxury": 2040
+                      },
+                      "4": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1980
+                      },
+                      "5": {
+                          "economy": 1280,
+                          "comfort": 1410,
+                          "luxury": 1550,
+                          "superior_luxury": 1940
+                      },
+                      "6-7": {
+                          "economy": 1240,
+                          "comfort": 1360,
+                          "luxury": 1500,
+                          "superior_luxury": 1870
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2670,
+                          "comfort": 2930,
+                          "luxury": 3230,
+                          "superior_luxury": 4040
+                      },
+                      "2": {
+                          "economy": 1670,
+                          "comfort": 1830,
+                          "luxury": 2020,
+                          "superior_luxury": 2520
+                      },
+                      "3": {
+                          "economy": 1570,
+                          "comfort": 1720,
+                          "luxury": 1900,
+                          "superior_luxury": 2370
+                      },
+                      "4": {
+                          "economy": 1520,
+                          "comfort": 1670,
+                          "luxury": 1840,
+                          "superior_luxury": 2300
+                      },
+                      "5": {
+                          "economy": 1480,
+                          "comfort": 1630,
+                          "luxury": 1800,
+                          "superior_luxury": 2240
+                      },
+                      "6-7": {
+                          "economy": 1430,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2170
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Lake Manyara Wildlife Lodge",
+              "Rhino Lodge",
+              "Hhando Coffee Lodge"
+          ],
+          "comfort": [
+              "Lake Manyara Serena Safari Lodge",
+              "Ngorongoro Sopa Lodge",
+              "Kitela Lodge"
+          ],
+          "luxury": [
+              "&Beyond Lake Manyara Tree Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Lemala Ngorongoro Tented Camp"
+          ],
+          "superior_luxury": [
+              "Gibb's Farm",
+              "&Beyond Ngorongoro Crater Lodge",
+              "The Highlands Ngorongoro"
+          ]
+      }
+  },
+  "6-day-tanzania-family-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2880,
+                          "comfort": 3170,
+                          "luxury": 3480,
+                          "superior_luxury": 4360
+                      },
+                      "2": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2180,
+                          "superior_luxury": 2720
+                      },
+                      "3": {
+                          "economy": 1690,
+                          "comfort": 1860,
+                          "luxury": 2050,
+                          "superior_luxury": 2560
+                      },
+                      "4": {
+                          "economy": 1640,
+                          "comfort": 1800,
+                          "luxury": 1980,
+                          "superior_luxury": 2480
+                      },
+                      "5": {
+                          "economy": 1600,
+                          "comfort": 1760,
+                          "luxury": 1940,
+                          "superior_luxury": 2420
+                      },
+                      "6-7": {
+                          "economy": 1550,
+                          "comfort": 1700,
+                          "luxury": 1870,
+                          "superior_luxury": 2340
+                      },
+                      "srs": {
+                          "economy": 210,
+                          "comfort": 270,
+                          "luxury": 330,
+                          "superior_luxury": 420
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 3170,
+                          "comfort": 3480,
+                          "luxury": 3830,
+                          "superior_luxury": 4790
+                      },
+                      "2": {
+                          "economy": 1980,
+                          "comfort": 2180,
+                          "luxury": 2400,
+                          "superior_luxury": 2990
+                      },
+                      "3": {
+                          "economy": 1860,
+                          "comfort": 2050,
+                          "luxury": 2250,
+                          "superior_luxury": 2820
+                      },
+                      "4": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2180,
+                          "superior_luxury": 2730
+                      },
+                      "5": {
+                          "economy": 1760,
+                          "comfort": 1940,
+                          "luxury": 2130,
+                          "superior_luxury": 2670
+                      },
+                      "6-7": {
+                          "economy": 1700,
+                          "comfort": 1870,
+                          "luxury": 2060,
+                          "superior_luxury": 2580
+                      },
+                      "srs": {
+                          "economy": 230,
+                          "comfort": 300,
+                          "luxury": 360,
+                          "superior_luxury": 460
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 3600,
+                          "comfort": 3960,
+                          "luxury": 4360,
+                          "superior_luxury": 5450
+                      },
+                      "2": {
+                          "economy": 2250,
+                          "comfort": 2480,
+                          "luxury": 2720,
+                          "superior_luxury": 3400
+                      },
+                      "3": {
+                          "economy": 2120,
+                          "comfort": 2330,
+                          "luxury": 2560,
+                          "superior_luxury": 3200
+                      },
+                      "4": {
+                          "economy": 2050,
+                          "comfort": 2250,
+                          "luxury": 2480,
+                          "superior_luxury": 3100
+                      },
+                      "5": {
+                          "economy": 2000,
+                          "comfort": 2200,
+                          "luxury": 2420,
+                          "superior_luxury": 3030
+                      },
+                      "6-7": {
+                          "economy": 1940,
+                          "comfort": 2130,
+                          "luxury": 2340,
+                          "superior_luxury": 2930
+                      },
+                      "srs": {
+                          "economy": 260,
+                          "comfort": 340,
+                          "luxury": 410,
+                          "superior_luxury": 530
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 4180,
+                          "comfort": 4590,
+                          "luxury": 5050,
+                          "superior_luxury": 6320
+                      },
+                      "2": {
+                          "economy": 2610,
+                          "comfort": 2870,
+                          "luxury": 3160,
+                          "superior_luxury": 3950
+                      },
+                      "3": {
+                          "economy": 2450,
+                          "comfort": 2700,
+                          "luxury": 2970,
+                          "superior_luxury": 3710
+                      },
+                      "4": {
+                          "economy": 2380,
+                          "comfort": 2610,
+                          "luxury": 2870,
+                          "superior_luxury": 3590
+                      },
+                      "5": {
+                          "economy": 2320,
+                          "comfort": 2560,
+                          "luxury": 2810,
+                          "superior_luxury": 3510
+                      },
+                      "6-7": {
+                          "economy": 2240,
+                          "comfort": 2470,
+                          "luxury": 2720,
+                          "superior_luxury": 3390
+                      },
+                      "srs": {
+                          "economy": 300,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "Singita Sabora Tented Camp",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  },
+  "5-day-tanzania-honeymoon-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 3040,
+                          "comfort": 3340,
+                          "luxury": 3680,
+                          "superior_luxury": 4600
+                      },
+                      "2": {
+                          "economy": 1900,
+                          "comfort": 2090,
+                          "luxury": 2300,
+                          "superior_luxury": 2870
+                      },
+                      "3": {
+                          "economy": 1790,
+                          "comfort": 1960,
+                          "luxury": 2160,
+                          "superior_luxury": 2700
+                      },
+                      "4": {
+                          "economy": 1730,
+                          "comfort": 1900,
+                          "luxury": 2090,
+                          "superior_luxury": 2620
+                      },
+                      "5": {
+                          "economy": 1690,
+                          "comfort": 1860,
+                          "luxury": 2050,
+                          "superior_luxury": 2560
+                      },
+                      "6-7": {
+                          "economy": 1630,
+                          "comfort": 1800,
+                          "luxury": 1980,
+                          "superior_luxury": 2470
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 3340,
+                          "comfort": 3680,
+                          "luxury": 4050,
+                          "superior_luxury": 5060
+                      },
+                      "2": {
+                          "economy": 2090,
+                          "comfort": 2300,
+                          "luxury": 2530,
+                          "superior_luxury": 3160
+                      },
+                      "3": {
+                          "economy": 1960,
+                          "comfort": 2160,
+                          "luxury": 2380,
+                          "superior_luxury": 2970
+                      },
+                      "4": {
+                          "economy": 1900,
+                          "comfort": 2090,
+                          "luxury": 2300,
+                          "superior_luxury": 2880
+                      },
+                      "5": {
+                          "economy": 1860,
+                          "comfort": 2050,
+                          "luxury": 2250,
+                          "superior_luxury": 2810
+                      },
+                      "6-7": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2170,
+                          "superior_luxury": 2720
+                      },
+                      "srs": {
+                          "economy": 190,
+                          "comfort": 250,
+                          "luxury": 300,
+                          "superior_luxury": 390
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 3800,
+                          "comfort": 4180,
+                          "luxury": 4600,
+                          "superior_luxury": 5750
+                      },
+                      "2": {
+                          "economy": 2380,
+                          "comfort": 2610,
+                          "luxury": 2870,
+                          "superior_luxury": 3590
+                      },
+                      "3": {
+                          "economy": 2230,
+                          "comfort": 2460,
+                          "luxury": 2700,
+                          "superior_luxury": 3380
+                      },
+                      "4": {
+                          "economy": 2160,
+                          "comfort": 2380,
+                          "luxury": 2620,
+                          "superior_luxury": 3270
+                      },
+                      "5": {
+                          "economy": 2110,
+                          "comfort": 2330,
+                          "luxury": 2560,
+                          "superior_luxury": 3200
+                      },
+                      "6-7": {
+                          "economy": 2040,
+                          "comfort": 2250,
+                          "luxury": 2470,
+                          "superior_luxury": 3090
+                      },
+                      "srs": {
+                          "economy": 220,
+                          "comfort": 280,
+                          "luxury": 340,
+                          "superior_luxury": 440
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 4410,
+                          "comfort": 4850,
+                          "luxury": 5330,
+                          "superior_luxury": 6670
+                      },
+                      "2": {
+                          "economy": 2760,
+                          "comfort": 3030,
+                          "luxury": 3330,
+                          "superior_luxury": 4170
+                      },
+                      "3": {
+                          "economy": 2590,
+                          "comfort": 2850,
+                          "luxury": 3130,
+                          "superior_luxury": 3920
+                      },
+                      "4": {
+                          "economy": 2510,
+                          "comfort": 2760,
+                          "luxury": 3030,
+                          "superior_luxury": 3790
+                      },
+                      "5": {
+                          "economy": 2450,
+                          "comfort": 2700,
+                          "luxury": 2970,
+                          "superior_luxury": 3710
+                      },
+                      "6-7": {
+                          "economy": 2370,
+                          "comfort": 2610,
+                          "luxury": 2870,
+                          "superior_luxury": 3580
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 330,
+                          "luxury": 400,
+                          "superior_luxury": 510
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Oliver's Camp",
+              "Singita Sabora Tented Camp",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  },
+  "4-day-serengeti-calving-season-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2160,
+                          "comfort": 2380,
+                          "luxury": 2610,
+                          "superior_luxury": 3270
+                      },
+                      "2": {
+                          "economy": 1350,
+                          "comfort": 1490,
+                          "luxury": 1630,
+                          "superior_luxury": 2040
+                      },
+                      "3": {
+                          "economy": 1270,
+                          "comfort": 1400,
+                          "luxury": 1540,
+                          "superior_luxury": 1920
+                      },
+                      "4": {
+                          "economy": 1230,
+                          "comfort": 1350,
+                          "luxury": 1490,
+                          "superior_luxury": 1860
+                      },
+                      "5": {
+                          "economy": 1200,
+                          "comfort": 1320,
+                          "luxury": 1450,
+                          "superior_luxury": 1820
+                      },
+                      "6-7": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1400,
+                          "superior_luxury": 1760
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2380,
+                          "comfort": 2610,
+                          "luxury": 2870,
+                          "superior_luxury": 3590
+                      },
+                      "2": {
+                          "economy": 1490,
+                          "comfort": 1630,
+                          "luxury": 1800,
+                          "superior_luxury": 2250
+                      },
+                      "3": {
+                          "economy": 1400,
+                          "comfort": 1540,
+                          "luxury": 1690,
+                          "superior_luxury": 2110
+                      },
+                      "4": {
+                          "economy": 1350,
+                          "comfort": 1490,
+                          "luxury": 1640,
+                          "superior_luxury": 2040
+                      },
+                      "5": {
+                          "economy": 1320,
+                          "comfort": 1450,
+                          "luxury": 1600,
+                          "superior_luxury": 2000
+                      },
+                      "6-7": {
+                          "economy": 1280,
+                          "comfort": 1400,
+                          "luxury": 1550,
+                          "superior_luxury": 1930
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2700,
+                          "comfort": 2970,
+                          "luxury": 3270,
+                          "superior_luxury": 4080
+                      },
+                      "2": {
+                          "economy": 1690,
+                          "comfort": 1860,
+                          "luxury": 2040,
+                          "superior_luxury": 2550
+                      },
+                      "3": {
+                          "economy": 1590,
+                          "comfort": 1740,
+                          "luxury": 1920,
+                          "superior_luxury": 2400
+                      },
+                      "4": {
+                          "economy": 1540,
+                          "comfort": 1690,
+                          "luxury": 1860,
+                          "superior_luxury": 2320
+                      },
+                      "5": {
+                          "economy": 1500,
+                          "comfort": 1650,
+                          "luxury": 1820,
+                          "superior_luxury": 2270
+                      },
+                      "6-7": {
+                          "economy": 1450,
+                          "comfort": 1600,
+                          "luxury": 1760,
+                          "superior_luxury": 2200
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3130,
+                          "comfort": 3450,
+                          "luxury": 3790,
+                          "superior_luxury": 4740
+                      },
+                      "2": {
+                          "economy": 1960,
+                          "comfort": 2150,
+                          "luxury": 2370,
+                          "superior_luxury": 2960
+                      },
+                      "3": {
+                          "economy": 1840,
+                          "comfort": 2020,
+                          "luxury": 2230,
+                          "superior_luxury": 2780
+                      },
+                      "4": {
+                          "economy": 1780,
+                          "comfort": 1960,
+                          "luxury": 2160,
+                          "superior_luxury": 2690
+                      },
+                      "5": {
+                          "economy": 1740,
+                          "comfort": 1920,
+                          "luxury": 2110,
+                          "superior_luxury": 2640
+                      },
+                      "6-7": {
+                          "economy": 1680,
+                          "comfort": 1850,
+                          "luxury": 2040,
+                          "superior_luxury": 2550
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Ndutu Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Lake Masek Tented Camp",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Lemala Ndutu Tented Camp",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "&Beyond Serengeti Under Canvas",
+              "The Highlands Ngorongoro",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  },
+  "7-day-masai-mara-to-serengeti-migration-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 4320,
+                          "comfort": 4750,
+                          "luxury": 5230,
+                          "superior_luxury": 6530
+                      },
+                      "2": {
+                          "economy": 2700,
+                          "comfort": 2970,
+                          "luxury": 3270,
+                          "superior_luxury": 4080
+                      },
+                      "3": {
+                          "economy": 2540,
+                          "comfort": 2790,
+                          "luxury": 3070,
+                          "superior_luxury": 3840
+                      },
+                      "4": {
+                          "economy": 2460,
+                          "comfort": 2700,
+                          "luxury": 2970,
+                          "superior_luxury": 3720
+                      },
+                      "5": {
+                          "economy": 2400,
+                          "comfort": 2640,
+                          "luxury": 2910,
+                          "superior_luxury": 3630
+                      },
+                      "6-7": {
+                          "economy": 2320,
+                          "comfort": 2550,
+                          "luxury": 2810,
+                          "superior_luxury": 3510
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 320,
+                          "luxury": 390,
+                          "superior_luxury": 490
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 4750,
+                          "comfort": 5230,
+                          "luxury": 5750,
+                          "superior_luxury": 7190
+                      },
+                      "2": {
+                          "economy": 2970,
+                          "comfort": 3270,
+                          "luxury": 3590,
+                          "superior_luxury": 4490
+                      },
+                      "3": {
+                          "economy": 2790,
+                          "comfort": 3070,
+                          "luxury": 3380,
+                          "superior_luxury": 4220
+                      },
+                      "4": {
+                          "economy": 2700,
+                          "comfort": 2970,
+                          "luxury": 3270,
+                          "superior_luxury": 4090
+                      },
+                      "5": {
+                          "economy": 2640,
+                          "comfort": 2910,
+                          "luxury": 3200,
+                          "superior_luxury": 4000
+                      },
+                      "6-7": {
+                          "economy": 2550,
+                          "comfort": 2810,
+                          "luxury": 3090,
+                          "superior_luxury": 3860
+                      },
+                      "srs": {
+                          "economy": 270,
+                          "comfort": 350,
+                          "luxury": 420,
+                          "superior_luxury": 540
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 5400,
+                          "comfort": 5940,
+                          "luxury": 6530,
+                          "superior_luxury": 8170
+                      },
+                      "2": {
+                          "economy": 3380,
+                          "comfort": 3710,
+                          "luxury": 4080,
+                          "superior_luxury": 5100
+                      },
+                      "3": {
+                          "economy": 3170,
+                          "comfort": 3490,
+                          "luxury": 3840,
+                          "superior_luxury": 4800
+                      },
+                      "4": {
+                          "economy": 3070,
+                          "comfort": 3380,
+                          "luxury": 3720,
+                          "superior_luxury": 4650
+                      },
+                      "5": {
+                          "economy": 3000,
+                          "comfort": 3300,
+                          "luxury": 3630,
+                          "superior_luxury": 4540
+                      },
+                      "6-7": {
+                          "economy": 2900,
+                          "comfort": 3190,
+                          "luxury": 3510,
+                          "superior_luxury": 4390
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 6260,
+                          "comfort": 6890,
+                          "luxury": 7580,
+                          "superior_luxury": 9470
+                      },
+                      "2": {
+                          "economy": 3920,
+                          "comfort": 4310,
+                          "luxury": 4740,
+                          "superior_luxury": 5920
+                      },
+                      "3": {
+                          "economy": 3680,
+                          "comfort": 4050,
+                          "luxury": 4450,
+                          "superior_luxury": 5570
+                      },
+                      "4": {
+                          "economy": 3560,
+                          "comfort": 3920,
+                          "luxury": 4310,
+                          "superior_luxury": 5390
+                      },
+                      "5": {
+                          "economy": 3480,
+                          "comfort": 3830,
+                          "luxury": 4220,
+                          "superior_luxury": 5270
+                      },
+                      "6-7": {
+                          "economy": 3370,
+                          "comfort": 3700,
+                          "luxury": 4070,
+                          "superior_luxury": 5090
+                      },
+                      "srs": {
+                          "economy": 360,
+                          "comfort": 460,
+                          "luxury": 560,
+                          "superior_luxury": 710
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Mara Chui Camp",
+              "Tarangire Safari Lodge",
+              "Seronera Wildlife Lodge",
+              "Rhino Lodge"
+          ],
+          "comfort": [
+              "Mara Sopa Lodge",
+              "Tarangire Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Mara Serena Safari Lodge",
+              "Tarangire Treetops",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge"
+          ],
+          "superior_luxury": [
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Oliver's Camp"
+          ]
+      }
+  },
+  "11-day-east-africa-explorer": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 7040,
+                          "comfort": 7740,
+                          "luxury": 8520,
+                          "superior_luxury": 10650
+                      },
+                      "2": {
+                          "economy": 4400,
+                          "comfort": 4840,
+                          "luxury": 5320,
+                          "superior_luxury": 6660
+                      },
+                      "3": {
+                          "economy": 4140,
+                          "comfort": 4550,
+                          "luxury": 5000,
+                          "superior_luxury": 6260
+                      },
+                      "4": {
+                          "economy": 4000,
+                          "comfort": 4400,
+                          "luxury": 4840,
+                          "superior_luxury": 6060
+                      },
+                      "5": {
+                          "economy": 3920,
+                          "comfort": 4310,
+                          "luxury": 4740,
+                          "superior_luxury": 5920
+                      },
+                      "6-7": {
+                          "economy": 3780,
+                          "comfort": 4160,
+                          "luxury": 4580,
+                          "superior_luxury": 5720
+                      },
+                      "srs": {
+                          "economy": 390,
+                          "comfort": 500,
+                          "luxury": 610,
+                          "superior_luxury": 770
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 7740,
+                          "comfort": 8520,
+                          "luxury": 9370,
+                          "superior_luxury": 11710
+                      },
+                      "2": {
+                          "economy": 4840,
+                          "comfort": 5320,
+                          "luxury": 5860,
+                          "superior_luxury": 7320
+                      },
+                      "3": {
+                          "economy": 4550,
+                          "comfort": 5000,
+                          "luxury": 5510,
+                          "superior_luxury": 6880
+                      },
+                      "4": {
+                          "economy": 4400,
+                          "comfort": 4840,
+                          "luxury": 5330,
+                          "superior_luxury": 6660
+                      },
+                      "5": {
+                          "economy": 4310,
+                          "comfort": 4740,
+                          "luxury": 5210,
+                          "superior_luxury": 6520
+                      },
+                      "6-7": {
+                          "economy": 4160,
+                          "comfort": 4580,
+                          "luxury": 5040,
+                          "superior_luxury": 6300
+                      },
+                      "srs": {
+                          "economy": 420,
+                          "comfort": 540,
+                          "luxury": 670,
+                          "superior_luxury": 850
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 8800,
+                          "comfort": 9680,
+                          "luxury": 10650,
+                          "superior_luxury": 13310
+                      },
+                      "2": {
+                          "economy": 5500,
+                          "comfort": 6050,
+                          "luxury": 6660,
+                          "superior_luxury": 8320
+                      },
+                      "3": {
+                          "economy": 5170,
+                          "comfort": 5690,
+                          "luxury": 6260,
+                          "superior_luxury": 7820
+                      },
+                      "4": {
+                          "economy": 5010,
+                          "comfort": 5510,
+                          "luxury": 6060,
+                          "superior_luxury": 7570
+                      },
+                      "5": {
+                          "economy": 4900,
+                          "comfort": 5380,
+                          "luxury": 5920,
+                          "superior_luxury": 7400
+                      },
+                      "6-7": {
+                          "economy": 4730,
+                          "comfort": 5200,
+                          "luxury": 5720,
+                          "superior_luxury": 7150
+                      },
+                      "srs": {
+                          "economy": 480,
+                          "comfort": 620,
+                          "luxury": 760,
+                          "superior_luxury": 960
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 10210,
+                          "comfort": 11230,
+                          "luxury": 12350,
+                          "superior_luxury": 15440
+                      },
+                      "2": {
+                          "economy": 6380,
+                          "comfort": 7020,
+                          "luxury": 7720,
+                          "superior_luxury": 9650
+                      },
+                      "3": {
+                          "economy": 6000,
+                          "comfort": 6600,
+                          "luxury": 7260,
+                          "superior_luxury": 9070
+                      },
+                      "4": {
+                          "economy": 5810,
+                          "comfort": 6390,
+                          "luxury": 7030,
+                          "superior_luxury": 8780
+                      },
+                      "5": {
+                          "economy": 5680,
+                          "comfort": 6250,
+                          "luxury": 6870,
+                          "superior_luxury": 8590
+                      },
+                      "6-7": {
+                          "economy": 5490,
+                          "comfort": 6040,
+                          "luxury": 6640,
+                          "superior_luxury": 8300
+                      },
+                      "srs": {
+                          "economy": 560,
+                          "comfort": 720,
+                          "luxury": 880,
+                          "superior_luxury": 1120
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Mara Chui Camp",
+              "Seronera Wildlife Lodge",
+              "Tarangire Safari Lodge"
+          ],
+          "comfort": [
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Mara Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Amboseli Serena Safari Lodge",
+              "Mara Serena Safari Lodge",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Tarangire Treetops"
+          ],
+          "superior_luxury": [
+              "Tawi Lodge",
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Oliver's Camp"
+          ]
+      }
+  },
+  "14-day-ultimate-east-africa-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 8960,
+                          "comfort": 9860,
+                          "luxury": 10840,
+                          "superior_luxury": 13550
+                      },
+                      "2": {
+                          "economy": 5600,
+                          "comfort": 6160,
+                          "luxury": 6780,
+                          "superior_luxury": 8470
+                      },
+                      "3": {
+                          "economy": 5260,
+                          "comfort": 5790,
+                          "luxury": 6370,
+                          "superior_luxury": 7960
+                      },
+                      "4": {
+                          "economy": 5100,
+                          "comfort": 5610,
+                          "luxury": 6170,
+                          "superior_luxury": 7710
+                      },
+                      "5": {
+                          "economy": 4980,
+                          "comfort": 5480,
+                          "luxury": 6030,
+                          "superior_luxury": 7540
+                      },
+                      "6-7": {
+                          "economy": 4820,
+                          "comfort": 5300,
+                          "luxury": 5830,
+                          "superior_luxury": 7280
+                      },
+                      "srs": {
+                          "economy": 490,
+                          "comfort": 630,
+                          "luxury": 770,
+                          "superior_luxury": 980
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 9860,
+                          "comfort": 10840,
+                          "luxury": 11930,
+                          "superior_luxury": 14910
+                      },
+                      "2": {
+                          "economy": 6160,
+                          "comfort": 6780,
+                          "luxury": 7450,
+                          "superior_luxury": 9320
+                      },
+                      "3": {
+                          "economy": 5790,
+                          "comfort": 6370,
+                          "luxury": 7010,
+                          "superior_luxury": 8760
+                      },
+                      "4": {
+                          "economy": 5610,
+                          "comfort": 6170,
+                          "luxury": 6780,
+                          "superior_luxury": 8480
+                      },
+                      "5": {
+                          "economy": 5480,
+                          "comfort": 6030,
+                          "luxury": 6630,
+                          "superior_luxury": 8290
+                      },
+                      "6-7": {
+                          "economy": 5300,
+                          "comfort": 5830,
+                          "luxury": 6410,
+                          "superior_luxury": 8010
+                      },
+                      "srs": {
+                          "economy": 540,
+                          "comfort": 690,
+                          "luxury": 850,
+                          "superior_luxury": 1080
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 11200,
+                          "comfort": 12320,
+                          "luxury": 13550,
+                          "superior_luxury": 16940
+                      },
+                      "2": {
+                          "economy": 7000,
+                          "comfort": 7700,
+                          "luxury": 8470,
+                          "superior_luxury": 10590
+                      },
+                      "3": {
+                          "economy": 6580,
+                          "comfort": 7240,
+                          "luxury": 7960,
+                          "superior_luxury": 9950
+                      },
+                      "4": {
+                          "economy": 6370,
+                          "comfort": 7010,
+                          "luxury": 7710,
+                          "superior_luxury": 9630
+                      },
+                      "5": {
+                          "economy": 6230,
+                          "comfort": 6850,
+                          "luxury": 7540,
+                          "superior_luxury": 9420
+                      },
+                      "6-7": {
+                          "economy": 6020,
+                          "comfort": 6620,
+                          "luxury": 7280,
+                          "superior_luxury": 9110
+                      },
+                      "srs": {
+                          "economy": 610,
+                          "comfort": 790,
+                          "luxury": 960,
+                          "superior_luxury": 1230
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 12990,
+                          "comfort": 14290,
+                          "luxury": 15720,
+                          "superior_luxury": 19650
+                      },
+                      "2": {
+                          "economy": 8120,
+                          "comfort": 8930,
+                          "luxury": 9830,
+                          "superior_luxury": 12280
+                      },
+                      "3": {
+                          "economy": 7630,
+                          "comfort": 8400,
+                          "luxury": 9240,
+                          "superior_luxury": 11540
+                      },
+                      "4": {
+                          "economy": 7390,
+                          "comfort": 8130,
+                          "luxury": 8940,
+                          "superior_luxury": 11180
+                      },
+                      "5": {
+                          "economy": 7230,
+                          "comfort": 7950,
+                          "luxury": 8740,
+                          "superior_luxury": 10930
+                      },
+                      "6-7": {
+                          "economy": 6980,
+                          "comfort": 7680,
+                          "luxury": 8450,
+                          "superior_luxury": 10560
+                      },
+                      "srs": {
+                          "economy": 710,
+                          "comfort": 910,
+                          "luxury": 1120,
+                          "superior_luxury": 1420
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Mara Chui Camp",
+              "Seronera Wildlife Lodge",
+              "Tarangire Safari Lodge"
+          ],
+          "comfort": [
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Mara Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Amboseli Serena Safari Lodge",
+              "Mara Serena Safari Lodge",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Tarangire Treetops"
+          ],
+          "superior_luxury": [
+              "Tawi Lodge",
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Oliver's Camp"
+          ]
+      }
+  },
+  "15-day-kenya-tanzania-grand-safari-tour": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 9600,
+                          "comfort": 10560,
+                          "luxury": 11620,
+                          "superior_luxury": 14520
+                      },
+                      "2": {
+                          "economy": 6000,
+                          "comfort": 6600,
+                          "luxury": 7260,
+                          "superior_luxury": 9080
+                      },
+                      "3": {
+                          "economy": 5640,
+                          "comfort": 6200,
+                          "luxury": 6820,
+                          "superior_luxury": 8530
+                      },
+                      "4": {
+                          "economy": 5460,
+                          "comfort": 6010,
+                          "luxury": 6610,
+                          "superior_luxury": 8260
+                      },
+                      "5": {
+                          "economy": 5340,
+                          "comfort": 5870,
+                          "luxury": 6460,
+                          "superior_luxury": 8080
+                      },
+                      "6-7": {
+                          "economy": 5160,
+                          "comfort": 5680,
+                          "luxury": 6240,
+                          "superior_luxury": 7800
+                      },
+                      "srs": {
+                          "economy": 530,
+                          "comfort": 680,
+                          "luxury": 830,
+                          "superior_luxury": 1050
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 10560,
+                          "comfort": 11620,
+                          "luxury": 12780,
+                          "superior_luxury": 15970
+                      },
+                      "2": {
+                          "economy": 6600,
+                          "comfort": 7260,
+                          "luxury": 7990,
+                          "superior_luxury": 9980
+                      },
+                      "3": {
+                          "economy": 6200,
+                          "comfort": 6820,
+                          "luxury": 7510,
+                          "superior_luxury": 9380
+                      },
+                      "4": {
+                          "economy": 6010,
+                          "comfort": 6610,
+                          "luxury": 7270,
+                          "superior_luxury": 9080
+                      },
+                      "5": {
+                          "economy": 5870,
+                          "comfort": 6460,
+                          "luxury": 7110,
+                          "superior_luxury": 8880
+                      },
+                      "6-7": {
+                          "economy": 5680,
+                          "comfort": 6240,
+                          "luxury": 6870,
+                          "superior_luxury": 8580
+                      },
+                      "srs": {
+                          "economy": 580,
+                          "comfort": 740,
+                          "luxury": 910,
+                          "superior_luxury": 1160
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 12000,
+                          "comfort": 13200,
+                          "luxury": 14520,
+                          "superior_luxury": 18150
+                      },
+                      "2": {
+                          "economy": 7500,
+                          "comfort": 8250,
+                          "luxury": 9080,
+                          "superior_luxury": 11340
+                      },
+                      "3": {
+                          "economy": 7050,
+                          "comfort": 7760,
+                          "luxury": 8530,
+                          "superior_luxury": 10660
+                      },
+                      "4": {
+                          "economy": 6830,
+                          "comfort": 7510,
+                          "luxury": 8260,
+                          "superior_luxury": 10320
+                      },
+                      "5": {
+                          "economy": 6680,
+                          "comfort": 7340,
+                          "luxury": 8080,
+                          "superior_luxury": 10100
+                      },
+                      "6-7": {
+                          "economy": 6450,
+                          "comfort": 7100,
+                          "luxury": 7800,
+                          "superior_luxury": 9760
+                      },
+                      "srs": {
+                          "economy": 660,
+                          "comfort": 840,
+                          "luxury": 1030,
+                          "superior_luxury": 1310
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 13920,
+                          "comfort": 15310,
+                          "luxury": 16840,
+                          "superior_luxury": 21050
+                      },
+                      "2": {
+                          "economy": 8700,
+                          "comfort": 9570,
+                          "luxury": 10530,
+                          "superior_luxury": 13160
+                      },
+                      "3": {
+                          "economy": 8180,
+                          "comfort": 9000,
+                          "luxury": 9900,
+                          "superior_luxury": 12370
+                      },
+                      "4": {
+                          "economy": 7920,
+                          "comfort": 8710,
+                          "luxury": 9580,
+                          "superior_luxury": 11970
+                      },
+                      "5": {
+                          "economy": 7740,
+                          "comfort": 8520,
+                          "luxury": 9370,
+                          "superior_luxury": 11710
+                      },
+                      "6-7": {
+                          "economy": 7480,
+                          "comfort": 8230,
+                          "luxury": 9050,
+                          "superior_luxury": 11320
+                      },
+                      "srs": {
+                          "economy": 760,
+                          "comfort": 980,
+                          "luxury": 1200,
+                          "superior_luxury": 1520
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Amboseli Sopa Lodge",
+              "Lake Nakuru Lodge",
+              "Mara Chui Camp",
+              "Seronera Wildlife Lodge",
+              "Tarangire Safari Lodge"
+          ],
+          "comfort": [
+              "Ol Tukai Lodge",
+              "Sarova Lion Hill Game Lodge",
+              "Mara Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Amboseli Serena Safari Lodge",
+              "Mara Serena Safari Lodge",
+              "Serengeti Serena Safari Lodge",
+              "Ngorongoro Serena Safari Lodge",
+              "Tarangire Treetops"
+          ],
+          "superior_luxury": [
+              "Tawi Lodge",
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge",
+              "Oliver's Camp"
+          ]
+      }
+  },
+  "ol-pejeta-rhino-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1040,
+                          "comfort": 1140,
+                          "luxury": 1260,
+                          "superior_luxury": 1570
+                      },
+                      "2": {
+                          "economy": 650,
+                          "comfort": 720,
+                          "luxury": 790,
+                          "superior_luxury": 980
+                      },
+                      "3": {
+                          "economy": 610,
+                          "comfort": 670,
+                          "luxury": 740,
+                          "superior_luxury": 920
+                      },
+                      "4": {
+                          "economy": 590,
+                          "comfort": 650,
+                          "luxury": 720,
+                          "superior_luxury": 890
+                      },
+                      "5": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 700,
+                          "superior_luxury": 870
+                      },
+                      "6-7": {
+                          "economy": 560,
+                          "comfort": 610,
+                          "luxury": 680,
+                          "superior_luxury": 850
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1140,
+                          "comfort": 1260,
+                          "luxury": 1380,
+                          "superior_luxury": 1730
+                      },
+                      "2": {
+                          "economy": 720,
+                          "comfort": 790,
+                          "luxury": 870,
+                          "superior_luxury": 1080
+                      },
+                      "3": {
+                          "economy": 670,
+                          "comfort": 740,
+                          "luxury": 810,
+                          "superior_luxury": 1020
+                      },
+                      "4": {
+                          "economy": 650,
+                          "comfort": 720,
+                          "luxury": 790,
+                          "superior_luxury": 980
+                      },
+                      "5": {
+                          "economy": 640,
+                          "comfort": 700,
+                          "luxury": 770,
+                          "superior_luxury": 960
+                      },
+                      "6-7": {
+                          "economy": 610,
+                          "comfort": 680,
+                          "luxury": 740,
+                          "superior_luxury": 930
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1300,
+                          "comfort": 1430,
+                          "luxury": 1570,
+                          "superior_luxury": 1970
+                      },
+                      "2": {
+                          "economy": 810,
+                          "comfort": 890,
+                          "luxury": 980,
+                          "superior_luxury": 1230
+                      },
+                      "3": {
+                          "economy": 760,
+                          "comfort": 840,
+                          "luxury": 920,
+                          "superior_luxury": 1160
+                      },
+                      "4": {
+                          "economy": 740,
+                          "comfort": 810,
+                          "luxury": 890,
+                          "superior_luxury": 1120
+                      },
+                      "5": {
+                          "economy": 720,
+                          "comfort": 800,
+                          "luxury": 870,
+                          "superior_luxury": 1090
+                      },
+                      "6-7": {
+                          "economy": 700,
+                          "comfort": 770,
+                          "luxury": 850,
+                          "superior_luxury": 1060
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1510,
+                          "comfort": 1660,
+                          "luxury": 1820,
+                          "superior_luxury": 2280
+                      },
+                      "2": {
+                          "economy": 940,
+                          "comfort": 1040,
+                          "luxury": 1140,
+                          "superior_luxury": 1430
+                      },
+                      "3": {
+                          "economy": 890,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1340
+                      },
+                      "4": {
+                          "economy": 860,
+                          "comfort": 940,
+                          "luxury": 1040,
+                          "superior_luxury": 1300
+                      },
+                      "5": {
+                          "economy": 840,
+                          "comfort": 920,
+                          "luxury": 1010,
+                          "superior_luxury": 1270
+                      },
+                      "6-7": {
+                          "economy": 810,
+                          "comfort": 890,
+                          "luxury": 980,
+                          "superior_luxury": 1230
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Sweetwaters Serena Camp",
+              "The Stables at Ol Pejeta",
+              "Ol Pejeta Safari Cottages"
+          ],
+          "comfort": [
+              "Porini Rhino Camp",
+              "Kicheche Laikipia Camp",
+              "Ol Pejeta Safari Cottages"
+          ],
+          "luxury": [
+              "Ol Pejeta Bush Camp",
+              "Kicheche Laikipia Camp",
+              "Sweetwaters Serena Camp"
+          ],
+          "superior_luxury": [
+              "Ol Pejeta House",
+              "Segera Retreat",
+              "Sirikoi Lodge"
+          ]
+      }
+  },
+  "samburu-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1200,
+                          "comfort": 1320,
+                          "luxury": 1450,
+                          "superior_luxury": 1820
+                      },
+                      "2": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1130
+                      },
+                      "3": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 850,
+                          "superior_luxury": 1070
+                      },
+                      "4": {
+                          "economy": 680,
+                          "comfort": 750,
+                          "luxury": 830,
+                          "superior_luxury": 1030
+                      },
+                      "5": {
+                          "economy": 670,
+                          "comfort": 730,
+                          "luxury": 810,
+                          "superior_luxury": 1010
+                      },
+                      "6-7": {
+                          "economy": 650,
+                          "comfort": 710,
+                          "luxury": 780,
+                          "superior_luxury": 980
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1320,
+                          "comfort": 1450,
+                          "luxury": 1600,
+                          "superior_luxury": 2000
+                      },
+                      "2": {
+                          "economy": 830,
+                          "comfort": 910,
+                          "luxury": 1000,
+                          "superior_luxury": 1250
+                      },
+                      "3": {
+                          "economy": 780,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "4": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1140
+                      },
+                      "5": {
+                          "economy": 730,
+                          "comfort": 810,
+                          "luxury": 890,
+                          "superior_luxury": 1110
+                      },
+                      "6-7": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 860,
+                          "superior_luxury": 1070
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1500,
+                          "comfort": 1650,
+                          "luxury": 1820,
+                          "superior_luxury": 2270
+                      },
+                      "2": {
+                          "economy": 940,
+                          "comfort": 1030,
+                          "luxury": 1130,
+                          "superior_luxury": 1420
+                      },
+                      "3": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1330
+                      },
+                      "4": {
+                          "economy": 850,
+                          "comfort": 940,
+                          "luxury": 1030,
+                          "superior_luxury": 1290
+                      },
+                      "5": {
+                          "economy": 830,
+                          "comfort": 920,
+                          "luxury": 1010,
+                          "superior_luxury": 1260
+                      },
+                      "6-7": {
+                          "economy": 810,
+                          "comfort": 890,
+                          "luxury": 980,
+                          "superior_luxury": 1220
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1740,
+                          "comfort": 1910,
+                          "luxury": 2110,
+                          "superior_luxury": 2630
+                      },
+                      "2": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1640
+                      },
+                      "3": {
+                          "economy": 1020,
+                          "comfort": 1120,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "4": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "5": {
+                          "economy": 970,
+                          "comfort": 1060,
+                          "luxury": 1170,
+                          "superior_luxury": 1460
+                      },
+                      "6-7": {
+                          "economy": 940,
+                          "comfort": 1030,
+                          "luxury": 1130,
+                          "superior_luxury": 1410
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Ashnil Samburu Camp",
+              "Samburu Riverside Camp"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Samburu Game Lodge",
+              "Ashnil Samburu Camp"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Elephant Bedroom Camp",
+              "Elephant Watch Camp"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Samburu Intrepids Camp",
+              "Sarara Camp"
+          ]
+      }
+  },
+  "aberdares-rainforest-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 960,
+                          "comfort": 1060,
+                          "luxury": 1160,
+                          "superior_luxury": 1450
+                      },
+                      "2": {
+                          "economy": 600,
+                          "comfort": 660,
+                          "luxury": 730,
+                          "superior_luxury": 910
+                      },
+                      "3": {
+                          "economy": 560,
+                          "comfort": 620,
+                          "luxury": 680,
+                          "superior_luxury": 850
+                      },
+                      "4": {
+                          "economy": 550,
+                          "comfort": 600,
+                          "luxury": 660,
+                          "superior_luxury": 830
+                      },
+                      "5": {
+                          "economy": 530,
+                          "comfort": 590,
+                          "luxury": 650,
+                          "superior_luxury": 810
+                      },
+                      "6-7": {
+                          "economy": 520,
+                          "comfort": 570,
+                          "luxury": 620,
+                          "superior_luxury": 780
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "2": {
+                          "economy": 660,
+                          "comfort": 730,
+                          "luxury": 800,
+                          "superior_luxury": 1000
+                      },
+                      "3": {
+                          "economy": 620,
+                          "comfort": 680,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "4": {
+                          "economy": 600,
+                          "comfort": 660,
+                          "luxury": 730,
+                          "superior_luxury": 910
+                      },
+                      "5": {
+                          "economy": 590,
+                          "comfort": 650,
+                          "luxury": 710,
+                          "superior_luxury": 890
+                      },
+                      "6-7": {
+                          "economy": 570,
+                          "comfort": 620,
+                          "luxury": 690,
+                          "superior_luxury": 860
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1200,
+                          "comfort": 1320,
+                          "luxury": 1450,
+                          "superior_luxury": 1820
+                      },
+                      "2": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1130
+                      },
+                      "3": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 850,
+                          "superior_luxury": 1070
+                      },
+                      "4": {
+                          "economy": 680,
+                          "comfort": 750,
+                          "luxury": 830,
+                          "superior_luxury": 1030
+                      },
+                      "5": {
+                          "economy": 670,
+                          "comfort": 730,
+                          "luxury": 810,
+                          "superior_luxury": 1010
+                      },
+                      "6-7": {
+                          "economy": 650,
+                          "comfort": 710,
+                          "luxury": 780,
+                          "superior_luxury": 980
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1390,
+                          "comfort": 1530,
+                          "luxury": 1680,
+                          "superior_luxury": 2110
+                      },
+                      "2": {
+                          "economy": 870,
+                          "comfort": 960,
+                          "luxury": 1050,
+                          "superior_luxury": 1320
+                      },
+                      "3": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "4": {
+                          "economy": 790,
+                          "comfort": 870,
+                          "luxury": 960,
+                          "superior_luxury": 1200
+                      },
+                      "5": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "6-7": {
+                          "economy": 750,
+                          "comfort": 820,
+                          "luxury": 910,
+                          "superior_luxury": 1130
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "The Ark Lodge",
+              "Rhino Watch Safari Lodge",
+              "Aberdare Cottages"
+          ],
+          "comfort": [
+              "Aberdare Country Club",
+              "Rhino Watch Safari Lodge",
+              "The Ark Lodge"
+          ],
+          "luxury": [
+              "Treetops Lodge",
+              "The Ark Lodge",
+              "Aberdare Country Club"
+          ],
+          "superior_luxury": [
+              "Sangare Ranch",
+              "Giraffe Ark Game Lodge",
+              "Treetops Lodge"
+          ]
+      }
+  },
+  "meru-national-park-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1280,
+                          "comfort": 1410,
+                          "luxury": 1550,
+                          "superior_luxury": 1940
+                      },
+                      "2": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "3": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1140
+                      },
+                      "4": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "5": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 860,
+                          "superior_luxury": 1080
+                      },
+                      "6-7": {
+                          "economy": 690,
+                          "comfort": 760,
+                          "luxury": 830,
+                          "superior_luxury": 1040
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1410,
+                          "comfort": 1550,
+                          "luxury": 1700,
+                          "superior_luxury": 2130
+                      },
+                      "2": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1060,
+                          "superior_luxury": 1330
+                      },
+                      "3": {
+                          "economy": 830,
+                          "comfort": 910,
+                          "luxury": 1000,
+                          "superior_luxury": 1250
+                      },
+                      "4": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "5": {
+                          "economy": 780,
+                          "comfort": 860,
+                          "luxury": 950,
+                          "superior_luxury": 1180
+                      },
+                      "6-7": {
+                          "economy": 760,
+                          "comfort": 830,
+                          "luxury": 920,
+                          "superior_luxury": 1140
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1600,
+                          "comfort": 1760,
+                          "luxury": 1940,
+                          "superior_luxury": 2420
+                      },
+                      "2": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "3": {
+                          "economy": 940,
+                          "comfort": 1030,
+                          "luxury": 1140,
+                          "superior_luxury": 1420
+                      },
+                      "4": {
+                          "economy": 910,
+                          "comfort": 1000,
+                          "luxury": 1100,
+                          "superior_luxury": 1380
+                      },
+                      "5": {
+                          "economy": 890,
+                          "comfort": 980,
+                          "luxury": 1080,
+                          "superior_luxury": 1350
+                      },
+                      "6-7": {
+                          "economy": 860,
+                          "comfort": 950,
+                          "luxury": 1040,
+                          "superior_luxury": 1300
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1860,
+                          "comfort": 2040,
+                          "luxury": 2250,
+                          "superior_luxury": 2810
+                      },
+                      "2": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1400,
+                          "superior_luxury": 1750
+                      },
+                      "3": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "4": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "5": {
+                          "economy": 1030,
+                          "comfort": 1140,
+                          "luxury": 1250,
+                          "superior_luxury": 1560
+                      },
+                      "6-7": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Elsa's Kopje Meru",
+              "Ikweta Safari Camp",
+              "Rhino River Camp"
+          ],
+          "comfort": [
+              "Ikweta Safari Camp",
+              "Rhino River Camp",
+              "Leopard Rock Lodge"
+          ],
+          "luxury": [
+              "Leopard Rock Lodge",
+              "Elsa's Kopje Meru",
+              "Rhino River Camp"
+          ],
+          "superior_luxury": [
+              "Offbeat Meru Camp",
+              "Elsa's Kopje Meru",
+              "Leopard Rock Lodge"
+          ]
+      }
+  },
+  "samburu-ol-pejeta-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2180
+                      },
+                      "2": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "3": {
+                          "economy": 850,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "4": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "5": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "6-7": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1580,
+                          "comfort": 1740,
+                          "luxury": 1920,
+                          "superior_luxury": 2400
+                      },
+                      "2": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "3": {
+                          "economy": 930,
+                          "comfort": 1020,
+                          "luxury": 1130,
+                          "superior_luxury": 1410
+                      },
+                      "4": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "5": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1330
+                      },
+                      "6-7": {
+                          "economy": 850,
+                          "comfort": 940,
+                          "luxury": 1030,
+                          "superior_luxury": 1290
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2180,
+                          "superior_luxury": 2720
+                      },
+                      "2": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "3": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "4": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "5": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "6-7": {
+                          "economy": 970,
+                          "comfort": 1060,
+                          "luxury": 1170,
+                          "superior_luxury": 1460
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2090,
+                          "comfort": 2300,
+                          "luxury": 2530,
+                          "superior_luxury": 3160
+                      },
+                      "2": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1970
+                      },
+                      "3": {
+                          "economy": 1230,
+                          "comfort": 1350,
+                          "luxury": 1480,
+                          "superior_luxury": 1860
+                      },
+                      "4": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1440,
+                          "superior_luxury": 1800
+                      },
+                      "5": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1410,
+                          "superior_luxury": 1760
+                      },
+                      "6-7": {
+                          "economy": 1120,
+                          "comfort": 1230,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Sweetwaters Serena Camp",
+              "The Stables at Ol Pejeta"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Porini Rhino Camp",
+              "Samburu Game Lodge"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Ol Pejeta Bush Camp",
+              "Elephant Bedroom Camp"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Ol Pejeta House",
+              "Samburu Intrepids Camp"
+          ]
+      }
+  },
+  "northern-kenya-grand-safari-to-diani-beach": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2320,
+                          "comfort": 2550,
+                          "luxury": 2810,
+                          "superior_luxury": 3510
+                      },
+                      "2": {
+                          "economy": 1450,
+                          "comfort": 1600,
+                          "luxury": 1750,
+                          "superior_luxury": 2190
+                      },
+                      "3": {
+                          "economy": 1360,
+                          "comfort": 1500,
+                          "luxury": 1650,
+                          "superior_luxury": 2060
+                      },
+                      "4": {
+                          "economy": 1320,
+                          "comfort": 1450,
+                          "luxury": 1600,
+                          "superior_luxury": 2000
+                      },
+                      "5": {
+                          "economy": 1290,
+                          "comfort": 1420,
+                          "luxury": 1560,
+                          "superior_luxury": 1950
+                      },
+                      "6-7": {
+                          "economy": 1250,
+                          "comfort": 1370,
+                          "luxury": 1510,
+                          "superior_luxury": 1890
+                      },
+                      "srs": {
+                          "economy": 210,
+                          "comfort": 270,
+                          "luxury": 330,
+                          "superior_luxury": 420
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2550,
+                          "comfort": 2810,
+                          "luxury": 3090,
+                          "superior_luxury": 3860
+                      },
+                      "2": {
+                          "economy": 1600,
+                          "comfort": 1750,
+                          "luxury": 1930,
+                          "superior_luxury": 2410
+                      },
+                      "3": {
+                          "economy": 1500,
+                          "comfort": 1650,
+                          "luxury": 1810,
+                          "superior_luxury": 2270
+                      },
+                      "4": {
+                          "economy": 1450,
+                          "comfort": 1600,
+                          "luxury": 1760,
+                          "superior_luxury": 2200
+                      },
+                      "5": {
+                          "economy": 1420,
+                          "comfort": 1560,
+                          "luxury": 1720,
+                          "superior_luxury": 2150
+                      },
+                      "6-7": {
+                          "economy": 1370,
+                          "comfort": 1510,
+                          "luxury": 1660,
+                          "superior_luxury": 2070
+                      },
+                      "srs": {
+                          "economy": 230,
+                          "comfort": 300,
+                          "luxury": 360,
+                          "superior_luxury": 460
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2900,
+                          "comfort": 3190,
+                          "luxury": 3510,
+                          "superior_luxury": 4390
+                      },
+                      "2": {
+                          "economy": 1810,
+                          "comfort": 1990,
+                          "luxury": 2190,
+                          "superior_luxury": 2740
+                      },
+                      "3": {
+                          "economy": 1700,
+                          "comfort": 1870,
+                          "luxury": 2060,
+                          "superior_luxury": 2580
+                      },
+                      "4": {
+                          "economy": 1650,
+                          "comfort": 1810,
+                          "luxury": 2000,
+                          "superior_luxury": 2490
+                      },
+                      "5": {
+                          "economy": 1610,
+                          "comfort": 1770,
+                          "luxury": 1950,
+                          "superior_luxury": 2440
+                      },
+                      "6-7": {
+                          "economy": 1560,
+                          "comfort": 1710,
+                          "luxury": 1890,
+                          "superior_luxury": 2360
+                      },
+                      "srs": {
+                          "economy": 260,
+                          "comfort": 340,
+                          "luxury": 410,
+                          "superior_luxury": 530
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3360,
+                          "comfort": 3700,
+                          "luxury": 4070,
+                          "superior_luxury": 5090
+                      },
+                      "2": {
+                          "economy": 2100,
+                          "comfort": 2310,
+                          "luxury": 2540,
+                          "superior_luxury": 3180
+                      },
+                      "3": {
+                          "economy": 1980,
+                          "comfort": 2170,
+                          "luxury": 2390,
+                          "superior_luxury": 2990
+                      },
+                      "4": {
+                          "economy": 1910,
+                          "comfort": 2100,
+                          "luxury": 2320,
+                          "superior_luxury": 2890
+                      },
+                      "5": {
+                          "economy": 1870,
+                          "comfort": 2060,
+                          "luxury": 2260,
+                          "superior_luxury": 2830
+                      },
+                      "6-7": {
+                          "economy": 1810,
+                          "comfort": 1990,
+                          "luxury": 2190,
+                          "superior_luxury": 2730
+                      },
+                      "srs": {
+                          "economy": 300,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Ikweta Safari Camp",
+              "Sweetwaters Serena Camp",
+              "The Ark Lodge"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Rhino River Camp",
+              "Porini Rhino Camp",
+              "Aberdare Country Club"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Leopard Rock Lodge",
+              "Ol Pejeta Bush Camp",
+              "Treetops Lodge"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Offbeat Meru Camp",
+              "Ol Pejeta House",
+              "Sangare Ranch"
+          ]
+      }
+  },
+  "3-day-samburu-wildlife-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1040,
+                          "comfort": 1140,
+                          "luxury": 1260,
+                          "superior_luxury": 1570
+                      },
+                      "2": {
+                          "economy": 650,
+                          "comfort": 720,
+                          "luxury": 790,
+                          "superior_luxury": 980
+                      },
+                      "3": {
+                          "economy": 610,
+                          "comfort": 670,
+                          "luxury": 740,
+                          "superior_luxury": 920
+                      },
+                      "4": {
+                          "economy": 590,
+                          "comfort": 650,
+                          "luxury": 720,
+                          "superior_luxury": 890
+                      },
+                      "5": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 700,
+                          "superior_luxury": 870
+                      },
+                      "6-7": {
+                          "economy": 560,
+                          "comfort": 610,
+                          "luxury": 680,
+                          "superior_luxury": 850
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1140,
+                          "comfort": 1260,
+                          "luxury": 1380,
+                          "superior_luxury": 1730
+                      },
+                      "2": {
+                          "economy": 720,
+                          "comfort": 790,
+                          "luxury": 870,
+                          "superior_luxury": 1080
+                      },
+                      "3": {
+                          "economy": 670,
+                          "comfort": 740,
+                          "luxury": 810,
+                          "superior_luxury": 1020
+                      },
+                      "4": {
+                          "economy": 650,
+                          "comfort": 720,
+                          "luxury": 790,
+                          "superior_luxury": 980
+                      },
+                      "5": {
+                          "economy": 640,
+                          "comfort": 700,
+                          "luxury": 770,
+                          "superior_luxury": 960
+                      },
+                      "6-7": {
+                          "economy": 610,
+                          "comfort": 680,
+                          "luxury": 740,
+                          "superior_luxury": 930
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1300,
+                          "comfort": 1430,
+                          "luxury": 1570,
+                          "superior_luxury": 1970
+                      },
+                      "2": {
+                          "economy": 810,
+                          "comfort": 890,
+                          "luxury": 980,
+                          "superior_luxury": 1230
+                      },
+                      "3": {
+                          "economy": 760,
+                          "comfort": 840,
+                          "luxury": 920,
+                          "superior_luxury": 1160
+                      },
+                      "4": {
+                          "economy": 740,
+                          "comfort": 810,
+                          "luxury": 890,
+                          "superior_luxury": 1120
+                      },
+                      "5": {
+                          "economy": 720,
+                          "comfort": 800,
+                          "luxury": 870,
+                          "superior_luxury": 1090
+                      },
+                      "6-7": {
+                          "economy": 700,
+                          "comfort": 770,
+                          "luxury": 850,
+                          "superior_luxury": 1060
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1510,
+                          "comfort": 1660,
+                          "luxury": 1820,
+                          "superior_luxury": 2280
+                      },
+                      "2": {
+                          "economy": 940,
+                          "comfort": 1040,
+                          "luxury": 1140,
+                          "superior_luxury": 1430
+                      },
+                      "3": {
+                          "economy": 890,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1340
+                      },
+                      "4": {
+                          "economy": 860,
+                          "comfort": 940,
+                          "luxury": 1040,
+                          "superior_luxury": 1300
+                      },
+                      "5": {
+                          "economy": 840,
+                          "comfort": 920,
+                          "luxury": 1010,
+                          "superior_luxury": 1270
+                      },
+                      "6-7": {
+                          "economy": 810,
+                          "comfort": 890,
+                          "luxury": 980,
+                          "superior_luxury": 1230
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Ashnil Samburu Camp",
+              "Samburu Riverside Camp"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Samburu Game Lodge",
+              "Ashnil Samburu Camp"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Elephant Bedroom Camp",
+              "Elephant Watch Camp"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Samburu Intrepids Camp",
+              "Sarara Camp"
+          ]
+      }
+  },
+  "3-day-ol-pejeta-conservancy-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "2": {
+                          "economy": 620,
+                          "comfort": 680,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "3": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 710,
+                          "superior_luxury": 880
+                      },
+                      "4": {
+                          "economy": 560,
+                          "comfort": 620,
+                          "luxury": 680,
+                          "superior_luxury": 850
+                      },
+                      "5": {
+                          "economy": 550,
+                          "comfort": 610,
+                          "luxury": 670,
+                          "superior_luxury": 830
+                      },
+                      "6-7": {
+                          "economy": 530,
+                          "comfort": 590,
+                          "luxury": 650,
+                          "superior_luxury": 810
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "2": {
+                          "economy": 680,
+                          "comfort": 750,
+                          "luxury": 830,
+                          "superior_luxury": 1030
+                      },
+                      "3": {
+                          "economy": 640,
+                          "comfort": 710,
+                          "luxury": 780,
+                          "superior_luxury": 970
+                      },
+                      "4": {
+                          "economy": 620,
+                          "comfort": 680,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "5": {
+                          "economy": 610,
+                          "comfort": 670,
+                          "luxury": 730,
+                          "superior_luxury": 920
+                      },
+                      "6-7": {
+                          "economy": 590,
+                          "comfort": 650,
+                          "luxury": 710,
+                          "superior_luxury": 890
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1240,
+                          "comfort": 1360,
+                          "luxury": 1500,
+                          "superior_luxury": 1880
+                      },
+                      "2": {
+                          "economy": 780,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "3": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "4": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 850,
+                          "superior_luxury": 1070
+                      },
+                      "5": {
+                          "economy": 690,
+                          "comfort": 760,
+                          "luxury": 830,
+                          "superior_luxury": 1040
+                      },
+                      "6-7": {
+                          "economy": 670,
+                          "comfort": 730,
+                          "luxury": 810,
+                          "superior_luxury": 1010
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2180
+                      },
+                      "2": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "3": {
+                          "economy": 850,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "4": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "5": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "6-7": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Sweetwaters Serena Camp",
+              "The Stables at Ol Pejeta",
+              "Ol Pejeta Safari Cottages"
+          ],
+          "comfort": [
+              "Porini Rhino Camp",
+              "Kicheche Laikipia Camp",
+              "Ol Pejeta Safari Cottages"
+          ],
+          "luxury": [
+              "Ol Pejeta Bush Camp",
+              "Kicheche Laikipia Camp",
+              "Sweetwaters Serena Camp"
+          ],
+          "superior_luxury": [
+              "Ol Pejeta House",
+              "Segera Retreat",
+              "Sirikoi Lodge"
+          ]
+      }
+  },
+  "3-day-aberdares-rainforest-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 930,
+                          "comfort": 1020,
+                          "luxury": 1120,
+                          "superior_luxury": 1400
+                      },
+                      "2": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 700,
+                          "superior_luxury": 880
+                      },
+                      "3": {
+                          "economy": 550,
+                          "comfort": 600,
+                          "luxury": 660,
+                          "superior_luxury": 820
+                      },
+                      "4": {
+                          "economy": 530,
+                          "comfort": 580,
+                          "luxury": 640,
+                          "superior_luxury": 800
+                      },
+                      "5": {
+                          "economy": 520,
+                          "comfort": 570,
+                          "luxury": 620,
+                          "superior_luxury": 780
+                      },
+                      "6-7": {
+                          "economy": 500,
+                          "comfort": 550,
+                          "luxury": 600,
+                          "superior_luxury": 750
+                      },
+                      "srs": {
+                          "economy": 110,
+                          "comfort": 140,
+                          "luxury": 170,
+                          "superior_luxury": 210
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1020,
+                          "comfort": 1120,
+                          "luxury": 1240,
+                          "superior_luxury": 1540
+                      },
+                      "2": {
+                          "economy": 640,
+                          "comfort": 700,
+                          "luxury": 770,
+                          "superior_luxury": 960
+                      },
+                      "3": {
+                          "economy": 600,
+                          "comfort": 660,
+                          "luxury": 730,
+                          "superior_luxury": 910
+                      },
+                      "4": {
+                          "economy": 580,
+                          "comfort": 640,
+                          "luxury": 700,
+                          "superior_luxury": 880
+                      },
+                      "5": {
+                          "economy": 570,
+                          "comfort": 620,
+                          "luxury": 690,
+                          "superior_luxury": 860
+                      },
+                      "6-7": {
+                          "economy": 550,
+                          "comfort": 600,
+                          "luxury": 660,
+                          "superior_luxury": 830
+                      },
+                      "srs": {
+                          "economy": 120,
+                          "comfort": 150,
+                          "luxury": 180,
+                          "superior_luxury": 230
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1400,
+                          "superior_luxury": 1750
+                      },
+                      "2": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "3": {
+                          "economy": 680,
+                          "comfort": 750,
+                          "luxury": 820,
+                          "superior_luxury": 1030
+                      },
+                      "4": {
+                          "economy": 660,
+                          "comfort": 730,
+                          "luxury": 800,
+                          "superior_luxury": 1000
+                      },
+                      "5": {
+                          "economy": 650,
+                          "comfort": 710,
+                          "luxury": 780,
+                          "superior_luxury": 980
+                      },
+                      "6-7": {
+                          "economy": 620,
+                          "comfort": 690,
+                          "luxury": 750,
+                          "superior_luxury": 940
+                      },
+                      "srs": {
+                          "economy": 130,
+                          "comfort": 170,
+                          "luxury": 210,
+                          "superior_luxury": 260
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1350,
+                          "comfort": 1480,
+                          "luxury": 1630,
+                          "superior_luxury": 2040
+                      },
+                      "2": {
+                          "economy": 840,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1270
+                      },
+                      "3": {
+                          "economy": 790,
+                          "comfort": 870,
+                          "luxury": 960,
+                          "superior_luxury": 1200
+                      },
+                      "4": {
+                          "economy": 770,
+                          "comfort": 840,
+                          "luxury": 930,
+                          "superior_luxury": 1160
+                      },
+                      "5": {
+                          "economy": 750,
+                          "comfort": 820,
+                          "luxury": 910,
+                          "superior_luxury": 1130
+                      },
+                      "6-7": {
+                          "economy": 720,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1090
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 300
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "The Ark Lodge",
+              "Rhino Watch Safari Lodge",
+              "Aberdare Cottages"
+          ],
+          "comfort": [
+              "Aberdare Country Club",
+              "Rhino Watch Safari Lodge",
+              "The Ark Lodge"
+          ],
+          "luxury": [
+              "Treetops Lodge",
+              "The Ark Lodge",
+              "Aberdare Country Club"
+          ],
+          "superior_luxury": [
+              "Sangare Ranch",
+              "Giraffe Ark Game Lodge",
+              "Treetops Lodge"
+          ]
+      }
+  },
+  "4-day-meru-national-park-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2180
+                      },
+                      "2": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "3": {
+                          "economy": 850,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "4": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "5": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "6-7": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1580,
+                          "comfort": 1740,
+                          "luxury": 1920,
+                          "superior_luxury": 2400
+                      },
+                      "2": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "3": {
+                          "economy": 930,
+                          "comfort": 1020,
+                          "luxury": 1130,
+                          "superior_luxury": 1410
+                      },
+                      "4": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "5": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1330
+                      },
+                      "6-7": {
+                          "economy": 850,
+                          "comfort": 940,
+                          "luxury": 1030,
+                          "superior_luxury": 1290
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2180,
+                          "superior_luxury": 2720
+                      },
+                      "2": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "3": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "4": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "5": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "6-7": {
+                          "economy": 970,
+                          "comfort": 1060,
+                          "luxury": 1170,
+                          "superior_luxury": 1460
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2090,
+                          "comfort": 2300,
+                          "luxury": 2530,
+                          "superior_luxury": 3160
+                      },
+                      "2": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1970
+                      },
+                      "3": {
+                          "economy": 1230,
+                          "comfort": 1350,
+                          "luxury": 1480,
+                          "superior_luxury": 1860
+                      },
+                      "4": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1440,
+                          "superior_luxury": 1800
+                      },
+                      "5": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1410,
+                          "superior_luxury": 1760
+                      },
+                      "6-7": {
+                          "economy": 1120,
+                          "comfort": 1230,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Elsa's Kopje Meru",
+              "Ikweta Safari Camp",
+              "Rhino River Camp"
+          ],
+          "comfort": [
+              "Ikweta Safari Camp",
+              "Rhino River Camp",
+              "Leopard Rock Lodge"
+          ],
+          "luxury": [
+              "Leopard Rock Lodge",
+              "Elsa's Kopje Meru",
+              "Rhino River Camp"
+          ],
+          "superior_luxury": [
+              "Offbeat Meru Camp",
+              "Elsa's Kopje Meru",
+              "Leopard Rock Lodge"
+          ]
+      }
+  },
+  "4-day-samburu-ol-pejeta-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1440,
+                          "comfort": 1580,
+                          "luxury": 1740,
+                          "superior_luxury": 2180
+                      },
+                      "2": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "3": {
+                          "economy": 850,
+                          "comfort": 930,
+                          "luxury": 1020,
+                          "superior_luxury": 1280
+                      },
+                      "4": {
+                          "economy": 820,
+                          "comfort": 900,
+                          "luxury": 990,
+                          "superior_luxury": 1240
+                      },
+                      "5": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "6-7": {
+                          "economy": 770,
+                          "comfort": 850,
+                          "luxury": 940,
+                          "superior_luxury": 1170
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1580,
+                          "comfort": 1740,
+                          "luxury": 1920,
+                          "superior_luxury": 2400
+                      },
+                      "2": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "3": {
+                          "economy": 930,
+                          "comfort": 1020,
+                          "luxury": 1130,
+                          "superior_luxury": 1410
+                      },
+                      "4": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1360
+                      },
+                      "5": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1070,
+                          "superior_luxury": 1330
+                      },
+                      "6-7": {
+                          "economy": 850,
+                          "comfort": 940,
+                          "luxury": 1030,
+                          "superior_luxury": 1290
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1800,
+                          "comfort": 1980,
+                          "luxury": 2180,
+                          "superior_luxury": 2720
+                      },
+                      "2": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "3": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "4": {
+                          "economy": 1020,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "5": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "6-7": {
+                          "economy": 970,
+                          "comfort": 1060,
+                          "luxury": 1170,
+                          "superior_luxury": 1460
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2090,
+                          "comfort": 2300,
+                          "luxury": 2530,
+                          "superior_luxury": 3160
+                      },
+                      "2": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1970
+                      },
+                      "3": {
+                          "economy": 1230,
+                          "comfort": 1350,
+                          "luxury": 1480,
+                          "superior_luxury": 1860
+                      },
+                      "4": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1440,
+                          "superior_luxury": 1800
+                      },
+                      "5": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1410,
+                          "superior_luxury": 1760
+                      },
+                      "6-7": {
+                          "economy": 1120,
+                          "comfort": 1230,
+                          "luxury": 1360,
+                          "superior_luxury": 1700
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Sweetwaters Serena Camp",
+              "The Stables at Ol Pejeta"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Porini Rhino Camp",
+              "Samburu Game Lodge"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Ol Pejeta Bush Camp",
+              "Elephant Bedroom Camp"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Ol Pejeta House",
+              "Samburu Intrepids Camp"
+          ]
+      }
+  },
+  "4-day-aberdares-ol-pejeta-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1280,
+                          "comfort": 1410,
+                          "luxury": 1550,
+                          "superior_luxury": 1940
+                      },
+                      "2": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "3": {
+                          "economy": 750,
+                          "comfort": 830,
+                          "luxury": 910,
+                          "superior_luxury": 1140
+                      },
+                      "4": {
+                          "economy": 730,
+                          "comfort": 800,
+                          "luxury": 880,
+                          "superior_luxury": 1100
+                      },
+                      "5": {
+                          "economy": 710,
+                          "comfort": 780,
+                          "luxury": 860,
+                          "superior_luxury": 1080
+                      },
+                      "6-7": {
+                          "economy": 690,
+                          "comfort": 760,
+                          "luxury": 830,
+                          "superior_luxury": 1040
+                      },
+                      "srs": {
+                          "economy": 140,
+                          "comfort": 180,
+                          "luxury": 220,
+                          "superior_luxury": 280
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1410,
+                          "comfort": 1550,
+                          "luxury": 1700,
+                          "superior_luxury": 2130
+                      },
+                      "2": {
+                          "economy": 880,
+                          "comfort": 970,
+                          "luxury": 1060,
+                          "superior_luxury": 1330
+                      },
+                      "3": {
+                          "economy": 830,
+                          "comfort": 910,
+                          "luxury": 1000,
+                          "superior_luxury": 1250
+                      },
+                      "4": {
+                          "economy": 800,
+                          "comfort": 880,
+                          "luxury": 970,
+                          "superior_luxury": 1210
+                      },
+                      "5": {
+                          "economy": 780,
+                          "comfort": 860,
+                          "luxury": 950,
+                          "superior_luxury": 1180
+                      },
+                      "6-7": {
+                          "economy": 760,
+                          "comfort": 830,
+                          "luxury": 920,
+                          "superior_luxury": 1140
+                      },
+                      "srs": {
+                          "economy": 150,
+                          "comfort": 200,
+                          "luxury": 240,
+                          "superior_luxury": 310
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 1600,
+                          "comfort": 1760,
+                          "luxury": 1940,
+                          "superior_luxury": 2420
+                      },
+                      "2": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "3": {
+                          "economy": 940,
+                          "comfort": 1030,
+                          "luxury": 1140,
+                          "superior_luxury": 1420
+                      },
+                      "4": {
+                          "economy": 910,
+                          "comfort": 1000,
+                          "luxury": 1100,
+                          "superior_luxury": 1380
+                      },
+                      "5": {
+                          "economy": 890,
+                          "comfort": 980,
+                          "luxury": 1080,
+                          "superior_luxury": 1350
+                      },
+                      "6-7": {
+                          "economy": 860,
+                          "comfort": 950,
+                          "luxury": 1040,
+                          "superior_luxury": 1300
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 1860,
+                          "comfort": 2040,
+                          "luxury": 2250,
+                          "superior_luxury": 2810
+                      },
+                      "2": {
+                          "economy": 1160,
+                          "comfort": 1280,
+                          "luxury": 1400,
+                          "superior_luxury": 1750
+                      },
+                      "3": {
+                          "economy": 1090,
+                          "comfort": 1200,
+                          "luxury": 1320,
+                          "superior_luxury": 1650
+                      },
+                      "4": {
+                          "economy": 1060,
+                          "comfort": 1160,
+                          "luxury": 1280,
+                          "superior_luxury": 1600
+                      },
+                      "5": {
+                          "economy": 1030,
+                          "comfort": 1140,
+                          "luxury": 1250,
+                          "superior_luxury": 1560
+                      },
+                      "6-7": {
+                          "economy": 1000,
+                          "comfort": 1100,
+                          "luxury": 1210,
+                          "superior_luxury": 1510
+                      },
+                      "srs": {
+                          "economy": 200,
+                          "comfort": 260,
+                          "luxury": 320,
+                          "superior_luxury": 410
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "The Ark Lodge",
+              "Sweetwaters Serena Camp",
+              "Rhino Watch Safari Lodge"
+          ],
+          "comfort": [
+              "Aberdare Country Club",
+              "Porini Rhino Camp",
+              "The Ark Lodge"
+          ],
+          "luxury": [
+              "Treetops Lodge",
+              "Ol Pejeta Bush Camp",
+              "Aberdare Country Club"
+          ],
+          "superior_luxury": [
+              "Sangare Ranch",
+              "Ol Pejeta House",
+              "Segera Retreat"
+          ]
+      }
+  },
+  "5-day-samburu-aberdares-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 1680,
+                          "comfort": 1850,
+                          "luxury": 2030,
+                          "superior_luxury": 2540
+                      },
+                      "2": {
+                          "economy": 1050,
+                          "comfort": 1160,
+                          "luxury": 1270,
+                          "superior_luxury": 1590
+                      },
+                      "3": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1190,
+                          "superior_luxury": 1490
+                      },
+                      "4": {
+                          "economy": 960,
+                          "comfort": 1050,
+                          "luxury": 1160,
+                          "superior_luxury": 1450
+                      },
+                      "5": {
+                          "economy": 930,
+                          "comfort": 1030,
+                          "luxury": 1130,
+                          "superior_luxury": 1410
+                      },
+                      "6-7": {
+                          "economy": 900,
+                          "comfort": 990,
+                          "luxury": 1090,
+                          "superior_luxury": 1370
+                      },
+                      "srs": {
+                          "economy": 180,
+                          "comfort": 230,
+                          "luxury": 280,
+                          "superior_luxury": 350
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 1850,
+                          "comfort": 2030,
+                          "luxury": 2240,
+                          "superior_luxury": 2800
+                      },
+                      "2": {
+                          "economy": 1160,
+                          "comfort": 1270,
+                          "luxury": 1400,
+                          "superior_luxury": 1750
+                      },
+                      "3": {
+                          "economy": 1090,
+                          "comfort": 1190,
+                          "luxury": 1310,
+                          "superior_luxury": 1640
+                      },
+                      "4": {
+                          "economy": 1050,
+                          "comfort": 1160,
+                          "luxury": 1270,
+                          "superior_luxury": 1590
+                      },
+                      "5": {
+                          "economy": 1030,
+                          "comfort": 1130,
+                          "luxury": 1240,
+                          "superior_luxury": 1550
+                      },
+                      "6-7": {
+                          "economy": 990,
+                          "comfort": 1090,
+                          "luxury": 1200,
+                          "superior_luxury": 1500
+                      },
+                      "srs": {
+                          "economy": 190,
+                          "comfort": 250,
+                          "luxury": 300,
+                          "superior_luxury": 390
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 2100,
+                          "comfort": 2310,
+                          "luxury": 2540,
+                          "superior_luxury": 3180
+                      },
+                      "2": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1590,
+                          "superior_luxury": 1990
+                      },
+                      "3": {
+                          "economy": 1230,
+                          "comfort": 1360,
+                          "luxury": 1490,
+                          "superior_luxury": 1870
+                      },
+                      "4": {
+                          "economy": 1190,
+                          "comfort": 1310,
+                          "luxury": 1450,
+                          "superior_luxury": 1810
+                      },
+                      "5": {
+                          "economy": 1170,
+                          "comfort": 1280,
+                          "luxury": 1410,
+                          "superior_luxury": 1770
+                      },
+                      "6-7": {
+                          "economy": 1130,
+                          "comfort": 1240,
+                          "luxury": 1370,
+                          "superior_luxury": 1710
+                      },
+                      "srs": {
+                          "economy": 220,
+                          "comfort": 280,
+                          "luxury": 340,
+                          "superior_luxury": 440
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 2440,
+                          "comfort": 2680,
+                          "luxury": 2950,
+                          "superior_luxury": 3680
+                      },
+                      "2": {
+                          "economy": 1520,
+                          "comfort": 1670,
+                          "luxury": 1840,
+                          "superior_luxury": 2300
+                      },
+                      "3": {
+                          "economy": 1430,
+                          "comfort": 1570,
+                          "luxury": 1730,
+                          "superior_luxury": 2160
+                      },
+                      "4": {
+                          "economy": 1390,
+                          "comfort": 1520,
+                          "luxury": 1680,
+                          "superior_luxury": 2100
+                      },
+                      "5": {
+                          "economy": 1360,
+                          "comfort": 1490,
+                          "luxury": 1640,
+                          "superior_luxury": 2050
+                      },
+                      "6-7": {
+                          "economy": 1310,
+                          "comfort": 1440,
+                          "luxury": 1580,
+                          "superior_luxury": 1980
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 330,
+                          "luxury": 400,
+                          "superior_luxury": 510
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Ikweta Safari Camp",
+              "Sweetwaters Serena Camp",
+              "The Ark Lodge"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Rhino River Camp",
+              "Porini Rhino Camp",
+              "Aberdare Country Club"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Leopard Rock Lodge",
+              "Ol Pejeta Bush Camp",
+              "Treetops Lodge"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Offbeat Meru Camp",
+              "Ol Pejeta House",
+              "Sangare Ranch"
+          ]
+      }
+  },
+  "7-day-northern-kenya-grand-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 2400,
+                          "comfort": 2640,
+                          "luxury": 2900,
+                          "superior_luxury": 3630
+                      },
+                      "2": {
+                          "economy": 1500,
+                          "comfort": 1650,
+                          "luxury": 1820,
+                          "superior_luxury": 2270
+                      },
+                      "3": {
+                          "economy": 1410,
+                          "comfort": 1550,
+                          "luxury": 1710,
+                          "superior_luxury": 2130
+                      },
+                      "4": {
+                          "economy": 1370,
+                          "comfort": 1500,
+                          "luxury": 1650,
+                          "superior_luxury": 2060
+                      },
+                      "5": {
+                          "economy": 1340,
+                          "comfort": 1470,
+                          "luxury": 1620,
+                          "superior_luxury": 2020
+                      },
+                      "6-7": {
+                          "economy": 1290,
+                          "comfort": 1420,
+                          "luxury": 1560,
+                          "superior_luxury": 1950
+                      },
+                      "srs": {
+                          "economy": 250,
+                          "comfort": 320,
+                          "luxury": 390,
+                          "superior_luxury": 490
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 2640,
+                          "comfort": 2900,
+                          "luxury": 3190,
+                          "superior_luxury": 3990
+                      },
+                      "2": {
+                          "economy": 1650,
+                          "comfort": 1820,
+                          "luxury": 2000,
+                          "superior_luxury": 2500
+                      },
+                      "3": {
+                          "economy": 1550,
+                          "comfort": 1710,
+                          "luxury": 1880,
+                          "superior_luxury": 2350
+                      },
+                      "4": {
+                          "economy": 1500,
+                          "comfort": 1650,
+                          "luxury": 1820,
+                          "superior_luxury": 2270
+                      },
+                      "5": {
+                          "economy": 1470,
+                          "comfort": 1620,
+                          "luxury": 1780,
+                          "superior_luxury": 2220
+                      },
+                      "6-7": {
+                          "economy": 1420,
+                          "comfort": 1560,
+                          "luxury": 1720,
+                          "superior_luxury": 2150
+                      },
+                      "srs": {
+                          "economy": 270,
+                          "comfort": 350,
+                          "luxury": 420,
+                          "superior_luxury": 540
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 3000,
+                          "comfort": 3300,
+                          "luxury": 3630,
+                          "superior_luxury": 4540
+                      },
+                      "2": {
+                          "economy": 1880,
+                          "comfort": 2060,
+                          "luxury": 2270,
+                          "superior_luxury": 2840
+                      },
+                      "3": {
+                          "economy": 1760,
+                          "comfort": 1940,
+                          "luxury": 2130,
+                          "superior_luxury": 2670
+                      },
+                      "4": {
+                          "economy": 1710,
+                          "comfort": 1880,
+                          "luxury": 2060,
+                          "superior_luxury": 2580
+                      },
+                      "5": {
+                          "economy": 1670,
+                          "comfort": 1840,
+                          "luxury": 2020,
+                          "superior_luxury": 2520
+                      },
+                      "6-7": {
+                          "economy": 1610,
+                          "comfort": 1770,
+                          "luxury": 1950,
+                          "superior_luxury": 2440
+                      },
+                      "srs": {
+                          "economy": 310,
+                          "comfort": 390,
+                          "luxury": 480,
+                          "superior_luxury": 610
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 3480,
+                          "comfort": 3830,
+                          "luxury": 4210,
+                          "superior_luxury": 5260
+                      },
+                      "2": {
+                          "economy": 2180,
+                          "comfort": 2390,
+                          "luxury": 2630,
+                          "superior_luxury": 3290
+                      },
+                      "3": {
+                          "economy": 2040,
+                          "comfort": 2250,
+                          "luxury": 2470,
+                          "superior_luxury": 3090
+                      },
+                      "4": {
+                          "economy": 1980,
+                          "comfort": 2180,
+                          "luxury": 2390,
+                          "superior_luxury": 2990
+                      },
+                      "5": {
+                          "economy": 1940,
+                          "comfort": 2130,
+                          "luxury": 2340,
+                          "superior_luxury": 2930
+                      },
+                      "6-7": {
+                          "economy": 1870,
+                          "comfort": 2060,
+                          "luxury": 2260,
+                          "superior_luxury": 2830
+                      },
+                      "srs": {
+                          "economy": 360,
+                          "comfort": 460,
+                          "luxury": 560,
+                          "superior_luxury": 710
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Samburu Simba Lodge",
+              "Ikweta Safari Camp",
+              "Sweetwaters Serena Camp",
+              "The Ark Lodge"
+          ],
+          "comfort": [
+              "Samburu Sopa Lodge",
+              "Rhino River Camp",
+              "Porini Rhino Camp",
+              "Aberdare Country Club"
+          ],
+          "luxury": [
+              "Saruni Samburu",
+              "Leopard Rock Lodge",
+              "Ol Pejeta Bush Camp",
+              "Treetops Lodge"
+          ],
+          "superior_luxury": [
+              "Sasaab Lodge",
+              "Offbeat Meru Camp",
+              "Ol Pejeta House",
+              "Sangare Ranch"
+          ]
+      }
+  },
+  "14-day-kenya-tanzania-9-parks-ultimate-safari": {
+      "pricing": {
+          "seasons": {
+              "low": {
+                  "dates": "1st Apr – 31st May",
+                  "rates": {
+                      "1": {
+                          "economy": 9120,
+                          "comfort": 10030,
+                          "luxury": 11040,
+                          "superior_luxury": 13790
+                      },
+                      "2": {
+                          "economy": 5700,
+                          "comfort": 6270,
+                          "luxury": 6900,
+                          "superior_luxury": 8620
+                      },
+                      "3": {
+                          "economy": 5360,
+                          "comfort": 5890,
+                          "luxury": 6480,
+                          "superior_luxury": 8100
+                      },
+                      "4": {
+                          "economy": 5190,
+                          "comfort": 5710,
+                          "luxury": 6280,
+                          "superior_luxury": 7850
+                      },
+                      "5": {
+                          "economy": 5070,
+                          "comfort": 5580,
+                          "luxury": 6140,
+                          "superior_luxury": 7670
+                      },
+                      "6-7": {
+                          "economy": 4900,
+                          "comfort": 5390,
+                          "luxury": 5930,
+                          "superior_luxury": 7410
+                      },
+                      "srs": {
+                          "economy": 490,
+                          "comfort": 630,
+                          "luxury": 770,
+                          "superior_luxury": 980
+                      }
+                  }
+              },
+              "shoulder_a": {
+                  "dates": "3rd Jan – 31st Mar & 1st Jun – 30th Jun",
+                  "rates": {
+                      "1": {
+                          "economy": 10030,
+                          "comfort": 11040,
+                          "luxury": 12140,
+                          "superior_luxury": 15170
+                      },
+                      "2": {
+                          "economy": 6270,
+                          "comfort": 6900,
+                          "luxury": 7590,
+                          "superior_luxury": 9480
+                      },
+                      "3": {
+                          "economy": 5890,
+                          "comfort": 6480,
+                          "luxury": 7130,
+                          "superior_luxury": 8910
+                      },
+                      "4": {
+                          "economy": 5710,
+                          "comfort": 6280,
+                          "luxury": 6900,
+                          "superior_luxury": 8630
+                      },
+                      "5": {
+                          "economy": 5580,
+                          "comfort": 6140,
+                          "luxury": 6750,
+                          "superior_luxury": 8440
+                      },
+                      "6-7": {
+                          "economy": 5390,
+                          "comfort": 5930,
+                          "luxury": 6520,
+                          "superior_luxury": 8160
+                      },
+                      "srs": {
+                          "economy": 540,
+                          "comfort": 690,
+                          "luxury": 850,
+                          "superior_luxury": 1080
+                      }
+                  }
+              },
+              "shoulder_b": {
+                  "dates": "1st Nov – 15th Dec",
+                  "rates": {
+                      "1": {
+                          "economy": 11400,
+                          "comfort": 12540,
+                          "luxury": 13790,
+                          "superior_luxury": 17240
+                      },
+                      "2": {
+                          "economy": 7130,
+                          "comfort": 7840,
+                          "luxury": 8620,
+                          "superior_luxury": 10780
+                      },
+                      "3": {
+                          "economy": 6700,
+                          "comfort": 7370,
+                          "luxury": 8100,
+                          "superior_luxury": 10130
+                      },
+                      "4": {
+                          "economy": 6480,
+                          "comfort": 7130,
+                          "luxury": 7850,
+                          "superior_luxury": 9810
+                      },
+                      "5": {
+                          "economy": 6340,
+                          "comfort": 6980,
+                          "luxury": 7670,
+                          "superior_luxury": 9590
+                      },
+                      "6-7": {
+                          "economy": 6130,
+                          "comfort": 6740,
+                          "luxury": 7410,
+                          "superior_luxury": 9270
+                      },
+                      "srs": {
+                          "economy": 610,
+                          "comfort": 790,
+                          "luxury": 960,
+                          "superior_luxury": 1230
+                      }
+                  }
+              },
+              "peak": {
+                  "dates": "1st Jul – 31st Oct & 16th Dec – 2nd Jan",
+                  "rates": {
+                      "1": {
+                          "economy": 13220,
+                          "comfort": 14550,
+                          "luxury": 16000,
+                          "superior_luxury": 20000
+                      },
+                      "2": {
+                          "economy": 8270,
+                          "comfort": 9090,
+                          "luxury": 10000,
+                          "superior_luxury": 12500
+                      },
+                      "3": {
+                          "economy": 7770,
+                          "comfort": 8550,
+                          "luxury": 9400,
+                          "superior_luxury": 11750
+                      },
+                      "4": {
+                          "economy": 7520,
+                          "comfort": 8270,
+                          "luxury": 9100,
+                          "superior_luxury": 11380
+                      },
+                      "5": {
+                          "economy": 7360,
+                          "comfort": 8090,
+                          "luxury": 8900,
+                          "superior_luxury": 11130
+                      },
+                      "6-7": {
+                          "economy": 7110,
+                          "comfort": 7820,
+                          "luxury": 8600,
+                          "superior_luxury": 10750
+                      },
+                      "srs": {
+                          "economy": 710,
+                          "comfort": 910,
+                          "luxury": 1120,
+                          "superior_luxury": 1420
+                      }
+                  }
+              }
+          },
+          "child_rates": "Children below 3: Free | Children 3-11: 75% of adult rate | Children 12+: Adult rate",
+          "currency": "USD",
+          "note": "Prices per person sharing in double/twin room"
+      },
+      "accommodations": {
+          "economy": [
+              "Amboseli Sopa Lodge",
+              "Samburu Simba Lodge",
+              "Sweetwaters Serena Camp",
+              "Mara Chui Camp",
+              "Seronera Wildlife Lodge",
+              "Tarangire Safari Lodge"
+          ],
+          "comfort": [
+              "Ol Tukai Lodge",
+              "Samburu Sopa Lodge",
+              "Porini Rhino Camp",
+              "Mara Sopa Lodge",
+              "Serengeti Sopa Lodge",
+              "Ngorongoro Sopa Lodge"
+          ],
+          "luxury": [
+              "Amboseli Serena Safari Lodge",
+              "Saruni Samburu",
+              "Ol Pejeta Bush Camp",
+              "Mara Serena Safari Lodge",
+              "Serengeti Serena Safari Lodge",
+              "Tarangire Treetops"
+          ],
+          "superior_luxury": [
+              "Tawi Lodge",
+              "Sasaab Lodge",
+              "Ol Pejeta House",
+              "Karen Blixen Camp",
+              "&Beyond Serengeti Under Canvas",
+              "&Beyond Ngorongoro Crater Lodge"
+          ]
+      }
+  }
 };

@@ -413,7 +413,7 @@ export default function KenyaLodgesPage() {
       {/* Hero Section */}
       <section className="relative bg-[#4F5D56] text-white pt-28 md:pt-32 pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 font-serif">
             Complete Kenya Safari Lodges &amp; Camps Directory
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-6">
@@ -518,7 +518,7 @@ export default function KenyaLodgesPage() {
             )}
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1.5 h-10 bg-[#A68B52] rounded-full" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 font-serif">
                 {region.name}
               </h2>
               <span className="text-sm text-gray-500 font-medium">{region.lodges.length} {region.lodges.length === 1 ? 'property' : 'properties'}</span>
@@ -531,7 +531,7 @@ export default function KenyaLodgesPage() {
 
         {/* CTA */}
         <section className="mt-16 mb-8 bg-[#4F5D56] text-white rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Can&apos;t Decide? Let Us Help</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 font-serif">Can&apos;t Decide? Let Us Help</h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-6">
             With {totalLodges} properties to choose from, finding the perfect lodge can be overwhelming.
             Our safari experts will match you with the ideal accommodation based on your budget, interests, and travel dates.

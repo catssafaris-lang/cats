@@ -41,7 +41,7 @@ export default function KenyaRwandaSafarisContent() {
       {/* Safari packages */}
       {krSafaris.length > 0 && (
         <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
-          <h2 className="text-2xl font-bold text-stone-900 mb-8">Our Kenya & Rwanda Safari Packages</h2>
+          <h2 className="text-2xl font-bold text-stone-900 mb-8 font-serif">Our Kenya & Rwanda Safari Packages</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {krSafaris.map((safari) => (
               <SafariCard key={safari.slug} safari={safari} />
@@ -53,7 +53,7 @@ export default function KenyaRwandaSafarisContent() {
       {/* CTA */}
       <section className="bg-[var(--cats-green)] py-12 text-center text-white">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Meet the Mountain Gorillas?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 font-serif">Ready to Meet the Mountain Gorillas?</h2>
           <p className="text-white/90 mb-6">Contact our Kenya-Rwanda safari specialists for a personalised itinerary and competitive pricing.</p>
           <a href="mailto:info@catssafaris.com?subject=Kenya-Rwanda%20Safari%20Enquiry" className="inline-block rounded-full bg-[var(--golden-savannah)] px-8 py-3 font-semibold text-white hover:brightness-90 transition">Get a Free Quote</a>
         </div>

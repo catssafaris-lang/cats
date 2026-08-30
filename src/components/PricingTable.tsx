@@ -77,7 +77,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
 
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Safari Pricing
         </h2>
@@ -261,7 +261,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
 
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Safari Pricing
         </h2>
@@ -409,7 +409,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
 
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Tour Pricing
         </h2>
@@ -465,7 +465,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
     const rates = (pricing as any).rates;
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Group Safari Pricing
         </h2>
@@ -508,7 +508,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
     const minPrice = (pricing as any).min_price;
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Tour Pricing
         </h2>
@@ -554,7 +554,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
 
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Tour Pricing
         </h2>
@@ -626,7 +626,7 @@ export default function PricingTable({ slug }: PricingTableProps) {
     const rates = (pricing as any).rates;
     return (
       <div className="mt-12" id="pricing">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2 font-serif">
           <DollarSign className="text-[#A68B52]" size={28} />
           Climbing Rates
         </h2>

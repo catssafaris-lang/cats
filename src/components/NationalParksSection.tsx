@@ -48,7 +48,7 @@ export default function NationalParksSection({ parks, title, sectionTitle, secti
           <div className="relative h-64 md:h-80 w-full">
             <Image src={img} alt={park.name} fill className="object-cover" sizes="100vw" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">{park.name}</h3>
+            <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white font-serif">{park.name}</h3>
           </div>
         )}
         <div className="p-6">
@@ -85,7 +85,7 @@ export default function NationalParksSection({ parks, title, sectionTitle, secti
 
   return (
     <section className="py-12">
-      <h2 className="text-2xl font-bold text-amber-900 mb-4">{displayTitle}</h2>
+      <h2 className="text-2xl font-bold text-amber-900 mb-4 font-serif">{displayTitle}</h2>
       {sectionSubtitle && <p className="text-gray-600 mb-8 max-w-3xl leading-relaxed">{sectionSubtitle}</p>}
 
       {hasGroups ? (

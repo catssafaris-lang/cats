@@ -367,7 +367,7 @@ export default function DomesticFlightsClient() {
                         <Plane size={16} />
                         Bush &amp; Domestic Flights
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-serif">
                         Bush Flights &amp; Domestic Flights Across East Africa
                     </h1>
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
@@ -385,7 +385,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#e7efe6] text-[#2f5233]">
                             Request a Flight
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#2f3b34]">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#2f3b34] font-serif">
                             Bush Flight Booking Form
                         </h2>
                         <p className="text-lg max-w-2xl mx-auto text-[#5c6b62]">
@@ -702,7 +702,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#faf1da] text-[#a68b52]">
                             Our Partner Carriers
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34]">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34] font-serif">
                             Airlines Operating Domestic &amp; Bush Flights
                         </h2>
                     </div>
@@ -733,7 +733,7 @@ export default function DomesticFlightsClient() {
       {/* Popular Safari Destinations */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-4">Popular Safari Destinations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-4 font-serif">Popular Safari Destinations</h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Fly direct to East Africa&apos;s most spectacular wildlife destinations. From the Great Migration in the Masai Mara to mountain gorilla trekking in Bwindi, experience the best safari flights across Kenya, Tanzania, Uganda, and Rwanda.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -775,7 +775,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#e7efe6] text-[#2f5233]">
                             Directory
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34]">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34] font-serif">
                             East African Airstrips Directory
                         </h2>
                     </div>
@@ -806,7 +806,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#faf1da] text-[#a68b52]">
                             Where to Fly
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34]">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34] font-serif">
                             Destination Guides
                         </h2>
                     </div>
@@ -833,7 +833,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#e7efe6] text-[#2f5233]">
                             The Bush Flight Advantage
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34]">Why Fly Bush</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34] font-serif">Why Fly Bush</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         {whyFlyBush.map((w, i) => (
@@ -853,7 +853,7 @@ export default function DomesticFlightsClient() {
                         <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4 bg-[#faf1da] text-[#a68b52]">
                             Questions
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34]">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2f3b34] font-serif">
                             Bush Flight FAQs
                         </h2>
                     </div>
@@ -883,7 +883,7 @@ export default function DomesticFlightsClient() {
             <section className="py-16 md:py-20 text-center bg-gradient-to-br from-[#2f5233] to-[#1c3320]">
                 <div className="max-w-2xl mx-auto px-4">
                     <Shield size={40} className="mx-auto mb-6 text-[#e9cd82]" />
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Let Us Arrange Your Bush Flight
                     </h2>
                     <p className="text-lg text-white/85 mb-8">

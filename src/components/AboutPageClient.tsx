@@ -517,7 +517,7 @@ export default function AboutPageClient() {
 
                         {/* Right — Testimonial */}
                         <div className="relative">
-                            <div className="absolute -top-4 -left-2 text-[var(--color-golden-savannah)] text-7xl leading-none opacity-30" style={{ fontFamily: 'serif' }}>&ldquo;</div>
+                            <div className="absolute -top-4 -left-2 text-[var(--color-golden-savannah)] text-7xl leading-none opacity-30" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>&ldquo;</div>
                             <blockquote className="bg-white/[0.07] backdrop-blur-md rounded-2xl border border-white/10 p-8 md:p-10">
                                 <div className="flex mb-4 gap-1">
                                     {[...Array(5)].map((_, i) => (
