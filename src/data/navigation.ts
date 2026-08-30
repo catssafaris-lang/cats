@@ -91,15 +91,7 @@ export const navigationData: NavSection[] = [
       { name: 'Payment Methods', href: '/payment-methods' },
     ],
   },
-  {
-    name: 'Flights',
-    dropdown: [
-      { name: 'Safari Flights Overview', href: '/flights' },
-      { name: 'Private Charter & Airstrips', href: '/domestic-flights' },
-      { name: 'Search & Book Flights', href: '/flight-search' },
-      { name: 'Kenya Flight Safaris', href: '/kenya-flight-safaris' },
-    ],
-  },
+  { name: 'Flights', href: '/flights' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
