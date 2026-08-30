@@ -131,14 +131,14 @@ const safariCategories = [
   },
   {
     title: 'KENYA-UGANDA GORILLA SAFARIS',
-    image: 'https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/38294718/pexels-photo-38294718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     description: 'Combine Kenya wildlife safaris with mountain gorilla trekking in Uganda\'s Bwindi Impenetrable Forest — a once-in-a-lifetime experience.',
     href: '/kenya-uganda-safaris',
     cta: 'View Kenya-Uganda Safaris',
   },
   {
     title: 'KENYA-RWANDA GORILLA SAFARIS',
-    image: 'https://images.pexels.com/photos/3250364/pexels-photo-3250364.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/38294705/pexels-photo-38294705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     description: 'Explore Kenya\'s Big Five parks, then trek to see mountain gorillas and golden monkeys in Rwanda\'s Volcanoes National Park.',
     href: '/kenya-rwanda-safaris',
     cta: 'View Kenya-Rwanda Safaris',
