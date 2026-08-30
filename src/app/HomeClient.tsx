@@ -29,7 +29,7 @@ export default function HomeClient({ slides }: { slides: Slide[] }) {
 
   return (
     <section
-      className="relative h-[85vh] min-h-[600px] overflow-hidden"
+      className="relative h-[60vh] min-h-[420px] max-h-[680px] overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Safari highlights slideshow"

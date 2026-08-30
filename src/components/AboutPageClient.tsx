@@ -462,34 +462,96 @@ export default function AboutPageClient() {
                 </div>
             </section>
 
-            {/* MEET DAVID */}
-            <section className="py-24 bg-[var(--color-warm-ivory)]">
-                <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-[240px_1fr] gap-10 items-center">
-                    <div className="relative mx-auto h-56 w-56 overflow-hidden rounded-full border-4 border-[var(--color-sunset-bronze)]/30 shadow-lg">
-                        <Image
-                            src="https://ik.imagekit.io/axd1riwnv/david-thuo.jpg"
-                            alt="David, part of the C.A.T.S Safaris team"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div>
-                        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-sunset-bronze)]">Meet David</p>
-                        <h2 className="text-3xl font-bold text-[var(--color-forest-canopy)] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-                            A Human Touch Behind the Collective
-                        </h2>
-                        <p className="mb-4 leading-relaxed text-stone-700">
-                            David is one of the familiar faces behind C.A.T.S. With years of hands-on experience across Kenya&apos;s national parks, conservancies, and coastal retreats, his warm, practical approach helps travellers turn a first idea into a journey that feels genuinely theirs. He works alongside our wider team and trusted partners across East Africa to keep every detail — from game-drive timing to lodge selection — moving seamlessly.
-                        </p>
-                        <p className="mb-6 leading-relaxed text-stone-700">
-                            Whether you&apos;re planning a first-time Masai Mara safari, a multi-country gorilla trekking expedition, or a family beach holiday on the Kenyan coast, David and the C.A.T.S team are here to make it personal.
-                        </p>
-                        <Link href="/contact" className="inline-block rounded-full bg-[var(--color-sunset-bronze)] px-7 py-3 font-semibold text-white hover:shadow-lg transition-shadow">
-                            Talk with Our Team
-                        </Link>
+                        {/* MEET DAVID — IMMERSIVE WITH TESTIMONIAL */}
+            <section className="relative py-0 overflow-hidden">
+                <div className="absolute inset-0">
+                    <Image
+                        src="https://ik.imagekit.io/axd1riwnv/Masai-Mara-Kenya-wildlife-and-wildebeest-migration-safari-tour-packages.jpg"
+                        alt="East African savannah at golden hour"
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#2c1810]/93 via-[#2c1810]/82 to-[#2c1810]/60" />
+                </div>
+
+                <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 md:py-28">
+                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-golden-savannah)] text-center">The Human Touch</p>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-center" style={{ fontFamily: 'var(--font-playfair)' }}>
+                        Meet David &mdash; Your Safari Partner Across East Africa
+                    </h2>
+                    <p className="text-white/60 text-center mb-14 text-sm uppercase tracking-widest">Turning First Enquiries Into Journeys of a Lifetime</p>
+
+                    <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+                        {/* Left — David's Story */}
+                        <div className="space-y-5 text-base md:text-lg leading-relaxed text-white/85">
+                            <p>
+                                David is one of the driving forces behind Collective African Tours &amp; Safaris. With over 15&nbsp;years navigating Kenya&apos;s national parks, private conservancies, and coastal retreats, he brings an intimate knowledge of the land that no guidebook can match &mdash; the exact bend in the Mara River where crossings happen, which Amboseli waterhole elephants favour at dawn, and which Tsavo ridge catches the best sunset light.
+                            </p>
+                            <p>
+                                His warm, practical approach means every detail &mdash; from game-drive timing and lodge selection to bush dinner surprises and SGR train bookings &mdash; is handled with care and deep local expertise. Working alongside our wider team and trusted partner network across East Africa, David ensures your safari feels genuinely, unmistakably yours.
+                            </p>
+                            <p>
+                                Whether you&apos;re planning a first-time Masai Mara wildlife safari, a multi-country gorilla trekking expedition through Uganda and Rwanda, a Mount Kilimanjaro summit, or a family beach escape on the Kenyan coast &mdash; David and the C.A.T.S team are here to make it personal.
+                            </p>
+
+                            <div className="pt-4 flex flex-wrap gap-8">
+                                <div className="text-center">
+                                    <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">15+</p>
+                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Years</p>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">5</p>
+                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Countries</p>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">500+</p>
+                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Safaris</p>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">100%</p>
+                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Tailor Made</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right — Testimonial */}
+                        <div className="relative">
+                            <div className="absolute -top-4 -left-2 text-[var(--color-golden-savannah)] text-7xl leading-none opacity-30" style={{ fontFamily: 'serif' }}>&ldquo;</div>
+                            <blockquote className="bg-white/[0.07] backdrop-blur-md rounded-2xl border border-white/10 p-8 md:p-10">
+                                <div className="flex mb-4 gap-1">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} className="w-5 h-5 text-[var(--color-golden-savannah)]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    ))}
+                                </div>
+                                <p className="text-white/80 text-[15px] leading-relaxed italic mb-3">
+                                    &ldquo;After a dreadful let-down by another operator only 10&nbsp;days before our trip, we engaged David to help us plan our dream holiday. We needed a private guide for 8&nbsp;days around 4&nbsp;different national parks, park entrance fees, taxis and train tickets&nbsp;&mdash; David assisted us remotely via WhatsApp and email.&rdquo;
+                                </p>
+                                <p className="text-white/80 text-[15px] leading-relaxed italic mb-3">
+                                    &ldquo;From the taxi pickup at Nairobi&nbsp;&mdash; David even sending a photo of our driver so we could see who he was after a long flight!&nbsp;&mdash; to our guide Benson who arrived early to collect us, there started the most wonderful 8&nbsp;days of our lives. We have travelled widely but this trip will forever be in our hearts.&rdquo;
+                                </p>
+                                <p className="text-white/80 text-[15px] leading-relaxed italic mb-6">
+                                    &ldquo;David ensured every stage was seamless&nbsp;&mdash; we were collected, dropped off, tickets booked, and he checked in with us at every stage. He even checked in a few days after we arrived home. A special, seamless service which was 5&#8209;star throughout. We feel we have made friends for life.&rdquo;
+                                </p>
+                                <footer className="flex items-center gap-3">
+                                    <div className="h-px flex-1 bg-white/15" />
+                                    <cite className="text-sm not-italic text-[var(--color-golden-savannah)] font-semibold tracking-wide">Verified Guest &bull; 18-Day Kenya Safari</cite>
+                                </footer>
+                            </blockquote>
+
+                            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                                <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-[var(--color-golden-savannah)] px-8 py-3.5 font-semibold text-white shadow-lg transition hover:shadow-xl hover:bg-[#d0b46c]">
+                                    Talk with David &amp; Our Team
+                                </Link>
+                                <a href="https://wa.me/254723951388" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border-2 border-white/30 px-8 py-3.5 font-semibold text-white backdrop-blur-sm transition hover:bg-white/15">
+                                    WhatsApp Us
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+
 
             {/* 5. WHO TRAVELS WITH US */}
             <section className="py-24 bg-[var(--color-warm-ivory)]">
