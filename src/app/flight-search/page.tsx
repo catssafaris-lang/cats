@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import FlightSearchForm from '@/components/FlightSearchForm';
 
 export const metadata: Metadata = {
   title: 'Search & Book Flights to East Africa | C.A.T.S Safaris',
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
   keywords: 'flights to Kenya, flights to Nairobi, flights to Tanzania, flights to East Africa, book safari flights, cheap flights Africa',
   alternates: { canonical: '/flight-search' },
 };
+
+const MARKER = '486464';
 
 const routes = [
   { city: 'London', code: 'LHR', country: 'United Kingdom', airlines: 'Kenya Airways, British Airways, Emirates', time: '8h 30m direct', img: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600' },
@@ -34,6 +37,26 @@ const eastAfrica = [
   { city: 'Mombasa', code: 'MBA', country: 'Kenya', img: 'https://images.pexels.com/photos/13418220/pexels-photo-13418220.jpeg?auto=compress&cs=tinysrgb&w=400' },
 ];
 
+function getRouteSearchUrl(originCode: string) {
+  const today = new Date();
+  const dep = new Date(today);
+  dep.setDate(dep.getDate() + 30);
+  const ret = new Date(dep);
+  ret.setDate(ret.getDate() + 14);
+  const ddmm = (d: Date) => String(d.getDate()).padStart(2, '0') + String(d.getMonth() + 1).padStart(2, '0');
+  return `https://www.aviasales.com/search/${originCode}${ddmm(dep)}NBO${ddmm(ret)}1?marker=${MARKER}`;
+}
+
+function getDestSearchUrl(destCode: string) {
+  const today = new Date();
+  const dep = new Date(today);
+  dep.setDate(dep.getDate() + 30);
+  const ret = new Date(dep);
+  ret.setDate(ret.getDate() + 14);
+  const ddmm = (d: Date) => String(d.getDate()).padStart(2, '0') + String(d.getMonth() + 1).padStart(2, '0');
+  return `https://www.aviasales.com/search/NBO${ddmm(dep)}${destCode}${ddmm(ret)}1?marker=${MARKER}`;
+}
+
 export default function FlightSearchPage() {
   return (
     <>
@@ -52,23 +75,13 @@ export default function FlightSearchPage() {
         </div>
       </section>
 
-      {/* Flight Search Widget — embedded whitelabel */}
+      {/* Flight Search Form */}
       <section className="bg-[#f7f4ed] px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <iframe
-            src="https://flights.catssafaris.com/?locale=en"
-            width="100%"
-            height="720"
-            frameBorder="0"
-            scrolling="auto"
-            className="w-full min-h-[680px] rounded-2xl shadow-lg"
-            title="C.A.T.S Safaris Flight Search"
-            allow="payment"
-            style={{ border: 'none' }}
-          />
+          <FlightSearchForm />
 
           {/* Need Help CTA */}
-          <div className="mx-auto mt-8 max-w-3xl bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+          <div className="mx-auto mt-10 max-w-3xl bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
             <h2 className="mb-4 text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
               Need Help Finding the Right Flight?
             </h2>
@@ -111,7 +124,7 @@ export default function FlightSearchPage() {
             {routes.map((r) => (
               <a
                 key={r.code}
-                href={`https://flights.catssafaris.com/?origin=${r.code}&destination=NBO&locale=en`}
+                href={getRouteSearchUrl(r.code)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300"
@@ -162,7 +175,7 @@ export default function FlightSearchPage() {
             {eastAfrica.map((d) => (
               <a
                 key={d.code}
-                href={`https://flights.catssafaris.com/?destination=${d.code}&locale=en`}
+                href={getDestSearchUrl(d.code)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-center rounded-2xl bg-[#f7f4ed] p-4 hover:shadow-md transition-all border border-stone-100"
@@ -186,17 +199,29 @@ export default function FlightSearchPage() {
           </h2>
           <div className="grid gap-8 sm:grid-cols-3">
             <div>
-              <div className="mb-3 text-4xl">&#9992;</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-[#a68b52]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+                </svg>
+              </div>
               <h3 className="mb-2 text-lg font-bold text-[#a68b52]">Seamless Coordination</h3>
               <p className="text-sm text-white/80">We align international arrivals with domestic flights, ground transfers, and safari departures — one itinerary, zero gaps.</p>
             </div>
             <div>
-              <div className="mb-3 text-4xl">&#127757;</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-[#a68b52]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+              </div>
               <h3 className="mb-2 text-lg font-bold text-[#a68b52]">15 Years of Expertise</h3>
               <p className="text-sm text-white/80">Our network of trusted partners across East Africa ensures every detail is handled by specialists who know the terrain.</p>
             </div>
             <div>
-              <div className="mb-3 text-4xl">&#128222;</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-[#a68b52]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
               <h3 className="mb-2 text-lg font-bold text-[#a68b52]">24/7 Support</h3>
               <p className="text-sm text-white/80">From the moment you book until you land back home, our team is available by phone, email, or WhatsApp.</p>
             </div>
