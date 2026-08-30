@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
-import { X, ChevronDown, Calendar, Users, Baby, Globe, Phone, Mail, MapPin, Plane, Sun, Clock } from 'lucide-react';
+import { X, ChevronDown, Calendar, Users, Baby, Globe, Phone, Mail, MapPin, Sun, Clock } from 'lucide-react';
 
 /* ────────────────────────── Country Data ────────────────────────── */
 const countries = [
@@ -147,7 +147,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
-  const [interests, setInterests] = useState('');
+  // interests removed — only on Contact Us page
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -234,7 +234,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
       childrenInfo,
       '',
       accommodationTier ? `Preferred Accommodation: ${accommodationTier}` : '',
-      interests ? `Safari Interests: ${interests}` : '',
+
       message ? `Special Requests: ${message}` : '',
     ].filter(Boolean).join('\n');
 
@@ -435,8 +435,8 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                   </div>
                 )}
 
-                {/* ── Accommodation Category ── */}
-                <div className="space-y-4">
+                {/* ── Accommodation Category (hide for NNP, day trips, excursions) ── */}
+                {!isNNP && !isDayTrip && <div className="space-y-4">
                   <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">Accommodation Preference</h3>
                   <div>
                     <label className={labelClasses}>Preferred Category</label>
@@ -453,7 +453,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                       icon={MapPin}
                     />
                   </div>
-                </div>
+                </div>}
 
                 {/* ── Adults ── */}
                 <div className="space-y-3">
@@ -513,32 +513,6 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 {/* ── Interests & Message ── */}
                 <div className="space-y-4">
                   <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">Additional Details</h3>
-
-                  {!isNNP && (
-                    <div>
-                      <label className={labelClasses}>Safari Interests</label>
-                      <CustomSelect
-                        value={interests}
-                        onChange={setInterests}
-                        options={[
-                          { value: 'Big Five Wildlife', label: 'Big Five Wildlife' },
-                          { value: 'Great Migration', label: 'Great Migration' },
-                          { value: 'Gorilla Trekking', label: 'Gorilla Trekking' },
-                          { value: 'Bush & Beach Combo', label: 'Bush & Beach Combo' },
-                          { value: 'Photography Safari', label: 'Photography Safari' },
-                          { value: 'Family Safari', label: 'Family Safari' },
-                          { value: 'Honeymoon / Romance', label: 'Honeymoon / Romance' },
-                          { value: 'Cultural Experiences', label: 'Cultural Experiences' },
-                          { value: 'Mountain Climbing', label: 'Mountain Climbing' },
-                          { value: 'Bird Watching', label: 'Bird Watching' },
-                          { value: 'Day Trips & Excursions', label: 'Day Trips & Excursions' },
-                          { value: 'Fly-In Safari', label: 'Fly-In Safari' },
-                        ]}
-                        placeholder="What excites you most?"
-                        icon={Plane}
-                      />
-                    </div>
-                  )}
 
                   <div>
                     <label className={labelClasses}>Special Requests or Questions</label>
