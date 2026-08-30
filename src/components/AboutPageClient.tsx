@@ -888,7 +888,7 @@ export default function AboutPageClient() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button 
-                            onClick={() => openModal()} 
+                            onClick={() => openModal('General Enquiry', 'https://www.catssafaris.com/about')} 
                             className="bg-gradient-to-r from-[var(--color-sunset-bronze)] to-[var(--color-golden-savannah)] text-white px-8 py-4 rounded-full font-bold text-lg uppercase tracking-wide hover:shadow-lg hover:scale-105 transition-all duration-300"
                         >
                             Request A Free Custom Quote

@@ -39,7 +39,7 @@ export default function KenyaFlightSafarisPage() {
                         Scenic bush flights from Nairobi to the Masai Mara, Amboseli, Samburu, Laikipia, Tsavo, Lamu &amp; Diani Beach
                     </p>
                     <button
-                        onClick={() => openModal()}
+                        onClick={() => openModal('Kenya Flight Safari', 'https://www.catssafaris.com/kenya-flight-safaris')}
                         className="px-8 py-4 rounded-md font-bold text-lg transition-opacity hover:opacity-90 shadow-lg inline-flex items-center gap-2"
                         style={{ backgroundColor: 'var(--sunset-bronze)', color: 'var(--warm-ivory)' }}
                     >
@@ -153,7 +153,7 @@ export default function KenyaFlightSafarisPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button 
-                            onClick={() => openModal()}
+                            onClick={() => openModal('Kenya Flight Safari', 'https://www.catssafaris.com/kenya-flight-safaris')}
                             className="px-8 py-4 rounded-md font-bold text-lg transition-opacity hover:opacity-90 shadow-lg inline-flex items-center justify-center gap-2"
                             style={{ backgroundColor: 'var(--sunset-bronze)', color: 'var(--warm-ivory)' }}
                         >

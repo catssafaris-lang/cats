@@ -8,11 +8,20 @@ import HomeClient from './HomeClient';
 /* ── Hero Slides — ALL verified sharp, >200 KB ── */
 const heroSlides = [
   {
+    image: 'https://images.pexels.com/photos/14896671/pexels-photo-14896671.jpeg',
+    alt: 'Giraffe in acacia savannah at Nairobi National Park — only national park inside a capital city',
+    tag: 'Nairobi National Park — Your Urban Safari',
+    heading: "Africa's Wildest Capital City",
+    description: 'The only national park inside a capital city. Lions, rhinos, giraffes, and over 400 bird species roam just 7 km from downtown Nairobi.',
+    cta: { label: 'Nairobi Excursions', href: '/kenya-safaris/nairobi-excursions' },
+    secondary: { label: 'Half-Day Private Tour', href: '/safari/nairobi-national-park-half-day-private-tour' },
+  },
+  {
     image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-Kenya-the-shoulder-of-Kilimanjaro-scaled.jpg',
     alt: 'Elephant herd beneath Mount Kilimanjaro in Amboseli National Park Kenya — iconic African safari landscape',
     tag: 'Amboseli — Land of Giants',
-    heading: 'Where Elephants Roam\nBeneath Kilimanjaro',
-    description: 'Walk among the largest elephant herds in Africa with the snow-capped peak of Mount Kilimanjaro painting the horizon. Amboseli delivers one of the most iconic safari scenes on earth.',
+    heading: 'Elephants Beneath Kilimanjaro',
+    description: 'Walk among the largest elephant herds in Africa with the snow-capped peak of Mount Kilimanjaro painting the horizon.',
     cta: { label: 'Explore Amboseli Safaris', href: '/kenya-safaris/amboseli' },
     secondary: { label: 'View 3-Day Package', href: '/safari/3-day-amboseli-big-five-encounter' },
   },

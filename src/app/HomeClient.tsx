@@ -23,7 +23,7 @@ export default function HomeClient({ slides }: { slides: Slide[] }) {
 
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(next, 6000);
+    const timer = setInterval(next, 3000);
     return () => clearInterval(timer);
   }, [next, isPaused]);
 
