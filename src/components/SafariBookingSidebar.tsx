@@ -1,7 +1,7 @@
 'use client';
 
 import { Clock, MapPin, Calendar } from 'lucide-react';
-import BookingForm from './BookingForm';
+import { useQuoteModal } from '@/context/QuoteModalContext';
 
 interface Safari {
   title: string;
@@ -14,6 +14,8 @@ interface Safari {
 }
 
 export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
+  const { openModal } = useQuoteModal();
+
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-stone-100 overflow-hidden">
       {/* Header */}
@@ -53,18 +55,16 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
         </div>
       )}
 
-      {/* Booking Form */}
-      <div className="p-6">
-        <BookingForm
-          title={safari.title}
-          pageUrl={`/safari/${safari.slug}`}
-          subjectTag="[Safari Booking]"
-          ctaLabel="Request Custom Quote"
-        />
-      </div>
+      {/* Book Now Button - Opens Modal */}
+      <div className="p-6 space-y-3">
+        <button
+          onClick={() => openModal(safari.title, `https://www.catssafaris.com/safari/${safari.slug}`)}
+          className="w-full flex items-center justify-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl text-base"
+        >
+          Request Custom Quote
+        </button>
 
-      {/* WhatsApp CTA */}
-      <div className="px-6 pb-6">
+        {/* WhatsApp CTA */}
         <a
           href="https://wa.me/254723951388"
           target="_blank"
@@ -73,7 +73,7 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
         >
           WhatsApp Us
         </a>
-        <p className="text-xs text-stone-400 text-center mt-3">No booking fees · We respond within 2 hours</p>
+        <p className="text-xs text-stone-400 text-center mt-3">No booking fees — We respond within 2 hours</p>
       </div>
     </div>
   );
