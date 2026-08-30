@@ -5,16 +5,16 @@ import HomeClient from './HomeClient';
 
 /* ── SEO-rich metadata is in layout.tsx ── */
 
-/* ── Hero Slides ── */
+/* ── Hero Slides — ALL verified sharp, >200 KB ── */
 const heroSlides = [
   {
-    image: 'https://ik.imagekit.io/axd1riwnv/Nairobi%20National%20Park/360_F_707047866_az9J9SSGiQ94MLRFzySmbVihKtdXWZDh.jpg',
-    alt: 'Giraffe in Nairobi National Park with Nairobi city skyline in the background — Kenya urban safari experience',
-    tag: 'Nairobi National Park',
-    heading: 'Where the Wild\nMeets the City',
-    description: 'The only national park on earth set against a modern city skyline. Encounter black rhinos, lions, leopards, and 500+ bird species — all just 15 minutes from downtown Nairobi.',
-    cta: { label: 'Explore Nairobi Safaris', href: '/kenya-safaris/nairobi-excursions' },
-    secondary: { label: 'Book Half-Day Tour', href: '/safari/nairobi-national-park-half-day-private-tour' },
+    image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-Kenya-the-shoulder-of-Kilimanjaro-scaled.jpg',
+    alt: 'Elephant herd beneath Mount Kilimanjaro in Amboseli National Park Kenya — iconic African safari landscape',
+    tag: 'Amboseli — Land of Giants',
+    heading: 'Where Elephants Roam\nBeneath Kilimanjaro',
+    description: 'Walk among the largest elephant herds in Africa with the snow-capped peak of Mount Kilimanjaro painting the horizon. Amboseli delivers one of the most iconic safari scenes on earth.',
+    cta: { label: 'Explore Amboseli Safaris', href: '/kenya-safaris/amboseli' },
+    secondary: { label: 'View 3-Day Package', href: '/safari/3-day-amboseli-big-five-encounter' },
   },
   {
     image: 'https://images.pexels.com/photos/27722327/pexels-photo-27722327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -36,55 +36,119 @@ const heroSlides = [
   },
 ];
 
-/* ── Destinations Grid ── */
-const destinations = [
+/* ── AKS-Style Safari Categories Grid ── */
+const safariCategories = [
   {
-    name: 'Masai Mara',
-    country: 'Kenya',
-    image: 'https://ik.imagekit.io/axd1riwnv/Kenya_MasaiMara_GreatPlainsMaraPlains_WildlifeWildebeestMigration.jpg',
-    href: '/kenya-safaris/masai-mara',
-    description: 'Big Five encounters, the Great Migration, and golden savannah sunsets.',
-    packages: 30,
+    title: 'NAIROBI EXCURSIONS',
+    image: 'https://ik.imagekit.io/axd1riwnv/Nairobi%20National%20Park/Nairobi-National-Park.jpg',
+    description: 'Half-day and full-day tours from Nairobi — Nairobi National Park, Giraffe Centre, elephant orphanage, and city highlights.',
+    href: '/kenya-safaris/nairobi-excursions',
+    cta: 'View Nairobi Excursions',
   },
   {
-    name: 'Amboseli',
-    country: 'Kenya',
-    image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-Kenya-the-shoulder-of-Kilimanjaro-scaled.jpg',
-    href: '/kenya-safaris/amboseli',
-    description: 'Iconic elephant herds beneath the snow-capped peak of Mount Kilimanjaro.',
-    packages: 15,
-  },
-  {
-    name: 'Tsavo',
-    country: 'Kenya',
-    image: 'https://ik.imagekit.io/axd1riwnv/4-DAYS-3-EXCITING-PARKS-_-TSAVO-WEST-AMBOSELI-TSAVO-EAST-750x420.jpg',
+    title: 'KENYA SAFARIS FROM NAIROBI',
+    image: 'https://ik.imagekit.io/axd1riwnv/4-days-tsavo-eastamboseli-salt-lick-reserve-kenya_Ma8DJ.jpeg',
+    description: 'Multi-day Kenya safari adventures ranging from 2 to 14 days, departing from Nairobi to all major national parks.',
     href: '/kenya-safaris/short-safaris',
-    description: 'Kenya\'s largest wilderness — red elephants, Mzima Springs, and volcanic landscapes.',
-    packages: 12,
+    cta: 'View Kenya Safaris from Nairobi',
   },
   {
-    name: 'Serengeti',
-    country: 'Tanzania',
-    image: 'https://ik.imagekit.io/axd1riwnv/Serengeti-National-Park-Western-part.jpg',
-    href: '/tanzania-safaris',
-    description: 'Endless plains, the Great Migration\'s calving season, and predator-rich grasslands.',
-    packages: 10,
+    title: 'NAIROBI TO DIANI BEACH SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/5-days-amboseli-lake-nakuru-an17368567244.webp',
+    description: 'Enjoy a Kenya wildlife safari through iconic parks, then finish up your holiday at the beautiful Diani Beach on the coast.',
+    href: '/kenya-safaris/nairobi-to-diani',
+    cta: 'View Nairobi to Diani Safaris',
   },
   {
-    name: 'Ngorongoro Crater',
-    country: 'Tanzania',
-    image: 'https://ik.imagekit.io/axd1riwnv/Ngorongoro-crater3.jpg',
-    href: '/tanzania-safaris',
-    description: 'The world\'s largest intact caldera — 25,000 animals in a natural amphitheatre.',
-    packages: 8,
-  },
-  {
-    name: 'Diani Beach',
-    country: 'Kenya Coast',
+    title: 'DIANI BEACH KENYA SAFARIS',
     image: 'https://images.pexels.com/photos/27722327/pexels-photo-27722327.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Explore Kenya safaris starting from the beach resorts of Diani — Africa\'s leading beach destination and marine paradise.',
     href: '/kenya-safaris/kenya-and-diani',
-    description: 'Coral reefs, white sand, Colobus monkeys, and the warmth of Swahili hospitality.',
-    packages: 6,
+    cta: 'View Diani Beach Safaris',
+  },
+  {
+    title: 'AMBOSELI KENYA SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/10-reasons-to-visit-amboseli-national-park-1.jpg',
+    description: 'Explore Amboseli — famous for large herds of elephants and scenic views of Mount Kilimanjaro, Africa\'s highest peak.',
+    href: '/kenya-safaris/amboseli',
+    cta: 'View Amboseli Kenya Safaris',
+  },
+  {
+    title: 'KENYA FLIGHT SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/161Kenya_Day3m.jpg',
+    description: 'Book luxury fly-in safaris and explore Masai Mara, Amboseli, Samburu, and Lewa Conservancy from the air.',
+    href: '/kenya-flight-safaris',
+    cta: 'View Kenya Flight Safaris',
+  },
+  {
+    title: 'MASAI MARA KENYA SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/2%20migration.jpg',
+    description: 'Masai Mara is home to the Great Wildebeest Migration, Big Five wildlife, big cats, Maasai culture, and year-round game viewing.',
+    href: '/kenya-safaris/masai-mara',
+    cta: 'View Masai Mara Kenya Safaris',
+  },
+  {
+    title: 'KENYA BEACH TO NAIROBI SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/4-days-Amboseli-Taita-hills-and-Tsavo-east-safari.jpg',
+    description: 'Start your safari from Kenya\'s coastal beach resorts and journey inland to Tsavo, Amboseli, and Nairobi.',
+    href: '/kenya-safaris/beach-to-nairobi',
+    cta: 'View Beach to Nairobi Safaris',
+  },
+  {
+    title: 'KENYA-TANZANIA SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/Serengeti-National-Park-Western-part.jpg',
+    description: 'Experience the best of both worlds — Masai Mara, Serengeti, Ngorongoro Crater, and Tarangire in one epic cross-border safari.',
+    href: '/kenya-tanzania-safaris',
+    cta: 'View Kenya-Tanzania Safaris',
+  },
+  {
+    title: 'KENYA SAFARI & DIANI BEACH',
+    image: 'https://ik.imagekit.io/axd1riwnv/Boat-safari-Lake-Naivasha-hippo-28229-scaled.jpg',
+    description: 'Experience the best of both worlds — a thrilling Kenya safari through wildlife parks combined with a dream Diani Beach vacation.',
+    href: '/kenya-safaris/safaris-from-diani',
+    cta: 'View Safari & Beach Tours',
+  },
+  {
+    title: 'KENYA GROUP JOINING SAFARIS',
+    image: 'https://ik.imagekit.io/axd1riwnv/4-days-masai-mara-and-lake-nakuru-park-group-joining-landcruiser_Urf4r.jpeg',
+    description: 'Join our exciting group safari tours from Nairobi in shared 4x4 Land Cruisers — affordable, social, and unforgettable.',
+    href: '/kenya-safaris/group-tours-nairobi',
+    cta: 'View Kenya Group Safaris',
+  },
+  {
+    title: 'TANZANIA SAFARI HOLIDAYS',
+    image: 'https://ik.imagekit.io/axd1riwnv/Ngorongoro-crater3.jpg',
+    description: 'Exciting 4x4 Tanzania safaris from Arusha town. Explore Serengeti, Ngorongoro, Manyara, and Tarangire in expert-led tours.',
+    href: '/tanzania-safaris',
+    cta: 'View Tanzania Safari Tours',
+  },
+  {
+    title: 'MOUNTAIN CLIMBING ADVENTURES',
+    image: 'https://ik.imagekit.io/axd1riwnv/Kenya_SouthEastChyuluHills_GreatPlainsOlDonyo_WildlifeGiraffeKilimanjaro1-1-2-750x450.jpg',
+    description: 'Best Africa mountain climbing adventures — climb Mount Kilimanjaro (Roof of Africa) and Mount Kenya with expert guides.',
+    href: '/mountain-climbing',
+    cta: 'View Mountain Climbing Tours',
+  },
+  {
+    title: 'KENYA-UGANDA GORILLA SAFARIS',
+    image: 'https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Combine Kenya wildlife safaris with mountain gorilla trekking in Uganda\'s Bwindi Impenetrable Forest — a once-in-a-lifetime experience.',
+    href: '/kenya-uganda-safaris',
+    cta: 'View Kenya-Uganda Safaris',
+  },
+  {
+    title: 'KENYA-RWANDA GORILLA SAFARIS',
+    image: 'https://images.pexels.com/photos/3250364/pexels-photo-3250364.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Explore Kenya\'s Big Five parks, then trek to see mountain gorillas and golden monkeys in Rwanda\'s Volcanoes National Park.',
+    href: '/kenya-rwanda-safaris',
+    cta: 'View Kenya-Rwanda Safaris',
+  },
+  {
+    title: 'AFRICA SAFARI EXPERIENCES',
+    image: 'https://ik.imagekit.io/axd1riwnv/Africa-Kenya-Masai-Mara-Cheetah-on-termite-mound.jpg',
+    description: 'Unique wildlife encounters — bird-watching safaris, bush dining, cultural immersions, wellness retreats, and photography safaris.',
+    href: '/holiday-experiences',
+    cta: 'Explore Safari Experiences',
   },
 ];
 
@@ -122,18 +186,6 @@ const whyChoose = [
   },
 ];
 
-/* ── Safari Experience Types ── */
-const experienceTypes = [
-  { name: 'Big Five Wildlife Safaris', href: '/kenya-safaris', icon: 'binoculars', count: 95 },
-  { name: 'Great Migration Safaris', href: '/kenya-safaris/masai-mara', icon: 'wildebeest', count: 12 },
-  { name: 'Bush & Beach Holidays', href: '/kenya-safaris/kenya-and-diani', icon: 'palm', count: 10 },
-  { name: 'Mountain Climbing', href: '/mountain-climbing', icon: 'mountain', count: 3 },
-  { name: 'Gorilla Trekking', href: '/kenya-uganda-safaris', icon: 'gorilla', count: 8 },
-  { name: 'Cultural Experiences', href: '/holiday-experiences', icon: 'culture', count: 15 },
-  { name: 'Bird Watching Safaris', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania', icon: 'bird', count: 20 },
-  { name: 'Kenya-Tanzania Combos', href: '/kenya-tanzania-safaris', icon: 'combo', count: 15 },
-];
-
 /* ── Featured Package Picks ── */
 function getFeaturedPackages() {
   const slugs = [
@@ -158,22 +210,6 @@ function FeatureIcon({ type }: { type: string }) {
     case 'price': return <svg {...common}><path d="M12 2v20M6 6h8a3 3 0 0 1 0 6H6M6 12h10a3 3 0 0 1 0 6H6" /></svg>;
     case 'globe': return <svg {...common}><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" /></svg>;
     case 'heart': return <svg {...common}><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>;
-    default: return <svg {...common}><circle cx="12" cy="12" r="10" /></svg>;
-  }
-}
-
-function ExpIcon({ type }: { type: string }) {
-  const cls = 'h-8 w-8';
-  const common = { className: cls, fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor', strokeWidth: 1.3 };
-  switch (type) {
-    case 'binoculars': return <svg {...common}><circle cx="6" cy="16" r="4" /><circle cx="18" cy="16" r="4" /><path d="M6 12V4h4v8M18 12V4h-4v8M10 16h4" /></svg>;
-    case 'wildebeest': return <svg {...common}><path d="M4 16c0-4 3-8 8-8s8 4 8 8M8 8V4M16 8V4M12 16v4M8 20h8" /></svg>;
-    case 'palm': return <svg {...common}><path d="M12 22V10M7 3c3 3 5 7 5 7s2-4 5-7M4 8c4 1 8 2 8 2s4-1 8-2M2 14c5-1 10 0 10 0s5-1 10 0" /></svg>;
-    case 'mountain': return <svg {...common}><path d="m2 20 7-14 4 6 3-4 6 12H2z" /><path d="m14 12 2-3" /></svg>;
-    case 'gorilla': return <svg {...common}><circle cx="12" cy="8" r="5" /><path d="M5 20c0-4 3-7 7-7s7 3 7 7M7 6c-2-1-4 0-4 2M17 6c2-1 4 0 4 2" /></svg>;
-    case 'culture': return <svg {...common}><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01" /></svg>;
-    case 'bird': return <svg {...common}><path d="M16 7c0-2-1-4-4-4-2 0-4 2-4 5 0 4 4 6 8 8l4-4c-2-2-4-3-4-5zM4 17l3-1M9 20l1-3" /></svg>;
-    case 'combo': return <svg {...common}><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg>;
     default: return <svg {...common}><circle cx="12" cy="12" r="10" /></svg>;
   }
 }
@@ -231,26 +267,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── POPULAR DESTINATIONS ── */}
+      {/* ═══ AKS-STYLE SAFARI CATEGORIES GRID ═══ */}
       <section className="bg-[var(--cats-cream)] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--golden-savannah)]">Top Safari Destinations</p>
-            <h2 className="mt-3 font-playfair text-3xl font-bold text-[#3d2b1f] sm:text-4xl">Where Will Your Safari Take You?</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-stone-600">From Kenya&apos;s iconic savannahs to Tanzania&apos;s endless plains and the tropical Kenya coast — explore East Africa&apos;s most extraordinary wildlife destinations.</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--golden-savannah)]">Our Africa Safaris</p>
+            <h2 className="mt-3 font-playfair text-3xl font-bold text-[#3d2b1f] sm:text-4xl md:text-5xl">
+              Safari Holidays in Kenya, Tanzania &amp; East Africa
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-stone-600">
+              Check out our many East Africa safari tours — from Nairobi city excursions to cross-border adventures spanning four countries.
+            </p>
+            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[var(--golden-savannah)]" />
           </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {destinations.map((dest) => (
-              <Link key={dest.name} href={dest.href} className="group relative block h-80 overflow-hidden rounded-2xl shadow-lg">
-                <Image src={dest.image} alt={`${dest.name} safari destination — ${dest.description}`} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 w-full p-6">
-                  <span className="inline-block rounded-full bg-[var(--golden-savannah)]/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--golden-savannah)]">{dest.country}</span>
-                  <h3 className="mt-2 font-playfair text-2xl font-bold text-white">{dest.name}</h3>
-                  <p className="mt-1 text-sm text-white/80">{dest.description}</p>
-                  <p className="mt-2 text-xs font-semibold text-[var(--golden-savannah)]">{dest.packages}+ Packages Available</p>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {safariCategories.map((cat) => (
+              <div key={cat.title} className="group flex flex-col overflow-hidden rounded-2xl border-2 border-[#e8dcc8] bg-white shadow-md transition-all hover:shadow-xl hover:border-[var(--golden-savannah)]">
+                {/* Image */}
+                <Link href={cat.href} className="relative block h-48 overflow-hidden">
+                  <Image
+                    src={cat.image}
+                    alt={`${cat.title} — ${cat.description}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </Link>
+
+                {/* Content */}
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-playfair text-base font-bold tracking-wide text-[#3d2b1f]">
+                    {cat.title}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-stone-600">
+                    {cat.description}
+                  </p>
+                  <Link
+                    href={cat.href}
+                    className="mt-4 block rounded-lg bg-[#8B4513] px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#a0522d]"
+                  >
+                    {cat.cta}
+                  </Link>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
@@ -314,28 +374,6 @@ export default function HomePage() {
           </div>
           <div className="mt-12 text-center">
             <Link href="/kenya-safaris" className="rounded-full bg-[#3d2b1f] px-10 py-4 font-semibold text-white transition hover:bg-[#5a3e28]">Browse All 174+ Safari Packages</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SAFARI EXPERIENCE TYPES ── */}
-      <section className="bg-[var(--cats-cream)] py-20 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--golden-savannah)]">Safari Categories</p>
-            <h2 className="mt-3 font-playfair text-3xl font-bold text-[#3d2b1f] sm:text-4xl">Choose Your Safari Style</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-stone-600">Whether you dream of Big Five encounters, mountain summits, or tropical beaches — we have the perfect East African adventure for you.</p>
-          </div>
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {experienceTypes.map((exp) => (
-              <Link key={exp.name} href={exp.href} className="group flex items-center gap-4 rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md hover:bg-[#3d2b1f]">
-                <div className="text-[var(--golden-savannah)] transition group-hover:text-white"><ExpIcon type={exp.icon} /></div>
-                <div>
-                  <h3 className="font-semibold text-[#3d2b1f] transition group-hover:text-white">{exp.name}</h3>
-                  <p className="text-xs text-stone-500 transition group-hover:text-white/70">{exp.count}+ Packages</p>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
