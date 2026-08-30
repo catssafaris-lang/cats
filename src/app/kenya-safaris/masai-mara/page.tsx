@@ -16,7 +16,7 @@ export default function Page() {
       title="Masai Mara Safaris"
       subtitle="Kenya’s Legendary Wildlife Reserve"
       description="Answer the call of the Masai Mara on a Kenya safari shaped around world-class game drives. Scan golden plains for lion, leopard, cheetah, elephant and buffalo, follow the Mara River during the Great Migration, and experience the enduring drama of one of Africa’s finest wildlife reserves."
-      heroImage="https://ik.imagekit.io/axd1riwnv/3days-maasai-mara-luxury-safari.jpg"
+      heroImage="https://ik.imagekit.io/axd1riwnv/Masai-Mara-Kenya-wildlife-and-wildebeest-migration-safari-tour-packages.jpg"
       safaris={filtered}
       destination="kenya"
     />

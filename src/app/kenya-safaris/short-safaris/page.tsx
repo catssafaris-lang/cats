@@ -24,7 +24,7 @@ export default function Page() {
       title="2–4 Day Safari Tours from Nairobi"
       subtitle="Short Kenya Safari Escapes"
       description="Make the most of a short Kenya safari from Nairobi with expertly guided game drives in the Masai Mara, Amboseli and other iconic wildlife parks. These 2–4 day tours pair efficient travel with unforgettable encounters with the Big Five, elephants, lions and wide-open savannah."
-      heroImage="https://ik.imagekit.io/axd1riwnv/3days-maasai-mara-luxury-safari.jpg"
+      heroImage="https://ik.imagekit.io/axd1riwnv/Kenya_MasaiMara_GreatPlainsMaraPlains_WildlifeWildebeestMigration.jpg"
       safaris={filtered}
       destination="kenya"
     />

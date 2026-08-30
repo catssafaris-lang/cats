@@ -15,7 +15,7 @@ export default function Page() {
       title="Kenya Safari Tours"
       subtitle="Discover Kenya"
       description="From the sweeping plains of the Masai Mara to the elephant herds of Amboseli and the white sands of Diani Beach."
-      heroImage="https://ik.imagekit.io/axd1riwnv/3days-maasai-mara-luxury-safari.jpg"
+      heroImage="https://ik.imagekit.io/axd1riwnv/Wildebeest-migration-at-Mara-River.jpg"
       safaris={filtered}
       destination="kenya"
     />
