@@ -7,6 +7,7 @@ import { experiences } from '@/data/experiences';
 import { safaris } from '@/data/safaris';
 import SafariCard from '@/components/SafariCard';
 import ExperienceEnquiryButton from '@/components/ExperienceEnquiryButton';
+import BookingForm from '@/components/BookingForm';
 import ImageGallery from '@/components/ImageGallery';
 import NationalParksSection from '@/components/NationalParksSection';
 // ItineraryAccordion removed — itineraries now display as cards
@@ -443,29 +444,30 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     {/* Sidebar */}
                     <div className="lg:col-span-1">
                         <div className="sticky top-32 space-y-8">
-                            {/* Booking Card */}
-                            <div className="bg-white rounded-3xl p-5 sm:p-8 shadow-2xl shadow-stone-200/50 border border-stone-100 relative overflow-hidden">
+                            {/* Booking Form Card */}
+                            <div className="bg-white rounded-3xl shadow-2xl shadow-stone-200/50 border border-stone-100 relative overflow-hidden">
                                 <div className="absolute top-0 left-0 w-full h-2 bg-[#a68b52]" />
-                                <h3 className="text-2xl font-bold mb-4 text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
-                                    Curate Your Journey
-                                </h3>
-                                <p className="text-stone-600 mb-8 leading-relaxed">
-                                    Our travel experts are ready to weave this exclusive {experience.title} into your personalized safari itinerary.
-                                </p>
-
-                                <div className="space-y-6">
-                                    <ExperienceEnquiryButton
-                                        experience={experience}
-                                        variant="primary"
-                                        label="Secure Your Experience"
+                                <div className="p-5 sm:p-8">
+                                    <h3 className="text-2xl font-bold mb-2 text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
+                                        Enquire Now
+                                    </h3>
+                                    <p className="text-stone-500 mb-6 text-sm leading-relaxed">
+                                        Tell us about your dream {experience.title.toLowerCase()} experience and we will craft a personalised itinerary.
+                                    </p>
+                                    <BookingForm
+                                        title={experience.title}
+                                        pageUrl={`/holiday-experiences/${experience.slug}`}
+                                        subjectTag="[Experience Enquiry]"
+                                        ctaLabel="Send Enquiry"
                                     />
-
-                                    <div className="flex flex-col items-center gap-2 pt-6 border-t border-stone-100">
-                                        <span className="text-xs text-stone-400 uppercase tracking-[0.2em]">Contact Specialist</span>
-                                        <a href="tel:+254723951388" className="text-2xl font-bold text-[#5c4d42] hover:text-[#a68b52] transition-colors">
+                                    <div className="flex flex-col items-center gap-2 pt-6 mt-6 border-t border-stone-100">
+                                        <span className="text-xs text-stone-400 uppercase tracking-[0.2em]">Or call us directly</span>
+                                        <a href="tel:+254723951388" className="text-xl font-bold text-[#5c4d42] hover:text-[#a68b52] transition-colors">
                                             +254 723 951 388
                                         </a>
-                                        <span className="text-xs text-stone-500">Available 24/7 for our clients</span>
+                                        <a href="https://wa.me/254723951388" target="_blank" rel="noopener noreferrer" className="text-sm text-[#a68b52] font-semibold hover:underline">
+                                            WhatsApp Us
+                                        </a>
                                     </div>
                                 </div>
                             </div>
