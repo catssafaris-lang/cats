@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import FlightSearchForm from './FlightSearchForm';
 
 export const metadata: Metadata = {
   title: 'Search & Book Flights to East Africa | C.A.T.S Safaris',
@@ -53,33 +52,45 @@ export default function FlightSearchPage() {
         </div>
       </section>
 
-      {/* Flight Search Form */}
-      <FlightSearchForm />
-
-      {/* Need Help CTA */}
+      {/* Flight Search Widget — embedded whitelabel */}
       <section className="bg-[#f7f4ed] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
-          <h2 className="mb-4 text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Need Help Finding the Right Flight?
-          </h2>
-          <p className="leading-relaxed text-stone-700 mb-6">
-            Our travel specialists coordinate international flights with domestic connections and safari schedules for a seamless journey. Flexible booking policies are subject to airline terms and conditions.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="mailto:info@catssafaris.com?subject=[Flight Enquiry] Help Finding Flights to East Africa"
-              className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-all"
-            >
-              Email Our Flight Team
-            </a>
-            <a
-              href="https://wa.me/254723951388?text=Hello%2C%20I%20need%20help%20finding%20flights%20to%20East%20Africa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#a68b52] hover:text-white px-6 py-3 rounded-xl font-semibold transition-all"
-            >
-              WhatsApp Us
-            </a>
+        <div className="mx-auto max-w-7xl">
+          <iframe
+            src="https://flights.catssafaris.com/?locale=en"
+            width="100%"
+            height="720"
+            frameBorder="0"
+            scrolling="auto"
+            className="w-full min-h-[680px] rounded-2xl shadow-lg"
+            title="C.A.T.S Safaris Flight Search"
+            allow="payment"
+            style={{ border: 'none' }}
+          />
+
+          {/* Need Help CTA */}
+          <div className="mx-auto mt-8 max-w-3xl bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+            <h2 className="mb-4 text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
+              Need Help Finding the Right Flight?
+            </h2>
+            <p className="leading-relaxed text-stone-700 mb-6">
+              Our travel specialists coordinate international flights with domestic connections and safari schedules for a seamless journey. Flexible booking policies are subject to airline terms and conditions.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="mailto:info@catssafaris.com?subject=[Flight Enquiry] Help Finding Flights to East Africa"
+                className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-all"
+              >
+                Email Our Flight Team
+              </a>
+              <a
+                href="https://wa.me/254723951388?text=Hello%2C%20I%20need%20help%20finding%20flights%20to%20East%20Africa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#a68b52] hover:text-white px-6 py-3 rounded-xl font-semibold transition-all"
+              >
+                WhatsApp Us
+              </a>
+            </div>
           </div>
         </div>
       </section>
