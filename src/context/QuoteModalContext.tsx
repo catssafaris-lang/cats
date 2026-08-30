@@ -1,61 +1,61 @@
 'use client';
 
 import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
-import { X, ChevronDown, Calendar, Users, Baby, Globe, Phone, Mail, MapPin, Plane } from 'lucide-react';
+import { X, ChevronDown, Calendar, Users, Baby, Globe, Phone, Mail, MapPin, Plane, Sun, Clock } from 'lucide-react';
 
 /* ────────────────────────── Country Data ────────────────────────── */
 const countries = [
-  { name: 'Kenya', code: '+254', iso: 'KE', flag: '🇰🇪' },
-  { name: 'United States', code: '+1', iso: 'US', flag: '🇺🇸' },
-  { name: 'United Kingdom', code: '+44', iso: 'GB', flag: '🇬🇧' },
-  { name: 'Canada', code: '+1', iso: 'CA', flag: '🇨🇦' },
-  { name: 'Australia', code: '+61', iso: 'AU', flag: '🇦🇺' },
-  { name: 'Germany', code: '+49', iso: 'DE', flag: '🇩🇪' },
-  { name: 'France', code: '+33', iso: 'FR', flag: '🇫🇷' },
-  { name: 'India', code: '+91', iso: 'IN', flag: '🇮🇳' },
-  { name: 'South Africa', code: '+27', iso: 'ZA', flag: '🇿🇦' },
-  { name: 'Tanzania', code: '+255', iso: 'TZ', flag: '🇹🇿' },
-  { name: 'Uganda', code: '+256', iso: 'UG', flag: '🇺🇬' },
-  { name: 'Rwanda', code: '+250', iso: 'RW', flag: '🇷🇼' },
-  { name: 'China', code: '+86', iso: 'CN', flag: '🇨🇳' },
-  { name: 'Japan', code: '+81', iso: 'JP', flag: '🇯🇵' },
-  { name: 'Netherlands', code: '+31', iso: 'NL', flag: '🇳🇱' },
-  { name: 'Italy', code: '+39', iso: 'IT', flag: '🇮🇹' },
-  { name: 'Spain', code: '+34', iso: 'ES', flag: '🇪🇸' },
-  { name: 'Brazil', code: '+55', iso: 'BR', flag: '🇧🇷' },
-  { name: 'United Arab Emirates', code: '+971', iso: 'AE', flag: '🇦🇪' },
-  { name: 'Saudi Arabia', code: '+966', iso: 'SA', flag: '🇸🇦' },
-  { name: 'Nigeria', code: '+234', iso: 'NG', flag: '🇳🇬' },
-  { name: 'Ghana', code: '+233', iso: 'GH', flag: '🇬🇭' },
-  { name: 'Ethiopia', code: '+251', iso: 'ET', flag: '🇪🇹' },
-  { name: 'Egypt', code: '+20', iso: 'EG', flag: '🇪🇬' },
-  { name: 'Morocco', code: '+212', iso: 'MA', flag: '🇲🇦' },
-  { name: 'Sweden', code: '+46', iso: 'SE', flag: '🇸🇪' },
-  { name: 'Norway', code: '+47', iso: 'NO', flag: '🇳🇴' },
-  { name: 'Denmark', code: '+45', iso: 'DK', flag: '🇩🇰' },
-  { name: 'Switzerland', code: '+41', iso: 'CH', flag: '🇨🇭' },
-  { name: 'Belgium', code: '+32', iso: 'BE', flag: '🇧🇪' },
-  { name: 'Austria', code: '+43', iso: 'AT', flag: '🇦🇹' },
-  { name: 'Portugal', code: '+351', iso: 'PT', flag: '🇵🇹' },
-  { name: 'Ireland', code: '+353', iso: 'IE', flag: '🇮🇪' },
-  { name: 'New Zealand', code: '+64', iso: 'NZ', flag: '🇳🇿' },
-  { name: 'Singapore', code: '+65', iso: 'SG', flag: '🇸🇬' },
-  { name: 'Malaysia', code: '+60', iso: 'MY', flag: '🇲🇾' },
-  { name: 'Thailand', code: '+66', iso: 'TH', flag: '🇹🇭' },
-  { name: 'South Korea', code: '+82', iso: 'KR', flag: '🇰🇷' },
-  { name: 'Mexico', code: '+52', iso: 'MX', flag: '🇲🇽' },
-  { name: 'Argentina', code: '+54', iso: 'AR', flag: '🇦🇷' },
-  { name: 'Colombia', code: '+57', iso: 'CO', flag: '🇨🇴' },
-  { name: 'Poland', code: '+48', iso: 'PL', flag: '🇵🇱' },
-  { name: 'Czech Republic', code: '+420', iso: 'CZ', flag: '🇨🇿' },
-  { name: 'Israel', code: '+972', iso: 'IL', flag: '🇮🇱' },
-  { name: 'Turkey', code: '+90', iso: 'TR', flag: '🇹🇷' },
-  { name: 'Russia', code: '+7', iso: 'RU', flag: '🇷🇺' },
-  { name: 'Pakistan', code: '+92', iso: 'PK', flag: '🇵🇰' },
-  { name: 'Bangladesh', code: '+880', iso: 'BD', flag: '🇧🇩' },
-  { name: 'Philippines', code: '+63', iso: 'PH', flag: '🇵🇭' },
-  { name: 'Indonesia', code: '+62', iso: 'ID', flag: '🇮🇩' },
-  { name: 'Vietnam', code: '+84', iso: 'VN', flag: '🇻🇳' },
+  { name: 'Kenya', code: '+254', iso: 'KE' },
+  { name: 'United States', code: '+1', iso: 'US' },
+  { name: 'United Kingdom', code: '+44', iso: 'GB' },
+  { name: 'Canada', code: '+1', iso: 'CA' },
+  { name: 'Australia', code: '+61', iso: 'AU' },
+  { name: 'Germany', code: '+49', iso: 'DE' },
+  { name: 'France', code: '+33', iso: 'FR' },
+  { name: 'India', code: '+91', iso: 'IN' },
+  { name: 'South Africa', code: '+27', iso: 'ZA' },
+  { name: 'Tanzania', code: '+255', iso: 'TZ' },
+  { name: 'Uganda', code: '+256', iso: 'UG' },
+  { name: 'Rwanda', code: '+250', iso: 'RW' },
+  { name: 'China', code: '+86', iso: 'CN' },
+  { name: 'Japan', code: '+81', iso: 'JP' },
+  { name: 'Netherlands', code: '+31', iso: 'NL' },
+  { name: 'Italy', code: '+39', iso: 'IT' },
+  { name: 'Spain', code: '+34', iso: 'ES' },
+  { name: 'Brazil', code: '+55', iso: 'BR' },
+  { name: 'United Arab Emirates', code: '+971', iso: 'AE' },
+  { name: 'Saudi Arabia', code: '+966', iso: 'SA' },
+  { name: 'Nigeria', code: '+234', iso: 'NG' },
+  { name: 'Ghana', code: '+233', iso: 'GH' },
+  { name: 'Ethiopia', code: '+251', iso: 'ET' },
+  { name: 'Egypt', code: '+20', iso: 'EG' },
+  { name: 'Morocco', code: '+212', iso: 'MA' },
+  { name: 'Sweden', code: '+46', iso: 'SE' },
+  { name: 'Norway', code: '+47', iso: 'NO' },
+  { name: 'Denmark', code: '+45', iso: 'DK' },
+  { name: 'Switzerland', code: '+41', iso: 'CH' },
+  { name: 'Belgium', code: '+32', iso: 'BE' },
+  { name: 'Austria', code: '+43', iso: 'AT' },
+  { name: 'Portugal', code: '+351', iso: 'PT' },
+  { name: 'Ireland', code: '+353', iso: 'IE' },
+  { name: 'New Zealand', code: '+64', iso: 'NZ' },
+  { name: 'Singapore', code: '+65', iso: 'SG' },
+  { name: 'Malaysia', code: '+60', iso: 'MY' },
+  { name: 'Thailand', code: '+66', iso: 'TH' },
+  { name: 'South Korea', code: '+82', iso: 'KR' },
+  { name: 'Mexico', code: '+52', iso: 'MX' },
+  { name: 'Argentina', code: '+54', iso: 'AR' },
+  { name: 'Colombia', code: '+57', iso: 'CO' },
+  { name: 'Poland', code: '+48', iso: 'PL' },
+  { name: 'Czech Republic', code: '+420', iso: 'CZ' },
+  { name: 'Israel', code: '+972', iso: 'IL' },
+  { name: 'Turkey', code: '+90', iso: 'TR' },
+  { name: 'Russia', code: '+7', iso: 'RU' },
+  { name: 'Pakistan', code: '+92', iso: 'PK' },
+  { name: 'Bangladesh', code: '+880', iso: 'BD' },
+  { name: 'Philippines', code: '+63', iso: 'PH' },
+  { name: 'Indonesia', code: '+62', iso: 'ID' },
+  { name: 'Vietnam', code: '+84', iso: 'VN' },
 ];
 
 /* ────────────────────────── Types ────────────────────────── */
@@ -64,8 +64,14 @@ interface ChildAge {
   residency: string;
 }
 
+interface ModalOptions {
+  isDayTrip?: boolean;
+  isNNP?: boolean;
+  highlights?: string[];
+}
+
 interface QuoteModalContextType {
-  openModal: (packageName: string, packageUrl: string, isDayTrip?: boolean) => void;
+  openModal: (packageName: string, packageUrl: string, options?: ModalOptions) => void;
   closeModal: () => void;
 }
 
@@ -108,6 +114,8 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
   const [packageName, setPackageName] = useState('');
   const [packageUrl, setPackageUrl] = useState('');
   const [isDayTrip, setIsDayTrip] = useState(false);
+  const [isNNP, setIsNNP] = useState(false);
+  const [tourHighlights, setTourHighlights] = useState<string[]>([]);
   const modalRef = useRef<HTMLDivElement>(null);
 
   /* ── Form State ── */
@@ -116,6 +124,12 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
   const [nationality, setNationality] = useState('');
   const [countryCode, setCountryCode] = useState('+254');
   const [phone, setPhone] = useState('');
+
+  /* NNP time preference */
+  const [safariTimeSlot, setSafariTimeSlot] = useState('');
+
+  /* Accommodation */
+  const [accommodationTier, setAccommodationTier] = useState('');
 
   /* Adults */
   const [adultsResident, setAdultsResident] = useState(0);
@@ -139,6 +153,13 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
 
   const totalChildren = childrenResident + childrenCitizen + childrenNonResident;
 
+  /* Auto-update country code when nationality changes */
+  const handleNationalityChange = useCallback((val: string) => {
+    setNationality(val);
+    const match = countries.find((c) => c.name === val);
+    if (match) setCountryCode(match.code);
+  }, []);
+
   /* Update child ages array when children counts change */
   useEffect(() => {
     const newAges: ChildAge[] = [];
@@ -149,10 +170,12 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [childrenResident, childrenCitizen, childrenNonResident]);
 
-  const openModal = useCallback((name: string, url: string, dayTrip?: boolean) => {
+  const openModal = useCallback((name: string, url: string, options?: ModalOptions) => {
     setPackageName(name);
     setPackageUrl(url);
-    setIsDayTrip(dayTrip ?? false);
+    setIsDayTrip(options?.isDayTrip ?? false);
+    setIsNNP(options?.isNNP ?? false);
+    setTourHighlights(options?.highlights ?? []);
     setIsOpen(true);
     setSubmitted(false);
   }, []);
@@ -185,8 +208,10 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
     e.preventDefault();
 
     const dateInfo = isDayTrip
-      ? `Safari Date: ${safariDate}`
+      ? `Preferred Safari Date: ${safariDate}`
       : `Start Date: ${startDate} | End Date: ${endDate}`;
+
+    const timeInfo = isNNP && safariTimeSlot ? `Safari Time: ${safariTimeSlot}` : '';
 
     const adultsInfo = `Adults — Residents: ${adultsResident}, Citizens: ${adultsCitizen}, Non-Residents: ${adultsNonResident} (Total: ${totalAdults})`;
     const childrenInfo = totalChildren > 0
@@ -203,10 +228,12 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
       `Phone: ${countryCode} ${phone}`,
       '',
       dateInfo,
+      timeInfo,
       '',
       adultsInfo,
       childrenInfo,
       '',
+      accommodationTier ? `Preferred Accommodation: ${accommodationTier}` : '',
       interests ? `Safari Interests: ${interests}` : '',
       message ? `Special Requests: ${message}` : '',
     ].filter(Boolean).join('\n');
@@ -265,7 +292,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
               <button onClick={closeModal} className="absolute right-4 top-4 rounded-full p-1.5 text-white/70 hover:bg-white/10 hover:text-white transition" aria-label="Close">
                 <X className="h-5 w-5" />
               </button>
-              <h2 className="text-xl font-bold text-white">Request a Safari Quote</h2>
+              <h2 className="text-xl font-bold text-white font-serif">Request a Safari Quote</h2>
               <p className="mt-1 text-sm text-[#c4a96a]">{packageName}</p>
             </div>
 
@@ -274,7 +301,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
                   <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#5c4d42]">Quote Request Sent</h3>
+                <h3 className="text-xl font-bold text-[#5c4d42] font-serif">Quote Request Sent</h3>
                 <p className="mt-2 text-stone-600">Our safari specialists will get back to you within 24 hours with a personalised itinerary and pricing.</p>
                 <button onClick={closeModal} className="mt-6 rounded-xl bg-[#a68b52] px-8 py-3 font-semibold text-white hover:bg-[#8a7343] transition">Close</button>
               </div>
@@ -304,7 +331,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                     <label className={labelClasses}>Nationality *</label>
                     <CustomSelect
                       value={nationality}
-                      onChange={setNationality}
+                      onChange={handleNationalityChange}
                       options={countries.map((c) => ({ value: c.name, label: c.name }))}
                       placeholder="Select your nationality"
                       icon={Globe}
@@ -314,14 +341,14 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                   <div>
                     <label className={labelClasses}>Phone / WhatsApp *</label>
                     <div className="flex gap-2">
-                      <div className="relative w-[140px] flex-shrink-0">
+                      <div className="relative w-[130px] flex-shrink-0">
                         <select
                           value={countryCode}
                           onChange={(e) => setCountryCode(e.target.value)}
                           className="w-full rounded-lg border border-stone-300 bg-white px-3 py-3 text-sm text-stone-800 transition focus:border-[#a68b52] focus:outline-none focus:ring-2 focus:ring-[#a68b52]/20 appearance-none"
                         >
                           {countries.map((c) => (
-                            <option key={c.iso} value={c.code}>{c.flag} {c.code}</option>
+                            <option key={c.iso} value={c.code}>{c.iso} {c.code}</option>
                           ))}
                         </select>
                         <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-stone-400 pointer-events-none" />
@@ -364,6 +391,68 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                       </div>
                     </div>
                   )}
+
+                  {/* NNP AM/PM Time Slot */}
+                  {isNNP && (
+                    <div>
+                      <label className={labelClasses}>Preferred Safari Time *</label>
+                      <div className="grid grid-cols-2 gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setSafariTimeSlot('Morning Game Drive (AM)')}
+                          className={`flex items-center justify-center gap-2 rounded-xl border-2 px-4 py-3 text-sm font-semibold transition ${safariTimeSlot === 'Morning Game Drive (AM)' ? 'border-[#a68b52] bg-[#a68b52]/10 text-[#5c4d42]' : 'border-stone-200 text-stone-500 hover:border-[#a68b52]/50'}`}
+                        >
+                          <Sun className="h-4 w-4" />
+                          Morning (AM)
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setSafariTimeSlot('Afternoon Game Drive (PM)')}
+                          className={`flex items-center justify-center gap-2 rounded-xl border-2 px-4 py-3 text-sm font-semibold transition ${safariTimeSlot === 'Afternoon Game Drive (PM)' ? 'border-[#a68b52] bg-[#a68b52]/10 text-[#5c4d42]' : 'border-stone-200 text-stone-500 hover:border-[#a68b52]/50'}`}
+                        >
+                          <Clock className="h-4 w-4" />
+                          Afternoon (PM)
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* ── Tour Highlights (Day Trips) ── */}
+                {isDayTrip && tourHighlights.length > 0 && (
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">Tour Highlights</h3>
+                    <div className="rounded-xl border border-stone-200 bg-white p-4">
+                      <ul className="space-y-2">
+                        {tourHighlights.map((h, i) => (
+                          <li key={i} className="flex items-start gap-2 text-sm text-stone-700">
+                            <svg className="h-4 w-4 text-[#a68b52] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                            {h}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {/* ── Accommodation Category ── */}
+                <div className="space-y-4">
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">Accommodation Preference</h3>
+                  <div>
+                    <label className={labelClasses}>Preferred Category</label>
+                    <CustomSelect
+                      value={accommodationTier}
+                      onChange={setAccommodationTier}
+                      options={[
+                        { value: 'Economy', label: 'Economy — Budget-friendly camps & lodges' },
+                        { value: 'Comfort', label: 'Comfort — Mid-range lodges & tented camps' },
+                        { value: 'Luxury', label: 'Luxury — Premium safari lodges & camps' },
+                        { value: 'Superior Luxury', label: 'Superior Luxury — Ultra-premium exclusive lodges' },
+                      ]}
+                      placeholder="Select accommodation category"
+                      icon={MapPin}
+                    />
+                  </div>
                 </div>
 
                 {/* ── Adults ── */}
@@ -382,7 +471,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 {/* ── Children ── */}
                 <div className="space-y-3">
                   <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">
-                    Children <span className="text-xs font-normal normal-case text-stone-400">(Under 18)</span>
+                    Children <span className="text-xs font-normal normal-case text-stone-400">(under 11 years)</span>
                     {totalChildren > 0 && <span className="ml-2 text-xs font-normal normal-case text-stone-500">(Total: {totalChildren})</span>}
                   </h3>
                   <div className="rounded-xl border border-stone-200 bg-white p-4 space-y-3">
@@ -410,7 +499,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                               required
                             >
                               <option value="">Age</option>
-                              {Array.from({ length: 12 }, (_, j) => (
+                              {Array.from({ length: 11 }, (_, j) => (
                                 <option key={j} value={String(j)}>{j === 0 ? 'Under 1' : `${j} year${j > 1 ? 's' : ''}`}</option>
                               ))}
                             </select>
@@ -425,29 +514,31 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 <div className="space-y-4">
                   <h3 className="text-sm font-bold uppercase tracking-wider text-[#a68b52] border-b border-stone-200 pb-2">Additional Details</h3>
 
-                  <div>
-                    <label className={labelClasses}>Safari Interests</label>
-                    <CustomSelect
-                      value={interests}
-                      onChange={setInterests}
-                      options={[
-                        { value: 'Big Five Wildlife', label: 'Big Five Wildlife' },
-                        { value: 'Great Migration', label: 'Great Migration' },
-                        { value: 'Gorilla Trekking', label: 'Gorilla Trekking' },
-                        { value: 'Bush & Beach Combo', label: 'Bush & Beach Combo' },
-                        { value: 'Photography Safari', label: 'Photography Safari' },
-                        { value: 'Family Safari', label: 'Family Safari' },
-                        { value: 'Honeymoon / Romance', label: 'Honeymoon / Romance' },
-                        { value: 'Cultural Experiences', label: 'Cultural Experiences' },
-                        { value: 'Mountain Climbing', label: 'Mountain Climbing' },
-                        { value: 'Bird Watching', label: 'Bird Watching' },
-                        { value: 'Day Trips & Excursions', label: 'Day Trips & Excursions' },
-                        { value: 'Fly-In Safari', label: 'Fly-In Safari' },
-                      ]}
-                      placeholder="What excites you most?"
-                      icon={Plane}
-                    />
-                  </div>
+                  {!isNNP && (
+                    <div>
+                      <label className={labelClasses}>Safari Interests</label>
+                      <CustomSelect
+                        value={interests}
+                        onChange={setInterests}
+                        options={[
+                          { value: 'Big Five Wildlife', label: 'Big Five Wildlife' },
+                          { value: 'Great Migration', label: 'Great Migration' },
+                          { value: 'Gorilla Trekking', label: 'Gorilla Trekking' },
+                          { value: 'Bush & Beach Combo', label: 'Bush & Beach Combo' },
+                          { value: 'Photography Safari', label: 'Photography Safari' },
+                          { value: 'Family Safari', label: 'Family Safari' },
+                          { value: 'Honeymoon / Romance', label: 'Honeymoon / Romance' },
+                          { value: 'Cultural Experiences', label: 'Cultural Experiences' },
+                          { value: 'Mountain Climbing', label: 'Mountain Climbing' },
+                          { value: 'Bird Watching', label: 'Bird Watching' },
+                          { value: 'Day Trips & Excursions', label: 'Day Trips & Excursions' },
+                          { value: 'Fly-In Safari', label: 'Fly-In Safari' },
+                        ]}
+                        placeholder="What excites you most?"
+                        icon={Plane}
+                      />
+                    </div>
+                  )}
 
                   <div>
                     <label className={labelClasses}>Special Requests or Questions</label>

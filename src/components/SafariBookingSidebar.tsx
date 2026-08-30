@@ -11,16 +11,29 @@ interface Safari {
   destination?: string;
   parks?: string[];
   priceFrom?: number;
+  type?: string[];
+  highlights?: string[];
 }
 
 export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
   const { openModal } = useQuoteModal();
 
+  const isDayTrip = Array.isArray(safari.type) && safari.type.includes('day-trip');
+  const isNNP = safari.slug.includes('nairobi-national-park');
+
+  const handleOpenModal = () => {
+    openModal(safari.title, `https://www.catssafaris.com/safari/${safari.slug}`, {
+      isDayTrip,
+      isNNP,
+      highlights: isDayTrip ? (safari.highlights || []) : [],
+    });
+  };
+
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-stone-100 overflow-hidden">
       {/* Header */}
       <div className="bg-[#5c4d42] text-white p-6">
-        <h3 className="text-xl font-bold mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>Book This Safari</h3>
+        <h3 className="text-xl font-bold mb-1 font-serif">Book This Safari</h3>
         <p className="text-white/70 text-sm">Personalised itinerary, guaranteed departures</p>
       </div>
 
@@ -58,7 +71,7 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
       {/* Book Now Button - Opens Modal */}
       <div className="p-6 space-y-3">
         <button
-          onClick={() => openModal(safari.title, `https://www.catssafaris.com/safari/${safari.slug}`)}
+          onClick={handleOpenModal}
           className="w-full flex items-center justify-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl text-base"
         >
           Request Custom Quote
