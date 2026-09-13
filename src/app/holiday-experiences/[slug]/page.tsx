@@ -75,7 +75,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
     const galleryImages = experience.gallery?.map(img => img.url) || [];
 
     return (
-        <div className="pb-20 bg-[#f9f7f2] overflow-x-hidden">
+        <div className="pb-20 bg-[var(--warm-ivory)] overflow-x-hidden">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -331,7 +331,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                             {/* What to Expect */}
                             {experience.whatToExpect && (
                                 <div className="bg-stone-50 rounded-3xl p-8 border border-stone-100">
-                                    <h3 className="text-xl font-bold mb-6 text-[#5c4d42] flex items-center gap-3">
+                                    <h3 className="text-xl font-bold mb-6 text-[#5c4d42] flex items-center gap-3" style={{ fontFamily: 'var(--font-playfair)' }}>
                                         <CheckCircle className="w-6 h-6 text-[#a68b52]" />
                                         What to Expect
                                     </h3>
@@ -349,7 +349,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                             {/* What to Pack */}
                             {experience.whatToPack && (
                                 <div className="bg-[#f0ede6] rounded-3xl p-8 border border-[#e5e1d8]">
-                                    <h3 className="text-xl font-bold mb-6 text-[#5c4d42] flex items-center gap-3">
+                                    <h3 className="text-xl font-bold mb-6 text-[#5c4d42] flex items-center gap-3" style={{ fontFamily: 'var(--font-playfair)' }}>
                                         <div className="p-1.5 bg-[#5c4d42] rounded-lg">
                                             <MapPin className="w-4 h-4 text-white" />
                                         </div>
@@ -712,7 +712,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                             {experience.faqs.map((faq, idx) => (
                                 <details key={idx} className="group bg-[#f9f7f2] rounded-2xl border border-stone-200 overflow-hidden">
                                     <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none hover:bg-[#f0ede6] transition-colors">
-                                        <h3 className="text-lg font-bold text-[#5c4d42] text-left pr-4">{faq.question}</h3>
+                                        <h3 className="text-lg font-bold text-[#5c4d42] text-left pr-4" style={{ fontFamily: 'var(--font-playfair)' }}>{faq.question}</h3>
                                         <ChevronDown className="w-5 h-5 text-[#a68b52] flex-shrink-0 group-open:rotate-180 transition-transform" />
                                     </summary>
                                     <div className="px-6 pb-6 pt-0">

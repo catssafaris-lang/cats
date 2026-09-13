@@ -33,7 +33,7 @@ interface FlightResult {
 /* ------------------------------------------------------------------ */
 const MARKER = '486464';
 const AUTOCOMPLETE_URL = 'https://autocomplete.travelpayouts.com/places2';
-const PRICES_URL = 'https://api.travelpayouts.com/aviasales/v3/prices_for_dates';
+const PRICES_URL = '/api/flight-prices';
 
 const AIRLINE_NAMES: Record<string, string> = {
   KQ: 'Kenya Airways',
@@ -654,6 +654,7 @@ export default function FlightSearchForm() {
   const [searched, setSearched] = useState(false);
   const [results, setResults] = useState<FlightResult[]>([]);
   const [searchError, setSearchError] = useState(false);
+  const [fallbackResults, setFallbackResults] = useState(false);
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -703,6 +704,7 @@ export default function FlightSearchForm() {
     setSearching(true);
     setSearched(true);
     setSearchError(false);
+    setFallbackResults(false);
     setResults([]);
 
     try {
@@ -711,7 +713,6 @@ export default function FlightSearchForm() {
         destination: destination.code,
         departure_at: departDate,
         sorting: 'price',
-        token: MARKER,
         currency: 'usd',
         limit: '10',
       });
@@ -721,9 +722,11 @@ export default function FlightSearchForm() {
 
       const res = await fetch(`${PRICES_URL}?${params.toString()}`);
       const json = await res.json();
+      const isFallback = json.fallback === true;
 
       if (json && json.success !== false && Array.isArray(json.data) && json.data.length > 0) {
         setResults(json.data as FlightResult[]);
+        setFallbackResults(isFallback);
       } else {
         setResults([]);
       }
@@ -893,7 +896,10 @@ export default function FlightSearchForm() {
       {searched && (
         <div className="mt-8">
           <div className="flex flex-col items-center text-center mb-6">
-            <h2 className="text-2xl font-bold text-[#5c4d42]">Available Flights</h2>
+            <h2 className="text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Available Flights</h2>
+            {fallbackResults && (
+              <p className="text-sm text-[#a68b52] font-medium mt-1">Showing best prices for nearby dates on this route</p>
+            )}
             <p className="text-sm text-stone-500 mt-1">
               Prices shown are indicative. Final fare confirmed at booking.
             </p>
@@ -916,16 +922,19 @@ export default function FlightSearchForm() {
 
           {!searching && (searchError || results.length === 0) && (
             <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-8 text-center">
-              <p className="text-[#5c4d42] font-medium mb-4">
-                No cached prices found. Search directly on Aviasales for real-time results.
-              </p>
+              <div className="mb-4">
+                <svg className="w-12 h-12 mx-auto text-[#a68b52] mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+                <p className="text-[#5c4d42] font-bold text-lg mb-2">Searching live flight results</p>
+                <p className="text-stone-500 text-sm mb-1">Opening our flight partner to compare airlines and book directly.</p>
+                <p className="text-stone-400 text-xs">You will be redirected in a moment...</p>
+              </div>
               <button
                 type="button"
                 onClick={openAviasalesDeeplink}
                 className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
               >
                 <SearchIcon />
-                Search on Aviasales
+                Search Now on Aviasales
               </button>
             </div>
           )}
