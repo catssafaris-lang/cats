@@ -14,6 +14,10 @@ const C = {
   panel: '#3b2f1e',
   panelHover: '#4d3e2b',
   darkText: '#3a3027',
+  teal: '#1a7a6d',
+  tealHover: '#15655a',
+  red: '#c0392b',
+  redHover: '#a93226',
 };
 
 /* ═══════════════════  DESKTOP DROPDOWN  ═══════════════════ */
@@ -28,7 +32,7 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
       style={{ minWidth: 260 }}
     >
       <div
-        className="flex rounded-lg shadow-2xl border overflow-hidden mt-2"
+        className="flex rounded-lg shadow-2xl border overflow-hidden mt-1"
         style={{ background: C.panel, borderColor: C.gold + '30' }}
       >
         {/* ── Kenya Safaris: vertical list with Nairobi flyout ── */}
@@ -123,7 +127,7 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
           </div>
         )}
 
-        {/* ── Travel Info / Flights: simple list ── */}
+        {/* ── Travel Info / other: simple list ── */}
         {!isKenyaSafaris && !isExperiences && (
           <div className="py-3" style={{ width: 260 }}>
             {section.dropdown!.map((item) => (
@@ -174,7 +178,45 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           </button>
         </div>
 
+        {/* Mobile quick-action buttons */}
+        <div className="px-4 pb-4 flex flex-col gap-2">
+          <Link
+            href="/transport-solutions"
+            onClick={onClose}
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
+            style={{ background: C.teal }}
+          >
+            Transport Solutions
+          </Link>
+          <Link
+            href="/flight-search"
+            onClick={onClose}
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
+            style={{ background: C.teal }}
+          >
+            Flight Booking
+          </Link>
+          <Link
+            href="/contact"
+            onClick={onClose}
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
+            style={{ background: C.red }}
+          >
+            Book Safari
+          </Link>
+        </div>
+
         <nav className="px-4 pb-8">
+          {/* Home link */}
+          <Link
+            href="/"
+            onClick={onClose}
+            className="block py-3 text-base font-medium border-b"
+            style={{ color: C.ivory, borderColor: C.gold + '20' }}
+          >
+            Home
+          </Link>
+
           {navigationData.map((section) => {
             if (!section.dropdown) {
               return (
@@ -312,67 +354,111 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top bar — brown ── */}
+      {/* ═══ TOP UTILITY BAR ═══ */}
       <div style={{ background: C.brown }} className="hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs py-1.5" style={{ color: C.ivory + 'CC' }}>
-          <div className="flex items-center gap-4">
-            <a href="mailto:info@catssafaris.com" className="hover:underline">info@catssafaris.com</a>
-            <span>|</span>
-            <a href="tel:+254723951388" className="hover:underline">+254 723 951 388</a>
+        <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between h-9">
+          {/* Left: phone + email */}
+          <div className="flex items-center gap-4 text-xs" style={{ color: C.ivory + 'DD' }}>
+            <a href="tel:+254723951388" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +254 723 951 388
+            </a>
+            <a href="mailto:info@catssafaris.com" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              info@catssafaris.com
+            </a>
           </div>
-          <div className="flex items-center gap-4">
-            <a href="https://www.facebook.com/CATSAFARISKENYA" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a>
+
+          {/* Right: action buttons + location */}
+          <div className="flex items-center gap-2">
+            <Link
+              href="/transport-solutions"
+              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
+              style={{ background: C.teal }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.tealHover; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+            >
+              Transport Solutions
+            </Link>
+            <Link
+              href="/flight-search"
+              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
+              style={{ background: C.teal }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.tealHover; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+            >
+              Flight Booking
+            </Link>
+            <Link
+              href="/contact"
+              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
+              style={{ background: C.red }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.redHover; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.red; }}
+            >
+              Book Safari
+            </Link>
+            <span className="ml-2 text-[11px] flex items-center gap-1" style={{ color: C.ivory + 'AA' }}>
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Nairobi, Kenya
+            </span>
           </div>
         </div>
       </div>
 
-      {/* ── Main nav bar — beige ── */}
-      <header className="sticky top-0 z-50 shadow-sm" style={{ background: C.beige }}>
-        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[96px]">
-          {/* Logo — large professional display */}
-          <Link href="/" className="flex-shrink-0 mr-6">
+      {/* ═══ MAIN NAVIGATION BAR ═══ */}
+      <header className="sticky top-0 z-50 shadow-sm" style={{ background: C.beige, borderBottom: `1px solid ${C.gold}25` }}>
+        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[72px]">
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0 mr-4">
             <Image
               src="/cats-logo-full.jpg"
               alt="Collective African Tours & Safaris (C.A.T.S)"
-              width={440}
-              height={96}
-              className="h-[78px] w-auto object-contain hidden lg:block"
-              priority
-            />
-            <Image
-              src="/cats-logo-full.jpg"
-              alt="Collective African Tours & Safaris (C.A.T.S)"
-              width={340}
-              height={72}
-              className="h-[62px] w-auto object-contain hidden sm:block lg:hidden"
+              width={160}
+              height={60}
+              className="h-[56px] w-auto object-contain hidden sm:block"
               priority
             />
             <Image
               src="/cats-logo-full.jpg"
               alt="C.A.T.S Safaris"
-              width={260}
-              height={56}
-              className="h-[52px] w-auto object-contain sm:hidden"
+              width={120}
+              height={48}
+              className="h-[44px] w-auto object-contain sm:hidden"
               priority
             />
           </Link>
 
-          {/* Desktop nav — right-aligned, compact */}
+          {/* Desktop nav */}
           <nav ref={navRef} className="hidden lg:flex items-center gap-0 ml-auto">
+            {/* Home link */}
+            <Link
+              href="/"
+              className="px-2.5 xl:px-3 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+              style={{ color: C.darkText }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.brown; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.darkText; }}
+            >
+              Home
+            </Link>
+
             {navigationData.map((section) => {
               if (!section.dropdown) {
                 return (
                   <Link
                     key={section.name}
                     href={section.href!}
-                    className="px-2 xl:px-2.5 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                    className="px-2.5 xl:px-3 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
                     style={{ color: C.darkText }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = C.brown;
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = C.darkText;
-                    }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.brown; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.darkText; }}
                   >
                     {section.name}
                   </Link>
@@ -387,11 +473,11 @@ export default function Header() {
                   onMouseEnter={() => openDropdown(section.name)}
                   onMouseLeave={scheduleClose}
                 >
-                  <div className="flex items-center gap-0 px-2 xl:px-2.5 py-2">
+                  <div className="flex items-center gap-0 px-2.5 xl:px-3 py-2 cursor-pointer">
                     {section.href ? (
                       <Link
                         href={section.href}
-                        className="text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                        className="text-[13px] font-semibold transition-colors whitespace-nowrap"
                         style={{ color: isActive ? C.gold : C.darkText }}
                         onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.brown; }}
                         onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isActive ? C.gold : C.darkText; }}
@@ -399,24 +485,16 @@ export default function Header() {
                         {section.name}
                       </Link>
                     ) : (
-                      <button
-                        className="text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                      <span
+                        className="text-[13px] font-semibold transition-colors whitespace-nowrap"
                         style={{ color: isActive ? C.gold : C.darkText }}
-                        onClick={() => setActiveDropdown(isActive ? null : section.name)}
                       >
                         {section.name}
-                      </button>
+                      </span>
                     )}
-                    <button
-                      className="ml-0.5"
-                      style={{ color: isActive ? C.gold : C.darkText }}
-                      onClick={() => setActiveDropdown(isActive ? null : section.name)}
-                      aria-label={`Toggle ${section.name} dropdown`}
-                    >
-                      <svg className={`w-3 h-3 transition-transform ${isActive ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
+                    <svg className={`w-3 h-3 ml-0.5 transition-transform ${isActive ? 'rotate-180' : ''}`} style={{ color: isActive ? C.gold : C.darkText }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
                   </div>
 
                   {isActive && (
