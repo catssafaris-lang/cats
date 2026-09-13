@@ -52,6 +52,7 @@ export const navigationData: NavSection[] = [
   { name: 'Mountain Climbing', href: '/mountain-climbing' },
   {
     name: 'Experiences',
+    href: '/holiday-experiences',
     dropdown: [
       { name: 'Wildlife Safari Adventures', href: '/holiday-experiences/wildlife-safari-adventures-in-kenya', description: 'Big Five game drives across Kenya\'s iconic reserves' },
       { name: 'Cultural Immersion Tours', href: '/holiday-experiences/cultural-immersion-tours-in-kenya', description: 'Authentic Maasai, Samburu & coastal Swahili heritage' },
@@ -77,7 +78,7 @@ export const navigationData: NavSection[] = [
     dropdown: [
       { name: 'Booking Terms & Conditions', href: '/travel-info/booking-terms' },
       { name: 'What to Pack for Safari', href: '/travel-info/what-to-pack' },
-      { name: '4x4 Safari Jeeps', href: '/transport-solutions' },
+      { name: 'Transport Solutions', href: '/transport-solutions' },
       { name: 'FAQs', href: '/faqs' },
       { name: 'Baggage Policy', href: '/travel-info/baggage-policy' },
       { name: 'Kenya Lodges & Camps', href: '/travel-info/kenya-lodges' },

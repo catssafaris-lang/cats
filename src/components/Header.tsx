@@ -208,6 +208,16 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 </button>
                 {isOpen && (
                   <div className="pb-2 pl-3">
+                    {section.href && (
+                      <Link
+                        href={section.href}
+                        onClick={onClose}
+                        className="block py-2 text-sm font-semibold"
+                        style={{ color: C.gold }}
+                      >
+                        View All {section.name} →
+                      </Link>
+                    )}
                     {section.dropdown.map((item) => {
                       const hasChildren = !!item.children?.length;
                       const isSubOpen = subExpanded === item.name;
@@ -377,16 +387,37 @@ export default function Header() {
                   onMouseEnter={() => openDropdown(section.name)}
                   onMouseLeave={scheduleClose}
                 >
-                  <button
-                    className="flex items-center gap-0.5 px-2 xl:px-2.5 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
-                    style={{ color: isActive ? C.gold : C.darkText }}
-                    onClick={() => setActiveDropdown(isActive ? null : section.name)}
-                  >
-                    {section.name}
-                    <svg className={`w-3 h-3 transition-transform ${isActive ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  <div className="flex items-center gap-0 px-2 xl:px-2.5 py-2">
+                    {section.href ? (
+                      <Link
+                        href={section.href}
+                        className="text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                        style={{ color: isActive ? C.gold : C.darkText }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.brown; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isActive ? C.gold : C.darkText; }}
+                      >
+                        {section.name}
+                      </Link>
+                    ) : (
+                      <button
+                        className="text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                        style={{ color: isActive ? C.gold : C.darkText }}
+                        onClick={() => setActiveDropdown(isActive ? null : section.name)}
+                      >
+                        {section.name}
+                      </button>
+                    )}
+                    <button
+                      className="ml-0.5"
+                      style={{ color: isActive ? C.gold : C.darkText }}
+                      onClick={() => setActiveDropdown(isActive ? null : section.name)}
+                      aria-label={`Toggle ${section.name} dropdown`}
+                    >
+                      <svg className={`w-3 h-3 transition-transform ${isActive ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  </div>
 
                   {isActive && (
                     <div
