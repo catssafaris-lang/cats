@@ -318,23 +318,31 @@ export default function Header() {
 
       {/* ── Main nav bar — beige ── */}
       <header className="sticky top-0 z-50 shadow-sm" style={{ background: C.beige }}>
-        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[72px]">
-          {/* Logo — new full horizontal logo */}
-          <Link href="/" className="flex-shrink-0 mr-4">
+        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[96px]">
+          {/* Logo — large professional display */}
+          <Link href="/" className="flex-shrink-0 mr-6">
             <Image
               src="/cats-logo-full.jpg"
               alt="Collective African Tours & Safaris (C.A.T.S)"
-              width={260}
-              height={56}
-              className="h-14 w-auto object-contain hidden sm:block"
+              width={440}
+              height={96}
+              className="h-[78px] w-auto object-contain hidden lg:block"
+              priority
+            />
+            <Image
+              src="/cats-logo-full.jpg"
+              alt="Collective African Tours & Safaris (C.A.T.S)"
+              width={340}
+              height={72}
+              className="h-[62px] w-auto object-contain hidden sm:block lg:hidden"
               priority
             />
             <Image
               src="/cats-logo-full.jpg"
               alt="C.A.T.S Safaris"
-              width={180}
-              height={44}
-              className="h-11 w-auto object-contain sm:hidden"
+              width={260}
+              height={56}
+              className="h-[52px] w-auto object-contain sm:hidden"
               priority
             />
           </Link>

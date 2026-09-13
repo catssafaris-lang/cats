@@ -283,50 +283,52 @@ function DatePickerField({
       </button>
 
       {open && (
-        <div className="absolute z-50 top-full mt-2 left-0 right-0 sm:right-auto sm:w-80 bg-white border border-stone-200 rounded-xl shadow-2xl p-4">
-          <div className="flex items-center justify-between mb-3">
+        <div className="absolute z-[9999] top-full mt-2 left-0 w-[320px] bg-white border border-stone-200 rounded-2xl shadow-2xl p-5">
+          <div className="flex items-center justify-between mb-4">
             <button
               type="button"
               onClick={goPrevMonth}
               disabled={!canGoPrev}
-              className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-stone-200 text-stone-600 hover:border-[#a68b52] hover:text-[#a68b52] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-stone-200 text-stone-600 hover:border-[#a68b52] hover:text-[#a68b52] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               <ChevronLeftIcon />
             </button>
-            <span className="font-bold text-[#5c4d42] text-sm">
+            <span className="font-bold text-[#5c4d42] text-base">
               {MONTH_LABELS[month]} {year}
             </span>
             <button
               type="button"
               onClick={goNextMonth}
-              className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-stone-200 text-stone-600 hover:border-[#a68b52] hover:text-[#a68b52] transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-stone-200 text-stone-600 hover:border-[#a68b52] hover:text-[#a68b52] transition-colors"
             >
               <ChevronRightIcon />
             </button>
           </div>
 
-          <div className="grid grid-cols-7 gap-1 mb-1">
+          <div className="grid grid-cols-7 gap-0.5 mb-2">
             {WEEKDAY_LABELS.map((w) => (
-              <div key={w} className="text-center text-[10px] font-semibold uppercase tracking-wider text-stone-400 py-1">
+              <div key={w} className="text-center text-[11px] font-bold uppercase tracking-wider text-stone-400 py-1.5">
                 {w}
               </div>
             ))}
           </div>
 
-          <div className="grid grid-cols-7 gap-1">
+          <div className="grid grid-cols-7 gap-0.5">
             {cells.map((d, idx) => {
-              if (!d) return <div key={idx} />;
+              if (!d) return <div key={idx} className="w-[38px] h-[38px]" />;
               const disabled = startOfDay(d) < min;
               const isSelected = selected && toISODate(d) === toISODate(selected);
+              const isToday = toISODate(d) === toISODate(new Date());
               return (
                 <button
                   key={idx}
                   type="button"
                   disabled={disabled}
                   onClick={() => selectDay(d)}
-                  className={`aspect-square rounded-lg text-sm font-medium transition-colors flex items-center justify-center
-                    ${disabled ? 'text-stone-300 cursor-not-allowed' : 'text-[#5c4d42] hover:bg-[#f7f4ed] cursor-pointer'}
+                  className={`w-[38px] h-[38px] rounded-lg text-sm font-semibold transition-colors flex items-center justify-center
+                    ${disabled ? 'text-stone-300 cursor-not-allowed' : 'text-[#5c4d42] hover:bg-[#f7f4ed] active:bg-[#e8dfd0] cursor-pointer'}
                     ${isSelected ? 'bg-[#a68b52] text-white hover:bg-[#a68b52]' : ''}
+                    ${isToday && !isSelected ? 'ring-2 ring-[#a68b52]/40' : ''}
                   `}
                 >
                   {d.getDate()}
@@ -738,9 +740,9 @@ export default function FlightSearchForm() {
   return (
     <div className="mx-auto max-w-5xl">
       {/* Form Card */}
-      <div className="bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden">
+      <div className="bg-white rounded-3xl shadow-xl border border-stone-100">
         {/* Top Bar — Trip Type + Class */}
-        <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-[#5c4d42]">
+        <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-[#5c4d42] rounded-t-3xl">
           <div className="flex gap-1 bg-[#4a3d34] rounded-xl p-1">
             <button
               type="button"
