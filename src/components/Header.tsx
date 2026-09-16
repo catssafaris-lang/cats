@@ -5,16 +5,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { navigationData, NavSection, NavDropdownItem } from '@/data/navigation';
 
-/* ── CATS Palette ── */
+/* ── CATS Palette — matching original design ── */
 const C = {
-  panel: '#3b2f1e',
-  panelHover: '#4a3d2d',
-  gold: '#c8a45e',
-  ivory: '#faf8f3',
-  teal: '#00897b',
+  /* Top utility bar */
+  topBar: '#1a3c34',          /* dark forest green */
+  topBarText: '#ffffff',
+  teal: '#00897b',            /* Transport / Flight buttons */
   tealHover: '#00796b',
-  red: '#d32f2f',
-  redHover: '#b71c1c',
+  amber: '#c8a45e',           /* Plan My Safari button */
+  amberHover: '#b8943e',
+  /* Main nav bar */
+  navBg: '#ffffff',           /* white nav background */
+  navText: '#3b2f1e',         /* dark brown text */
+  navHover: '#1a3c34',        /* dark green on hover */
+  gold: '#c8a45e',            /* gold accent */
+  /* Dropdown */
+  dropBg: '#1a3c34',
+  dropHover: '#244a41',
+  dropText: '#ffffff',
+  dropGold: '#c8a45e',
+  /* Mobile */
+  mobileBg: '#1a3c34',
 };
 
 /* ═══════════════════  DESKTOP DROPDOWN  ═══════════════════ */
@@ -24,15 +35,12 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
   const isExperiences = section.name === 'Experiences';
 
   return (
-    <div
-      className="absolute top-full left-0 mt-0 z-50"
-      style={{ minWidth: 260 }}
-    >
+    <div className="absolute top-full left-0 mt-0 z-50" style={{ minWidth: 260 }}>
       <div
         className="flex rounded-lg shadow-2xl border overflow-hidden mt-1"
-        style={{ background: C.panel, borderColor: C.gold + '30' }}
+        style={{ background: C.dropBg, borderColor: C.dropGold + '30' }}
       >
-        {/* ── Kenya Safaris: vertical list with Nairobi flyout ── */}
+        {/* Kenya Safaris: vertical list with Nairobi flyout */}
         {isKenyaSafaris && (
           <div className="py-3" style={{ width: 280 }}>
             {section.dropdown!.map((item) => {
@@ -47,14 +55,14 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
                     href={item.href}
                     onClick={onClose}
                     className="flex items-center justify-between px-5 py-2.5 text-sm transition-colors"
-                    style={{ color: C.ivory }}
+                    style={{ color: C.dropText }}
                     onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.background = C.panelHover;
-                      (e.currentTarget as HTMLElement).style.color = C.gold;
+                      (e.currentTarget as HTMLElement).style.background = C.dropHover;
+                      (e.currentTarget as HTMLElement).style.color = C.dropGold;
                     }}
                     onMouseLeave={(e) => {
                       (e.currentTarget as HTMLElement).style.background = 'transparent';
-                      (e.currentTarget as HTMLElement).style.color = C.ivory;
+                      (e.currentTarget as HTMLElement).style.color = C.dropText;
                     }}
                   >
                     <span>{item.name}</span>
@@ -70,26 +78,23 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
           </div>
         )}
 
-        {/* ── Flyout for Nairobi Kenya Safaris only ── */}
+        {/* Flyout for Nairobi sub-items */}
         {isKenyaSafaris && flyoutItem?.children && (
-          <div
-            className="py-3 border-l"
-            style={{ width: 220, borderColor: C.gold + '20' }}
-          >
+          <div className="py-3 border-l" style={{ width: 220, borderColor: C.dropGold + '20' }}>
             {flyoutItem.children.map((child) => (
               <Link
                 key={child.name}
                 href={child.href}
                 onClick={onClose}
                 className="block px-5 py-2.5 text-sm transition-colors"
-                style={{ color: C.ivory }}
+                style={{ color: C.dropText }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = C.panelHover;
-                  (e.currentTarget as HTMLElement).style.color = C.gold;
+                  (e.currentTarget as HTMLElement).style.background = C.dropHover;
+                  (e.currentTarget as HTMLElement).style.color = C.dropGold;
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.background = 'transparent';
-                  (e.currentTarget as HTMLElement).style.color = C.ivory;
+                  (e.currentTarget as HTMLElement).style.color = C.dropText;
                 }}
               >
                 {child.name}
@@ -98,7 +103,7 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
           </div>
         )}
 
-        {/* ── Experiences: 2-col grid with descriptions ── */}
+        {/* Experiences: 2-col grid */}
         {isExperiences && (
           <div className="p-4 grid grid-cols-2 gap-x-4 gap-y-1" style={{ width: 540 }}>
             {section.dropdown!.map((item) => (
@@ -107,24 +112,20 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
                 href={item.href}
                 onClick={onClose}
                 className="block px-3 py-2.5 rounded transition-colors"
-                style={{ color: C.ivory }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = C.panelHover;
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = 'transparent';
-                }}
+                style={{ color: C.dropText }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.dropHover; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
               >
-                <span className="block text-sm font-medium" style={{ color: C.gold }}>{item.name}</span>
+                <span className="block text-sm font-medium" style={{ color: C.dropGold }}>{item.name}</span>
                 {item.description && (
-                  <span className="block text-xs mt-0.5" style={{ color: C.ivory + 'AA' }}>{item.description}</span>
+                  <span className="block text-xs mt-0.5" style={{ color: C.dropText + 'AA' }}>{item.description}</span>
                 )}
               </Link>
             ))}
           </div>
         )}
 
-        {/* ── Travel Info / other: simple list ── */}
+        {/* Travel Info / other: simple list */}
         {!isKenyaSafaris && !isExperiences && (
           <div className="py-3" style={{ width: 260 }}>
             {section.dropdown!.map((item) => (
@@ -133,14 +134,14 @@ function DesktopDropdown({ section, onClose }: { section: NavSection; onClose: (
                 href={item.href}
                 onClick={onClose}
                 className="block px-5 py-2.5 text-sm transition-colors"
-                style={{ color: C.ivory }}
+                style={{ color: C.dropText }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = C.panelHover;
-                  (e.currentTarget as HTMLElement).style.color = C.gold;
+                  (e.currentTarget as HTMLElement).style.background = C.dropHover;
+                  (e.currentTarget as HTMLElement).style.color = C.dropGold;
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.background = 'transparent';
-                  (e.currentTarget as HTMLElement).style.color = C.ivory;
+                  (e.currentTarget as HTMLElement).style.color = C.dropText;
                 }}
               >
                 {item.name}
@@ -165,11 +166,11 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
       <div
         className="absolute top-0 right-0 h-full w-[85vw] max-w-sm overflow-y-auto"
-        style={{ background: C.panel }}
+        style={{ background: C.mobileBg }}
       >
         <div className="flex justify-end p-4">
           <button onClick={onClose} aria-label="Close menu">
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke={C.ivory} strokeWidth={2}>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -180,7 +181,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           <Link
             href="/transport-solutions"
             onClick={onClose}
-            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white transition-colors"
             style={{ background: C.teal }}
           >
             Transport Solutions
@@ -188,7 +189,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           <Link
             href="/flight-search"
             onClick={onClose}
-            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white transition-colors"
             style={{ background: C.teal }}
           >
             Flight Booking
@@ -196,20 +197,19 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           <Link
             href="/contact"
             onClick={onClose}
-            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white"
-            style={{ background: C.red }}
+            className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider"
+            style={{ background: C.amber, color: '#1a3c34' }}
           >
-            Book Safari
+            Plan My Safari
           </Link>
         </div>
 
         <nav className="px-4 pb-8">
-          {/* Home link */}
           <Link
             href="/"
             onClick={onClose}
             className="block py-3 text-base font-medium border-b"
-            style={{ color: C.ivory, borderColor: C.gold + '20' }}
+            style={{ color: '#fff', borderColor: C.dropGold + '20' }}
           >
             Home
           </Link>
@@ -222,7 +222,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                   href={section.href!}
                   onClick={onClose}
                   className="block py-3 text-base font-medium border-b"
-                  style={{ color: C.ivory, borderColor: C.gold + '20' }}
+                  style={{ color: '#fff', borderColor: C.dropGold + '20' }}
                 >
                   {section.name}
                 </Link>
@@ -231,11 +231,11 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
 
             const isOpen = expanded === section.name;
             return (
-              <div key={section.name} className="border-b" style={{ borderColor: C.gold + '20' }}>
+              <div key={section.name} className="border-b" style={{ borderColor: C.dropGold + '20' }}>
                 <button
                   onClick={() => setExpanded(isOpen ? null : section.name)}
                   className="flex items-center justify-between w-full py-3 text-base font-medium"
-                  style={{ color: C.ivory }}
+                  style={{ color: '#fff' }}
                 >
                   {section.name}
                   <svg
@@ -252,7 +252,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                         href={section.href}
                         onClick={onClose}
                         className="block py-2 text-sm font-semibold"
-                        style={{ color: C.gold }}
+                        style={{ color: C.dropGold }}
                       >
                         View All {section.name} →
                       </Link>
@@ -268,7 +268,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                             href={item.href}
                             onClick={onClose}
                             className="block py-2 text-sm"
-                            style={{ color: C.ivory + 'CC' }}
+                            style={{ color: '#ffffffCC' }}
                           >
                             {item.name}
                           </Link>
@@ -280,7 +280,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                           <button
                             onClick={() => setSubExpanded(isSubOpen ? null : item.name)}
                             className="flex items-center justify-between w-full py-2 text-sm"
-                            style={{ color: C.gold }}
+                            style={{ color: C.dropGold }}
                           >
                             {item.name}
                             <svg
@@ -298,7 +298,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                                   href={child.href}
                                   onClick={onClose}
                                   className="block py-1.5 text-sm"
-                                  style={{ color: C.ivory + 'AA' }}
+                                  style={{ color: '#ffffffAA' }}
                                 >
                                   {child.name}
                                 </Link>
@@ -351,18 +351,18 @@ export default function Header() {
 
   return (
     <>
-      {/* ═══ TOP UTILITY BAR — white background ═══ */}
-      <div className="hidden md:block border-b" style={{ background: '#fff', borderColor: '#e5e2db' }}>
-        <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between h-9">
+      {/* ═══ TOP UTILITY BAR — dark forest green ═══ */}
+      <div className="hidden md:block" style={{ background: C.topBar }}>
+        <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between h-10">
           {/* Left: phone + email */}
-          <div className="flex items-center gap-4 text-xs" style={{ color: C.panel }}>
-            <a href="tel:+254723951388" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.panel }}>
+          <div className="flex items-center gap-4 text-xs" style={{ color: C.topBarText }}>
+            <a href="tel:+254723951388" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.topBarText }}>
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               +254 723 951 388
             </a>
-            <a href="mailto:info@catssafaris.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.panel }}>
+            <a href="mailto:info@catssafaris.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.topBarText }}>
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -374,32 +374,32 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <Link
               href="/transport-solutions"
-              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
-              style={{ background: C.teal }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.tealHover; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider border transition-colors"
+              style={{ background: 'transparent', color: C.topBarText, borderColor: C.teal }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
             >
               Transport Solutions
             </Link>
             <Link
               href="/flight-search"
-              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
-              style={{ background: C.teal }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.tealHover; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+              className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider border transition-colors"
+              style={{ background: 'transparent', color: C.topBarText, borderColor: C.teal }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
             >
               Flight Booking
             </Link>
             <Link
               href="/contact"
               className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider text-white transition-colors"
-              style={{ background: C.red }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.redHover; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.red; }}
+              style={{ background: C.amber }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.amberHover; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.amber; }}
             >
-              Book Safari
+              Plan My Safari
             </Link>
-            <span className="ml-2 text-[11px] flex items-center gap-1" style={{ color: '#888' }}>
+            <span className="ml-2 text-[11px] flex items-center gap-1" style={{ color: '#ffffffAA' }}>
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -410,10 +410,10 @@ export default function Header() {
         </div>
       </div>
 
-      {/* ═══ MAIN NAVIGATION BAR — dark panel ═══ */}
-      <header className="sticky top-0 z-50 shadow-md" style={{ background: C.panel }}>
+      {/* ═══ MAIN NAVIGATION BAR — white/ivory ═══ */}
+      <header className="sticky top-0 z-50 shadow-md border-b" style={{ background: C.navBg, borderColor: '#e5e2db' }}>
         <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[80px]">
-          {/* Logo — large professional display */}
+          {/* Logo */}
           <Link href="/" className="flex-shrink-0 mr-6">
             <Image
               src="/cats-logo-full.jpg"
@@ -441,15 +441,14 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop nav — white text on dark background */}
+          {/* Desktop nav — dark text on white background */}
           <nav ref={navRef} className="hidden lg:flex items-center gap-0 ml-auto">
-            {/* Home link */}
             <Link
               href="/"
-              className="px-2.5 xl:px-3 py-2 text-[13px] font-medium rounded transition-colors whitespace-nowrap"
-              style={{ color: C.ivory }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.gold; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.ivory; }}
+              className="px-2.5 xl:px-3 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+              style={{ color: C.navText }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.navHover; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.navText; }}
             >
               Home
             </Link>
@@ -460,10 +459,10 @@ export default function Header() {
                   <Link
                     key={section.name}
                     href={section.href!}
-                    className="px-2.5 xl:px-3 py-2 text-[13px] font-medium rounded transition-colors whitespace-nowrap"
-                    style={{ color: C.ivory }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.gold; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.ivory; }}
+                    className="px-2.5 xl:px-3 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
+                    style={{ color: C.navText }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.navHover; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = C.navText; }}
                   >
                     {section.name}
                   </Link>
@@ -482,22 +481,22 @@ export default function Header() {
                     {section.href ? (
                       <Link
                         href={section.href}
-                        className="text-[13px] font-medium transition-colors whitespace-nowrap"
-                        style={{ color: isActive ? C.gold : C.ivory }}
-                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.gold; }}
-                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isActive ? C.gold : C.ivory; }}
+                        className="text-[13px] font-semibold transition-colors whitespace-nowrap"
+                        style={{ color: isActive ? C.navHover : C.navText }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = C.navHover; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isActive ? C.navHover : C.navText; }}
                       >
                         {section.name}
                       </Link>
                     ) : (
                       <span
-                        className="text-[13px] font-medium transition-colors whitespace-nowrap"
-                        style={{ color: isActive ? C.gold : C.ivory }}
+                        className="text-[13px] font-semibold transition-colors whitespace-nowrap"
+                        style={{ color: isActive ? C.navHover : C.navText }}
                       >
                         {section.name}
                       </span>
                     )}
-                    <svg className={`w-3 h-3 ml-0.5 transition-transform ${isActive ? 'rotate-180' : ''}`} style={{ color: isActive ? C.gold : C.ivory }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className={`w-3 h-3 ml-0.5 transition-transform ${isActive ? 'rotate-180' : ''}`} style={{ color: isActive ? C.navHover : C.navText }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -518,13 +517,13 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Mobile hamburger — white on dark */}
+          {/* Mobile hamburger — dark on white */}
           <button
             className="lg:hidden p-2 ml-auto"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke={C.ivory} strokeWidth={2}>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke={C.navText} strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
