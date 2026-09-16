@@ -590,7 +590,7 @@ function stopsLabel(transfers: number): string {
 }
 
 function FlightResultCard({ result }: { result: FlightResult }) {
-  const bookUrl = `https://www.aviasales.com${result.link}&marker=${MARKER}`;
+  const bookUrl = `https://flights.catssafaris.com${result.link}&marker=${MARKER}`;
   const duration = result.duration_to ?? result.duration;
 
   return (
@@ -688,7 +688,7 @@ export default function FlightSearchForm() {
     const classMap = { Y: '', C: 'C' };
     if (classMap[cabinClass]) path += classMap[cabinClass];
 
-    return `https://www.aviasales.com/search/${path}?marker=${MARKER}`;
+    return `https://flights.catssafaris.com/search/${path}?marker=${MARKER}`;
   };
 
   const openAviasalesDeeplink = () => {
@@ -698,44 +698,11 @@ export default function FlightSearchForm() {
     }
   };
 
-  const handleSearch = async () => {
+  const handleSearch = () => {
     if (!origin || !destination || !departDate) return;
-
-    setSearching(true);
     setSearched(true);
-    setSearchError(false);
-    setFallbackResults(false);
-    setResults([]);
-
-    try {
-      const params = new URLSearchParams({
-        origin: origin.code,
-        destination: destination.code,
-        departure_at: departDate,
-        sorting: 'price',
-        currency: 'usd',
-        limit: '10',
-      });
-      if (tripType === 'round' && returnDate) {
-        params.set('return_at', returnDate);
-      }
-
-      const res = await fetch(`${PRICES_URL}?${params.toString()}`);
-      const json = await res.json();
-      const isFallback = json.fallback === true;
-
-      if (json && json.success !== false && Array.isArray(json.data) && json.data.length > 0) {
-        setResults(json.data as FlightResult[]);
-        setFallbackResults(isFallback);
-      } else {
-        setResults([]);
-      }
-    } catch {
-      setSearchError(true);
-      setResults([]);
-    } finally {
-      setSearching(false);
-    }
+    // Open flights.catssafaris.com with search parameters directly
+    openAviasalesDeeplink();
   };
 
   const isValid = origin && destination && departDate && (tripType === 'oneway' || returnDate);
@@ -905,52 +872,22 @@ export default function FlightSearchForm() {
             </p>
           </div>
 
-          {searching && (
-            <div className="flex flex-col items-center justify-center gap-3 py-12">
-              <SpinnerIcon />
-              <span className="text-sm text-stone-500">Fetching the best fares...</span>
+          <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-8 text-center">
+            <div className="mb-4">
+              <svg className="w-12 h-12 mx-auto text-[#a68b52] mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+              <p className="text-[#5c4d42] font-bold text-lg mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>Your flight search opened in a new tab</p>
+              <p className="text-stone-500 text-sm mb-1">Compare airlines, view prices, and book directly on our flight booking platform.</p>
+              <p className="text-stone-400 text-xs mt-2">Didn&apos;t open? Click below to search again.</p>
             </div>
-          )}
-
-          {!searching && !searchError && results.length > 0 && (
-            <div className="space-y-4">
-              {results.map((r, idx) => (
-                <FlightResultCard key={idx} result={r} />
-              ))}
-            </div>
-          )}
-
-          {!searching && (searchError || results.length === 0) && (
-            <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-8 text-center">
-              <div className="mb-4">
-                <svg className="w-12 h-12 mx-auto text-[#a68b52] mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
-                <p className="text-[#5c4d42] font-bold text-lg mb-2">Searching live flight results</p>
-                <p className="text-stone-500 text-sm mb-1">Opening our flight partner to compare airlines and book directly.</p>
-                <p className="text-stone-400 text-xs">You will be redirected in a moment...</p>
-              </div>
-              <button
-                type="button"
-                onClick={openAviasalesDeeplink}
-                className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
-              >
-                <SearchIcon />
-                Search Now on Aviasales
-              </button>
-            </div>
-          )}
-
-          {!searching && results.length > 0 && (
-            <div className="mt-6 flex justify-center">
-              <button
-                type="button"
-                onClick={openAviasalesDeeplink}
-                className="inline-flex items-center gap-2 border-2 border-[#a68b52] text-[#a68b52] hover:bg-[#a68b52] hover:text-white px-6 py-3 rounded-xl font-semibold transition-colors"
-              >
-                <SearchIcon />
-                Search on Aviasales
-              </button>
-            </div>
-          )}
+            <button
+              type="button"
+              onClick={openAviasalesDeeplink}
+              className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
+            >
+              <SearchIcon />
+              Search Flights Again
+            </button>
+          </div>
         </div>
       )}
     </div>
