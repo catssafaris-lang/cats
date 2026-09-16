@@ -21,6 +21,7 @@ export interface NavSection {
 export const navigationData: NavSection[] = [
   {
     name: 'Kenya Safaris',
+    href: '/kenya-safaris',
     dropdown: [
       {
         name: 'Nairobi Kenya Safaris',
