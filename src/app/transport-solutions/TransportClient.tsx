@@ -173,7 +173,7 @@ const vehicles: Vehicle[] = [
     name: '4x4 Land Cruiser',
     brand: 'Toyota',
     category: 'Safari Vehicles',
-    image: 'https://images.pexels.com/photos/16113289/pexels-photo-16113289.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://ik.imagekit.io/axd1riwnv/Safari-masai-mara-vehicle.jpg',
     passengers: 'Up to 7',
     transmission: 'Manual',
     fuel: 'Diesel',
@@ -187,7 +187,7 @@ const vehicles: Vehicle[] = [
     name: 'Safari Minivan',
     brand: 'Toyota',
     category: 'Safari Vehicles',
-    image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg',
     passengers: 'Up to 7',
     transmission: 'Manual / Automatic',
     fuel: 'Petrol / Diesel',
@@ -201,7 +201,7 @@ const vehicles: Vehicle[] = [
     name: 'Open-Sided Game Viewer',
     brand: 'Custom Built',
     category: 'Safari Vehicles',
-    image: 'https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-game-drive.jpg',
     passengers: 'Up to 7',
     transmission: 'Manual',
     fuel: 'Diesel',
@@ -351,7 +351,7 @@ export function TransportClient() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b-[3px] border-[#c8962e]">
         {/* Background image — fleet in the Mara */}
         <Image
-          src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          src="https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg"
           alt="C.A.T.S safari fleet vehicles in the Masai Mara"
           fill
           className="object-cover"
@@ -564,12 +564,12 @@ export function TransportClient() {
         <div className="max-w-7xl mx-auto px-2">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
             {[
-              { src: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Land Cruiser fleet' },
-              { src: 'https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Land Cruiser in the bush' },
-              { src: 'https://images.pexels.com/photos/1134166/pexels-photo-1134166.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Land Cruiser side view' },
-              { src: 'https://images.pexels.com/photos/68629/pexels-photo-68629.jpeg?auto=compress&cs=tinysrgb&w=600', alt: '51-seater executive bus' },
-              { src: 'https://images.pexels.com/photos/385998/pexels-photo-385998.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Bus interior luxury seating' },
-              { src: 'https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Executive tour bus' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/Safari-masai-mara-vehicle.jpg', alt: 'Land Cruiser safari vehicle in the Masai Mara' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg', alt: 'Game drive vehicle with elephant herd' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/Amboseli-game-drive.jpg', alt: 'Game drive in Amboseli National Park' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/game-drive-Satao-Elerai-Amboseli-National-Park-Kenya_Tett-Safaris.webp', alt: 'Safari vehicle at Satao Elerai Amboseli' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/Ecotourism-Safari-Masai-Mara.jpg', alt: 'Ecotourism safari vehicle Masai Mara' },
+              { src: 'https://ik.imagekit.io/axd1riwnv/4-days-masai-mara-and-lake-nakuru-park-group-joining-landcruiser_Urf4r.jpeg', alt: 'Group safari Land Cruiser' },
             ].map((img, i) => (
               <div key={i} className="relative h-28 md:h-36 rounded-lg overflow-hidden">
                 <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 33vw, 16vw" />
