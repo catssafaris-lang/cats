@@ -590,43 +590,57 @@ function stopsLabel(transfers: number): string {
 }
 
 function FlightResultCard({ result }: { result: FlightResult }) {
-  const bookUrl = `https://flights.catssafaris.com${result.link}&marker=${MARKER}`;
+  /* Use aviasales.com for booking — works globally, no geo-block */
+  const bookUrl = `https://www.aviasales.com${result.link}&marker=${MARKER}`;
   const duration = result.duration_to ?? result.duration;
 
   return (
-    <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+    <div className="bg-white border border-stone-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-4 shadow-sm hover:shadow-lg transition-all hover:border-[#c8a45a]/40">
+      {/* Left: Flight details */}
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-1">
-          <PlaneIcon className="w-4 h-4 text-[#a68b52]" />
-          <span className="font-bold text-[#5c4d42]">{airlineName(result.airline)}</span>
-          {typeof result.flight_number !== 'undefined' && (
-            <span className="text-xs text-stone-500">
-              {result.airline}{result.flight_number}
-            </span>
-          )}
+        <div className="flex items-center gap-2 mb-1.5">
+          <div className="w-8 h-8 rounded-full bg-[#f7f4ed] flex items-center justify-center shrink-0">
+            <PlaneIcon className="w-4 h-4 text-[#a68b52]" />
+          </div>
+          <div>
+            <span className="font-bold text-[#5c4d42]">{airlineName(result.airline)}</span>
+            {typeof result.flight_number !== 'undefined' && (
+              <span className="text-xs text-stone-400 ml-2">{result.airline}{result.flight_number}</span>
+            )}
+          </div>
         </div>
-        <div className="text-sm text-stone-600">
-          {result.origin} <span className="text-stone-400">to</span> {result.destination}
+        <div className="text-sm text-stone-600 ml-10">
+          {result.origin} <span className="mx-1 text-[#a68b52]">→</span> {result.destination}
         </div>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-xs text-stone-500">
-          <span>Departs {result.departure_at ? new Date(result.departure_at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '—'}</span>
-          <span className="font-semibold text-[#8a7343]">{stopsLabel(result.transfers)}</span>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 ml-10 text-xs text-stone-500">
+          <span className="flex items-center gap-1">
+            <CalendarIcon />
+            {result.departure_at ? new Date(result.departure_at).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '—'}
+          </span>
+          <span className={`font-semibold px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider ${result.transfers === 0 ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'}`}>
+            {stopsLabel(result.transfers)}
+          </span>
           <span>{formatDuration(duration)}</span>
         </div>
       </div>
 
+      {/* Right: Price + Book */}
       <div className="flex flex-col items-start sm:items-end gap-2 shrink-0">
-        <div className="text-2xl font-bold text-[#5c4d42]">
-          ${Math.round(result.price)}
-          <span className="text-xs font-normal text-stone-500 ml-1">USD</span>
+        <div>
+          <span className="text-xs text-stone-400 block text-right">from</span>
+          <span className="text-2xl font-bold text-[#5c4d42]">
+            ${Math.round(result.price)}
+            <span className="text-xs font-normal text-stone-500 ml-1">USD</span>
+          </span>
         </div>
         <a
           href={bookUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors whitespace-nowrap"
+          className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap shadow-md hover:shadow-lg"
         >
-          Book This Flight
+          <span>Book This Flight</span>
+          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         </a>
       </div>
     </div>
@@ -665,44 +679,62 @@ export default function FlightSearchForm() {
     setDestination(tmp);
   };
 
-  const buildUrl = () => {
+  const buildAviasalesUrl = () => {
     if (!origin || !destination || !departDate) return null;
-
-    // Format: /search/{FROM}{DDMM}{TO}{DDMM_RETURN}{ADULTS}{CHILDREN}{INFANTS}{CLASS}
-    const depParts = departDate.split('-'); // YYYY-MM-DD
-    const depDDMM = depParts[2] + depParts[1]; // DDMM
-
+    const depParts = departDate.split('-');
+    const depDDMM = depParts[2] + depParts[1];
     let path = `${origin.code}${depDDMM}${destination.code}`;
-
     if (tripType === 'round' && returnDate) {
       const retParts = returnDate.split('-');
       const retDDMM = retParts[2] + retParts[1];
       path += retDDMM;
     }
-
     path += `${adults}`;
-    if (children > 0 || infants > 0) {
-      path += `${children}${infants}`;
-    }
-
-    const classMap = { Y: '', C: 'C' };
-    if (classMap[cabinClass]) path += classMap[cabinClass];
-
-    return `https://flights.catssafaris.com/search/${path}?marker=${MARKER}`;
+    if (children > 0 || infants > 0) path += `${children}${infants}`;
+    if (cabinClass === 'C') path += 'C';
+    return `https://www.aviasales.com/search/${path}?marker=${MARKER}`;
   };
 
-  const openAviasalesDeeplink = () => {
-    const url = buildUrl();
-    if (url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
-  };
-
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (!origin || !destination || !departDate) return;
+    setSearching(true);
     setSearched(true);
-    // Open flights.catssafaris.com with search parameters directly
-    openAviasalesDeeplink();
+    setResults([]);
+    setSearchError(false);
+    setFallbackResults(false);
+
+    try {
+      const params = new URLSearchParams({
+        origin: origin.code,
+        destination: destination.code,
+        departure_at: departDate,
+        currency: 'usd',
+        sorting: 'price',
+        limit: '15',
+      });
+      if (tripType === 'round' && returnDate) {
+        params.set('return_at', returnDate);
+      }
+
+      const res = await fetch(`${PRICES_URL}?${params.toString()}`);
+      if (res.ok) {
+        const json = await res.json();
+        if (json.data && json.data.length > 0) {
+          setResults(json.data);
+          if (json.fallback) setFallbackResults(true);
+        } else {
+          setResults([]);
+        }
+      } else {
+        setResults([]);
+        setSearchError(true);
+      }
+    } catch {
+      setResults([]);
+      setSearchError(true);
+    } finally {
+      setSearching(false);
+    }
   };
 
   const isValid = origin && destination && departDate && (tripType === 'oneway' || returnDate);
@@ -862,32 +894,81 @@ export default function FlightSearchForm() {
       {/* Results Section */}
       {searched && (
         <div className="mt-8">
-          <div className="flex flex-col items-center text-center mb-6">
-            <h2 className="text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Available Flights</h2>
-            {fallbackResults && (
-              <p className="text-sm text-[#a68b52] font-medium mt-1">Showing best prices for nearby dates on this route</p>
-            )}
-            <p className="text-sm text-stone-500 mt-1">
-              Prices shown are indicative. Final fare confirmed at booking.
-            </p>
-          </div>
-
-          <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-8 text-center">
-            <div className="mb-4">
-              <svg className="w-12 h-12 mx-auto text-[#a68b52] mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
-              <p className="text-[#5c4d42] font-bold text-lg mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>Your flight search opened in a new tab</p>
-              <p className="text-stone-500 text-sm mb-1">Compare airlines, view prices, and book directly on our flight booking platform.</p>
-              <p className="text-stone-400 text-xs mt-2">Didn&apos;t open? Click below to search again.</p>
+          {/* Loading spinner */}
+          {searching && (
+            <div className="flex flex-col items-center py-12">
+              <SpinnerIcon />
+              <p className="mt-4 text-[#5c4d42] font-semibold" style={{ fontFamily: 'var(--font-playfair)' }}>
+                Searching for the best fares...
+              </p>
+              <p className="text-sm text-stone-500 mt-1">
+                Comparing airlines and prices for {origin?.name} to {destination?.name}
+              </p>
             </div>
-            <button
-              type="button"
-              onClick={openAviasalesDeeplink}
-              className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
-            >
-              <SearchIcon />
-              Search Flights Again
-            </button>
-          </div>
+          )}
+
+          {/* Results found */}
+          {!searching && results.length > 0 && (
+            <>
+              <div className="flex flex-col items-center text-center mb-6">
+                <h2 className="text-2xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>
+                  {results.length} Flight{results.length !== 1 ? 's' : ''} Found
+                </h2>
+                {fallbackResults && (
+                  <p className="text-sm text-[#a68b52] font-medium mt-1">Showing best prices for nearby dates on this route</p>
+                )}
+                <p className="text-sm text-stone-500 mt-1">
+                  Prices shown are indicative. Click &quot;Book This Flight&quot; to view final fare and complete your booking.
+                </p>
+              </div>
+              <div className="space-y-3">
+                {results.map((r, i) => (
+                  <FlightResultCard key={`${r.airline}-${r.flight_number}-${i}`} result={r} />
+                ))}
+              </div>
+              {/* Full search CTA */}
+              <div className="mt-6 text-center">
+                <p className="text-sm text-stone-500 mb-3">Want to see more options or flexible dates?</p>
+                <a
+                  href={buildAviasalesUrl() || '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#5c4d42] hover:bg-[#4a3d34] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
+                >
+                  <SearchIcon />
+                  View All Available Flights
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+            </>
+          )}
+
+          {/* No results */}
+          {!searching && results.length === 0 && (
+            <div className="bg-[#f7f4ed] border border-stone-200 rounded-2xl p-8 text-center">
+              <div className="mb-4">
+                <PlaneIcon className="w-12 h-12 mx-auto text-[#a68b52] mb-3" />
+                <p className="text-[#5c4d42] font-bold text-lg mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>
+                  {searchError ? 'Unable to Fetch Prices' : 'No Cached Prices Available'}
+                </p>
+                <p className="text-stone-500 text-sm mb-1">
+                  {searchError
+                    ? 'We couldn\'t retrieve flight prices at this time. Please try searching directly below.'
+                    : 'No pre-loaded prices found for this exact route and date. Search directly for real-time results.'}
+                </p>
+              </div>
+              <a
+                href={buildAviasalesUrl() || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
+              >
+                <SearchIcon />
+                Search Live Flight Prices
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          )}
         </div>
       )}
     </div>

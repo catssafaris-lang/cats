@@ -415,23 +415,31 @@ export default function Header() {
 
       {/* ═══ MAIN NAVIGATION BAR — dark panel ═══ */}
       <header className="sticky top-0 z-50 shadow-md" style={{ background: C.panel }}>
-        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[64px]">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0 mr-4">
+        <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[80px]">
+          {/* Logo — large professional display */}
+          <Link href="/" className="flex-shrink-0 mr-6">
             <Image
               src="/cats-logo-full.jpg"
               alt="Collective African Tours & Safaris (C.A.T.S)"
-              width={160}
-              height={56}
-              className="h-[48px] w-auto object-contain hidden sm:block"
+              width={400}
+              height={88}
+              className="h-[70px] w-auto object-contain hidden lg:block"
+              priority
+            />
+            <Image
+              src="/cats-logo-full.jpg"
+              alt="Collective African Tours & Safaris (C.A.T.S)"
+              width={280}
+              height={64}
+              className="h-[56px] w-auto object-contain hidden sm:block lg:hidden"
               priority
             />
             <Image
               src="/cats-logo-full.jpg"
               alt="C.A.T.S Safaris"
-              width={120}
-              height={44}
-              className="h-[40px] w-auto object-contain sm:hidden"
+              width={200}
+              height={52}
+              className="h-[46px] w-auto object-contain sm:hidden"
               priority
             />
           </Link>
