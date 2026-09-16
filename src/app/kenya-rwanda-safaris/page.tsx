@@ -82,30 +82,85 @@ export default function KenyaRwandaSafarisPage() {
         }
         faqs={[
           {
-            question: 'How far is Rwanda from Kenya?',
+            question: 'What does a Rwanda gorilla trekking permit include and cost?',
             answer:
-              'Kigali is reached from Nairobi by a direct scheduled flight of roughly two and a half hours, making Rwanda one of the more time-efficient gorilla trekking add-ons to a Kenya safari.',
+              'A Volcanoes National Park gorilla permit covers one guided visit to a habituated family, normally allowing one hour with the gorillas alongside park rangers and trackers. Rwanda’s authority sets the price and may revise it, so CATS confirms the current cost, date and availability before your booking is final. We secure permits early because a limited number are released for each trekking day.',
           },
           {
-            question: 'What is included in a Rwanda gorilla trekking permit?',
+            question: 'How far ahead should I book gorilla trekking in Rwanda?',
             answer:
-              'A Volcanoes National Park gorilla permit includes one hour with a habituated gorilla family, accompanied by park rangers and trackers. Permits are limited and should be secured well in advance of travel.',
+              'Six to twelve months ahead is sensible for popular dates, school holidays, private arrangements and a specific gorilla trekking sector or lodge. Last-minute permits may occasionally be available, but they can involve less choice and a rushed flight or accommodation plan. With 15 years of East Africa experience, CATS books the permit first and then aligns your Kenya safari, Kigali transfer and Volcanoes National Park stay.',
           },
           {
-            question: 'Can I see golden monkeys as well as gorillas in Rwanda?',
+            question: 'How fit do I need to be for a Rwanda gorilla trek?',
             answer:
-              'Yes, Volcanoes National Park also offers golden monkey trekking, a shorter and generally easier activity that can be added alongside your gorilla trek.',
+              'Treks can range from a short walk to several hours over steep volcanic slopes, forest paths and uneven ground, depending on the gorilla family’s location. You need reasonable walking fitness and confidence on hills, but no technical climbing skills are required. We can request an appropriate sector, arrange a porter and plan rest time, while a medical professional should advise on individual fitness concerns.',
           },
           {
-            question: 'What is the best time of year to visit Rwanda for gorilla trekking?',
+            question: 'What happens during a gorilla trek in Volcanoes National Park?',
             answer:
-              'Rwanda\'s dry seasons, roughly June to September and December to February, offer the most comfortable trail conditions, though trekking is possible throughout the year.',
+              'The morning begins with a ranger briefing before trackers lead the group through bamboo and montane forest to locate the assigned family. Once found, guests observe quietly from the required distance for the allocated time, following ranger instructions about movement and noise. CATS prepares your transport, clothing, water, porter support and lodge timing so the day feels organised even when the forest route is unpredictable.',
+          },
+          {
+            question: 'When is the best time for gorilla trekking in Rwanda?',
+            answer:
+              'The drier periods around June to September and December to February often provide easier trail conditions, although Volcanoes National Park is open for trekking year-round. Rain is possible even in the dry season, while wetter months can bring lush scenery and sometimes more flexible availability. We weigh weather, permit dates, Masai Mara plans and your tolerance for muddy trails before recommending travel dates.',
+          },
+          {
+            question: 'What visas do I need for a Kenya-Rwanda safari?',
+            answer:
+              'Entry requirements differ by nationality, so you must meet the current rules for Kenya and Rwanda and obtain any required visa or travel authorisation. CATS helps map the documents to your itinerary and flight connections, but applications and declarations must be made accurately through official government channels. Confirm passport validity, blank pages and any vaccination certificate rules before departure.',
+          },
+          {
+            question: 'Are there age limits for gorilla trekking in Rwanda?',
+            answer:
+              'Rwanda generally requires gorilla trekkers to be at least 15 years old on the trekking date, subject to current authority policy. Younger family members can enjoy a Kenya safari, golden monkey trekking where permitted or cultural activities while an adult takes the gorilla trek. We check the current rule before taking payment because age eligibility is enforced at the park entrance.',
+          },
+          {
+            question: 'Is gorilla trekking in Rwanda safe?',
+            answer:
+              'Volcanoes National Park treks operate with trained rangers and trackers who manage the route, monitor the gorillas and enforce a safe viewing distance. Guests must follow instructions, avoid sudden movements and never touch or feed the animals, even if a gorilla approaches. We use trusted local partners, monitor travel guidance and keep your Kigali, lodge and park transfers coordinated.',
+          },
+          {
+            question: 'What should I wear and pack for a Rwanda gorilla trek?',
+            answer:
+              'Wear sturdy waterproof hiking boots, long trousers, a long-sleeved layer, gaiters or thick socks, gardening gloves and a waterproof jacket. A small daypack should hold water, snacks, sunscreen, insect repellent, camera protection and an extra layer because mountain weather changes quickly. Porters are available to carry bags and assist on steep ground, and we can advise on laundry and equipment at your lodge.',
+          },
+          {
+            question: 'Can I photograph gorillas in Rwanda?',
+            answer:
+              'Photography is permitted without flash, provided guests stay at the distance directed by rangers and keep the group quiet and calm. A lightweight camera with a fast lens or a telephoto lens is useful in dim forest light, but photography must never delay the group or disturb the animals. We can request a private arrangement where available and build in time for golden monkeys or Kigali photography as well.',
+          },
+          {
+            question: 'What health precautions are needed for Rwanda gorilla trekking?',
+            answer:
+              'Consult a travel-health professional about routine vaccinations, malaria prevention, yellow-fever regulations and any personal medical needs before your Kenya-Rwanda safari. Do not trek with a contagious respiratory illness because mountain gorillas are vulnerable to human infections, and tell our team promptly if you feel unwell. We can arrange practical support such as a porter and suitable room, while medical clearance remains your clinician’s responsibility.',
+          },
+          {
+            question: 'What altitude should I expect in Volcanoes National Park?',
+            answer:
+              'The park lies at roughly 2,400 to 4,500 metres, and the trailhead and trek can feel strenuous because of both elevation and steep terrain. Most guests acclimatise comfortably with a night in Kigali or near the park, steady pacing, hydration and rest, but altitude affects people differently. If you have heart, lung or previous altitude concerns, seek professional medical advice before committing to the trek.',
+          },
+          {
+            question: 'What wildlife and accommodation can I add to Rwanda?',
+            answer:
+              'A Kenya-Rwanda itinerary combines the Masai Mara, Amboseli or Lake Nakuru with mountain gorillas, golden monkeys, Kigali and the volcanic landscapes of Volcanoes National Park. We use carefully selected Kigali hotels and forest lodges, considering drive time, room layouts, meal requirements and the early trekking start. Rwanda’s compact geography can make transfers efficient, leaving room for a second activity or a slower cultural day.',
+          },
+          {
+            question: 'Is a Kenya-Rwanda safari good value and can CATS customise it?',
+            answer:
+              'The permit is a major cost, but combining it with a private Kenya safari lets one team coordinate flights, guides, transfers and accommodation and creates a rare Big Five-and-gorilla experience. We can adjust the number of Masai Mara nights, add golden monkey trekking or cultural visits, and choose accommodation from comfortable to high-end. Our private 4x4 guides and 15 years of planning experience help protect your time while keeping the overall budget visible.',
+          },
+          {
+            question: 'How do tipping, solo travel and insurance work?',
+            answer:
+              'Tipping is optional; guests may thank their private guide, ranger or trackers, porter and lodge staff separately, and CATS explains local expectations before departure. Solo travellers can request a private trek or join an approved group, with airport and park transfers arranged around their comfort. Comprehensive insurance covering permit-related cancellation, medical treatment, evacuation, delays and baggage is strongly recommended because park and lodge terms are strict.',
           },
         ]}
-        relatedDestinations={[
-          { name: 'Masai Mara', href: '/kenya-safaris/masai-mara', image: 'https://ik.imagekit.io/axd1riwnv/Wildebeest-migration-at-Mara-River.jpg' },
-          { name: 'Kenya-Uganda Safaris', href: '/kenya-uganda-safaris', image: 'https://ik.imagekit.io/axd1riwnv/amboseli-elephants-kilimanjaro.jpg' },
-          { name: 'Amboseli', href: '/kenya-safaris/amboseli', image: 'https://ik.imagekit.io/axd1riwnv/tsavo-east-elephants.jpg' },
+          relatedDestinations={[
+            { name: 'Masai Mara', href: '/kenya-safaris/masai-mara', image: 'https://ik.imagekit.io/axd1riwnv/Wildebeest-migration-at-Mara-River.jpg' },
+            { name: 'Kenya-Uganda Safaris', href: '/kenya-uganda-safaris', image: 'https://ik.imagekit.io/axd1riwnv/elephant-bull-front-of-kilimanjaro-amboseli.jpg' },
+            { name: 'Amboseli', href: '/kenya-safaris/amboseli', image: 'https://ik.imagekit.io/axd1riwnv/Elephants-at-Tsavo-East-National-Park-Kenya-scaled.webp' },
         ]}
       />
     </>
