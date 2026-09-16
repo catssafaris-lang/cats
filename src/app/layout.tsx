@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   title: { default: 'C.A.T.S Safaris | Kenya & Tanzania Safari Tours', template: '%s | C.A.T.S Safaris' },
   description: 'Collective African Tours & Safaris — 15 years of crafting unforgettable safari experiences across East Africa. Kenya, Tanzania, Uganda & Rwanda.',
   metadataBase: new URL('https://www.catssafaris.com'),
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
   openGraph: { type: 'website', locale: 'en_US', url: 'https://www.catssafaris.com', siteName: 'C.A.T.S Safaris' },
   twitter: { card: 'summary_large_image' },
 };

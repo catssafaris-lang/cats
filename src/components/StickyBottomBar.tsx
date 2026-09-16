@@ -38,8 +38,8 @@ export default function StickyBottomBar() {
     <>
       {/* Navigation overlay */}
       {navOpen && (
-        <div className="fixed inset-0 z-[60] bg-black/50 xl:hidden" onClick={() => setNavOpen(false)}>
-          <div className="absolute bottom-16 left-0 right-0 max-h-[70vh] overflow-y-auto rounded-t-2xl bg-white p-4 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        <div className="fixed inset-0 z-[60] bg-black/50" onClick={() => setNavOpen(false)}>
+          <div className="absolute bottom-16 left-0 right-0 max-h-[70vh] overflow-y-auto rounded-t-2xl bg-white p-4 shadow-2xl xl:left-auto xl:right-4 xl:bottom-20 xl:max-w-md xl:rounded-2xl" onClick={(e) => e.stopPropagation()}>
             <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-stone-500">Quick Navigation</h3>
             <div className="grid grid-cols-2 gap-2">
               {quickLinks.map((link) => (
@@ -52,26 +52,68 @@ export default function StickyBottomBar() {
         </div>
       )}
 
-      {/* Bottom bar */}
+      {/* ── MOBILE Bottom bar (full width, fixed at bottom) ── */}
       <div className="fixed bottom-0 inset-x-0 z-50 xl:hidden">
         <div className="flex items-center justify-around bg-[var(--cats-green)] px-2 py-2.5 shadow-[0_-4px_12px_rgba(0,0,0,0.15)]">
           <a href="https://wa.me/254723951388?text=Hello%20CATS%20Safaris%2C%20I%27d%20like%20to%20enquire%20about%20a%20safari" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-0.5 text-white">
             <WhatsAppIcon />
             <span className="text-[10px] font-medium">WhatsApp</span>
           </a>
-          <a href="tel:+254723951388" className="flex flex-col items-center gap-0.5 text-white">
+          <Link href="/contact" className="flex flex-col items-center gap-0.5 text-white">
             <PhoneIcon />
             <span className="text-[10px] font-medium">Call Us</span>
-          </a>
+          </Link>
           <button type="button" onClick={() => setNavOpen(!navOpen)} className="flex flex-col items-center gap-0.5 text-[var(--golden-savannah)]">
             <CompassIcon />
             <span className="text-[10px] font-medium">Explore</span>
           </button>
-          <a href="mailto:info@catssafaris.com?subject=Safari%20Enquiry" className="flex flex-col items-center gap-0.5 text-white">
+          <Link href="/contact" className="flex flex-col items-center gap-0.5 text-white">
             <MailIcon />
             <span className="text-[10px] font-medium">Email</span>
-          </a>
+          </Link>
         </div>
+      </div>
+
+      {/* ── DESKTOP Bottom bar (right-aligned, floating) ── */}
+      <div className="hidden xl:flex fixed bottom-6 right-6 z-50 items-center gap-1 bg-[var(--cats-green)] rounded-full px-3 py-2 shadow-lg">
+        <a
+          href="https://wa.me/254723951388?text=Hello%20CATS%20Safaris%2C%20I%27d%20like%20to%20enquire%20about%20a%20safari"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 text-white hover:text-[var(--golden-savannah)] transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
+          title="Chat on WhatsApp"
+        >
+          <WhatsAppIcon />
+          <span className="text-xs font-medium">WhatsApp</span>
+        </a>
+        <span className="w-px h-5 bg-white/20" />
+        <Link
+          href="/contact"
+          className="flex items-center gap-1.5 text-white hover:text-[var(--golden-savannah)] transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
+          title="Contact us by phone"
+        >
+          <PhoneIcon />
+          <span className="text-xs font-medium">Call Us</span>
+        </Link>
+        <span className="w-px h-5 bg-white/20" />
+        <button
+          type="button"
+          onClick={() => setNavOpen(!navOpen)}
+          className="flex items-center gap-1.5 text-[var(--golden-savannah)] hover:text-white transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
+          title="Quick navigation"
+        >
+          <CompassIcon />
+          <span className="text-xs font-medium">Explore</span>
+        </button>
+        <span className="w-px h-5 bg-white/20" />
+        <Link
+          href="/contact"
+          className="flex items-center gap-1.5 text-white hover:text-[var(--golden-savannah)] transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
+          title="Email us"
+        >
+          <MailIcon />
+          <span className="text-xs font-medium">Email</span>
+        </Link>
       </div>
     </>
   );
