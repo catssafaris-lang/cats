@@ -300,36 +300,36 @@ export const safaris: Safari[] = [
             'Big Five game viewing',
             'Great Migration (seasonal)'
         ],
-        description: `Two legendary parks, five unforgettable days. This safari connects the predator-rich plains of the Masai Mara with the elephant kingdom of Amboseli, passing through the scenic Rift Valley and Lake Naivasha along the way. Expect Big Five encounters on the Mara's endless grasslands — lions, leopards, and the Great Migration's thundering herds in season. Then shift south to Amboseli, where enormous elephant families roam beneath the towering peak of Mount Kilimanjaro. A boat ride on Lake Naivasha adds hippos and fish eagles to the mix. Kenya's greatest wildlife highlights in a single journey.`,
+        description: `Two legendary parks, five unforgettable days. This safari opens in the elephant kingdom of Amboseli, where enormous elephant herds roam beneath the towering, snow-capped peak of Mount Kilimanjaro. From there, loop north through the Great Rift Valley to Lake Naivasha — where a boat safari adds hippos and fish eagles to the mix — before continuing west to the predator-rich plains of the Masai Mara. Expect Big Five encounters on the Mara's endless grasslands — lions, leopards, and the Great Migration's thundering herds in season — before the drive back to Nairobi completes the loop. Kenya's greatest wildlife highlights in a single journey.`,
         itinerary: [
             {
                 day: 1,
-                title: 'Nairobi to Masai Mara',
-                description: '## ~270km | Approx. 5 hrs\n\n5:30 AM. Your driver-guide picks you up from your Nairobi hotel and you head west toward the Masai Mara in your private 4x4 safari vehicle. The road climbs through the green Kikuyu highlands before the Great Rift Valley escarpment appears — a staggering view across an ancient geological wonder. Pause for photos, then descend through the valley floor. A breakfast stop in Narok fuels you for the final stretch, where tarmac gives way to red-earth roads winding through Maasai grazing lands. Herdsmen in bright shukas walk alongside their cattle. By late morning you enter the Mara through Sekenani Gate, and the golden savannah opens up endlessly before you. Check into your safari lodge for lunch, then set off on an afternoon game drive along the Talek River. Lion prides lounge in the shade of croton bushes, giraffes browse the scattered acacia, and vast herds of zebra and wildebeest dot the plains. The warm afternoon light turns the grassland golden as you return to camp.',
+                title: 'Nairobi to Amboseli National Park',
+                description: '## ~230km | Approx. 4 hrs\n\n6:00 AM. Your driver-guide collects you from your Nairobi hotel and heads south on the Nairobi–Namanga highway in your private 4x4 safari vehicle. The city gives way to the wide Athi Plains, where Maasai herdsmen in bright shukas walk their cattle across the golden grassland. Stop for breakfast en route at a roadside café, then continue south as the plains grow drier and the acacia trees more scattered. By mid-morning, if the skies are clear, Mount Kilimanjaro begins to rise on the southern horizon — Africa\'s highest peak, its snow-capped summit floating above a haze of heat. Arrive at Amboseli National Park by late morning, check into your safari lodge, and enjoy lunch with the mountain framed in the dining room windows. In the afternoon, set out on your first game drive through Amboseli\'s distinctive terrain — the dried lake bed shimmers in the heat while swamps fed by Kilimanjaro\'s glacial melt teem with life. Enormous elephant herds, some of Africa\'s largest tuskers, parade across the dusty plains with Kilimanjaro as their backdrop. Watch for zebra, giraffe, and cape buffalo as the mountain turns rose-gold in the fading afternoon light.',
                 meals: ['Lunch', 'Dinner']
             },
             {
                 day: 2,
-                title: 'Full Day in Masai Mara',
-                description: `6:00 AM. A full day in the Mara — Africa's greatest wildlife theatre. The dawn drive heads toward the open plains where cheetahs perch on termite mounds scanning for breakfast. Your guide reads the landscape expertly, tracking fresh prints in the dewy grass. Mid-morning, push deeper toward the Mara River, where hippos crowd the murky pools and massive Nile crocodiles lie motionless on sandy banks. During the Great Migration (July–October), this is ground zero for the dramatic wildebeest crossings — thousands surging through the current while crocodiles lurk below. Enjoy a bush picnic lunch with nothing but savannah in every direction. The afternoon drive explores different sectors — perhaps the Musiara Marsh where elephants drink in the golden light, or the Mara Triangle where buffalo herds a thousand strong darken the hillsides. An optional visit to a Maasai village introduces you to their ancient pastoralist culture, complete with traditional dancing and beadwork. Return to your lodge as the sun sets over the Oloololo Escarpment.`,
+                title: 'Full Day in Amboseli National Park',
+                description: `6:00 AM. Rise early for Amboseli's finest moment — the clearest Kilimanjaro views come at first light, before clouds gather around the summit by mid-morning. Head out for a dawn game drive across the dried lake bed, where dust devils spiral and elephant family groups move in slow procession, matriarchs leading calves barely knee-high. Push on toward Observation Hill and climb to the top for a sweeping panorama of the entire Amboseli basin — swamps glinting green against the pale plains, elephant herds tracing dark lines below, and Kilimanjaro standing in full majesty to the south. Return to your lodge for a leisurely lunch during the midday heat. The afternoon drive explores the Enkongo Narok and Longinye swamps, where hippos wallow in the reeds and crowned cranes stalk the shallows. Watch for lion prides resting beneath yellow-barked acacia trees, spotted hyenas loping across open ground, and the shy bat-eared fox peering from its burrow. An optional visit to a Maasai village introduces you to their pastoralist traditions, complete with dancing and beadwork. As sunset approaches, elephants silhouetted against Kilimanjaro's purple evening profile create one of Africa's most unforgettable scenes.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 3,
-                title: 'Masai Mara to Lake Naivasha',
-                description: '## ~250km | Approx. 5 hrs\n\n7:00 AM. After breakfast, check out of your Mara lodge and begin the scenic drive east toward Lake Naivasha. The route climbs out of Maasai country and back through the Rift Valley — the landscape shifting from golden savannah to green farmland and then to the shimmering expanse of the freshwater lake. Arrive at Lake Naivasha by early afternoon and settle into your lakeside hotel for lunch. In the afternoon, board a boat for a safari on the lake — gliding through floating mats of water hyacinth as fish eagles call from the papyrus beds and hippos surface alongside the boat, their ears twitching. The birdlife here is extraordinary: pelicans, cormorants, herons, and lily-trotters. If time allows, take the short boat ride to Crescent Island for a walking safari among free-roaming giraffes, zebras, and wildebeest — one of the few places in Kenya you can walk among wildlife without a fence. Return to your hotel as the late afternoon sun gilds the lake.',
+                title: 'Amboseli to Lake Naivasha',
+                description: '## ~320km | Approx. 5.5 hrs\n\n7:00 AM. After a final glimpse of Kilimanjaro at breakfast, check out of your lodge and begin the drive north back towards Nairobi on the Namanga highway, the dry Amboseli plains giving way once more to the greener Athi grasslands. Skirt the capital on the southern bypass and continue northwest into the Great Rift Valley, the escarpment dropping away below as farmland and forest replace the savannah. By early afternoon you arrive at Lake Naivasha, a freshwater lake fringed by papyrus beds and yellow-barked fever trees. Settle into your lakeside hotel for a late lunch, then board a boat for a safari on the water — gliding through floating mats of water hyacinth as fish eagles call from the reeds and hippos surface alongside the boat, their ears twitching. The birdlife is extraordinary: pelicans, cormorants, herons, and lily-trotters crowd the shallows. If time allows, take the short crossing to Crescent Island for a walking safari among free-roaming giraffes, zebras, and wildebeest — one of the few places in Kenya you can walk among wildlife without a fence. Return to your hotel as the late afternoon sun gilds the lake.',
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 4,
-                title: 'Lake Naivasha to Amboseli',
-                description: `## ~300km | Approx. 5 hrs\n\n7:00 AM. After an early breakfast, depart Lake Naivasha and drive south toward Amboseli National Park. The route takes you back through Nairobi and onto the Nairobi-Namanga highway — the landscape gradually drying as you leave the highlands behind. Scattered acacia trees and red soil replace the lush lakeside scenery. By late morning, if the skies are clear, Mount Kilimanjaro begins to emerge on the horizon — Africa's highest peak, its snow-capped summit floating impossibly above the plains. Arrive at Amboseli around lunchtime and check into your safari lodge. After lunch, head out for an afternoon game drive through Amboseli's distinctive terrain — the dried lake bed shimmers in the heat while the swamps fed by Kilimanjaro's glacial melt teem with life. Enormous elephant herds — some of Africa's largest tuskers — parade across the dusty plains with Kilimanjaro as their backdrop. Spot zebra, giraffe, cape buffalo, and wading birds along the marsh edges as the mountain turns rose-gold in the fading light.`,
+                title: 'Lake Naivasha to Masai Mara',
+                description: `## ~270km | Approx. 5 hrs\n\n7:00 AM. After breakfast, depart Lake Naivasha and head west toward the Masai Mara. The road climbs out of the Rift Valley floor and continues through Maasai country, tarmac giving way to red-earth roads as you near Narok town — the last major settlement before the reserve. Beyond Narok, the wheat fields give way to open rangeland where herdsmen in bright shukas walk alongside their cattle. By late morning you enter the Mara through Sekenani Gate, and the golden savannah opens up endlessly before you. Check into your safari lodge for lunch, then set off on an afternoon game drive along the Talek River. Lion prides lounge in the shade of croton bushes, giraffes browse the scattered acacia, and vast herds of zebra and wildebeest dot the plains. The warm afternoon light turns the grassland golden as you return to camp.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 5,
-                title: 'Amboseli to Nairobi',
-                description: '## ~240km | Approx. 4 hrs\n\n6:00 AM. Your final morning starts with an early game drive — the best time for Kilimanjaro views before clouds build around the summit. Your guide navigates toward Observation Hill, where you climb to the top for a sweeping panorama of the entire Amboseli basin: elephant herds moving through the morning mist below, the swamps glinting green against the dusty plains, and Kilimanjaro standing in full majesty to the south. Descend and drive along the Enkongo Narok swamp edge, where hippos wallow and crowned cranes pick through the reeds. Large bull elephants emerge from the papyrus to drink, water dripping from their massive tusks. By 9:00 AM, return to your lodge for breakfast and check out. The drive back to Nairobi takes approximately four hours, passing through the Athi Plains and arriving in the city by early to mid-afternoon. Drop-off at your hotel or Jomo Kenyatta International Airport.',
+                title: 'Masai Mara to Nairobi',
+                description: '## ~270km | Approx. 5 hrs\n\n6:00 AM. Rise for one final game drive while the Mara is at its most alive — the dawn light draws out predators before the heat of the day. Your guide tracks fresh prints toward the open plains, where cheetahs perch on termite mounds scanning for breakfast and the Mara River\'s hippos grunt from the mist-covered pools. By 9:00 AM, return to your lodge for breakfast and check out. The drive back to Nairobi retraces the route east through Narok and up the Rift Valley escarpment, with a final photo stop at the viewpoint before descending into the Kikuyu highlands. Arrive back in Nairobi by mid-afternoon for drop-off at your hotel or Jomo Kenyatta International Airport.',
                 meals: ['Breakfast', 'Lunch']
             }
         ],
@@ -367,7 +367,7 @@ export const safaris: Safari[] = [
         ],
         featured: true,
         type: ['wildlife', 'family', 'nairobi-departure', 'long-safari', 'masai-mara', 'amboseli'],
-        parks: ['Masai Mara National Reserve', 'Lake Naivasha', 'Amboseli National Park'],
+        parks: ['Amboseli National Park', 'Lake Naivasha', 'Masai Mara National Reserve'],
         wildlifeHighlights: [
             'Lion prides with cubs in the open savanna',
             'Leopards draped across sausage tree branches',
@@ -2022,58 +2022,94 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
         id: 'nbo-diani-10d',
         slug: '10-day-kenya-highlights-diani-beach',
     hasSGR: true,
-        title: "7-Day Kenya Safari & Diani Beach | Bush & Beach Holiday",
+        title: "8-Day Kenya Safari & Diani Beach | Bush & Beach Holiday",
         subtitle: 'The Grand Spirit of Kenya',
         destination: 'kenya',
-        duration: 7,
+        duration: 8,
         durationUnit: 'days',
         highlights: [
             'Nairobi, Nakuru, Naivasha, & Masai Mara',
-            'Amboseli & Tsavo West exploration',
+            'Amboseli elephant encounters beneath Kilimanjaro',
             '4-day beach relaxation in Diani'
         ],
-        description: `The complete Kenya experience in ten unforgettable days — from flamingo-fringed lake shores to the Great Migration's lion-filled plains, Kilimanjaro's elephant kingdom to the turquoise Indian Ocean. Expect rhinos and flamingos at Lake Nakuru, Big Five drama in the Masai Mara, boat safaris through hippo territory on Lake Naivasha, walking among giraffes on Crescent Island, and Amboseli's iconic tuskers silhouetted against Africa's highest peak. Then swap binoculars for beach towels — four blissful days on Diani Beach with white coral sand, warm reef snorkelling, and sunset dhow sails. Adventure first, paradise after.`,
+        description: `The complete Kenya experience — from flamingo-fringed lake shores to the Great Migration's lion-filled plains, Kilimanjaro's elephant kingdom to the turquoise Indian Ocean. Expect rhinos and flamingos at Lake Nakuru, boat safaris through hippo territory on Lake Naivasha, walking among giraffes on Crescent Island, Big Five drama in the Masai Mara, and Amboseli's iconic tuskers silhouetted against Africa's highest peak. Then swap binoculars for beach towels for blissful days on Diani Beach with white coral sand, warm reef snorkelling, and sunset dhow sails. Adventure first, paradise after.`,
         itinerary: [
             {
                 day: 1,
                 title: 'Nairobi Arrival',
-                description: `Welcome to Kenya. Your C.A.T.S driver meets you at Jomo Kenyatta International Airport — look for your name board in the arrivals hall — and transfers you to your Nairobi hotel. Depending on your arrival time, the afternoon is yours to explore: visit the Giraffe Centre in the leafy suburb of Karen where endangered Rothschild\'s giraffes eat pellets from your palm, or the David Sheldrick Elephant Orphanage where rescued baby elephants are rehabilitated for release back into the wild. If you arrive in the evening, settle in and rest ahead of an early start tomorrow. Your guide briefs you over dinner on the incredible ten-day journey ahead — six of Kenya\'s most celebrated parks and reserves, followed by four days of Indian Ocean bliss on Diani Beach.`,
+                description: `Welcome to Kenya. Your C.A.T.S driver meets you at Jomo Kenyatta International Airport — look for your name board in the arrivals hall — and transfers you to your Nairobi hotel. Depending on your arrival time, the afternoon is yours to explore: visit the Giraffe Centre in the leafy suburb of Karen where endangered Rothschild\'s giraffes eat pellets from your palm, or the David Sheldrick Elephant Orphanage where rescued baby elephants are rehabilitated for release back into the wild. If you arrive in the evening, settle in and rest ahead of an early start tomorrow. Your guide briefs you over dinner on the exciting journey ahead — the legendary Masai Mara first, then a loop through the Great Rift Valley\'s lakes, south to Amboseli beneath Kilimanjaro, and finally your transfer to the beach at Diani.`,
                 meals: ['Dinner']
             },
             {
                 day: 2,
-                title: 'Nairobi to Lake Nakuru',
-                description: `## ~160km | Approx. 3 hrs\n\n7:00 AM — Depart Nairobi heading northwest through the fertile central highlands. The road climbs through emerald tea plantations and patchwork farmland before the earth drops away at the Great Rift Valley escarpment — pause at the viewpoint for sweeping vistas of the valley floor shimmering far below, one of Africa\'s most dramatic geological features. Descend into the valley and arrive at Lake Nakuru National Park by mid-morning. This compact gem is a rhino sanctuary home to both black and white rhinos, and its alkaline lake draws hundreds of flamingos that paint the shoreline in shimmering bands of pink. Begin an extended game drive through the yellow-barked fever tree forest — watch for Rothschild\'s giraffes browsing the canopy, waterbuck grazing in the clearings, and leopards draped across branches in the dappled shade. Climb to Baboon Cliff for a sweeping panorama of the lake, the flamingo flocks, and the surrounding escarpment stretching to the horizon. The park is also known for its tree-climbing lions, occasionally spotted lounging in the branches of euphorbia trees. Check into your safari lodge as afternoon light turns the lake to liquid gold.`,
+                title: 'Nairobi to Masai Mara',
+                description: `## ~270km | Approx. 5 hrs
+
+6:30 AM — Your driver-guide collects you from your Nairobi hotel and heads west out of the city towards the Great Rift Valley. The road descends the escarpment with sweeping views over the valley floor — a patchwork of farmland, extinct volcanoes, and shimmering soda lakes — before continuing through Narok town, the last major settlement before the reserve. Beyond Narok, the wheat fields of the Loita Plains give way to Maasai rangeland, herdsmen wrapped in crimson shukas walking their cattle alongside the road as tarmac gives way to red-earth track.
+
+The landscape transforms as you enter the Mara ecosystem — golden grasslands rolling to every horizon, dotted with flat-topped acacia trees and termite mounds used as lookout posts by resident cheetahs. Collect your packed lunch and enter the reserve by early afternoon for your first game drive. The Masai Mara delivers immediately — herds of wildebeest and zebra blanket the plains in numbers that seem impossible, lions doze in the shade of every other tree, and Thomson\'s gazelles spring across the savannah in elegant arcs. Your guide reads the bush with expert precision, tracking fresh predator signs through the golden grass. As the sun sinks low, the savannah glows amber and the haunting calls of nightjars fill the cooling air. Check into your safari lodge with the sounds of the African night gathering around you.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 3,
-                title: 'Lake Nakuru to Masai Mara',
-                description: `## ~220km | Approx. 5 hrs\n\n7:30 AM — After breakfast, depart Lake Nakuru heading west towards the Masai Mara. The drive takes roughly five hours through the Rift Valley floor, past the wheat fields of Narok, and into Maasai country where herdsmen wrapped in crimson shukas walk alongside their cattle across the open rangeland. The landscape transforms as you enter the Mara ecosystem — golden grasslands stretching to every horizon, dotted with flat-topped acacia trees and termite mounds used as lookout posts by cheetahs. Arrive by early afternoon and head straight into the reserve for your first game drive. The Masai Mara delivers immediately — herds of wildebeest and zebra blanket the plains in numbers that seem impossible, lions doze in the shade of every other tree, and Thomson\'s gazelles spring across the savannah in elegant arcs. Your guide reads the bush with expert precision, tracking fresh predator signs through the golden grass. As the sun sinks low, the savannah glows amber and the haunting calls of nightjars fill the cooling air. Check into your safari lodge with the sounds of the African night gathering around you.`,
-                meals: ['Breakfast', 'Lunch', 'Dinner']
-            },
-            {
-                day: 4,
                 title: 'Full Day Masai Mara',
                 description: `A full day in Africa\'s greatest wildlife arena — every game drive reveals new drama. 6:00 AM — Rise in the cool pre-dawn darkness and head out when predators are most active, the air still fresh and the light soft gold across the plains. Drive to the Mara River where massive Nile crocodiles bask on sandy banks and pods of hippos crowd the muddy pools — during migration season (July–October), this is where the explosive wildebeest river crossings unfold in heart-stopping chaos. Explore the Mara Triangle with its rolling hills and exceptional visibility — spot elephants moving through riverine forest, topi standing sentinel on ridgelines, and hyena dens where playful cubs tumble and wrestle outside their burrows. Return for lunch at your lodge. An optional hot air balloon safari at dawn lifts you silently above the herds for a once-in-a-lifetime bird\'s-eye perspective of the savannah, followed by a champagne bush breakfast. The afternoon drive explores a different sector — perhaps tracking a leopard through the croton thickets along the Talek River, or watching a cheetah hunt unfold across the open plains in golden hour light that turns the grass to fire.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
+                day: 4,
+                title: 'Masai Mara to Lake Nakuru',
+                description: `## ~290km | Approx. 5-6 hrs
+
+6:30 AM — A final dawn game drive in the Mara while the light is soft and predators are most active — hyena clans trot back towards their dens, and with luck a cheetah crosses the track ahead, scanning the plains for breakfast. Return to your lodge for breakfast and check out.
+
+Depart east towards Lake Nakuru. The road climbs out of the Mara ecosystem through Narok and the wheat fields of the Loita Plains before continuing over the Mau Escarpment, rolling farmland and forest giving way to the floor of the Great Rift Valley, extinct volcanic cones and soda lakes visible in the haze.
+
+Arrive at Lake Nakuru National Park by mid-afternoon and head straight into an extended game drive through the park\'s fever tree forest, tracking both black and white rhinos through the pale-barked woodland. The alkaline lake draws hundreds of flamingos that paint the shoreline pink, while waterbuck graze the clearings and, with good fortune, a tree-climbing lion drapes across a euphorbia branch overhead. Climb to Baboon Cliff as the light softens for a sweeping panorama of the lake and the surrounding escarpment before checking into your lodge.`,
+                meals: ['Breakfast', 'Lunch', 'Dinner']
+            },
+            {
                 day: 5,
-                title: 'Masai Mara to Lake Naivasha',
-                description: `## ~250km | Approx. 5 hrs\n\n7:00 AM — After a final early morning game drive in the Mara, bid farewell to the big cats and head east towards Lake Naivasha — approximately five hours\' drive back through the Rift Valley. Arrive by early afternoon at this beautiful freshwater lake fringed by papyrus beds and yellow-barked fever trees, with the Mau Escarpment rising behind. Check into your lakeside accommodation and head straight out for a boat safari on the lake. Glide past pods of hippos that surface and snort just metres from your vessel, their eyes and ears breaking the glassy water, while African fish eagles swoop overhead with their piercing, iconic calls. Pelicans, cormorants, malachite kingfishers, and grey herons line the shore — a birdwatcher\'s paradise. In the late afternoon, step ashore on Crescent Island for a walking safari among giraffes, zebras, wildebeest, and waterbuck — one of the few places in Kenya where you walk freely among wild animals without a vehicle, the volcanic island rising from the lake like a scene from another world. Return to your lodge as the sun sets behind the escarpment, painting the lake in shades of copper and rose.`,
+                title: 'Lake Nakuru to Lake Naivasha',
+                description: `## ~140km | Approx. 2.5 hrs
+
+6:30 AM — One last game drive around Lake Nakuru while the light is soft and the rhinos are most active, their armoured silhouettes moving through the mist rising off the lake. Your guide positions the Land Cruiser for close-up photographs as a white rhino grazes barely thirty metres away. After breakfast, depart south through the Rift Valley floor via Gilgil — a short, scenic drive of around two and a half hours past patchwork farms and extinct volcanic cones, the valley walls rising on either side. Arrive at Lake Naivasha by early afternoon and settle into your lakeside hotel for lunch. In the afternoon, board a boat for a safari on the water — gliding past pods of hippos that surface and snort just metres from your vessel, their eyes and ears breaking the glassy surface, while African fish eagles swoop overhead with their piercing, iconic calls. Pelicans, cormorants, malachite kingfishers, and grey herons line the shore — a birdwatcher\'s paradise. Step ashore on Crescent Island for a walking safari among giraffes, zebras, wildebeest, and waterbuck — one of the few places in Kenya where you walk freely among wild animals without a vehicle. Return to your lodge as the sun sets behind the escarpment, painting the lake in shades of copper and rose.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 6,
                 title: 'Lake Naivasha to Amboseli',
-                description: `## ~300km | Approx. 5.5 hrs\n\n7:00 AM — Depart Lake Naivasha after breakfast for the scenic drive south to Amboseli National Park — approximately five and a half hours via the Nairobi bypass and the Namanga Road towards the Tanzanian border. The route takes you through the highlands, skirting the capital, before heading south across the Athi Plains where the earth turns dry and rust-coloured. As you approach Amboseli, Mount Kilimanjaro begins to dominate the entire southern sky — Africa\'s highest peak at 5,895 metres, its glaciers gleaming in the afternoon light like a crown of white fire. Arrive by late afternoon and settle into your safari lodge with its spectacular Kilimanjaro panorama. A sunset game drive introduces you to Amboseli\'s famous elephant herds — some of the largest-tusked in Africa. Family groups of twenty or more move through the swamps fed by Kilimanjaro\'s underground meltwater, calves tucked between their mothers\' legs, their enormous silhouettes backlit against the mountain\'s purple evening profile. Watch for lions, hyenas, and jackals materialising from the dusk as the first stars appear above the plains.`,
+                description: `## ~350km | Approx. 5.5 hrs
+
+7:00 AM — After breakfast, depart Lake Naivasha and head south. The road climbs out of the Rift Valley floor, skirts Nairobi on the bypass, and joins the Namanga Road heading towards the Tanzanian border. The wide Athi Plains give way to increasingly dry, scattered acacia country as Maasai herdsmen in bright shukas walk their cattle across the grassland.
+
+By early afternoon, if the skies are clear, Mount Kilimanjaro rises on the southern horizon — Africa\'s highest peak, its glaciers gleaming above the haze. Arrive at Amboseli National Park in the afternoon, check into your safari lodge with its spectacular Kilimanjaro panorama, and head straight out for a late-afternoon game drive. Amboseli\'s famous elephant herds — some of the largest-tusked in Africa — move through the swamps fed by Kilimanjaro\'s underground meltwater, calves tucked between their mothers\' legs, their silhouettes backlit against the mountain\'s purple evening profile. Watch for lions, hyenas, and jackals materialising from the dusk as the first stars appear above the plains.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 7,
+                title: 'Full Day Amboseli',
+                description: `Wake to Amboseli\'s postcard moment — Mount Kilimanjaro\'s glaciated summit floating clear and rose-gold above the plains before the midday haze draws its customary cloud veil across the peak. 6:00 AM — Head out early while the light is soft and the mountain at its clearest. Drive into the swamps fed by Kilimanjaro\'s underground springs, where elephant herds wade belly-deep through the reeds, trunks raised to strip papyrus shoots — some of Africa\'s last great tuskers roam here, matriarchs whose ivory nearly brushes the ground.
+
+Climb Observation Hill for a 360-degree panorama across the entire basin — the dried lake bed shimmering with heat mirage to the south, swamps glowing emerald to the north, Kilimanjaro presiding over it all. Return to your lodge for lunch and a rest through the midday heat.
+
+The afternoon game drive explores the swamp margins — hippos wallow in the shallows, grey crowned cranes stalk the reeds on stilted legs, and lion prides doze beneath yellow-barked acacias near Ol Tukai. As the sun drops behind the mountain, Kilimanjaro\'s silhouette turns deep violet against a sky ablaze with amber and crimson — elephants filing home across the dry lake bed in single file, the single most photographed scene in Kenya.`,
+                meals: ['Breakfast', 'Lunch', 'Dinner']
+            },
+            {
+                day: 8,
                 title: 'Amboseli to Diani Beach',
-                description: `## ~350km | Approx. 6 hrs\n\n5:30 AM — Rise before dawn for a final sunrise game drive in Amboseli, catching Kilimanjaro at its clearest before equatorial clouds wrap around the summit by mid-morning. Elephants move across the open plains in the golden early light, their breath visible in the cool air. After breakfast, depart for the Kenyan coast.\n\nYour Coastal Transfer — Two Great Options:\n\nOption A: First Class SGR Madaraka Express — Drive to Emali Station (~1.5 hours from Amboseli) and board Kenya\'s modern high-speed train. Settle into air-conditioned first-class comfort with large picture windows as the Madaraka Express glides south through the vast Tsavo wilderness. Spot elephants, giraffes, and perhaps even big cats from your reclining seat as the landscape shifts from dry savannah to lush coastal bush. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5-hour drive south to your Diani Beach hotel.\n\nOption B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via the Mombasa Highway, arriving at your Diani Beach resort by approximately 3:00 PM.\n\nEither way, the transition is dramatic — dusty red savannah gives way to tropical paradise. White coral sand, turquoise Indian Ocean, swaying coconut palms, and warm salt air welcome you to Kenya\'s premier beach destination. Kick off your safari boots, walk barefoot along the sand, and let the rhythm of the waves replace the calls of the bush.`,
+                description: `## ~350km | Approx. 6 hrs
+
+5:30 AM — Rise before dawn for a final sunrise game drive in Amboseli, catching Kilimanjaro at its clearest before equatorial clouds wrap around the summit by mid-morning. Elephants move across the open plains in the golden early light, their breath visible in the cool air. After breakfast, depart for the Kenyan coast.
+
+Your Coastal Transfer — Two Great Options:
+
+Option A: First Class SGR Madaraka Express — Drive to Emali Station (~1.5 hours from Amboseli) and board Kenya\'s modern high-speed train. Settle into air-conditioned first-class comfort with large picture windows as the Madaraka Express glides south through the vast Tsavo wilderness. Spot elephants, giraffes, and perhaps even big cats from your reclining seat as the landscape shifts from dry savannah to lush coastal bush. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5-hour drive south to your Diani Beach hotel.
+
+Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via the Mombasa Highway, arriving at your Diani Beach resort by approximately 3:00 PM.
+
+Either way, the transition is dramatic — dusty red savannah gives way to tropical paradise. White coral sand, turquoise Indian Ocean, swaying coconut palms, and warm salt air welcome you to Kenya\'s premier beach destination. Kick off your safari boots, walk barefoot along the sand, and let the rhythm of the waves replace the calls of the bush.`,
                 meals: ['Breakfast', 'Lunch']
             },
         ],
@@ -2113,7 +2149,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             'https://ik.imagekit.io/axd1riwnv/blacksmith-lapwing-vanellus-armatus-lake-naivasha-kenya_50538598166_o.jpg',
             'https://images.pexels.com/photos/1476356/pexels-photo-1476356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         ],
-        parks: ['Masai Mara National Reserve', 'Amboseli National Park', 'Lake Nakuru National Park', 'Lake Naivasha'],
+        parks: ['Masai Mara National Reserve', 'Lake Nakuru National Park', 'Lake Naivasha', 'Amboseli National Park'],
         wildlifeHighlights: [
             'Lion prides with cubs in the open savanna',
             'Leopards draped across sausage tree branches',
@@ -9078,40 +9114,40 @@ Return for lunch at your lodge during the midday heat. The afternoon drive takes
             },
             {
                 day: 3,
-                title: 'Masai Mara to Amboseli National Park',
-                description: `## ~380km | Approx. 6.5 hrs
+                title: 'Masai Mara to Nairobi',
+                description: `## ~270km | Approx. 5 hrs
 
-6:00 AM — A final dawn game drive in the Mara — the cool morning air carries the sounds of the bush waking up. You may catch a lion pride returning from a night hunt or spot a cheetah already scanning for breakfast from a termite mound.
+6:00 AM — A final dawn game drive in the Mara — the cool morning air carries the sounds of the bush waking up. You may catch a lion pride returning from a night hunt or spot a cheetah already scanning for breakfast from a termite mound. Your guide takes a last loop along the Talek River before heading back to the lodge.
 
-After breakfast, bid farewell to the Mara and begin the scenic drive south towards Amboseli. The route takes you back through the Rift Valley and south through Maasai rangelands — vast, sparsely populated grasslands where traditional Maasai homesteads (manyattas) dot the landscape and cattle outnumber people. It's a long drive but endlessly fascinating — the scenery shifts from golden savannah to scrubby bushland, and your guide points out wildlife along the way.
+After breakfast, bid farewell to the Mara and begin the drive east back towards Nairobi. The route retraces the wheat fields of the Loita Plains and Narok town before climbing the Great Rift Valley escarpment, with a final photo stop at the viewpoint for one more sweeping look across the valley floor. Descend through the Kikuyu highlands and arrive back in Nairobi by mid-afternoon.
 
-As you approach Amboseli in the late afternoon, Mount Kilimanjaro begins to dominate the southern horizon — Africa's highest peak rising above the plains with its glacial crown catching the last light of the day. Check into your lodge and head out for an evening game drive through the swamplands where Amboseli's legendary elephant herds gather. Watch family groups silhouetted against Kilimanjaro's purple evening profile — matriarchs with enormous tusks leading their herds through the golden grass. The sense of scale is humbling: enormous elephants dwarfed by an even more enormous mountain.`,
+Check into your Nairobi hotel with the rest of the day at leisure — an ideal opportunity to visit the Giraffe Centre in Karen, browse the curio markets for Maasai beadwork, or simply relax before tomorrow's journey south to Amboseli.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 4,
-                title: 'Amboseli to Tsavo East National Park',
-                description: `## ~250km | Approx. 4.5 hrs
+                title: 'Nairobi to Amboseli National Park',
+                description: `## ~230km | Approx. 4 hrs
 
-5:30 AM — Rise before dawn for Amboseli's finest moment — the mountain reveals itself fully in the early morning, its snowcap glowing pink then gold as sunrise light strikes the glaciers. Elephants are already moving between the swamps, their breath visible in the cool air.
+6:30 AM — Depart Nairobi heading south on the Namanga Road. The city gives way to the wide Athi Plains, where Maasai herdsmen in bright red shukas walk their cattle across the open grassland. The plains grow drier and the acacia trees more scattered as you head towards the Tanzanian border.
 
-A morning game drive takes you across the dried lake beds and through the papyrus swamps — this is the hour for photography, with Kilimanjaro's full profile reflected in still water and elephant herds painted in warm dawn light. Climb Observation Hill for a farewell panorama: the entire park spreads below, from green swampland to the vast pale lake bed, with Kilimanjaro presiding over it all.
+By mid-morning, if the skies are clear, Mount Kilimanjaro begins to rise on the southern horizon — Africa's highest peak, its snow-capped summit floating above the haze. Stop for breakfast en route, then continue south.
 
-After breakfast, depart east towards Tsavo East National Park. The landscape shifts from Amboseli's open grasslands through the Chyulu Hills corridor — rolling volcanic hills carpeted in green — before flattening into Tsavo's vast red-earth savannah. Arrive by early afternoon.
-
-An afternoon game drive introduces you to Tsavo's legendary red elephants — enormous herds dust-bathing in the iron-rich laterite soil until their hides glow rust-red. Visit Aruba Dam, a wildlife magnet where buffalo, zebra, and giraffe converge, and drive along the Galana River where crocodiles bask on sandy banks. The enormous Tsavo sky turns gold at sunset — a fitting farewell to your final safari evening.`,
+Arrive at Amboseli National Park by early afternoon. After checking into your safari lodge and enjoying lunch, set out for an afternoon game drive through the park's distinctive terrain — the dried lake bed shimmers in the heat while swamps fed by Kilimanjaro's glacial melt teem with life. Enormous elephant herds, some of Africa's largest tuskers, parade across the dusty plains with Kilimanjaro as their backdrop. Watch for lion prides resting beneath yellow-barked acacia trees, zebra, giraffe, and cape buffalo as the mountain turns rose-gold in the fading afternoon light.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 5,
-                title: 'Tsavo East to Diani Beach',
-                description: `5:30 AM — Rise for a final sunrise game drive through Tsavo East. The morning light turns the red soil golden — elephants head to water, giraffes browse the treetops, and martial eagles launch from their perches. Every moment in this vast wilderness feels like a private discovery.
+                title: 'Amboseli to Diani Beach',
+                description: `## ~350km | Approx. 6 hrs
+
+5:30 AM — Rise before dawn for a final sunrise game drive in Amboseli, catching Kilimanjaro at its clearest before equatorial clouds wrap around the summit by mid-morning. Elephants move across the open plains in the golden early light, their breath visible in the cool air, while your guide makes a last pass along the swamp edges for hippos and crowned cranes.
 
 After breakfast, your coastal transfer begins — and you have two exciting options:
 
-Option A: First Class SGR Madaraka Express — Your guide drives you to Voi SGR Station, just outside the park. Board Kenya's modern high-speed train at 12:08 PM and settle into air-conditioned first-class comfort with large picture windows. As the Madaraka Express glides through Tsavo's vast wilderness, spot elephants, giraffes, and perhaps even big cats from your reclining seat — it's a game drive on rails. Snacks and refreshments are available on board. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5-hour drive south to your Diani Beach hotel.
+Option A: First Class SGR Madaraka Express — Drive to Emali Station (~1.5 hours from Amboseli) and board Kenya's modern high-speed train. Settle into air-conditioned first-class comfort with large picture windows as the Madaraka Express glides south through the vast Tsavo wilderness — spot elephants, giraffes, and perhaps even big cats from your reclining seat, it's a game drive on rails. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5-hour drive south to your Diani Beach hotel.
 
-Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via the Mombasa Highway, watching the dry bushland gradually give way to tropical coastal lowlands — baobab trees replaced by coconut palms and mango orchards. Arrive at your Diani Beach resort by approximately 3:00 PM.
+Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via the Emali–Loitokitok junction and the Mombasa Highway, skirting the Tsavo wilderness as dry bushland gradually gives way to tropical coastal lowlands — baobab trees replaced by coconut palms and mango orchards. Arrive at your Diani Beach resort by approximately 3:00 PM.
 
 The transformation is extraordinary — from red-earth wilderness to white-sand paradise in a single afternoon. Five days that took you from the Mara's big cats to Kilimanjaro's elephants to the warm turquoise waters of the Indian Ocean.`,
                 meals: ['Breakfast', 'Lunch']
@@ -9311,85 +9347,81 @@ The transformation is extraordinary — from volcanic wilderness to white-sand p
             'Rhinos and flamingos at Lake Nakuru',
             'Big Five in the Masai Mara',
             'Kilimanjaro views in Amboseli',
-            'Mzima Springs in Tsavo West',
+            'Tsavo\'s red elephants seen en route to the coast',
             'Beach relaxation at Diani'
         ],
-        description: `The grand tour of Kenya's southern circuit — four iconic parks culminating at the Indian Ocean. Expect flamingos and rhinos at Lake Nakuru, Big Five encounters across the Masai Mara's legendary golden grasslands, Amboseli's elephant herds framed by Kilimanjaro's snow-capped summit, and Tsavo East's famous red elephants roaming vast rust-coloured plains. Six days of ever-changing scenery — from alkaline lakeshores to rolling savannah, volcanic highlands to tropical coastline — ending with a first-class SGR train ride through the wilderness to the warm white sand of Diani Beach.`,
+        description: `The grand tour of Kenya's southern circuit — three iconic parks culminating at the Indian Ocean. Expect flamingos and rhinos at Lake Nakuru, Big Five encounters across the Masai Mara's legendary golden grasslands, and Amboseli's elephant herds framed by Kilimanjaro's snow-capped summit. Six days of ever-changing scenery — from alkaline lakeshores to rolling savannah, volcanic highlands to semi-arid plains — ending with a first-class SGR train ride through Tsavo's red-earth wilderness to the warm white sand of Diani Beach.`,
         itinerary: [
             {
                 day: 1,
-                title: 'Nairobi to Lake Nakuru National Park',
-                description: `## ~160km | Approx. 3 hrs
+                title: 'Nairobi to Masai Mara National Reserve',
+                description: `## ~270km | Approx. 5-6 hrs
 
-6:00 AM — Your driver-guide collects you from your Nairobi hotel and you head north-west towards the Great Rift Valley. The Namanga highway climbs through the green highlands before the earth drops away at the escarpment viewpoint — pause here to take in the vast valley floor stretching below, a patchwork of farmland, extinct volcanoes, and shimmering soda lakes. The descent through the escarpment is dramatic, hairpin bends revealing new panoramas at every turn.
+6:00 AM — Your driver-guide collects you from your Nairobi hotel and heads west towards the Great Rift Valley. The road descends the escarpment with sweeping views over the valley floor — a patchwork of farmland, extinct volcanoes, and shimmering soda lakes — before continuing through Narok town, the last major settlement before the reserve. Beyond Narok, the wheat fields of the Loita Plains give way to Maasai rangeland, herdsmen in crimson shukas walking their cattle alongside the road as tarmac turns to red-earth track.
 
-By 9:30 AM you enter Lake Nakuru National Park, a compact jewel nestled on the Rift Valley floor. This is a rhino sanctuary — home to both black and white rhinos — and your guide wastes no time navigating towards the bush where these prehistoric giants browse. The alkaline lake itself is ringed with thousands of flamingos, their pink reflections shimmering across the water like a living watercolour. Greater and lesser flamingos feed in the shallows alongside pelicans, cormorants, and African fish eagles that patrol from the treetops.
-
-After lunch at your safari lodge, the afternoon game drive takes you through the park\'s famous yellow-barked acacia forest — the ethereal fever tree woodland where Rothschild\'s giraffes move between the pale trunks like stately ghosts. Watch for waterbuck grazing the lake margins, buffalo herds in the open grassland, and if fortune favours, one of Nakuru\'s famous tree-climbing lions draped across a branch. The light turns amber as the sun sinks behind the Rift Valley wall, and you return to your lodge with flamingo-pink skies reflected in the lake.`,
-                meals: ['Lunch', 'Dinner'],
+The landscape transforms as you enter the Mara ecosystem — golden grasslands rolling to every horizon, studded with flat-topped acacia trees and termite mounds used as lookout posts by resident cheetahs. Collect your packed lunch and enter the reserve by early afternoon for an extended game drive. The Mara delivers immediately — vast herds of wildebeest and zebra blanket the plains, stalked by prides of lion and solitary leopards hidden in the croton thickets. The Mara River winds through the reserve, its banks patrolled by enormous Nile crocodiles. Watch for cheetah at speed across open grassland and elegant topi standing sentinel on the ridgelines. Sunset in the Mara is unforgettable — the sky blazes orange as silhouettes of giraffe and acacia trees create the iconic African tableau.`,
+                meals: ['Lunch', 'Dinner']
             },
             {
                 day: 2,
-                title: 'Lake Nakuru to Masai Mara National Reserve',
-                description: `## ~270km | Approx. 5-6 hrs
-
-6:30 AM — An early morning game drive around Lake Nakuru for your final encounters — the rhinos are most active at dawn, their armoured silhouettes moving through the mist rising off the lake. Your guide positions the Land Cruiser for close-up photographs as a white rhino grazes barely thirty metres away, its enormous horn catching the early light.
-
-After breakfast, you depart south-west towards the world-renowned Masai Mara. The drive of roughly five hours takes you through Narok town and across the wheat fields of the Loita Plains, entering Maasai country where herdsmen wrapped in bright red shukas walk alongside their cattle. The landscape transforms gradually — rolling farmland gives way to the Mara\'s endless golden savannah, studded with flat-topped acacia trees stretching to the horizon.
-
-Collect your packed lunch and enter the reserve by early afternoon for an extended game drive. The Mara delivers immediately — vast herds of wildebeest and zebra blanket the plains, stalked by prides of lion and solitary leopards hidden in the croton thickets. The Mara River winds through the reserve, its banks patrolled by enormous Nile crocodiles. Watch for cheetah at speed across the open grassland, elegant topi standing sentinel on the ridgelines, and massive hippo pods in the river. Sunset in the Mara is unforgettable — the sky blazes orange as silhouettes of giraffe and acacia trees create the iconic African tableau.`,
-                meals: ['Breakfast', 'Lunch', 'Dinner'],
-            },
-            {
-                day: 3,
                 title: 'Full Day — Masai Mara National Reserve',
                 description: `6:00 AM — Wake to the distant roar of lions and the chatter of weaver birds outside your lodge. Head out into the cool dawn air for the morning game drive — this is when the Mara\'s predators are most active. Your guide reads the bush like a book, following fresh tracks through dew-damp grass. A cheetah crouches on a termite mound, scanning the plains for Thomson\'s gazelle. Nearby, a leopard descends from a sausage tree, her spotted coat melting into the dappled shade.
 
 Drive to the Mara River where enormous Nile crocodiles lie motionless on the sandy banks — their stillness deceptive, their speed terrifying when prey approaches. Hippo pods surface and submerge in the deeper pools, grunting territorial warnings. During migration season (July–October), this stretch of river hosts one of nature\'s most dramatic spectacles — thousands of wildebeest hurling themselves into the current.
 
 Return to your safari lodge for lunch and a rest during the midday heat. The afternoon drive explores new sectors — perhaps tracking a pride of lions teaching their cubs to stalk through the tall golden grass, or finding a congregation of elephants in the riverine forest where fig trees and wild olive provide shade and forage. As the golden hour deepens, the Mara becomes a photographer\'s paradise — giraffe silhouettes against the enormous sky, secretary birds strutting through the grassland, and the distant calls of hyenas echoing across the plains as darkness gathers.`,
-                meals: ['Breakfast', 'Lunch', 'Dinner'],
+                meals: ['Breakfast', 'Lunch', 'Dinner']
+            },
+            {
+                day: 3,
+                title: 'Masai Mara to Lake Nakuru National Park',
+                description: `## ~270km | Approx. 5 hrs
+
+6:30 AM — Rise for a final game drive in the Mara while the light is still soft and predators are most active. Your guide tracks fresh signs toward the Mara River, where hippos grunt from the misty pools and crocodiles bask on the banks; with luck, a cheetah crosses the track ahead, scanning the plains for breakfast. Return to your lodge for breakfast and check out.
+
+Depart north-east towards Lake Nakuru. The road climbs out of the Mara ecosystem through Narok and the wheat fields of the Loita Plains before continuing over the Mau Escarpment, rolling farmland and forest giving way to the floor of the Great Rift Valley, extinct volcanic cones visible in the haze.
+
+Arrive at Lake Nakuru National Park by mid-afternoon and head straight into an extended game drive. This compact gem is a rhino sanctuary, home to both black and white rhinos, and its alkaline lake draws hundreds of flamingos that paint the shoreline in shimmering bands of pink. Explore the yellow-barked fever tree forest — watch for Rothschild\'s giraffes browsing the canopy and, with good fortune, one of Nakuru\'s famous tree-climbing lions draped across a branch overhead. Climb to Baboon Cliff as the light softens for a sweeping panorama of the lake and the surrounding escarpment before checking into your lodge.`,
+                meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 4,
-                title: 'Masai Mara to Amboseli National Park',
-                description: `## ~380km | Approx. 6-7 hrs
+                title: 'Lake Nakuru to Amboseli National Park',
+                description: `## ~370km | Approx. 6 hrs
 
-6:00 AM — A dawn game drive in the Mara for one final encounter — the golden light catches a herd of elephants moving through the mist, trunks swinging, calves tucked between their mothers\' legs. Your guide navigates to a favourite big-cat zone for a last chance at a kill sighting before you bid the Mara farewell.
+7:00 AM — One last game drive around Lake Nakuru while the light is soft and the rhinos are most active, their armoured silhouettes moving through mist rising off the lake. After breakfast, depart south-east, climbing back up the Rift Valley escarpment for a final photo stop at the viewpoint before descending through the Kikuyu highlands, skirting Nairobi on the bypass, and joining the Namanga Road.
 
-After breakfast, you begin the long drive south to Amboseli National Park. The journey of roughly six to seven hours crosses the Rift Valley and heads towards the Tanzanian border, the landscape transitioning from rolling green highlands to open semi-arid plains. As you approach Amboseli in the late afternoon, Mount Kilimanjaro reveals itself on the southern horizon — Africa\'s highest peak, its snow-capped summit floating above the clouds like a mirage.
+The wide Athi Plains give way to increasingly dry, scattered acacia country as Maasai herdsmen in bright shukas walk their cattle across the grassland. By mid-afternoon, if the skies are clear, Mount Kilimanjaro rises on the southern horizon — Africa\'s highest peak, its glaciers gleaming above the haze.
 
-Arrive at your safari lodge and settle in. An evening game drive takes you through Amboseli\'s swamplands where the park\'s legendary elephant herds gather — matriarchs with tusks that nearly touch the ground leading their families against the backdrop of Kilimanjaro\'s purple evening silhouette. The open terrain makes for exceptional game viewing as zebra, wildebeest, and giraffe share the golden plains. Watch for crowned cranes in the wetlands and bat-eared foxes emerging from their burrows as the stars fill the enormous African sky.`,
-                meals: ['Breakfast', 'Lunch', 'Dinner'],
+Arrive at Amboseli National Park in the late afternoon, check into your safari lodge with its spectacular Kilimanjaro panorama, and head straight out for a late game drive. Amboseli\'s famous elephant herds — some of the largest-tusked in Africa — move through the swamps fed by Kilimanjaro\'s underground meltwater, their silhouettes backlit against the mountain\'s purple evening profile. Watch for lions, hyenas, and jackals materialising from the dusk as the first stars appear above the plains.`,
+                meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 5,
-                title: 'Amboseli to Tsavo East National Park',
-                description: `## ~250km | Approx. 4-5 hrs
+                title: 'Full Day Amboseli National Park',
+                description: `Wake to Amboseli\'s postcard moment — Mount Kilimanjaro\'s glaciated summit floating clear and rose-gold above the plains before the midday haze draws its customary cloud veil across the peak. 6:00 AM — Head out early while the light is soft and the mountain at its clearest. Drive into the swamps fed by Kilimanjaro\'s underground springs, where elephant herds wade belly-deep through the reeds, trunks raised to strip papyrus shoots — some of Africa\'s last great tuskers roam here, matriarchs whose ivory nearly brushes the ground, leading extended family groups across the water.
 
-5:30 AM — Rise before the sun for Amboseli\'s signature moment: Kilimanjaro at dawn. The mountain\'s glaciers glow pink and gold in the first light while elephant families are already on the move, their silhouettes crossing the dried lake bed in single file — Africa\'s most iconic photograph, and it\'s happening right before your eyes. Your guide positions the Land Cruiser perfectly for the shot.
+Climb Observation Hill for a 360-degree panorama across the entire basin — the dried lake bed shimmering with heat mirage to the south, swamps glowing emerald to the north, Kilimanjaro presiding over it all. Return to your lodge for lunch and a rest through the midday heat.
 
-After breakfast, drive east towards Tsavo East National Park — Kenya\'s largest park, spanning over 13,000 square kilometres of raw, untamed wilderness. The journey takes roughly four to five hours through the Kimana corridor, the landscape transitioning from Amboseli\'s open grasslands to Tsavo\'s wilder, semi-arid bushland. The iron-rich red soil is immediately distinctive — everything here has a rust-coloured tint, including the famous red elephants who dust-bathe until coated in crimson earth.
-
-Arrive at your safari lodge for lunch, then head out for an afternoon game drive along the Galana River. Massive crocodiles bask on the sandy banks while hippo pods eye you suspiciously. Visit Aruba Dam, where during the dry season hundreds of elephants, buffalo, and zebra converge at the water\'s edge — one of Tsavo\'s most spectacular wildlife concentrations. Scan the open red-earth plains for lion prides, giraffes browsing the commiphora scrub, and herds of buffalo kicking up clouds of crimson dust.`,
-                meals: ['Breakfast', 'Lunch', 'Dinner'],
+The afternoon game drive explores the swamp margins near Ol Tukai — hippos wallow in the shallows, grey crowned cranes stalk the reeds on stilted legs, and lion prides doze beneath yellow-barked acacias. Watch for bat-eared foxes emerging from their burrows as the light softens. As the sun drops behind the mountain, Kilimanjaro\'s silhouette turns deep violet against a sky ablaze with amber and crimson — elephants filing home across the dry lake bed in single file, the single most photographed scene in Kenya.`,
+                meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 6,
-                title: 'Tsavo East to Diani Beach',
-                description: `6:30 AM — Your final early morning game drive through Tsavo East\'s vast red-earth plains. The low golden light catches dust kicked up by elephant herds heading to water, and you may spot a pride of lions resting near the Voi River before the heat of the day. Visit the dramatic Lugard Falls, where the Galana River forces through narrow sculptured rock channels carved over millennia — the swirling colours in the rock are mesmerising.
+                title: 'Amboseli to Diani Beach',
+                description: `## ~350km | Approx. 6 hrs
 
-After breakfast, pack up and prepare for your coastal transfer.
+5:30 AM — Rise before dawn for one final game drive across Amboseli\'s plains, catching Kilimanjaro at its clearest before the equatorial haze wraps around the summit by mid-morning. Elephant families are already on the move, their silhouettes filing across the dried lake bed in the golden early light.
 
-Your Coastal Transfer — Two Great Options:
+After breakfast, your coastal transfer begins — and you have two exciting options:
 
-Option A: First Class SGR Madaraka Express — Board at Voi Station for Kenya\'s modern high-speed train. Settle into air-conditioned first-class comfort with large picture windows as the Madaraka Express glides through Tsavo\'s vast wilderness. Spot elephants, giraffes, and perhaps even big cats from your reclining seat as the landscape transitions from red-earth savannah to lush coastal lowland. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5 hr drive south to your Diani Beach hotel — arriving by approximately 3:30 PM.
+Option A: First Class SGR Madaraka Express — Drive to Emali Station (~1.5 hours from Amboseli) and board Kenya\'s modern high-speed train. Settle into air-conditioned first-class comfort with large picture windows as the Madaraka Express glides south through Tsavo\'s vast wilderness — spot elephants, giraffes, and the famous red elephants dust-bathing on the plains from your reclining seat, it\'s a game drive on rails. Arrive at Mombasa Terminus by 2:00 PM, where your C.A.T.S representative meets you for the scenic ~1.5 hr drive south to your Diani Beach hotel — arriving by approximately 3:30 PM.
 
-Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via Voi and the Mombasa Highway, the landscape transforming from dry savannah to tropical coastal lowland as baobab trees give way to coconut palms and mango orchards. Cross the Likoni Ferry with views of Mombasa\'s historic harbour, then continue south to Diani Beach, arriving by early afternoon.
+Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via the Emali–Loitokitok junction, Mtito Andei, and Voi, skirting the edge of Tsavo\'s red-earth wilderness before joining the Mombasa Highway. Watch the landscape transform from dry savannah to tropical coastal lowland as baobab trees give way to coconut palms and mango orchards. Cross the Likoni Ferry with views of Mombasa\'s historic harbour, then continue south to Diani Beach, arriving by early evening.
 
 Either way, your grand safari ends where the Indian Ocean begins — white coral sand, turquoise waters, and the warm coastal breeze welcoming you to paradise.`,
                 meals: ['Breakfast', 'Lunch']
-            }
+            },
         ],
         inclusions: [
             'Nairobi hotel/airport pick-up',
@@ -9425,7 +9457,7 @@ Either way, your grand safari ends where the Indian Ocean begins — white coral
         ],
         featured: false,
         type: ['nairobi-diani', 'wildlife', 'beach'],
-        parks: ['Lake Nakuru National Park', 'Masai Mara National Reserve', 'Amboseli National Park', 'Tsavo West National Park'],
+        parks: ['Masai Mara National Reserve', 'Lake Nakuru National Park', 'Amboseli National Park'],
         wildlifeHighlights: [
             'Flamingos painting the lake shores pink',
             'Black and white rhinos in the sanctuary',
@@ -10338,7 +10370,7 @@ The highway climbs through the escarpment and descends toward Nairobi through th
         id: 'coast-nrb-9d',
         slug: '9-day-ultimate-coast-to-nairobi-safari',
         hasSGR: true,
-        title: '9-Day Ultimate Coast to Nairobi Safari | 8 Parks',
+        title: '9-Day Ultimate Coast to Nairobi Safari | 6 Parks',
         subtitle: 'The Complete Kenya Overland — Red Elephants to River Crossings',
         destination: 'kenya',
         duration: 9,
@@ -10349,12 +10381,11 @@ The highway climbs through the escarpment and descends toward Nairobi through th
             'Tsavo West — Mzima Springs & Shetani Lava Flow',
             'Amboseli — elephants beneath Mount Kilimanjaro',
             'Lake Naivasha — boat safari & Crescent Island walking safari',
-            `Hell's Gate — cycling among zebras & giraffes`,
             'Lake Nakuru — flamingos, rhinos & leopards',
             'Masai Mara — 2 full days of Big Five & Great Migration',
             'Drop-off in Nairobi (hotel or airport)'
         ],
-        description: `Nine extraordinary days from the Indian Ocean to Nairobi through eight of Kenya's greatest parks and reserves — the ultimate overland safari. Begin in Tsavo's vast twin parks with red elephants, crystal springs, and lava flows. Ascend to Amboseli for elephants beneath Kilimanjaro's glaciers. Drift by boat across Lake Naivasha past hippos and fish eagles, walk among giraffes on Crescent Island, then cycle through Hell's Gate's towering volcanic cliffs alongside zebras. Watch flamingos paint Lake Nakuru pink and track rhinos through fever tree forests. The grand finale: two full days in the legendary Masai Mara — lion prides, leopard hunts, cheetah sprints, and the thundering Great Migration. From coral sand to the Mara's golden savannah — Kenya distilled into one magnificent odyssey.`,
+        description: `Nine extraordinary days from the Indian Ocean to Nairobi through eight of Kenya's greatest parks and reserves — the ultimate overland safari. Begin in Tsavo's vast twin parks with red elephants, crystal springs, and lava flows. Ascend to Amboseli for elephants beneath Kilimanjaro's glaciers. Drift by boat across Lake Naivasha past hippos and fish eagles, walk among giraffes on Crescent Island as fish eagles circle overhead. Watch flamingos paint Lake Nakuru pink and track rhinos through fever tree forests. The grand finale: two full days in the legendary Masai Mara — lion prides, leopard hunts, cheetah sprints, and the thundering Great Migration. From coral sand to the Mara's golden savannah — Kenya distilled into one magnificent odyssey.`,
         itinerary: [
             {
                 day: 1,
@@ -10363,7 +10394,7 @@ The highway climbs through the escarpment and descends toward Nairobi through th
 
 6:00 AM — Your driver-guide collects you from your Diani Beach hotel. Leave the turquoise Indian Ocean behind in your private 4×4 Land Cruiser, heading north-west through the coastal hinterland. Coconut palms and mango orchards thin to sisal plantations and scattered baobab trees as the air grows warm and dry.
 
-Enter Tsavo East National Park through Bachuma Gate by mid-morning — Kenya's largest protected wilderness. Tsavo's legendary red elephants appear immediately — enormous herds dust-bathing in iron-rich laterite soil, their hides glowing the colour of the earth. Follow the Galana River — crocodiles bask on sandbanks, hippos surface in deeper pools.
+Enter Tsavo East National Park through Bachuma Gate by mid-morning — Kenya\'s largest protected wilderness. Tsavo\'s legendary red elephants appear immediately — enormous herds dust-bathing in iron-rich laterite soil, their hides glowing the colour of the earth. Follow the Galana River — crocodiles bask on sandbanks, hippos surface in deeper pools.
 
 Visit Lugard Falls — bizarre water-sculpted rock formations where the river forces through channels carved over millennia. Continue to Aruba Dam where buffalo, waterbuck, and zebra jostle at the waterline under circling fish eagles. The afternoon game drive tracks lion prides and watches for cheetah on termite mounds. Check into your lodge as the red earth glows gold.`,
                 meals: ['Lunch', 'Dinner']
@@ -10377,9 +10408,9 @@ Visit Lugard Falls — bizarre water-sculpted rock formations where the river fo
 
 After breakfast, cross into Tsavo West. The landscape transforms — flat red savannah gives way to rolling volcanic hills, the Chyulu Hills silhouetted on the horizon.
 
-Mzima Springs is Tsavo West's crown jewel — crystal-clear water bubbling from underground volcanic rivers at 250 million litres per day. Step into the underwater viewing chamber: hippos glide beneath the surface, barbel fish dart between them, vervet monkeys play in the fig trees above.
+Mzima Springs is Tsavo West\'s crown jewel — crystal-clear water bubbling from underground volcanic rivers at 250 million litres per day. Step into the underwater viewing chamber: hippos glide beneath the surface, barbel fish dart between them, vervet monkeys play in the fig trees above.
 
-The Shetani Lava Flow follows — a haunting expanse of jet-black volcanic rock named "devil" by the Maasai. Your afternoon game drive explores the Ngulia Hills where the rhino sanctuary shelters Kenya's black rhino population. Watch for leopard on rocky outcrops, lesser kudu in thick bush, and Verreaux's eagles soaring on thermals.`,
+The Shetani Lava Flow follows — a haunting expanse of jet-black volcanic rock named "devil" by the Maasai. Your afternoon game drive explores the Ngulia Hills where the rhino sanctuary shelters Kenya\'s black rhino population. Watch for leopard on rocky outcrops, lesser kudu in thick bush, and Verreaux\'s eagles soaring on thermals.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -10387,47 +10418,43 @@ The Shetani Lava Flow follows — a haunting expanse of jet-black volcanic rock 
                 title: 'Tsavo West to Amboseli National Park',
                 description: `## ~180km | Approx. 3 hrs
 
-6:30 AM — Final morning game drive through Tsavo West's rugged volcanic terrain. Klipspringer on boulder faces, hornbills in the canopy, and the Chyulu Hills catching the dawn light.
+6:30 AM — Final morning game drive through Tsavo West\'s rugged volcanic terrain. Klipspringer on boulder faces, hornbills in the canopy, and the Chyulu Hills catching the dawn light.
 
-After breakfast, depart north toward Amboseli. The route follows the scenic corridor between the Chyulu Hills and the highway. By late morning, Mount Kilimanjaro materialises on the southern horizon — Africa's highest peak at 5,895 metres, its snow-capped dome growing more commanding with every kilometre.
+After breakfast, depart north toward Amboseli. The route follows the scenic corridor between the Chyulu Hills and the highway. By late morning, Mount Kilimanjaro materialises on the southern horizon — Africa\'s highest peak at 5,895 metres, its snow-capped dome growing more commanding with every kilometre.
 
-Arrive at Amboseli by early afternoon. After lunch, your afternoon game drive delivers Africa's most dramatic encounters — enormous elephant herds parade across dried lake beds with Kilimanjaro filling the sky. Navigate papyrus-fringed swamps where hippos surface and crowned cranes pick through the shallows. Watch for lion prides beneath yellow-barked acacias. Elephants silhouetted against Kilimanjaro's evening profile — the sky ablaze with amber and violet — is the photograph that defines Kenya.`,
+Arrive at Amboseli by early afternoon. After lunch, your afternoon game drive delivers Africa\'s most dramatic encounters — enormous elephant herds parade across dried lake beds with Kilimanjaro filling the sky. Navigate papyrus-fringed swamps where hippos surface and crowned cranes pick through the shallows. Watch for lion prides beneath yellow-barked acacias. Elephants silhouetted against Kilimanjaro\'s evening profile — the sky ablaze with amber and violet — is the photograph that defines Kenya.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 4,
-                title: 'Amboseli to Lake Naivasha',
-                description: `## ~350km | Approx. 5.5 hrs
+                title: 'Full Day Amboseli',
+                description: `Wake to Amboseli\'s postcard moment — Mount Kilimanjaro\'s glaciated summit floating clear and rose-gold above the plains before the equatorial heat draws its customary cloud veil across the peak by mid-morning. 6:00 AM — Head out early while the light is soft and the mountain is at its clearest. Drive into the Enkongo Narok swamp, one of several permanent wetlands fed by Kilimanjaro\'s underground meltwater, where Amboseli\'s legendary elephant herds wade belly-deep through the reeds, trunks raised to strip papyrus shoots. Some of Africa\'s last remaining big tuskers roam here — matriarchs whose ivory nearly brushes the ground, leading extended family groups across the springs.
 
-5:30 AM — Rise before dawn for Amboseli's signature moment — Kilimanjaro's glacial crown glowing rose-pink then gold as elephant families move across the plains in the first light. Climb Observation Hill for a 360-degree panorama of elephants, swamps, and the snow-capped summit.
+Climb Observation Hill, the park\'s only true vantage point, for a 360-degree panorama across the entire Amboseli basin — dried lake bed shimmering with heat mirage to the south, swamps glowing emerald to the north, and Kilimanjaro presiding over it all. Return to your lodge for lunch and a rest through the midday heat, when the animals themselves retreat to shade.
 
-After breakfast, depart north for Lake Naivasha. The highway climbs through the Athi Plains, bypasses Nairobi, and descends into the Great Rift Valley — pause at the escarpment viewpoint for breathtaking panoramas across the valley floor.
-
-Arrive at Lake Naivasha mid-afternoon. After checking into your lakeside lodge, board a boat for an afternoon boat safari. Glide past pods of hippos surfacing just metres away. African fish eagles perch in the papyrus — their haunting cry echoing across the water — swooping to snatch fish in a flash of white and chestnut. Cormorants, kingfishers, herons, and lily-trotters crowd the shallows. The late afternoon light paints the water gold as you return to shore.`,
+The afternoon game drive explores the Sinet and Longinye swamps — hippos wallow in the shallows, grey crowned cranes stalk through the reeds on stilted legs, and African jacanas skip across lily pads on impossibly long toes. Lion prides doze beneath yellow-barked acacias near Ol Tukai, and spotted hyenas patrol the swamp margins as buffalo herds graze in the fading light. As the sun drops behind the mountain, Kilimanjaro\'s silhouette turns deep violet against a sky ablaze with amber and crimson — elephants filing home across the dry lake bed in single file, the single most photographed scene in Kenya.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 5,
-                title: `Crescent Island, Hell's Gate & Lake Nakuru`,
-                description: `## ~80km | Approx. 2 hrs (with activities)
+                title: 'Amboseli to Lake Naivasha',
+                description: `## ~350km | Approx. 5.5 hrs
 
-7:00 AM — After breakfast, take a short boat ride to Crescent Island for a walking safari among free-roaming giraffes, zebras, wildebeest, and waterbuck — no fences, no vehicles, just you and the wildlife. The 360-degree Rift Valley views from this volcanic crater island are breathtaking.
+7:00 AM — One last look at Kilimanjaro over breakfast before departing north for Lake Naivasha. The park gate falls behind as the road crosses open plains where zebra and wildebeest still graze in the early light. The highway climbs through the Athi Plains, skirts Nairobi on the bypass, and descends into the Great Rift Valley — pause at the escarpment viewpoint for breathtaking panoramas across the valley floor, its patchwork of farms and extinct volcanoes stretching to the haze.
 
-Return to the mainland and drive the short distance to Hell's Gate National Park — one of only two Kenyan parks where you can explore on foot or by bicycle. Collect your bikes at the gate and cycle through towering volcanic cliffs alongside zebras, giraffes, buffaloes, and warthogs grazing the valley floor. The Fischer's Tower — a dramatic volcanic plug — rises like a sentinel above you. Pedal through the narrow gorge where geothermal steam vents hiss from the earth and the red-rock canyon walls close in around you. This is adventure safari at its finest.
-
-After the ride, depart north for Lake Nakuru National Park. Arrive by late afternoon and check into your lodge. A short evening game drive through the acacia woodland reveals waterbuck, impala, and the first glimpse of flamingos on the lakeshore.`,
+Arrive at Lake Naivasha mid-afternoon. After checking into your lakeside lodge, board a boat for an afternoon safari on the water. Glide past pods of hippos surfacing and snorting just metres from the hull, their eyes and ears breaking the glassy surface. African fish eagles perch in the papyrus fringe — their haunting, iconic cry echoing across the water — swooping down to snatch fish in a flash of white and chestnut. Cormorants, kingfishers, herons, and lily-trotters crowd the shallows, a birdwatcher\'s paradise. Step ashore on Crescent Island for a short walking safari among giraffes, zebras, wildebeest, and waterbuck — one of the few places in Kenya where you walk freely among wild game without a vehicle. The late afternoon light paints the water gold as you return to your lodge.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
                 day: 6,
-                title: 'Full Day in Lake Nakuru National Park',
-                description: `Wake to the calls of tropical birds in the fever tree forest. After breakfast, head out for a full-day exploration of Lake Nakuru — a compact Rift Valley jewel.
+                title: 'Lake Naivasha to Lake Nakuru',
+                description: `## ~140km | Approx. 2.5 hrs
 
-The alkaline lake attracts vast congregations of flamingos — the shoreline shimmers pink as thousands of lesser flamingos feed on spirulina algae. Greater flamingos wade deeper, while pelicans bob and dive in formation. Lake Nakuru is one of Kenya's premier rhino sanctuaries — your guide tracks both black and white rhinos through the yellow-barked acacia woodland, a habitat that also conceals leopards draped across fever tree branches.
+7:00 AM — After breakfast, depart Lake Naivasha and continue north through the Rift Valley floor via Gilgil — a short, scenic drive past patchwork farms and extinct volcanic cones, the valley walls rising on either side. Arrive at Lake Nakuru National Park by mid-morning, a compact Rift Valley jewel and one of Kenya\'s premier rhino sanctuaries.
 
-Drive to Baboon Cliff viewpoint for a sweeping panorama — flamingos a pink ribbon below, the Rift Valley escarpment rising behind. Lions, buffalo, Rothschild's giraffes — one of Africa's most endangered subspecies — and waterbuck are all present.
+Begin an extended game drive through the park\'s fever tree forest — its pale, yellow-barked acacias standing like a ghost wood — tracking both black and white rhinos through the dense understorey. The alkaline lake itself draws vast congregations of flamingos; the shoreline shimmers pink as thousands of lesser flamingos feed on spirulina algae while greater flamingos wade deeper among diving pelicans. Watch for leopards draped across fever tree branches and, with good fortune, one of Nakuru\'s famous tree-climbing lions.
 
-The afternoon game drive explores the lake's southern shore and the lush watercourses where bushbuck and pythons hide. As the sun sets, the fever tree forest glows golden — a final magical evening in the Rift Valley.`,
+After lunch at your lodge, climb to Baboon Cliff for a sweeping panorama — the flamingo-pink shoreline far below, the Rift Valley escarpment rising behind. The afternoon game drive explores the lake\'s southern shore and lush watercourses where bushbuck move through the undergrowth and Rothschild\'s giraffes — one of Africa\'s most endangered subspecies — browse the canopy. As the sun sets, the fever tree forest glows gold, a fitting final evening in the Great Rift Valley before tomorrow\'s journey to the Mara.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -10447,7 +10474,7 @@ By late afternoon you reach the Masai Mara. The golden savannah stretches to the
                 title: 'Full Day in the Masai Mara',
                 description: `Wake to the sounds of the African bush — hornbills calling, hyenas whooping in the distance, the deep rumble of lions announcing the dawn.
 
-6:00 AM — Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah's silhouette scanning for prey. The Mara's open grasslands deliver unparalleled big cat encounters: lion prides with tumbling cubs, leopards in sausage trees, cheetah families teaching their young to hunt.
+6:00 AM — Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah\'s silhouette scanning for prey. The Mara\'s open grasslands deliver unparalleled big cat encounters: lion prides with tumbling cubs, leopards in sausage trees, cheetah families teaching their young to hunt.
 
 Cross the Talek and Mara rivers where enormous Nile crocodiles drift and hippo pods surface. During the Great Migration season (July–October), witness hundreds of thousands of wildebeest and zebra massing at river crossing points — the tension building before the thunderous plunge into crocodile-infested waters.
 
@@ -10459,11 +10486,11 @@ Return for lunch. The afternoon explores different Mara sectors — enormous ele
                 title: 'Masai Mara to Nairobi',
                 description: `## ~270km | Approx. 5 hrs
 
-6:00 AM — A final early morning game drive through the Mara's golden plains. The dawn chorus, elephants moving to water, and perhaps one last big cat sighting to crown the safari. Explore the Mara Triangle — lush, hilly terrain with dramatic riverine forests and exceptional predator density.
+6:00 AM — A final early morning game drive through the Mara\'s golden plains. The dawn chorus, elephants moving to water, and perhaps one last big cat sighting to crown the safari. Explore the Mara Triangle — lush, hilly terrain with dramatic riverine forests and exceptional predator density.
 
 8:30 AM — Return for breakfast, savouring the Mara one final time. Pack up and depart for Nairobi. The road winds through rolling Maasai country — green hills, homesteads, cattle, and goats. Stop in Narok for a comfort break.
 
-The highway climbs through the escarpment toward Nairobi. Arrive by early afternoon. Your driver drops you at your hotel, JKIA airport, or any location of your choice. Nine extraordinary days — from the turquoise Indian Ocean through Tsavo's red elephants, Kilimanjaro's glaciers, crystal springs, volcanic cycling, flamingo shores, to the lion prides and thundering river crossings of the Masai Mara. The complete Kenya experience from coast to capital.`,
+The highway climbs through the escarpment toward Nairobi. Arrive by early afternoon. Your driver drops you at your hotel, JKIA airport, or any location of your choice. Nine extraordinary days — from the turquoise Indian Ocean through Tsavo\'s red elephants, Kilimanjaro\'s glaciers, crystal springs, flamingo shores, to the lion prides and thundering river crossings of the Masai Mara. The complete Kenya experience from coast to capital.`,
                 meals: ['Breakfast']
             }
         ],
@@ -10505,7 +10532,7 @@ The highway climbs through the escarpment toward Nairobi. Arrive by early aftern
         ],
         featured: true,
         type: ['private'],
-        parks: ['Tsavo East National Park', 'Tsavo West National Park', 'Amboseli National Park', 'Lake Naivasha', `Hell's Gate National Park`, 'Lake Nakuru National Park', 'Masai Mara National Reserve'],
+        parks: ['Tsavo East National Park', 'Tsavo West National Park', 'Amboseli National Park', 'Lake Naivasha', 'Lake Nakuru National Park', 'Masai Mara National Reserve'],
         wildlifeHighlights: [
             'Red elephants dust-bathing in laterite soil',
             'Elephants at Mzima Springs underwater viewing',
