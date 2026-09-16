@@ -7,17 +7,14 @@ import { navigationData, NavSection, NavDropdownItem } from '@/data/navigation';
 
 /* ── CATS Palette ── */
 const C = {
-  brown: '#5a3e28',
-  gold: '#c8a45a',
-  ivory: '#faf8f0',
-  beige: '#f7f4ed',
   panel: '#3b2f1e',
-  panelHover: '#4d3e2b',
-  darkText: '#3a3027',
-  teal: '#1a7a6d',
-  tealHover: '#15655a',
-  red: '#c0392b',
-  redHover: '#a93226',
+  panelHover: '#4a3d2d',
+  gold: '#c8a45e',
+  ivory: '#faf8f3',
+  teal: '#00897b',
+  tealHover: '#00796b',
+  red: '#d32f2f',
+  redHover: '#b71c1c',
 };
 
 /* ═══════════════════  DESKTOP DROPDOWN  ═══════════════════ */
@@ -358,14 +355,14 @@ export default function Header() {
       <div className="hidden md:block border-b" style={{ background: '#fff', borderColor: '#e5e2db' }}>
         <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between h-9">
           {/* Left: phone + email */}
-          <div className="flex items-center gap-4 text-xs" style={{ color: '#555' }}>
-            <a href="tel:+254723951388" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: '#555' }}>
+          <div className="flex items-center gap-4 text-xs" style={{ color: C.panel }}>
+            <a href="tel:+254723951388" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.panel }}>
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               +254 723 951 388
             </a>
-            <a href="mailto:info@catssafaris.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: '#555' }}>
+            <a href="mailto:info@catssafaris.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" style={{ color: C.panel }}>
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
