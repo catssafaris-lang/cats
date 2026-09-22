@@ -433,37 +433,38 @@ export default function NairobiExcursionsHub() {
         </div>
       </section>
 
-      {/* ── All Excursions Grid ── */}
+
+
+      {/* ── Nairobi Excursions ── */}
       <section id="excursions" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-center font-serif text-3xl font-bold text-[#5c4d42] sm:text-4xl">
-          All Nairobi Excursions &amp; Day Trips
+          Nairobi Excursions
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-stone-600">
-          Choose the experience that fits your schedule and interests.
+          Half-day and full-day wildlife, city and cultural experiences within Nairobi &mdash; each with private 4x4 transport and expert KPSGA-certified guides.
         </p>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {allExcursions.map((safari) => (
+        <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {nairobiExcursions.map((safari) => (
             <ExcursionCard key={safari.id} safari={safari} />
           ))}
         </div>
       </section>
 
-      {/* ── Nairobi Excursions ── */}
-      <section className="mx-auto max-w-6xl px-4 pb-8">
-        <CategorySection
-          title="Nairobi Excursions"
-          intro="Half-day and full-day wildlife, city and cultural experiences within Nairobi — each with private 4x4 transport and expert guides."
-          items={nairobiExcursions}
-        />
-      </section>
-
       {/* ── Day Trips from Nairobi ── */}
-      <section className="mx-auto max-w-6xl px-4 pb-8">
-        <CategorySection
-          title="Day Trips from Nairobi"
-          intro="Full-day escapes to Kenya's iconic national parks and conservation sanctuaries — depart early, return by evening."
-          items={dayTripsFromNairobi}
-        />
+      <section className="bg-[#2d2a26] px-4 py-16">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center font-serif text-3xl font-bold text-white sm:text-4xl">
+            Day Trips from Nairobi
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-stone-300">
+            Full-day escapes to Kenya&apos;s iconic national parks and conservation sanctuaries &mdash; depart early morning, return by evening.
+          </p>
+          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {dayTripsFromNairobi.map((safari) => (
+              <ExcursionCard key={safari.id} safari={safari} />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ── Why Choose C.A.T.S ── */}
