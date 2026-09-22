@@ -118,37 +118,21 @@ export default function ContactForm() {
       message: String(data.get('message') || ''),
     };
 
-    const subject = `[C.A.T.S Contact] ${fields.interest || 'General Enquiry'} — ${fields.name}`;
-    const body = [
-      `Name: ${fields.name}`,
-      `Email: ${fields.email}`,
-      `Nationality: ${fields.nationality}`,
-      `Phone: ${fields.phone}`,
-      `Residency: ${fields.residency}`,
-      `Interest: ${fields.interest}`,
-      `Number of Travellers: ${fields.travellers}`,
-      `Preferred Travel Date: ${fields.travelDate}`,
-      `Budget Range: ${fields.budget}`,
-      '',
-      'Message:',
-      fields.message,
-    ].join('\n');
-
     const formData = new FormData();
-    formData.append('_subject', `[C.A.T.S Contact] ${interest || 'General Inquiry'} — ${name}`);
+    formData.append('_subject', `[C.A.T.S Contact] ${fields.interest || 'General Inquiry'} — ${fields.name}`);
     formData.append('_template', 'table');
     formData.append('_captcha', 'false');
     formData.append('_autoresponse', `Thank you for contacting Collective African Tours & Safaris. We have received your inquiry and will respond shortly.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`);
-    formData.append('Full Name', name);
-    formData.append('email', email);
-    formData.append('Nationality', nationality);
-    formData.append('Phone / WhatsApp', `${countryCode} ${phone}`);
-    formData.append('Residency', residency);
-    formData.append('What Excites You Most', interest || 'Not specified');
-    formData.append('Number of Travellers', travellers);
-    formData.append('Preferred Travel Date', travelDate);
-    formData.append('Budget Range', budget);
-    if (message) formData.append('Message', message);
+    formData.append('Full Name', fields.name);
+    formData.append('email', fields.email);
+    formData.append('Nationality', fields.nationality);
+    formData.append('Phone / WhatsApp', fields.phone);
+    formData.append('Residency', fields.residency);
+    formData.append('What Excites You Most', fields.interest || 'Not specified');
+    formData.append('Number of Travellers', fields.travellers);
+    formData.append('Preferred Travel Date', fields.travelDate);
+    formData.append('Budget Range', fields.budget);
+    if (fields.message) formData.append('Message', fields.message);
     formData.append('Submitted', new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }));
 
     try {
