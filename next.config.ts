@@ -69,7 +69,17 @@ const nextConfig: NextConfig = {
       // Deep legacy routes
       {
         source: '/kenya-safaris/nairobi-safari-tours/:slug*',
-        destination: '/kenya-safaris/nairobi-excursions',
+        destination: '/nairobi-excursions-day-trips',
+        permanent: true,
+      },
+      {
+        source: "/kenya-safaris/nairobi-excursions",
+        destination: "/nairobi-excursions-day-trips",
+        permanent: true,
+      },
+      {
+        source: "/kenya-safaris/nairobi-day-trips",
+        destination: "/nairobi-excursions-day-trips",
         permanent: true,
       },
     ];

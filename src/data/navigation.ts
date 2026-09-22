@@ -36,8 +36,6 @@ export const navigationData: NavSection[] = [
       { name: 'Kenya Flight Safaris', href: '/kenya-flight-safaris' },
       { name: 'Group Tours from Nairobi', href: '/kenya-safaris/group-tours-nairobi' },
       { name: 'Group Tours from Kenya Beach', href: '/kenya-safaris/group-tours-beach' },
-      { name: 'Nairobi Excursions', href: '/kenya-safaris/nairobi-excursions' },
-      { name: 'Nairobi Day Trips', href: '/kenya-safaris/nairobi-day-trips' },
       { name: 'Nairobi Excursions & Day Trips', href: '/nairobi-excursions-day-trips' },
       { name: 'Nairobi to Diani Beach Tours', href: '/kenya-safaris/nairobi-to-diani' },
       { name: 'Diani One Day Excursions & Safaris', href: '/kenya-safaris/diani-excursions' },
