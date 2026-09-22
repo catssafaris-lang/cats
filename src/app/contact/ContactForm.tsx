@@ -134,42 +134,22 @@ export default function ContactForm() {
       fields.message,
     ].join('\n');
 
-    const htmlBody = `
-<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#3b2f1e">
-  <div style="background:#3b2f1e;padding:20px 24px;border-radius:8px 8px 0 0">
-    <h2 style="margin:0;color:#f7f4ed;font-size:18px">[C.A.T.S Contact] ${fields.interest || 'General Enquiry'}</h2>
-    <p style="margin:6px 0 0;color:#c4a96a;font-size:14px">New enquiry from ${fields.name}</p>
-  </div>
-  <div style="border:1px solid #e5e0d5;border-top:none;padding:24px;border-radius:0 0 8px 8px">
-    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">CUSTOMER DETAILS</h3>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Name:</strong> ${fields.name}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Email:</strong> <a href="mailto:${fields.email}" style="color:#a68b52">${fields.email}</a></p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Nationality:</strong> ${fields.nationality}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Phone:</strong> <a href="https://wa.me/${fields.phone.replace(/[^0-9]/g, '')}" style="color:#a68b52">${fields.phone}</a></p>
-    <p style="margin:0 0 16px;font-size:14px"><strong>Residency:</strong> ${fields.residency || 'Not specified'}</p>
-
-    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">TRIP INTERESTS</h3>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Interest:</strong> ${fields.interest || 'Not specified'}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Travellers:</strong> ${fields.travellers || 'Not specified'}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Travel Date:</strong> ${fields.travelDate || 'Flexible'}</p>
-    <p style="margin:0 0 16px;font-size:14px"><strong>Budget:</strong> ${fields.budget || 'Not specified'}</p>
-
-    ${fields.message ? `<h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">MESSAGE</h3><p style="margin:0;font-size:14px;white-space:pre-wrap">${fields.message}</p>` : ''}
-
-    <div style="margin-top:20px;padding-top:12px;border-top:1px solid #e5e0d5;font-size:12px;color:#8c8478">
-      <p style="margin:0">Source: <a href="https://www.catssafaris.com/contact" style="color:#a68b52">Contact Us Page</a></p>
-    </div>
-  </div>
-</div>`;
-
     const formData = new FormData();
-    formData.append('name', fields.name);
-    formData.append('email', fields.email);
-    formData.append('_subject', subject);
-    formData.append('message', htmlBody);
-    formData.append('_template', 'box');
+    formData.append('_subject', `[C.A.T.S Contact] ${interest || 'General Inquiry'} — ${name}`);
+    formData.append('_template', 'table');
     formData.append('_captcha', 'false');
-    formData.append('_autoresponse', `Thank you for contacting Collective African Tours & Safaris (C.A.T.S). We have received your enquiry and will get back to you within 24 hours.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`);
+    formData.append('_autoresponse', `Thank you for contacting Collective African Tours & Safaris. We have received your inquiry and will respond shortly.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`);
+    formData.append('Full Name', name);
+    formData.append('email', email);
+    formData.append('Nationality', nationality);
+    formData.append('Phone / WhatsApp', `${countryCode} ${phone}`);
+    formData.append('Residency', residency);
+    formData.append('What Excites You Most', interest || 'Not specified');
+    formData.append('Number of Travellers', travellers);
+    formData.append('Preferred Travel Date', travelDate);
+    formData.append('Budget Range', budget);
+    if (message) formData.append('Message', message);
+    formData.append('Submitted', new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }));
 
     try {
       const res = await fetch('https://formsubmit.co/info@catssafaris.com', {

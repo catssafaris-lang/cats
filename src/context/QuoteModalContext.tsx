@@ -221,56 +221,29 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
       ? `Children — Residents: ${childrenResident}, Citizens: ${childrenCitizen}, Non-Residents: ${childrenNonResident} (Total: ${totalChildren})\nChild Ages: ${childAges.map((c, i) => `Child ${i + 1}: Age ${c.age} (${c.residency})`).join(', ')}`
       : 'Children: None';
 
-    const urlLink = `<a href="${packageUrl}" style="color:#a68b52;text-decoration:underline">${packageUrl}</a>`;
-    const emailLink = `<a href="mailto:${email}" style="color:#a68b52;text-decoration:underline">${email}</a>`;
-    const waLink = `<a href="https://wa.me/${(countryCode + phone).replace(/[^0-9]/g, '')}" style="color:#a68b52;text-decoration:underline">${countryCode} ${phone}</a>`;
-
-    const htmlBody = `
-<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#3b2f1e">
-  <div style="background:#3b2f1e;padding:20px 24px;border-radius:8px 8px 0 0">
-    <h2 style="margin:0;color:#f7f4ed;font-size:18px">${isExcursion ? 'Nairobi Excursion Inquiry' : 'Safari Booking Inquiry'}</h2>
-    <p style="margin:6px 0 0;color:#c4a96a;font-size:14px">${packageName}</p>
-  </div>
-  <div style="border:1px solid #e5e0d5;border-top:none;padding:24px;border-radius:0 0 8px 8px">
-    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">PACKAGE</h3>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Safari:</strong> ${packageName}</p>
-    <p style="margin:0 0 16px;font-size:14px"><strong>Page:</strong> ${urlLink}</p>
-
-    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">CUSTOMER DETAILS</h3>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Name:</strong> ${fullName}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Email:</strong> ${emailLink}</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Nationality:</strong> ${nationality}</p>
-    <p style="margin:0 0 16px;font-size:14px"><strong>Phone / WhatsApp:</strong> ${waLink}</p>
-
-    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">TRIP DETAILS</h3>
-    <p style="margin:0 0 4px;font-size:14px"><strong>${isDayTrip ? 'Preferred Date' : 'Dates'}:</strong> ${isDayTrip ? safariDate : `${startDate} — ${endDate}`}</p>
-    ${timeInfo ? `<p style="margin:0 0 4px;font-size:14px"><strong>Time Slot:</strong> ${safariTimeSlot}</p>` : ''}
-    <p style="margin:0 0 4px;font-size:14px"><strong>Adults:</strong> Residents: ${adultsResident}, Citizens: ${adultsCitizen}, Non-Residents: ${adultsNonResident} (Total: ${totalAdults})</p>
-    <p style="margin:0 0 4px;font-size:14px"><strong>Children:</strong> ${totalChildren > 0 ? `Residents: ${childrenResident}, Citizens: ${childrenCitizen}, Non-Residents: ${childrenNonResident} (Total: ${totalChildren})` : 'None'}</p>
-    ${totalChildren > 0 ? `<p style="margin:0 0 4px;font-size:14px"><strong>Child Ages:</strong> ${childAges.map((c, i) => `Child ${i + 1}: Age ${c.age} (${c.residency})`).join(', ')}</p>` : ''}
-    ${accommodationTier ? `<p style="margin:0 0 4px;font-size:14px"><strong>Accommodation:</strong> ${accommodationTier}</p>` : ''}
-
-    ${message ? `<h3 style="margin:16px 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">SPECIAL REQUESTS</h3><p style="margin:0;font-size:14px">${message}</p>` : ''}
-
-    <div style="margin-top:20px;padding-top:12px;border-top:1px solid #e5e0d5;font-size:12px;color:#8c8478">
-      <p style="margin:0">Source: <a href="${packageUrl}" style="color:#a68b52">${packageUrl}</a></p>
-      <p style="margin:4px 0 0">Submitted: ${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' })}</p>
-    </div>
-  </div>
-</div>`.trim();
-
     const subject = isExcursion
       ? `New Nairobi Excursion Inquiry — ${packageName}`
       : `Safari Booking Inquiry — ${packageName}`;
 
     const formData = new FormData();
-    formData.append('name', fullName);
-    formData.append('email', email);
     formData.append('_subject', subject);
-    formData.append('message', htmlBody);
-    formData.append('_template', 'box');
+    formData.append('_template', 'table');
     formData.append('_captcha', 'false');
     formData.append('_autoresponse', `Thank you for your inquiry about ${packageName}. The C.A.T.S team has received your request and will get back to you shortly with availability and booking details.\n\nCollective African Tours & Safaris\n+254 723 951 388\nwww.catssafaris.com`);
+    formData.append('Safari Package', packageName);
+    formData.append('Package URL', packageUrl);
+    formData.append('Full Name', fullName);
+    formData.append('email', email);
+    formData.append('Nationality', nationality);
+    formData.append('Phone / WhatsApp', `${countryCode} ${phone}`);
+    formData.append(isDayTrip ? 'Preferred Date' : 'Safari Dates', isDayTrip ? safariDate : `${startDate} to ${endDate}`);
+    if (timeInfo) formData.append('Time Slot', safariTimeSlot);
+    formData.append('Adults', `Residents: ${adultsResident}, Citizens: ${adultsCitizen}, Non-Residents: ${adultsNonResident} (Total: ${totalAdults})`);
+    formData.append('Children', totalChildren > 0 ? `Residents: ${childrenResident}, Citizens: ${childrenCitizen}, Non-Residents: ${childrenNonResident} (Total: ${totalChildren})` : 'None');
+    if (totalChildren > 0) formData.append('Child Ages', childAges.map((c, i) => `Child ${i + 1}: Age ${c.age} (${c.residency})`).join(', '));
+    if (accommodationTier) formData.append('Accommodation', accommodationTier);
+    if (message) formData.append('Special Requests', message);
+    formData.append('Submitted', new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }));
 
     const emailEndpoint = isExcursion
       ? 'https://formsubmit.co/excursions@catssafaris.com'
