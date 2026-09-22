@@ -127,10 +127,56 @@ export default function ContactForm() {
       fields.message,
     ].join('\n');
 
-    // Use mailto as form action (plain text to info@catssafaris.com)
-    const mailtoUrl = `mailto:info@catssafaris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
-    setSent(true);
+    const htmlBody = `
+<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#3b2f1e">
+  <div style="background:#3b2f1e;padding:20px 24px;border-radius:8px 8px 0 0">
+    <h2 style="margin:0;color:#f7f4ed;font-size:18px">[C.A.T.S Contact] ${fields.interest || 'General Enquiry'}</h2>
+    <p style="margin:6px 0 0;color:#c4a96a;font-size:14px">New enquiry from ${fields.name}</p>
+  </div>
+  <div style="border:1px solid #e5e0d5;border-top:none;padding:24px;border-radius:0 0 8px 8px">
+    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">CUSTOMER DETAILS</h3>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Name:</strong> ${fields.name}</p>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Email:</strong> <a href="mailto:${fields.email}" style="color:#a68b52">${fields.email}</a></p>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Nationality:</strong> ${fields.nationality}</p>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Phone:</strong> <a href="https://wa.me/${fields.phone.replace(/[^0-9]/g, '')}" style="color:#a68b52">${fields.phone}</a></p>
+    <p style="margin:0 0 16px;font-size:14px"><strong>Residency:</strong> ${fields.residency || 'Not specified'}</p>
+
+    <h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">TRIP INTERESTS</h3>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Interest:</strong> ${fields.interest || 'Not specified'}</p>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Travellers:</strong> ${fields.travellers || 'Not specified'}</p>
+    <p style="margin:0 0 4px;font-size:14px"><strong>Travel Date:</strong> ${fields.travelDate || 'Flexible'}</p>
+    <p style="margin:0 0 16px;font-size:14px"><strong>Budget:</strong> ${fields.budget || 'Not specified'}</p>
+
+    ${fields.message ? `<h3 style="margin:0 0 12px;color:#a68b52;font-size:15px;border-bottom:1px solid #e5e0d5;padding-bottom:8px">MESSAGE</h3><p style="margin:0;font-size:14px;white-space:pre-wrap">${fields.message}</p>` : ''}
+
+    <div style="margin-top:20px;padding-top:12px;border-top:1px solid #e5e0d5;font-size:12px;color:#8c8478">
+      <p style="margin:0">Source: <a href="https://www.catssafaris.com/contact" style="color:#a68b52">Contact Us Page</a></p>
+    </div>
+  </div>
+</div>`;
+
+    const formData = new FormData();
+    formData.append('name', fields.name);
+    formData.append('email', fields.email);
+    formData.append('_subject', subject);
+    formData.append('message', htmlBody);
+    formData.append('_template', 'box');
+    formData.append('_captcha', 'false');
+    formData.append('_autoresponse', `Thank you for contacting Collective African Tours & Safaris (C.A.T.S). We have received your enquiry and will get back to you within 24 hours.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`);
+
+    try {
+      const res = await fetch('https://formsubmit.co/info@catssafaris.com', {
+        method: 'POST',
+        body: formData,
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        alert('Submission failed. Please try again or email us directly at info@catssafaris.com');
+      }
+    } catch {
+      alert('Network error. Please try again or email us directly at info@catssafaris.com');
+    }
     setSending(false);
   }
 
@@ -141,7 +187,7 @@ export default function ContactForm() {
           <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
         </div>
         <h3 className="font-playfair text-2xl font-bold text-[var(--forest-canopy)]">Thank you!</h3>
-        <p className="mt-2 text-stone-600">Your email app should open with the enquiry ready to send. If it didn&apos;t, email us directly at <a href="mailto:info@catssafaris.com" className="font-semibold text-[#a68b52] hover:underline">info@catssafaris.com</a></p>
+        <p className="mt-2 text-stone-600">Your enquiry has been sent to our team. We&apos;ll get back to you within 24 hours. You can also reach us at <a href="mailto:info@catssafaris.com" className="font-semibold text-[#a68b52] hover:underline">info@catssafaris.com</a></p>
         <button type="button" onClick={() => setSent(false)} className="mt-6 text-sm font-semibold text-[#a68b52] hover:underline">Send another enquiry</button>
       </div>
     );
@@ -269,7 +315,7 @@ export default function ContactForm() {
       </button>
 
       <p className="text-center text-xs text-stone-400">
-        Your enquiry will be sent to <span className="font-medium">info@catssafaris.com</span>. We typically respond within 24 hours.
+        Your enquiry goes directly to our team at info@catssafaris.com. We typically respond within 24 hours.
       </p>
     </form>
   );

@@ -47,9 +47,21 @@ function pickByIds(ids: string[]): Safari[] {
     .filter((s): s is Safari => Boolean(s));
 }
 
-const wildlifeSafaris = pickByIds(['nairobi-np-private', 'nairobi-np-group', 'nairobi-city-tour']);
-const conservationSafaris = pickByIds(['ol-pejeta-day', 'naivasha-hellsgate-day']);
-const fullDaySafaris = pickByIds(['amboseli-day', 'nakuru-naivasha-day', 'nairobi-into-africa']);
+/* ── Nairobi Excursions ── */
+const nairobiExcursions = pickByIds([
+  'nairobi-np-private',
+  'nairobi-np-group',
+  'nairobi-city-tour',
+  'nairobi-into-africa',
+]);
+
+/* ── Day Trips from Nairobi ── */
+const dayTripsFromNairobi = pickByIds([
+  'amboseli-day',
+  'naivasha-hellsgate-day',
+  'ol-pejeta-day',
+  'nakuru-naivasha-day',
+]);
 
 const privateTour = getById('nairobi-np-private');
 const groupTour = getById('nairobi-np-group');
@@ -436,22 +448,21 @@ export default function NairobiExcursionsHub() {
         </div>
       </section>
 
-      {/* ── Category Sections ── */}
+      {/* ── Nairobi Excursions ── */}
       <section className="mx-auto max-w-6xl px-4 pb-8">
         <CategorySection
-          title="Wildlife & Safari"
-          intro="Experience Africa's wildest capital through the eyes of expert guides."
-          items={wildlifeSafaris}
+          title="Nairobi Excursions"
+          intro="Half-day and full-day wildlife, city and cultural experiences within Nairobi — each with private 4x4 transport and expert guides."
+          items={nairobiExcursions}
         />
+      </section>
+
+      {/* ── Day Trips from Nairobi ── */}
+      <section className="mx-auto max-w-6xl px-4 pb-8">
         <CategorySection
-          title="Conservation & Nature"
-          intro="Visit Kenya's leading conservation sanctuaries and dramatic Rift Valley landscapes."
-          items={conservationSafaris}
-        />
-        <CategorySection
-          title="Full-Day Kenya Adventures"
-          intro="Venture beyond Nairobi for a full day of iconic Kenya wildlife and scenery."
-          items={fullDaySafaris}
+          title="Day Trips from Nairobi"
+          intro="Full-day escapes to Kenya's iconic national parks and conservation sanctuaries — depart early, return by evening."
+          items={dayTripsFromNairobi}
         />
       </section>
 
