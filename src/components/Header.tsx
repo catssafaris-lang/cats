@@ -187,7 +187,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             Transport Solutions
           </Link>
           <Link
-            href="/flight-search"
+            href="/flights"
             onClick={onClose}
             className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider text-white transition-colors"
             style={{ background: C.teal }}
@@ -382,7 +382,7 @@ export default function Header() {
               Transport Solutions
             </Link>
             <Link
-              href="/flight-search"
+              href="/flights"
               className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider border transition-colors"
               style={{ background: C.teal, color: C.topBarText, border: 'none' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}

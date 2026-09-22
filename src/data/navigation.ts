@@ -50,6 +50,7 @@ export const navigationData: NavSection[] = [
   { name: 'Tanzania Safaris', href: '/tanzania-safaris' },
   { name: 'Kenya-Tanzania Safaris', href: '/kenya-tanzania-safaris' },
   { name: 'Mountain Climbing', href: '/mountain-climbing' },
+  { name: 'Nairobi Excursions & Day Trips', href: '/nairobi-excursions-day-trips' },
   {
     name: 'Experiences',
     href: '/holiday-experiences',
@@ -92,7 +93,7 @@ export const navigationData: NavSection[] = [
       { name: 'Payment Methods', href: '/payment-methods' },
     ],
   },
-  { name: 'Flights', href: '/flights' },
+  { name: 'Flight Bookings', href: '/flights' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
