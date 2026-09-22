@@ -3291,7 +3291,7 @@ The Masai Mara sits at 1,500–2,000m altitude, giving it a pleasant, temperate 
 - **Fly or drive?** It's a 5–6 hour drive from Nairobi or a 45-minute flight. We recommend flying for comfort, driving for the adventure and scenery.
 - **How long to stay?** Minimum 3 nights to experience the Mara properly. 5–7 nights is ideal to maximise game drive time and increase your chances of witnessing river crossings.
 - **What to pack:** Neutral-coloured clothes, layers for cool mornings, sunscreen, binoculars, and a good camera with a zoom lens.
-- **Combine with other parks:** [Amboseli](/destinations/amboseli-national-park) (Mt Kilimanjaro views), [Tsavo](/destinations/tsavo-east-national-park) (red elephants), [Samburu](/destinations/samburu-national-reserve) (rare northern species) all pair beautifully with the Mara.
+- **Combine with other parks:** [Amboseli](/kenya-safaris/amboseli) (Mt Kilimanjaro views), [Tsavo](/kenya-safaris) (red elephants), [Samburu](/kenya-safaris) (rare northern species) all pair beautifully with the Mara.
 - **Visa:** Most nationalities can get an eTA online before travel. Apply at [etakenya.go.ke](https://www.etakenya.go.ke) at least 2 weeks before departure.
 
 ---
@@ -3416,7 +3416,7 @@ The **Land Cruiser** is the undisputed king of the African bush. Our safari-spec
 - Two-way radio and charging ports
 - Seating for 4–6 passengers with window seats for everyone
 
-Perfect for [Masai Mara safaris](/blog/masai-mara-safari-complete-guide), [Amboseli](/destinations/amboseli-national-park), [Samburu](/destinations/samburu-national-reserve), and all major national parks.
+Perfect for [Masai Mara safaris](/blog/masai-mara-safari-complete-guide), [Amboseli](/kenya-safaris/amboseli), [Samburu](/kenya-safaris), and all major national parks.
 
 ### Safari Minivan (Tour Van)
 
@@ -3746,7 +3746,7 @@ When you book through C.A.T.S, our [mountain climbing packages](/mountain-climbi
 - **Pre-climb hotel accommodation** in Moshi or Arusha
 - **Oxygen and first aid equipment**
 
-Optional extras include extra acclimatisation days, upgraded tents, and post-climb safaris to [Serengeti](/destinations/serengeti-national-park), [Ngorongoro Crater](/blog/ngorongoro-crater-natural-wonder), or [Amboseli](/destinations/amboseli-national-park).
+Optional extras include extra acclimatisation days, upgraded tents, and post-climb safaris to [Serengeti](/destinations/serengeti-national-park), [Ngorongoro Crater](/blog/ngorongoro-crater-natural-wonder), or [Amboseli](/kenya-safaris/amboseli).
 
 ---
 
@@ -3841,7 +3841,7 @@ Budget travellers can find excellent camps just outside the reserve gates, offer
 
 ## Amboseli: Kilimanjaro Views & Elephant Herds
 
-[Amboseli National Park](/destinations/amboseli-national-park) is famous for its **massive elephant herds** and stunning views of Mount Kilimanjaro rising behind the savannah. Accommodation options include:
+[Amboseli National Park](/kenya-safaris/amboseli) is famous for its **massive elephant herds** and stunning views of Mount Kilimanjaro rising behind the savannah. Accommodation options include:
 
 ### Luxury
 Premium lodges and camps offer unobstructed Kilimanjaro views from your room or tent. Swimming pools, spa facilities, and gourmet dining are standard at this level.
@@ -3858,7 +3858,7 @@ Budget camps and group-friendly lodges near the park gates offer basic comfort w
 
 ## Samburu: Where the Wild North Begins
 
-[Samburu National Reserve](/destinations/samburu-national-reserve) in Kenya's rugged north is home to the "Samburu Special Five" — species found nowhere else in southern Kenya: **Grevy's zebra, reticulated giraffe, gerenuk, Beisa oryx**, and **Somali ostrich**.
+[Samburu National Reserve](/kenya-safaris) in Kenya's rugged north is home to the "Samburu Special Five" — species found nowhere else in southern Kenya: **Grevy's zebra, reticulated giraffe, gerenuk, Beisa oryx**, and **Somali ostrich**.
 
 ### Accommodation Highlights
 
@@ -4069,7 +4069,7 @@ Several scheduled and charter flights operate between Nairobi's Wilson Airport a
 
 - **Day trip from Nairobi:** Possible but long (4–5 hours each way). Best done as a guided day trip departing very early. Good for time-limited travellers.
 - **2–3 night safari:** The recommended duration. Allows morning and afternoon game drives, optional activities, and time to soak in the atmosphere.
-- **Multi-park itinerary:** Combine Amboseli with [Tsavo West](/destinations/tsavo-west-national-park) (3–4 hours) or continue to the coast.
+- **Multi-park itinerary:** Combine Amboseli with [Tsavo West](/kenya-safaris) (3–4 hours) or continue to the coast.
 
 ---
 

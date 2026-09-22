@@ -130,7 +130,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                             Back to All Experiences
                         </Link>
-                        <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight font-serif"
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 drop-shadow-2xl leading-tight font-serif"
                             style={{ fontFamily: 'var(--font-playfair)' }}
                         >
                             {experience.title}
@@ -159,7 +159,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-[#a68b52]/20 rounded-full -mr-32 -mt-32 blur-3xl" />
                                 <div className="relative z-10">
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
-                                        <h3 className="text-3xl font-bold font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Current Schedule & Fares</h3>
+                                        <h3 className="text-2xl font-bold font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Current Schedule & Fares</h3>
                                         <a 
                                             href="https://metickets.krc.co.ke/" 
                                             target="_blank" 
@@ -228,13 +228,13 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl shadow-stone-200/50 border border-stone-100 overflow-hidden">
                             <div className="flex items-center gap-4 mb-8">
                                 <div className="w-12 h-1 bg-[#a68b52] rounded-full" />
-                                <h2 className="text-3xl font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Overview</h2>
+                                <h2 className="text-2xl font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Overview</h2>
                             </div>
                             <div className="prose prose-stone max-w-none overflow-hidden">
-                                <p className="text-base sm:text-xl text-stone-600 font-medium mb-8 leading-relaxed italic">
+                                <p className="text-base text-stone-600 font-medium mb-8 leading-relaxed italic">
                                     {experience.description}
                                 </p>
-                                <div className="text-stone-700 leading-relaxed text-base sm:text-lg break-words" style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
+                                <div className="text-stone-700 leading-relaxed text-base break-words" style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
                                     {(() => {
                                         if (!experience.detailedDescription) return <p>{experience.description}</p>;
 
@@ -541,7 +541,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Curated Itineraries</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Sample Programmes
                             </h2>
                             <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
@@ -632,7 +632,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Handpicked Partners</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Our Favourite Wellness Lodges & Camps
                             </h2>
                             <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
@@ -700,7 +700,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-4xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Your Questions Answered</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Frequently Asked Questions
                             </h2>
                             <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
@@ -742,7 +742,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                             <div className="max-w-2xl">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                     Experience Pairings
                                 </h2>
                                 <p className="text-lg text-stone-600">
