@@ -67,6 +67,7 @@ interface ChildAge {
 interface ModalOptions {
   isDayTrip?: boolean;
   isNNP?: boolean;
+  isExcursion?: boolean;
   highlights?: string[];
 }
 
@@ -115,6 +116,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
   const [packageUrl, setPackageUrl] = useState('');
   const [isDayTrip, setIsDayTrip] = useState(false);
   const [isNNP, setIsNNP] = useState(false);
+  const [isExcursion, setIsExcursion] = useState(false);
   const [tourHighlights, setTourHighlights] = useState<string[]>([]);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -175,6 +177,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
     setPackageUrl(url);
     setIsDayTrip(options?.isDayTrip ?? false);
     setIsNNP(options?.isNNP ?? false);
+    setIsExcursion(options?.isExcursion ?? false);
     setTourHighlights(options?.highlights ?? []);
     setIsOpen(true);
     setSubmitted(false);
@@ -238,7 +241,9 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
       message ? `Special Requests: ${message}` : '',
     ].filter(Boolean).join('\n');
 
-    const subject = `Safari Quote Request — ${packageName} | ${packageUrl}`;
+    const subject = isExcursion
+      ? `New Nairobi Excursion Inquiry — ${packageName} | ${packageUrl}`
+      : `Safari Quote Request — ${packageName} | ${packageUrl}`;
 
     const formData = new FormData();
     formData.append('name', fullName);
@@ -248,8 +253,12 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
     formData.append('_template', 'table');
     formData.append('_captcha', 'false');
 
+    const emailEndpoint = isExcursion
+      ? 'https://formsubmit.co/excursions@catssafaris.com'
+      : 'https://formsubmit.co/info@catssafaris.com';
+
     try {
-      await fetch('https://formsubmit.co/info@catssafaris.com', {
+      await fetch(emailEndpoint, {
         method: 'POST',
         body: formData,
       });
@@ -302,7 +311,11 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                   <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <h3 className="text-xl font-bold text-[#5c4d42] font-serif">Quote Request Sent</h3>
-                <p className="mt-2 text-stone-600">Our safari specialists will get back to you within 24 hours with a personalised itinerary and pricing.</p>
+                <p className="mt-2 text-stone-600">
+                  {isExcursion
+                    ? 'Thank you for your inquiry. The C.A.T.S excursions team has received your request. A member of the team will review availability and respond with the relevant details.'
+                    : 'Our safari specialists will get back to you within 24 hours with a personalised itinerary and pricing.'}
+                </p>
                 <button onClick={closeModal} className="mt-6 rounded-xl bg-[#a68b52] px-8 py-3 font-semibold text-white hover:bg-[#8a7343] transition">Close</button>
               </div>
             ) : (

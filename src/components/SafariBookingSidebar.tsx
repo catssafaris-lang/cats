@@ -20,11 +20,13 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
 
   const isDayTrip = Array.isArray(safari.type) && safari.type.includes('day-trip');
   const isNNP = safari.slug.includes('nairobi-national-park');
+  const isExcursion = Array.isArray(safari.type) && safari.type.includes('day-trip') && safari.type.includes('nairobi-departure');
 
   const handleOpenModal = () => {
     openModal(safari.title, `https://www.catssafaris.com/safari/${safari.slug}`, {
       isDayTrip,
       isNNP,
+      isExcursion,
       highlights: isDayTrip ? (safari.highlights || []) : [],
     });
   };
