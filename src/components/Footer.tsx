@@ -1,20 +1,80 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const destinations = [
-  { name: 'Kenya Safaris', href: '/kenya-safaris' }, { name: 'Tanzania Safaris', href: '/tanzania-safaris' }, { name: 'Kenya & Uganda', href: '/kenya-uganda-safaris' }, { name: 'Kenya & Rwanda', href: '/kenya-rwanda-safaris' }, { name: 'Beach Holidays', href: '/kenya-safaris?type=beach' }, { name: 'Mountain Climbing', href: '/mountain-climbing' },
+  { name: 'Kenya Safaris', href: '/kenya-safaris' },
+  { name: 'Tanzania Safaris', href: '/tanzania-safaris' },
+  { name: 'Beach Holidays', href: '/kenya-safaris/kenya-and-diani' },
+  { name: 'Mountain Climbing', href: '/mountain-climbing' },
+  { name: 'Kenya-Tanzania Safaris', href: '/kenya-tanzania-safaris' },
 ];
 const experiences = [
-  { name: 'Bird Watching', href: '/holiday-experiences/bird-watching-safaris-in-kenya-and-tanzania' }, { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' }, { name: 'Wellness Travel', href: '/holiday-experiences/wellness-travel' }, { name: 'Flight Safaris', href: '/kenya-flight-safaris' }, { name: 'Transport Solutions', href: '/transport-solutions' },
+  { name: 'Great Migration Safaris', href: '/kenya-safaris/masai-mara' },
+  { name: 'Family Safaris', href: '/kenya-safaris/short-safaris' },
+  { name: 'Honeymoon Safaris', href: '/holiday-experiences' },
+  { name: 'Cultural Safaris', href: '/holiday-experiences/cultural-safaris' },
+  { name: 'Day Trips from Nairobi', href: '/kenya-safaris/nairobi-excursions' },
 ];
 const quickLinks = [
-  { name: 'About Us', href: '/about' }, { name: 'Contact Us', href: '/contact' }, { name: 'Blog', href: '/blog' }, { name: 'Kenya Lodges', href: '/travel-info/kenya-lodges' }, { name: 'Tanzania Lodges', href: '/travel-info/tanzania-lodges' }, { name: 'Payment Methods', href: '/payment-methods' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Contact Us', href: '/contact' },
+  { name: 'FAQs', href: '/faqs' },
+  { name: 'Terms & Conditions', href: '/terms' },
+  { name: 'Blog', href: '/blog' },
 ];
-function FacebookIcon() { return <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.55.45-1 1-1Z" /></svg>; }
-function InstagramIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" /></svg>; }
-function PhoneIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.23a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" /></svg>; }
-function MailIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>; }
-function AcaciaLogo() { return <svg viewBox="0 0 48 48" className="h-10 w-10 shrink-0" aria-hidden="true"><path fill="var(--cats-green)" d="M24 3c-1.1 3.6-2.3 6-4.6 8-1.9-1.4-4.4-2-6.9-1.2 1.1 2.1 3 3.5 5.2 4-2.6.7-4.9 2.5-6.2 5 2.6.5 5.2-.1 7.3-1.6-.5 2.6.1 5.4 1.8 7.6-2.9-.2-5.8.9-7.8 3.1 2.7 1.1 5.7.9 8.2-.4-1.2 2.4-1.3 5.3-.1 7.9 2.1-1.4 3.5-3.5 4.1-5.9.6 2.4 2 4.5 4.1 5.9 1.2-2.6 1.1-5.5-.1-7.9 2.5 1.3 5.5 1.5 8.2.4-2-2.2-4.9-3.3-7.8-3.1 1.7-2.2 2.3-5 1.8-7.6 2.1 1.5 4.7 2.1 7.3 1.6-1.3-2.5-3.6-4.3-6.2-5 2.2-.5 4.1-1.9 5.2-4-2.5-.8-5-.2-6.9 1.2-2.3-2-3.5-4.4-4.6-8Z" /><rect x="22.2" y="24" width="1.6" height="21" fill="var(--cats-green)" /></svg>; }
 
-function Column({ title, links }: { title: string; links: { name: string; href: string }[] }) { return <div><h3 className="mb-5 text-lg font-bold text-white">{title}<span className="mt-2 block h-0.5 w-10 bg-[var(--golden-savannah)]" /></h3><ul className="space-y-3">{links.map((item) => <li key={item.name}><Link href={item.href} className="text-sm text-gray-400 transition hover:text-[var(--golden-savannah)]">{item.name}</Link></li>)}</ul></div>; }
+function Column({ title, links }: { title: string; links: { name: string; href: string }[] }) {
+  return (
+    <div>
+      <h3 className="mb-5 text-sm font-bold text-white">{title}</h3>
+      <ul className="space-y-3">
+        {links.map(item => (
+          <li key={item.name}><Link href={item.href} className="text-sm text-stone-400 transition hover:text-[var(--golden-savannah)]">{item.name}</Link></li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
-export default function Footer() { return <footer className="relative bg-[var(--cats-green)] text-white"><svg className="absolute -top-px left-0 h-12 w-full -translate-y-full" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path fill="var(--cats-cream)" d="M0 25C200 65 400 65 600 25s400-40 600 0V60H0Z" /></svg><div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 pb-12 pt-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 lg:px-8"><div><Link href="/" className="mb-5 flex items-center gap-3"><AcaciaLogo /><span className="text-xl font-bold">Collective African Tours &amp; Safaris</span></Link><p className="max-w-xs text-sm leading-6 text-gray-400">Collective African Tours &amp; Safaris — 15 years of crafting unforgettable safari experiences across East Africa.</p><div className="mt-5 flex gap-3"><a href="https://www.facebook.com/CATSAFARISKENYA" aria-label="Facebook" className="text-gray-400 hover:text-[var(--golden-savannah)]"><FacebookIcon /></a><a href="https://www.instagram.com/catssafaris" aria-label="Instagram" className="text-gray-400 hover:text-[var(--golden-savannah)]"><InstagramIcon /></a></div></div><Column title="Destinations" links={destinations} /><Column title="Safari Experiences" links={experiences} /><div><Column title="Quick Links" links={quickLinks} /><div className="mt-7 space-y-3 text-sm text-gray-400"><a href="tel:+254723951388" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><PhoneIcon />+254 723 951 388</a><a href="mailto:info@catssafaris.com" className="flex items-center gap-2 hover:text-[var(--golden-savannah)]"><MailIcon />info@catssafaris.com</a><p>Nairobi, Kenya</p><div className="flex flex-col gap-2 pt-1"><a href="https://g.page/r/CbOO5qcPRnPrEBM/review" className="hover:text-[var(--golden-savannah)]">Google Review</a><a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d33351225-Collective_African_Tours_Safaris_C_A_T_S-Nairobi.html" className="hover:text-[var(--golden-savannah)]">TripAdvisor Review</a></div></div></div></div><div className="border-t border-white/10 px-6 py-5 text-xs text-gray-400 lg:px-8"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-2 md:flex-row"><span>© 2026 Collective African Tours &amp; Safaris. All rights reserved.</span><span>Kenya &amp; Tanzania Safari Tours with C.A.T.S</span></div></div></footer>; }
+export default function Footer() {
+  return (
+    <footer className="bg-gradient-to-b from-stone-900 to-stone-950 text-white relative overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none"><div className="w-[60%] max-w-[400px] aspect-square opacity-[0.02]"><Image src="/cats-logo.png" alt="" fill className="object-contain" sizes="400px" /></div></div>
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-12 pt-16 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+          <div>
+            <Link href="/" className="mb-4 flex items-center gap-3">
+              <div className="relative h-10 w-10 overflow-hidden rounded-full"><Image src="/cats-logo.png" alt="C.A.T.S Logo" fill className="object-cover" sizes="40px" /></div>
+              <div><span className="text-lg font-bold text-white">Collective African Tours &amp; Safaris</span><span className="block text-xs text-stone-400">Collective African Tours &amp; Safaris</span></div>
+            </Link>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone-400">Experience unforgettable safaris in Kenya, Tanzania &amp; Zanzibar. Expert local guides, customizable itineraries, and memorable wildlife experiences await you.</p>
+            <div className="mt-6 space-y-3 text-sm text-stone-400">
+              <p className="flex items-center gap-2"><svg className="h-4 w-4 text-[var(--golden-savannah)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>Nairobi, Kenya</p>
+              <a href="tel:+254723951388" className="flex items-center gap-2 hover:text-[var(--golden-savannah)] transition"><svg className="h-4 w-4 text-[var(--golden-savannah)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>+254 723 951 388</a>
+              <a href="mailto:info@catssafaris.com" className="flex items-center gap-2 hover:text-[var(--golden-savannah)] transition"><svg className="h-4 w-4 text-[var(--golden-savannah)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>info@catssafaris.com</a>
+            </div>
+          </div>
+          <Column title="Destinations" links={destinations} />
+          <Column title="Safari Experiences" links={experiences} />
+          <div>
+            <Column title="Quick Links" links={quickLinks} />
+            <div className="mt-8">
+              <h3 className="mb-4 text-sm font-bold text-red-400">Follow Us</h3>
+              <div className="flex gap-3">
+                <a href="https://www.facebook.com/CATSAFARISKENYA" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-stone-300 transition hover:bg-[var(--sunset-bronze)] hover:text-white"><svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.55.45-1 1-1Z" /></svg></a>
+                <a href="https://www.instagram.com/catssafaris" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-stone-300 transition hover:bg-[var(--sunset-bronze)] hover:text-white"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" /></svg></a>
+                <a href="https://twitter.com/catssafaris" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-stone-300 transition hover:bg-[var(--sunset-bronze)] hover:text-white"><svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative z-10 border-t border-white/10 px-6 py-5 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-xs text-stone-500 md:flex-row">
+          <span>&copy; 2026 Collective African Tours &amp; Safaris (C.A.T.S). All rights reserved.</span>
+          <div className="flex gap-6"><Link href="/terms" className="hover:text-stone-300 transition">Terms &amp; Conditions</Link><Link href="/privacy" className="hover:text-stone-300 transition">Privacy Policy</Link></div>
+        </div>
+      </div>
+    </footer>
+  );
+}

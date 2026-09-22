@@ -8,12 +8,12 @@ import { navigationData, NavSection, NavDropdownItem } from '@/data/navigation';
 /* ── CATS Palette — matching original design ── */
 const C = {
   /* Top utility bar */
-  topBar: '#1a3c34',          /* dark forest green */
+  topBar: '#2d3530',          /* dark forest green */
   topBarText: '#ffffff',
-  teal: '#00897b',            /* Transport / Flight buttons */
-  tealHover: '#00796b',
-  amber: '#c8a45e',           /* Plan My Safari button */
-  amberHover: '#b8943e',
+  teal: '#4f5d56',            /* Transport / Flight buttons */
+  tealHover: '#3a4740',
+  amber: '#a68b52',           /* Book Safari button */
+  amberHover: '#8c7544',
   /* Main nav bar */
   navBg: '#ffffff',           /* white nav background */
   navText: '#3b2f1e',         /* dark brown text */
@@ -200,7 +200,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             className="block text-center py-2.5 px-4 rounded text-sm font-bold uppercase tracking-wider"
             style={{ background: C.amber, color: '#1a3c34' }}
           >
-            Plan My Safari
+            Book Safari
           </Link>
         </div>
 
@@ -375,7 +375,7 @@ export default function Header() {
             <Link
               href="/transport-solutions"
               className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider border transition-colors"
-              style={{ background: 'transparent', color: C.topBarText, borderColor: C.teal }}
+              style={{ background: C.teal, color: C.topBarText, border: 'none' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
             >
@@ -384,7 +384,7 @@ export default function Header() {
             <Link
               href="/flight-search"
               className="px-3.5 py-1 rounded text-[11px] font-bold uppercase tracking-wider border transition-colors"
-              style={{ background: 'transparent', color: C.topBarText, borderColor: C.teal }}
+              style={{ background: C.teal, color: C.topBarText, border: 'none' }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.teal; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
             >
@@ -397,7 +397,7 @@ export default function Header() {
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = C.amberHover; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = C.amber; }}
             >
-              Plan My Safari
+              Book Safari
             </Link>
             <span className="ml-2 text-[11px] flex items-center gap-1" style={{ color: '#ffffffAA' }}>
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
