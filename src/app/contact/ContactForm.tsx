@@ -120,7 +120,7 @@ export default function ContactForm() {
 
     const payload: Record<string, string> = {
       _subject: `[C.A.T.S Contact] ${fields.interest || 'General Inquiry'} — ${fields.name}`,
-      _template: 'table',
+      _template: 'box',
       _captcha: 'false',
       _autoresponse: `Thank you for contacting Collective African Tours & Safaris. We have received your inquiry and will respond shortly.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`,
       'Full Name': fields.name,

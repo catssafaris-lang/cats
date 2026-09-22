@@ -233,11 +233,11 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
 
     const payload: Record<string, string> = {
       _subject: subject,
-      _template: 'table',
+      _template: 'box',
       _captcha: 'false',
       _autoresponse: `Thank you for your inquiry about ${packageName}. The C.A.T.S team has received your request and will get back to you shortly with availability and booking details.\n\nCollective African Tours & Safaris\n+254 723 951 388\nwww.catssafaris.com`,
       'Safari Package': packageName,
-      'Package URL': `<a href="${packageUrl}">${packageUrl}</a>`,
+      'Package URL': packageUrl,
       'Full Name': fullName,
       email,
       Nationality: nationality,
