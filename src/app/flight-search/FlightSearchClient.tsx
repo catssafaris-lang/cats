@@ -57,9 +57,8 @@ export default function FlightSearchClient() {
   const [wlLoaded, setWlLoaded] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const [engineFailed, setEngineFailed] = useState(false);
-
-  /* Load TravelPayouts WL engine with fallback detection */
+  
+  /* Load TravelPayouts WL engine */
   useEffect(() => {
     if (wlLoaded) return;
 
@@ -94,18 +93,8 @@ export default function FlightSearchClient() {
     script.type = 'module';
     script.src = 'https://tpscr.com/wl_web/main.js?wl_id=3319';
     script.onload = () => setWlLoaded(true);
-    script.onerror = () => setEngineFailed(true);
     document.head.appendChild(script);
 
-    // Fallback: if TP hasn't rendered anything in 6 seconds, show iframe fallback
-    const fallbackTimer = setTimeout(() => {
-      const searchEl = document.getElementById('tpwl-search');
-      if (!searchEl || searchEl.children.length === 0) {
-        setEngineFailed(true);
-      }
-    }, 6000);
-
-    return () => clearTimeout(fallbackTimer);
   }, [wlLoaded]);
 
   const scrollToSearch = useCallback(() => {
@@ -207,8 +196,6 @@ export default function FlightSearchClient() {
           </div>
         </section>
 
-        {/* Primary: TP WL renders here when accessible */}
-        {!engineFailed && (
           <div ref={wlRef} className="tpwl-page-wrapper" style={{ background: '#f7f4ed' }}>
             <div className="tpwl-search-header" style={{ backgroundColor: '#2d3530', padding: '24px 16px' }}>
               <div className="tpwl-search__wrapper">
@@ -221,34 +208,6 @@ export default function FlightSearchClient() {
               </div>
             </div>
           </div>
-        )}
-
-        {/* Fallback: iframe to flights.catssafaris.com when TP script is geo-blocked */}
-        {engineFailed && (
-          <div className="bg-[#f7f4ed] px-4 py-6 sm:px-6">
-            <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-[#e8e3d9] bg-white shadow-xl">
-              <iframe
-                src="https://flights.catssafaris.com"
-                title="C.A.T.S Flight Search"
-                className="w-full border-0"
-                style={{ height: '700px', minHeight: '600px' }}
-                allow="geolocation"
-                loading="eager"
-              />
-            </div>
-            <p className="mt-4 text-center text-sm text-[#5c4d42]/50">
-              Having trouble loading?{' '}
-              <a
-                href="https://flights.catssafaris.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#a68b52] underline hover:text-[#8a7342]"
-              >
-                Open flight search in a new window
-              </a>
-            </p>
-          </div>
-        )}
 
         {/* Hide TP branding elements */}
         <style>{`
@@ -263,6 +222,11 @@ export default function FlightSearchClient() {
           [class*="cookie-notice"],
           [class*="CookieNotice"],
           .tpwl-footer,
+          [class*="journey-begins"],
+          [class*="JourneyBegins"],
+          [class*="popular-destinations-title"],
+          [class*="copyright"],
+          [class*="Copyright"],
           footer.tpwl-footer {
             display: none !important;
             visibility: hidden !important;
@@ -286,6 +250,10 @@ export default function FlightSearchClient() {
           }
           /* Force USD currency display */
           .tpwl-currency-selector { display: none !important; }
+          /* Hide TP copyright and journey text */
+          [class*="tpwl-copyright"] { display: none !important; }
+          .tpwl-page-wrapper [class*="footer"],
+          .tpwl-page-wrapper [class*="Footer"] { display: none !important; height: 0 !important; }
           @media (min-width: 768px) {
             .tpwl-search-header { padding: 24px 40px !important; }
             .tpwl-tickets__wrapper { padding: 20px 40px !important; }
