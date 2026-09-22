@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Strip trailing backslash (%5C) from any URL
+      {
+        source: '/:path*\\\\',
+        destination: '/:path*',
+        permanent: true,
+      },
       // Legacy .html URLs → clean Next.js routes
       {
         source: '/kenya-tanzania-safaris.html',

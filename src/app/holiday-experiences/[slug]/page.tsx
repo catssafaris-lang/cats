@@ -249,9 +249,12 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                         blocks.forEach(block => {
                                             if (block.startsWith('###')) {
                                                 if (cur.content.length > 0 || cur.heading) sections.push(cur);
-                                                cur = { heading: block.replace(/^###\s*/, ''), content: [] };
+                                                const hLines = block.replace(/^###\s*/, '').split('\n');
+                                                cur = { heading: hLines[0], content: hLines.slice(1).filter(l => l.trim()) };
                                             } else if (!block.startsWith('*')) {
-                                                cur.content.push(block);
+                                                // Split single-newline paragraphs into individual entries
+                                                const subParas = block.split('\n').filter(l => l.trim());
+                                                subParas.forEach(p => cur.content.push(p));
                                             }
                                         });
                                         if (cur.content.length > 0 || cur.heading) sections.push(cur);
