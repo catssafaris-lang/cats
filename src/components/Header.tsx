@@ -351,6 +351,7 @@ export default function Header() {
 
   return (
     <>
+    <div className="sticky top-0 z-50">
       {/* ═══ TOP UTILITY BAR — dark forest green ═══ */}
       <div className="hidden md:block" style={{ background: C.topBar }}>
         <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between h-10">
@@ -411,7 +412,7 @@ export default function Header() {
       </div>
 
       {/* ═══ MAIN NAVIGATION BAR — white/ivory ═══ */}
-      <header className="sticky top-0 z-50 shadow-md border-b" style={{ background: C.navBg, borderColor: '#e5e2db' }}>
+      <header className="shadow-md border-b" style={{ background: C.navBg, borderColor: '#e5e2db' }}>
         <div className="max-w-[1400px] mx-auto px-3 flex items-center h-[80px]">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 mr-6">
@@ -529,8 +530,9 @@ export default function Header() {
           </button>
         </div>
       </header>
+    </div>
 
-      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
+    <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </>
   );
 }
