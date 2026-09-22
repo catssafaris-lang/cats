@@ -230,11 +230,11 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                 <div className="w-12 h-1 bg-[#a68b52] rounded-full" />
                                 <h2 className="text-2xl font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Overview</h2>
                             </div>
-                            <div className="prose prose-stone max-w-none overflow-hidden">
-                                <p className="text-base text-stone-600 font-medium mb-8 leading-relaxed italic">
+                            <div className="max-w-none overflow-hidden">
+                                <p className="text-sm text-stone-600 font-medium mb-8 leading-relaxed italic">
                                     {experience.description}
                                 </p>
-                                <div className="text-stone-700 leading-relaxed text-base break-words" style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
+                                <div className="text-stone-700 leading-relaxed text-sm break-words" style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
                                     {(() => {
                                         if (!experience.detailedDescription) return <p>{experience.description}</p>;
 
@@ -296,7 +296,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
 
                                                     {/* Section heading */}
                                                     {section.heading && (
-                                                        <h3 className="text-xl sm:text-2xl font-bold text-[#5c4d42] mb-4 mt-2 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                                                        <h3 className="text-lg sm:text-xl font-bold text-[#5c4d42] mb-4 mt-2 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                                             {section.heading}
                                                         </h3>
                                                     )}
@@ -304,7 +304,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                                     {/* Section content */}
                                                     <div className="space-y-4">
                                                         {section.content.map((para, pIdx) => (
-                                                            <p key={pIdx} className="leading-relaxed">{para}</p>
+                                                            <p key={pIdx} className="leading-relaxed text-sm text-stone-700">{para}</p>
                                                         ))}
                                                     </div>
                                                 </div>
@@ -319,7 +319,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         {galleryImages.length > 0 && (
                             <div className="space-y-6">
                                 <div className="flex items-center justify-between">
-                                    <h3 className="text-2xl font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>In High Definition</h3>
+                                    <h3 className="text-lg font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>In High Definition</h3>
                                     <div className="text-stone-400 text-sm">Experience the details in 4K resolution</div>
                                 </div>
                                 <ImageGallery images={galleryImages} alt={experience.title} />
@@ -370,14 +370,14 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         {/* Highlights Banner */}
                         <div className="bg-[#5c4d42] rounded-3xl p-5 sm:p-10 text-white relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl group-hover:bg-white/10 transition-colors" />
-                            <h3 className="text-2xl font-bold mb-8 relative z-10 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Experience Highlights</h3>
+                            <h3 className="text-lg font-bold mb-8 relative z-10 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Experience Highlights</h3>
                             <div className="grid sm:grid-cols-2 gap-8 relative z-10">
                                 {experience.highlights.map((highlight, idx) => (
                                     <div key={idx} className="flex items-start gap-4">
                                         <div className="w-8 h-8 rounded-full bg-[#a68b52] flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
                                             {idx + 1}
                                         </div>
-                                        <span className="text-white/90 text-lg leading-snug">{highlight}</span>
+                                        <span className="text-white/90 text-sm leading-snug">{highlight}</span>
                                     </div>
                                 ))}
                             </div>
@@ -390,9 +390,9 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                     <div className="p-2 bg-[#a68b52] rounded-xl">
                                         <Sun className="w-5 h-5 text-white" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Best Time to Visit</h3>
+                                    <h3 className="text-base font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Best Time to Visit</h3>
                                 </div>
-                                <p className="text-stone-700 leading-relaxed text-lg">{experience.bestTimeToVisit}</p>
+                                <p className="text-stone-700 leading-relaxed text-sm">{experience.bestTimeToVisit}</p>
                             </div>
                         )}
 
@@ -405,7 +405,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                             <div className="p-2 bg-[#5c4d42] rounded-xl">
                                                 <Heart className="w-5 h-5 text-white" />
                                             </div>
-                                            <h3 className="text-xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Ideal For</h3>
+                                            <h3 className="text-base font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Ideal For</h3>
                                         </div>
                                         <ul className="space-y-3">
                                             {experience.idealFor.map((item, idx) => (
@@ -423,7 +423,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                             <div className="p-2 bg-[#a68b52] rounded-xl">
                                                 <Globe className="w-5 h-5 text-white" />
                                             </div>
-                                            <h3 className="text-xl font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Destinations</h3>
+                                            <h3 className="text-base font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Destinations</h3>
                                         </div>
                                         <ul className="space-y-3">
                                             {experience.locations.map((loc, idx) => (
@@ -541,10 +541,10 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Curated Itineraries</span>
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-xl md:text-2xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Sample Programmes
                             </h2>
-                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
+                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-sm">
                                 Every programme is fully customisable — your C.A.T.S travel specialist will tailor every detail to your preferences.
                             </p>
                         </div>
@@ -632,10 +632,10 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Handpicked Partners</span>
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-xl md:text-2xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Our Favourite Wellness Lodges & Camps
                             </h2>
-                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
+                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-sm">
                                 These exceptional lodges and tented camps are trusted C.A.T.S partners — each one selected for its outstanding wellness facilities, breathtaking setting, and proximity to wildlife.
                             </p>
                         </div>
@@ -700,10 +700,10 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-4xl mx-auto px-4">
                         <div className="text-center mb-16">
                             <span className="text-[#a68b52] font-bold tracking-[0.2em] uppercase text-xs">Your Questions Answered</span>
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                            <h2 className="text-xl md:text-2xl font-bold text-[#5c4d42] mt-3 font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                 Frequently Asked Questions
                             </h2>
-                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-lg">
+                            <p className="text-stone-500 mt-4 max-w-2xl mx-auto text-sm">
                                 Everything you need to know about planning your {experience.title.toLowerCase()} experience with C.A.T.S.
                             </p>
                         </div>
@@ -742,10 +742,10 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                     <div className="max-w-7xl mx-auto px-4">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                             <div className="max-w-2xl">
-                                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
+                                <h2 className="text-xl md:text-2xl font-bold mb-6 text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                     Experience Pairings
                                 </h2>
-                                <p className="text-lg text-stone-600">
+                                <p className="text-sm text-stone-600">
                                     Elevate your African odyssey by pairing the {experience.title} with our most requested safari circuits.
                                 </p>
                             </div>
