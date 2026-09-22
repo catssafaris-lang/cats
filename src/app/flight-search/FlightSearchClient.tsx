@@ -57,9 +57,14 @@ export default function FlightSearchClient() {
   const [wlLoaded, setWlLoaded] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  /* Load TravelPayouts WL engine directly */
+  const [engineFailed, setEngineFailed] = useState(false);
+
+  /* Load TravelPayouts WL engine with fallback detection */
   useEffect(() => {
     if (wlLoaded) return;
+
+    // Force USD currency cookie before TP loads
+    document.cookie = 'tpwl_currency=USD;path=/;max-age=31536000';
 
     // Set TP globals
     (window as any).TPWL_CONFIGURATION = {
@@ -89,11 +94,18 @@ export default function FlightSearchClient() {
     script.type = 'module';
     script.src = 'https://tpscr.com/wl_web/main.js?wl_id=3319';
     script.onload = () => setWlLoaded(true);
+    script.onerror = () => setEngineFailed(true);
     document.head.appendChild(script);
 
-    return () => {
-      // Cleanup not needed — TP script modifies DOM globally
-    };
+    // Fallback: if TP hasn't rendered anything in 6 seconds, show iframe fallback
+    const fallbackTimer = setTimeout(() => {
+      const searchEl = document.getElementById('tpwl-search');
+      if (!searchEl || searchEl.children.length === 0) {
+        setEngineFailed(true);
+      }
+    }, 6000);
+
+    return () => clearTimeout(fallbackTimer);
   }, [wlLoaded]);
 
   const scrollToSearch = useCallback(() => {
@@ -182,9 +194,9 @@ export default function FlightSearchClient() {
         </div>
       </section>
 
-      {/* ─── FLIGHT SEARCH ENGINE (directly embedded WL) ─── */}
+      {/* ─── FLIGHT SEARCH ENGINE ─── */}
       <div id="flight-search-engine" className="scroll-mt-20">
-        <section className="bg-gradient-to-b from-[#2d3530] to-[#1a1f1c] px-4 py-8 text-center sm:px-6">
+        <section className="bg-gradient-to-b from-[#2d3530] to-[#1a1f1c] px-4 py-10 text-center sm:px-6">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold text-white md:text-4xl" style={{ fontFamily: 'var(--font-playfair)' }}>
               Find Your <span className="text-[#a68b52]">Perfect Flight</span>
@@ -195,22 +207,48 @@ export default function FlightSearchClient() {
           </div>
         </section>
 
-        {/* WL renders into these containers */}
-        <div ref={wlRef} className="tpwl-page-wrapper" style={{ background: '#f7f4ed' }}>
-          {/* TP search form header */}
-          <div className="tpwl-search-header" style={{ backgroundColor: '#2d3530', padding: '24px 16px' }}>
-            <div className="tpwl-search__wrapper">
-              <div className="tpwl__content" id="tpwl-search" />
+        {/* Primary: TP WL renders here when accessible */}
+        {!engineFailed && (
+          <div ref={wlRef} className="tpwl-page-wrapper" style={{ background: '#f7f4ed' }}>
+            <div className="tpwl-search-header" style={{ backgroundColor: '#2d3530', padding: '24px 16px' }}>
+              <div className="tpwl-search__wrapper">
+                <div className="tpwl__content" id="tpwl-search" />
+              </div>
+            </div>
+            <div className="tpwl-main" style={{ backgroundColor: '#f7f4ed' }}>
+              <div className="tpwl-tickets__wrapper" style={{ padding: '0 16px' }}>
+                <div className="tpwl__content" id="tpwl-tickets" />
+              </div>
             </div>
           </div>
+        )}
 
-          {/* TP results */}
-          <div className="tpwl-main" style={{ backgroundColor: '#f7f4ed' }}>
-            <div className="tpwl-tickets__wrapper" style={{ padding: '0 16px' }}>
-              <div className="tpwl__content" id="tpwl-tickets" />
+        {/* Fallback: iframe to flights.catssafaris.com when TP script is geo-blocked */}
+        {engineFailed && (
+          <div className="bg-[#f7f4ed] px-4 py-6 sm:px-6">
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-[#e8e3d9] bg-white shadow-xl">
+              <iframe
+                src="https://flights.catssafaris.com"
+                title="C.A.T.S Flight Search"
+                className="w-full border-0"
+                style={{ height: '700px', minHeight: '600px' }}
+                allow="geolocation"
+                loading="eager"
+              />
             </div>
+            <p className="mt-4 text-center text-sm text-[#5c4d42]/50">
+              Having trouble loading?{' '}
+              <a
+                href="https://flights.catssafaris.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#a68b52] underline hover:text-[#8a7342]"
+              >
+                Open flight search in a new window
+              </a>
+            </p>
           </div>
-        </div>
+        )}
 
         {/* Hide TP branding elements */}
         <style>{`
@@ -219,8 +257,17 @@ export default function FlightSearchClient() {
           .tpwl-footer__wrapper,
           .tpwl-widgets__wrapper,
           [class*="tpwl-footer"],
-          [class*="tpwl-cookie"] {
+          [class*="tpwl-cookie"],
+          .tpwl-header__wrapper,
+          [class*="tpwl-logo"],
+          [class*="cookie-notice"],
+          [class*="CookieNotice"],
+          .tpwl-footer,
+          footer.tpwl-footer {
             display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            overflow: hidden !important;
           }
           .tpwl-search-header {
             position: relative !important;
@@ -237,6 +284,8 @@ export default function FlightSearchClient() {
           .tpwl-tickets__wrapper {
             padding: 20px 16px !important;
           }
+          /* Force USD currency display */
+          .tpwl-currency-selector { display: none !important; }
           @media (min-width: 768px) {
             .tpwl-search-header { padding: 24px 40px !important; }
             .tpwl-tickets__wrapper { padding: 20px 40px !important; }
@@ -244,6 +293,20 @@ export default function FlightSearchClient() {
           @media (min-width: 1024px) {
             .tpwl-search-header { padding: 24px 80px !important; }
             .tpwl-tickets__wrapper { padding: 20px 80px !important; }
+          }
+          /* Mobile fix: ensure search form doesn't overlap other sections */
+          @media (max-width: 767px) {
+            .tpwl-search-header {
+              padding: 16px 12px !important;
+            }
+            .tpwl-page-wrapper {
+              overflow-x: hidden !important;
+            }
+            .tpwl__content {
+              width: 100% !important;
+              max-width: 100% !important;
+              overflow-x: hidden !important;
+            }
           }
         `}</style>
       </div>
