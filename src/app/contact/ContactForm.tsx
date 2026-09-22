@@ -13,8 +13,15 @@ const INTERESTS = [
   'Cultural Experiences',
   'Mountain Climbing',
   'Bird Watching',
-  'Day Trips & Excursions',
   'Fly-In Safari',
+  'NNP Half-Day Private Tour',
+  'NNP Half-Day Group Tour',
+  'Nairobi National Park & City Tour',
+  'Nairobi Into Africa Tour',
+  'Amboseli Day Trip',
+  'Naivasha & Hell\'s Gate Day Trip',
+  'Ol Pejeta Day Trip',
+  'Lake Nakuru & Naivasha Day Trip',
 ];
 
 const COUNTRIES: { name: string; code: string }[] = [
