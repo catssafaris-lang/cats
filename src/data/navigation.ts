@@ -93,7 +93,6 @@ export const navigationData: NavSection[] = [
       { name: 'Payment Methods', href: '/payment-methods' },
     ],
   },
-  { name: 'Flight Bookings', href: '/flights' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
