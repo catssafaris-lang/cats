@@ -225,34 +225,42 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
       ? `New Nairobi Excursion Inquiry — ${packageName}`
       : `Safari Booking Inquiry — ${packageName}`;
 
-    const formData = new FormData();
-    formData.append('_subject', subject);
-    formData.append('_template', 'table');
-    formData.append('_captcha', 'false');
-    formData.append('_autoresponse', `Thank you for your inquiry about ${packageName}. The C.A.T.S team has received your request and will get back to you shortly with availability and booking details.\n\nCollective African Tours & Safaris\n+254 723 951 388\nwww.catssafaris.com`);
-    formData.append('Safari Package', packageName);
-    formData.append('Package URL', packageUrl);
-    formData.append('Full Name', fullName);
-    formData.append('email', email);
-    formData.append('Nationality', nationality);
-    formData.append('Phone / WhatsApp', `${countryCode} ${phone}`);
-    formData.append(isDayTrip ? 'Preferred Date' : 'Safari Dates', isDayTrip ? safariDate : `${startDate} to ${endDate}`);
-    if (timeInfo) formData.append('Time Slot', safariTimeSlot);
-    formData.append('Adults', `Residents: ${adultsResident}, Citizens: ${adultsCitizen}, Non-Residents: ${adultsNonResident} (Total: ${totalAdults})`);
-    formData.append('Children', totalChildren > 0 ? `Residents: ${childrenResident}, Citizens: ${childrenCitizen}, Non-Residents: ${childrenNonResident} (Total: ${totalChildren})` : 'None');
-    if (totalChildren > 0) formData.append('Child Ages', childAges.map((c, i) => `Child ${i + 1}: Age ${c.age} (${c.residency})`).join(', '));
-    if (accommodationTier) formData.append('Accommodation', accommodationTier);
-    if (message) formData.append('Special Requests', message);
-    formData.append('Submitted', new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }));
+    const dateLabel = isDayTrip ? 'Preferred Date' : 'Safari Dates';
+    const dateValue = isDayTrip ? safariDate : `${startDate} to ${endDate}`;
+    const adultsText = `Residents: ${adultsResident}, Citizens: ${adultsCitizen}, Non-Residents: ${adultsNonResident} (Total: ${totalAdults})`;
+    const childrenText = totalChildren > 0 ? `Residents: ${childrenResident}, Citizens: ${childrenCitizen}, Non-Residents: ${childrenNonResident} (Total: ${totalChildren})` : 'None';
+    const childAgesText = totalChildren > 0 ? childAges.map((c, i) => `Child ${i + 1}: Age ${c.age} (${c.residency})`).join(', ') : '';
+
+    const payload: Record<string, string> = {
+      _subject: subject,
+      _template: 'table',
+      _captcha: 'false',
+      _autoresponse: `Thank you for your inquiry about ${packageName}. The C.A.T.S team has received your request and will get back to you shortly with availability and booking details.\n\nCollective African Tours & Safaris\n+254 723 951 388\nwww.catssafaris.com`,
+      'Safari Package': packageName,
+      'Package URL': `<a href="${packageUrl}">${packageUrl}</a>`,
+      'Full Name': fullName,
+      email,
+      Nationality: nationality,
+      'Phone / WhatsApp': `${countryCode} ${phone}`,
+      [dateLabel]: dateValue,
+      Adults: adultsText,
+      Children: childrenText,
+      Submitted: new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }),
+    };
+    if (timeInfo) payload['Time Slot'] = safariTimeSlot;
+    if (totalChildren > 0 && childAgesText) payload['Child Ages'] = childAgesText;
+    if (accommodationTier) payload.Accommodation = accommodationTier;
+    if (message) payload['Special Requests'] = message;
 
     const emailEndpoint = isExcursion
-      ? 'https://formsubmit.co/excursions@catssafaris.com'
-      : 'https://formsubmit.co/bookings@catssafaris.com';
+      ? 'https://formsubmit.co/ajax/excursions@catssafaris.com'
+      : 'https://formsubmit.co/ajax/bookings@catssafaris.com';
 
     try {
       const res = await fetch(emailEndpoint, {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
       });
       if (res.ok) {
         setSubmitted(true);

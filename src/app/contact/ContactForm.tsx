@@ -118,27 +118,29 @@ export default function ContactForm() {
       message: String(data.get('message') || ''),
     };
 
-    const formData = new FormData();
-    formData.append('_subject', `[C.A.T.S Contact] ${fields.interest || 'General Inquiry'} — ${fields.name}`);
-    formData.append('_template', 'table');
-    formData.append('_captcha', 'false');
-    formData.append('_autoresponse', `Thank you for contacting Collective African Tours & Safaris. We have received your inquiry and will respond shortly.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`);
-    formData.append('Full Name', fields.name);
-    formData.append('email', fields.email);
-    formData.append('Nationality', fields.nationality);
-    formData.append('Phone / WhatsApp', fields.phone);
-    formData.append('Residency', fields.residency);
-    formData.append('What Excites You Most', fields.interest || 'Not specified');
-    formData.append('Number of Travellers', fields.travellers);
-    formData.append('Preferred Travel Date', fields.travelDate);
-    formData.append('Budget Range', fields.budget);
-    if (fields.message) formData.append('Message', fields.message);
-    formData.append('Submitted', new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }));
+    const payload: Record<string, string> = {
+      _subject: `[C.A.T.S Contact] ${fields.interest || 'General Inquiry'} — ${fields.name}`,
+      _template: 'table',
+      _captcha: 'false',
+      _autoresponse: `Thank you for contacting Collective African Tours & Safaris. We have received your inquiry and will respond shortly.\n\nC.A.T.S Safaris\n+254 723 951 388\nwww.catssafaris.com`,
+      'Full Name': fields.name,
+      email: fields.email,
+      Nationality: fields.nationality,
+      'Phone / WhatsApp': fields.phone,
+      Residency: fields.residency,
+      'What Excites You Most': fields.interest || 'Not specified',
+      'Number of Travellers': fields.travellers,
+      'Preferred Travel Date': fields.travelDate,
+      'Budget Range': fields.budget,
+      Submitted: new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' }),
+    };
+    if (fields.message) payload.Message = fields.message;
 
     try {
-      const res = await fetch('https://formsubmit.co/info@catssafaris.com', {
+      const res = await fetch('https://formsubmit.co/ajax/info@catssafaris.com', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
       });
       if (res.ok) {
         setSent(true);
