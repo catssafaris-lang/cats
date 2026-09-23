@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -55,35 +55,107 @@ const whyChoose = [
 ];
 
 /* ─── TravelPayouts White Label Widget ─── */
-function TPWidget() {
-  useEffect(() => {
-    /* Set TP config globals */
-    (window as any).defined_trs = 486464;
-    (window as any).defined_marker = '241052';
-    (window as any).defined_wl = '3319';
+function TPSearchEngine() {
+  const initialized = useRef(false);
 
-    /* Load TP script */
-    const existing = document.getElementById('tp-wl-script');
-    if (!existing) {
-      const s = document.createElement('script');
-      s.id = 'tp-wl-script';
-      s.src = 'https://www.tpscr.com/tp_wl.js';
-      s.async = true;
-      document.body.appendChild(s);
-    }
+  useEffect(() => {
+    if (initialized.current) return;
+    initialized.current = true;
+
+    /* Set TP configuration globals — exact match to flights.catssafaris.com */
+    (window as any).TPWL_CONFIGURATION = {
+      version: 'v2',
+      ab_flag: '',
+      ab_variant: '',
+      ab_evaluation_id: '',
+    };
+
+    (window as any).TPWL_EXTRA = {
+      currency: 'USD',
+      marker: '241052',
+      trs: '486464',
+      domain: 'flights.catssafaris.com',
+      locale: 'EN',
+      link_color: 'a68b52',
+    };
+
+    /* Cookie helpers for currency/locale */
+    (window as any).tpwlCurrencyChange = function (value: string) {
+      const d = new Date();
+      d.setTime(d.getTime() + 31536000000);
+      const host = window.location.hostname.split('.');
+      const domain = host.length > 1 ? '.' + host.slice(-2).join('.') : window.location.hostname;
+      document.cookie = 'tpwl_currency=' + value + ';expires=' + d.toUTCString() + ';path=/;domain=' + domain;
+    };
+
+    (window as any).tpwlLocaleChange = function (value: string) {
+      const d = new Date();
+      d.setTime(d.getTime() + 31536000000);
+      const host = window.location.hostname.split('.');
+      const domain = host.length > 1 ? '.' + host.slice(-2).join('.') : window.location.hostname;
+      document.cookie = 'tpwl_locale=' + value + ';expires=' + d.toUTCString() + ';path=/;domain=' + domain;
+      window.location.reload();
+    };
+
+    /* Load TP white label script — correct URL as module */
+    const s = document.createElement('script');
+    s.async = true;
+    s.type = 'module';
+    s.src = 'https://tpscr.com/wl_web/main.js?wl_id=3319';
+    document.head.appendChild(s);
   }, []);
 
   return (
     <>
-      {/* Hide TP branding */}
+      {/* TP CSS variables — CATS branded colors */}
       <style>{`
-        .wl-footer, .wl-logo, .wl-copyright, .wl-cookie,
-        [class*="powered"], [class*="tp-logo"],
-        [class*="cookie-notice"], [class*="branding"] {
-          display: none !important;
+        :root {
+          --tpwl-font-family: "Inter";
+          --tpwl-headline-text: #ffffff;
+          --tpwl-links: #a68b52;
+          --tpwl-main-text: #2d3530;
+          --tpwl-search-form-background: #2d3530;
+          --tpwl-search-result-background: #f7f4ed;
+        }
+        .tpwl-logo-header { display: none !important; }
+        .tpwl-footer__wrapper { display: none !important; }
+        .tpwl-cookie-banner { display: none !important; }
+        .tpwl-search-header {
+          padding: 24px 16px !important;
+          background-color: #2d3530 !important;
+          position: static !important;
+        }
+        .tpwl-search__wrapper { display: flex; align-items: center; justify-content: center; }
+        .tpwl__content { flex: 1 0 auto; max-width: 1240px; }
+        .tpwl-main { background-color: #f7f4ed; }
+        .tpwl-tickets__wrapper { display: flex; align-items: center; justify-content: center; padding: 0 16px; }
+        .tpwl-tickets__wrapper #tpwl-tickets:not(:empty) { margin-bottom: 32px; }
+        .tpwl-widgets__wrapper { display: none !important; }
+        @media (max-width: 1175px) {
+          .tpwl__content { max-width: unset; min-width: unset; }
+          .tpwl-search__wrapper { display: block; }
+          .tpwl-search-header { padding: 24px 16px 24px !important; position: static !important; }
+          .tpwl-tickets__wrapper { padding: 0px 16px; }
         }
       `}</style>
-      <div id="tp-widget-3319" />
+
+      {/* TP search form container */}
+      <header className="tpwl-search-header">
+        <div className="tpwl-search__wrapper">
+          <div className="tpwl__content">
+            <div id="tpwl-search" />
+          </div>
+        </div>
+      </header>
+
+      {/* TP search results container */}
+      <main className="tpwl-main">
+        <div className="tpwl-tickets__wrapper">
+          <div className="tpwl__content">
+            <div id="tpwl-tickets" />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
@@ -112,7 +184,7 @@ export default function FlightSearchClient() {
       </section>
 
       {/* ─── HERO ─── */}
-      <section className="bg-[#2d3530] px-4 pb-6 sm:px-6">
+      <section className="bg-[#2d3530] px-4 pb-2 sm:px-6">
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="mb-3 text-3xl font-bold text-white md:text-4xl lg:text-5xl" style={{ fontFamily: 'var(--font-playfair)' }}>
             Search &amp; Compare Flights
@@ -126,11 +198,9 @@ export default function FlightSearchClient() {
         </div>
       </section>
 
-      {/* ─── FLIGHT SEARCH ENGINE — TravelPayouts Widget ─── */}
-      <section id="flight-search-engine" className="scroll-mt-20 bg-[#2d3530] px-4 pb-12 sm:px-6">
-        <div className="mx-auto max-w-4xl">
-          <TPWidget />
-        </div>
+      {/* ─── FLIGHT SEARCH ENGINE ─── */}
+      <section id="flight-search-engine" className="scroll-mt-20">
+        <TPSearchEngine />
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
@@ -192,11 +262,7 @@ export default function FlightSearchClient() {
           </p>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {international.map((d) => (
-              <a
-                key={d.code}
-                href="#flight-search-engine"
-                className="group relative overflow-hidden rounded-xl shadow-md"
-              >
+              <a key={d.code} href="#flight-search-engine" className="group relative overflow-hidden rounded-xl shadow-md">
                 <div className="relative h-48 w-full">
                   <Image src={d.img} alt={`Flights to ${d.city}`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" sizes="(max-width:640px)100vw,(max-width:1024px)50vw,25vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -223,11 +289,7 @@ export default function FlightSearchClient() {
           </p>
           <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {eastAfrica.map((d) => (
-              <a
-                key={d.code}
-                href="#flight-search-engine"
-                className="group relative overflow-hidden rounded-xl shadow-md"
-              >
+              <a key={d.code} href="#flight-search-engine" className="group relative overflow-hidden rounded-xl shadow-md">
                 <div className="relative h-48 w-full">
                   <Image src={d.img} alt={`Flights to ${d.city}`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" sizes="(max-width:640px)100vw,(max-width:768px)50vw,(max-width:1024px)33vw,25vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
