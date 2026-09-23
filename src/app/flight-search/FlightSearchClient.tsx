@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -54,6 +54,40 @@ const whyChoose = [
   { title: 'Expert Support', desc: '15 years of East Africa travel expertise. Our team helps coordinate flights with safari itineraries and ground transfers.' },
 ];
 
+/* ─── TravelPayouts White Label Widget ─── */
+function TPWidget() {
+  useEffect(() => {
+    /* Set TP config globals */
+    (window as any).defined_trs = 486464;
+    (window as any).defined_marker = '241052';
+    (window as any).defined_wl = '3319';
+
+    /* Load TP script */
+    const existing = document.getElementById('tp-wl-script');
+    if (!existing) {
+      const s = document.createElement('script');
+      s.id = 'tp-wl-script';
+      s.src = 'https://www.tpscr.com/tp_wl.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+  }, []);
+
+  return (
+    <>
+      {/* Hide TP branding */}
+      <style>{`
+        .wl-footer, .wl-logo, .wl-copyright, .wl-cookie,
+        [class*="powered"], [class*="tp-logo"],
+        [class*="cookie-notice"], [class*="branding"] {
+          display: none !important;
+        }
+      `}</style>
+      <div id="tp-widget-3319" />
+    </>
+  );
+}
+
 export default function FlightSearchClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -92,16 +126,11 @@ export default function FlightSearchClient() {
         </div>
       </section>
 
-      {/* ─── FLIGHT SEARCH ENGINE — flights.catssafaris.com embedded ─── */}
-      <section id="flight-search-engine" className="scroll-mt-20 bg-[#f7f4ed]">
-        <iframe
-          src="https://flights.catssafaris.com"
-          title="C.A.T.S Flight Search Engine"
-          className="w-full border-0"
-          style={{ height: '680px', minHeight: '680px' }}
-          allow="geolocation"
-          loading="eager"
-        />
+      {/* ─── FLIGHT SEARCH ENGINE — TravelPayouts Widget ─── */}
+      <section id="flight-search-engine" className="scroll-mt-20 bg-[#2d3530] px-4 pb-12 sm:px-6">
+        <div className="mx-auto max-w-4xl">
+          <TPWidget />
+        </div>
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
