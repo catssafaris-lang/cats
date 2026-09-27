@@ -181,9 +181,9 @@ export default function SafariListingPage({
       {/* Trust strip */}
       <section className="border-y border-[var(--savannah-dust)] bg-[var(--cats-cream)] py-4">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-2 px-6 text-center text-sm font-semibold uppercase tracking-wide text-[var(--forest-canopy)] sm:flex-row sm:gap-4">
-          <span>15 Years of Safari Excellence</span>
+          <span>15+ years of East African tourism expertise</span>
           <span className="hidden text-[var(--golden-savannah)] sm:inline">|</span>
-          <span>Licensed and Insured</span>
+          <span>professionally operated</span>
           <span className="hidden text-[var(--golden-savannah)] sm:inline">|</span>
           <span>Eco-Friendly Tourism</span>
         </div>

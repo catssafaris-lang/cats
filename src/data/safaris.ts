@@ -56,7 +56,7 @@ export const safaris: Safari[] = [
         id: 'mara-3d',
         slug: '3-day-mara-encounter-masai-mara',
         title: "3-Day Masai Mara Safari | Big Five Wildlife Experience",
-        subtitle: 'The Ultimate Big Five Safari Experience',
+        subtitle: 'The Premier Big Five Safari Experience',
         destination: 'kenya',
         duration: 3,
         durationUnit: 'days',
@@ -78,7 +78,7 @@ export const safaris: Safari[] = [
             {
                 day: 2,
                 title: 'Full Day in Masai Mara',
-                description: `6:00 AM. Rise before the sun and head out into the cool morning air — this is prime hunting time and the Mara's big cats are on the move. Your guide navigates the open grasslands south toward the Mara River, scanning for cheetahs poised on termite mounds and leopards slinking through the riverine forest. At the Mara River, hippos grunt and jostle in the shallows while enormous Nile crocodiles bask on sandy banks. During migration season (July–October), this is where thousands of wildebeest make their dramatic river crossings. Mid-morning, enjoy a packed bush lunch as your guide shares stories of the ecosystem. The afternoon drive takes you toward the Oloololo Escarpment, where the terrain rises dramatically and buffalo herds graze in the valleys below. Topi stand sentinel on every ridge and secretary birds strut through the short grass. An optional visit to a Maasai village offers a glimpse into the ancient pastoralist culture — vibrant shukas, beaded jewelry, and traditional singing. Return to your lodge as golden hour bathes the savannah in amber light.`,
+                description: `6:00 AM. Rise before the sun and head out into the cool morning air — this is prime hunting time and the Mara's big cats are on the move. Your guide navigates the open grasslands south toward the Mara River, scanning for cheetahs poised on termite mounds and leopards slinking through the riverine forest. At the Mara River, hippos grunt and jostle in the shallows while enormous Nile crocodiles bask on sandy banks. During migration season (July–October), this is where vast herds of wildebeest make their dramatic river crossings. Mid-morning, enjoy a packed bush lunch as your guide shares stories of the ecosystem. The afternoon drive takes you toward the Oloololo Escarpment, where the terrain rises dramatically and buffalo herds graze in the valleys below. Topi stand sentinel on every ridge and secretary birds strut through the short grass. An optional visit to a Maasai village offers a glimpse into the ancient pastoralist culture — vibrant shukas, beaded jewelry, and traditional singing. Return to your lodge as golden hour bathes the savannah in amber light.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -235,7 +235,7 @@ export const safaris: Safari[] = [
             {
                 day: 2,
                 title: 'Amboseli to Nairobi',
-                description: `## ~240km | Approx. 4 hrs\n\n6:00 AM. Rise early for the morning game drive — this is when Kilimanjaro is most likely to show its full glory, the snow-capped peak glowing in the soft dawn light before clouds build later in the day. Your guide heads toward Observation Hill, where you'll climb to the summit for a breathtaking 360-degree panorama: the entire Amboseli basin spread below you, elephant herds moving like grey shadows across the dusty plains, and Kilimanjaro dominating the southern sky. Descend and drive along the swamp edge, where large bull elephants wade through papyrus and cattle egrets ride on their backs. Lions may be resting in the short grass nearby, and you'll spot crowned cranes, pelicans, and African jacanas picking through the shallows. By 9:30 AM, return to your lodge for a leisurely breakfast and check out. Begin the drive back to Nairobi, arriving by approximately 3:00–4:00 PM with drop-off at your hotel or the airport.`,
+                description: `## ~240km | Approx. 4 hrs\n\n6:00 AM. Rise early for the morning game drive — this is when Kilimanjaro is most likely to show its full glory, the snow-capped peak glowing in the soft dawn light before clouds build later in the day. Your guide heads toward Observation Hill, where you'll climb to the summit for a stunning 360-degree panorama: the entire Amboseli basin spread below you, elephant herds moving like grey shadows across the dusty plains, and Kilimanjaro dominating the southern sky. Descend and drive along the swamp edge, where large bull elephants wade through papyrus and cattle egrets ride on their backs. Lions may be resting in the short grass nearby, and you'll spot crowned cranes, pelicans, and African jacanas picking through the shallows. By 9:30 AM, return to your lodge for a leisurely breakfast and check out. Begin the drive back to Nairobi, arriving by approximately 3:00–4:00 PM with drop-off at your hotel or the airport.`,
                 meals: ['Breakfast', 'Lunch']
             }
         ],
@@ -812,7 +812,7 @@ By 2:30 PM you begin the scenic return south, the afternoon sun warming Mount Ke
 
 Around 7:15 AM you stop for breakfast at a restaurant along the highway — a welcome spread of eggs, fresh fruit, toast, and hot chai as the morning sun warms the escarpment.
 
-By 8:00 AM, after covering approximately 160 km, you enter Lake Nakuru National Park. Almost immediately the landscape delivers: the lakeshore shimmers with a ribbon of pink as thousands of flamingos wade through the alkaline shallows, their reflections doubling the spectacle. Your game drive skirts the lake edge where white pelicans drift in flotillas and marabou storks stand like sentries.
+By 8:00 AM, after covering approximately 160 km, you enter Lake Nakuru National Park. Almost immediately the landscape delivers: the lakeshore shimmers with a ribbon of pink as dense flocks of flamingos wade through the alkaline shallows, their reflections doubling the spectacle. Your game drive skirts the lake edge where white pelicans drift in flotillas and marabou storks stand like sentries.
 
 The drive climbs to Baboon Cliff viewpoint, and the panorama that unfolds is staggering — the entire lake framed by yellow-barked acacia forest, the pink flamingo line tracing the shore, and the Rift Valley escarpment rising behind. This is one of Kenya's most photographed vistas. Back on the valley floor, your driver-guide tracks rhinos through the woodland: Nakuru is a vital sanctuary for both black and white rhinos, and watching these prehistoric giants browse in the undergrowth — some with calves at heel — is a powerful, humbling experience. Lions, waterbuck, and the endangered Rothschild's giraffe also call this park home.
 
@@ -1013,7 +1013,7 @@ The drive loops back through valleys of whistling thorn, with chances to spot bu
         id: 'nairobi-city-tour',
         slug: '1-day-nairobi-national-park-city-tour-excursion',
         title: "Nairobi National Park & City Tour | Wildlife & Culture",
-        subtitle: 'The Ultimate Nairobi Wildlife & Culture Combo',
+        subtitle: 'The Comprehensive Nairobi Wildlife & Culture Combo',
         destination: 'kenya',
         duration: 1,
         durationUnit: 'days',
@@ -1298,7 +1298,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
         id: 'kenya-tanzania-7d',
         slug: '7-day-best-of-kenya-tanzania-safari',
         title: "7-Day Kenya & Tanzania Safari | Masai Mara to Serengeti",
-        subtitle: 'The Ultimate East African Adventure',
+        subtitle: 'The Grand East African Adventure',
         destination: 'kenya-tanzania',
         duration: 7,
         durationUnit: 'days',
@@ -1344,7 +1344,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             {
                 day: 6,
                 title: 'Ngorongoro Crater to Lake Manyara',
-                description: `## ~120km | Approx. 2.5 hrs\n\n7:00 AM. Coffee on the rim comes with a last look down into the crater, mist still pooled over Lake Magadi far below. You leave the highlands and begin the descent through Karatu — a strip of a town ringed by coffee shambas and banana groves, the last proper settlement before the road drops toward the Rift Valley floor. The escarpment falls away in stages, temperature climbing as you lose altitude, until Lake Manyara appears below — a slender band of soda water pressed between the valley wall and the shore. Entering the park, the road plunges straight into groundwater forest: mahogany and fig trees fed by underground springs seeping out of the escarpment, thick with troops of olive baboon and blue monkey crashing through the canopy. This is one of the only places in Africa where lions regularly climb — look up into the acacia and fig branches for a tawny shape draped over a horizontal limb, a habit unique to a handful of populations across the continent. The forest opens onto floodplain and lakeshore, where elephant families wade through the shallows and thousands of lesser flamingos work the alkaline margins in a shifting pink tide. Hippos pack the shoreline pools near the Msasa River, occasionally surfacing between the wading storks and herons. You settle into your lodge on the valley wall as the sun drops over the lake.`,
+                description: `## ~120km | Approx. 2.5 hrs\n\n7:00 AM. Coffee on the rim comes with a last look down into the crater, mist still pooled over Lake Magadi far below. You leave the highlands and begin the descent through Karatu — a strip of a town ringed by coffee shambas and banana groves, the last proper settlement before the road drops toward the Rift Valley floor. The escarpment falls away in stages, temperature climbing as you lose altitude, until Lake Manyara appears below — a slender band of soda water pressed between the valley wall and the shore. Entering the park, the road plunges straight into groundwater forest: mahogany and fig trees fed by underground springs seeping out of the escarpment, thick with troops of olive baboon and blue monkey crashing through the canopy. This is one of the only places in Africa where lions regularly climb — look up into the acacia and fig branches for a tawny shape draped over a horizontal limb, a habit unique to a handful of populations across the continent. The forest opens onto floodplain and lakeshore, where elephant families wade through the shallows and large numbers of lesser flamingos work the alkaline margins in a shifting pink tide. Hippos pack the shoreline pools near the Msasa River, occasionally surfacing between the wading storks and herons. You settle into your lodge on the valley wall as the sun drops over the lake.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -1433,7 +1433,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             {
                 day: 2,
                 title: 'Full Day Masai Mara',
-                description: `## Full Day Game Drives\n\n5:30 AM. You leave camp before sunrise while the grass is still silvered with dew, tracking the Mara's resident prides as they finish the night's hunt. By mid-morning you reach the Mara River, its brown current thick with hippo pods and Nile crocodiles hauled out on the sandbanks — between July and October this stretch of water becomes a wildebeest crossing point, thousands of animals bunching on the bank before the plunge. A picnic lunch is taken in the shade of a riverine fig, then the afternoon carries you into the Mara Triangle, where topi stand watch on old termite mounds and a leopard is sometimes found draped along a sausage tree limb above the Mara River gorge. Return to camp as the sky turns to amber and rose.`,
+                description: `## Full Day Game Drives\n\n5:30 AM. You leave camp before sunrise while the grass is still silvered with dew, tracking the Mara's resident prides as they finish the night's hunt. By mid-morning you reach the Mara River, its brown current thick with hippo pods and Nile crocodiles hauled out on the sandbanks — between July and October this stretch of water becomes a wildebeest crossing point, abundant wildlife bunching on the bank before the plunge. A picnic lunch is taken in the shade of a riverine fig, then the afternoon carries you into the Mara Triangle, where topi stand watch on old termite mounds and a leopard is sometimes found draped along a sausage tree limb above the Mara River gorge. Return to camp as the sky turns to amber and rose.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -1451,7 +1451,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             {
                 day: 5,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A final Serengeti game drive across the short-grass plains before you climb east out of the park through the Ngorongoro Conservation Area's highland forest, Maasai bomas dotting the green slopes. By early afternoon you reach the crater rim and begin the steep 600-metre descent by 4x4 into the caldera — the world's largest intact, unfilled volcanic crater and a UNESCO World Heritage Site. On the floor, roughly 25,000 animals live within a single self-contained ecosystem: black rhino graze the open grassland, elephant bulls move through the Lerai fever-tree forest, and thousands of lesser flamingos crowd the shallows of Lake Magadi. A picnic lunch beside the Ngoitokitok hippo pool rounds out the afternoon before you climb back to your rim-side lodge for the night.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A final Serengeti game drive across the short-grass plains before you climb east out of the park through the Ngorongoro Conservation Area's highland forest, Maasai bomas dotting the green slopes. By early afternoon you reach the crater rim and begin the steep 600-metre descent by 4x4 into the caldera — the world's largest intact, unfilled volcanic crater and a UNESCO World Heritage Site. On the floor, roughly 25,000 animals live within a single self-contained ecosystem: black rhino graze the open grassland, elephant bulls move through the Lerai fever-tree forest, and large numbers of lesser flamingos crowd the shallows of Lake Magadi. A picnic lunch beside the Ngoitokitok hippo pool rounds out the afternoon before you climb back to your rim-side lodge for the night.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -1529,7 +1529,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
         id: 'kenya-tanzania-10d',
         slug: '10-day-east-africa-grand-circuit',
         title: "10-Day East Africa Grand Safari | Kenya & Tanzania",
-        subtitle: 'The Ultimate Wildlife Odyssey',
+        subtitle: 'The Exceptional Wildlife Odyssey',
         destination: 'kenya-tanzania',
         duration: 10,
         durationUnit: 'days',
@@ -1593,7 +1593,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             {
                 day: 7,
                 title: 'Serengeti to Ngorongoro',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A morning game drive captures the Serengeti's golden dawn light one final time before you depart eastward toward the Ngorongoro Conservation Area. The route crosses the short-grass plains and climbs gradually into the forested highlands, with Maasai herders tending their cattle among the ancient volcanic landscape. You arrive at the crater rim by mid-afternoon and check into your lodge perched at 2,200 meters. The view from the rim takes your breath away — the caldera drops 600 meters to a vast green floor where thousands of animals graze around a shimmering soda lake. The air is cool and crisp at this altitude, and the setting sun turns the crater walls deep amber. Dinner at your lodge feels like dining at the edge of the world.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A morning game drive captures the Serengeti's golden dawn light one final time before you depart eastward toward the Ngorongoro Conservation Area. The route crosses the short-grass plains and climbs gradually into the forested highlands, with Maasai herders tending their cattle among the ancient volcanic landscape. You arrive at the crater rim by mid-afternoon and check into your lodge perched at 2,200 meters. The view from the rim takes your breath away — the caldera drops 600 meters to a vast green floor where abundant wildlife graze around a shimmering soda lake. The air is cool and crisp at this altitude, and the setting sun turns the crater walls deep amber. Dinner at your lodge feels like dining at the edge of the world.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -1670,12 +1670,12 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             'Spice plantation visit',
             'Snorkeling & water sports'
         ],
-        description: `Five days on the Spice Island — where powder-white beaches meet centuries of Swahili history. Wander the UNESCO-listed alleyways of Stone Town, where ornate carved doors frame spice-scented markets and rooftop restaurants overlook the Indian Ocean. Tour a working spice plantation and taste clove, vanilla, and cinnamon straight from the source. Then settle into pristine beachfront bliss — turquoise water, swaying palms, world-class snorkelling over coral reefs, and dhow sunsets that paint the sky in molten gold. Whether it's a honeymoon escape or a post-safari wind-down, Zanzibar delivers pure tropical magic.`,
+        description: `Five days on the Spice Island — where powder-white beaches meet centuries of Swahili history. Wander the UNESCO-listed alleyways of Stone Town, where ornate carved doors frame spice-scented markets and rooftop restaurants overlook the Indian Ocean. Tour a working spice plantation and taste clove, vanilla, and cinnamon straight from the source. Then settle into pristine beachfront bliss — turquoise water, swaying palms, expert snorkelling over coral reefs, and dhow sunsets that paint the sky in molten gold. Whether it's a honeymoon escape or a post-safari wind-down, Zanzibar delivers pure tropical magic.`,
         itinerary: [
             {
                 day: 1,
                 title: 'Arrival in Zanzibar',
-                description: `## Airport transfer\n\nYour driver meets you at Zanzibar Airport and transfers you to your beach resort — the drive along palm-lined roads passes through small villages, spice plantations, and stretches of tropical greenery before the Indian Ocean appears in a breathtaking sweep of turquoise and white. At your resort, you're welcomed with fresh tropical juice and a cool towel. The rest of the day is yours — walk the powder-white beach, swim in the warm, crystal-clear water, or simply settle into a sun lounger and let the rhythm of the waves ease you into island time. As evening falls, the sky turns from gold to deep pink, and the scent of grilled seafood and Zanzibari spices drifts from the restaurant. Your first dinner on the island is a taste of what's to come.`,
+                description: `## Airport transfer\n\nYour driver meets you at Zanzibar Airport and transfers you to your beach resort — the drive along palm-lined roads passes through small villages, spice plantations, and stretches of tropical greenery before the Indian Ocean appears in a spectacular sweep of turquoise and white. At your resort, you're welcomed with fresh tropical juice and a cool towel. The rest of the day is yours — walk the powder-white beach, swim in the warm, crystal-clear water, or simply settle into a sun lounger and let the rhythm of the waves ease you into island time. As evening falls, the sky turns from gold to deep pink, and the scent of grilled seafood and Zanzibari spices drifts from the restaurant. Your first dinner on the island is a taste of what's to come.`,
                 meals: ['Dinner']
             },
             {
@@ -1758,7 +1758,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             'Most popular route',
             'Diverse ecological zones'
         ],
-        description: `Africa's rooftop awaits. Six days on the Marangu Route — Kilimanjaro's classic "Coca-Cola Route" — takes you from lush tropical rainforest through ethereal moorland and stark alpine desert to the glaciers of Uhuru Peak at 5,895 metres. Comfortable hut accommodations make this the most accessible path to the summit. An acclimatisation day at Horombo builds strength for the midnight summit push under star-filled skies. Expect four distinct ecological zones, breathtaking panoramas across the African plains, and the life-changing moment you stand on the continent's highest point.`,
+        description: `Africa's rooftop awaits. Six days on the Marangu Route — Kilimanjaro's classic "Coca-Cola Route" — takes you from lush tropical rainforest through ethereal moorland and stark alpine desert to the glaciers of Uhuru Peak at 5,895 metres. Comfortable hut accommodations make this the most accessible path to the summit. An acclimatisation day at Horombo builds strength for the midnight summit push under star-filled skies. Expect four distinct ecological zones, magnificent panoramas across the African plains, and the life-changing moment you stand on the continent's highest point.`,
         itinerary: [
             {
                 day: 1,
@@ -1866,7 +1866,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
             {
                 day: 1,
                 title: 'Nairobi to Amboseli National Park',
-                description: `## ~230km | Approx. 4.5 hrs\n\n6:00 AM — Your C.A.T.S driver-guide collects you from your Nairobi hotel and heads south on the Namanga Road, with bottled water already chilled in the vehicle. The city falls away quickly as the road sweeps through the Athi River plains — look out for Maasai herdsmen in vivid red shukas walking their cattle through the early morning haze. Breakfast stop at a roadside café in the highlands, where fresh mandazi and Kenyan coffee fuel the journey ahead.\n\nAs you cross into Kajiado County, the landscape opens into vast golden grasslands and Africa's highest peak begins its dramatic reveal on the southern horizon — Mount Kilimanjaro, floating above the clouds like a snow-dusted mirage. Arrive at Amboseli National Park by late morning and check into your safari lodge in time for lunch.\n\nBy 2:00 PM you're out on your first game drive across the park's wide-open plains. Amboseli is home to over 1,500 elephants, and here they parade in family groups across the sun-baked lake bed with Kilimanjaro's glaciers as a breathtaking backdrop. Your guide navigates towards the Enkongo Narok swamp, where hippos surface lazily among the water lilies and crowned cranes pick through the shallows. Watch for lions dozing beneath yellow-barked acacia trees and giraffes browsing the woodland edges as golden afternoon light floods the savannah.`,
+                description: `## ~230km | Approx. 4.5 hrs\n\n6:00 AM — Your C.A.T.S driver-guide collects you from your Nairobi hotel and heads south on the Namanga Road, with bottled water already chilled in the vehicle. The city falls away quickly as the road sweeps through the Athi River plains — look out for Maasai herdsmen in vivid red shukas walking their cattle through the early morning haze. Breakfast stop at a roadside café in the highlands, where fresh mandazi and Kenyan coffee fuel the journey ahead.\n\nAs you cross into Kajiado County, the landscape opens into vast golden grasslands and Africa's highest peak begins its dramatic reveal on the southern horizon — Mount Kilimanjaro, floating above the clouds like a snow-dusted mirage. Arrive at Amboseli National Park by late morning and check into your safari lodge in time for lunch.\n\nBy 2:00 PM you're out on your first game drive across the park's wide-open plains. Amboseli is home to over 1,500 elephants, and here they parade in family groups across the sun-baked lake bed with Kilimanjaro's glaciers as a dramatic backdrop. Your guide navigates towards the Enkongo Narok swamp, where hippos surface lazily among the water lilies and crowned cranes pick through the shallows. Watch for lions dozing beneath yellow-barked acacia trees and giraffes browsing the woodland edges as golden afternoon light floods the savannah.`,
                 meals: ['Lunch', 'Dinner']
             },
             {
@@ -1932,7 +1932,7 @@ C.A.T.S invites you to discover the Nairobi that most visitors never see — wil
         slug: '4-day-amboseli-tsavo-beast-to-beach',
     hasSGR: true,
         title: "4-Day Amboseli & Tsavo Safari to Diani | Bush & Beach",
-        subtitle: 'The Ultimate Coastal Journey',
+        subtitle: 'The Outstanding Coastal Journey',
         destination: 'kenya',
         duration: 4,
         durationUnit: 'days',
@@ -2053,7 +2053,7 @@ The landscape transforms as you enter the Mara ecosystem — golden grasslands r
             {
                 day: 3,
                 title: 'Full Day Masai Mara',
-                description: `A full day in Africa\'s greatest wildlife arena — every game drive reveals new drama. 6:00 AM — Rise in the cool pre-dawn darkness and head out when predators are most active, the air still fresh and the light soft gold across the plains. Drive to the Mara River where massive Nile crocodiles bask on sandy banks and pods of hippos crowd the muddy pools — during migration season (July–October), this is where the explosive wildebeest river crossings unfold in heart-stopping chaos. Explore the Mara Triangle with its rolling hills and exceptional visibility — spot elephants moving through riverine forest, topi standing sentinel on ridgelines, and hyena dens where playful cubs tumble and wrestle outside their burrows. Return for lunch at your lodge. An optional hot air balloon safari at dawn lifts you silently above the herds for a once-in-a-lifetime bird\'s-eye perspective of the savannah, followed by a champagne bush breakfast. The afternoon drive explores a different sector — perhaps tracking a leopard through the croton thickets along the Talek River, or watching a cheetah hunt unfold across the open plains in golden hour light that turns the grass to fire.`,
+                description: `A full day in Africa\'s greatest wildlife arena — every game drive reveals new drama. 6:00 AM — Rise in the cool pre-dawn darkness and head out when predators are most active, the air still fresh and the light soft gold across the plains. Drive to the Mara River where massive Nile crocodiles bask on sandy banks and pods of hippos crowd the muddy pools — during migration season (July–October), this is where the explosive wildebeest river crossings unfold in heart-stopping chaos. Explore the Mara Triangle with its rolling hills and exceptional visibility — spot elephants moving through riverine forest, topi standing sentinel on ridgelines, and hyena dens where playful cubs tumble and wrestle outside their burrows. Return for lunch at your lodge. An optional hot air balloon safari at dawn lifts you silently above the herds for a unforgettable bird\'s-eye perspective of the savannah, followed by a champagne bush breakfast. The afternoon drive explores a different sector — perhaps tracking a leopard through the croton thickets along the Talek River, or watching a cheetah hunt unfold across the open plains in golden hour light that turns the grass to fire.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -2308,7 +2308,7 @@ Return for lunch at your lodge. The afternoon drive explores the southern marshe
 
 The drive south crosses through Kenya\'s southeastern corridor as the terrain gradually descends toward the Indian Ocean. Dry scrubland softens into mango orchards and sisal plantations, and by late afternoon the first coconut palms and warm salt air announce your return to the coast.
 
-Arrive back at your Diani Beach hotel by early evening — trading Kilimanjaro\'s snow-capped silhouette for the gentle lap of the Indian Ocean on white coral sand. Three days that took you from beach paradise to Africa\'s most iconic mountain and back — with a safari\'s worth of elephant encounters, big cat sightings, and breathtaking Kilimanjaro sunrises to treasure.`,
+Arrive back at your Diani Beach hotel by early evening — trading Kilimanjaro\'s snow-capped silhouette for the gentle lap of the Indian Ocean on white coral sand. Three days that took you from beach paradise to Africa\'s most iconic mountain and back — with a safari\'s worth of elephant encounters, big cat sightings, and sweeping Kilimanjaro sunrises to treasure.`,
                 meals: ['Breakfast', 'Lunch']
             }
         ],
@@ -2496,7 +2496,7 @@ Either way, the transformation is extraordinary — from red-earth wilderness to
         id: 'safari-beach-7d',
         slug: '7-day-kenya-safari-and-diani-beach',
         title: "3-Day Kenya Safari & Diani Beach | Bush & Beach Adventure",
-        subtitle: 'The Ultimate Vacation',
+        subtitle: 'The Signature Vacation',
         destination: 'beach',
         duration: 3,
         durationUnit: 'days',
@@ -2505,7 +2505,7 @@ Either way, the transformation is extraordinary — from red-earth wilderness to
             'Flight from Mara to Diani Beach',
             '4 days relaxing on pristine white sands'
         ],
-        description: `Three days of world-class Masai Mara safari followed by four days of tropical Indian Ocean paradise — the ultimate bush-and-beach combination. Expect Big Five encounters across the Mara's legendary golden plains where lion prides, leopard, and cheetah hunt in Africa's densest predator population, then fly directly to Diani Beach for white-sand relaxation, coral reef snorkeling, and sunset dhow cruises. From predator hunts at dawn to barefoot walks along palm-fringed shores by evening — this is Kenya's most rewarding contrast holiday in seven unforgettable days.`,
+        description: `Three days of professional Masai Mara safari followed by four days of tropical Indian Ocean paradise — the complete bush-and-beach combination. Expect Big Five encounters across the Mara's legendary golden plains where lion prides, leopard, and cheetah hunt in Africa's densest predator population, then fly directly to Diani Beach for white-sand relaxation, coral reef snorkeling, and sunset dhow cruises. From predator hunts at dawn to barefoot walks along palm-fringed shores by evening — this is Kenya's most rewarding contrast holiday in seven unforgettable days.`,
         itinerary: [
             {
                 day: 1,
@@ -2676,7 +2676,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             'Optional Maasai Village visit',
             'Incredible wildlife photography'
         ],
-        description: `Three days to fully explore one of Kenya's most diverse and photogenic parks. Amboseli reveals different faces across multiple game drives — from the shimmering mirage of its dried-up lake bed to lush wetlands fed by Kilimanjaro's underground springs, where elephants, hippos, and waterbirds congregate. Expect large elephant families in open grassland, predators hunting at dawn, and the ever-present snow-capped peak of Kilimanjaro framing every scene. An optional Maasai village visit adds cultural richness. Year-round wildlife, world-class photography, and Kenya's most iconic mountain backdrop.`,
+        description: `Three days to fully explore one of Kenya's most diverse and photogenic parks. Amboseli reveals different faces across multiple game drives — from the shimmering mirage of its dried-up lake bed to lush wetlands fed by Kilimanjaro's underground springs, where elephants, hippos, and waterbirds congregate. Expect large elephant families in open grassland, predators hunting at dawn, and the ever-present snow-capped peak of Kilimanjaro framing every scene. An optional Maasai village visit adds cultural richness. Year-round wildlife, experienced photography, and Kenya's most iconic mountain backdrop.`,
         itinerary: [
             {
                 day: 1,
@@ -2757,7 +2757,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             'Exceptional Big Cat sightings',
             'Stay in a luxury tented camp'
         ],
-        description: `Skip the road, maximise the Mara. A scenic bush flight from Nairobi drops you directly into Kenya's premier wildlife reserve — game drives begin the moment you land. Expect exceptional big cat sightings across the Mara's open grasslands, where lion prides, cheetah families, and elusive leopards thrive in one of Africa's densest predator populations. Stay in a luxury tented camp nestled along the river, with hippo grunts and hyena calls as your night soundtrack. Aerial views of the Rift Valley on your flight in add a breathtaking opening act.`,
+        description: `Skip the road, maximise the Mara. A scenic bush flight from Nairobi drops you directly into Kenya's premier wildlife reserve — game drives begin the moment you land. Expect exceptional big cat sightings across the Mara's open grasslands, where lion prides, cheetah families, and elusive leopards thrive in one of Africa's densest predator populations. Stay in a luxury tented camp nestled along the river, with hippo grunts and hyena calls as your night soundtrack. Aerial views of the Rift Valley on your flight in add a awe-inspiring opening act.`,
         itinerary: [
             {
                 day: 1,
@@ -2768,7 +2768,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             {
                 day: 2,
                 title: 'Full Day – Masai Mara Explorer',
-                description: `## Full day game drives\n\n6:00 AM. Wake to birdsong and distant hyena calls. Head out for the dawn drive — the Mara is electric at first light. Cheetahs set out on morning hunts, and leopards may still be visible before retreating to the treetops.\n\nYour guide takes you along the Mara River, the ecosystem's lifeblood. Enormous Nile crocodiles lie motionless on the banks, hippo pods surface and submerge. During the Great Migration (July–October), thousands of wildebeest hurl themselves across the current here.\n\nMid-morning, we explore Musiara Marsh — a renowned big-cat territory where BBC and National Geographic have filmed iconic footage. Lion prides patrol the marsh edges, serval cats hunt in the tall grass.\n\nBush picnic lunch, then afternoon drives into the Mara Triangle for panoramic views from the Oloololo Escarpment, or across the southern plains where vast herds of buffalo and topi graze. The day ends with a golden sunset painting the sky. Return to camp for dinner.`,
+                description: `## Full day game drives\n\n6:00 AM. Wake to birdsong and distant hyena calls. Head out for the dawn drive — the Mara is electric at first light. Cheetahs set out on morning hunts, and leopards may still be visible before retreating to the treetops.\n\nYour guide takes you along the Mara River, the ecosystem's lifeblood. Enormous Nile crocodiles lie motionless on the banks, hippo pods surface and submerge. During the Great Migration (July–October), vast herds of wildebeest hurl themselves across the current here.\n\nMid-morning, we explore Musiara Marsh — a renowned big-cat territory where BBC and National Geographic have filmed iconic footage. Lion prides patrol the marsh edges, serval cats hunt in the tall grass.\n\nBush picnic lunch, then afternoon drives into the Mara Triangle for panoramic views from the Oloololo Escarpment, or across the southern plains where vast herds of buffalo and topi graze. The day ends with a golden sunset painting the sky. Return to camp for dinner.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -2842,7 +2842,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             {
                 day: 1,
                 title: 'Fly to Amboseli',
-                description: `## 45-min flight\n\n8:00 AM. Check in at Wilson Airport in Nairobi for your scenic flight to Amboseli. Within minutes of takeoff you're climbing above the city, and as the aircraft turns south the landscape unfolds below — the Athi Plains, Maasai homesteads, and then the breathtaking sight of Mount Kilimanjaro rising from the clouds ahead. The 45-minute flight is a safari in itself. You touch down at Amboseli airstrip where your guide is waiting, and the first elephants are already visible from the tarmac. A short transfer brings you to your safari lodge for a welcome lunch. By early afternoon you're on your first game drive. The open plains of Amboseli stretch to the horizon, and herds of elephants — dozens at a time — cross the dusty landscape with Kilimanjaro's snow-capped summit towering behind them. Your guide heads to the Enkongo Narok swamp where hippos surface among dense birdlife: pelicans, martial eagles, and vivid superb starlings. As the afternoon light turns golden, you climb Observation Hill for a panoramic view of the entire park before returning to your lodge for sundowners and dinner.`,
+                description: `## 45-min flight\n\n8:00 AM. Check in at Wilson Airport in Nairobi for your scenic flight to Amboseli. Within minutes of takeoff you're climbing above the city, and as the aircraft turns south the landscape unfolds below — the Athi Plains, Maasai homesteads, and then the striking sight of Mount Kilimanjaro rising from the clouds ahead. The 45-minute flight is a safari in itself. You touch down at Amboseli airstrip where your guide is waiting, and the first elephants are already visible from the tarmac. A short transfer brings you to your safari lodge for a welcome lunch. By early afternoon you're on your first game drive. The open plains of Amboseli stretch to the horizon, and herds of elephants — dozens at a time — cross the dusty landscape with Kilimanjaro's snow-capped summit towering behind them. Your guide heads to the Enkongo Narok swamp where hippos surface among dense birdlife: pelicans, martial eagles, and vivid superb starlings. As the afternoon light turns golden, you climb Observation Hill for a panoramic view of the entire park before returning to your lodge for sundowners and dinner.`,
                 meals: ['Lunch', 'Dinner']
             },
             {
@@ -2910,7 +2910,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             'Full day exploring the Mara River',
             'High chances of seeing the Big Five'
         ],
-        description: `Four days deep in the Mara — enough time to reach the legendary Mara River, where the Great Migration's most dramatic chapter unfolds. Expect wildebeest massing on riverbanks, crocodile-patrolled crossings, and the aftermath feeding frenzy that draws every predator on the plains. Beyond the river, explore the Mara's sweeping grasslands where Big Five encounters are virtually guaranteed — lion prides, elephant herds, buffalo in their thousands, and leopards hidden in riverine forest. Extended time in the reserve means deeper exploration, quieter corners, and the bucket-list moments that define an African safari.`,
+        description: `Four days deep in the Mara — enough time to reach the legendary Mara River, where the Great Migration's most dramatic chapter unfolds. Expect wildebeest massing on riverbanks, crocodile-patrolled crossings, and the aftermath feeding frenzy that draws every predator on the plains. Beyond the river, explore the Mara's sweeping grasslands where Big Five encounters are highly likely — lion prides, elephant herds, buffalo in their thousands, and leopards hidden in riverine forest. Extended time in the reserve means deeper exploration, quieter corners, and the bucket-list moments that define an African safari.`,
         itinerary: [
             {
                 day: 1,
@@ -2927,7 +2927,7 @@ By mid-afternoon, you arrive at the coast. The transition from dusty savannah to
             {
                 day: 3,
                 title: 'Masai Mara Plains – Deep Exploration',
-                description: `## Full day game drives across different sectors\n\n6:30 AM. Today we explore the Mara Triangle — the western section managed by the Mara Conservancy, known for pristine landscapes and fewer vehicles.\n\nThe Triangle's rolling hills offer spectacular vistas and prolific wildlife. Elephant herds move through the grasslands, calves tucked safely between adults. Cheetahs favor the open terrain for hunting. Watch for black rhino in the dense thickets — the Mara is one of Kenya's best places to spot this critically endangered species.\n\nMid-morning, we swing past the Oloololo Escarpment, a towering cliff marking the reserve's western boundary with breathtaking views across the entire Mara ecosystem. Lunch at the lodge before heading out again.\n\nThe afternoon focuses on Musiara Marsh, a legendary big-cat territory featured in countless wildlife documentaries. Lion prides rest in croton bush shade, and leopards haunt the fig trees along the marsh edge. As the sun wanes, your guide finds a perfect spot for one more golden sunset.`,
+                description: `## Full day game drives across different sectors\n\n6:30 AM. Today we explore the Mara Triangle — the western section managed by the Mara Conservancy, known for pristine landscapes and fewer vehicles.\n\nThe Triangle's rolling hills offer spectacular vistas and prolific wildlife. Elephant herds move through the grasslands, calves tucked safely between adults. Cheetahs favor the open terrain for hunting. Watch for black rhino in the dense thickets — the Mara is one of Kenya's best places to spot this critically endangered species.\n\nMid-morning, we swing past the Oloololo Escarpment, a towering cliff marking the reserve's western boundary with stunning views across the entire Mara ecosystem. Lunch at the lodge before heading out again.\n\nThe afternoon focuses on Musiara Marsh, a legendary big-cat territory featured in countless wildlife documentaries. Lion prides rest in croton bush shade, and leopards haunt the fig trees along the marsh edge. As the sun wanes, your guide finds a perfect spot for one more golden sunset.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -3077,7 +3077,7 @@ Enjoy a final leisurely breakfast at your beach resort as the morning sunlight d
     {
         id: 'znz-6d',
         slug: '6-day-ultimate-zanzibar-getaway',
-        title: "6-Day Zanzibar Ultimate Getaway | Beach, Culture & Spice",
+        title: "6-Day Zanzibar Definitive Getaway | Beach, Culture & Spice",
         subtitle: 'Tropical Island Paradise',
         destination: 'beach',
         duration: 6,
@@ -3087,14 +3087,14 @@ Enjoy a final leisurely breakfast at your beach resort as the morning sunlight d
             'Sunset Dhow Cruise',
             'Mnemba Atoll snorkeling trip'
         ],
-        description: `Six days of barefoot luxury on Zanzibar's powder-white shores — the definitive Spice Island experience. Explore every facet of this tropical paradise: the UNESCO-listed alleyways of Stone Town where carved doors and spice bazaars tell centuries of Swahili history; a fragrant spice plantation tour tasting clove, cinnamon, and vanilla from the source; rare red colobus monkeys in the ancient Jozani Forest; world-class snorkelling at Mnemba Atoll surrounded by dolphins, sea turtles, and kaleidoscopic coral reefs; and a traditional dhow sunset cruise across the Indian Ocean. Between excursions, sink into pure beachfront bliss — turquoise water, swaying palms, and nowhere to be.`,
+        description: `Six days of barefoot luxury on Zanzibar's powder-white shores — the definitive Spice Island experience. Explore every facet of this tropical paradise: the UNESCO-listed alleyways of Stone Town where carved doors and spice bazaars tell centuries of Swahili history; a fragrant spice plantation tour tasting clove, cinnamon, and vanilla from the source; rare red colobus monkeys in the ancient Jozani Forest; skilled snorkelling at Mnemba Atoll surrounded by dolphins, sea turtles, and kaleidoscopic coral reefs; and a traditional dhow sunset cruise across the Indian Ocean. Between excursions, sink into pure beachfront bliss — turquoise water, swaying palms, and nowhere to be.`,
         itinerary: [
             {
                 day: 1,
                 title: 'Arrival in Zanzibar',
                 description: `## Airport transfer
 
-Your driver meets you at Zanzibar Airport and transfers you to your beach resort on the coast. The drive winds through palm groves, small villages with corrugated roofs and flowering gardens, and stretches of tropical greenery before the Indian Ocean appears — a breathtaking sweep of turquoise meeting powder-white sand. At the resort, you're welcomed with a fresh tropical cocktail and shown to your room. The rest of the day is yours to decompress: walk the beach barefoot, swim in the impossibly warm, crystal-clear water, or settle into a sun lounger and let the sound of gentle waves reset your internal clock. As evening falls, the sky turns from gold to deep crimson over the Indian Ocean, and the warm air carries the scent of frangipani and grilled seafood. Your first dinner on the island sets the tone for five extraordinary days ahead.`,
+Your driver meets you at Zanzibar Airport and transfers you to your beach resort on the coast. The drive winds through palm groves, small villages with corrugated roofs and flowering gardens, and stretches of tropical greenery before the Indian Ocean appears — a spectacular sweep of turquoise meeting powder-white sand. At the resort, you're welcomed with a fresh tropical cocktail and shown to your room. The rest of the day is yours to decompress: walk the beach barefoot, swim in the impossibly warm, crystal-clear water, or settle into a sun lounger and let the sound of gentle waves reset your internal clock. As evening falls, the sky turns from gold to deep crimson over the Indian Ocean, and the warm air carries the scent of frangipani and grilled seafood. Your first dinner on the island sets the tone for five extraordinary days ahead.`,
                 meals: ['Dinner']
             },
             {
@@ -3212,7 +3212,7 @@ Enjoy a leisurely final breakfast as the morning light shimmers across the turqu
             {
                 day: 2,
                 title: 'Amboseli Exploration',
-                description: `5:30 AM. A pre-dawn start gives you the best chance of seeing Kilimanjaro completely clear — its glaciers catching the first pink light while the plains below are still wrapped in cool morning mist. Elephant families move through the golden grass, their gentle rumbles the only sound in the stillness. Your guide drives toward Observation Hill, where you step out and climb to the summit for a breathtaking 360-degree panorama: the dried bed of Lake Amboseli, the green veins of the Enkongo Narok wetlands, and the immense mountain presiding over everything. Back in the vehicle, you explore the central plains where cheetahs are most active in the morning hours and secretary birds stalk through the short grass. Return for breakfast at your lodge, then rest during the midday heat. The afternoon brings a second game drive — your guide takes you to different sectors, perhaps where buffalo herds gather or where a pride of lions has been spotted near the swamp edge. An optional Maasai village visit offers insight into the traditional pastoral life of Amboseli's original inhabitants.`,
+                description: `5:30 AM. A pre-dawn start gives you the best chance of seeing Kilimanjaro completely clear — its glaciers catching the first pink light while the plains below are still wrapped in cool morning mist. Elephant families move through the golden grass, their gentle rumbles the only sound in the stillness. Your guide drives toward Observation Hill, where you step out and climb to the summit for a magnificent 360-degree panorama: the dried bed of Lake Amboseli, the green veins of the Enkongo Narok wetlands, and the immense mountain presiding over everything. Back in the vehicle, you explore the central plains where cheetahs are most active in the morning hours and secretary birds stalk through the short grass. Return for breakfast at your lodge, then rest during the midday heat. The afternoon brings a second game drive — your guide takes you to different sectors, perhaps where buffalo herds gather or where a pride of lions has been spotted near the swamp edge. An optional Maasai village visit offers insight into the traditional pastoral life of Amboseli's original inhabitants.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -3331,7 +3331,7 @@ Arrive at Amboseli by early afternoon and check into your safari lodge. After lu
 
 5:30 AM — Your final safari morning. Rise before dawn for the clearest Kilimanjaro views — the mountain reveals its full glacial crown, glowing rose-pink then gold as the first sun strikes the ice cap. This is the moment that defines Amboseli: enormous elephants moving across the pale lake bed as Africa\'s highest peak towers behind them in the crystalline dawn light.
 
-Your morning game drive rolls through the park\'s finest circuits one last time. Elephant matriarchs lead their families between the swamps, buffalo herds graze the open plains, and with luck a cheetah or lion appears in the golden morning light. Climb Observation Hill for a final sweeping 360-degree panorama — elephants, swamps, and Kilimanjaro\'s snow-capped summit all in one breathtaking view.
+Your morning game drive rolls through the park\'s finest circuits one last time. Elephant matriarchs lead their families between the swamps, buffalo herds graze the open plains, and with luck a cheetah or lion appears in the golden morning light. Climb Observation Hill for a final sweeping 360-degree panorama — elephants, swamps, and Kilimanjaro\'s snow-capped summit all in one dramatic view.
 
 8:30 AM — Return to your lodge for breakfast, savouring the last Kilimanjaro views. Pack up and depart north for Nairobi. The highway climbs through the Athi Plains — Maasai herdsmen in crimson shukas guide their cattle through the grasslands, and the rolling landscape offers occasional sightings of zebra and giraffe beyond the fencelines.
 
@@ -3404,7 +3404,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Optional Masai Village visit – Please arrange with your driver/guide – $25 per person',
             'Optional Night game drive – $80 per person'
         ],
-        description: `One of Kenya's most remarkable wildlife sanctuaries — Ol Pejeta is home to the last two northern white rhinos on Earth, a dedicated chimpanzee sanctuary, and all of Africa's Big Five roaming open conservancy plains backed by the snow-capped peaks of Mount Kenya. Expect lion prides, cheetah hunts across golden grassland, and thousands of elephants. Cross the equator line, pass through rolling coffee and tea plantations, and witness conservation in action at the rhino sanctuary. With optional night drives revealing nocturnal predators and a Maasai village visit, this short safari packs extraordinary diversity into a single overnight trip from Nairobi.`,
+        description: `One of Kenya's most remarkable wildlife sanctuaries — Ol Pejeta is home to the last two northern white rhinos on Earth, a dedicated chimpanzee sanctuary, and all of Africa's Big Five roaming open conservancy plains backed by the snow-capped peaks of Mount Kenya. Expect lion prides, cheetah hunts across golden grassland, and large numbers of elephants. Cross the equator line, pass through rolling coffee and tea plantations, and witness conservation in action at the rhino sanctuary. With optional night drives revealing nocturnal predators and a Maasai village visit, this short safari packs extraordinary diversity into a single overnight trip from Nairobi.`,
         itinerary: [
             {
                 day: 1,
@@ -3631,7 +3631,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Lion, elephant, cheetah, giraffe, buffalo, antelope, warthog, ostrich, baboon, bird, and more',
             'Herds of red-dust elephants',
             'The beautiful Aruba Dam on the north bank of the Voi River – fantastic for game viewing',
-            'Mudanda Rock – a whale-shaped rock towering over a natural dam – a draw for thousands of elephants',
+            'Mudanda Rock – a whale-shaped rock towering over a natural dam – a draw for large numbers of elephants',
             'Scenic green hills and valleys',
             'Unlimited game viewing drives',
             'Rhino sanctuary'
@@ -3653,7 +3653,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             {
                 day: 3,
                 title: 'Tsavo West - Amboseli',
-                description: '## ~200km | Approx. 2-3hrs, 2-3hrs   Another safari dawn, another early rise to catch the wildlife awakening in the morning’s gentle light.  Amidst the park’s hills and ancient lava flows are surprises like the palm-fringed oasis of Mzima Springs, fed by thousands of gallons of fresh water. Home to exotic fish and birds, hippos, and crocodiles, the spring is a source of sustenance for the park’s thirsty wildlife.  We’ll take a walk along the banks of the springs and spot elephant, zebra, and others as they come to drink.  Now it’s time to jump back into the 4 x 4 for the easy drive to Amboseli Park. We’ll measure our approach as the towering form of Mt. Kilimanjaro entices us closer to the reserve.  Lunching at our 3rd accommodation – Amboseli, we’ll take in the grand form of the iconic mountain that stands sentinel over the park’s southern vista.  Then it’s time to safari through this popular park. It’s smaller than the Tsavo parks but this means a greater concentration of wildlife to behold.  We’ll easily spot elephants, but we’ll also be tracking for lion, buffalo, zebra, gazelle, and cheetah. The park is also home to hyena, fox, jackal, monkey, and baboon, so the viewing will be rich and varied.  Between the elephants and other wildlife, all framed by mighty Kilimanjaro, the park is a wonderful spot for picture taking. Be sure to pack extra film for your smartphone!  For another type of Amboseli experience ask your guide about the optional visit to a nearby Maasai village. In this cultural encounter, you’ll be able to see close-up how the original people of this land live and sustain themselves.  Toward evening the cloud cover around the mountain’s peak often breaks, revealing a heavenly view of the snow-capped summit.  We’ll break for dinner and the evening at your safari lodge or tented camp.',
+                description: '## ~200km | Approx. 2-3hrs, 2-3hrs   Another safari dawn, another early rise to catch the wildlife awakening in the morning’s gentle light.  Amidst the park’s hills and ancient lava flows are surprises like the palm-fringed oasis of Mzima Springs, fed by large numbers of gallons of fresh water. Home to exotic fish and birds, hippos, and crocodiles, the spring is a source of sustenance for the park’s thirsty wildlife.  We’ll take a walk along the banks of the springs and spot elephant, zebra, and others as they come to drink.  Now it’s time to jump back into the 4 x 4 for the easy drive to Amboseli Park. We’ll measure our approach as the towering form of Mt. Kilimanjaro entices us closer to the reserve.  Lunching at our 3rd accommodation – Amboseli, we’ll take in the grand form of the iconic mountain that stands sentinel over the park’s southern vista.  Then it’s time to safari through this popular park. It’s smaller than the Tsavo parks but this means a greater concentration of wildlife to behold.  We’ll easily spot elephants, but we’ll also be tracking for lion, buffalo, zebra, gazelle, and cheetah. The park is also home to hyena, fox, jackal, monkey, and baboon, so the viewing will be rich and varied.  Between the elephants and other wildlife, all framed by mighty Kilimanjaro, the park is a wonderful spot for picture taking. Be sure to pack extra film for your smartphone!  For another type of Amboseli experience ask your guide about the optional visit to a nearby Maasai village. In this cultural encounter, you’ll be able to see close-up how the original people of this land live and sustain themselves.  Toward evening the cloud cover around the mountain’s peak often breaks, revealing a heavenly view of the snow-capped summit.  We’ll break for dinner and the evening at your safari lodge or tented camp.',
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -3719,7 +3719,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
         duration: 5,
         durationUnit: 'days',
         highlights: [
-            'Large Elephant herds – guaranteed sighting',
+            'Large Elephant herds – commonly encountereding',
             'Snow-capped peak of Mt. Kilimanjaro (weather permitting)',
             'Lion, leopard, buffalo, and elephant',
             'Marshlands host many elephants, buffaloes, hippos, and a variety of waterfowl like –pelican and Egyptian goose',
@@ -3728,7 +3728,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Visit to the grazers and birdlife at Crescent Island Sanctuary',
             'Optional visit to Hell’s Gate National Park – $45 per person.'
         ],
-        description: `Three of Kenya's crown jewels in five unforgettable days. Begin in Amboseli where enormous elephant herds roam beneath the snow-capped summit of Mount Kilimanjaro — visible from Observation Hill's sweeping panorama. Transition to Lake Naivasha for a boat safari gliding past hippo pods and a walking encounter with giraffes and zebras on Crescent Island. The grand finale: the Masai Mara's endless golden plains, prowled by lion prides, leopards, and cheetahs. Expect guaranteed elephant sightings, pelicans drifting over glassy lakes, and the raw drama of predator-prey encounters across Africa's most celebrated savannah.`,
+        description: `Three of Kenya's crown jewels in five unforgettable days. Begin in Amboseli where enormous elephant herds roam beneath the snow-capped summit of Mount Kilimanjaro — visible from Observation Hill's sweeping panorama. Transition to Lake Naivasha for a boat safari gliding past hippo pods and a walking encounter with giraffes and zebras on Crescent Island. The grand finale: the Masai Mara's endless golden plains, prowled by lion prides, leopards, and cheetahs. Expect near-certain elephant sightings, pelicans drifting over glassy lakes, and the raw drama of predator-prey encounters across Africa's most celebrated savannah.`,
         itinerary: [
  {
  day: 1,
@@ -3819,7 +3819,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
         duration: 6,
         durationUnit: 'days',
         highlights: [
-            'Large Elephant herds – guaranteed sighting',
+            'Large Elephant herds – commonly encountereding',
             'Snow-capped peak of Mt. Kilimanjaro (weather permitting)',
             'Lion, leopard, buffalo, and elephant',
             'Marshlands host many elephants, buffaloes, hippos, and a variety of waterfowl like –pelican and Egyptian goose',
@@ -3857,7 +3857,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
  {
  day: 5,
  title: 'Full Day at the Masai Mara',
- description: 'This is the day to do as much game driving as you please. Talk to your guide about what areas of the park you’d like to visit – he’ll have plenty of suggestions. The area is rich with wildlife so you should be spotting the big game and smaller species like hyena and jackal before long. Lunch will be served picnic-style down at the Mara River – the crossing site of the Great Migration. Should you be here from July to October you’ll have a front-row seat to an incredible influx of wildebeest, zebra, gazelle, topi, and others pouring in from the Serengeti. It’s a display of breathtaking power – both of the invading grazers and the predators awaiting their arrival. Here are the forces of nature playing out right before our eyes. To witness this spectacle from above, take advantage of our optional pre-dawn hot air balloon safari. As the park awakens, you’ll rise above the savannah to see the great streams of wildlife trekking out to the horizon. Unforgettable. We also offer an optional visit to the local Maasai people in one of their nearby villages. Meet the original people of this area and learn about their culture and herding lifestyle. As the sun begins to wane, we’ll head back to our Mara accommodation for dinner and some relaxation time.',
+ description: 'This is the day to do as much game driving as you please. Talk to your guide about what areas of the park you’d like to visit – he’ll have plenty of suggestions. The area is rich with wildlife so you should be spotting the big game and smaller species like hyena and jackal before long. Lunch will be served picnic-style down at the Mara River – the crossing site of the Great Migration. Should you be here from July to October you’ll have a front-row seat to an incredible influx of wildebeest, zebra, gazelle, topi, and others pouring in from the Serengeti. It’s a display of sweeping power – both of the invading grazers and the predators awaiting their arrival. Here are the forces of nature playing out right before our eyes. To witness this spectacle from above, take advantage of our optional pre-dawn hot air balloon safari. As the park awakens, you’ll rise above the savannah to see the great streams of wildlife trekking out to the horizon. Unforgettable. We also offer an optional visit to the local Maasai people in one of their nearby villages. Meet the original people of this area and learn about their culture and herding lifestyle. As the sun begins to wane, we’ll head back to our Mara accommodation for dinner and some relaxation time.',
  meals: ['Breakfast', 'Lunch', 'Dinner'],
  },
  {
@@ -3957,7 +3957,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
  {
  day: 4,
  title: 'Lake Nakuru – Masai Mara',
- description: '## ~40km of game drives\n\nThis will be an active day so let’s start early with a bird and game viewing safari through Lake Nakuru Park. Then we’ll head further south toward Masai country on our way to the Masai Mara Reserve. We’ll get to the park with plenty of time to and head out for our first Mara game drive. Scenes of rolling hills and golden savannahs, dappled with acacia trees will greet us. And before too long we should spot some of the great park’s thousands of wildlife – all of Africa’s “Big Five” are found here in significant numbers. The park is known for its many prides of lions, as well as leopards, cheetahs, hyenas, jackals and so much more. Look out for the birdlife as well, which is rich, colorful, and found extensively throughout the park. Toward evening, we’ll retire at our Mara safari lodge or tented camp.',
+ description: '## ~40km of game drives\n\nThis will be an active day so let’s start early with a bird and game viewing safari through Lake Nakuru Park. Then we’ll head further south toward Masai country on our way to the Masai Mara Reserve. We’ll get to the park with plenty of time to and head out for our first Mara game drive. Scenes of rolling hills and golden savannahs, dappled with acacia trees will greet us. And before too long we should spot some of the great park’s abundant wildlife – all of Africa’s “Big Five” are found here in significant numbers. The park is known for its many prides of lions, as well as leopards, cheetahs, hyenas, jackals and so much more. Look out for the birdlife as well, which is rich, colorful, and found extensively throughout the park. Toward evening, we’ll retire at our Mara safari lodge or tented camp.',
  meals: ['Breakfast', 'Lunch', 'Dinner'],
  },
  {
@@ -4039,7 +4039,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Bird watching',
             'Rhino sanctuary'
         ],
-        description: `Seven days spanning Kenya's most extraordinary wildlife landscapes — from the arid northern frontier to the golden plains of the Masai Mara. Expect the rare Samburu Five (Grevy's zebra, reticulated giraffe, gerenuk, oryx, and Somali ostrich), thousands of elephants along the Ewaso Ng'iro River, and a night in a legendary tree hotel overlooking a floodlit waterhole. The journey sweeps through Aberdare's misty rainforests — home to black rhinos and giant forest hogs — past flamingo-fringed lakes, and into the Mara's predator-rich grasslands. An epic arc across Kenya's most iconic ecosystems.`,
+        description: `Seven days spanning Kenya's most extraordinary wildlife landscapes — from the arid northern frontier to the golden plains of the Masai Mara. Expect the rare Samburu Five (Grevy's zebra, reticulated giraffe, gerenuk, oryx, and Somali ostrich), large numbers of elephants along the Ewaso Ng'iro River, and a night in a legendary tree hotel overlooking a floodlit waterhole. The journey sweeps through Aberdare's misty rainforests — home to black rhinos and giant forest hogs — past flamingo-fringed lakes, and into the Mara's predator-rich grasslands. An epic arc across Kenya's most iconic ecosystems.`,
         itinerary: [
  {
  day: 1,
@@ -4141,7 +4141,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
         duration: 7,
         durationUnit: 'days',
         highlights: [
-            'Large Elephant herds – guaranteed sighting',
+            'Large Elephant herds – commonly encountereding',
             'Snow-capped peak of Mt. Kilimanjaro (weather permitting)',
             'Lion, leopard, buffalo, and elephant',
             'Marshlands host many elephants, buffaloes, hippos, and a variety of waterfowl like –pelican and Egyptian goose',
@@ -4185,7 +4185,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
  {
  day: 6,
  title: 'Full Day at the Masai Mara',
- description: 'This will be an unforgettable day on safari in Kenya. Discuss with your guide which areas of the park you’d like to explore. Usually, we’ll head down to the Mara River, site of the crossing herds of the Great Migration (July – October). During this season, uncountable thousands of wildebeests, zebras, gazelle, eland, topi, and more flood into the Mara from the neighboring Serengeti on a survival trek for water and taller grasses. Waiting for them in the river are crocodiles and then, great numbers of big cats throughout the park. The spectacle can be awe-inspiring, dramatic, and moving. If you wish to experience this sight from above, we suggest an optional pre-dawn hot air balloon safari. Sail into the new day as the park comes alive with sunlight and views of innumerable wildlife streaming out to the horizon. Your guide can make all the arrangements for this not-to-be-missed event. For a special cultural moment, we recommend an optional visit to a nearby Maasai village. Here you’ll get to meet these local people and learn about their lives and unique herding lifestyle. As evening approaches, look to the west for a piercing Mara sunset. We’ll spend our final safari night at our Masai Mara accommodation.',
+ description: 'This will be an unforgettable day on safari in Kenya. Discuss with your guide which areas of the park you’d like to explore. Usually, we’ll head down to the Mara River, site of the crossing herds of the Great Migration (July – October). During this season, uncountable vast herds of wildebeests, zebras, gazelle, eland, topi, and more flood into the Mara from the neighboring Serengeti on a survival trek for water and taller grasses. Waiting for them in the river are crocodiles and then, great numbers of big cats throughout the park. The spectacle can be awe-inspiring, dramatic, and moving. If you wish to experience this sight from above, we suggest an optional pre-dawn hot air balloon safari. Sail into the new day as the park comes alive with sunlight and views of innumerable wildlife streaming out to the horizon. Your guide can make all the arrangements for this not-to-be-missed event. For a special cultural moment, we recommend an optional visit to a nearby Maasai village. Here you’ll get to meet these local people and learn about their lives and unique herding lifestyle. As evening approaches, look to the west for a piercing Mara sunset. We’ll spend our final safari night at our Masai Mara accommodation.',
  meals: ['Breakfast', 'Lunch', 'Dinner'],
  },
  {
@@ -4262,7 +4262,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Guided walking safari at Crescent Island Sanctuary – giraffes, zebras and more',
             'Visit to Hell’s Gate National Park – bicycle past grazing wildlife'
         ],
-        description: `Eight days through Kenya's most diverse landscapes — from the arid beauty of Samburu to the legendary Masai Mara. Samburu's remote wilderness delivers the unique Samburu Five: Grevy's zebra, reticulated giraffe, oryx, gerenuk, and Somali ostrich — plus thousands of elephants and a cultural visit with the Samburu people. Lake Naivasha brings boat safaris past hippos and a cycling adventure through Hell's Gate's towering cliffs. Then two full days in the Masai Mara — double the game drives, double the chances for Big Five sightings and predator action. With walking safaris, boat excursions, and bicycle rides, this is Kenya's most activity-rich itinerary.`,
+        description: `Eight days through Kenya's most diverse landscapes — from the arid beauty of Samburu to the legendary Masai Mara. Samburu's remote wilderness delivers the unique Samburu Five: Grevy's zebra, reticulated giraffe, oryx, gerenuk, and Somali ostrich — plus large numbers of elephants and a cultural visit with the Samburu people. Lake Naivasha brings boat safaris past hippos and a cycling adventure through Hell's Gate's towering cliffs. Then two full days in the Masai Mara — double the game drives, double the chances for Big Five sightings and predator action. With walking safaris, boat excursions, and bicycle rides, this is Kenya's most activity-rich itinerary.`,
         itinerary: [
             {
                 day: 1,
@@ -4370,7 +4370,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
         duration: 8,
         durationUnit: 'days',
         highlights: [
-            'Large Elephant herds – guaranteed sighting',
+            'Large Elephant herds – commonly encountereding',
             'Snow-capped peak of Mt. Kilimanjaro (weather permitting)',
             'Lion, leopard, buffalo, and elephant',
             'Marshlands host many elephants, buffaloes, hippos, and a variety of waterfowl like –pelican and Egyptian goose',
@@ -4379,7 +4379,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
             'Visit to the grazers and birdlife at Crescent Island Sanctuary',
             'Optional visit to Hell’s Gate National Park – $45 per person.'
         ],
-        description: `Eight days, six parks, and two full days in the Masai Mara — Kenya's most comprehensive safari experience. Start in Amboseli where guaranteed elephant sightings unfold beneath Kilimanjaro's snow-capped dome. Cruise Lake Naivasha by boat past wallowing hippos, then walk among giraffes and zebras on Crescent Island. Discover Lake Nakuru's flamingo-fringed shores and rhino sanctuary. The journey builds to two immersive days in the Masai Mara — dawn-to-dusk game drives across golden savannah prowled by lion prides, leopards, and cheetahs. Mountains, lakes, forests, and savannah — every ecosystem, every member of the Big Five, one extraordinary week.`,
+        description: `Eight days, six parks, and two full days in the Masai Mara — Kenya's most comprehensive safari experience. Start in Amboseli where near-certain elephant sightings unfold beneath Kilimanjaro's snow-capped dome. Cruise Lake Naivasha by boat past wallowing hippos, then walk among giraffes and zebras on Crescent Island. Discover Lake Nakuru's flamingo-fringed shores and rhino sanctuary. The journey builds to two immersive days in the Masai Mara — dawn-to-dusk game drives across golden savannah prowled by lion prides, leopards, and cheetahs. Mountains, lakes, forests, and savannah — every ecosystem, every member of the Big Five, one extraordinary week.`,
         itinerary: [
  {
  day: 1,
@@ -4508,7 +4508,7 @@ Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, the a
 
 5:30 AM — The streets of Nairobi are still hushed as you climb aboard your shared 4x4 Land Cruiser Jeep, greeting your fellow travelers with sleepy smiles and shared anticipation. With complimentary water on board, you settle in as the city gives way to the A104 highway, climbing northwest through the misty ridges of Limuru before the road plunges dramatically into the Great Rift Valley. The landscape unfurls below — a patchwork of farmland and volcanic escarpments stretching toward the horizon.
 
-By 8:30 AM, after roughly 160 km, the gates of Lake Nakuru National Park swing open. Almost immediately, the alkaline shoreline shimmers pink — thousands of flamingos wading in the shallows, their reflections doubling the spectacle. Your driver-guide navigates the lakeshore track as the group collectively gasps at a pair of white rhinos grazing barely fifty metres away, their prehistoric silhouettes framed against fever-yellow acacia trees. The vehicle pushes deeper, past lounging waterbuck and darting impala, climbing to Baboon Cliff viewpoint where the entire lake sprawls beneath you — a turquoise jewel ringed by forest. It is the kind of panorama that demands a group photo, everyone grinning against that impossible backdrop.
+By 8:30 AM, after roughly 160 km, the gates of Lake Nakuru National Park swing open. Almost immediately, the alkaline shoreline shimmers pink — dense flocks of flamingos wading in the shallows, their reflections doubling the spectacle. Your driver-guide navigates the lakeshore track as the group collectively gasps at a pair of white rhinos grazing barely fifty metres away, their prehistoric silhouettes framed against fever-yellow acacia trees. The vehicle pushes deeper, past lounging waterbuck and darting impala, climbing to Baboon Cliff viewpoint where the entire lake sprawls beneath you — a turquoise jewel ringed by forest. It is the kind of panorama that demands a group photo, everyone grinning against that impossible backdrop.
 
 At noon, you stop for a hearty hot lunch at a lakeside lodge, swapping stories with your fellow travelers about the morning's sightings — perhaps a leopard draped lazily in a fig tree, or a black rhino glimpsed in dense bush.
 
@@ -4573,7 +4573,7 @@ Around 4:30 PM the group reassembles, buzzing with energy, for the 90 km return 
         durationUnit: 'days',
         highlights: [
             'Enjoy the African countryside en route to the park',
-            'Amboseli National Park – guaranteed elephant sightings',
+            'Amboseli National Park – near-certain elephant sightings',
             'Mt. Kilimanjaro and its snow-capped peak – weather permitting',
             'Observation Hill – view the park, its environments, and wildlife',
             'Elephant, giraffe, zebra, lion, cheetah, buffalo, ostrich, and much more',
@@ -4581,7 +4581,7 @@ Around 4:30 PM the group reassembles, buzzing with energy, for the 90 km return 
             'Buffet breakfast and lunch',
             'Meet other safari lovers'
         ],
-        description: `Africa's most photogenic wildlife moment — enormous elephant herds moving beneath the snow-capped dome of Mt. Kilimanjaro. This group safari takes you deep into Amboseli National Park where guaranteed elephant sightings, open-savannah predator action, and sweeping views from Observation Hill await. Watch Maasai herders with their cattle on the drive south, then scan the plains for lion, cheetah, buffalo, giraffe, and ostrich. Share a 4x4 with fellow safari lovers, enjoy a buffet lunch in the bush, and soak in the kind of scenery that defines East Africa. Budget-friendly and absolutely unforgettable.`,
+        description: `Africa's most photogenic wildlife moment — enormous elephant herds moving beneath the snow-capped dome of Mt. Kilimanjaro. This group safari takes you deep into Amboseli National Park where near-certain elephant sightings, open-savannah predator action, and sweeping views from Observation Hill await. Watch Maasai herders with their cattle on the drive south, then scan the plains for lion, cheetah, buffalo, giraffe, and ostrich. Share a 4x4 with fellow safari lovers, enjoy a buffet lunch in the bush, and soak in the kind of scenery that defines East Africa. Budget-friendly and absolutely unforgettable.`,
         itinerary: [
             {
                 day: 1,
@@ -4666,7 +4666,7 @@ By 3:30 PM, with memory cards full and spirits high, the Jeep turns north for th
                 title: 'Ol Pejeta Conservancy — Guardians of the Last Rhinos',
                 description: `## ~440 km round trip | Approx. 7–8 hrs total driving
 
-5:00 AM — Dawn is still a rumour on the Nairobi skyline as you step aboard the shared 4x4 Land Cruiser Jeep, joining your fellow travelers for a day that blends world-class wildlife with a conservation story found nowhere else on Earth. Complimentary water is handed out as the vehicle threads north through the awakening city, joining the A2 highway toward Thika. The road climbs steadily past pineapple fields and red-soil coffee plantations, through the market town of Sagana, and into the high plateau country around Nanyuki — some 220 km and roughly three and a half to four hours from Nairobi. On clear mornings, the snow-dusted peaks of Mount Kenya loom to the east, jagged and magnificent.
+5:00 AM — Dawn is still a rumour on the Nairobi skyline as you step aboard the shared 4x4 Land Cruiser Jeep, joining your fellow travelers for a day that blends top-tier wildlife with a conservation story found nowhere else on Earth. Complimentary water is handed out as the vehicle threads north through the awakening city, joining the A2 highway toward Thika. The road climbs steadily past pineapple fields and red-soil coffee plantations, through the market town of Sagana, and into the high plateau country around Nanyuki — some 220 km and roughly three and a half to four hours from Nairobi. On clear mornings, the snow-dusted peaks of Mount Kenya loom to the east, jagged and magnificent.
 
 By 9:00 AM the Jeep rolls through Ol Pejeta Conservancy's gate and into a landscape of rolling whistling-thorn grasslands dotted with candelabra euphorbia. Game drives here feel intimate — this 360-square-kilometre sanctuary carries all of the Big Five, and sightings are remarkably close. Buffaloes lumber past in muddy herds, a tower of Reticulated giraffes crosses the track with their uniquely geometric coat patterns, and your driver-guide picks out a lion pride resting beneath a croton thicket.
 
@@ -4738,7 +4738,7 @@ By 3:30 PM, the Jeep turns south for the 220 km return. The group is quieter now
             'Optional Masai village – Please arrange with your driver/guide – $25 per person',
             'Optional Hot Air Balloon Ride – please ask us about this unique opportunity – $460 per person'
         ],
-        description: `Two action-packed days in Africa's most celebrated wildlife arena — shared with fellow safari lovers aboard a pop-top 4x4 Land Cruiser. Expect Big Five encounters across the Mara's sweeping grasslands, lion prides resting beneath flat-topped acacias, and hippo pools teeming along the Mara River. The descent through the Great Rift Valley sets the scene before your first afternoon game drive, followed by an early morning session when predators are most active. Optional add-ons include a Maasai village visit and a breathtaking hot air balloon ride over the savannah at sunrise.`,
+        description: `Two action-packed days in Africa's most celebrated wildlife arena — shared with fellow safari lovers aboard a pop-top 4x4 Land Cruiser. Expect Big Five encounters across the Mara's sweeping grasslands, lion prides resting beneath flat-topped acacias, and hippo pools teeming along the Mara River. The descent through the Great Rift Valley sets the scene before your first afternoon game drive, followed by an early morning session when predators are most active. Optional add-ons include a Maasai village visit and a awe-inspiring hot air balloon ride over the savannah at sunrise.`,
         itinerary: [
             {
                 day: 1,
@@ -4747,7 +4747,7 @@ By 3:30 PM, the Jeep turns south for the 220 km return. The group is quieter now
 
 Your adventure begins at 6:30 AM as your group boards a shared 4x4 Land Cruiser Jeep in Nairobi, the cool highland air still carrying the scent of morning dew. Complimentary water is provided on board as you head west through the outskirts of the city, past the satellite towns and onto the open road toward Mai Mahiu.
 
-Within the first hour, the landscape transforms dramatically as you descend into the Great Rift Valley — one of the most spectacular geological features on Earth. Your driver-guide pulls over at a designated viewpoint where the valley stretches endlessly below, a patchwork of golden plains and volcanic ridges shimmering in the mid-morning haze. Cameras click furiously among your fellow travelers as everyone takes in this breathtaking panorama.
+Within the first hour, the landscape transforms dramatically as you descend into the Great Rift Valley — one of the most spectacular geological features on Earth. Your driver-guide pulls over at a designated viewpoint where the valley stretches endlessly below, a patchwork of golden plains and volcanic ridges shimmering in the mid-morning haze. Cameras click furiously among your fellow travelers as everyone takes in this striking panorama.
 
 The road continues through Narok, a bustling Maasai market town, before the tarmac gives way to red murram roads that wind through Maasai country. Scattered bomas dot the landscape, and Maasai herders guide their cattle across the plains alongside zebra and wildebeest — a surreal coexistence. You arrive at your safari lodge or tented camp in time for a hot lunch, the sounds of the African bush already enveloping you.
 
@@ -4761,7 +4761,7 @@ By 3:30 PM, the light softens to a warm amber as you set out on your first after
 
 5:30 AM — the wake-up call comes with the sound of birdsong and the distant roar of a lion greeting the dawn. After a quick cup of tea or coffee at camp, your group loads into the Land Cruiser by 6:00 AM for the most magical hours the Mara has to offer. The morning mist clings to the savannah as the first rays of sunlight spill across the plains, illuminating dew-soaked grass in liquid gold.
 
-This early drive is when the Mara truly comes alive. Hyenas slink back toward their dens after a night of hunting, while a leopard may still be draped over an acacia branch, finishing the last of a night's kill. Your guide navigates toward the Mara River, where crocodiles bask on sandy banks and the dramatic river crossings of the Great Migration unfold during season — thousands of wildebeest plunging into churning waters in a heart-pounding spectacle of survival. Even outside migration months, the river teems with hippos, monitor lizards, and colorful kingfishers darting above the current.
+This early drive is when the Mara truly comes alive. Hyenas slink back toward their dens after a night of hunting, while a leopard may still be draped over an acacia branch, finishing the last of a night's kill. Your guide navigates toward the Mara River, where crocodiles bask on sandy banks and the dramatic river crossings of the Great Migration unfold during season — vast herds of wildebeest plunging into churning waters in a heart-pounding spectacle of survival. Even outside migration months, the river teems with hippos, monitor lizards, and colorful kingfishers darting above the current.
 
 By mid-morning, your group encounters a tower of giraffes moving gracefully against the backdrop of the Mara's rolling hills, their long necks silhouetted against the wide African sky. A herd of buffalo numbering in the hundreds grazes near a watering hole where warthogs kneel to drink. Your driver-guide spots a black rhino in the distance — rare, magnificent, and a reminder of the Mara's role as a sanctuary for endangered species.
 
@@ -4840,7 +4840,7 @@ You return to the lodge around 9:30 AM for a full breakfast, savoring the last m
 
 At 6:30 AM, your group assembles and boards the shared 4x4 Land Cruiser Jeep, complimentary water on board, as Nairobi's morning bustle fades behind you. The drive northwest takes you along the A104 through the lush farmlands of Limuru and past the dramatic Kinungi escarpment, where the earth drops away to reveal the vast floor of the Great Rift Valley — a geological wonder stretching as far as the eye can see.
 
-By mid-morning, you reach Lake Nakuru National Park, a compact wilderness jewel ringed by yellow-barked acacia forest and euphorbias. As your vehicle rolls through the main gate, the air changes — it is warm, dry, and carries the faint alkaline tang of the lake. Within minutes, the shoreline appears, and with it, a spectacle that has defined this park for decades: thousands of flamingos lining the water's edge like a pink brushstroke against the blue-green lake. The sight — and the sound of their collective murmuring — is mesmerizing.
+By mid-morning, you reach Lake Nakuru National Park, a compact wilderness jewel ringed by yellow-barked acacia forest and euphorbias. As your vehicle rolls through the main gate, the air changes — it is warm, dry, and carries the faint alkaline tang of the lake. Within minutes, the shoreline appears, and with it, a spectacle that has defined this park for decades: dense flocks of flamingos lining the water's edge like a pink brushstroke against the blue-green lake. The sight — and the sound of their collective murmuring — is mesmerizing.
 
 Your driver-guide navigates toward Baboon Cliff, a dramatic viewpoint where the entire lake spreads below you — a shimmering disc surrounded by green ridges, with tiny pink dots of flamingos visible from above. Your fellow travelers share the awe, cameras working overtime. The afternoon game drive takes you deeper into the park's acacia woodland, where Lake Nakuru's famous rhinos roam. Both black and white rhinos call this park home, and spotting these armored giants grazing in the open is a heart-racing moment. Waterbuck stand sentinel near the water, while Rothschild's giraffes move between the trees with effortless grace. As the golden afternoon light filters through the fever trees, you may even spot a lounging lion or a leopard draped over a branch in the dense woodland. You arrive at your lodge near Lake Nakuru as the sun sets, the evening chorus of frogs and nightjars your soundtrack for a well-earned dinner.`,
                 meals: ['Lunch', 'Dinner'],
@@ -5005,7 +5005,7 @@ After a full breakfast back at the lodge, you take one last drive through the co
           "Photography opportunities",
           "Professional guide"
 ],
-        description: `Four of Tanzania's greatest wildlife arenas lie within reach of Arusha — pick your adventure. Tarangire's ancient baobabs tower over vast elephant herds along a life-giving river. Lake Manyara's groundwater forest hides tree-climbing lions and clouds of flamingos. The Ngorongoro Crater holds 25,000 animals in a volcanic amphitheatre. Arusha National Park offers walking safaris beneath Mt. Meru's gaze. Each park delivers distinct landscapes, unique wildlife encounters, and world-class photography. Your professional guide tailors the day to your interests, making this the perfect single-day taste of Tanzania's legendary safari circuit.`,
+        description: `Four of Tanzania's greatest wildlife arenas lie within reach of Arusha — pick your adventure. Tarangire's ancient baobabs tower over vast elephant herds along a life-giving river. Lake Manyara's groundwater forest hides tree-climbing lions and clouds of flamingos. The Ngorongoro Crater holds 25,000 animals in a volcanic amphitheatre. Arusha National Park offers walking safaris beneath Mt. Meru's gaze. Each park delivers distinct landscapes, unique wildlife encounters, and seasoned photography. Your professional guide tailors the day to your interests, making this the perfect single-day taste of Tanzania's legendary safari circuit.`,
         itinerary: [
             {
                 day: 1,
@@ -5072,7 +5072,7 @@ After a full breakfast back at the lodge, you take one last drive through the co
             'Trek through bamboo forest, moorland, and surreal Afro-alpine zones',
             'Acclimatization day for higher summit success rate',
         ],
-        description: `Six days on Africa's second-highest mountain via the classic Naro Moru Route \u2014 a challenging and deeply rewarding alpine adventure. Ascend through bamboo forest and moorland alive with unique Afro-alpine plants, conquer the legendary Vertical Bog, and camp in the shadow of Mt. Kenya's jagged twin peaks. The summit push to Point Lenana (4,985m) rewards you with a breathtaking sunrise over the vast East African plateau. No technical climbing required \u2014 just determination, strong lungs, and a love of wild, high places.`,
+        description: `Six days on Africa's second-highest mountain via the classic Naro Moru Route \u2014 a challenging and deeply rewarding alpine adventure. Ascend through bamboo forest and moorland alive with unique Afro-alpine plants, conquer the legendary Vertical Bog, and camp in the shadow of Mt. Kenya's jagged twin peaks. The summit push to Point Lenana (4,985m) rewards you with a stunning sunrise over the vast East African plateau. No technical climbing required \u2014 just determination, strong lungs, and a love of wild, high places.`,
         itinerary: [
             {
                 day: 1,
@@ -5107,7 +5107,7 @@ After a full breakfast back at the lodge, you take one last drive through the co
             {
                 day: 6,
                 title: 'Naro Moru to Nairobi',
-                description: `## ~175km | Approx. 3.5hr\n\nAfter a leisurely breakfast, bid farewell to Mt. Kenya's magnificent silhouette and drive south through the scenic Central Highlands back to Nairobi. Your guide shares stories from 15 years of mountain adventures as the landscape transitions from highland farms to the bustling capital. Drop-off at your Nairobi hotel or Jomo Kenyatta International Airport. Your summit certificate \u2014 proof that you stood on the third-highest point in Africa \u2014 is a keepsake for life.`,
+                description: `## ~175km | Approx. 3.5hr\n\nAfter a leisurely breakfast, bid farewell to Mt. Kenya's magnificent silhouette and drive south through the scenic Central Highlands back to Nairobi. Your guide shares stories from years of mountain adventures as the landscape transitions from highland farms to the bustling capital. Drop-off at your Nairobi hotel or Jomo Kenyatta International Airport. Your summit certificate \u2014 proof that you stood on the third-highest point in Africa \u2014 is a keepsake for life.`,
                 meals: ['Breakfast'],
             },
         ],
@@ -5293,7 +5293,7 @@ You arrive back in Diani or Mombasa between 2:30 and 3:00 PM, the transition fro
             {
                 day: 3,
                 title: 'Full Day in Masai Mara',
-                description: `6:00 AM. A full day in the Mara — Kenya's crown jewel. The dawn drive heads into the open plains where cheetahs launch explosive sprints and hyenas slink back to their dens. Your guide reads vulture patterns and fresh tracks to locate predators. By mid-morning, push toward the Mara River, where hippos grunt in muddy pools and Nile crocodiles bask on sandy banks. During migration season (July–October), thousands of wildebeest mass here for their dramatic river crossings. Enjoy a packed bush picnic lunch in the shade. The afternoon explores different sectors — the Musiara Marsh for elephants, or the Mara Triangle where vast herds concentrate. An optional hot air balloon safari at dawn (extra cost) offers a bird's-eye view. An optional Maasai village visit introduces you to the vibrant culture of Kenya's most famous people. Return for dinner as the sun sets behind the Oloololo Escarpment.`,
+                description: `6:00 AM. A full day in the Mara — Kenya's crown jewel. The dawn drive heads into the open plains where cheetahs launch explosive sprints and hyenas slink back to their dens. Your guide reads vulture patterns and fresh tracks to locate predators. By mid-morning, push toward the Mara River, where hippos grunt in muddy pools and Nile crocodiles bask on sandy banks. During migration season (July–October), vast herds of wildebeest mass here for their dramatic river crossings. Enjoy a packed bush picnic lunch in the shade. The afternoon explores different sectors — the Musiara Marsh for elephants, or the Mara Triangle where vast herds concentrate. An optional hot air balloon safari at dawn (extra cost) offers a bird's-eye view. An optional Maasai village visit introduces you to the vibrant culture of Kenya's most famous people. Return for dinner as the sun sets behind the Oloololo Escarpment.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -5508,7 +5508,7 @@ You arrive back in Diani or Mombasa between 2:30 and 3:00 PM, the transition fro
     {
         id: 'mara-flyin-4d',
         slug: '4-day-masai-mara-fly-in-safari',
-        title: "4-Day Masai Mara Fly-In Safari | Ultimate Game Drive Getaway",
+        title: "4-Day Masai Mara Fly-In Safari | Premier Game Drive Getaway",
         subtitle: 'Deep Dive into the Mara',
         destination: 'kenya',
         duration: 4,
@@ -5530,7 +5530,7 @@ You arrive back in Diani or Mombasa between 2:30 and 3:00 PM, the transition fro
             {
                 day: 2,
                 title: 'Full Day – The Heart of the Mara',
-                description: '## Full day game drives with bush lunch\n\n6:00 AM. The Mara at first light — cool air, golden grass, and the distant whooping of hyenas. Coffee in hand, climb into your private vehicle for the dawn drive.\n\nYour guide heads toward the open plains south of the Mara River — prime cheetah territory. These cats use the flat terrain to sprint after prey at speeds over 100 km/h. Topi stand on termite mounds like sentinels, secretary birds stride through the stubble.\n\nBy mid-morning, we reach the Mara River. Enormous Nile crocodiles lie in ambush along the banks. During migration season (July–October), the river becomes a churning crossing point for hundreds of thousands of wildebeest.\n\nBush picnic lunch under the shade of a riverine fig tree. The afternoon takes you to Musiara Marsh, where thick vegetation hides leopards and serval cats, then to broader plains where buffalo herds number in the hundreds. Towers of giraffe move against a reddening sky. Return to your lodge for dinner as the stars emerge.',
+                description: '## Full day game drives with bush lunch\n\n6:00 AM. The Mara at first light — cool air, golden grass, and the distant whooping of hyenas. Coffee in hand, climb into your private vehicle for the dawn drive.\n\nYour guide heads toward the open plains south of the Mara River — prime cheetah territory. These cats use the flat terrain to sprint after prey at speeds over 100 km/h. Topi stand on termite mounds like sentinels, secretary birds stride through the stubble.\n\nBy mid-morning, we reach the Mara River. Enormous Nile crocodiles lie in ambush along the banks. During migration season (July–October), the river becomes a churning crossing point for hundreds of vast herds of wildebeest.\n\nBush picnic lunch under the shade of a riverine fig tree. The afternoon takes you to Musiara Marsh, where thick vegetation hides leopards and serval cats, then to broader plains where buffalo herds number in the hundreds. Towers of giraffe move against a reddening sky. Return to your lodge for dinner as the stars emerge.',
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -5621,7 +5621,7 @@ The morning begins in a canopy cathedral of African olive and fig trees, where b
 
 By mid-morning, the road opens to savannah dotted with elegant Maasai giraffes browsing flat-topped acacias. Mount Meru — all 4,566 metres of her — fills the western horizon, her rugged peak often framed by a halo of cloud. The light is extraordinary: clean highland air gives photographs a crispness impossible at lower altitudes.
 
-At noon, you reach the Momela Lakes — seven alkaline jewels strung across the landscape, each a different shade of blue and green depending on its mineral content and the algae that colour it. Thousands of lesser flamingos wade the shallows, painting the shoreline pink, while little grebes and Egyptian geese bob on the surface. If conditions allow, you step into a canoe and paddle quietly across the glassy water, hippo ears twitching in the distance and the reflection of Mount Meru shimmering below your bow — a memory that stays with you long after you leave.
+At noon, you reach the Momela Lakes — seven alkaline jewels strung across the landscape, each a different shade of blue and green depending on its mineral content and the algae that colour it. large numbers of lesser flamingos wade the shallows, painting the shoreline pink, while little grebes and Egyptian geese bob on the surface. If conditions allow, you step into a canoe and paddle quietly across the glassy water, hippo ears twitching in the distance and the reflection of Mount Meru shimmering below your bow — a memory that stays with you long after you leave.
 
 After a packed picnic lunch beside the lakes, the afternoon game drive winds through open grassland where warthogs trot with tails held high and waterbuck stand proud on the ridgeline. Your driver-guide shares stories of the park's unique ecology — one of the few places in Tanzania where forest, crater, lakes, and savannah sit side by side. By 4:30 PM, the golden highland light softens and you begin the short return drive, arriving at your Arusha hotel around 5:30 PM, refreshed by a day that felt worlds away from civilisation — yet was barely an hour from your doorstep.`,
                 meals: ['Lunch']
@@ -5677,7 +5677,7 @@ After a packed picnic lunch beside the lakes, the afternoon game drive winds thr
             'Spectacular aerial views from the rim',
             'Incredible wildlife density all year round'
         ],
-        description: `Descend into the world's largest intact volcanic caldera — a natural amphitheatre holding over 25,000 animals across 260 square kilometres of grassland, forest, and soda lake. The Ngorongoro Crater offers some of Africa's best chances to spot the rare black rhino, alongside lion prides, spotted hyena clans, and massive bull elephants. Flamingos paint the crater lake pink while herds of wildebeest and zebra carpet the floor. The rim views alone are breathtaking — 600 metres above a lost world that has remained virtually unchanged for millennia. This is Tanzania's crown jewel, and it delivers every time.`,
+        description: `Descend into the world's largest intact volcanic caldera — a natural amphitheatre holding over 25,000 animals across 260 square kilometres of grassland, forest, and soda lake. The Ngorongoro Crater offers some of Africa's best chances to spot the rare black rhino, alongside lion prides, spotted hyena clans, and massive bull elephants. Flamingos paint the crater lake pink while herds of wildebeest and zebra carpet the floor. The rim views alone are spectacular — 600 metres above a lost world that has remained virtually unchanged for millennia. This is Tanzania's crown jewel, and it delivers every time.`,
         itinerary: [
             {
                 day: 1,
@@ -5698,7 +5698,7 @@ Mid-morning brings you to the Lerai Forest, a grove of ghostly yellow-barked fev
 
 At noon, you pause for a picnic lunch at a designated hippo pool, where bloated hippos surface in synchronized sighs and sacred ibis stalk the bank. The view from your lunch spot — crater walls curving 360 degrees around you, a lone Maasai herder silhouetted on the rim far above — is a photograph and a feeling you will carry forever.
 
-The afternoon drive sweeps past Lake Magadi, its alkaline shallows alive with thousands of lesser flamingos, their pink plumage glowing against the dark volcanic soil. Buffalo herds numbering in the hundreds move like slow dark rivers through the grass. As the 3:00 PM light softens, your driver navigates the ascent road back to the rim, and the crater drops away behind you — a lost world returned to its own rhythms.
+The afternoon drive sweeps past Lake Magadi, its alkaline shallows alive with large numbers of lesser flamingos, their pink plumage glowing against the dark volcanic soil. Buffalo herds numbering in the hundreds move like slow dark rivers through the grass. As the 3:00 PM light softens, your driver navigates the ascent road back to the rim, and the crater drops away behind you — a lost world returned to its own rhythms.
 
 The return drive retraces the highland route through golden late-afternoon light, with a brief stop in Mto wa Mbu for fresh tropical fruit. You arrive back in Arusha by approximately 7:30–8:00 PM — tired, exhilarated, and certain you have glimpsed one of the natural wonders of the planet.`,
                 meals: ['Breakfast', 'Lunch']
@@ -5753,12 +5753,12 @@ The return drive retraces the highland route through golden late-afternoon light
         durationUnit: 'days',
         highlights: [
             'See the famous tree-climbing lions',
-            'Thousands of flamingos at the lake edge',
+            'dense flocks of flamingos at the lake edge',
             'Lush groundwater forest and ancient mahogany trees',
             'High concentration of baboons and elephants',
             'Stunning views from the Rift Valley wall'
         ],
-        description: `A compact Rift Valley gem where lush groundwater forest meets open floodplain and a shimmering soda lake. Lake Manyara is famous for its tree-climbing lions draped along mahogany branches, enormous elephant herds crashing through the undergrowth, and thousands of flamingos painting the lakeshore pink. The ancient groundwater forest — fed by springs seeping through the Rift Valley escarpment — shelters troops of baboons, blue monkeys, and over 400 bird species. Views from the escarpment wall are staggering. Hemingway called it the loveliest lake in Africa. One game drive here and you'll understand why.`,
+        description: `A compact Rift Valley gem where lush groundwater forest meets open floodplain and a shimmering soda lake. Lake Manyara is famous for its tree-climbing lions draped along mahogany branches, enormous elephant herds crashing through the undergrowth, and dense flocks of flamingos painting the lakeshore pink. The ancient groundwater forest — fed by springs seeping through the Rift Valley escarpment — shelters troops of baboons, blue monkeys, and over 400 bird species. Views from the escarpment wall are staggering. Hemingway called it the loveliest lake in Africa. One game drive here and you'll understand why.`,
         itinerary: [
             {
                 day: 1,
@@ -5773,7 +5773,7 @@ By mid-morning, the forest thins to acacia woodland where Lake Manyara's most fa
 
 Elephant families emerge from the woodland in unhurried procession, matriarchs guiding calves through the scrub, ears flapping against the rising heat. Giraffes stand among the acacias like living sculptures, and dik-diks — Africa's tiniest antelopes — peer from behind termite mounds with enormous dark eyes.
 
-Around noon, you pause in the vibrant village of Mto wa Mbu for a freshly prepared lunch at a local restaurant — grilled tilapia, plantain, and tropical fruit juices — before returning for the afternoon drive along the lakeshore. Here, the landscape transforms into an open alkaline floodplain: thousands of flamingos crowd the shallows, their collective pink haze rippling in the midday thermals. Pelicans, storks, and African spoonbills work the margins — over 400 bird species call this park home, making it one of the richest birding sites in East Africa.
+Around noon, you pause in the vibrant village of Mto wa Mbu for a freshly prepared lunch at a local restaurant — grilled tilapia, plantain, and tropical fruit juices — before returning for the afternoon drive along the lakeshore. Here, the landscape transforms into an open alkaline floodplain: dense flocks of flamingos crowd the shallows, their collective pink haze rippling in the midday thermals. Pelicans, storks, and African spoonbills work the margins — over 400 bird species call this park home, making it one of the richest birding sites in East Africa.
 
 As the 3:30 PM light softens to amber, your driver heads south toward the hot springs, where steam rises from sulphurous pools at the park's edge — a reminder of the volcanic forces that carved the Rift. Hippos wallow in adjacent pools, grunting their displeasure at the attention. You exit the park with the escarpment glowing gold behind you and begin the return drive, arriving in Arusha by approximately 6:30–7:00 PM, your camera full and your senses still humming with the wild abundance of Lake Manyara.`,
                 meals: ['Lunch']
@@ -5911,7 +5911,7 @@ As the 4:00 PM light turns the baobabs to amber, you begin the return journey. T
             {
                 day: 1,
                 title: 'Arusha to Lake Manyara',
-                description: `## ~130km | Approx. 2.5 hrs\n\n8:00 AM. Depart your Arusha hotel and drive west toward Lake Manyara National Park — about two hours through rolling farmland and small Tanzanian villages. As you approach, the dramatic western escarpment of the Great Rift Valley rises sharply to your left, a towering wall of rock and green vegetation. Enter the park through the main gate and immediately you're enveloped by a dense groundwater forest — towering mahogany and fig trees form a thick canopy overhead, and troops of olive baboons sit grooming along the roadside. Blue monkeys swing through the branches above. Emerge from the forest onto the open lakeshore, where thousands of flamingos form a pink ribbon along the alkaline water's edge. Lake Manyara is famous for its tree-climbing lions — keep your eyes on the branches of the large acacia trees where they sometimes drape themselves in the shade. Elephants move through the woodland in large family groups, and hippos wallow in the shallows. Enjoy a packed lunch in the park, then continue your afternoon game drive before checking into your lodge.`,
+                description: `## ~130km | Approx. 2.5 hrs\n\n8:00 AM. Depart your Arusha hotel and drive west toward Lake Manyara National Park — about two hours through rolling farmland and small Tanzanian villages. As you approach, the dramatic western escarpment of the Great Rift Valley rises sharply to your left, a towering wall of rock and green vegetation. Enter the park through the main gate and immediately you're enveloped by a dense groundwater forest — towering mahogany and fig trees form a thick canopy overhead, and troops of olive baboons sit grooming along the roadside. Blue monkeys swing through the branches above. Emerge from the forest onto the open lakeshore, where dense flocks of flamingos form a pink ribbon along the alkaline water's edge. Lake Manyara is famous for its tree-climbing lions — keep your eyes on the branches of the large acacia trees where they sometimes drape themselves in the shade. Elephants move through the woodland in large family groups, and hippos wallow in the shallows. Enjoy a packed lunch in the park, then continue your afternoon game drive before checking into your lodge.`,
                 meals: ['Lunch', 'Dinner']
             },
             {
@@ -6081,7 +6081,7 @@ As the 4:00 PM light turns the baobabs to amber, you begin the return journey. T
             'Beautiful high altitude scenery',
             'Spectacular views of peaks'
         ],
-        description: `Africa's second-highest mountain, conquered via its most scenic route. The Sirimon approach takes you through ever-changing altitude zones — dense bamboo forests alive with monkeys and birdlife, moorland heathlands carpeted in wildflowers, and the surreal alpine desert of giant lobelias and groundsels found nowhere else on Earth. Acclimatisation days at Shipton's Camp allow you to absorb the dramatic high-altitude scenery before the pre-dawn summit push to Point Lenana at 4,985 metres — rewarded with breathtaking views across glacial peaks and the vast Kenyan highlands stretching to the horizon. A bucket-list mountaineering adventure.`,
+        description: `Africa's second-highest mountain, conquered via its most scenic route. The Sirimon approach takes you through ever-changing altitude zones — dense bamboo forests alive with monkeys and birdlife, moorland heathlands carpeted in wildflowers, and the surreal alpine desert of giant lobelias and groundsels found nowhere else on Earth. Acclimatisation days at Shipton's Camp allow you to absorb the dramatic high-altitude scenery before the pre-dawn summit push to Point Lenana at 4,985 metres — rewarded with magnificent views across glacial peaks and the vast Kenyan highlands stretching to the horizon. A bucket-list mountaineering adventure.`,
         itinerary: [
              { day: 1, title: 'Nairobi to Nanyuki', description: '## ~200km | Approx. 3 hrs\n\nDrive to Nanyuki. Acclimatization and overnight.', meals: ['Lunch', 'Dinner'] },
              { day: 2, title: 'Sirimon Gate to Old Moses', description: 'Hike through rainforest to Old Moses Camp.', meals: ['Breakfast', 'Lunch', 'Dinner'] },
@@ -6306,7 +6306,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
       { day: 1, title: "Machame Gate (1,640m) to Machame Camp (3,020m)", description: `Drive from Moshi to Machame Gate on Kilimanjaro's southern slopes. Trek through dense montane rainforest teeming with birdlife, Colobus monkeys, and ancient trees draped in moss. The trail is muddy but magical. Arrive at Machame Camp on the forest's upper edge.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Machame Camp (3,020m) to Shira Camp (3,840m)", description: `Climb steeply out of the forest into the heath and moorland zone. Giant heather and unique groundsel plants create an alien landscape. Cross the Shira Plateau — a vast, high-altitude plateau formed by an ancient volcanic collapse. Camp at Shira with views of Kibo peak looming above.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 3, title: "Shira Camp (3,840m) to Barranco Camp (3,960m)", description: `Trek toward the Lava Tower (4,630m) for critical acclimatization. 'Climb high, sleep low' — you'll gain nearly 800m before descending back to Barranco Camp. The Lava Tower lunch stop offers surreal views of the Western Breach. Descend through the beautiful Barranco Valley with its giant groundsel forest.`, meals: ["Breakfast", "Lunch", "Dinner"] },
-      { day: 4, title: "Barranco Camp (3,960m) to Karanga Camp (4,035m)", description: `The day begins with the legendary Barranco Wall — a steep, non-technical rock scramble that is the highlight of the entire Machame route. The views from the top are breathtaking. Continue along the Southern Circuit, crossing several valleys before reaching Karanga Camp — your last water point before the summit.`, meals: ["Breakfast", "Lunch", "Dinner"] },
+      { day: 4, title: "Barranco Camp (3,960m) to Karanga Camp (4,035m)", description: `The day begins with the legendary Barranco Wall — a steep, non-technical rock scramble that is the highlight of the entire Machame route. The views from the top are dramatic. Continue along the Southern Circuit, crossing several valleys before reaching Karanga Camp — your last water point before the summit.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 5, title: "Karanga Camp (4,035m) to Barafu Camp (4,673m)", description: `Short but significant climb to Barafu ('Ice' in Swahili) — your summit base camp. The terrain is barren volcanic rock and scree. Arrive by lunchtime, rest, and prepare for summit night. Your guide will brief you on the midnight departure. Try to sleep by 7 PM — it's going to be a long night.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 6, title: "Summit Night — Uhuru Peak (5,895m) to Mweka Camp (3,100m)", description: `Rise at midnight. Headlamps on, layer up, and begin the steep zigzag ascent through scree and volcanic rock. Reach Stella Point (5,756m) on the crater rim as dawn breaks. Continue along the crater rim past ancient glaciers to Uhuru Peak (5,895m) — you're standing on the Roof of Africa. Descend to Barafu for rest, then continue down to Mweka Camp through alpine desert and moorland.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 7, title: "Mweka Camp (3,100m) to Mweka Gate — Summit Certificates", description: `Final descent through lush rainforest to Mweka Gate. Collect your summit certificate and sign the register. Bid farewell to your mountain crew — the porters, cooks, and guides who made it all possible. Transfer to your hotel in Moshi for a hot shower and celebration.`, meals: ["Breakfast", "Lunch"] },
@@ -6368,7 +6368,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     duration: 7,
     durationUnit: "days",
     highlights: ["Widely regarded as the most scenic route on Kilimanjaro", "Remote western approach through pristine rainforest \u2014 fewer crowds on early days", "Traverse the entire Shira Plateau with 360\u00b0 views", "Excellent acclimatization with gradual altitude gain and 90%+ summit success rate", "Diverse wildlife sightings possible in the lower forest zone"],
-    description: `Widely regarded as Kilimanjaro's finest route — seven days of pristine wilderness and world-class mountain scenery. Begin on the remote western slopes where buffalo and elephants still roam the lower forest, cross the vast Shira Plateau beneath cathedral-like skies, and scramble up the iconic Barranco Wall. The Lemosho's gradual altitude gain delivers excellent acclimatization and a 90%+ summit success rate. Fewer crowds on the first two days create a true wilderness experience before you join the Southern Circuit for the final push to Uhuru Peak (5,895m) at sunrise.`,
+    description: `Widely regarded as Kilimanjaro's finest route — seven days of pristine wilderness and expert mountain scenery. Begin on the remote western slopes where buffalo and elephants still roam the lower forest, cross the vast Shira Plateau beneath cathedral-like skies, and scramble up the iconic Barranco Wall. The Lemosho's gradual altitude gain delivers excellent acclimatization and a 90%+ summit success rate. Fewer crowds on the first two days create a true wilderness experience before you join the Southern Circuit for the final push to Uhuru Peak (5,895m) at sunrise.`,
     itinerary: [
       { day: 1, title: "Londorossi Gate to Big Tree Camp (2,780m)", description: `Drive from Moshi to Londorossi Gate on Kilimanjaro's western flank. Register and begin your trek through dense, primeval rainforest. This remote trail sees few climbers and is rich with wildlife — keep watch for blue monkeys, Colobus monkeys, and even forest elephants. Camp at Big Tree Camp in a forest clearing.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Big Tree Camp (2,780m) to Shira 1 Camp (3,505m)", description: `Continue through the upper rainforest zone as it transitions to giant heather moorland. Emerge onto the western edge of the Shira Plateau — one of Kilimanjaro's three volcanic cones that collapsed millennia ago. Stunning views of Kibo peak ahead. Camp on the plateau's edge.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -6430,12 +6430,12 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     id: "kilimanjaro-8d-lemosho",
     slug: "8-day-mount-kilimanjaro-lemosho-route",
     title: "8-Day Kilimanjaro Climb | Lemosho Route Scenic Trek",
-    subtitle: "The Ultimate Kilimanjaro Experience with Maximum Acclimatization",
+    subtitle: "The Comprehensive Kilimanjaro Experience with Maximum Acclimatization",
     destination: "mountain",
     duration: 8,
     durationUnit: "days",
-    highlights: ["The highest summit success rate of any Kilimanjaro route (95%+)", "Extra acclimatization day dramatically reduces altitude sickness risk", "8 days of world-class mountain scenery through every ecological zone", "Remote start with virtually no crowds on the first 2 days", "Perfect for first-time high-altitude trekkers"],
-    description: `The gold standard for climbing Kilimanjaro — eight days of world-class mountain scenery with the highest summit success rate of any route (95%+). The extra acclimatization day dramatically reduces altitude sickness risk, making this the ideal choice for first-time high-altitude trekkers. Trek through primeval rainforest on a remote western approach with virtually no crowds, cross the vast Shira Plateau, scramble the dramatic Barranco Wall, and traverse the haunting alpine desert before your midnight summit push to Uhuru Peak (5,895m). If reaching the Roof of Africa is your dream, this is the route to choose.`,
+    highlights: ["The highest summit success rate of any Kilimanjaro route (95%+)", "Extra acclimatization day dramatically reduces altitude sickness risk", "8 days of professional mountain scenery through every ecological zone", "Remote start with virtually no crowds on the first 2 days", "Perfect for first-time high-altitude trekkers"],
+    description: `The gold standard for climbing Kilimanjaro — eight days of experienced mountain scenery with the highest summit success rate of any route (95%+). The extra acclimatization day dramatically reduces altitude sickness risk, making this the ideal choice for first-time high-altitude trekkers. Trek through primeval rainforest on a remote western approach with virtually no crowds, cross the vast Shira Plateau, scramble the dramatic Barranco Wall, and traverse the haunting alpine desert before your midnight summit push to Uhuru Peak (5,895m). If reaching the Roof of Africa is your dream, this is the route to choose.`,
     itinerary: [
       { day: 1, title: "Londorossi Gate to Big Tree Camp (2,780m)", description: `Transfer from Moshi to Londorossi Gate. Trek through dense montane rainforest on Kilimanjaro's quiet western slopes, watching for wildlife in the canopy. Camp in a forest clearing at Big Tree Camp.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Big Tree Camp (2,780m) to Shira 1 Camp (3,505m)", description: `Ascend through upper forest into the moorland zone. Emerge onto the Shira Plateau with expansive views of Kibo peak. Camp on the plateau's western rim.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -6570,7 +6570,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     duration: 9,
     durationUnit: "days",
     highlights: ["Kilimanjaro's newest and longest route \u2014 circumnavigates the entire mountain", "360-degree panoramic views from every angle of Africa's highest peak", "The most remote route: true wilderness with virtually no other climbers", "Unmatched acclimatization \u2014 96%+ summit success rate", "Passes through every ecological zone on the mountain"],
-    description: `Kilimanjaro's ultimate trek — nine extraordinary days circumnavigating nearly the entire mountain on its longest and most remote route. The Northern Circuit takes the Lemosho approach through pristine western rainforest, then diverges across rarely-visited northern terrain that most climbers never see. Expect complete solitude, 360-degree panoramic views from every angle of Africa's highest peak, and passage through every ecological zone — from tropical forest to arctic summit. With unmatched acclimatization delivering a 96%+ summit success rate, this is the definitive Kilimanjaro experience for those who want it all.`,
+    description: `Kilimanjaro's grand trek — nine extraordinary days circumnavigating nearly the entire mountain on its longest and most remote route. The Northern Circuit takes the Lemosho approach through pristine western rainforest, then diverges across rarely-visited northern terrain that most climbers never see. Expect complete solitude, 360-degree panoramic views from every angle of Africa's highest peak, and passage through every ecological zone — from tropical forest to arctic summit. With unmatched acclimatization delivering a 96%+ summit success rate, this is the definitive Kilimanjaro experience for those who want it all.`,
     itinerary: [
       { day: 1, title: "Londorossi Gate to Big Tree Camp (2,780m)", description: `Begin at Londorossi Gate on the western slopes. Trek through rich montane rainforest alive with Colobus monkeys and birdsong. Arrive at Big Tree Camp nestled in a forest clearing.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Big Tree Camp (2,780m) to Shira 1 Camp (3,505m)", description: `Ascend through upper forest into moorland. Emerge onto the vast Shira Plateau with views of Kibo ahead.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -6578,7 +6578,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
       { day: 4, title: "Shira 2 to Lava Tower (4,630m) to Moir Hut (4,200m)", description: `Here the Northern Circuit diverges from other routes. Climb to the Lava Tower for acclimatization, then head north to Moir Hut — a remote camp at the base of the Lent Group pinnacles. You're now on terrain most climbers never see.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 5, title: "Moir Hut (4,200m) to Buffalo Camp (4,020m)", description: `Traverse the remote northern slopes — the quietest part of Kilimanjaro. The trail passes through stark alpine desert with views stretching to the Kenyan border. This section of the mountain is raw, wild, and utterly beautiful. Camp at Buffalo Camp with northern glaciers above.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 6, title: "Buffalo Camp (4,020m) to Third Cave/School Hut (4,720m)", description: `Continue the northern traverse, passing Third Cave and ascending to School Hut near Kibo's base. Views of Mawenzi's spires across the saddle. The gradual altitude gain over days 4-6 is what gives this route its extraordinary success rate.`, meals: ["Breakfast", "Lunch", "Dinner"] },
-      { day: 7, title: "School Hut (4,720m) to Crater Camp (5,729m) — Optional", description: `For the ultimate experience, camp inside the crater at 5,729m — one of the highest campsites in Africa. Alternatively, remain at School Hut. Afternoon exploring the crater rim area. Early rest for summit night.`, meals: ["Breakfast", "Lunch", "Dinner"] },
+      { day: 7, title: "School Hut (4,720m) to Crater Camp (5,729m) — Optional", description: `For the exceptional experience, camp inside the crater at 5,729m — one of the highest campsites in Africa. Alternatively, remain at School Hut. Afternoon exploring the crater rim area. Early rest for summit night.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 8, title: "Summit — Uhuru Peak (5,895m) then Descent to Mweka Camp", description: `Summit push from crater camp (short) or School Hut (midnight start). Stand atop Uhuru Peak — the Roof of Africa — and take in the view of the Furtwängler Glacier and the African plains below. Long descent to Mweka Camp through alpine desert, moorland, and forest.`, meals: ["Breakfast", "Lunch", "Dinner"] },
       { day: 9, title: "Mweka Camp to Mweka Gate — Farewell", description: `Final rainforest descent. Collect your summit certificate at Mweka Gate. Transfer to hotel.`, meals: ["Breakfast", "Lunch"] },
     ],
@@ -6639,7 +6639,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     duration: 5,
     durationUnit: "days",
     highlights: ["Summit Point Lenana (4,985m) \u2014 Africa's second highest trekking peak", "Traverse Mt. Kenya: ascend Sirimon, descend the stunning Chogoria route", "Lake Michaelson \u2014 one of Africa's most dramatic alpine lakes", "Unique Afro-alpine vegetation: giant lobelias and groundsel forests", "UNESCO World Heritage Site with endemic species found nowhere else"],
-    description: `The ultimate Mt. Kenya experience — ascend the Sirimon Route, summit Point Lenana (4,985m) at sunrise, and descend the breathtaking Chogoria Route in one unforgettable traverse. Trek through bamboo forest and the Mackinder Valley, past giant lobelias and otherworldly groundsel forests found nowhere else on Earth. The sunrise summit delivers panoramic views of Batian and Nelion's jagged spires, while the Chogoria descent reveals Lake Michaelson — one of Africa's most dramatic alpine lakes, set in a volcanic gorge. A UNESCO World Heritage mountain adventure across two spectacular routes.`,
+    description: `The outstanding Mt. Kenya experience — ascend the Sirimon Route, summit Point Lenana (4,985m) at sunrise, and descend the sweeping Chogoria Route in one unforgettable traverse. Trek through bamboo forest and the Mackinder Valley, past giant lobelias and otherworldly groundsel forests found nowhere else on Earth. The sunrise summit delivers panoramic views of Batian and Nelion's jagged spires, while the Chogoria descent reveals Lake Michaelson — one of Africa's most dramatic alpine lakes, set in a volcanic gorge. A UNESCO World Heritage mountain adventure across two spectacular routes.`,
     itinerary: [
       { day: 1, title: "Sirimon Gate (2,440m) to Old Moses Camp (3,300m)", description: `Drive from Nanyuki to Sirimon Gate on Mt. Kenya's northwest slopes. Trek through dense bamboo and montane forest. Watch for elephant signs, buffalo, and bushbuck. Arrive at Old Moses Camp — a cozy wooden bunkhouse.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Old Moses (3,300m) to Shipton's Camp (4,200m)", description: `## ~10km | 4-6 hrs hike\n\nEnter the Mackinder Valley — a dramatic U-shaped glacial valley lined with giant groundsel and lobelia plants. Cross streams and ascend through moorland with views of the main peaks. Camp at legendary Shipton's Camp beneath the towering rock faces of Batian and Nelion.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -6856,8 +6856,8 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     destination: "kenya-tanzania",
     duration: 6,
     durationUnit: "days",
-    highlights: ["Three world-class parks across two East African nations", "Amboseli's elephants with Kilimanjaro views", "Lake Manyara \u2014 tree-climbing lions and flamingo-covered shores", "Ngorongoro Crater \u2014 the Big Five in a natural volcanic amphitheatre", "Cross-border experience with seamless border transfers"],
-    description: `Three world-class parks across two countries in six extraordinary days. From Amboseli's elephant kingdom beneath snow-capped Kilimanjaro, cross into Tanzania for the tree-climbing lions of Lake Manyara and the wildlife-packed floor of the Ngorongoro Crater. Every day delivers a different landscape — open savannahs, forested lake shores, and the world's largest intact volcanic caldera teeming with the Big Five. Expect flamingo-covered shorelines, elephant herds in golden light, and a cross-border adventure that captures the very best of East African safari.`,
+    highlights: ["Three skilled parks across two East African nations", "Amboseli's elephants with Kilimanjaro views", "Lake Manyara \u2014 tree-climbing lions and flamingo-covered shores", "Ngorongoro Crater \u2014 the Big Five in a natural volcanic amphitheatre", "Cross-border experience with seamless border transfers"],
+    description: `Three top-tier parks across two countries in six extraordinary days. From Amboseli's elephant kingdom beneath snow-capped Kilimanjaro, cross into Tanzania for the tree-climbing lions of Lake Manyara and the wildlife-packed floor of the Ngorongoro Crater. Every day delivers a different landscape — open savannahs, forested lake shores, and the world's largest intact volcanic caldera teeming with the Big Five. Expect flamingo-covered shorelines, elephant herds in golden light, and a cross-border adventure that captures the very best of East African safari.`,
     itinerary: [
             {
                 day: 1,
@@ -6868,7 +6868,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 2,
                 title: 'Full Day Amboseli Game Drives',
-                description: `5:30 AM. An early start rewards you with Kilimanjaro completely cloud-free — its glaciers catching the first golden rays while the plains below are still cool and quiet. Elephants emerge from the morning haze in great herds, their rumbles carrying across the stillness. Your guide navigates toward the Enkongo Narok swamps where hippos wallow, pelicans fish in the shallows, and jacanas step delicately across lily pads. Midmorning, you climb Observation Hill for breathtaking 360-degree views of the dried lake bed, the green wetland ribbons, and Kilimanjaro dominating the horizon. Back at the lodge for lunch and a midday rest. The afternoon drive explores different sectors — perhaps the southern plains where cheetahs hunt Thomson's gazelles, or the palm groves alive with superb starlings and weaverbirds building their intricate nests.`,
+                description: `5:30 AM. An early start rewards you with Kilimanjaro completely cloud-free — its glaciers catching the first golden rays while the plains below are still cool and quiet. Elephants emerge from the morning haze in great herds, their rumbles carrying across the stillness. Your guide navigates toward the Enkongo Narok swamps where hippos wallow, pelicans fish in the shallows, and jacanas step delicately across lily pads. Midmorning, you climb Observation Hill for awe-inspiring 360-degree views of the dried lake bed, the green wetland ribbons, and Kilimanjaro dominating the horizon. Back at the lodge for lunch and a midday rest. The afternoon drive explores different sectors — perhaps the southern plains where cheetahs hunt Thomson's gazelles, or the palm groves alive with superb starlings and weaverbirds building their intricate nests.`,
                 meals: []
             },
             {
@@ -6880,13 +6880,13 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 4,
                 title: 'Arusha to Lake Manyara National Park',
-                description: '## ~130km | Approx. 2.5 hrs\n\n7:00 AM. You depart Arusha and drive west along the floor of the Great Rift Valley toward Lake Manyara National Park, roughly two hours away. The park sits beneath a dramatic 600-meter escarpment — its western wall dropping sheer into lush groundwater forest alive with blue monkeys, olive baboons, and hornbills. You enter the park and your guide navigates through the forest canopy into open grassland along the lakeshore. Lake Manyara is famous for its tree-climbing lions — one of only two populations in Africa — and your guide scans the mahogany branches carefully. Herds of elephants wander the woodland, buffalo graze near the lake edge, and thousands of flamingos create a shimmering pink band along the alkaline waters. The birding here is exceptional — over 400 species have been recorded.',
+                description: '## ~130km | Approx. 2.5 hrs\n\n7:00 AM. You depart Arusha and drive west along the floor of the Great Rift Valley toward Lake Manyara National Park, roughly two hours away. The park sits beneath a dramatic 600-meter escarpment — its western wall dropping sheer into lush groundwater forest alive with blue monkeys, olive baboons, and hornbills. You enter the park and your guide navigates through the forest canopy into open grassland along the lakeshore. Lake Manyara is famous for its tree-climbing lions — one of only two populations in Africa — and your guide scans the mahogany branches carefully. Herds of elephants wander the woodland, buffalo graze near the lake edge, and dense flocks of flamingos create a shimmering pink band along the alkaline waters. The birding here is exceptional — over 400 species have been recorded.',
                 meals: []
             },
             {
                 day: 5,
                 title: 'Lake Manyara to Ngorongoro Crater',
-                description: '## ~50km | Approx. 1 hr\n\n6:30 AM. Today brings the highlight of your Tanzania safari. You drive from Lake Manyara up through the forested highlands to the Ngorongoro Conservation Area, climbing steadily until the crater rim appears at 2,200 meters. Your first view of the caldera is unforgettable — a vast bowl stretching 19 kilometers across, with Lake Magadi glinting at its center and thousands of animals visible as moving dots on the green floor below. Your vehicle descends 600 meters down the steep track into this natural amphitheatre. The wildlife density is extraordinary: prides of lions rest in the open, elephants browse near the Lerai Forest, buffalo herds number in the hundreds, and your guide tracks the elusive black rhino through binoculars. Flamingos crowd the soda lake. You enjoy a picnic lunch beside a hippo pool before continuing to explore the crater until late afternoon.',
+                description: '## ~50km | Approx. 1 hr\n\n6:30 AM. Today brings the highlight of your Tanzania safari. You drive from Lake Manyara up through the forested highlands to the Ngorongoro Conservation Area, climbing steadily until the crater rim appears at 2,200 meters. Your first view of the caldera is unforgettable — a vast bowl stretching 19 kilometers across, with Lake Magadi glinting at its center and abundant wildlife visible as moving dots on the green floor below. Your vehicle descends 600 meters down the steep track into this natural amphitheatre. The wildlife density is extraordinary: prides of lions rest in the open, elephants browse near the Lerai Forest, buffalo herds number in the hundreds, and your guide tracks the elusive black rhino through binoculars. Flamingos crowd the soda lake. You enjoy a picnic lunch beside a hippo pool before continuing to explore the crater until late afternoon.',
                 meals: []
             },
             {
@@ -6969,7 +6969,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 2,
                 title: 'Full Day Masai Mara',
-                description: `## Full Day Game Drives\n\n5:30 AM. A pre-dawn start catches the Mara at its finest — golden light spilling across the savannah as predators finish their night's work. Your guide tracks fresh prints to find a cheetah scanning the plains from a termite mound, or a leopard draped across a sausage tree branch. By mid-morning, you reach the famous Mara River where hippos cluster in the deep pools and enormous Nile crocodiles bask on sandy banks. During the Great Migration (July to October), hundreds of thousands of wildebeest gather at the river's edge for the dramatic crossings. The afternoon drive explores the Mara Triangle's rolling hills and open grasslands, alive with topi, eland, and Thomson's gazelles. The optional hot air balloon safari at dawn offers a breathtaking bird's-eye view of this iconic landscape.`,
+                description: `## Full Day Game Drives\n\n5:30 AM. A pre-dawn start catches the Mara at its finest — golden light spilling across the savannah as predators finish their night's work. Your guide tracks fresh prints to find a cheetah scanning the plains from a termite mound, or a leopard draped across a sausage tree branch. By mid-morning, you reach the famous Mara River where hippos cluster in the deep pools and enormous Nile crocodiles bask on sandy banks. During the Great Migration (July to October), hundreds of vast herds of wildebeest gather at the river's edge for the dramatic crossings. The afternoon drive explores the Mara Triangle's rolling hills and open grasslands, alive with topi, eland, and Thomson's gazelles. The optional hot air balloon safari at dawn offers a striking bird's-eye view of this iconic landscape.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -6993,7 +6993,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 6,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:00 AM. One more game drive across the Serengeti plains before you turn southeast toward Ngorongoro, the grassland gradually rising into forested highland as you approach the crater rim. The vehicle noses over the edge at 2,286 metres and begins the steep descent into the caldera, montane forest giving way to open grassland as you drop the full 600 metres to the floor. Ngorongoro holds an extraordinary density of wildlife within its 19-kilometre rim — buffalo herds numbering in the hundreds, lion prides that rarely need to move far to find prey, and elephant bulls browsing the yellow-barked acacia of the Lerai forest. Your guide works the grassland margins for one of the crater's black rhinos, a genuine rarity with fewer than thirty left inside the caldera. Lunch is taken at Ngoitokitok springs, where hippos wallow within sight of the picnic tables and pied kingfishers dive for small fish in the outflow stream. Lake Magadi, the shallow soda lake at the crater's centre, holds thousands of lesser flamingos feeding in the alkaline shallows, their reflections doubling the colour against the water. You climb back up the crater wall in the late afternoon, reaching your rim lodge as the light fades over the caldera.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:00 AM. One more game drive across the Serengeti plains before you turn southeast toward Ngorongoro, the grassland gradually rising into forested highland as you approach the crater rim. The vehicle noses over the edge at 2,286 metres and begins the steep descent into the caldera, montane forest giving way to open grassland as you drop the full 600 metres to the floor. Ngorongoro holds an extraordinary density of wildlife within its 19-kilometre rim — buffalo herds numbering in the hundreds, lion prides that rarely need to move far to find prey, and elephant bulls browsing the yellow-barked acacia of the Lerai forest. Your guide works the grassland margins for one of the crater's black rhinos, a genuine rarity with fewer than thirty left inside the caldera. Lunch is taken at Ngoitokitok springs, where hippos wallow within sight of the picnic tables and pied kingfishers dive for small fish in the outflow stream. Lake Magadi, the shallow soda lake at the crater's centre, holds large numbers of lesser flamingos feeding in the alkaline shallows, their reflections doubling the colour against the water. You climb back up the crater wall in the late afternoon, reaching your rim lodge as the light fades over the caldera.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -7106,7 +7106,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 6,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A final game drive across the Serengeti's short-grass plains precedes the turn east toward Ngorongoro, the grassland rising steadily into forested highland as the road climbs toward the crater rim. At 2,286 metres, the vehicle noses over the edge and begins the long, switchback descent 600 metres down into the caldera — the world's largest intact volcanic crater and one of the most concentrated wildlife areas anywhere on the continent. The floor supports roughly 25,000 large mammals within a rim just 19 kilometres across: buffalo herds moving in dark masses, lion prides that barely need to hunt beyond their own territory, and elephant bulls browsing the Lerai forest's yellow-barked acacia. Your guide works the open grassland for one of the crater's black rhinos, a genuine rarity with fewer than thirty individuals remaining inside the caldera. Lunch is taken at the Ngoitokitok springs, hippos wallowing within a few metres of the picnic tables. Lake Magadi, the shallow soda lake at the crater's heart, holds thousands of lesser flamingos feeding in the alkaline shallows. You climb back up the crater wall in the late afternoon, reaching your rim lodge as the light fades over the caldera floor.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM. A final game drive across the Serengeti's short-grass plains precedes the turn east toward Ngorongoro, the grassland rising steadily into forested highland as the road climbs toward the crater rim. At 2,286 metres, the vehicle noses over the edge and begins the long, switchback descent 600 metres down into the caldera — the world's largest intact volcanic crater and one of the most concentrated wildlife areas anywhere on the continent. The floor supports roughly 25,000 large mammals within a rim just 19 kilometres across: buffalo herds moving in dark masses, lion prides that barely need to hunt beyond their own territory, and elephant bulls browsing the Lerai forest's yellow-barked acacia. Your guide works the open grassland for one of the crater's black rhinos, a genuine rarity with fewer than thirty individuals remaining inside the caldera. Lunch is taken at the Ngoitokitok springs, hippos wallowing within a few metres of the picnic tables. Lake Magadi, the shallow soda lake at the crater's heart, holds large numbers of lesser flamingos feeding in the alkaline shallows. You climb back up the crater wall in the late afternoon, reaching your rim lodge as the light fades over the caldera floor.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -7245,7 +7245,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
                 title: 'Full Day Masai Mara',
                 description: `## Full Day Game Drives
 
-5:30 AM. Your first full day in the Mara begins before dawn. The air is cool, the grass damp with dew, and the golden light spills across the savannah as predators finish their night's work. Your guide tracks a cheetah family across the open plains — a mother teaching her cubs to hunt Thomson's gazelles. By mid-morning, you reach the famous Mara River, its brown waters churning with hippo pods and enormous Nile crocodiles basking on sandy banks. During the Great Migration (July-October), this is where hundreds of thousands of wildebeest make their death-defying crossings. The afternoon explores the acacia-dotted hillsides where giraffes browse and leopards sometimes rest in the branches above. Return to your lodge as sunset turns the plains amber.`,
+5:30 AM. Your first full day in the Mara begins before dawn. The air is cool, the grass damp with dew, and the golden light spills across the savannah as predators finish their night's work. Your guide tracks a cheetah family across the open plains — a mother teaching her cubs to hunt Thomson's gazelles. By mid-morning, you reach the famous Mara River, its brown waters churning with hippo pods and enormous Nile crocodiles basking on sandy banks. During the Great Migration (July-October), this is where hundreds of vast herds of wildebeest make their death-defying crossings. The afternoon explores the acacia-dotted hillsides where giraffes browse and leopards sometimes rest in the branches above. Return to your lodge as sunset turns the plains amber.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -7253,7 +7253,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
                 title: 'Masai Mara — Second Full Day',
                 description: `## Full Day Game Drives
 
-5:30 AM. A second full day gives you the luxury of exploring different areas of this enormous reserve. The morning drive heads toward the Mara Triangle — the western section, where rolling green hills meet the savannah and topi stand sentinel on every ridge. Your guide follows a different route today, perhaps finding a lion pride on a kill, or tracking a solitary leopard through the riverine thickets. The birding is superb — martial eagles soar overhead, lilac-breasted rollers flash iridescent from acacia perches, and secretary birds stride through the short grass. After lunch at your lodge, the afternoon drive covers the eastern plains where eland, buffalo, and Thomson's gazelles congregate. The optional hot air balloon safari at dawn is highly recommended for a once-in-a-lifetime aerial view of the Mara.`,
+5:30 AM. A second full day gives you the luxury of exploring different areas of this enormous reserve. The morning drive heads toward the Mara Triangle — the western section, where rolling green hills meet the savannah and topi stand sentinel on every ridge. Your guide follows a different route today, perhaps finding a lion pride on a kill, or tracking a solitary leopard through the riverine thickets. The birding is superb — martial eagles soar overhead, lilac-breasted rollers flash iridescent from acacia perches, and secretary birds stride through the short grass. After lunch at your lodge, the afternoon drive covers the eastern plains where eland, buffalo, and Thomson's gazelles congregate. The optional hot air balloon safari at dawn is highly recommended for a unforgettable aerial view of the Mara.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -7436,7 +7436,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     destination: "tanzania",
     duration: 4,
     durationUnit: "days",
-    highlights: ["Two of Africa's most famous wildlife destinations in 4 days", "Serengeti \u2014 the endless plains where the Great Migration unfolds", "Ngorongoro Crater \u2014 all Big Five in one day, guaranteed", "Big cat capital of the world \u2014 lions, cheetahs, and leopards", "Perfect blend of time, wildlife, and value"],
+    highlights: ["Two of Africa's most famous wildlife destinations in 4 days", "Serengeti \u2014 the endless plains where the Great Migration unfolds", "Ngorongoro Crater \u2014 all Big Five possible in a single day", "Big cat capital of the world \u2014 lions, cheetahs, and leopards", "Perfect blend of time, wildlife, and value"],
     description: `The Serengeti and Ngorongoro Crater — two names that define African safari — united in four unforgettable days. On the Serengeti's endless plains, expect lion prides sprawled in golden grass, cheetahs scanning from termite mounds, and vast herds of wildebeest and zebra enacting the Great Migration. Then descend into the Ngorongoro Crater, where all Big Five roam a natural volcanic arena just 20 kilometres across. Leopards hide in fever tree canopy, hippos wallow in marshland pools, and the sheer density of wildlife rivals anywhere on Earth. Tanzania distilled to its absolute finest.`,
     itinerary: [
             {
@@ -7520,8 +7520,8 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     destination: "tanzania",
     duration: 5,
     durationUnit: "days",
-    highlights: ["Tanzania's three greatest parks \u2014 the 'Golden Triangle' of African safari", "Tarangire's elephant herds and ancient baobab forests", "Serengeti \u2014 the Great Migration and Africa's biggest predator concentration", "Ngorongoro Crater \u2014 the Big Five in a volcanic amphitheatre", "5 days of non-stop world-class wildlife viewing"],
-    description: `Tanzania's legendary 'Golden Triangle' — Tarangire, the Serengeti, and Ngorongoro Crater — in five spectacular days of world-class wildlife viewing. Expect ancient baobab forests towering over Tarangire's massive elephant herds, the Great Migration sweeping across the Serengeti's boundless plains with lions and cheetahs in pursuit, and the Ngorongoro Crater's Big Five spectacle within volcanic walls. From dense woodland to endless savannah to highland crater, each day brings a dramatically different landscape teeming with life. The definitive Tanzania safari for those who want it all.`,
+    highlights: ["Tanzania's three greatest parks \u2014 the 'Golden Triangle' of African safari", "Tarangire's elephant herds and ancient baobab forests", "Serengeti \u2014 the Great Migration and Africa's biggest predator concentration", "Ngorongoro Crater \u2014 the Big Five in a volcanic amphitheatre", "5 days of non-stop seasoned wildlife viewing"],
+    description: `Tanzania's legendary 'Golden Triangle' — Tarangire, the Serengeti, and Ngorongoro Crater — in five spectacular days of expert wildlife viewing. Expect ancient baobab forests towering over Tarangire's massive elephant herds, the Great Migration sweeping across the Serengeti's boundless plains with lions and cheetahs in pursuit, and the Ngorongoro Crater's Big Five spectacle within volcanic walls. From dense woodland to endless savannah to highland crater, each day brings a dramatically different landscape teeming with life. The definitive Tanzania safari for those who want it all.`,
     itinerary: [
             {
                 day: 1,
@@ -7538,7 +7538,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 3,
                 title: 'Full Day Serengeti',
-                description: `6:00 AM. A full day in the Serengeti — the greatest wildlife arena on Earth. The dawn drive heads toward the Seronera Valley, where the river's green corridor cuts through the dry plains, attracting the highest concentration of predators in Africa. Lions lounge on the warm rocks along the riverbank, leopards drape themselves in the branches of sausage trees, and cheetahs scan the open grasslands from termite-mound lookouts. Explore the rocky kopjes — ancient granite outcrops that rise from the plains like islands, providing shelter and vantage points for lions and klipspringers alike. During the Great Migration season, the plains come alive with two million wildebeest and hundreds of thousands of zebra in an endless, moving column. Enjoy a packed bush lunch, then spend the afternoon exploring different sectors — the Western Corridor, the central Seronera area, or the vast southern plains, depending on where the wildlife action is richest. Return to camp under a sky streaked with the colours of an African sunset.`,
+                description: `6:00 AM. A full day in the Serengeti — the greatest wildlife arena on Earth. The dawn drive heads toward the Seronera Valley, where the river's green corridor cuts through the dry plains, attracting the highest concentration of predators in Africa. Lions lounge on the warm rocks along the riverbank, leopards drape themselves in the branches of sausage trees, and cheetahs scan the open grasslands from termite-mound lookouts. Explore the rocky kopjes — ancient granite outcrops that rise from the plains like islands, providing shelter and vantage points for lions and klipspringers alike. During the Great Migration season, the plains come alive with two million wildebeest and hundreds of large herds of zebras in an endless, moving column. Enjoy a packed bush lunch, then spend the afternoon exploring different sectors — the Western Corridor, the central Seronera area, or the vast southern plains, depending on where the wildlife action is richest. Return to camp under a sky streaked with the colours of an African sunset.`,
                 meals: []
             },
             {
@@ -7616,13 +7616,13 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 1,
                 title: 'Arusha to Lake Manyara',
-                description: '## ~130km | Approx. 2.5 hrs\n\n7:30 AM. Depart Arusha and drive west toward Lake Manyara National Park — about two hours through green farmland and small Tanzanian towns, with the massive wall of the Great Rift Valley escarpment growing larger ahead of you. The park sits at the base of this sheer rock face, and entering through the main gate plunges you into a dense groundwater forest — towering fig trees, mahogany, and wild palms create a thick green canopy overhead. Troops of baboons sit along the roadside, and blue monkeys leap between branches. Emerge from the forest onto the open lakeshore, where the landscape transforms completely: a vast, shallow alkaline lake stretches to the horizon, its edges fringed with thousands of pink flamingos. Lake Manyara is famous for its tree-climbing lions — look carefully at the large acacia branches where they sometimes sprawl in the shade. Elephant herds move through the woodland, and hippos wallow in the shallows near the southern hot springs. Enjoy a packed lunch and continue your afternoon game drive before checking into your lodge beneath the Rift Valley wall.',
+                description: '## ~130km | Approx. 2.5 hrs\n\n7:30 AM. Depart Arusha and drive west toward Lake Manyara National Park — about two hours through green farmland and small Tanzanian towns, with the massive wall of the Great Rift Valley escarpment growing larger ahead of you. The park sits at the base of this sheer rock face, and entering through the main gate plunges you into a dense groundwater forest — towering fig trees, mahogany, and wild palms create a thick green canopy overhead. Troops of baboons sit along the roadside, and blue monkeys leap between branches. Emerge from the forest onto the open lakeshore, where the landscape transforms completely: a vast, shallow alkaline lake stretches to the horizon, its edges fringed with large numbers of pink flamingos. Lake Manyara is famous for its tree-climbing lions — look carefully at the large acacia branches where they sometimes sprawl in the shade. Elephant herds move through the woodland, and hippos wallow in the shallows near the southern hot springs. Enjoy a packed lunch and continue your afternoon game drive before checking into your lodge beneath the Rift Valley wall.',
                 meals: []
             },
             {
                 day: 2,
                 title: 'Lake Manyara to Serengeti',
-                description: `## ~265km | Approx. 5 hrs\n\nAfter breakfast, drive two hours through the Rift Valley escarpment to the Ngorongoro highlands, then continue west toward the Serengeti. The road winds through misty montane forest, past Maasai settlements perched on the green hillsides, and through the Ngorongoro Conservation Area. Pause at the crater rim viewpoint for a breathtaking glimpse of the caldera below — you'll descend into it later in the trip. Continue descending through the short-grass plains, where Maasai herdsmen graze cattle alongside zebras and wildebeest on the vast open steppe. At the Naabi Hill Gate, the Serengeti begins in earnest — endless golden grasslands rolling to every horizon. Your afternoon game drive reveals the staggering scale of this ecosystem: wildebeest herds number in the tens of thousands, giraffes browse scattered acacia trees, and your guide spots a cheetah crouched low in the grass, watching a group of Thomson's gazelles. Check into your Serengeti camp as the sun sets over the infinite plains.`,
+                description: `## ~265km | Approx. 5 hrs\n\nAfter breakfast, drive two hours through the Rift Valley escarpment to the Ngorongoro highlands, then continue west toward the Serengeti. The road winds through misty montane forest, past Maasai settlements perched on the green hillsides, and through the Ngorongoro Conservation Area. Pause at the crater rim viewpoint for a stunning glimpse of the caldera below — you'll descend into it later in the trip. Continue descending through the short-grass plains, where Maasai herdsmen graze cattle alongside zebras and wildebeest on the vast open steppe. At the Naabi Hill Gate, the Serengeti begins in earnest — endless golden grasslands rolling to every horizon. Your afternoon game drive reveals the staggering scale of this ecosystem: wildebeest herds number in the tens of thousands, giraffes browse scattered acacia trees, and your guide spots a cheetah crouched low in the grass, watching a group of Thomson's gazelles. Check into your Serengeti camp as the sun sets over the infinite plains.`,
                 meals: []
             },
             {
@@ -7718,7 +7718,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 2,
                 title: 'Tarangire to Lake Manyara',
-                description: `## ~70km | Approx. 1.5 hrs\n\nRise early for a final morning game drive in Tarangire — the dawn light filtering through the baobabs is magical, and the animals are active before the heat of the day. After breakfast, depart for Lake Manyara National Park — about ninety minutes northwest. The landscape shifts from dry savannah to the dramatic Rift Valley escarpment as you approach. Enter the park through its main gate and immediately you're enclosed by a dense groundwater forest — towering fig trees, sycamores, and wild palms form a thick green canopy alive with monkeys and birdcalls. Emerge from the forest onto the open lakeshore, where the alkaline lake shimmers in the afternoon sun and thousands of flamingos stand in the shallows. Lake Manyara is famous for its tree-climbing lions — watch the large acacia branches carefully. Elephant families move through the woodland, baboon troops line the road, and hippos wallow near the southern springs. Check into your lodge beneath the towering Rift Valley wall.`,
+                description: `## ~70km | Approx. 1.5 hrs\n\nRise early for a final morning game drive in Tarangire — the dawn light filtering through the baobabs is magical, and the animals are active before the heat of the day. After breakfast, depart for Lake Manyara National Park — about ninety minutes northwest. The landscape shifts from dry savannah to the dramatic Rift Valley escarpment as you approach. Enter the park through its main gate and immediately you're enclosed by a dense groundwater forest — towering fig trees, sycamores, and wild palms form a thick green canopy alive with monkeys and birdcalls. Emerge from the forest onto the open lakeshore, where the alkaline lake shimmers in the afternoon sun and dense flocks of flamingos stand in the shallows. Lake Manyara is famous for its tree-climbing lions — watch the large acacia branches carefully. Elephant families move through the woodland, baboon troops line the road, and hippos wallow near the southern springs. Check into your lodge beneath the towering Rift Valley wall.`,
                 meals: []
             },
             {
@@ -7748,7 +7748,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 7,
                 title: 'Ngorongoro to Arusha — Farewell',
-                description: `## ~190km | Approx. 3.5 hrs\n\n6:00 AM. Descend into the Ngorongoro Crater for a final dawn game drive — the ultimate farewell to Tanzania's Northern Circuit. The morning mist curls across the crater floor and the light is soft gold against the steep green walls. Lions are still active from the night, spotted hyenas lope toward their dens, and crowned cranes wade through the marshes with unhurried grace. Visit the hippo pool one last time, scan for rhinos in the open, and soak in the extraordinary density of wildlife packed into this volcanic amphitheatre. By mid-morning, ascend the crater rim and take a final sweeping look at one of the world's great natural wonders. Begin the three-hour drive back to Arusha, passing through highland forest and the farming town of Karatu. Arrive in Arusha by early afternoon for your onward journey — seven days of Tanzania's finest behind you.`,
+                description: `## ~190km | Approx. 3.5 hrs\n\n6:00 AM. Descend into the Ngorongoro Crater for a final dawn game drive — the signature farewell to Tanzania's Northern Circuit. The morning mist curls across the crater floor and the light is soft gold against the steep green walls. Lions are still active from the night, spotted hyenas lope toward their dens, and crowned cranes wade through the marshes with unhurried grace. Visit the hippo pool one last time, scan for rhinos in the open, and soak in the extraordinary density of wildlife packed into this volcanic amphitheatre. By mid-morning, ascend the crater rim and take a final sweeping look at one of the world's great natural wonders. Begin the three-hour drive back to Arusha, passing through highland forest and the farming town of Karatu. Arrive in Arusha by early afternoon for your onward journey — seven days of Tanzania's finest behind you.`,
                 meals: []
             }
         ],
@@ -7819,7 +7819,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 2,
                 title: 'Full Day Masai Mara',
-                description: `6:00 AM. A full day in the Mara — the greatest wildlife theatre on Earth. The dawn drive targets the open plains where cheetahs perch on termite mounds, scanning for prey in the cool morning air. Your guide reads vulture patterns overhead, fresh tracks in the dewy grass, and the nervous behaviour of gazelle herds to locate predators. By mid-morning, push toward the Mara River — a green ribbon of life cutting through the savannah. Hippos crowd the murky pools, their grunts echoing off the banks, while massive Nile crocodiles lie motionless on the sand. During the Great Migration (July–October), thousands of wildebeest mass along the river, building courage for the treacherous crossing. Enjoy a packed bush lunch under a shade tree, then explore different sectors in the afternoon — perhaps the Musiara Marsh where elephant families drink in the soft light, or the rolling hills of the Mara Triangle where buffalo herds darken the landscape. An optional hot air balloon safari offers a bird's-eye view at dawn. Return to your lodge as the sun drops below the Oloololo Escarpment.`,
+                description: `6:00 AM. A full day in the Mara — the greatest wildlife theatre on Earth. The dawn drive targets the open plains where cheetahs perch on termite mounds, scanning for prey in the cool morning air. Your guide reads vulture patterns overhead, fresh tracks in the dewy grass, and the nervous behaviour of gazelle herds to locate predators. By mid-morning, push toward the Mara River — a green ribbon of life cutting through the savannah. Hippos crowd the murky pools, their grunts echoing off the banks, while massive Nile crocodiles lie motionless on the sand. During the Great Migration (July–October), vast herds of wildebeest mass along the river, building courage for the treacherous crossing. Enjoy a packed bush lunch under a shade tree, then explore different sectors in the afternoon — perhaps the Musiara Marsh where elephant families drink in the soft light, or the rolling hills of the Mara Triangle where buffalo herds darken the landscape. An optional hot air balloon safari offers a bird's-eye view at dawn. Return to your lodge as the sun drops below the Oloololo Escarpment.`,
                 meals: []
             },
             {
@@ -8066,7 +8066,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 6,
                 title: 'Masai Mara — Second Full Day',
-                description: `6:00 AM. A second full day to explore deeper into the Mara's vast ecosystem. Your guide takes you to sectors you haven't visited — perhaps north toward the Musiara Marsh, where elephants drink at dawn and big cats hunt the marsh edges. Or south toward the Tanzanian border, where the rolling hills provide sweeping views of the endless Serengeti-Mara ecosystem. Scan the kopjes — rocky outcrops — for lions using them as lookout points. The afternoon explores areas around seasonal watering holes where species converge — eland, hartebeest, waterbuck, and the predators shadowing them. An optional hot air balloon safari (extra cost) launches at dawn for a breathtaking aerial perspective over the migration herds and the snaking Mara River. An optional Maasai village visit offers a window into the vibrant culture of the people who have coexisted with this wildlife for centuries. Return for a final dinner at your lodge, reflecting on the extraordinary contrast between Samburu's northern frontier and the Mara's legendary plains.`,
+                description: `6:00 AM. A second full day to explore deeper into the Mara's vast ecosystem. Your guide takes you to sectors you haven't visited — perhaps north toward the Musiara Marsh, where elephants drink at dawn and big cats hunt the marsh edges. Or south toward the Tanzanian border, where the rolling hills provide sweeping views of the endless Serengeti-Mara ecosystem. Scan the kopjes — rocky outcrops — for lions using them as lookout points. The afternoon explores areas around seasonal watering holes where species converge — eland, hartebeest, waterbuck, and the predators shadowing them. An optional hot air balloon safari (extra cost) launches at dawn for a spectacular aerial perspective over the migration herds and the snaking Mara River. An optional Maasai village visit offers a window into the vibrant culture of the people who have coexisted with this wildlife for centuries. Return for a final dinner at your lodge, reflecting on the extraordinary contrast between Samburu's northern frontier and the Mara's legendary plains.`,
                 meals: []
             },
             {
@@ -8126,13 +8126,13 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
   {
     id: "nairobi-8d-grand-kenya",
     slug: "8-day-grand-kenya-safari",
-    title: "8-Day Grand Kenya Safari | Ultimate Wildlife Adventure",
+    title: "8-Day Grand Kenya Safari | Complete Wildlife Adventure",
     subtitle: "Samburu, Ol Pejeta, Nakuru, Masai Mara & Amboseli",
     destination: "kenya",
     duration: 8,
     durationUnit: "days",
     highlights: ["Kenya's five most iconic destinations in one grand circuit", "Ol Pejeta Conservancy \u2014 home to the last 2 northern white rhinos on Earth", "Samburu's 'Special Five' + Masai Mara's Great Migration", "Amboseli's elephants beneath Kilimanjaro", "The most comprehensive Kenya safari available \u2014 all Big Five wildlife spotting"],
-    description: `Kenya's five most extraordinary destinations in one grand circuit — the ultimate wildlife experience this country has to offer. Expect Samburu's rare 'Special Five' on the northern frontier, an encounter with the last two northern white rhinos on Earth at Ol Pejeta Conservancy, flamingo-fringed shores and rhino sanctuaries at Lake Nakuru, the Great Migration spectacle in the Masai Mara, and Amboseli's elephant herds silhouetted against Kilimanjaro. Every day a different landscape, every park a different story. All Big Five wildlife spotting across eight days of pure, uncompromising Kenya safari.`,
+    description: `Kenya's five most extraordinary destinations in one grand circuit — the definitive wildlife experience this country has to offer. Expect Samburu's rare 'Special Five' on the northern frontier, an encounter with the last two northern white rhinos on Earth at Ol Pejeta Conservancy, flamingo-fringed shores and rhino sanctuaries at Lake Nakuru, the Great Migration spectacle in the Masai Mara, and Amboseli's elephant herds silhouetted against Kilimanjaro. Every day a different landscape, every park a different story. All Big Five wildlife spotting across eight days of pure, uncompromising Kenya safari.`,
     itinerary: [
             {
                 day: 1,
@@ -8149,7 +8149,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 3,
                 title: 'Samburu to Ol Pejeta Conservancy',
-                description: `## ~200km | Approx. 3.5 hrs\n\n7:00 AM. After breakfast, check out of Samburu and drive south to Ol Pejeta Conservancy on the Laikipia Plateau — approximately three hours through gradually changing terrain. The semi-arid thornbush gives way to rolling grassland as you climb back toward the highlands, with the snow-dusted peaks of Mount Kenya visible to the east. Ol Pejeta is a world-renowned conservation success story and home to all Big Five. Arrive for lunch at your safari camp, then head straight for the conservancy's most iconic residents: Najin and Fatu, the last two northern white rhinos on Earth, protected around the clock by armed rangers. Stand just meters from these gentle giants — a humbling, once-in-a-lifetime experience. Continue to the Sweetwaters Chimpanzee Sanctuary, the only place in Kenya to see chimps — rescued from the illegal wildlife trade, they swing through the forested enclosure with infectious energy. An afternoon game drive across the open plains reveals lion prides, buffalo herds, and both black and white southern rhinos grazing freely.`,
+                description: `## ~200km | Approx. 3.5 hrs\n\n7:00 AM. After breakfast, check out of Samburu and drive south to Ol Pejeta Conservancy on the Laikipia Plateau — approximately three hours through gradually changing terrain. The semi-arid thornbush gives way to rolling grassland as you climb back toward the highlands, with the snow-dusted peaks of Mount Kenya visible to the east. Ol Pejeta is a world-renowned conservation success story and home to all Big Five. Arrive for lunch at your safari camp, then head straight for the conservancy's most iconic residents: Najin and Fatu, the last two northern white rhinos on Earth, protected around the clock by armed rangers. Stand just meters from these gentle giants — a humbling, unforgettable experience. Continue to the Sweetwaters Chimpanzee Sanctuary, the only place in Kenya to see chimps — rescued from the illegal wildlife trade, they swing through the forested enclosure with infectious energy. An afternoon game drive across the open plains reveals lion prides, buffalo herds, and both black and white southern rhinos grazing freely.`,
                 meals: []
             },
             {
@@ -8167,7 +8167,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
             {
                 day: 6,
                 title: 'Full Day Masai Mara',
-                description: `6:00 AM. A full day to explore the vast Mara ecosystem. The dawn drive heads into the open grasslands where cheetahs perch on termite mounds and hyenas retreat to their dens. Your guide navigates toward the Mara River — a green lifeline cutting through the savannah — where hippos crowd the murky pools and massive Nile crocodiles bask on the sandy banks. During the Great Migration (July–October), this is the stage for Earth's most dramatic wildlife spectacle — hundreds of thousands of wildebeest massing along the banks before plunging into the current. Enjoy a bush picnic lunch under an acacia tree, then explore different sectors in the afternoon. The Mara Triangle offers sweeping views from the Oloololo Escarpment, while the central plains are home to enormous buffalo herds and the resident elephant families. An optional hot air balloon safari (extra cost) launches at dawn for a breathtaking aerial view. An optional Maasai village visit offers a glimpse into the ancient culture that has coexisted with this wildlife for centuries. Return for dinner as the savannah glows amber in the setting sun.`,
+                description: `6:00 AM. A full day to explore the vast Mara ecosystem. The dawn drive heads into the open grasslands where cheetahs perch on termite mounds and hyenas retreat to their dens. Your guide navigates toward the Mara River — a green lifeline cutting through the savannah — where hippos crowd the murky pools and massive Nile crocodiles bask on the sandy banks. During the Great Migration (July–October), this is the stage for Earth's most dramatic wildlife spectacle — hundreds of vast herds of wildebeest massing along the banks before plunging into the current. Enjoy a bush picnic lunch under an acacia tree, then explore different sectors in the afternoon. The Mara Triangle offers sweeping views from the Oloololo Escarpment, while the central plains are home to enormous buffalo herds and the resident elephant families. An optional hot air balloon safari (extra cost) launches at dawn for a magnificent aerial view. An optional Maasai village visit offers a glimpse into the ancient culture that has coexisted with this wildlife for centuries. Return for dinner as the savannah glows amber in the setting sun.`,
                 meals: []
             },
             {
@@ -8240,7 +8240,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
     duration: 3,
     durationUnit: "days",
     highlights: ["The perfect bush and beach combination \u2014 wildlife then relaxation", "3 days in the Masai Mara for Great Migration and big cats", "3 days on Diani Beach \u2014 Kenya's premier white-sand paradise", "Internal flight from Masai Mara to the coast for maximum time savings", "Snorkeling, diving, and dhow sailing on the Indian Ocean"],
-    description: `Three days exploring the Masai Mara's legendary plains, then fly directly to Diani Beach for three days of Indian Ocean paradise — Kenya's best bush-and-beach combination. Expect lion prides, cheetah hunts, and Great Migration herds in Africa's premier wildlife reserve, then swap your safari boots for snorkel fins as you discover coral reefs teeming with tropical fish, sail on traditional dhows at sunset, and walk barefoot along white sand that stretches to the horizon. From savannah sundowners to ocean sunsets — the ultimate contrast holiday.`,
+    description: `Three days exploring the Masai Mara's legendary plains, then fly directly to Diani Beach for three days of Indian Ocean paradise — Kenya's best bush-and-beach combination. Expect lion prides, cheetah hunts, and Great Migration herds in Africa's premier wildlife reserve, then swap your safari boots for snorkel fins as you discover coral reefs teeming with tropical fish, sail on traditional dhows at sunset, and walk barefoot along white sand that stretches to the horizon. From savannah sundowners to ocean sunsets — the premier contrast holiday.`,
     itinerary: [
             {
                 day: 1,
@@ -8251,7 +8251,7 @@ Arrive back in Diani by early afternoon — the perfect time to swap safari boot
 
 Descend through Narok town and continue across the Loita Plains into Maasai country, where herdsmen in red shukas walk alongside their cattle beneath an enormous sky. By late morning, the Mara\'s golden grasslands open before you — flat-topped acacia trees studding the savannah as far as you can see. Collect your packed lunch and enter the reserve for an extended afternoon game drive.
 
-The Mara\'s wildlife density is staggering — wildebeest, zebra, and Thomson\'s gazelle blanket the plains while your guide tracks lions through the tall grass and watches for cheetah scanning from elevated termite mounds. Elephants browse the riverine forest, hippos grunt from the Mara River, and as the golden hour arrives, giraffe silhouettes against the blazing sunset create the image you\'ve seen in every documentary — except now it\'s yours, live and breathtaking. Check into your safari lodge as darkness falls.`,
+The Mara\'s wildlife density is staggering — wildebeest, zebra, and Thomson\'s gazelle blanket the plains while your guide tracks lions through the tall grass and watches for cheetah scanning from elevated termite mounds. Elephants browse the riverine forest, hippos grunt from the Mara River, and as the golden hour arrives, giraffe silhouettes against the blazing sunset create the image you\'ve seen in every documentary — except now it\'s yours, live and dramatic. Check into your safari lodge as darkness falls.`,
                 meals: ['Lunch', 'Dinner']
             },
             {
@@ -8259,7 +8259,7 @@ The Mara\'s wildlife density is staggering — wildebeest, zebra, and Thomson\'s
                 title: 'Full Day — Masai Mara National Reserve',
                 description: `6:00 AM — Rise before dawn when the Mara\'s predators are most active and the light is a soft gold across the savannah. Your guide reads the bush expertly, following fresh tracks through dew-damp grass and interpreting alarm calls from the plains game.
 
-Drive to the Mara River — the ecosystem\'s lifeblood. Enormous Nile crocodiles lie motionless on the sandy banks, their stillness deceptive and terrifying. Hippo pods surface and submerge in the deeper pools, grunting territorial warnings that echo across the water. During migration season (July–October), this is where thousands of wildebeest hurl themselves across the current in one of nature\'s most dramatic spectacles.
+Drive to the Mara River — the ecosystem\'s lifeblood. Enormous Nile crocodiles lie motionless on the sandy banks, their stillness deceptive and terrifying. Hippo pods surface and submerge in the deeper pools, grunting territorial warnings that echo across the water. During migration season (July–October), this is where vast herds of wildebeest hurl themselves across the current in one of nature\'s most dramatic spectacles.
 
 Mid-morning, explore the Mara Triangle\'s rolling hills for exceptional visibility — topi stand sentinel on the ridgelines, hyena dens reveal playful cubs tumbling in the dust, and perhaps a leopard is spotted draped across a branch in the croton thickets. Return for lunch at your safari lodge.
 
@@ -8389,7 +8389,7 @@ Option A: First Class SGR Madaraka Express — Board at Voi Station for Kenya\'s
 
 Option B: Continue in Your 4×4 — Prefer the open road? Your guide drives you directly to the coast via Voi and the Mombasa Highway, the landscape transforming from dry savannah to tropical coastal lowland as baobab trees give way to coconut palms and mango orchards. Cross the Likoni Ferry with views of Mombasa\'s historic harbour, then continue south to Diani Beach, arriving by early afternoon.
 
-Either way, the transition is breathtaking — dusty red bush gives way to tropical green, and suddenly the Indian Ocean appears, turquoise and glittering. White coral sand, swaying palms, and the warm coastal breeze welcome you to paradise. Your bush-to-beach journey is complete.`,
+Either way, the transition is sweeping — dusty red bush gives way to tropical green, and suddenly the Indian Ocean appears, turquoise and glittering. White coral sand, swaying palms, and the warm coastal breeze welcome you to paradise. Your bush-to-beach journey is complete.`,
                 meals: ['Breakfast', 'Lunch']
             },
         ],
@@ -8453,8 +8453,8 @@ Either way, the transition is breathtaking — dusty red bush gives way to tropi
     destination: "kenya",
     duration: 7,
     durationUnit: "days",
-    highlights: ["Kenya's best bush and beach \u2014 7 days safari + 3 days Indian Ocean", "Masai Mara for the Great Migration", "Amboseli for Kilimanjaro elephants", "Diani Beach \u2014 world-class white sand and coral reef", "The perfect Kenya holiday: wildlife, culture, and tropical relaxation"],
-    description: `Seven days of world-class safari followed by three days of tropical Indian Ocean bliss — the complete Kenya holiday. Expect the Great Migration and big cat drama in the Masai Mara, rhinos and flamingos at Lake Nakuru, and Amboseli's iconic elephant herds silhouetted beneath Kilimanjaro's snow-capped peak. Then transfer to Diani Beach via Kenya's modern SGR Madaraka Express through the Tsavo wilderness — or continue in your safari vehicle. Three days of white-sand relaxation, coral reef snorkelling, and sunset dhow cruises await. From predator hunts on the savannah to barefoot walks along palm-fringed shores, ten days capturing every dimension of Kenya.`,
+    highlights: ["Kenya's best bush and beach \u2014 7 days safari + 3 days Indian Ocean", "Masai Mara for the Great Migration", "Amboseli for Kilimanjaro elephants", "Diani Beach \u2014 professional white sand and coral reef", "The perfect Kenya holiday: wildlife, culture, and tropical relaxation"],
+    description: `Seven days of experienced safari followed by three days of tropical Indian Ocean bliss — the complete Kenya holiday. Expect the Great Migration and big cat drama in the Masai Mara, rhinos and flamingos at Lake Nakuru, and Amboseli's iconic elephant herds silhouetted beneath Kilimanjaro's snow-capped peak. Then transfer to Diani Beach via Kenya's modern SGR Madaraka Express through the Tsavo wilderness — or continue in your safari vehicle. Three days of white-sand relaxation, coral reef snorkelling, and sunset dhow cruises await. From predator hunts on the savannah to barefoot walks along palm-fringed shores, ten days capturing every dimension of Kenya.`,
     itinerary: [
             {
                 day: 1,
@@ -8553,13 +8553,13 @@ Either way, the transition is breathtaking — dusty red bush gives way to tropi
     id: "mara-diani-12d",
     slug: "12-day-kenya-safari-beach-holiday",
     hasSGR: true,
-    title: "8-Day Kenya Safari & Beach Holiday | Ultimate Bush & Beach",
-    subtitle: "The Ultimate Kenya Holiday — Safari, Mountains & Indian Ocean",
+    title: "8-Day Kenya Safari & Beach Holiday | Comprehensive Bush & Beach",
+    subtitle: "The Grand Kenya Holiday — Safari, Mountains & Indian Ocean",
     destination: "kenya",
     duration: 8,
     durationUnit: "days",
-    highlights: ["12 days covering Kenya's best parks + Indian Ocean beach paradise", "Samburu, Ol Pejeta, Masai Mara, Amboseli + Diani Beach", "See the last 2 northern white rhinos at Ol Pejeta", "Great Migration in the Mara + Kilimanjaro views in Amboseli", "4 days on Diani Beach to finish the perfect Kenya holiday"],
-    description: `Twelve days covering every highlight Kenya has to offer — the ultimate safari-and-beach masterpiece. Expect Samburu's rare 'Special Five' on the northern frontier, an encounter with the last two northern white rhinos at Ol Pejeta Conservancy, the Great Migration in the Masai Mara, Amboseli's elephants beneath Kilimanjaro's snowcap, and four luxurious days on Diani Beach's white coral sands. Travel to the coast aboard Kenya's modern SGR Madaraka Express through the Tsavo wilderness — or continue in your safari vehicle. From semi-arid wilderness to rolling savannah to coral-reef coastline, this grand journey weaves wildlife, conservation, culture, and tropical relaxation into one seamless Kenyan adventure.`,
+    highlights: ["8 days covering Kenya's best parks + Indian Ocean beach paradise", "Samburu, Ol Pejeta, Masai Mara, Amboseli + Diani Beach", "See the last 2 northern white rhinos at Ol Pejeta", "Great Migration in the Mara + Kilimanjaro views in Amboseli", "4 days on Diani Beach to finish the perfect Kenya holiday"],
+    description: `Eight days covering every highlight Kenya has to offer — the exceptional safari-and-beach masterpiece. Expect Samburu's rare 'Special Five' on the northern frontier, an encounter with the last two northern white rhinos at Ol Pejeta Conservancy, the Great Migration in the Masai Mara, Amboseli's elephants beneath Kilimanjaro's snowcap, and four luxurious days on Diani Beach's white coral sands. Travel to the coast aboard Kenya's modern SGR Madaraka Express through the Tsavo wilderness — or continue in your safari vehicle. From semi-arid wilderness to rolling savannah to coral-reef coastline, this grand journey weaves wildlife, conservation, culture, and tropical relaxation into one seamless Kenyan adventure.`,
     itinerary: [
             {
                 day: 1,
@@ -8600,7 +8600,7 @@ Either way, the transition is breathtaking — dusty red bush gives way to tropi
             {
                 day: 7,
                 title: 'Full Day Amboseli',
-                description: `Wake before dawn to catch Kilimanjaro at its most spectacular — the mountain reveals its full summit only in the early hours before equatorial clouds wrap around it like cotton wool. 6:30 AM — A sunrise game drive takes you across Amboseli\'s varied habitats: the dried-up Lake Amboseli where dust devils spin across the pale cracked earth, the lush Enkongo Narok swamp where elephants wade through papyrus and cattle egrets perch on their broad grey backs, and acacia woodland alive with superb starlings flashing iridescent green, weaverbirds building intricate hanging nests, and martial eagles scanning from bare branches. Climb Observation Hill mid-morning for a breathtaking 360-degree panorama — elephant herds moving across the plains below, swamplands glistening like scattered emeralds, and Kilimanjaro towering above everything in silent white majesty. After lunch, the afternoon drive explores the southern sector where buffalo herds gather in the hundreds, bat-eared foxes peer from their burrows, and crowned cranes strut through the marsh. The golden-hour elephants here are unforgettable — enormous tuskers walking against a sky of amber and violet with Kilimanjaro\'s snowcap glowing pink behind them.`,
+                description: `Wake before dawn to catch Kilimanjaro at its most spectacular — the mountain reveals its full summit only in the early hours before equatorial clouds wrap around it like cotton wool. 6:30 AM — A sunrise game drive takes you across Amboseli\'s varied habitats: the dried-up Lake Amboseli where dust devils spin across the pale cracked earth, the lush Enkongo Narok swamp where elephants wade through papyrus and cattle egrets perch on their broad grey backs, and acacia woodland alive with superb starlings flashing iridescent green, weaverbirds building intricate hanging nests, and martial eagles scanning from bare branches. Climb Observation Hill mid-morning for a awe-inspiring 360-degree panorama — elephant herds moving across the plains below, swamplands glistening like scattered emeralds, and Kilimanjaro towering above everything in silent white majesty. After lunch, the afternoon drive explores the southern sector where buffalo herds gather in the hundreds, bat-eared foxes peer from their burrows, and crowned cranes strut through the marsh. The golden-hour elephants here are unforgettable — enormous tuskers walking against a sky of amber and violet with Kilimanjaro\'s snowcap glowing pink behind them.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -8728,7 +8728,7 @@ Either way, the transition is breathtaking — dusty red bush gives way to tropi
     duration: 5,
     durationUnit: "days",
     highlights: ["Fly between the Masai Mara and Amboseli \u2014 no long drives", "Maximum safari time, minimum travel time", "Masai Mara \u2014 the Great Migration and Africa's predator capital", "Amboseli \u2014 the world's best elephant photography with Kilimanjaro", "Scenic bush flights over the Great Rift Valley"],
-    description: `Two iconic parks connected entirely by scenic bush flights — maximum wildlife, minimum travel time. Expect three days of Great Migration drama and big cat encounters in the Masai Mara, then soar over the Loita Plains and Maasai rangeland to Amboseli for two days of elephant photography beneath Kilimanjaro's snow-capped peak. The aerial views alone are breathtaking — the Great Rift Valley, volcanic landscapes, and endless savannah unfolding below. Every hour spent on safari, not on the road. The premium Kenya wildlife experience for those who value their time.`,
+    description: `Two iconic parks connected entirely by scenic bush flights — maximum wildlife, minimum travel time. Expect three days of Great Migration drama and big cat encounters in the Masai Mara, then soar over the Loita Plains and Maasai rangeland to Amboseli for two days of elephant photography beneath Kilimanjaro's snow-capped peak. The aerial views alone are striking — the Great Rift Valley, volcanic landscapes, and endless savannah unfolding below. Every hour spent on safari, not on the road. The premium Kenya wildlife experience for those who value their time.`,
     itinerary: [
       { day: 1, title: "Fly Nairobi to Masai Mara", description: `## 45-min flight\n\nMorning flight from Wilson Airport to the Mara. Afternoon game drive — lions, cheetahs, elephants, Migration herds.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Full Day Masai Mara", description: `All-day Mara exploration. Optional hot air balloon at dawn.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -8788,12 +8788,12 @@ Either way, the transition is breathtaking — dusty red bush gives way to tropi
     id: "flight-samburu-mara-7d",
     slug: "7-day-samburu-masai-mara-fly-in-safari",
     title: "7-Day Samburu & Masai Mara Fly-In Safari | Rare Wildlife",
-    subtitle: "Kenya's Ultimate Fly-In Wildlife Experience",
+    subtitle: "Kenya's Outstanding Fly-In Wildlife Experience",
     destination: "kenya",
     duration: 7,
     durationUnit: "days",
-    highlights: ["Fly between Kenya's most contrasting wildlife reserves", "Samburu's Special Five + Masai Mara's Great Migration", "Zero road time \u2014 every hour spent on safari, not driving", "Scenic bush flights over Mount Kenya and the Rift Valley", "The ultimate luxury Kenya safari experience"],
-    description: `The ultimate luxury Kenya safari — seven days spanning two dramatically different ecosystems, connected entirely by scenic bush flights over Mount Kenya and the Great Rift Valley. In Samburu's semi-arid northern frontier, expect the rare 'Special Five' along the Ewaso Ng'iro River — Grevy's zebra, reticulated giraffe, gerenuk, Beisa oryx, and Somali ostrich. In the Masai Mara, the Great Migration and Africa's densest predator population dominate the golden savannah. Zero road time means every hour is spent on safari. From bush airstrip landings to sundowner drives — this is Kenya at its most exclusive.`,
+    highlights: ["Fly between Kenya's most contrasting wildlife reserves", "Samburu's Special Five + Masai Mara's Great Migration", "Zero road time \u2014 every hour spent on safari, not driving", "Scenic bush flights over Mount Kenya and the Rift Valley", "The signature luxury Kenya safari experience"],
+    description: `The complete luxury Kenya safari — seven days spanning two dramatically different ecosystems, connected entirely by scenic bush flights over Mount Kenya and the Great Rift Valley. In Samburu's semi-arid northern frontier, expect the rare 'Special Five' along the Ewaso Ng'iro River — Grevy's zebra, reticulated giraffe, gerenuk, Beisa oryx, and Somali ostrich. In the Masai Mara, the Great Migration and Africa's densest predator population dominate the golden savannah. Zero road time means every hour is spent on safari. From bush airstrip landings to sundowner drives — this is Kenya at its most exclusive.`,
     itinerary: [
       { day: 1, title: "Fly Nairobi to Samburu", description: `Bush flight to Samburu. Afternoon game drive along the Ewaso Ng'iro River.`, meals: ["Lunch", "Dinner"] },
       { day: 2, title: "Full Day Samburu", description: `Explore Samburu's diverse habitats. Search for the Special Five and leopards.`, meals: ["Breakfast", "Lunch", "Dinner"] },
@@ -9088,7 +9088,7 @@ By mid-afternoon you can choose a final highlight: deep-sea fishing beyond the r
             'Great Rift Valley viewpoint',
             'Diani Beach Indian Ocean relaxation'
         ],
-        description: `Bush to beach in five extraordinary days — the ultimate Kenya sampler spanning two legendary parks and three ecosystems. Open with Big Five game drives across the Masai Mara's golden grasslands, where lion prides, cheetahs, and the Great Migration define East Africa's wildest stage. Transition south to Amboseli, where elephant super-herds parade beneath Kilimanjaro's snow-capped summit — arguably Africa's most photogenic wildlife backdrop. The journey builds from savannah drama to Indian Ocean serenity, crossing through Tsavo's red-earth wilderness before finishing at Diani Beach by first-class SGR train or scenic 4×4 drive.`,
+        description: `Bush to beach in five extraordinary days — the definitive Kenya sampler spanning two legendary parks and three ecosystems. Open with Big Five game drives across the Masai Mara's golden grasslands, where lion prides, cheetahs, and the Great Migration define East Africa's wildest stage. Transition south to Amboseli, where elephant super-herds parade beneath Kilimanjaro's snow-capped summit — arguably Africa's most photogenic wildlife backdrop. The journey builds from savannah drama to Indian Ocean serenity, crossing through Tsavo's red-earth wilderness before finishing at Diani Beach by first-class SGR train or scenic 4×4 drive.`,
         itinerary: [
             {
                 day: 1,
@@ -9239,7 +9239,7 @@ Arrive at Amboseli National Park by late morning. After checking into your safar
 
 6:30 AM — The morning game drive takes you through dried lake beds where dust devils spiral skyward, green swamps alive with birdsong, and acacia woodland where weaverbirds build their intricate hanging nests. Elephant family groups of twenty or more move in slow procession — matriarchs with tusks sweeping the ground leading tiny calves barely knee-high. Every sighting carries the Kilimanjaro backdrop.
 
-Climb Observation Hill for a breathtaking 360-degree panorama: elephant herds trace dark lines across the pale lake bed below, swamplands shimmer green to the west, and Kilimanjaro towers above it all.
+Climb Observation Hill for a stunning 360-degree panorama: elephant herds trace dark lines across the pale lake bed below, swamplands shimmer green to the west, and Kilimanjaro towers above it all.
 
 Return for lunch. The afternoon drive explores the southern marshes where buffalo herds congregate, spotted hyenas lope across the open grassland, and the shy bat-eared fox peers from its burrow entrance. As sunset paints the sky amber, elephants silhouetted against Kilimanjaro's purple evening profile create one of Africa's most unforgettable scenes.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -9339,7 +9339,7 @@ The transformation is extraordinary — from volcanic wilderness to white-sand p
         slug: '6-day-kenya-grand-safari-diani',
     hasSGR: true,
         title: "6-Day Kenya Grand Safari to Diani Beach | Bush & Beach",
-        subtitle: 'The Ultimate Kenya Bush-to-Beach Adventure',
+        subtitle: 'The Premier Kenya Bush-to-Beach Adventure',
         destination: 'kenya',
         duration: 6,
         durationUnit: 'days',
@@ -9367,7 +9367,7 @@ The landscape transforms as you enter the Mara ecosystem — golden grasslands r
                 title: 'Full Day — Masai Mara National Reserve',
                 description: `6:00 AM — Wake to the distant roar of lions and the chatter of weaver birds outside your lodge. Head out into the cool dawn air for the morning game drive — this is when the Mara\'s predators are most active. Your guide reads the bush like a book, following fresh tracks through dew-damp grass. A cheetah crouches on a termite mound, scanning the plains for Thomson\'s gazelle. Nearby, a leopard descends from a sausage tree, her spotted coat melting into the dappled shade.
 
-Drive to the Mara River where enormous Nile crocodiles lie motionless on the sandy banks — their stillness deceptive, their speed terrifying when prey approaches. Hippo pods surface and submerge in the deeper pools, grunting territorial warnings. During migration season (July–October), this stretch of river hosts one of nature\'s most dramatic spectacles — thousands of wildebeest hurling themselves into the current.
+Drive to the Mara River where enormous Nile crocodiles lie motionless on the sandy banks — their stillness deceptive, their speed terrifying when prey approaches. Hippo pods surface and submerge in the deeper pools, grunting territorial warnings. During migration season (July–October), this stretch of river hosts one of nature\'s most dramatic spectacles — vast herds of wildebeest hurling themselves into the current.
 
 Return to your safari lodge for lunch and a rest during the midday heat. The afternoon drive explores new sectors — perhaps tracking a pride of lions teaching their cubs to stalk through the tall golden grass, or finding a congregation of elephants in the riverine forest where fig trees and wild olive provide shade and forage. As the golden hour deepens, the Mara becomes a photographer\'s paradise — giraffe silhouettes against the enormous sky, secretary birds strutting through the grassland, and the distant calls of hyenas echoing across the plains as darkness gathers.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -9729,7 +9729,7 @@ You're back at your Diani Beach hotel by approximately 4:30 PM — still in time
             'Wasini Island seafood lunch',
             'Traditional Swahili dhow sailing experience'
         ],
-        description: `Kenya's most pristine underwater paradise — Kisite-Mpunguti Marine National Park has been protected for decades, and the reef shows it. Board a traditional dhow at Shimoni and sail into sapphire waters where dolphin pods roll through the swells and sea turtles glide beneath the surface. Snorkel over pristine coral gardens alive with parrotfish, angelfish, moray eels, and starfish in crystal-clear visibility. Explore Wasini Island's quiet Swahili village and sit down to a fresh seafood lunch with the Indian Ocean lapping at your feet. Traditional dhow sailing, world-class snorkeling, and island culture — the best of the Kenya coast in a single day.`,
+        description: `Kenya's most pristine underwater paradise — Kisite-Mpunguti Marine National Park has been protected for decades, and the reef shows it. Board a traditional dhow at Shimoni and sail into sapphire waters where dolphin pods roll through the swells and sea turtles glide beneath the surface. Snorkel over pristine coral gardens alive with parrotfish, angelfish, moray eels, and starfish in crystal-clear visibility. Explore Wasini Island's quiet Swahili village and sit down to a fresh seafood lunch with the Indian Ocean lapping at your feet. Traditional dhow sailing, skilled snorkeling, and island culture — the best of the Kenya coast in a single day.`,
         itinerary: [
             {
                 day: 1,
@@ -9738,7 +9738,7 @@ You're back at your Diani Beach hotel by approximately 4:30 PM — still in time
 
 6:30 AM — Kenya's finest marine sanctuary lies at the country's southernmost tip, and reaching it is half the adventure. Your driver collects you from your Diani hotel and heads south along the coast road through Msambweni and Majoreni, where fishermen in hand-carved outrigger canoes are already heading out on the morning tide. The landscape shifts from resort gardens to wild cashew woodland and tiny coral-stone villages before you reach the old slave port of Shimoni at around 8:00 AM.
 
-At the jetty, a traditional Swahili dhow with a lateen sail and weathered wooden hull awaits. Your Swahili crew — descendants of generations of Indian Ocean sailors — cast off, and for the next 30 minutes you sail across the Shimoni Channel toward the open sea. Keep your eyes on the water: between December and March, pods of bottlenose and humpback dolphins are almost guaranteed to appear, their dorsal fins slicing through the glassy surface before they leap in silver arcs. Even outside peak season, dolphins frequent these warm Pemba Channel currents year-round.
+At the jetty, a traditional Swahili dhow with a lateen sail and weathered wooden hull awaits. Your Swahili crew — descendants of generations of Indian Ocean sailors — cast off, and for the next 30 minutes you sail across the Shimoni Channel toward the open sea. Keep your eyes on the water: between December and March, pods of bottlenose and humpback dolphins frequently appear, their dorsal fins slicing through the glassy surface before they leap in silver arcs. Even outside peak season, dolphins frequent these warm Pemba Channel currents year-round.
 
 By 9:00 AM the dhow anchors inside Kisite-Mpunguti Marine National Park — 28 square kilometers of protected coral reef, seagrass beds, and open ocean that form Kenya's most biodiverse marine ecosystem. The water here is a shade of blue so vivid it barely looks real. Slip on your mask and fins and enter a silent, kaleidoscopic world: brain corals and branching staghorns shelter clouds of electric-blue damselfish, lionfish fan their venomous spines in slow motion, and a green sea turtle rises from the seagrass to breathe — hovering at the surface for a moment before descending in a graceful spiral. Moorish idols, emperor angelfish, and giant moray eels all patrol these reefs, and your guide points out octopuses camouflaged against the coral rock.
 
@@ -9956,7 +9956,7 @@ Arrive at Amboseli by early afternoon and check into your safari lodge. After lu
 
 5:30 AM — Rise before dawn for the clearest Kilimanjaro views. The mountain reveals its full glacial crown, glowing rose-pink then gold as the first sun strikes the ice cap. A morning game drive through Amboseli's finest circuits — elephant matriarchs lead their families between the swamps, and with luck a cheetah appears in the golden morning light. Climb Observation Hill for a sweeping 360-degree panorama.
 
-After breakfast, depart north for Lake Nakuru. The highway climbs through the Athi Plains where Maasai herdsmen in crimson shukas guide their cattle through the grasslands. Pass through Nairobi's outskirts without stopping and continue north, descending into the Great Rift Valley — one of the planet's most dramatic geological features. The escarpment viewpoint offers breathtaking panoramas across the valley floor below.
+After breakfast, depart north for Lake Nakuru. The highway climbs through the Athi Plains where Maasai herdsmen in crimson shukas guide their cattle through the grasslands. Pass through Nairobi's outskirts without stopping and continue north, descending into the Great Rift Valley — one of the planet's most dramatic geological features. The escarpment viewpoint offers spectacular panoramas across the valley floor below.
 
 Arrive at Lake Nakuru National Park by late afternoon and check into your lodge. If time permits, enjoy a short evening game drive through the acacia woodland surrounding the lake, watching for waterbuck and impala as the sun sets over the Rift Valley.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -9966,7 +9966,7 @@ Arrive at Lake Nakuru National Park by late afternoon and check into your lodge.
                 title: 'Full Day in Lake Nakuru National Park',
                 description: `Wake to the calls of tropical birds in the fever tree forest surrounding your lodge. After breakfast, head out for a full-day exploration of Lake Nakuru National Park — a compact jewel in the Rift Valley floor.
 
-The lake itself is a soda lake whose alkaline waters attract vast congregations of flamingos — at peak times, the shoreline shimmers pink as thousands of lesser flamingos feed on spirulina algae, creating one of the natural world's most extraordinary spectacles. Greater flamingos wade deeper, fishing with their curved bills, while pelicans bob and dive in formation.
+The lake itself is a soda lake whose alkaline waters attract vast congregations of flamingos — at peak times, the shoreline shimmers pink as large numbers of lesser flamingos feed on spirulina algae, creating one of the natural world's most extraordinary spectacles. Greater flamingos wade deeper, fishing with their curved bills, while pelicans bob and dive in formation.
 
 Lake Nakuru is one of Kenya's premier rhino sanctuaries — both black and white rhinos roam the park in healthy numbers. Your guide tracks them through the yellow-barked acacia woodland, a habitat that also conceals one of Nakuru's most celebrated residents: leopards. These elusive big cats drape across the horizontal branches of fever trees, their spotted coats blending perfectly with the dappled light.
 
@@ -10055,7 +10055,7 @@ Arrive in Nairobi by midday. Your driver drops you at your hotel, JKIA airport, 
             'Lake Nakuru — flamingos, rhinos & leopards',
             'Drop-off in Nairobi (hotel or airport)'
         ],
-        description: `Six days from the Indian Ocean to Nairobi through five spectacular parks — Kenya's ultimate overland safari. Begin in Tsavo East's vast red-earth wilderness with dust-coated elephants and crocodile-lined rivers. Cross into Tsavo West for crystal-clear Mzima Springs and otherworldly lava flows. Ascend to Amboseli where enormous elephant herds march beneath Kilimanjaro's snow-capped dome. Drift by boat across Lake Naivasha past hippos and fish eagles, then walk among zebras and giraffes on Crescent Island. Finish at Lake Nakuru where shores shimmer pink with flamingos and leopards drape across fever trees. From coral sand to crimson plains, volcanic springs to pink-fringed lakes — an epic journey across the breadth of Kenya.`,
+        description: `Six days from the Indian Ocean to Nairobi through five spectacular parks — Kenya's comprehensive overland safari. Begin in Tsavo East's vast red-earth wilderness with dust-coated elephants and crocodile-lined rivers. Cross into Tsavo West for crystal-clear Mzima Springs and otherworldly lava flows. Ascend to Amboseli where enormous elephant herds march beneath Kilimanjaro's snow-capped dome. Drift by boat across Lake Naivasha past hippos and fish eagles, then walk among zebras and giraffes on Crescent Island. Finish at Lake Nakuru where shores shimmer pink with flamingos and leopards drape across fever trees. From coral sand to crimson plains, volcanic springs to pink-fringed lakes — an epic journey across the breadth of Kenya.`,
         itinerary: [
             {
                 day: 1,
@@ -10104,7 +10104,7 @@ Arrive at Amboseli by early afternoon. After lunch with Kilimanjaro views, head 
 
 5:30 AM — Rise before dawn for the clearest Kilimanjaro views — the mountain reveals its full glacial crown, glowing rose-pink then gold as the first sun strikes the ice cap. A morning game drive through Amboseli's finest circuits — elephant matriarchs lead their families between the swamps, buffalo graze the open plains. Climb Observation Hill for a final sweeping 360-degree panorama.
 
-After breakfast, depart north for Lake Naivasha. The highway climbs through the Athi Plains and past Nairobi, then descends into the Great Rift Valley — the escarpment viewpoint offers breathtaking panoramas across the valley floor. Continue to Lake Naivasha, a freshwater lake fringed with papyrus at 1,884 metres altitude.
+After breakfast, depart north for Lake Naivasha. The highway climbs through the Athi Plains and past Nairobi, then descends into the Great Rift Valley — the escarpment viewpoint offers magnificent panoramas across the valley floor. Continue to Lake Naivasha, a freshwater lake fringed with papyrus at 1,884 metres altitude.
 
 Arrive by mid-afternoon and check into your lakeside lodge. After settling in, board a boat for an afternoon boat safari on Lake Naivasha. Glide past pods of hippos surfacing just metres away, their ears twitching as they eye your boat. African fish eagles perch in the papyrus, their haunting cry echoing across the water — watch one swoop to snatch a fish in a flash of white and chestnut. Cormorants, kingfishers, herons, and lily-trotters crowd the shallows. The late afternoon light paints the water gold as you return to shore.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10118,7 +10118,7 @@ Arrive by mid-afternoon and check into your lakeside lodge. After settling in, b
 
 Return to the mainland by late morning and depart for Lake Nakuru National Park. The short drive north takes you along the Rift Valley floor past the dormant Mount Longonot volcano.
 
-Arrive at Lake Nakuru for lunch, then head out for an afternoon game drive. The alkaline lake's shores shimmer pink with thousands of flamingos feeding on spirulina algae. Lake Nakuru is one of Kenya's premier rhino sanctuaries — your guide tracks black and white rhinos through the yellow-barked acacia woodland. Watch for leopards draped across fever tree branches. Drive to Baboon Cliff viewpoint for a sweeping panorama of the lake, flamingos, and the Rift Valley escarpment rising behind. Lions, buffalo, and Rothschild's giraffes complete a spectacular afternoon.`,
+Arrive at Lake Nakuru for lunch, then head out for an afternoon game drive. The alkaline lake's shores shimmer pink with dense flocks of flamingos feeding on spirulina algae. Lake Nakuru is one of Kenya's premier rhino sanctuaries — your guide tracks black and white rhinos through the yellow-barked acacia woodland. Watch for leopards draped across fever tree branches. Drive to Baboon Cliff viewpoint for a sweeping panorama of the lake, flamingos, and the Rift Valley escarpment rising behind. Lions, buffalo, and Rothschild's giraffes complete a spectacular afternoon.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -10239,9 +10239,9 @@ Arrive at Amboseli by early afternoon. After lunch, head out for your afternoon 
                 title: 'Amboseli to Lake Naivasha',
                 description: `## ~350km | Approx. 5.5 hrs
 
-5:30 AM — Rise before dawn for the clearest Kilimanjaro views — the mountain's glacial crown glows rose-pink then gold in the first light. A morning game drive through Amboseli's finest circuits. Climb Observation Hill for a final sweeping 360-degree panorama — elephants, swamps, and Kilimanjaro in one breathtaking view.
+5:30 AM — Rise before dawn for the clearest Kilimanjaro views — the mountain's glacial crown glows rose-pink then gold in the first light. A morning game drive through Amboseli's finest circuits. Climb Observation Hill for a final sweeping 360-degree panorama — elephants, swamps, and Kilimanjaro in one dramatic view.
 
-After breakfast, depart north for Lake Naivasha. The highway climbs through the Athi Plains, bypasses Nairobi, then descends into the Great Rift Valley — the escarpment viewpoint offers breathtaking panoramas. Continue to Lake Naivasha, a freshwater lake fringed with papyrus at 1,884 metres altitude.
+After breakfast, depart north for Lake Naivasha. The highway climbs through the Athi Plains, bypasses Nairobi, then descends into the Great Rift Valley — the escarpment viewpoint offers sweeping panoramas. Continue to Lake Naivasha, a freshwater lake fringed with papyrus at 1,884 metres altitude.
 
 Arrive mid-afternoon and check into your lakeside lodge. Board a boat for an afternoon boat safari on Lake Naivasha. Glide past pods of hippos surfacing just metres away. African fish eagles — their haunting cry echoing across the water — swoop to snatch fish in a flash of white and chestnut. Cormorants, kingfishers, herons, and lily-trotters crowd the shallows. The late afternoon light paints the water gold.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10263,9 +10263,9 @@ By late afternoon you reach the Masai Mara — Kenya's most celebrated wildlife 
                 title: 'Full Day in the Masai Mara',
                 description: `Wake to the sounds of the African bush — hornbills calling, hyenas whooping in the distance, and the deep rumble of lions announcing the dawn. Today is dedicated entirely to the Masai Mara, Africa's most celebrated wildlife arena.
 
-6:00 AM — Depart for an early morning game drive when predators are most active. Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah's silhouette on a termite mound scanning for prey. The Mara's open grasslands deliver unparalleled big cat encounters: lion prides with tumbling cubs, leopards draped across sausage tree branches, and cheetah families teaching their young to hunt.
+6:00 AM — Depart for an early morning game drive when predators are most active. Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah's silhouette on a termite mound scanning for prey. The Mara's open grasslands deliver exceptional big cat encounters: lion prides with tumbling cubs, leopards draped across sausage tree branches, and cheetah families teaching their young to hunt.
 
-Cross the Talek and Mara rivers, where enormous Nile crocodiles drift like logs and hippo pods surface and snort. During the Great Migration season (July–October), witness one of nature's greatest spectacles — hundreds of thousands of wildebeest and zebra massing at river crossing points, the tension building before the thunderous plunge into crocodile-infested waters.
+Cross the Talek and Mara rivers, where enormous Nile crocodiles drift like logs and hippo pods surface and snort. During the Great Migration season (July–October), witness one of nature's greatest spectacles — hundreds of vast herds of wildebeest and zebra massing at river crossing points, the tension building before the thunderous plunge into crocodile-infested waters.
 
 Return to your lodge for lunch and a rest during the heat of the day. The afternoon game drive explores different sectors of the reserve — enormous elephant herds moving through the grassland, hyena clans at their dens, and the elegant movements of giraffes against the Mara's golden backdrop. As the sun sets, the sky ignites in shades of crimson and gold — a final sundowner moment on the plains.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10293,7 +10293,7 @@ The afternoon game drive focuses on the open plains — Thomson's and Grant's ga
 
 8:30 AM — Return to your lodge for breakfast, savouring the views one final time. Pack up and depart for Nairobi. The road winds through rolling Maasai country — green hills dotted with homesteads, cattle, and goats. Stop in Narok for a comfort break and fresh supplies.
 
-The highway climbs through the escarpment and descends toward Nairobi through the fertile highlands. Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, JKIA airport, or any location of your choice. Seven extraordinary days — from the turquoise Indian Ocean and Tsavo's red elephants, beneath Kilimanjaro's glaciers, across hippo-filled lakes, to the lion prides and Great Migration of the Masai Mara. The ultimate Kenya safari odyssey from coast to capital.`,
+The highway climbs through the escarpment and descends toward Nairobi through the fertile highlands. Arrive in Nairobi by early afternoon. Your driver drops you at your hotel, JKIA airport, or any location of your choice. Seven extraordinary days — from the turquoise Indian Ocean and Tsavo's red elephants, beneath Kilimanjaro's glaciers, across hippo-filled lakes, to the lion prides and Great Migration of the Masai Mara. The grand Kenya safari odyssey from coast to capital.`,
                 meals: ['Breakfast']
             }
         ],
@@ -10370,7 +10370,7 @@ The highway climbs through the escarpment and descends toward Nairobi through th
         id: 'coast-nrb-9d',
         slug: '9-day-ultimate-coast-to-nairobi-safari',
         hasSGR: true,
-        title: '9-Day Ultimate Coast to Nairobi Safari | 6 Parks',
+        title: '9-Day Exceptional Coast to Nairobi Safari | 6 Parks',
         subtitle: 'The Complete Kenya Overland — Red Elephants to River Crossings',
         destination: 'kenya',
         duration: 9,
@@ -10385,7 +10385,7 @@ The highway climbs through the escarpment and descends toward Nairobi through th
             'Masai Mara — 2 full days of Big Five & Great Migration',
             'Drop-off in Nairobi (hotel or airport)'
         ],
-        description: `Nine extraordinary days from the Indian Ocean to Nairobi through eight of Kenya's greatest parks and reserves — the ultimate overland safari. Begin in Tsavo's vast twin parks with red elephants, crystal springs, and lava flows. Ascend to Amboseli for elephants beneath Kilimanjaro's glaciers. Drift by boat across Lake Naivasha past hippos and fish eagles, walk among giraffes on Crescent Island as fish eagles circle overhead. Watch flamingos paint Lake Nakuru pink and track rhinos through fever tree forests. The grand finale: two full days in the legendary Masai Mara — lion prides, leopard hunts, cheetah sprints, and the thundering Great Migration. From coral sand to the Mara's golden savannah — Kenya distilled into one magnificent odyssey.`,
+        description: `Nine extraordinary days from the Indian Ocean to Nairobi through eight of Kenya's greatest parks and reserves — the outstanding overland safari. Begin in Tsavo's vast twin parks with red elephants, crystal springs, and lava flows. Ascend to Amboseli for elephants beneath Kilimanjaro's glaciers. Drift by boat across Lake Naivasha past hippos and fish eagles, walk among giraffes on Crescent Island as fish eagles circle overhead. Watch flamingos paint Lake Nakuru pink and track rhinos through fever tree forests. The grand finale: two full days in the legendary Masai Mara — lion prides, leopard hunts, cheetah sprints, and the thundering Great Migration. From coral sand to the Mara's golden savannah — Kenya distilled into one magnificent odyssey.`,
         itinerary: [
             {
                 day: 1,
@@ -10440,7 +10440,7 @@ The afternoon game drive explores the Sinet and Longinye swamps — hippos wallo
                 title: 'Amboseli to Lake Naivasha',
                 description: `## ~350km | Approx. 5.5 hrs
 
-7:00 AM — One last look at Kilimanjaro over breakfast before departing north for Lake Naivasha. The park gate falls behind as the road crosses open plains where zebra and wildebeest still graze in the early light. The highway climbs through the Athi Plains, skirts Nairobi on the bypass, and descends into the Great Rift Valley — pause at the escarpment viewpoint for breathtaking panoramas across the valley floor, its patchwork of farms and extinct volcanoes stretching to the haze.
+7:00 AM — One last look at Kilimanjaro over breakfast before departing north for Lake Naivasha. The park gate falls behind as the road crosses open plains where zebra and wildebeest still graze in the early light. The highway climbs through the Athi Plains, skirts Nairobi on the bypass, and descends into the Great Rift Valley — pause at the escarpment viewpoint for awe-inspiring panoramas across the valley floor, its patchwork of farms and extinct volcanoes stretching to the haze.
 
 Arrive at Lake Naivasha mid-afternoon. After checking into your lakeside lodge, board a boat for an afternoon safari on the water. Glide past pods of hippos surfacing and snorting just metres from the hull, their eyes and ears breaking the glassy surface. African fish eagles perch in the papyrus fringe — their haunting, iconic cry echoing across the water — swooping down to snatch fish in a flash of white and chestnut. Cormorants, kingfishers, herons, and lily-trotters crowd the shallows, a birdwatcher\'s paradise. Step ashore on Crescent Island for a short walking safari among giraffes, zebras, wildebeest, and waterbuck — one of the few places in Kenya where you walk freely among wild game without a vehicle. The late afternoon light paints the water gold as you return to your lodge.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10452,7 +10452,7 @@ Arrive at Lake Naivasha mid-afternoon. After checking into your lakeside lodge, 
 
 7:00 AM — After breakfast, depart Lake Naivasha and continue north through the Rift Valley floor via Gilgil — a short, scenic drive past patchwork farms and extinct volcanic cones, the valley walls rising on either side. Arrive at Lake Nakuru National Park by mid-morning, a compact Rift Valley jewel and one of Kenya\'s premier rhino sanctuaries.
 
-Begin an extended game drive through the park\'s fever tree forest — its pale, yellow-barked acacias standing like a ghost wood — tracking both black and white rhinos through the dense understorey. The alkaline lake itself draws vast congregations of flamingos; the shoreline shimmers pink as thousands of lesser flamingos feed on spirulina algae while greater flamingos wade deeper among diving pelicans. Watch for leopards draped across fever tree branches and, with good fortune, one of Nakuru\'s famous tree-climbing lions.
+Begin an extended game drive through the park\'s fever tree forest — its pale, yellow-barked acacias standing like a ghost wood — tracking both black and white rhinos through the dense understorey. The alkaline lake itself draws vast congregations of flamingos; the shoreline shimmers pink as large numbers of lesser flamingos feed on spirulina algae while greater flamingos wade deeper among diving pelicans. Watch for leopards draped across fever tree branches and, with good fortune, one of Nakuru\'s famous tree-climbing lions.
 
 After lunch at your lodge, climb to Baboon Cliff for a sweeping panorama — the flamingo-pink shoreline far below, the Rift Valley escarpment rising behind. The afternoon game drive explores the lake\'s southern shore and lush watercourses where bushbuck move through the undergrowth and Rothschild\'s giraffes — one of Africa\'s most endangered subspecies — browse the canopy. As the sun sets, the fever tree forest glows gold, a fitting final evening in the Great Rift Valley before tomorrow\'s journey to the Mara.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10474,9 +10474,9 @@ By late afternoon you reach the Masai Mara. The golden savannah stretches to the
                 title: 'Full Day in the Masai Mara',
                 description: `Wake to the sounds of the African bush — hornbills calling, hyenas whooping in the distance, the deep rumble of lions announcing the dawn.
 
-6:00 AM — Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah\'s silhouette scanning for prey. The Mara\'s open grasslands deliver unparalleled big cat encounters: lion prides with tumbling cubs, leopards in sausage trees, cheetah families teaching their young to hunt.
+6:00 AM — Your guide reads the plains like a book — fresh lion tracks in the dust, vultures circling a distant kill, a cheetah\'s silhouette scanning for prey. The Mara\'s open grasslands deliver exceptional big cat encounters: lion prides with tumbling cubs, leopards in sausage trees, cheetah families teaching their young to hunt.
 
-Cross the Talek and Mara rivers where enormous Nile crocodiles drift and hippo pods surface. During the Great Migration season (July–October), witness hundreds of thousands of wildebeest and zebra massing at river crossing points — the tension building before the thunderous plunge into crocodile-infested waters.
+Cross the Talek and Mara rivers where enormous Nile crocodiles drift and hippo pods surface. During the Great Migration season (July–October), witness hundreds of vast herds of wildebeest and zebra massing at river crossing points — the tension building before the thunderous plunge into crocodile-infested waters.
 
 Return for lunch. The afternoon explores different Mara sectors — enormous elephant herds, hyena clans at their dens, elegant giraffes against the golden backdrop. Visit a traditional Maasai village for an authentic cultural experience — warriors demonstrate their jumping dance, elders explain traditional medicines, and children sing songs of welcome. As the sun sets, the sky ignites in crimson and gold — a sundowner moment on the greatest plains on Earth.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
@@ -10670,7 +10670,7 @@ The highway climbs through the escarpment toward Nairobi. Arrive by early aftern
 
 8:30 AM — Your first game drive circuit along the Galana River. Hippo pods surface and submerge in the dark water while Nile crocodiles bask on sandbanks. Red-dusted elephants — Tsavo's signature — emerge from the bush in family herds, their skin tinted rust-orange from dust-bathing in the laterite soil. Watch for lions resting in the shade of salvadora bushes nearby.
 
-10:30 AM — Drive to Mudanda Rock, a 1.5-km long rock outcrop rising from the plains like a miniature Uluru. From the top, scan the waterhole below — elephants, buffalo, zebra, and antelope gather here, especially during dry months. The views across Tsavo's endless plains are breathtaking.
+10:30 AM — Drive to Mudanda Rock, a 1.5-km long rock outcrop rising from the plains like a miniature Uluru. From the top, scan the waterhole below — elephants, buffalo, zebra, and antelope gather here, especially during dry months. The views across Tsavo's endless plains are striking.
 
 12:00 PM — Lunch at a designated picnic site within the park, surrounded by the sounds of the bush.
 
@@ -10836,7 +10836,7 @@ Afternoon game drive targets lion country in the southern circuits. Tsavo's lion
             'Mzima Springs in Tsavo West',
             'Shared 4x4 Land Cruiser Jeep'
         ],
-        description: `The ultimate beach-to-bush group safari from Diani — three days crossing Kenya's three southern giants. Start in the vast red wilderness of Tsavo East tracking red-dusted elephants, cross into Tsavo West for the crystal pools of Mzima Springs, then summit your adventure at Amboseli where massive tusker elephants parade beneath the snow-capped peak of Mount Kilimanjaro. Three parks, Africa's highest mountain, and the Big Five — all at a group-friendly price.`,
+        description: `The signature beach-to-bush group safari from Diani — three days crossing Kenya's three southern giants. Start in the vast red wilderness of Tsavo East tracking red-dusted elephants, cross into Tsavo West for the crystal pools of Mzima Springs, then summit your adventure at Amboseli where massive tusker elephants parade beneath the snow-capped peak of Mount Kilimanjaro. Three parks, Africa's highest mountain, and the Big Five — all at a group-friendly price.`,
         itinerary: [
             {
                 day: 1,
@@ -11090,14 +11090,14 @@ Stop for lunch en route. Ascend the Rift Valley escarpment with final views acro
                 title: 'Arusha to Ngorongoro Crater Rim',
                 description: `## ~180km | Approx. 3.5 hrs
 
-7:00 AM. Depart Arusha and drive west through the lush highlands of Karatu, passing coffee plantations and Iraqw farming communities. The road climbs steadily toward the Ngorongoro Conservation Area gate, where the air cools and the landscape shifts to montane forest thick with moss-draped trees and colourful turacos. After entering the conservation area, continue along the forested rim road to your lodge perched on the crater's edge. The first glimpse of the crater floor 600 metres below is breathtaking — a vast green amphitheatre dotted with lakes, forests, and open grassland stretching to the far wall. Settle into your lodge and enjoy lunch with one of the most extraordinary views on the continent. Afternoon at leisure to explore the rim trails, photograph the panorama, or simply absorb the scale of this geological wonder.`,
+7:00 AM. Depart Arusha and drive west through the lush highlands of Karatu, passing coffee plantations and Iraqw farming communities. The road climbs steadily toward the Ngorongoro Conservation Area gate, where the air cools and the landscape shifts to montane forest thick with moss-draped trees and colourful turacos. After entering the conservation area, continue along the forested rim road to your lodge perched on the crater's edge. The first glimpse of the crater floor 600 metres below is stunning — a vast green amphitheatre dotted with lakes, forests, and open grassland stretching to the far wall. Settle into your lodge and enjoy lunch with one of the most extraordinary views on the continent. Afternoon at leisure to explore the rim trails, photograph the panorama, or simply absorb the scale of this geological wonder.`,
             },
             {
                 day: 2,
                 title: 'Ngorongoro Crater Floor Game Drive — Return to Arusha',
                 description: `## Full Day | Crater Floor + Return Drive
 
-6:00 AM. Early breakfast and descend the steep crater wall road into the caldera. The morning air is cool, mist clings to the crater walls, and the first golden light illuminates the grasslands. Within minutes of reaching the floor, the density of wildlife is astonishing. Herds of wildebeest and zebra graze the short grass alongside Grant's and Thomson's gazelles. Your guide tracks a pride of crater lions — these prides rarely leave the crater and are among the most-studied in Africa. Continue to the Mandusi Swamp, where hippos wallow in the murky water and crowned cranes stalk the reed beds. The Lerai Forest harbours old bull elephants with massive tusks, and this is one of your best chances in East Africa to spot the critically endangered black rhinoceros in the open. Drive past Lake Magadi, its alkaline waters alive with thousands of lesser flamingos. Enjoy a picnic lunch at a designated site on the crater floor before ascending the western wall in the afternoon. Transfer back to Arusha, arriving by early evening.`,
+6:00 AM. Early breakfast and descend the steep crater wall road into the caldera. The morning air is cool, mist clings to the crater walls, and the first golden light illuminates the grasslands. Within minutes of reaching the floor, the density of wildlife is astonishing. Herds of wildebeest and zebra graze the short grass alongside Grant's and Thomson's gazelles. Your guide tracks a pride of crater lions — these prides rarely leave the crater and are among the most-studied in Africa. Continue to the Mandusi Swamp, where hippos wallow in the murky water and crowned cranes stalk the reed beds. The Lerai Forest harbours old bull elephants with massive tusks, and this is one of your best chances in East Africa to spot the critically endangered black rhinoceros in the open. Drive past Lake Magadi, its alkaline waters alive with large numbers of lesser flamingos. Enjoy a picnic lunch at a designated site on the crater floor before ascending the western wall in the afternoon. Transfer back to Arusha, arriving by early evening.`,
             },
         ],
         inclusions: [
@@ -11174,7 +11174,7 @@ Stop for lunch en route. Ascend the Rift Valley escarpment with final views acro
                 title: 'Full Day Serengeti Game Drives',
                 description: `## Full Day | Sunrise to Sunset
 
-5:30 AM. Rise before dawn for the most magical hours in the Serengeti. The sky turns from deep violet to amber as the first light spills across the grasslands. Predators are still active — this is when cheetahs make their explosive sprints and hyenas return from night hunts. Your guide heads toward the migration corridors, following the seasonal movement of over two million wildebeest and hundreds of thousands of zebra and gazelle. During the dry season (June-October), the herds concentrate near the Grumeti and Mara rivers, creating opportunities for dramatic river crossings. In calving season (January-March), the Southern Serengeti plains are carpeted with newborns. Enjoy a bush picnic lunch under a wide acacia tree. The afternoon explores rocky kopjes where lions survey their territory, hidden valleys where elephant families drink at seasonal pools, and sweeping grasslands where Thomson's gazelles bound across golden earth.`,
+5:30 AM. Rise before dawn for the most magical hours in the Serengeti. The sky turns from deep violet to amber as the first light spills across the grasslands. Predators are still active — this is when cheetahs make their explosive sprints and hyenas return from night hunts. Your guide heads toward the migration corridors, following the seasonal movement of over two million wildebeest and hundreds of large herds of zebras and gazelle. During the dry season (June-October), the herds concentrate near the Grumeti and Mara rivers, creating opportunities for dramatic river crossings. In calving season (January-March), the Southern Serengeti plains are carpeted with newborns. Enjoy a bush picnic lunch under a wide acacia tree. The afternoon explores rocky kopjes where lions survey their territory, hidden valleys where elephant families drink at seasonal pools, and sweeping grasslands where Thomson's gazelles bound across golden earth.`,
             },
             {
                 day: 3,
@@ -11357,7 +11357,7 @@ Stop for lunch en route. Ascend the Rift Valley escarpment with final views acro
                 title: 'Serengeti — Migration Tracking',
                 description: `## Full Day | Dawn to Dusk
 
-5:30 AM. Your guide has radio contact with other vehicles and lodge scouts. The morning drive heads directly toward the migration front — wherever the herds are massing. The spectacle is incomprehensible: hundreds of thousands of wildebeest stretching across the plains in long dark columns, their constant grunting creating a low rumble. Zebra herds weave through the wildebeest, Thomson's gazelles dot the periphery. Where the herds move, predators follow — lions stalk from tall grass, cheetahs explode from cover, hyena clans patrol. Bush lunch in the field. If a river crossing is building, you may spend hours watching thousands of wildebeest leaping into the churning water, crocodiles surfacing, and the thunderous rush of the herd.`,
+5:30 AM. Your guide has radio contact with other vehicles and lodge scouts. The morning drive heads directly toward the migration front — wherever the herds are massing. The spectacle is incomprehensible: hundreds of vast herds of wildebeest stretching across the plains in long dark columns, their constant grunting creating a low rumble. Zebra herds weave through the wildebeest, Thomson's gazelles dot the periphery. Where the herds move, predators follow — lions stalk from tall grass, cheetahs explode from cover, hyena clans patrol. Bush lunch in the field. If a river crossing is building, you may spend hours watching vast herds of wildebeest leaping into the churning water, crocodiles surfacing, and the thunderous rush of the herd.`,
             },
             {
                 day: 3,
@@ -11468,7 +11468,7 @@ Stop for lunch en route. Ascend the Rift Valley escarpment with final views acro
                 title: 'Ngorongoro Crater Floor Game Drive',
                 description: `## Full Crater Floor Day
 
-6:00 AM. Descend the steep crater wall in the early morning mist. Your guide knows every inch of this caldera. Within the first hour, you may see all Big Five. Black rhinos graze openly, lion prides own the central plains, the Lerai Forest harbours ancient bull elephants, hippos crowd the Mandusi Swamp, and Lake Magadi attracts thousands of flamingos. Luxury picnic lunch on the crater floor. Continue exploring through the afternoon before ascending.`,
+6:00 AM. Descend the steep crater wall in the early morning mist. Your guide knows every inch of this caldera. Within the first hour, you may see all Big Five. Black rhinos graze openly, lion prides own the central plains, the Lerai Forest harbours ancient bull elephants, hippos crowd the Mandusi Swamp, and Lake Magadi attracts dense flocks of flamingos. Luxury picnic lunch on the crater floor. Continue exploring through the afternoon before ascending.`,
             },
             {
                 day: 4,
@@ -11686,7 +11686,7 @@ Stop for lunch en route. Ascend the Rift Valley escarpment with final views acro
             'Stone Town UNESCO World Heritage walking tour',
             'Snorkelling, spice tours, and Indian Ocean sunsets',
         ],
-        description: `The perfect combination of world-class safari and tropical beach paradise. Six days exploring Tanzania's legendary Northern Circuit followed by a flight to Zanzibar for four days of white-sand beaches, turquoise water, Stone Town's labyrinthine streets, and the spice island's unique culture.`,
+        description: `The perfect combination of top-tier safari and tropical beach paradise. Six days exploring Tanzania's legendary Northern Circuit followed by a flight to Zanzibar for four days of white-sand beaches, turquoise water, Stone Town's labyrinthine streets, and the spice island's unique culture.`,
         itinerary: [
             {
                 day: 1,
@@ -11945,7 +11945,7 @@ Beach resort. White-sand beaches, snorkelling coral reefs, dhow sailing.`,
     {
         id: 'tz-ultimate-14d',
         slug: '14-day-ultimate-tanzania-safari-and-zanzibar',
-        title: '11-Day Ultimate Tanzania Safari & Zanzibar Beach',
+        title: '11-Day Complete Tanzania Safari & Zanzibar Beach',
         subtitle: 'The Definitive Tanzania Journey — Northern Circuit & Spice Island',
         destination: 'tanzania',
         duration: 11,
@@ -12515,7 +12515,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             'Dramatic Mara River crossings in Kenya and Grumeti crossings in Tanzania',
             'Two full days in each park for maximum wildlife encounters',
             'Seamless border crossing at Isebania/Sirari with guide coordination',
-            'The ultimate migration safari spanning two countries',
+            'The definitive migration safari spanning two countries',
         ],
         description: `Seven days following the Great Wildebeest Migration across two of Africa's most legendary parks. Begin in Kenya's Masai Mara, where the herds make their death-defying Mara River crossings, then cross into Tanzania's Serengeti to witness the vast plains teeming with over two million animals. This is the migration safari at its most complete.`,
         itinerary: [
@@ -12531,7 +12531,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
                 title: 'Full Day Masai Mara',
                 description: `## Full Day
 
-5:30 AM. The Mara dawn breaks in soft copper light as you head straight for the Mara River — the legendary stage of the Great Migration's most dramatic act. Thousands of wildebeest mass along the muddy banks, their grunts filling the air as Nile crocodiles glide through the brown current below. The tension is electric until one animal leaps and the crossing erupts in a thundering chaos of hooves, spray, and raw survival. Your guide positions you perfectly for this once-in-a-lifetime Masai Mara wildlife spectacle. After a bush lunch under a fig tree, the afternoon explores different terrain — a pride of lions dozing beneath a balanites tree, a cheetah family scanning the plains from a termite mound, and elephant matriarchs leading their young through golden acacia woodland.`,
+5:30 AM. The Mara dawn breaks in soft copper light as you head straight for the Mara River — the legendary stage of the Great Migration's most dramatic act. vast herds of wildebeest mass along the muddy banks, their grunts filling the air as Nile crocodiles glide through the brown current below. The tension is electric until one animal leaps and the crossing erupts in a thundering chaos of hooves, spray, and raw survival. Your guide positions you perfectly for this unforgettable Masai Mara wildlife spectacle. After a bush lunch under a fig tree, the afternoon explores different terrain — a pride of lions dozing beneath a balanites tree, a cheetah family scanning the plains from a termite mound, and elephant matriarchs leading their young through golden acacia woodland.`,
             },
             {
                 day: 3,
@@ -12677,7 +12677,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             {
                 day: 7,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas dotting the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera — the world's largest intact volcanic crater and a UNESCO World Heritage Site. On the floor, black rhino graze the open grassland, elephant bulls move through the Lerai fever-tree forest, and thousands of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool rounds out the day.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas dotting the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera — the world's largest intact volcanic crater and a UNESCO World Heritage Site. On the floor, black rhino graze the open grassland, elephant bulls move through the Lerai fever-tree forest, and large numbers of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool rounds out the day.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -12816,7 +12816,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             {
                 day: 9,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and thousands of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool closes the day.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and large numbers of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool closes the day.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -12891,7 +12891,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
     {
         id: 'kt-ultimate-14d',
         slug: '14-day-ultimate-east-africa-safari',
-        title: '14-Day Ultimate East Africa Safari | Kenya & Tanzania',
+        title: '14-Day Premier East Africa Safari | Kenya & Tanzania',
         subtitle: 'The Definitive East African Journey — Rift Valley Lakes, Crater & Migration',
         destination: 'kenya-tanzania',
         duration: 14,
@@ -12968,7 +12968,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             {
                 day: 11,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor, a UNESCO World Heritage Site holding roughly 25,000 animals within a single self-contained ecosystem. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and thousands of lesser flamingos crowd the shallows of Lake Magadi. A picnic lunch beside the Ngoitokitok hippo pool closes out the day before you climb back to your rim lodge.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor, a UNESCO World Heritage Site holding roughly 25,000 animals within a single self-contained ecosystem. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and large numbers of lesser flamingos crowd the shallows of Lake Magadi. A picnic lunch beside the Ngoitokitok hippo pool closes out the day before you climb back to your rim lodge.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -13060,7 +13060,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             'Mara River crossings in Kenya + Grumeti crossings in Tanzania',
             'Four full days of game drives across the migration corridor',
             'Overland border crossing following the herds\' actual route',
-            'The ultimate migration-focused safari experience',
+            'The comprehensive migration-focused safari experience',
         ],
         description: `Eight days tracking the Great Wildebeest Migration across its entire range — from Kenya's Masai Mara to Tanzania's Serengeti. This safari follows the herds overland, crossing the border at the migration's actual crossing point. Four full days of game drives across the migration corridor.`,
         itinerary: [
@@ -13230,7 +13230,7 @@ Final sunrise game drive. After breakfast, return to Arusha or optional scenic b
             {
                 day: 7,
                 title: 'Full Day Serengeti',
-                description: `## Full Day Game Drives\n\nAt 6:30 AM, the Serengeti belongs to your family. Track lion cubs wrestling on a sun-warmed granite kopje while their mother watches with half-closed eyes. Your guide finds a cheetah perched on a termite mound, scanning for breakfast — the kids hold their breath as it bursts into a sprint. Vast herds of wildebeest and zebra drift across the plains like a living river. Evening stargazing back at the lodge reveals the Milky Way in breathtaking clarity.`,
+                description: `## Full Day Game Drives\n\nAt 6:30 AM, the Serengeti belongs to your family. Track lion cubs wrestling on a sun-warmed granite kopje while their mother watches with half-closed eyes. Your guide finds a cheetah perched on a termite mound, scanning for breakfast — the kids hold their breath as it bursts into a sprint. Vast herds of wildebeest and zebra drift across the plains like a living river. Evening stargazing back at the lodge reveals the Milky Way in spectacular clarity.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -13362,7 +13362,7 @@ A final sunrise drive delivers Amboseli's farewell — Kilimanjaro blushing pink
                 title: 'Full Day Masai Mara',
                 description: `## Full Day Game Drives
 
-A steaming cup of Kenyan coffee greets you at 5:30 AM before a private game drive into the Mara's dawn — mist curling off the Talek River as a leopard pads silently toward a fig tree. Your guide's intimate knowledge of the reserve means exclusive sighting spots away from the crowds. A gourmet bush breakfast is laid on white linen beneath a sausage tree as elephants graze nearby. Afternoon brings the drama of the Mara River crossing point — thousands of wildebeest hurling themselves into the current when the migration is in residence. As the sun melts into the horizon, champagne sundowners on the open plains close an extraordinary day.`,
+A steaming cup of Kenyan coffee greets you at 5:30 AM before a private game drive into the Mara's dawn — mist curling off the Talek River as a leopard pads silently toward a fig tree. Your guide's intimate knowledge of the reserve means exclusive sighting spots away from the crowds. A gourmet bush breakfast is laid on white linen beneath a sausage tree as elephants graze nearby. Afternoon brings the drama of the Mara River crossing point — vast herds of wildebeest hurling themselves into the current when the migration is in residence. As the sun melts into the horizon, champagne sundowners on the open plains close an extraordinary day.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -13532,7 +13532,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
                 title: 'Full Day Masai Mara — Migration & Landscape',
                 description: `## Full Day Game Drives
 
-5:00 AM. If the Great Migration is in the Mara, today is pure action photography. Station yourself above the Mara River crossing points where thousands of wildebeest mass on the banks, dust billowing. Use a fast shutter to freeze the chaos of the wildebeest crossing — hooves striking water, bodies surging upward. Between crossings, compose sweeping landscape shots of herds stretching to the horizon. Afternoon honey-toned light captures the sheer scale of this wildlife spectacle.`,
+5:00 AM. If the Great Migration is in the Mara, today is pure action photography. Station yourself above the Mara River crossing points where vast herds of wildebeest mass on the banks, dust billowing. Use a fast shutter to freeze the chaos of the wildebeest crossing — hooves striking water, bodies surging upward. Between crossings, compose sweeping landscape shots of herds stretching to the horizon. Afternoon honey-toned light captures the sheer scale of this wildlife spectacle.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -13548,7 +13548,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
                 title: 'Full Day Serengeti — Action & Landscape',
                 description: `## Full Day Game Drives
 
-5:00 AM. The Serengeti's scale creates unique photographic opportunities. Track a cheetah family across dewy short grass — backlit mist creates a halo effect perfect for dramatic portraits. If the Great Migration herds are present, compose wide-angle shots of hundreds of thousands of wildebeest streaming across the golden plains. Visit the Simba Kopjes where lions drape over warm granite boulders, ideal for graphic silhouette compositions against the sky. At dusk, find an isolated acacia tree silhouetted against the enormous sky — the definitive African safari photograph.`,
+5:00 AM. The Serengeti's scale creates unique photographic opportunities. Track a cheetah family across dewy short grass — backlit mist creates a halo effect perfect for dramatic portraits. If the Great Migration herds are present, compose wide-angle shots of hundreds of vast herds of wildebeest streaming across the golden plains. Visit the Simba Kopjes where lions drape over warm granite boulders, ideal for graphic silhouette compositions against the sky. At dusk, find an isolated acacia tree silhouetted against the enormous sky — the definitive African safari photograph.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -13977,7 +13977,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 12,
                 title: 'Serengeti to Ngorongoro Crater',
-                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor, a UNESCO World Heritage Site holding roughly 25,000 animals. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and thousands of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool closes out the day.`,
+                description: `## ~145km | Approx. 3 hrs\n\n6:30 AM farewell game drive across the short-grass plains before you climb east into the Ngorongoro highlands, Maasai bomas scattered across the green slopes. By early afternoon you reach the crater rim and descend 600 metres by 4x4 into the caldera floor, a UNESCO World Heritage Site holding roughly 25,000 animals. Black rhino graze in the open, lion prides doze near the Lerai fever-tree forest, and large numbers of lesser flamingos crowd Lake Magadi's shallows. A picnic lunch beside the Ngoitokitok hippo pool closes out the day.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -14140,7 +14140,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
         day: 6,
         title: 'Batwa Community Visit and Leisure',
         description:
-          'After breakfast, visit a Batwa pygmy community near Bwindi for a guided cultural experience. The Batwa are the original forest dwellers who lived in the Bwindi forest for thousands of years before it became a national park. Learn about their traditional hunting techniques, medicinal plant knowledge, and forest survival skills through song, dance, and storytelling. This visit supports the Batwa community directly. Spend the afternoon at leisure at your lodge, enjoying the peaceful forest surroundings, or take an optional nature walk along the forest edge.',
+          'After breakfast, visit a Batwa pygmy community near Bwindi for a guided cultural experience. The Batwa are the original forest dwellers who lived in the Bwindi forest for large numbers of years before it became a national park. Learn about their traditional hunting techniques, medicinal plant knowledge, and forest survival skills through song, dance, and storytelling. This visit supports the Batwa community directly. Spend the afternoon at leisure at your lodge, enjoying the peaceful forest surroundings, or take an optional nature walk along the forest edge.',
       },
       {
         day: 7,
@@ -14249,7 +14249,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
         day: 4,
         title: 'Masai Mara to Lake Nakuru',
         description:
-          'After breakfast, drive north to Lake Nakuru National Park, arriving by midday. This compact park is renowned for its large populations of both black and white rhinoceros, making it one of Kenya\'s best rhino sanctuaries. The alkaline lake attracts thousands of flamingos when conditions are right, creating a pink-tinged shoreline. Enjoy an afternoon game drive around the lake, spotting Rothschild giraffes, waterbuck, and tree-climbing pythons. Overnight at a lodge overlooking the lake.',
+          'After breakfast, drive north to Lake Nakuru National Park, arriving by midday. This compact park is renowned for its large populations of both black and white rhinoceros, making it one of Kenya\'s best rhino sanctuaries. The alkaline lake attracts dense flocks of flamingos when conditions are right, creating a pink-tinged shoreline. Enjoy an afternoon game drive around the lake, spotting Rothschild giraffes, waterbuck, and tree-climbing pythons. Overnight at a lodge overlooking the lake.',
       },
       {
         day: 5,
@@ -14409,7 +14409,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
   },
 
   {
-    title: '14-Day Ultimate East Africa Explorer',
+    title: '14-Day Grand East Africa Explorer',
     id: '14-day-ultimate-east-africa-explorer-kenya-uganda',
     slug: '14-day-ultimate-east-africa-explorer-kenya-uganda',
     destination: 'kenya-uganda',
@@ -14468,7 +14468,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
       'Two countries, five national parks',
     ],
     description:
-      'The ultimate East Africa exploration spanning 14 days across Kenya and Uganda. This comprehensive journey begins with elephants and Kilimanjaro views in Amboseli, moves to the Masai Mara for Big Five game viewing and potential Great Migration sightings, then crosses into Uganda for chimpanzee tracking in Kibale Forest, tree-climbing lions and a Kazinga Channel boat cruise in Queen Elizabeth National Park, and culminates with mountain gorilla trekking in Bwindi Impenetrable Forest. Five national parks, two countries, and virtually every iconic East African wildlife experience in a single carefully sequenced itinerary. C.A.T.S coordinates the entire journey through its network of trusted partners in both countries.',
+      'The exceptional East Africa exploration spanning 14 days across Kenya and Uganda. This comprehensive journey begins with elephants and Kilimanjaro views in Amboseli, moves to the Masai Mara for Big Five game viewing and potential Great Migration sightings, then crosses into Uganda for chimpanzee tracking in Kibale Forest, tree-climbing lions and a Kazinga Channel boat cruise in Queen Elizabeth National Park, and culminates with mountain gorilla trekking in Bwindi Impenetrable Forest. Five national parks, two countries, and virtually every iconic East African wildlife experience in a single carefully sequenced itinerary. C.A.T.S coordinates the entire journey through its network of trusted partners in both countries.',
     itinerary: [
       {
         day: 1,
@@ -14641,7 +14641,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
         day: 2,
         title: 'Full Day Masai Mara',
         description:
-          'A full day of game viewing in one of Africa\'s premier wildlife reserves. The Masai Mara supports exceptional concentrations of all Big Five species: lion, leopard, elephant, buffalo, and rhinoceros. Morning and afternoon game drives cover different sectors of the reserve, from the riverine forests along the Mara River to the wide-open Mara Triangle. During the Great Migration season from July to October, you may witness thousands of wildebeest and zebra crossing the crocodile-filled river. Enjoy a bush lunch on the plains before continuing the afternoon drive.',
+          'A full day of game viewing in one of Africa\'s premier wildlife reserves. The Masai Mara supports exceptional concentrations of all Big Five species: lion, leopard, elephant, buffalo, and rhinoceros. Morning and afternoon game drives cover different sectors of the reserve, from the riverine forests along the Mara River to the wide-open Mara Triangle. During the Great Migration season from July to October, you may witness vast herds of wildebeest and zebra crossing the crocodile-filled river. Enjoy a bush lunch on the plains before continuing the afternoon drive.',
       },
       {
         day: 3,
@@ -14798,7 +14798,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
         day: 8,
         title: 'Gorilla Trekking in Volcanoes National Park',
         description:
-          'Report to the park headquarters at 7:00am for your gorilla trekking briefing and group assignment. Enter the montane forest on the slopes of the Virunga volcanoes with your guide, trackers, and porters. Hike through zones of bamboo, hagenia woodland, and alpine meadow at altitudes up to 4,500m. The trek can take 1 to 4 hours each way, but the reward is one full hour face to face with a mountain gorilla family. Watch the silverback keep guard while juveniles tumble and wrestle and mothers nurse their young. The experience is intimate, humbling, and profoundly moving. Return to your lodge to celebrate this once-in-a-lifetime encounter.',
+          'Report to the park headquarters at 7:00am for your gorilla trekking briefing and group assignment. Enter the montane forest on the slopes of the Virunga volcanoes with your guide, trackers, and porters. Hike through zones of bamboo, hagenia woodland, and alpine meadow at altitudes up to 4,500m. The trek can take 1 to 4 hours each way, but the reward is one full hour face to face with a mountain gorilla family. Watch the silverback keep guard while juveniles tumble and wrestle and mothers nurse their young. The experience is intimate, humbling, and profoundly moving. Return to your lodge to celebrate this unforgettable encounter.',
       },
       {
         day: 9,
@@ -15188,7 +15188,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             'Walking safaris guided by Maasai and Samburu trackers',
             'Rhino tracking on foot in a protected sanctuary'
         ],
-        description: `Laikipia is Kenya's best-kept secret — a vast private conservancy plateau north of Mount Kenya where cattle ranches have transformed into world-class wildlife sanctuaries. A scenic flight delivers you to this exclusive region where visitor numbers are strictly limited, night drives are permitted, and walking safaris with armed Samburu trackers reveal a side of Africa that vehicle-bound tourists never see. Laikipia holds Kenya's largest black rhino population, significant populations of endangered wild dogs, and the second-highest wildlife density in the country after the Masai Mara. This is safari without the crowds — intimate, personal, and deeply connected to conservation.`,
+        description: `Laikipia is Kenya's best-kept secret — a vast private conservancy plateau north of Mount Kenya where cattle ranches have transformed into seasoned wildlife sanctuaries. A scenic flight delivers you to this exclusive region where visitor numbers are strictly limited, night drives are permitted, and walking safaris with armed Samburu trackers reveal a side of Africa that vehicle-bound tourists never see. Laikipia holds Kenya's largest black rhino population, significant populations of endangered wild dogs, and the second-highest wildlife density in the country after the Masai Mara. This is safari without the crowds — intimate, personal, and deeply connected to conservation.`,
         itinerary: [
             {
                 day: 1,
@@ -15199,7 +15199,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 2,
                 title: 'Walking Safari & Rhino Tracking',
-                description: `6:00 AM. Today is on foot — the most intimate way to experience the African bush. Your walking safari is led by a Samburu tracker who grew up reading these landscapes: broken twigs, displaced pebbles, and scent marks that tell stories invisible from a vehicle. A Kenya Wildlife Service ranger accompanies you for safety as you step off the beaten track and into the bush.\n\nThe first hour follows elephant paths through golden grassland. Your tracker points out dung beetle activity, identifies lion tracks from last night, and explains how the angle of broken branches reveals whether an elephant was feeding calmly or moving with purpose. You walk in single file, senses heightened — hearing the alarm call of a go-away-bird, smelling the crushed wild sage underfoot, feeling the cool morning air on your skin. This is how humans first experienced Africa, and the connection is visceral.\n\nMid-morning, you transfer to the conservancy's rhino sanctuary for the highlight of the day: tracking black rhino on foot. Laikipia protects over 60% of Kenya's remaining black rhinos, and the conservancy's dedicated anti-poaching team knows every individual. Led by a rhino monitor, you approach a mother and calf — keeping the wind in your face and moving slowly through the leleshwa scrub. When you finally see her — two tonnes of prehistoric armour, her curved horn silhouetted against the sky, her calf pressed against her flank — the encounter is breathtaking in a way no vehicle sighting can match.\n\nAfternoon at leisure — swim in the infinity pool overlooking the waterhole, enjoy a massage, or simply read on your veranda as warthogs trot past and sunbirds flash emerald from the bougainvillea.\n\nAfter dinner, the real magic begins: a NIGHT GAME DRIVE. Armed with a powerful spotlight, your guide drives slowly through the conservancy. Laikipia's nocturnal world reveals itself: a leopard's eyes glow green from a fig tree, a spring hare bounces across the track, and an aardvark — one of Africa's most elusive creatures — emerges from its burrow to forage. Bush babies leap between branches, their enormous eyes reflecting the spotlight. The night sky above Laikipia, far from any city light, is a solid carpet of stars.`,
+                description: `6:00 AM. Today is on foot — the most intimate way to experience the African bush. Your walking safari is led by a Samburu tracker who grew up reading these landscapes: broken twigs, displaced pebbles, and scent marks that tell stories invisible from a vehicle. A Kenya Wildlife Service ranger accompanies you for safety as you step off the beaten track and into the bush.\n\nThe first hour follows elephant paths through golden grassland. Your tracker points out dung beetle activity, identifies lion tracks from last night, and explains how the angle of broken branches reveals whether an elephant was feeding calmly or moving with purpose. You walk in single file, senses heightened — hearing the alarm call of a go-away-bird, smelling the crushed wild sage underfoot, feeling the cool morning air on your skin. This is how humans first experienced Africa, and the connection is visceral.\n\nMid-morning, you transfer to the conservancy's rhino sanctuary for the highlight of the day: tracking black rhino on foot. Laikipia protects over 60% of Kenya's remaining black rhinos, and the conservancy's dedicated anti-poaching team knows every individual. Led by a rhino monitor, you approach a mother and calf — keeping the wind in your face and moving slowly through the leleshwa scrub. When you finally see her — two tonnes of prehistoric armour, her curved horn silhouetted against the sky, her calf pressed against her flank — the encounter is magnificent in a way no vehicle sighting can match.\n\nAfternoon at leisure — swim in the infinity pool overlooking the waterhole, enjoy a massage, or simply read on your veranda as warthogs trot past and sunbirds flash emerald from the bougainvillea.\n\nAfter dinner, the real magic begins: a NIGHT GAME DRIVE. Armed with a powerful spotlight, your guide drives slowly through the conservancy. Laikipia's nocturnal world reveals itself: a leopard's eyes glow green from a fig tree, a spring hare bounces across the track, and an aardvark — one of Africa's most elusive creatures — emerges from its burrow to forage. Bush babies leap between branches, their enormous eyes reflecting the spotlight. The night sky above Laikipia, far from any city light, is a solid carpet of stars.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -15287,13 +15287,13 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 1,
                 title: 'Fly Nairobi to Masai Mara',
-                description: `## 45-min flight\n\n8:00 AM. Wilson Airport, Nairobi. You board a light aircraft that lifts you over the Great Rift Valley — the vast geological scar splitting East Africa, its escarpment falling away dramatically beneath the wing. Lake Naivasha glints far below, its shores dotted with hippos. Then the aircraft crosses the Loita Plains and descends toward the Masai Mara, and the first thing you see from the air takes your breath away: the plains below are MOVING. Thousands — tens of thousands — of wildebeest flow across the golden grassland like a dark river, their columns stretching to the horizon.\n\nYou land at a Mara airstrip and your migration-specialist guide greets you with the day's intelligence: where the herds are concentrating, which river crossing points are active, and where the predators are positioned. This is not a generic game drive — it's a strategic operation refined over 15 years of tracking migration patterns.\n\nCheck into your camp in a private conservancy bordering the Mara — this means exclusive traversing rights, off-road driving, night drives, and walking safaris unavailable inside the national reserve. After lunch watching wildebeest stream past your tent, the afternoon game drive heads directly for the migration front. Your guide navigates through columns of wildebeest so dense that the vehicle is surrounded — the sound of their grunting, the smell of the herd, the dust rising from a million hooves. Zebras march alongside in disciplined formations, their stripes creating optical illusions in the afternoon light. A cheetah sits on a termite mound, scanning the herds for a vulnerable calf — the migration is a feast for predators, and every big cat in the Mara knows it.`,
+                description: `## 45-min flight\n\n8:00 AM. Wilson Airport, Nairobi. You board a light aircraft that lifts you over the Great Rift Valley — the vast geological scar splitting East Africa, its escarpment falling away dramatically beneath the wing. Lake Naivasha glints far below, its shores dotted with hippos. Then the aircraft crosses the Loita Plains and descends toward the Masai Mara, and the first thing you see from the air takes your breath away: the plains below are MOVING. Thousands — tens of thousands — of wildebeest flow across the golden grassland like a dark river, their columns stretching to the horizon.\n\nYou land at a Mara airstrip and your migration-specialist guide greets you with the day's intelligence: where the herds are concentrating, which river crossing points are active, and where the predators are positioned. This is not a generic game drive — it's a strategic operation refined over years of tracking migration patterns.\n\nCheck into your camp in a private conservancy bordering the Mara — this means exclusive traversing rights, off-road driving, night drives, and walking safaris unavailable inside the national reserve. After lunch watching wildebeest stream past your tent, the afternoon game drive heads directly for the migration front. Your guide navigates through columns of wildebeest so dense that the vehicle is surrounded — the sound of their grunting, the smell of the herd, the dust rising from a million hooves. Zebras march alongside in disciplined formations, their stripes creating optical illusions in the afternoon light. A cheetah sits on a termite mound, scanning the herds for a vulnerable calf — the migration is a feast for predators, and every big cat in the Mara knows it.`,
                 meals: ['Lunch', 'Dinner']
             },
             {
                 day: 2,
                 title: 'Mara River Crossing Watch',
-                description: `5:00 AM. Optional hot air balloon safari (additional cost) — rising silently over the Mara at dawn, floating above the migration herds as the sun breaks the horizon. From 500 feet, the scale of the migration is staggering: a carpet of animals stretching to the Serengeti border and beyond. Land for a champagne bush breakfast between zebra herds.\n\nOr choose the dawn game drive, which today focuses on the Mara River — the migration's most dangerous obstacle. Your guide positions you at a known crossing point by 7:00 AM. Across the river, thousands of wildebeest mass on the far bank, their numbers building, their agitation growing. They jostle, push, hesitate — then one brave individual leaps, and the crossing begins. It's instant chaos: animals pour over the bank in a cascade of hooves and spray, plunging into the brown water where four-metre Nile crocodiles lie in wait. The sound is overwhelming — splashing, bellowing, the crack of bodies hitting water. Most make it. Some don't. It's nature at its most raw, honest, and unforgettable.\n\nYour guide moves between multiple crossing points throughout the morning — some crossings last minutes, others hours. Between crossings, the riverine forest yields its own treasures: a leopard draped over a sausage tree branch, her spotted coat dappled by filtered sunlight.\n\nAfternoon game drive through the central plains where the post-crossing herds regroup. Lion prides feast on animals that didn't survive the crossing. Hyena clans patrol the edges. Vultures spiral overhead in columns so thick they look like tornadoes. The migration is not just a spectacle — it's an entire ecosystem in motion.`,
+                description: `5:00 AM. Optional hot air balloon safari (additional cost) — rising silently over the Mara at dawn, floating above the migration herds as the sun breaks the horizon. From 500 feet, the scale of the migration is staggering: a carpet of animals stretching to the Serengeti border and beyond. Land for a champagne bush breakfast between zebra herds.\n\nOr choose the dawn game drive, which today focuses on the Mara River — the migration's most dangerous obstacle. Your guide positions you at a known crossing point by 7:00 AM. Across the river, vast herds of wildebeest mass on the far bank, their numbers building, their agitation growing. They jostle, push, hesitate — then one brave individual leaps, and the crossing begins. It's instant chaos: animals pour over the bank in a cascade of hooves and spray, plunging into the brown water where four-metre Nile crocodiles lie in wait. The sound is overwhelming — splashing, bellowing, the crack of bodies hitting water. Most make it. Some don't. It's nature at its most raw, honest, and unforgettable.\n\nYour guide moves between multiple crossing points throughout the morning — some crossings last minutes, others hours. Between crossings, the riverine forest yields its own treasures: a leopard draped over a sausage tree branch, her spotted coat dappled by filtered sunlight.\n\nAfternoon game drive through the central plains where the post-crossing herds regroup. Lion prides feast on animals that didn't survive the crossing. Hyena clans patrol the edges. Vultures spiral overhead in columns so thick they look like tornadoes. The migration is not just a spectacle — it's an entire ecosystem in motion.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -15504,7 +15504,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 5,
                 title: 'Migration & Conservancy Exploration',
-                description: `5:30 AM. Optional hot air balloon safari (additional cost) — soaring over the Mara at sunrise, the plains spreading below in golden infinity, the Mara River snaking through green gallery forest.\n\nOr choose a dawn game drive into the national reserve. Your guide targets the migration herds — even outside peak crossing season, the Mara hosts hundreds of thousands of resident wildebeest, and the columns moving across the grasslands are a stirring sight. Zebras march in disciplined formation alongside, their barking calls echoing across the plains. A cheetah mother with four cubs sits on a termite mound, teaching them to scan the herds — she's one of the Mara's most successful hunters, and your guide has followed her for years.\n\nLate morning, you drive to a section of the Mara River where the current is gentler and elephants cross frequently — watching a matriarch lead her family into the water, calves swimming with their trunks held above the surface like periscopes, is pure joy.\n\nAfternoon in the conservancy: off-road driving through sectors that most Mara visitors never access. Your guide finds a pair of servals — slender, golden cats with spotted coats and oversized ears — hunting in the long grass. Then a rare sighting: a caracal, the Mara's most secretive small cat, pausing on a termite mound before vanishing into the grass. Bush dinner under the stars for your final evening — a lantern-lit table on the open plain, the Mara's night sounds all around you.`,
+                description: `5:30 AM. Optional hot air balloon safari (additional cost) — soaring over the Mara at sunrise, the plains spreading below in golden infinity, the Mara River snaking through green gallery forest.\n\nOr choose a dawn game drive into the national reserve. Your guide targets the migration herds — even outside peak crossing season, the Mara hosts vast numbers of resident wildebeest, and the columns moving across the grasslands are a stirring sight. Zebras march in disciplined formation alongside, their barking calls echoing across the plains. A cheetah mother with four cubs sits on a termite mound, teaching them to scan the herds — she's one of the Mara's most successful hunters, and your guide has followed her for years.\n\nLate morning, you drive to a section of the Mara River where the current is gentler and elephants cross frequently — watching a matriarch lead her family into the water, calves swimming with their trunks held above the surface like periscopes, is pure joy.\n\nAfternoon in the conservancy: off-road driving through sectors that most Mara visitors never access. Your guide finds a pair of servals — slender, golden cats with spotted coats and oversized ears — hunting in the long grass. Then a rare sighting: a caracal, the Mara's most secretive small cat, pausing on a termite mound before vanishing into the grass. Bush dinner under the stars for your final evening — a lantern-lit table on the open plain, the Mara's night sounds all around you.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -15681,7 +15681,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
   {
         id: 'ultimate-flight-8d',
         slug: '8-day-ultimate-kenya-fly-in-safari',
-        title: "8-Day Ultimate Kenya Fly-In Safari | Four Parks by Air",
+        title: "8-Day Outstanding Kenya Fly-In Safari | Four Parks by Air",
         subtitle: 'The Grand Kenya Air Circuit',
         destination: 'kenya',
         duration: 8,
@@ -15692,7 +15692,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             'Hot air balloon, night drives, walking safaris, dhow sunset cruise',
             'From desert frontier to savannah plains to Indian Ocean'
         ],
-        description: `The ultimate Kenya experience — four of the country's most spectacular destinations connected by scenic bush flights in an eight-day journey that showcases the full range of East Africa's wonders. Begin in Samburu's northern desert frontier tracking the rare Special Five, fly south-west to the legendary Masai Mara for Big Five and migration spectacles, continue to Amboseli for Kilimanjaro elephant encounters, and finish with a flight to the Indian Ocean coast for beach relaxation and Swahili culture. Every transit is a scenic flight that becomes part of the adventure, and every destination delivers world-class wildlife and landscapes. This is Kenya at its absolute best.`,
+        description: `The signature Kenya experience — four of the country's most spectacular destinations connected by scenic bush flights in an eight-day journey that showcases the full range of East Africa's wonders. Begin in Samburu's northern desert frontier tracking the rare Special Five, fly south-west to the legendary Masai Mara for Big Five and migration spectacles, continue to Amboseli for Kilimanjaro elephant encounters, and finish with a flight to the Indian Ocean coast for beach relaxation and Swahili culture. Every transit is a scenic flight that becomes part of the adventure, and every destination delivers expert wildlife and landscapes. This is Kenya at its absolute best.`,
         itinerary: [
             {
                 day: 1,
@@ -15727,7 +15727,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 6,
                 title: 'Amboseli — Elephants & Observation Hill',
-                description: `5:00 AM. The earliest start of the safari, for the best reason: this is when Kilimanjaro is most likely to be completely clear. Before dawn, the mountain stands enormous and sharp, its glaciers catching the first pink light while the plains below are wrapped in blue mist. Your guide positions the vehicle for the ultimate photograph: elephant silhouettes against a perfectly clear Kilimanjaro at sunrise.\n\nThe morning continues to Observation Hill — a 15-minute climb to a summit that delivers a 360-degree panorama of the entire ecosystem: the dried Lake Amboseli stretching white to the north, the green veins of the marshlands, and elephant herds moving in every direction. The air is so clear you can see the Chyulu Hills 60 kilometres away. Descending, your guide finds Amboseli's resident cheetah — a battle-scarred male who hunts the open lake bed where his spotted coat is visible for kilometres.\n\nAfternoon game drive through the western marshes — Amboseli's most productive wildlife zone. Buffalo herds number in the hundreds, their dark mass moving through the green wetland grasses. Pelicans fish in the deeper channels while sacred ibises pick through the shallows. A pair of fish eagles — their evocative cry is the sound of African waterways — perch in a dead fever tree, scanning for their next catch. The day ends with a special sundowner: your guide drives to a hidden viewpoint where Kilimanjaro's reflection appears perfectly mirrored in the swamp waters — one of East Africa's most magical moments, available only to those who know exactly where to stand.`,
+                description: `5:00 AM. The earliest start of the safari, for the best reason: this is when Kilimanjaro is most likely to be completely clear. Before dawn, the mountain stands enormous and sharp, its glaciers catching the first pink light while the plains below are wrapped in blue mist. Your guide positions the vehicle for the complete photograph: elephant silhouettes against a perfectly clear Kilimanjaro at sunrise.\n\nThe morning continues to Observation Hill — a 15-minute climb to a summit that delivers a 360-degree panorama of the entire ecosystem: the dried Lake Amboseli stretching white to the north, the green veins of the marshlands, and elephant herds moving in every direction. The air is so clear you can see the Chyulu Hills 60 kilometres away. Descending, your guide finds Amboseli's resident cheetah — a battle-scarred male who hunts the open lake bed where his spotted coat is visible for kilometres.\n\nAfternoon game drive through the western marshes — Amboseli's most productive wildlife zone. Buffalo herds number in the hundreds, their dark mass moving through the green wetland grasses. Pelicans fish in the deeper channels while sacred ibises pick through the shallows. A pair of fish eagles — their evocative cry is the sound of African waterways — perch in a dead fever tree, scanning for their next catch. The day ends with a special sundowner: your guide drives to a hidden viewpoint where Kilimanjaro's reflection appears perfectly mirrored in the swamp waters — one of East Africa's most magical moments, available only to those who know exactly where to stand.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner']
             },
             {
@@ -15739,7 +15739,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             {
                 day: 8,
                 title: 'Diani Beach & Return Flight to Nairobi',
-                description: `## ~65-min flight\n\n7:00 AM. Wake to the sound of the Indian Ocean lapping the beach and the call of a palm-nut vulture circling overhead. Morning swim in the warm, crystal-clear water — the coral reef protects Diani's shore, so the water is calm and perfect for snorkelling. Tropical fish — angelfish, parrotfish, butterflyfish — dart between the coral heads just metres from shore.\n\nAfter a leisurely beachfront breakfast — fresh mango, papaya, passion fruit, Kenyan coffee, and warm chapatis — you have the morning free. Options include: a snorkelling or diving trip to the outer reef, a visit to Shimba Hills National Reserve (30-minute drive — Kenya's only coastal national park, home to the rare sable antelope), or simply more beach time.\n\nEarly afternoon transfer to Ukunda airstrip for your return flight to Nairobi. The aircraft follows the coastline north — Mombasa's old port and Fort Jesus visible below — before turning inland over the Taru Desert and climbing toward the green highlands. You arrive at Wilson Airport by 4:00 PM.\n\nEight days. Four destinations. Three ecosystems. One country. From Samburu's desert frontier to the Mara's golden plains, from Kilimanjaro's glacial peaks to the Indian Ocean's turquoise waters — you've experienced the full breadth of Kenya, all connected by scenic flights that turned every transfer into an adventure. This is the ultimate Kenya safari.`,
+                description: `## ~65-min flight\n\n7:00 AM. Wake to the sound of the Indian Ocean lapping the beach and the call of a palm-nut vulture circling overhead. Morning swim in the warm, crystal-clear water — the coral reef protects Diani's shore, so the water is calm and perfect for snorkelling. Tropical fish — angelfish, parrotfish, butterflyfish — dart between the coral heads just metres from shore.\n\nAfter a leisurely beachfront breakfast — fresh mango, papaya, passion fruit, Kenyan coffee, and warm chapatis — you have the morning free. Options include: a snorkelling or diving trip to the outer reef, a visit to Shimba Hills National Reserve (30-minute drive — Kenya's only coastal national park, home to the rare sable antelope), or simply more beach time.\n\nEarly afternoon transfer to Ukunda airstrip for your return flight to Nairobi. The aircraft follows the coastline north — Mombasa's old port and Fort Jesus visible below — before turning inland over the Taru Desert and climbing toward the green highlands. You arrive at Wilson Airport by 4:00 PM.\n\nEight days. Four destinations. Three ecosystems. One country. From Samburu's desert frontier to the Mara's golden plains, from Kilimanjaro's glacial peaks to the Indian Ocean's turquoise waters — you've experienced the full breadth of Kenya, all connected by scenic flights that turned every transfer into an adventure. This is the definitive Kenya safari.`,
                 meals: ['Breakfast', 'Lunch']
             }
         ],
@@ -15781,7 +15781,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
             'https://images.pexels.com/photos/6756602/pexels-photo-6756602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         ],
         featured: true,
-        type: ['flight-safari', 'samburu', 'masai-mara', 'amboseli', 'beach', 'diani', 'nairobi-departure', 'wildlife', 'luxury', 'big-five', 'multi-park', 'ultimate'],
+        type: ['flight-safari', 'samburu', 'masai-mara', 'amboseli', 'beach', 'diani', 'nairobi-departure', 'wildlife', 'luxury', 'big-five', 'multi-park', 'premier'],
         parks: ['Samburu National Reserve', 'Masai Mara National Reserve', 'Amboseli National Park', 'Diani Beach'],
         wildlifeHighlights: [
             'Reticulated giraffes unique to northern Kenya',
@@ -16233,7 +16233,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
     id: 'northern-kenya-grand-safari-to-diani',
     slug: 'northern-kenya-grand-safari-to-diani-beach',
     hasSGR: true,
-    title: "6-Day Northern Kenya Grand Safari to Diani Beach | Aberdares, Samburu, Meru & Ol Pejeta Ultimate Bush-to-Beach Circuit",
+    title: "6-Day Northern Kenya Grand Safari to Diani Beach | Aberdares, Samburu, Meru & Ol Pejeta Comprehensive Bush-to-Beach Circuit",
     subtitle: 'The definitive northern Kenya circuit — from misty montane forests to arid bushland, remote wilderness, and rhino conservancy',
     destination: 'kenya',
     duration: 6,
@@ -16244,7 +16244,7 @@ A final 6:00 AM game drive threads between towering baobabs as elephant families
         'Encounter the Samburu Special Five and the last two northern white rhinos at Ol Pejeta',
         'Scenic SGR train ride to the coast with a seamless Diani Beach drop-off'
     ],
-    description: `This definitive eight-day northern Kenya circuit is the ultimate bush-to-beach adventure, linking four of the country's most diverse and spectacular wildlife destinations in a single sweeping journey. Begin in the mist-draped montane forests of the Aberdares, descend into Samburu's dramatic semi-arid bushland to track the Special Five, venture into the remote Born Free wilderness of Meru National Park, then culminate at Ol Pejeta Conservancy for Big Five encounters and a humbling meeting with the planet's last two northern white rhinos. A scenic SGR transfer delivers you to Diani Beach for your coastal escape.`,
+    description: `This definitive eight-day northern Kenya circuit is the grand bush-to-beach adventure, linking four of the country's most diverse and spectacular wildlife destinations in a single sweeping journey. Begin in the mist-draped montane forests of the Aberdares, descend into Samburu's dramatic semi-arid bushland to track the Special Five, venture into the remote Born Free wilderness of Meru National Park, then culminate at Ol Pejeta Conservancy for Big Five encounters and a humbling meeting with the planet's last two northern white rhinos. A scenic SGR transfer delivers you to Diani Beach for your coastal escape.`,
     itinerary: [
     {
       day: 1,
@@ -16422,7 +16422,7 @@ Travelling by road from Nairobi, you will cross the equator and ascend through t
   id: '3-day-ol-pejeta-conservancy-safari',
   slug: '3-day-ol-pejeta-conservancy-safari',
   title: '3-Day Ol Pejeta Conservancy Safari',
-  description: `Step into the heart of Kenya's conservation success story on this immersive 3-day Ol Pejeta Conservancy safari. Situated on the Laikipia Plateau with the snow-capped peaks of Mount Kenya as a breathtaking backdrop, Ol Pejeta is East Africa's largest black rhino sanctuary and home to the last two northern white rhinos on Earth. This is a safari that goes beyond wildlife viewing — it is a journey into the frontlines of conservation.
+  description: `Step into the heart of Kenya's conservation success story on this immersive 3-day Ol Pejeta Conservancy safari. Situated on the Laikipia Plateau with the snow-capped peaks of Mount Kenya as a dramatic backdrop, Ol Pejeta is East Africa's largest black rhino sanctuary and home to the last two northern white rhinos on Earth. This is a safari that goes beyond wildlife viewing — it is a journey into the frontlines of conservation.
 
 Your two nights at Ol Pejeta include both day and night game drives, offering a rare opportunity to spot nocturnal predators such as aardvark, bush baby, and white-tailed mongoose under the vast Laikipia sky. By day, you will track the Big Five across open savannah and whistling thorn grasslands, visit the chimpanzee sanctuary — the only place in Kenya where you can see these great apes — and stand face to face with critically endangered black rhinos at the endangered species enclosure.
 
@@ -17005,7 +17005,7 @@ Across seven days, you will witness Kenya's staggering ecological diversity: fro
   {
         id: 'kt-9parks-14d',
         slug: '14-day-kenya-tanzania-9-parks-ultimate-safari',
-        title: '14-Day Kenya & Tanzania 9-Parks Ultimate Safari',
+        title: '14-Day Kenya & Tanzania 9-Parks Exceptional Safari',
         subtitle: '2 Countries, 9 Parks, 14 Days — The Most Comprehensive Safari in East Africa',
         destination: 'kenya-tanzania',
         duration: 14,
@@ -17072,7 +17072,7 @@ Across seven days, you will witness Kenya's staggering ecological diversity: fro
             {
                 day: 9,
                 title: 'Full Day at Masai Mara National Reserve',
-                description: `## Full Day — Morning & Afternoon Game Drives\n\n5:30 AM — The Mara awakens — mist lifts from the Talek River, hippos grunt their final chorus, and a crowned crane\'s call echoes across the floodplain. Your guide tracks the reserve\'s famous lion prides — the Marsh Pride, the Sand River males — through golden savannah where thousands of wildebeest, zebra, and Thomson\'s gazelle graze. Drive to the Mara River for the spectacle of the Great Migration (Jul–Oct): thousands of wildebeest surge into the churning current as Nile crocodiles lunge and vultures circle — one of nature\'s most extraordinary events. Picnic lunch on a riverbank kopje. 3:00 PM — Afternoon drives reveal leopards draped in sausage-tree branches, spotted hyena clans at their den, secretary birds high-stepping through burnt clearings, and elephant herds silhouetted against the Mara sunset. Optional: visit a Maasai village ($25 pp) to experience their warrior dances, beadwork, and pastoral lifestyle. Second night at your Mara accommodation.`,
+                description: `## Full Day — Morning & Afternoon Game Drives\n\n5:30 AM — The Mara awakens — mist lifts from the Talek River, hippos grunt their final chorus, and a crowned crane\'s call echoes across the floodplain. Your guide tracks the reserve\'s famous lion prides — the Marsh Pride, the Sand River males — through golden savannah where vast herds of wildebeest, zebra, and Thomson\'s gazelle graze. Drive to the Mara River for the spectacle of the Great Migration (Jul–Oct): vast herds of wildebeest surge into the churning current as Nile crocodiles lunge and vultures circle — one of nature\'s most extraordinary events. Picnic lunch on a riverbank kopje. 3:00 PM — Afternoon drives reveal leopards draped in sausage-tree branches, spotted hyena clans at their den, secretary birds high-stepping through burnt clearings, and elephant herds silhouetted against the Mara sunset. Optional: visit a Maasai village ($25 pp) to experience their warrior dances, beadwork, and pastoral lifestyle. Second night at your Mara accommodation.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {
@@ -17090,7 +17090,7 @@ Across seven days, you will witness Kenya's staggering ecological diversity: fro
             {
                 day: 12,
                 title: 'Serengeti — Ngorongoro Crater',
-                description: `## Via Olduvai Gorge | 200 km | ~4.5 hrs\n\n7:00 AM — A final Serengeti sunrise drive through the Seronera area — perhaps a last encounter with a leopard in a sausage tree or a cheetah on a termite mound. After breakfast, drive east toward the Ngorongoro Conservation Area. En route, stop at Olduvai Gorge — the "Cradle of Mankind" where the Leakey family unearthed 1.8-million-year-old hominid fossils that rewrote human evolutionary history. A small museum displays casts of *Homo habilis* skulls and Acheulean stone tools found in the gorge\'s layered sediment beds. Continue climbing through the Ngorongoro highlands — misty, cool, and carpeted with giant heather and highland grassland — until you reach the crater rim at 2,286 m elevation. Your first view of the Ngorongoro Crater is breathtaking: the world\'s largest unbroken volcanic caldera, 19 km across and 600 m deep, its floor a green patchwork of forest, marsh, lake, and savannah teeming with wildlife. Watch the sun set over this UNESCO World Heritage Site from the crater rim — one of Africa\'s most spectacular vistas. Dinner at your Ngorongoro accommodation.`,
+                description: `## Via Olduvai Gorge | 200 km | ~4.5 hrs\n\n7:00 AM — A final Serengeti sunrise drive through the Seronera area — perhaps a last encounter with a leopard in a sausage tree or a cheetah on a termite mound. After breakfast, drive east toward the Ngorongoro Conservation Area. En route, stop at Olduvai Gorge — the "Cradle of Mankind" where the Leakey family unearthed 1.8-million-year-old hominid fossils that rewrote human evolutionary history. A small museum displays casts of *Homo habilis* skulls and Acheulean stone tools found in the gorge\'s layered sediment beds. Continue climbing through the Ngorongoro highlands — misty, cool, and carpeted with giant heather and highland grassland — until you reach the crater rim at 2,286 m elevation. Your first view of the Ngorongoro Crater is sweeping: the world\'s largest unbroken volcanic caldera, 19 km across and 600 m deep, its floor a green patchwork of forest, marsh, lake, and savannah teeming with wildlife. Watch the sun set over this UNESCO World Heritage Site from the crater rim — one of Africa\'s most spectacular vistas. Dinner at your Ngorongoro accommodation.`,
                 meals: ['Breakfast', 'Lunch', 'Dinner'],
             },
             {

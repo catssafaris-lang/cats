@@ -86,7 +86,7 @@ export default function Page() {
         {
           question: 'How does Tanzania compare with Kenya for wildlife?',
           answer:
-            'Tanzania’s northern circuit offers the vast Serengeti, Ngorongoro Crater, Tarangire and Lake Manyara, while Kenya combines the Masai Mara with distinctive habitats such as Amboseli and Samburu. The countries share the Mara-Serengeti ecosystem, so there is overlap in Big Five sightings, but scenery, park rules, crowd levels and seasonal movement differ. Our 15 years of experience help us recommend one country or a combined safari according to your dates and interests.',
+            'Tanzania’s northern circuit offers the vast Serengeti, Ngorongoro Crater, Tarangire and Lake Manyara, while Kenya combines the Masai Mara with distinctive habitats such as Amboseli and Samburu. The countries share the Mara-Serengeti ecosystem, so there is overlap in Big Five sightings, but scenery, park rules, crowd levels and seasonal movement differ. Our 15+ years of combined safari experience help us recommend one country or a combined safari according to your dates and interests.',
         },
         {
           question: 'Is the Ngorongoro Crater at high altitude?',

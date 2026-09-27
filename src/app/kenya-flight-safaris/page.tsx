@@ -36,7 +36,7 @@ export default function Page() {
             , Samburu and other leading reserves, often reaching your first game drive in under 90 minutes.
           </p>
           <p>
-            With 15 years of experience arranging fly-in safaris across Kenya, C.A.T.S Safaris partners with trusted
+            With 15+ years of combined safari experience arranging fly-in safaris across Kenya, C.A.T.S Safaris partners with trusted
             bush aviation operators and premium lodges to deliver seamless air safari experiences. Choose a quick
             2–3 day Amboseli escape, a dedicated Masai Mara migration fly-in, or a longer multi-park circuit linking
             Samburu to the Indian Ocean coast.
@@ -67,7 +67,7 @@ export default function Page() {
         },
         {
           title: '6+ Day Grand Circuits',
-          description: 'The ultimate Kenya experiences — multiple reserves connected by air for a complete safari journey.',
+          description: 'The complete Kenya experiences — multiple reserves connected by air for a complete safari journey.',
           safaris: filtered.filter((s) => s.duration >= 6),
         },
       ]}

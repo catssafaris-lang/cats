@@ -307,7 +307,7 @@ export default function NairobiExcursionsHub() {
     },
     {
       icon: Users,
-      title: 'KPSGA-Certified Guides',
+      title: 'KPSGA-experienced professional guides',
       description: 'Professional English-speaking driver-guides with deep local knowledge and wildlife expertise.',
     },
     {
@@ -396,7 +396,7 @@ export default function NairobiExcursionsHub() {
           <p>
             Whether you have a few hours between flights, a free day during a business trip, or want to ease into a
             longer East African adventure, our Nairobi excursions deliver authentic wildlife encounters in private 4x4
-            Land Cruisers with KPSGA-certified guides. Travellers who prefer a shared, more budget-friendly
+            Land Cruisers with KPSGA-experienced professional guides. Travellers who prefer a shared, more budget-friendly
             experience can also join our{' '}
             <Link href="/kenya-safaris/group-tours-nairobi" className="text-[#a68b52] underline hover:text-[#8a7343]">
               group tours from Nairobi
@@ -441,7 +441,7 @@ export default function NairobiExcursionsHub() {
           Nairobi Excursions
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-stone-600">
-          Half-day and full-day wildlife, city and cultural experiences within Nairobi &mdash; each with private 4x4 transport and expert KPSGA-certified guides.
+          Half-day and full-day wildlife, city and cultural experiences within Nairobi &mdash; each with private 4x4 transport and expert KPSGA-experienced professional guides.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {nairobiExcursions.map((safari) => (

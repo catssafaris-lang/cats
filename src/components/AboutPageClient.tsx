@@ -84,7 +84,7 @@ const itineraries = [
             "6-Day Kenya Wildlife Safari — Add Samburu's unique species.",
             "7-Day Grand Kenya Safari — The comprehensive Kenya experience.",
             "8-Day Kenya Explorer — Deep dive into Kenya's wilderness.",
-            "10-12 Day Ultimate Kenya — Every major park. The definitive Kenya safari."
+            "10-12 Day Complete Kenya — Every major park. The definitive Kenya safari."
         ]
     },
     {
@@ -94,12 +94,12 @@ const itineraries = [
             "5-Day Masai Mara Safari + Diani Beach",
             "7-Day Kenya Safari & Beach",
             "8-Day Bush & Beach Adventure",
-            "10-Day Ultimate Kenya & Coast",
+            "10-Day Definitive Kenya & Coast",
             "1-Day Shimba Hills Excursion (From Coast)",
             "2-Day Tsavo East Safari (From Coast)",
             "3-Day Tsavo East & West",
             "4-Day Tsavo & Amboseli",
-            "5-Day Ultimate Beach Safari"
+            "5-Day Premier Beach Safari"
         ]
     },
     {
@@ -122,10 +122,10 @@ const itineraries = [
             "3-Day Serengeti Express",
             "4-Day Northern Tanzania Circuit",
             "5-Day Serengeti & Ngorongoro",
-            "7-Day Ultimate Tanzania",
+            "7-Day Comprehensive Tanzania",
             "7-Day Kenya & Tanzania (Masai Mara + Serengeti + Ngorongoro)",
             "10-Day Cross-Border Epic",
-            "14-15 Day Ultimate East Africa"
+            "14-15 Day Grand East Africa"
         ]
     },
     {
@@ -148,7 +148,7 @@ const destinations = [
     { title: "Serengeti, Tanzania", img: 'https://ik.imagekit.io/axd1riwnv/Safari%20PHOTOS/WhatsApp%20Image%202026-05-31%20at%2009.22.33.jpeg', desc: "Endless plains stretching to the horizon holding vast plains game.", best: "Great Migration, big cats, vast landscapes." },
     { title: "Ngorongoro, Tanzania", img: 'https://ik.imagekit.io/axd1riwnv/114036745.avif', desc: "A self-contained Eden of 25,000 animals including the black rhino.", best: "Big Five in one day, unique landscapes." },
     { title: "Zanzibar", img: 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&w=800', desc: "The Spice Island. White sand beaches, turquoise waters, and Stone Town.", best: "Beach relaxation, snorkeling, culture." },
-    { title: "Mount Kilimanjaro", img: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800', desc: "Africa's highest peak at 5,895 meters. A breathtaking ascent.", best: "Mountain climbing, bucket-list adventure." }
+    { title: "Mount Kilimanjaro", img: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800', desc: "Africa's highest peak at 5,895 meters. A striking ascent.", best: "Mountain climbing, bucket-list adventure." }
 ];
 
 const experiences = [
@@ -177,7 +177,7 @@ const adventureActivities = [
     { title: "Cycling Safaris", image: "https://ik.imagekit.io/axd1riwnv/Samburu-National-Park.jpg", desc: "Pedal through Hell's Gate gorges alongside zebras and giraffes — one of Kenya's most unique experiences." },
     { title: "Scuba & Snorkeling", image: "https://images.pexels.com/photos/5582144/pexels-photo-5582144.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Explore the coral reefs of Diani, Watamu, and Zanzibar — sea turtles, whale sharks, and technicolor fish." },
     { title: "Zip-Lining & Canopy Walks", image: "https://ik.imagekit.io/axd1riwnv/Samburu-National-Park.jpg", desc: "Soar through the Kereita Forest canopy or walk suspended bridges in the Kakamega Rainforest." },
-    { title: "Deep Sea Fishing", image: "https://images.pexels.com/photos/2131967/pexels-photo-2131967.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Battle marlin, sailfish, and yellowfin tuna off the Kenyan coast — world-class sport fishing." }
+    { title: "Deep Sea Fishing", image: "https://images.pexels.com/photos/2131967/pexels-photo-2131967.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Battle marlin, sailfish, and yellowfin tuna off the Kenyan coast — skilled sport fishing." }
 ];
 
 const whyChooseUs = [
@@ -193,7 +193,7 @@ const includedItems = [
     "Accommodation (Economy, Comfort, or Luxury)",
     "Full board meals (Breakfast, lunch, and dinner)",
     "4×4 safari vehicle with pop-up roof",
-    "Professional, certified naturalist guide",
+    "Professional, trained naturalists guide",
     "All national park entrance & conservation fees",
     "Airport Transfers (Pick-up and drop-off)",
     "Bottled drinking water throughout",
@@ -291,13 +291,13 @@ export default function AboutPageClient() {
                         </h3>
                         <div className="space-y-6 text-lg leading-relaxed text-[var(--color-driftwood)] border-l-2 border-[var(--color-golden-savannah)] pl-6">
                             <p>
-                                Collective African Tours &amp; Safaris (C.A.T.S) is a Nairobi-based safari company with 15 years of expertise connecting travellers to the best wildlife, adventure, and cultural experiences across East Africa.
+                                Collective African Tours &amp; Safaris (C.A.T.S) is a Nairobi-based safari company with over 15 years of combined safari experience connecting travellers to the best wildlife, adventure, and cultural experiences across East Africa.
                             </p>
                             <p>
                                 Our founder spent years as a safari sales consultant — learning every park, lodge, and hidden gem across Kenya and Tanzania. After years of selling someone else&apos;s vision, he founded C.A.T.S to deliver his own — built on firsthand knowledge of what travellers truly want: authentic encounters, seamless logistics, and moments that stay with you forever.
                             </p>
                             <p>
-                                Today, our team works through a trusted network of experienced tour operators, certified naturalist guides, handpicked lodges, and reliable transport partners. From family safaris with junior ranger programs to honeymoon getaways and adrenaline-fuelled adventures, we design every itinerary with the same goal — giving you the trip of a lifetime.
+                                Today, our team works through a trusted network of experienced tour operators, trained naturalists guides, handpicked lodges, and reliable transport partners. From family safaris with junior ranger programs to honeymoon getaways and adrenaline-fuelled adventures, we design every itinerary with the same goal — giving you the trip of a lifetime.
                             </p>
                             <p>
                                 Whether you&apos;re chasing the Great Migration, summiting Kilimanjaro, exploring Zanzibar&apos;s spice markets, or introducing your children to elephants for the first time — our team is here to make it happen, seamlessly and affordably.
@@ -340,7 +340,7 @@ export default function AboutPageClient() {
                                 To deliver authentic, life-changing African safari experiences through a trusted network of expert local partners.
                             </p>
                             <p className="text-[var(--color-savannah-dust)] leading-relaxed">
-                                At Collective African Tours and Safaris, we connect travellers with the real Africa — its wildlife, cultures, landscapes, and communities. Every safari we plan is built on 15 years of on-the-ground expertise, personal relationships with lodge operators and specialist guides, and a deep commitment to responsible tourism. We ensure every journey is seamless, safe, and unforgettable — whether it is a family game drive in the Masai Mara, a honeymoon balloon ride over the Serengeti, or a once-in-a-lifetime gorilla trek in Rwanda.
+                                At Collective African Tours and Safaris, we connect travellers with the real Africa — its wildlife, cultures, landscapes, and communities. Every safari we plan is built on 15 years of on-the-ground expertise, personal relationships with lodge operators and specialist guides, and a deep commitment to responsible tourism. We ensure every journey is seamless, safe, and unforgettable — whether it is a family game drive in the Masai Mara, a honeymoon balloon ride over the Serengeti, or a unforgettable gorilla trek in Rwanda.
                             </p>
                         </div>
 

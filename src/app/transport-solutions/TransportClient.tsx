@@ -119,7 +119,7 @@ const vehicles: Vehicle[] = [
     fuel: 'Petrol',
     luggage: '4 Bags',
     serviceType: 'Airport Transfer / VIP Chauffeur',
-    description: 'The ultimate luxury minivan — executive leather captain seats, whisper-quiet ride, perfect for VIP airport transfers.',
+    description: 'The outstanding luxury minivan — executive leather captain seats, whisper-quiet ride, perfect for VIP airport transfers.',
     features: ['Executive Captain Seats', 'Premium Leather', 'Climate Control Zones', 'Power Sliding Doors', 'Privacy Glass'],
   },
 
@@ -729,7 +729,7 @@ export function TransportClient() {
               { icon: 'handshake', title: 'Trusted Partner Network', desc: 'Every vehicle owner, driver, and transport operator in our network is vetted for safety, reliability, and service excellence.' },
               { icon: 'clock', title: '24/7 Availability', desc: 'Early morning flights, late-night arrivals, weekend getaways — our transport solutions are available around the clock, 365 days a year.' },
               { icon: 'wallet', title: 'Transparent Pricing', desc: 'No hidden fees, no surprises. Get a clear quote upfront with all costs included. What you see is what you pay.' },
-              { icon: 'star', title: '15 Years of Experience', desc: 'With 15 years in East African travel and transport, we know the roads, the routes, and exactly what travellers need.' },
+              { icon: 'star', title: '15+ years of combined safari experience', desc: 'With 15 years in East African travel and transport, we know the roads, the routes, and exactly what travellers need.' },
             ].map(item => (
               <div key={item.title} className="group text-center bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:shadow-[#c8962e]/10 hover:-translate-y-2 transition-all duration-300 border border-gray-100 hover:border-b-[3px] hover:border-b-[#c8962e]">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0d1f16] to-[#1a3d2b] rounded-2xl flex items-center justify-center text-white mx-auto mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#0d1f16]/20 ring-2 ring-[#c8962e]/20">
@@ -815,7 +815,7 @@ export function TransportClient() {
                   Ideal for tour operators, hotels, schools, embassies, and organisations operating across Nairobi, Mombasa, and upcountry Kenya.
                 </p>
                 <ul className="flex flex-wrap gap-2 mb-5">
-                  {['3 / 6 / 12 Month Terms', 'Maintained & Insured', 'Replacement Guarantee', 'Dedicated Account Manager', 'Fleet Branding Available', 'Nationwide Coverage'].map(tag => (
+                  {['3 / 6 / 12 Month Terms', 'Maintained & Insured', 'backup vehicle coordination', 'personal travel coordinator', 'Fleet Branding Available', 'Nationwide Coverage'].map(tag => (
                     <li key={tag} className="bg-white/10 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full border border-[#c8962e]/20">{tag}</li>
                   ))}
                 </ul>

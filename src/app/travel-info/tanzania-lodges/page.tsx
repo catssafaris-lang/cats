@@ -266,7 +266,7 @@ const regions: Region[] = [
       { name: 'Mkomazi View Camp', location: 'Mkomazi National Park', category: 'Mid-Range', parkPosition: 'Inside Park', conservancyName: null, nearestAirstrips: ['Kilimanjaro International (JRO)'], notes: '6 tents near Mbula Rhino Sanctuary' }
   ] },
   { name: 'Zanzibar', slug: 'zanzibar', lodges: [
-      { name: 'andBeyond Mnemba Island', location: 'Zanzibar (Mnemba Island, northeast)', category: 'Luxury', parkPosition: 'Beach', conservancyName: null, nearestAirstrips: ['Zanzibar Airport (ZNZ)'], notes: 'Exclusive private island, 12 bandas, world-class diving' },
+      { name: 'andBeyond Mnemba Island', location: 'Zanzibar (Mnemba Island, northeast)', category: 'Luxury', parkPosition: 'Beach', conservancyName: null, nearestAirstrips: ['Zanzibar Airport (ZNZ)'], notes: 'Exclusive private island, 12 bandas, seasoned diving' },
       { name: 'Park Hyatt Zanzibar', location: 'Zanzibar (Stone Town)', category: 'Luxury', parkPosition: 'Beach', conservancyName: null, nearestAirstrips: ['Zanzibar Airport (ZNZ)'], notes: 'Luxury hotel in Stone Town waterfront' },
       { name: 'Zanzi Resort', location: 'Zanzibar (West Coast)', category: 'Luxury', parkPosition: 'Beach', conservancyName: null, nearestAirstrips: ['Zanzibar Airport (ZNZ)'], notes: 'Luxury resort on west coast' },
       { name: 'Zuri Zanzibar', location: 'Zanzibar (North Coast, Kendwa)', category: 'Luxury', parkPosition: 'Beach', conservancyName: null, nearestAirstrips: ['Zanzibar Airport (ZNZ)'], notes: 'Eco-conscious luxury resort with private beach' },

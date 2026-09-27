@@ -384,7 +384,7 @@ export default function FlightSearchClient() {
               Popular routes include London Heathrow to Nairobi, Dubai International to Mombasa, Istanbul to Kilimanjaro, Mumbai to Dar es Salaam, New York JFK to Nairobi, Paris CDG to Entebbe, Johannesburg OR Tambo to Nairobi, and Doha Hamad to Kigali. Major carriers serving East Africa include Kenya Airways, Ethiopian Airlines, Emirates, Qatar Airways, Turkish Airlines, British Airways, KLM Royal Dutch Airlines, Lufthansa, Swiss International Air Lines, RwandAir, Fly540, and many regional and low-cost operators.
             </p>
             <p>
-              Planning a safari? Coordinate your international flight with a C.A.T.S safari package. Our team matches arrival schedules to lodge check-ins, arranges airport transfers across Kenya, Tanzania, Uganda and Rwanda, and books domestic fly-in connections to remote safari destinations including Masai Mara, Amboseli, Samburu, Serengeti, Ngorongoro Crater, Bwindi Impenetrable Forest, Volcanoes National Park, and every major East African airstrip. With 15 years of expertise, we deliver seamless travel logistics from takeoff to the bush.
+              Planning a safari? Coordinate your international flight with a C.A.T.S safari package. Our team matches arrival schedules to lodge check-ins, arranges airport transfers across Kenya, Tanzania, Uganda and Rwanda, and books domestic fly-in connections to remote safari destinations including Masai Mara, Amboseli, Samburu, Serengeti, Ngorongoro Crater, Bwindi Impenetrable Forest, Volcanoes National Park, and every major East African airstrip. with over 15 years of combined safari experience, we deliver seamless travel logistics from takeoff to the bush.
             </p>
           </div>
         </div>
