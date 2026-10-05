@@ -163,9 +163,9 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 z-[100]">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/80" onClick={onClose} />
       <div
-        className="absolute top-0 right-0 h-full w-[85vw] max-w-sm overflow-y-auto"
+        className="absolute top-0 right-0 h-full w-full sm:w-[85vw] sm:max-w-sm overflow-y-auto"
         style={{ background: C.mobileBg }}
       >
         <div className="flex justify-end p-4">

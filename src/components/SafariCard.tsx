@@ -39,7 +39,7 @@ export default function SafariCard({ safari }: { safari: Safari }) {
           {safari.destination && <span className="flex items-center gap-1"><MapPin className="w-4 h-4" />{safari.destination}</span>}
         </div>
         {safari.description && <p className="text-gray-600 text-sm line-clamp-3">{safari.description}</p>}
-        <div className="mt-4 text-green-800 font-semibold text-sm group-hover:underline">View Details →</div>
+        <div className="mt-4 text-green-800 font-semibold text-sm group-hover:underline">Book This Safari →</div>
       </div>
     </Link>
   );

@@ -305,7 +305,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
               <button onClick={closeModal} className="absolute right-4 top-4 rounded-full p-1.5 text-white/70 hover:bg-white/10 hover:text-white transition" aria-label="Close">
                 <X className="h-5 w-5" />
               </button>
-              <h2 className="text-xl font-bold text-white font-serif">Request a Safari Quote</h2>
+              <h2 className="text-xl font-bold text-white font-serif">Book This Safari</h2>
               <p className="mt-1 text-sm text-[#c4a96a]">{packageName}</p>
             </div>
 
@@ -314,7 +314,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
                   <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#5c4d42] font-serif">Quote Request Sent</h3>
+                <h3 className="text-xl font-bold text-[#5c4d42] font-serif">Booking Request Sent</h3>
                 <p className="mt-2 text-stone-600">
                   {isExcursion
                     ? 'Thank you for your inquiry. The C.A.T.S excursions team has received your request. A member of the team will review availability and respond with the relevant details.'
@@ -548,7 +548,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                   type="submit"
                   className="w-full rounded-xl bg-gradient-to-r from-[#a68b52] to-[#8a7343] py-4 text-base font-bold text-white shadow-lg transition hover:shadow-xl hover:from-[#8a7343] hover:to-[#6d5a33] active:scale-[0.98]"
                 >
-                  Send Quote Request
+                  Book This Safari
                 </button>
 
                 <p className="text-center text-xs text-stone-400">

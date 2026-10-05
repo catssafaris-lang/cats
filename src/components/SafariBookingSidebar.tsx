@@ -76,7 +76,7 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
           onClick={handleOpenModal}
           className="w-full flex items-center justify-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl text-base"
         >
-          Request Custom Quote
+          Book This Safari
         </button>
 
         {/* WhatsApp CTA */}
