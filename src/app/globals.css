@@ -1,3 +1,4 @@
+@layer isolation;
 @import "tailwindcss";
 
 @theme {
