@@ -443,7 +443,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav — dark text on white background */}
-          <nav ref={navRef} className="hidden lg:flex items-center gap-0 ml-auto">
+          <nav ref={navRef} className="hidden xl:flex flex-nowrap items-center gap-0 ml-auto">
             <Link
               href="/"
               className="px-2.5 xl:px-3 py-2 text-[13px] font-semibold rounded transition-colors whitespace-nowrap"
@@ -520,7 +520,7 @@ export default function Header() {
 
           {/* Mobile hamburger — dark on white */}
           <button
-            className="lg:hidden p-2 ml-auto"
+            className="xl:hidden p-2 ml-auto"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
