@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getSafariBySlug, safaris } from '@/data/safaris';
+import { excursionLandings } from '@/data/excursionLandings';
 import { Clock, MapPin, Users, CheckCircle, XCircle, Calendar, ArrowLeft, Binoculars, Sparkles, Sun, Lightbulb } from 'lucide-react';
 import ImageGallery from '@/components/ImageGallery';
 import SafariBookingSidebar from '@/components/SafariBookingSidebar';
@@ -499,6 +500,21 @@ export default async function SafariDetailPage({ params }: { params: Promise<Par
                             <SeasonGuide />
                             {/* Pricing Table */}
                             <PricingTable slug={safari.slug} />
+                            {['kenya', 'kenya-tanzania', 'beach'].includes(safari.destination) && safari.durationUnit !== 'hours' && safari.duration > 1 && (
+                                <div className="mt-10 rounded-2xl bg-[#2d3530] text-white p-6 md:p-8">
+                                    <p className="uppercase tracking-[0.2em] text-xs text-[#d4b97a] mb-2">Before or after your safari</p>
+                                    <h2 className="font-serif text-2xl font-bold mb-3">Add a Nairobi Day Trip</h2>
+                                    <p className="text-white/85 mb-5">Have a spare day in Nairobi? Add a private excursion with hotel or JKIA pickup.</p>
+                                    <div className="grid sm:grid-cols-2 gap-3">
+                                        {excursionLandings.map((l) => (
+                                            <Link key={l.slug} href={`/nairobi-excursions-day-trips/${l.slug}`} className="block rounded-xl border border-white/20 px-4 py-3 hover:border-[#d4b97a] hover:text-[#d4b97a] transition-colors">
+                                                {l.h1.split(':')[0]}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <Link href="/nairobi-excursions-day-trips" className="inline-block mt-5 text-[#d4b97a] font-semibold underline">See all Nairobi excursions &amp; day trips</Link>
+                                </div>
+                            )}
                         </div>
 
                         {/* Sidebar */}

@@ -1,6 +1,7 @@
 import { safaris } from '@/data/safaris';
 import { experiences } from '@/data/experiences';
 import { blogPosts } from '@/data/blog';
+import { excursionLandings } from '@/data/excursionLandings';
 
 export default function sitemap() {
   const baseUrl = 'https://www.catssafaris.com';
@@ -58,6 +59,8 @@ export default function sitemap() {
       changeFrequency: p.changeFrequency,
       priority: p.priority,
     })),
+    { url: `${baseUrl}/nairobi-excursions-day-trips`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    ...excursionLandings.map((l) => ({ url: `${baseUrl}/nairobi-excursions-day-trips/${l.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 })),
     ...safariPages.map((p) => ({ ...p, url: `${baseUrl}${p.url}` })),
     ...experiencePages.map((p) => ({ ...p, url: `${baseUrl}${p.url}` })),
     ...blogPages.map((p) => ({ ...p, url: `${baseUrl}${p.url}` })),

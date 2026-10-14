@@ -15,6 +15,7 @@ import {
   Check,
 } from 'lucide-react';
 import { safaris, type Safari } from '@/data/safaris';
+import { excursionLandings } from '@/data/excursionLandings';
 
 /* ────────────────────────── Constants ────────────────────────── */
 const WHATSAPP_NUMBER = '254723951388';
@@ -506,6 +507,19 @@ export default function NairobiExcursionsHub() {
         <p className="mt-6 text-center text-sm text-stone-500">
           Prices shown are starting prices; your final quote is confirmed by our team before booking.
         </p>
+      </section>
+
+      {/* ── Popular Nairobi experiences (SEO landing links) ── */}
+      <section className="container mx-auto px-4 max-w-6xl py-12">
+        <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#5c4d42] mb-6 text-center">Popular Nairobi Tours &amp; Day Trips</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {excursionLandings.map((l) => (
+            <Link key={l.slug} href={`/nairobi-excursions-day-trips/${l.slug}`} className="block bg-white rounded-xl p-5 border border-[#e8e0d0] hover:border-[#a68b52] transition-colors">
+              <p className="text-xs uppercase tracking-wider text-[#a68b52] mb-1">{l.eyebrow}</p>
+              <p className="font-semibold text-[#5c4d42]">{l.h1.split(':')[0]}</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* ── Structured data ── */}
