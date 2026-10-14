@@ -45,22 +45,22 @@ export default function HomeClient({ slides }: { slides: Slide[] }) {
   }, [next, isPaused]);
 
   return (
-    <section className="relative h-screen min-h-[700px] max-h-[1000px] overflow-hidden w-full">
+    <section className="relative h-screen min-h-[860px] sm:min-h-[700px] max-h-[1000px] overflow-hidden w-full">
       <div className="relative h-full w-full" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} aria-label="Safari highlights slideshow">
         {slides.map((slide, i) => (
           <div key={i} className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}>
             <Image src={slide.image} alt={slide.alt} fill className="object-cover" priority={i === 0} sizes="100vw" />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            <div className={`relative z-20 h-full flex flex-col justify-center transition-all duration-700 ${i === current ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div className={`relative z-20 h-full flex flex-col justify-start pt-12 sm:pt-0 sm:justify-center transition-all duration-700 ${i === current ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="mx-auto w-full max-w-7xl px-4 sm:px-8 lg:px-16">
                 <div className="max-w-2xl">
                   <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-white backdrop-blur-sm">{slide.tag}</span>
-                  <h1 className="mt-6 font-playfair text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ whiteSpace: 'pre-line' }}>{slide.heading}</h1>
-                  <p className="mt-5 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">{slide.description}</p>
-                  <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                    <Link href={slide.cta.href} className="rounded-lg bg-[var(--sunset-bronze)] px-8 py-3.5 text-center font-semibold text-white shadow-lg transition hover:bg-[#8c7544] hover:shadow-xl">{slide.cta.label}</Link>
-                    <Link href={slide.secondary.href} className="rounded-lg border-2 border-white/30 bg-white/10 px-8 py-3.5 text-center font-semibold text-white backdrop-blur-sm transition hover:bg-white/20">{slide.secondary.label}</Link>
+                  <h1 className="mt-4 sm:mt-6 font-playfair text-3xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ whiteSpace: 'pre-line' }}>{slide.heading}</h1>
+                  <p className="mt-4 sm:mt-5 max-w-xl text-sm leading-relaxed text-white/85 line-clamp-3 sm:line-clamp-none sm:text-lg">{slide.description}</p>
+                  <div className="mt-6 sm:mt-8 flex flex-row flex-wrap gap-3 sm:gap-4">
+                    <Link href={slide.cta.href} className="rounded-lg bg-[var(--sunset-bronze)] px-5 py-3 text-sm sm:text-base sm:px-8 sm:py-3.5 text-center font-semibold text-white shadow-lg transition hover:bg-[#8c7544] hover:shadow-xl">{slide.cta.label}</Link>
+                    <Link href={slide.secondary.href} className="rounded-lg border-2 border-white/60 bg-white/15 px-5 py-3 text-sm sm:text-base sm:px-8 sm:py-3.5 text-center font-semibold text-white backdrop-blur-sm transition hover:bg-white/20">{slide.secondary.label}</Link>
                   </div>
                 </div>
               </div>

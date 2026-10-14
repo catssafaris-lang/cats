@@ -68,6 +68,21 @@ const groupTour = getById('nairobi-np-group');
 
 const faqs: { question: string; answer: string }[] = [
   {
+    question: 'How do I book a private Nairobi National Park tour?',
+    answer:
+      "Open the Nairobi National Park Private Tour page and click Book This Safari, choose your preferred date and number of travellers, and send the request. You can also message us on WhatsApp on +254 723 951 388. Our team confirms availability, pickup time and the final quote with you before anything is booked.",
+  },
+  {
+    question: 'What is the best private day trip from Nairobi?',
+    answer:
+      "It depends on your interests. Amboseli suits travellers who want elephants with Kilimanjaro views (weather permitting), Ol Pejeta is a strong choice for rhino conservation, Lake Naivasha and Hell's Gate suit active travellers who enjoy walking and cycling, and Lake Nakuru is popular with birdwatchers. If you only have a few hours, a private Nairobi National Park game drive is the most time-efficient safari.",
+  },
+  {
+    question: 'Can I do a private Nairobi safari during a layover?',
+    answer:
+      "Yes, if your connection allows enough time. Nairobi National Park borders the airport area, so a half-day private game drive with JKIA pickup and drop-off is possible on longer layovers. Share your arrival and departure times when you enquire and we will advise whether the timing is realistic before confirming.",
+  },
+  {
     question: 'How long is the Nairobi National Park safari?',
     answer:
       "Our standard Nairobi National Park excursion is a half-day safari lasting approximately 5 hours including hotel or airport transfers, typically running from around 6:00 AM to 11:30 AM or 12:00 PM. For travellers who want to see more of the city, we also offer a full-day combination that pairs the park game drive with a Nairobi city tour covering the David Sheldrick Wildlife Trust, the Giraffe Centre and either the Karen Blixen Museum or Bomas of Kenya. Both half-day and full-day options can be tailored to your arrival or departure times.",
@@ -297,7 +312,7 @@ export default function NairobiExcursionsHub() {
   const features = [
     {
       icon: Shield,
-      title: '15 Years of Safari Expertise',
+      title: '15+ Years of Team Experience',
       description: 'A trusted network of local partners ensuring safe, seamless experiences across East Africa.',
     },
     {
@@ -345,7 +360,8 @@ export default function NairobiExcursionsHub() {
             Nairobi Excursions &amp; Day Trips
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/90 sm:text-lg">
-            Explore Nairobi and beyond with professionally organised wildlife, cultural and day-trip experiences.
+            Private Nairobi National Park tours, half-day Nairobi safaris and private day trips from Nairobi &mdash;
+            with hotel and JKIA airport pickup.
             From Nairobi National Park to full-day escapes into Kenya&apos;s iconic landscapes, choose an experience
             that fits your time, interests and travel style.
           </p>
@@ -357,6 +373,14 @@ export default function NairobiExcursionsHub() {
             >
               Explore Excursions
             </button>
+            {privateTour && (
+              <Link
+                href={`/safari/${privateTour.slug}`}
+                className="rounded-xl bg-[#4f5d56] px-8 py-3.5 font-bold text-white shadow-lg transition hover:bg-[#3f4b45]"
+              >
+                Book a Private Tour
+              </Link>
+            )}
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
@@ -385,8 +409,8 @@ export default function NairobiExcursionsHub() {
         <div className="space-y-5 text-stone-700 leading-relaxed">
           <p>
             Nairobi is the only capital city in the world with a national park within its boundaries, making it one
-            of Africa&apos;s most accessible safari destinations. For 15 years, Collective African Tours &amp; Safaris
-            (C.A.T.S) has been connecting travellers with the best of Nairobi&apos;s wildlife, culture and conservation
+            of Africa&apos;s most accessible safari destinations. Backed by a team with 15+ years of East African tourism and safari experience, Collective African Tours &amp; Safaris
+            (C.A.T.S) connects travellers with the best of Nairobi&apos;s wildlife, culture and conservation
             experiences, alongside our wider portfolio of{' '}
             <Link href="/kenya-safaris" className="text-[#a68b52] underline hover:text-[#8a7343]">
               Kenya safaris
@@ -434,6 +458,93 @@ export default function NairobiExcursionsHub() {
       </section>
 
 
+
+      {/* ── Private Nairobi Tours (SEO + conversion) ── */}
+      <section id="private-tours" className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-center font-serif text-3xl font-bold text-[#5c4d42] sm:text-4xl">
+          Private Nairobi Tours &amp; Private Day Trips from Nairobi
+        </h2>
+        <div className="mx-auto mt-6 max-w-4xl space-y-4 text-stone-700 leading-relaxed">
+          <p>
+            A private Nairobi tour means the vehicle and driver-guide are reserved for your party only. You choose the
+            pickup time, the pace and how long you stay at each sighting &mdash; ideal for families with children,
+            couples, photographers, business travellers and anyone with a tight flight connection at JKIA or Wilson Airport.
+          </p>
+          <p>
+            Our most requested private excursion is the{' '}
+            {privateTour && (
+              <Link href={`/safari/${privateTour.slug}`} className="font-semibold text-[#a68b52] underline hover:text-[#8a7343]">
+                Nairobi National Park private half-day tour
+              </Link>
+            )}
+            , a game drive in Kenya&apos;s first national park where lion, black rhino, giraffe, buffalo and hundreds of
+            bird species are commonly seen against the Nairobi skyline (sightings depend on season and conditions). For a
+            full day, combine the park with the Giraffe Centre and Sheldrick elephant orphanage, or head out on a private
+            day trip to Amboseli, Lake Naivasha and Hell&apos;s Gate, Lake Nakuru or Ol Pejeta Conservancy.
+          </p>
+        </div>
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {[...nairobiExcursions.filter((x) => x.id !== 'nairobi-np-group'), ...dayTripsFromNairobi].map((t) => (
+            <div key={t.id} className="flex items-center justify-between gap-4 rounded-xl border border-[#e5dccb] bg-white p-4 shadow-sm">
+              <div className="min-w-0">
+                <Link href={`/safari/${t.slug}`} className="block font-semibold text-[#5c4d42] hover:text-[#a68b52]">
+                  {t.title.split('|')[0].trim()}
+                </Link>
+                <p className="mt-1 text-xs text-stone-500">
+                  {t.duration} {t.durationUnit} &middot; From {t.currency ?? 'USD'} {t.priceFrom}
+                </p>
+              </div>
+              <Link
+                href={`/safari/${t.slug}`}
+                className="shrink-0 rounded-lg bg-[#a68b52] px-4 py-2 text-sm font-bold text-white transition hover:bg-[#8a7343]"
+              >
+                Book This Tour
+              </Link>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 text-center text-sm text-stone-500">
+          Prices shown are starting prices; your final quote is confirmed by our team before booking.
+        </p>
+      </section>
+
+      {/* ── Structured data ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.catssafaris.com/' },
+                { '@type': 'ListItem', position: 2, name: 'Kenya Safaris', item: 'https://www.catssafaris.com/kenya-safaris' },
+                { '@type': 'ListItem', position: 3, name: 'Nairobi Excursions & Day Trips', item: 'https://www.catssafaris.com/nairobi-excursions-day-trips' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: 'Nairobi Excursions & Day Trips',
+              itemListElement: [...nairobiExcursions, ...dayTripsFromNairobi].map((t, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name: t.title.split('|')[0].trim(),
+                url: `https://www.catssafaris.com/safari/${t.slug}`,
+              })),
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((f) => ({
+                '@type': 'Question',
+                name: f.question,
+                acceptedAnswer: { '@type': 'Answer', text: f.answer },
+              })),
+            },
+          ]),
+        }}
+      />
 
       {/* ── Nairobi Excursions ── */}
       <section id="excursions" className="mx-auto max-w-6xl px-4 py-16">
