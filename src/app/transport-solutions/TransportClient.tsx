@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
+import { SafariVehicleGuide } from './SafariVehicleGuide';
 
 /* ─────────── TYPES ─────────── */
 interface Vehicle {
@@ -27,7 +28,7 @@ const vehicles: Vehicle[] = [
     name: 'Toyota Harrier',
     brand: 'Toyota',
     category: 'SUVs & Crossovers',
-    image: 'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/harrier.webp',
     passengers: '5',
     transmission: 'Automatic',
     fuel: 'Petrol',
@@ -41,7 +42,7 @@ const vehicles: Vehicle[] = [
     name: 'Lexus SUV',
     brand: 'Lexus',
     category: 'SUVs & Crossovers',
-    image: 'https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/lexus.webp',
     passengers: '5 – 7',
     transmission: 'Automatic',
     fuel: 'Petrol / Diesel',
@@ -55,7 +56,7 @@ const vehicles: Vehicle[] = [
     name: 'Nissan X-Trail',
     brand: 'Nissan',
     category: 'SUVs & Crossovers',
-    image: 'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/xtrail.webp',
     passengers: '5',
     transmission: 'Automatic',
     fuel: 'Petrol',
@@ -69,7 +70,7 @@ const vehicles: Vehicle[] = [
     name: 'Mazda CX-5',
     brand: 'Mazda',
     category: 'SUVs & Crossovers',
-    image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/mazda.webp',
     passengers: '5',
     transmission: 'Automatic',
     fuel: 'Petrol / Diesel',
@@ -83,7 +84,7 @@ const vehicles: Vehicle[] = [
     name: 'Toyota Prado',
     brand: 'Toyota',
     category: 'SUVs & Crossovers',
-    image: 'https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/prado.webp',
     passengers: '5 – 7',
     transmission: 'Automatic',
     fuel: 'Petrol / Diesel',
@@ -99,7 +100,7 @@ const vehicles: Vehicle[] = [
     name: 'Toyota Noah',
     brand: 'Toyota',
     category: 'Minivans',
-    image: 'https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/noah.webp',
     passengers: '7 – 8',
     transmission: 'Automatic',
     fuel: 'Petrol / Hybrid',
@@ -113,7 +114,7 @@ const vehicles: Vehicle[] = [
     name: 'Toyota Alphard',
     brand: 'Toyota',
     category: 'Minivans',
-    image: 'https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/alphard.webp',
     passengers: '6 – 7',
     transmission: 'Automatic',
     fuel: 'Petrol',
@@ -129,7 +130,7 @@ const vehicles: Vehicle[] = [
     name: '22-Seater Coaster Bus',
     brand: 'Toyota',
     category: 'Buses',
-    image: 'https://images.pexels.com/photos/68629/pexels-photo-68629.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/coaster.webp',
     passengers: '22',
     transmission: 'Manual / Automatic',
     fuel: 'Diesel',
@@ -143,7 +144,7 @@ const vehicles: Vehicle[] = [
     name: '29-Seater Bus',
     brand: 'Various',
     category: 'Buses',
-    image: 'https://images.pexels.com/photos/385998/pexels-photo-385998.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/bus29.webp',
     passengers: '29',
     transmission: 'Automatic',
     fuel: 'Diesel',
@@ -157,7 +158,7 @@ const vehicles: Vehicle[] = [
     name: '51-Seater Bus',
     brand: 'Various',
     category: 'Buses',
-    image: 'https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/transport/bus51.webp',
     passengers: '51',
     transmission: 'Automatic',
     fuel: 'Diesel',
@@ -173,7 +174,7 @@ const vehicles: Vehicle[] = [
     name: '4x4 Land Cruiser',
     brand: 'Toyota',
     category: 'Safari Vehicles',
-    image: 'https://ik.imagekit.io/axd1riwnv/Safari-masai-mara-vehicle.jpg',
+    image: '/images/transport/landcruiser.webp',
     passengers: 'Up to 7',
     transmission: 'Manual',
     fuel: 'Diesel',
@@ -187,7 +188,7 @@ const vehicles: Vehicle[] = [
     name: 'Safari Minivan',
     brand: 'Toyota',
     category: 'Safari Vehicles',
-    image: 'https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg',
+    image: '/images/transport/safari-van.webp',
     passengers: 'Up to 7',
     transmission: 'Manual / Automatic',
     fuel: 'Petrol / Diesel',
@@ -198,10 +199,10 @@ const vehicles: Vehicle[] = [
   },
   {
     id: 'open-sided',
-    name: 'Open-Sided Game Viewer',
+    name: 'Open-Sided Safari Jeep',
     brand: 'Custom Built',
     category: 'Safari Vehicles',
-    image: 'https://ik.imagekit.io/axd1riwnv/Amboseli-game-drive.jpg',
+    image: '/images/transport/open-sided.webp',
     passengers: 'Up to 7',
     transmission: 'Manual',
     fuel: 'Diesel',
@@ -351,7 +352,7 @@ export function TransportClient() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b-[3px] border-[#c8962e]">
         {/* Background image — fleet in the Mara */}
         <Image
-          src="https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg"
+          src="/images/transport/landcruiser.webp"
           alt="C.A.T.S safari fleet vehicles in the Masai Mara"
           fill
           className="object-cover"
@@ -372,7 +373,7 @@ export function TransportClient() {
             </h1>
 
             <p className="text-lg text-gray-300 mb-12 leading-relaxed max-w-xl">
-              Airport transfers, self-drive car hire, safari game-drive vehicles, and executive group transport — all from one trusted provider with 15 years of East African expertise.
+              Airport transfers, self-drive car hire, safari game-drive vehicles, and executive group transport — arranged by a team with 15+ years of East African travel experience and a vetted partner network.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">
@@ -392,9 +393,9 @@ export function TransportClient() {
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {[
-                { num: '50+', label: 'Vehicles' },
-                { num: '15+', label: 'Years Experience' },
-                { num: '1,000+', label: 'Happy Clients' },
+                { num: '4x4', label: 'Safari Jeeps' },
+                { num: '15+', label: 'Years Team Experience' },
+                { num: 'JKIA', label: '& SGR Transfers' },
                 { num: '24/7', label: 'Availability' },
               ].map(s => (
                 <div key={s.label} className="bg-white/5 backdrop-blur-sm rounded-xl px-4 py-4 border border-white/10 text-center border-l-[3px] border-l-[#c8962e]">
@@ -438,6 +439,8 @@ export function TransportClient() {
           </div>
         </div>
       </section>
+
+      <SafariVehicleGuide />
 
       {/* Gold divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-[#c8962e]/40 to-transparent" />
@@ -564,12 +567,12 @@ export function TransportClient() {
         <div className="max-w-7xl mx-auto px-2">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
             {[
-              { src: 'https://ik.imagekit.io/axd1riwnv/Safari-masai-mara-vehicle.jpg', alt: 'Land Cruiser safari vehicle in the Masai Mara' },
-              { src: 'https://ik.imagekit.io/axd1riwnv/game-drive-vehicle-elephant-herd-kenya-safari-tour-.jpg', alt: 'Game drive vehicle with elephant herd' },
-              { src: 'https://ik.imagekit.io/axd1riwnv/Amboseli-game-drive.jpg', alt: 'Game drive in Amboseli National Park' },
-              { src: 'https://ik.imagekit.io/axd1riwnv/game-drive-Satao-Elerai-Amboseli-National-Park-Kenya_Tett-Safaris.webp', alt: 'Safari vehicle at Satao Elerai Amboseli' },
-              { src: 'https://ik.imagekit.io/axd1riwnv/Ecotourism-Safari-Masai-Mara.jpg', alt: 'Ecotourism safari vehicle Masai Mara' },
-              { src: 'https://ik.imagekit.io/axd1riwnv/4-days-masai-mara-and-lake-nakuru-park-group-joining-landcruiser_Urf4r.jpeg', alt: 'Group safari Land Cruiser' },
+              { src: '/images/transport/landcruiser.webp', alt: '4x4 Land Cruiser safari jeep' },
+              { src: '/images/transport/safari-van.webp', alt: 'Pop-up roof safari van' },
+              { src: '/images/transport/open-sided.webp', alt: 'Open-sided safari jeep' },
+              { src: '/images/transport/alphard.webp', alt: 'Executive minivan for airport transfers' },
+              { src: '/images/transport/coaster.webp', alt: 'Coaster bus for group transport' },
+              { src: '/images/transport/prado.webp', alt: 'Toyota Prado 4x4 for car hire' },
             ].map((img, i) => (
               <div key={i} className="relative h-28 md:h-36 rounded-lg overflow-hidden">
                 <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 33vw, 16vw" />
@@ -729,7 +732,7 @@ export function TransportClient() {
               { icon: 'handshake', title: 'Trusted Partner Network', desc: 'Every vehicle owner, driver, and transport operator in our network is vetted for safety, reliability, and service excellence.' },
               { icon: 'clock', title: '24/7 Availability', desc: 'Early morning flights, late-night arrivals, weekend getaways — our transport solutions are available around the clock, 365 days a year.' },
               { icon: 'wallet', title: 'Transparent Pricing', desc: 'No hidden fees, no surprises. Get a clear quote upfront with all costs included. What you see is what you pay.' },
-              { icon: 'star', title: '15+ years of combined safari experience', desc: 'With 15 years in East African travel and transport, we know the roads, the routes, and exactly what travellers need.' },
+              { icon: 'star', title: '15+ years of combined safari experience', desc: 'With 15+ years of team experience in East African travel and transport, we know the roads, the routes, and exactly what travellers need.' },
             ].map(item => (
               <div key={item.title} className="group text-center bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:shadow-[#c8962e]/10 hover:-translate-y-2 transition-all duration-300 border border-gray-100 hover:border-b-[3px] hover:border-b-[#c8962e]">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0d1f16] to-[#1a3d2b] rounded-2xl flex items-center justify-center text-white mx-auto mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#0d1f16]/20 ring-2 ring-[#c8962e]/20">
@@ -767,7 +770,7 @@ export function TransportClient() {
                  onClick={() => { const el = document.getElementById('enquiry'); el?.scrollIntoView({ behavior: 'smooth' }); }}>
               <div className="relative h-52 md:h-64">
                 <Image
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/images/transport/corp-lease.webp"
                   alt="Corporate car hire Nairobi — executive sedan and SUV fleet for business travel in Kenya"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -799,7 +802,7 @@ export function TransportClient() {
                  onClick={() => { const el = document.getElementById('enquiry'); el?.scrollIntoView({ behavior: 'smooth' }); }}>
               <div className="relative h-52 md:h-64">
                 <Image
-                  src="https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/images/transport/alphard.webp"
                   alt="Corporate vehicle leasing Kenya — long-term fleet leasing contracts for businesses in Nairobi"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -851,7 +854,7 @@ export function TransportClient() {
       ════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Safari fleet" fill className="object-cover" />
+          <Image src="/images/transport/cta.webp" alt="Safari fleet" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1a12]/97 to-[#0a1a12]/88" />
         </div>
         {/* Gold ornamental lines */}

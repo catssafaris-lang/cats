@@ -9,10 +9,10 @@ interface PricingTableProps {
 }
 
 const seasonLabels: Record<string, { name: string; color: string; bg: string }> = {
-  shoulder_a: { name: 'Shoulder A', color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200' },
-  shoulder_b: { name: 'Shoulder B', color: 'text-orange-700', bg: 'bg-orange-50 border-orange-200' },
-  peak: { name: 'Peak Season', color: 'text-red-700', bg: 'bg-red-50 border-red-200' },
-  low: { name: 'Low Season', color: 'text-green-700', bg: 'bg-green-50 border-green-200' },
+  shoulder_a: { name: 'Shoulder Season (Dry)', color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200' },
+  shoulder_b: { name: 'Short Rains Season', color: 'text-orange-700', bg: 'bg-orange-50 border-orange-200' },
+  peak: { name: 'Peak Season (Migration & Festive)', color: 'text-red-700', bg: 'bg-red-50 border-red-200' },
+  low: { name: 'Green Season (Long Rains)', color: 'text-green-700', bg: 'bg-green-50 border-green-200' },
 };
 
 const paxLabels: Record<string, string> = {
