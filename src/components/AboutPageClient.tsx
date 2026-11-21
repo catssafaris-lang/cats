@@ -14,7 +14,7 @@ import Link from 'next/link';
 const certifications = [
     { name: "15 Years Safari Expertise" },
     { name: "Trusted Partner Network" },
-    { name: "5-Star TripAdvisor Rated" },
+    { name: "24/7 Traveller Support" },
     { name: "Eco-Conscious Safaris" },
     { name: "Tailored Itineraries" },
     { name: "Family & Kid Friendly" },
@@ -367,7 +367,7 @@ export default function AboutPageClient() {
                                 },
                                 {
                                     title: "Trust & Transparency",
-                                    desc: "No hidden costs, no bait-and-switch pricing. We provide detailed, itemised quotations so you know exactly what you are paying for. Our 5-star TripAdvisor rating and returning client base reflect the trust we have earned through honest, professional service."
+                                    desc: "No hidden costs, no bait-and-switch pricing. We provide detailed, itemised quotations so you know exactly what you are paying for. Our returning travellers and referrals reflect the trust we have earned through honest, professional service."
                                 },
                                 {
                                     title: "Personalised Service",
@@ -506,7 +506,7 @@ export default function AboutPageClient() {
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">500+</p>
-                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Safaris</p>
+                                    <p className="text-[11px] text-white/50 mt-1 uppercase tracking-wider">Safaris Led Since 2010</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl font-extrabold text-[var(--color-golden-savannah)]">100%</p>

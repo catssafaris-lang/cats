@@ -55,11 +55,11 @@ const whyChoose = [
   { title: 'No Hidden Charges', desc: 'All trips include permits, accommodation, and meals. No surprise charges.' },
   { title: 'Memorable Experiences', desc: 'Create unforgettable memories with thoughtfully planned adventures.' },
   { title: 'Personalized Support', desc: 'Dedicated assistance at every step, from booking to safari completion.' },
-  { title: 'TripAdvisor Rated', desc: "Read authentic reviews from guests who've experienced our safaris." },
+  { title: 'Safari Experience Since 2010', desc: 'Our team leader has planned and led 500+ safaris across East Africa since 2010.' },
 ];
 
 const homeFaqs = [
-  { q: 'How do I book a safari with C.A.T.S?', a: "Simply contact us via our website form, email info@catssafaris.com, or WhatsApp +254 723 951 388. We'll send you a personalised quote within 24 hours. A 30% deposit secures your booking with the balance due 60 days before departure." },
+  { q: 'How do I book a safari with C.A.T.S?', a: "Simply contact us via our website form, email info@catssafaris.com, or WhatsApp +254 723 951 388. We'll send you a personalised quote within 24 hours. A 40% deposit secures your safari, with the balance due 60 days before departure (full payment for bookings within 60 days). See our booking terms for details." },
   { q: 'What is the best time to visit Kenya for a safari?', a: "Kenya is a year-round destination. Dry seasons (June\u2013October and January\u2013February) offer the best game viewing. The Great Migration peaks July\u2013October. Green season (April\u2013May, November) brings lush landscapes and lower prices." },
   { q: 'What vehicles do you use for game drives?', a: "All our safaris use custom-built 4x4 Toyota Land Cruisers and safari minivans with pop-up roofs for 360-degree game viewing. Every guest gets a window seat. Vehicles have charging ports, cooler boxes, and first aid kits." },
   { q: 'What is included in your safari packages?', a: "Every package includes full board accommodation, all national park and conservancy entry fees, transport in 4x4 safari vehicles, KPSGA-experienced safari drivers-guide, drinking water, and airport/hotel transfers." },

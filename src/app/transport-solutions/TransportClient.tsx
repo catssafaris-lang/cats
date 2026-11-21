@@ -834,10 +834,10 @@ export function TransportClient() {
           <div className="mt-14 bg-gradient-to-r from-[#0a1a12] to-[#122a1c] rounded-2xl p-8 md:p-10 border border-[#c8962e]/15">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {[
-                { stat: '50+', label: 'Corporate Clients Served' },
-                { stat: '200+', label: 'Vehicles in Partner Network' },
+                { stat: '6', label: 'Dedicated Vehicles Under Our Direct Management' },
+                { stat: 'Vetted', label: 'Partner Fleet for Larger Groups' },
                 { stat: '24/7', label: 'Roadside Support' },
-                { stat: '98%', label: 'On-Time Delivery Rate' },
+                { stat: '24h', label: 'Quote Response Time' },
               ].map(item => (
                 <div key={item.label}>
                   <div className="text-3xl md:text-4xl font-black text-[#e8b84a]">{item.stat}</div>
@@ -863,7 +863,7 @@ export function TransportClient() {
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-white">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ fontFamily: 'var(--font-playfair)' }}>Ready to Hit the Road?</h2>
-            <p className="text-gray-300 text-lg">Get a free quote in under 2 hours. Airport pickups, safaris, events — we&apos;ve got you covered.</p>
+            <p className="text-gray-300 text-lg">Get a free quote within 24 hours — or WhatsApp us for urgent transfers. Airport pickups, safaris, events — we&apos;ve got you covered.</p>
           </div>
           <div className="flex flex-wrap gap-4">
             <button onClick={scrollToForm} className="bg-gradient-to-r from-[#c8962e] to-[#d4a017] hover:from-[#b8860b] hover:to-[#c8962e] text-white font-bold px-10 py-4 rounded-xl transition-all shadow-xl shadow-[#c8962e]/30 text-lg hover:ring-2 hover:ring-[#e8b84a]/50">
@@ -917,7 +917,7 @@ export function TransportClient() {
             <span className="text-[#c8962e] font-bold tracking-[0.3em] uppercase text-xs">Get Started</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-3" style={{ fontFamily: 'var(--font-playfair)' }}>Make a Transport Enquiry</h2>
             <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-              Fill out the form and our team will respond within 2 hours during business hours.
+              Fill out the form and our team will respond within 24 hours. For urgent airport or same-day transfers, WhatsApp us for immediate assistance.
             </p>
             <div className="w-[60px] h-[2px] bg-gradient-to-r from-[#c8962e] to-[#e8b84a] mx-auto mt-5" />
           </div>
@@ -965,7 +965,7 @@ export function TransportClient() {
                 <div className="bg-green-500/10 border border-green-400/20 rounded-2xl p-12 text-center">
                   <div className="mx-auto mb-4 text-green-400"><CheckCircleIcon /></div>
                   <h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-playfair)' }}>Enquiry Sent!</h3>
-                  <p className="text-gray-300">We&apos;ll get back to you within 2 hours. Check your email or WhatsApp.</p>
+                  <p className="text-gray-300">We&apos;ll get back to you within 24 hours. Check your email or WhatsApp.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-white/5 backdrop-blur-sm rounded-2xl p-7 border border-[#c8962e]/15 space-y-5 border-t-[3px] border-t-[#c8962e]">

@@ -81,14 +81,14 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
 
         {/* WhatsApp CTA */}
         <a
-          href="https://wa.me/254723951388"
+          href={`https://wa.me/254723951388?text=${encodeURIComponent(`Hello C.A.T.S, I am interested in: ${safari.title} — https://www.catssafaris.com/safari/${safari.slug}`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 w-full border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#a68b52] hover:text-white font-semibold py-3 rounded-xl transition-all"
         >
           WhatsApp Us
         </a>
-        <p className="text-xs text-stone-400 text-center mt-3">No booking fees — We respond within 2 hours</p>
+        <p className="text-xs text-stone-400 text-center mt-3">No booking fees · Reply within 24 hours · WhatsApp for instant help</p>
       </div>
     </div>
   );

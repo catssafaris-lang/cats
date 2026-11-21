@@ -72,7 +72,7 @@ export default function Footer() {
       <div className="relative z-10 border-t border-white/10 px-6 py-5 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-xs text-stone-500 md:flex-row">
           <span>&copy; 2026 Collective African Tours &amp; Safaris (C.A.T.S). All rights reserved.</span>
-          <div className="flex gap-6"><Link href="/terms" className="hover:text-stone-300 transition">Terms &amp; Conditions</Link><Link href="/privacy" className="hover:text-stone-300 transition">Privacy Policy</Link></div>
+          <div className="flex gap-6"><Link href="/travel-info/booking-terms" className="hover:text-stone-300 transition">Terms &amp; Conditions</Link><Link href="/privacy" className="hover:text-stone-300 transition">Privacy Policy</Link></div>
         </div>
       </div>
     </footer>

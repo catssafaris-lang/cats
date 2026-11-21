@@ -317,8 +317,8 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 <h3 className="text-xl font-bold text-[#5c4d42] font-serif">Booking Request Sent</h3>
                 <p className="mt-2 text-stone-600">
                   {isExcursion
-                    ? 'Thank you for your inquiry. The C.A.T.S excursions team has received your request. A member of the team will review availability and respond with the relevant details.'
-                    : 'Our safari specialists will get back to you within 24 hours with a personalised itinerary and pricing.'}
+                    ? 'Thank you — your request has reached our excursions team. For fast, same-day assistance, message us on WhatsApp at +254 723 951 388. Nothing is booked or charged until you confirm.'
+                    : 'Our safari specialists will reply within 24 hours with a personalised itinerary and quote (responses may be slightly delayed on public holidays). Nothing is booked or charged until you confirm and pay the deposit.'}
                 </p>
                 <button onClick={closeModal} className="mt-6 rounded-xl bg-[#a68b52] px-8 py-3 font-semibold text-white hover:bg-[#8a7343] transition">Close</button>
               </div>
@@ -552,7 +552,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                 </button>
 
                 <p className="text-center text-xs text-stone-400">
-                  Our safari specialists respond within 24 hours. No commitment required.
+                  Reply within 24 hours · No commitment · Secure 40% deposit only when you confirm · WhatsApp +254 723 951 388 for instant help
                 </p>
               </form>
             )}

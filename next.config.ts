@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: '/terms', destination: '/travel-info/booking-terms', permanent: true },
+      { source: '/terms-and-conditions', destination: '/travel-info/booking-terms', permanent: true },
+      { source: '/privacy-policy', destination: '/privacy', permanent: true },
       // Strip trailing backslash (%5C) from any URL
       {
         source: '/:path*\\\\',

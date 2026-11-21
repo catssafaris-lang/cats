@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 function WhatsAppIcon() { return <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3 0-.46.13-.6.12-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.91-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34ZM12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z" /></svg>; }
@@ -33,6 +34,13 @@ const quickLinks = [
 
 export default function StickyBottomBar() {
   const [navOpen, setNavOpen] = useState(false);
+  const pathname = usePathname();
+  const [waHref, setWaHref] = useState('https://wa.me/254723951388?text=' + encodeURIComponent('Hello C.A.T.S, I would like to enquire about a safari.'));
+  useEffect(() => {
+    const t = document.title.split('|')[0].trim();
+    const msg = pathname === '/' ? 'Hello C.A.T.S, I would like to enquire about a safari.' : `Hello C.A.T.S, I am interested in: ${t} — https://www.catssafaris.com${pathname}`;
+    setWaHref('https://wa.me/254723951388?text=' + encodeURIComponent(msg));
+  }, [pathname]);
 
   return (
     <>
@@ -55,7 +63,7 @@ export default function StickyBottomBar() {
       {/* ── MOBILE Bottom bar (full width, fixed at bottom) ── */}
       <div className="fixed bottom-0 inset-x-0 z-50 xl:hidden">
         <div className="flex items-center justify-around bg-[var(--cats-green)] px-2 py-2.5 shadow-[0_-4px_12px_rgba(0,0,0,0.15)]">
-          <a href="https://wa.me/254723951388?text=Hello%20CATS%20Safaris%2C%20I%27d%20like%20to%20enquire%20about%20a%20safari" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-0.5 text-white">
+          <a href={waHref} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-0.5 text-white">
             <WhatsAppIcon />
             <span className="text-[10px] font-medium">WhatsApp</span>
           </a>
@@ -77,7 +85,7 @@ export default function StickyBottomBar() {
       {/* ── DESKTOP Bottom bar (right-aligned, floating) ── */}
       <div className="hidden xl:flex fixed bottom-6 right-6 z-50 items-center gap-1 bg-[var(--cats-green)] rounded-full px-3 py-2 shadow-lg">
         <a
-          href="https://wa.me/254723951388?text=Hello%20CATS%20Safaris%2C%20I%27d%20like%20to%20enquire%20about%20a%20safari"
+          href={waHref}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-white hover:text-[var(--golden-savannah)] transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
