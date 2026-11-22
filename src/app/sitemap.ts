@@ -9,6 +9,9 @@ export default function sitemap() {
   const staticPages = [
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const },
     { url: '/kenya-safaris', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/private-tours', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/group-tours', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/festive-season-safaris', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/tanzania-safaris', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/kenya-uganda-safaris', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/kenya-rwanda-safaris', priority: 0.9, changeFrequency: 'weekly' as const },

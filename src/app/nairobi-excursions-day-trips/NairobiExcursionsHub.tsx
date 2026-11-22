@@ -394,6 +394,16 @@ export default function NairobiExcursionsHub() {
         </div>
       </section>
 
+      {/* ── Tour style quick links ── */}
+      <div className="bg-[#2d3530] text-white">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-3 px-4 py-4 text-sm font-semibold">
+          <span className="text-white/70">Choose your style:</span>
+          <Link href="/private-tours" className="rounded-full bg-[#a68b52] px-4 py-2 hover:bg-[#8a7343]">Private Tours</Link>
+          <Link href="/group-tours" className="rounded-full bg-[#4f5d56] px-4 py-2 hover:bg-[#3f4b45]">Group Joining Tours</Link>
+          <Link href="/festive-season-safaris" className="rounded-full border border-[#d8c08a] px-4 py-2 text-[#d8c08a] hover:bg-white/10">Christmas &amp; New Year 2026/27</Link>
+        </div>
+      </div>
+
       {/* ── Breadcrumbs ── */}
       <div className="mx-auto max-w-6xl px-4 py-5">
         <nav className="text-sm text-stone-500">
