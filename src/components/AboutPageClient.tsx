@@ -309,7 +309,7 @@ export default function AboutPageClient() {
                     </div>
                     <div className="relative h-[400px] md:h-[600px] rounded-t-[100px] md:rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl border-4 md:border-8 border-[var(--color-savannah-dust)]">
                         <Image
-                            src={'/images/transport/landcruiser.webp'}
+                            src={'/images/transport/cats-landcruiser-1.webp'}
                             alt="C.A.T.S fleet of Land Cruiser 4x4 safari vehicles with CATSSAFARIS plates"
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"

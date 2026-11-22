@@ -174,7 +174,7 @@ const vehicles: Vehicle[] = [
     name: '4x4 Land Cruiser',
     brand: 'Toyota',
     category: 'Safari Vehicles',
-    image: '/images/transport/landcruiser.webp',
+    image: '/images/transport/cats-landcruiser-1.webp',
     passengers: 'Up to 7',
     transmission: 'Manual',
     fuel: 'Diesel',
@@ -352,7 +352,7 @@ export function TransportClient() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b-[3px] border-[#c8962e]">
         {/* Background image — fleet in the Mara */}
         <Image
-          src="/images/transport/landcruiser.webp"
+          src="/images/transport/cats-landcruiser-5.webp"
           alt="C.A.T.S safari fleet vehicles in the Masai Mara"
           fill
           className="object-cover"
@@ -567,7 +567,7 @@ export function TransportClient() {
         <div className="max-w-7xl mx-auto px-2">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
             {[
-              { src: '/images/transport/landcruiser.webp', alt: '4x4 Land Cruiser safari jeep' },
+              { src: '/images/transport/cats-landcruiser-1.webp', alt: '4x4 Land Cruiser safari jeep' },
               { src: '/images/transport/safari-van.webp', alt: 'Pop-up roof safari van' },
               { src: '/images/transport/open-sided.webp', alt: 'Open-sided Toyota Land Cruiser safari jeep for photographers' },
               { src: '/images/transport/alphard.webp', alt: 'Executive minivan for airport transfers' },
@@ -854,7 +854,7 @@ export function TransportClient() {
       ════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/transport/cta.webp" alt="Safari fleet" fill className="object-cover" />
+          <Image src="/images/transport/cats-landcruiser-2.webp" alt="C.A.T.S Toyota Land Cruiser safari fleet with CATSSAFARIS plates" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1a12]/97 to-[#0a1a12]/88" />
         </div>
         {/* Gold ornamental lines */}

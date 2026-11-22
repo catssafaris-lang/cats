@@ -68,7 +68,7 @@ const compare = [
     key: 'cruiser',
     name: '4x4 Toyota Land Cruiser',
     tag: 'Most recommended',
-    image: '/images/transport/landcruiser.webp',
+    image: '/images/transport/cats-landcruiser-1.webp',
     alt: 'Toyota Land Cruiser safari jeep with pop-up roof beside resting lions',
     summary: 'The purpose-built safari jeep of East Africa. Extended-body 4x4 with a pop-up roof, high seating and the clearance to go where the wildlife is, in any season.',
     pros: ['True 4x4 for every season and terrain', 'Higher seating for better views and photos', 'Smoother, more stable ride on long drives', 'Best for Masai Mara, Amboseli, Samburu, Tsavo and Kenya–Tanzania safaris'],
@@ -117,7 +117,7 @@ export function SafariVehicleGuide() {
             </div>
           </div>
           <div className="relative h-[340px] md:h-[460px] rounded-3xl overflow-hidden ring-1 ring-[#c8962e]/40 shadow-2xl">
-            <Image src="/images/transport/landcruiser.webp" alt="4x4 Toyota Land Cruiser safari jeep with pop-up roof in Kenya" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+            <Image src="/images/transport/cats-landcruiser-2.webp" alt="4x4 Toyota Land Cruiser safari jeep with pop-up roof in Kenya" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6">
               <p className="text-[#e8b84a] text-xs uppercase tracking-[0.25em] font-semibold">Pop-up roof · 4x4 · Window seats</p>
             </div>
@@ -145,7 +145,7 @@ export function SafariVehicleGuide() {
 
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
             <div className="relative rounded-3xl overflow-hidden min-h-[380px] shadow-xl">
-              <Image src="/images/transport/overland.webp" alt="Safari vehicle built for African terrain" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src="/images/transport/cats-landcruiser-3.webp" alt="C.A.T.S 4x4 Land Cruiser on all-terrain tyres built for African terrain" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a12]/95 via-[#0a1a12]/60 to-transparent" />
               <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full text-white">
                 <h3 className="text-2xl md:text-3xl font-extrabold mb-4" style={pf}>Built for African Terrain</h3>
@@ -157,7 +157,7 @@ export function SafariVehicleGuide() {
               </div>
             </div>
             <div className="relative rounded-3xl overflow-hidden min-h-[380px] shadow-xl">
-              <Image src="/images/transport/cta.webp" alt="Open safari vehicle on a game drive in East Africa" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src="/images/transport/cats-landcruiser-4.webp" alt="C.A.T.S Land Cruiser with pop-up roof raised for game viewing" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a12]/95 via-[#0a1a12]/60 to-transparent" />
               <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full text-white">
                 <h3 className="text-2xl md:text-3xl font-extrabold mb-4" style={pf}>Comfort &amp; Views</h3>

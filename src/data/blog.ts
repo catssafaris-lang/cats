@@ -3323,7 +3323,7 @@ C.A.T.S Safaris (Collective African Tours & Safaris) has been crafting unforgett
         slug: 'cats-transport-solutions-kenya',
         title: "Kenya Transport: Transfers, Car Hire & Safaris",
         excerpt: "From JKIA airport pickups and SGR transfers to self-drive car hire, luxury safari vehicles, and bus charters — C.A.T.S delivers reliable, professional transport solutions across Kenya.",
-        image: '/images/transport/landcruiser.webp',
+        image: '/images/transport/cats-landcruiser-1.webp',
         category: 'Services',
         date: 'June 20, 2026',
         readTime: '10 min read',
