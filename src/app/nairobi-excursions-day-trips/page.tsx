@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import NairobiExcursionsHub from './NairobiExcursionsHub';
 
-const title = 'Private Nairobi National Park Tours & Day Trips from Nairobi | C.A.T.S';
+const title = 'Private Nairobi National Park Tours & Day Trips from Nairobi';
 const description =
   'Book a private Nairobi National Park tour, half-day Nairobi safari, Giraffe Centre & Sheldrick elephant excursion, or a private day trip from Nairobi to Amboseli, Naivasha, Hell\'s Gate, Lake Nakuru or Ol Pejeta. Hotel & JKIA pickup.';
 

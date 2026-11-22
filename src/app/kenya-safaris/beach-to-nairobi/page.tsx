@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kenya Beach to Nairobi Safari Tours | CATS Safaris',
+  title: 'Kenya Beach to Nairobi Safari Tours',
   description: 'Journey from Kenya’s coast to Nairobi on a safari with immersive game drives, Tsavo wildlife and remarkable changing landscapes.',
   alternates: { canonical: '/kenya-safaris/beach-to-nairobi' },
 };

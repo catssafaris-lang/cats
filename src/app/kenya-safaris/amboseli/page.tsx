@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Amboseli Safaris | Kenya Elephant Game Drives | CATS',
+  title: 'Amboseli Safaris | Kenya Elephant Game Drives',
   description: 'Plan an Amboseli safari in Kenya for close elephant encounters, classic game drives and unforgettable views of Mount Kilimanjaro.',
   alternates: { canonical: '/kenya-safaris/amboseli' },
 };

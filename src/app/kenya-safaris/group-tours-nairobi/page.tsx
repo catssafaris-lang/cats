@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Group Safari Tours from Nairobi | Kenya Safaris | CATS',
+  title: 'Group Safari Tours from Nairobi | Kenya Safaris',
   description: 'Join a group Kenya safari from Nairobi for guided game drives, shared adventure and outstanding wildlife viewing in iconic parks.',
   alternates: { canonical: '/kenya-safaris/group-tours-nairobi' },
 };

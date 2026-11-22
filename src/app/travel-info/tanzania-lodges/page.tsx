@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Complete Tanzania Safari Lodges & Camps Directory | C.A.T.S Safaris',
+  alternates: { canonical: '/travel-info/tanzania-lodges' },
+  title: 'Complete Tanzania Safari Lodges & Camps Directory',
   description: 'Comprehensive directory of all safari lodges, tented camps, beach resorts, and mountain camps across Tanzania\'s national parks, conservation areas, and concessions. 254 properties with locations, airstrips, and concession details.',
   openGraph: {
     title: 'Complete Tanzania Safari Lodges & Camps Directory',

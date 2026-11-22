@@ -37,19 +37,32 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         ? safari.description.substring(0, safari.description.lastIndexOf(' ', 152)) + '...'
         : safari.description;
     
-    // Build rich meta title
+    // Keyword-rich title and description for search results
+    const baseTitle = safari.title.split(' | ')[0].trim();
     const priceText = safari.priceFrom ? ` from $${safari.priceFrom}` : '';
-    const metaTitle = `${safari.title} | C.A.T.S Kenya`;
+    const metaTitle = { absolute: `${baseTitle}${priceText ? ` |${priceText.replace(' from', ' From')} pp` : ''} | C.A.T.S Safaris` };
+    const parkText = (safari.parks || []).slice(0, 3).join(', ');
+    const seoLead = `${durationText} ${baseTitle.replace(/^\d+[- ]Days?\s*/i, '')}${priceText}${parkText ? ` – ${parkText}` : ''}. `;
+    const seoTail = 'Book with C.A.T.S Safaris, reply in 24h.';
+    const room = 158 - seoLead.length - seoTail.length - 1;
+    const descBody = room > 30 ? (metaDesc.length > room ? metaDesc.substring(0, metaDesc.lastIndexOf(' ', room - 3)) + '... ' : metaDesc + ' ') : '';
+    const seoDescription = (seoLead + descBody + seoTail).replace(/\s+/g, ' ').trim();
+    const ogImage = safari.image?.startsWith('http') ? safari.image : `https://www.catssafaris.com${safari.image}`;
+    const canonicalUrl = `https://www.catssafaris.com/safari/${safari.slug}`;
 
     return {
         title: metaTitle,
-        description: metaDesc,
+        description: seoDescription,
+        alternates: { canonical: canonicalUrl },
         keywords: [
             safari.title,
             ...safari.parks,
             ...safari.highlights.slice(0, 5),
             ...(safari.wildlifeHighlights || []).slice(0, 5),
+            `${baseTitle} price`,
+            `${baseTitle} from Nairobi`,
             'Kenya safari',
+            'Kenya safari packages',
             'Tanzania safari',
             'African safari',
             'wildlife safari',
@@ -62,11 +75,13 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         ].filter(Boolean),
         openGraph: {
             title: `${safari.title} | Collective African Tours & Safaris`,
-            description: metaDesc,
-            images: [{ url: `https://www.catssafaris.com${safari.image}`, width: 1200, height: 630, alt: safari.title }],
+            description: seoDescription,
+            images: [{ url: ogImage, width: 1200, height: 630, alt: safari.title }],
             type: 'website',
-            url: `https://www.catssafaris.com/safari/${safari.slug}`,
+            url: canonicalUrl,
+            siteName: 'Collective African Tours & Safaris',
         },
+        twitter: { card: 'summary_large_image', title: metaTitle.absolute, description: seoDescription, images: [ogImage] },
     };
 }
 
@@ -82,10 +97,12 @@ export default async function SafariDetailPage({ params }: { params: Promise<Par
         'kenya': { name: 'Kenya Safaris', url: '/kenya-safaris' },
         'tanzania': { name: 'Tanzania Safaris', url: '/tanzania-safaris' },
         'kenya-tanzania': { name: 'Kenya & Tanzania Safaris', url: '/kenya-tanzania-safaris' },
-        'beach': { name: 'Beach Holidays', url: '/beach-holidays' },
+        'beach': { name: 'Beach Holidays', url: '/kenya-safaris/kenya-and-diani' },
+        'kenya-uganda': { name: 'Kenya & Uganda Safaris', url: '/kenya-uganda-safaris' },
+        'kenya-rwanda': { name: 'Kenya & Rwanda Safaris', url: '/kenya-rwanda-safaris' },
         'mountain': { name: 'Mountain Climbing', url: '/mountain-climbing' },
     };
-    const breadcrumbCategory = categoryMap[safari.destination] || { name: 'Safaris', url: '/safaris' };
+    const breadcrumbCategory = categoryMap[safari.destination] || { name: 'Kenya Safaris', url: '/kenya-safaris' };
 
     return (
         <div className="pb-20">

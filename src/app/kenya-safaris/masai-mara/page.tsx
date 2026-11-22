@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Masai Mara Safaris | Kenya Big Five Game Drives | CATS',
+  title: 'Masai Mara Safaris | Kenya Big Five Game Drives',
   description: 'Discover Masai Mara safaris with expertly guided Kenya game drives, Big Five wildlife viewing and Great Migration experiences.',
   alternates: { canonical: '/kenya-safaris/masai-mara' },
 };

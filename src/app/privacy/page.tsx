@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | C.A.T.S Safaris',
+  title: 'Privacy Policy',
   description: 'How Collective African Tours & Safaris (C.A.T.S) collects, uses and protects the personal information you share through our safari, excursion, transport and contact enquiry forms.',
   alternates: { canonical: '/privacy' },
 }

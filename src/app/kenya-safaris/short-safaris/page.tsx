@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '2–4 Day Safari Tours from Nairobi | CATS Safaris Kenya',
+  title: '2–4 Day Safari Tours from Nairobi',
   description: 'Book a 2–4 day Kenya safari from Nairobi, with Big Five game drives in Masai Mara, Amboseli and Kenya’s leading wildlife parks.',
   alternates: { canonical: '/kenya-safaris/short-safaris' },
 };

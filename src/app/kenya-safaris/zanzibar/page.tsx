@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Zanzibar Beach Holidays | Indian Ocean Escapes | CATS',
+  title: 'Zanzibar Beach Holidays | Indian Ocean Escapes',
   description: 'Discover Zanzibar beach holidays with idyllic Indian Ocean shores, Swahili culture and tailor-made tropical escapes from CATS Safaris.',
   alternates: { canonical: '/kenya-safaris/zanzibar' },
 };

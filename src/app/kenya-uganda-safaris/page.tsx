@@ -4,7 +4,8 @@ import { safaris } from '@/data/safaris';
 import SafariListingPage from '@/components/SafariListingPage';
 
 export const metadata: Metadata = {
-  title: 'Kenya & Uganda Safaris | C.A.T.S | Gorilla Trekking & Wildlife Tours',
+  alternates: { canonical: '/kenya-uganda-safaris' },
+  title: 'Kenya & Uganda Safaris | Gorilla Trekking & Wildlife Tours',
   description:
     'Combine Kenya wildlife safaris with Uganda mountain gorilla trekking. C.A.T.S coordinates seamless cross-border adventures from the Masai Mara to Bwindi Impenetrable Forest.',
   keywords: [

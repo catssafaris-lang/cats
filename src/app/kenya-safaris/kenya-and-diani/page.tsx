@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kenya Safaris and Diani Beach Holidays | CATS',
+  title: 'Kenya Safaris and Diani Beach Holidays',
   description: 'Combine a Kenya wildlife safari with a Diani Beach holiday, including expert game drives, iconic parks and Indian Ocean relaxation.',
   alternates: { canonical: '/kenya-safaris/kenya-and-diani' },
 };

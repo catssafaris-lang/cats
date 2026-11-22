@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kenya Flight Safaris | Fly-In Safaris to Masai Mara & Amboseli | CATS',
+  title: 'Kenya Flight Safaris | Fly-In Safaris to Masai Mara & Amboseli',
   description: 'Scenic bush flights from Nairobi to the Masai Mara, Amboseli, Samburu, Laikipia, Tsavo, Lamu and Diani Beach. Skip the drive and fly straight into the wild.',
   alternates: { canonical: '/kenya-flight-safaris' },
 };

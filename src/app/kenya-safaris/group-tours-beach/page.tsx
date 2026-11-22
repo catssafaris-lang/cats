@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Group Safari Tours from Kenya Beach | CATS Safaris',
+  title: 'Group Safari Tours from Kenya Beach',
   description: 'Join a group safari from Diani, Mombasa or Kenya’s coast for guided game drives and wildlife encounters in Tsavo and beyond.',
   alternates: { canonical: '/kenya-safaris/group-tours-beach' },
 };

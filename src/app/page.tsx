@@ -1,9 +1,16 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { safaris } from '@/data/safaris';
 import HomeClient from './HomeClient';
 import TourStyleTabs from '@/components/TourStyleTabs';
 import { privateNairobiTours, groupNairobiTours, groupCoastTours, festiveNairobiTours, toCard } from '@/data/tourStyles';
+
+export const metadata: Metadata = {
+  title: { absolute: 'Kenya Safaris, Nairobi National Park Tours & Day Trips from Nairobi | C.A.T.S Safaris' },
+  description: 'Book Kenya safari packages, private Nairobi National Park tours, day trips from Nairobi, Masai Mara and Amboseli safaris, Kenya–Tanzania safaris and Diani beach holidays. Reply within 24 hours.',
+  alternates: { canonical: '/' },
+};
 
 const heroSlides = [
   { image: 'https://images.pexels.com/photos/14896671/pexels-photo-14896671.jpeg', alt: 'Giraffe in Nairobi National Park', tag: 'Day Trip \u2022 8 Hours', heading: 'Nairobi National Park', description: 'Experience an urban safari in the only national park within a capital city. Spot lions, rhinos, and giraffes just minutes from downtown Nairobi.', cta: { label: 'Explore Day Trips', href: '/nairobi-excursions-day-trips' }, secondary: { label: 'Book This Safari', href: '/safari/nairobi-national-park-half-day-private-tour' } },

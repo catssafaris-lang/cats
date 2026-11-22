@@ -4,7 +4,8 @@ import { safaris } from '@/data/safaris';
 import SafariListingPage from '@/components/SafariListingPage';
 
 export const metadata: Metadata = {
-  title: 'Kenya & Rwanda Safaris | C.A.T.S | Gorilla Trekking & Safari Adventures',
+  alternates: { canonical: '/kenya-rwanda-safaris' },
+  title: 'Kenya & Rwanda Safaris | Gorilla Trekking & Safari Adventures',
   description:
     'Combine Kenya safari adventures with Rwanda gorilla trekking in Volcanoes National Park. C.A.T.S delivers seamless cross-border itineraries from the Masai Mara to the Virunga Mountains.',
   keywords: [

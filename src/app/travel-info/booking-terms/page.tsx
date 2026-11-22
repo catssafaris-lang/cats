@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Safari Booking Terms & Conditions | C.A.T.S Safaris',
+  title: 'Safari Booking Terms & Conditions',
   description: 'C.A.T.S Safaris booking terms: deposits, payments, cancellations, insurance, pricing and safari package inclusions.',
   alternates: { canonical: '/travel-info/booking-terms' },
 }

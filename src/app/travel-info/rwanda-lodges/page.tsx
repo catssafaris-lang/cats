@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Complete Rwanda Safari Lodges & Camps Directory | C.A.T.S Safaris',
+  alternates: { canonical: '/travel-info/rwanda-lodges' },
+  title: 'Complete Rwanda Safari Lodges & Camps Directory',
   description: 'Comprehensive directory of all safari lodges, tented camps, and hotels across Rwanda\'s national parks, Lake Kivu, and Kigali. From luxury gorilla trekking lodges at Volcanoes National Park to Big Five camps at Akagera and forest retreats at Nyungwe.',
   openGraph: {
     title: 'Complete Rwanda Safari Lodges & Camps Directory',

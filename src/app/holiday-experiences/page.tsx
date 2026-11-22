@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { experiences } from '@/data/experiences';
 
 export const metadata: Metadata = {
-  title: 'Holiday Experiences in East Africa | Safari, Beach, Cultural & Adventure Tours | C.A.T.S Safaris',
+  title: 'Holiday Experiences in East Africa | Safari, Beach, Cultural & Adventure Tours',
   description: 'Discover unique holiday experiences across Kenya, Tanzania, Uganda and Rwanda — from wildlife safaris and cultural immersions to beach getaways, mountain climbing, bird watching, and wellness retreats with Collective African Tours & Safaris.',
   keywords: 'Kenya holiday experiences, East Africa tours, safari experiences, cultural tours Kenya, beach holidays Diani, bird watching Kenya, photography safaris, hot air balloon Masai Mara, gorilla trekking, wellness retreats Kenya',
   alternates: { canonical: '/holiday-experiences' },

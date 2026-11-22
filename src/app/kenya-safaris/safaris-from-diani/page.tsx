@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Multi-Day Safaris from Diani Beach | CATS Safaris Kenya',
+  title: 'Multi-Day Safaris from Diani Beach',
   description: 'Book a multi-day safari from Diani Beach for Kenya game drives, Tsavo wildlife and a seamless coast-to-bush adventure.',
   alternates: { canonical: '/kenya-safaris/safaris-from-diani' },
 };

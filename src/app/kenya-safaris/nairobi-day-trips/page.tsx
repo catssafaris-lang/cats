@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nairobi Day Trips and Day Safaris | CATS Safaris Kenya',
+  title: 'Nairobi Day Trips and Day Safaris',
   description: 'Choose a Nairobi day trip or day safari for game drives, wildlife encounters and memorable Kenya experiences close to the capital.',
   alternates: { canonical: '/kenya-safaris/nairobi-day-trips' },
 };

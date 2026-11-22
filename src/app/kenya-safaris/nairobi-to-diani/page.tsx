@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nairobi to Diani Beach Safari Tours | CATS Safaris',
+  title: 'Nairobi to Diani Beach Safari Tours',
   description: 'Travel from Nairobi to Diani Beach on a Kenya safari combining exciting game drives, wildlife parks and an Indian Ocean escape.',
   alternates: { canonical: '/kenya-safaris/nairobi-to-diani' },
 };

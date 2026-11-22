@@ -63,7 +63,7 @@ export const excursionLandings: ExcursionLanding[] = [
     slug: 'giraffe-centre-tour-nairobi',
     productId: 'nairobi-city-tour',
     h1: 'Giraffe Centre Tour Nairobi: Private Day with Game Drive & Sheldrick',
-    metaTitle: 'Giraffe Centre Tour Nairobi | Private Day Tour with Pickup | C.A.T.S',
+    metaTitle: 'Giraffe Centre Tour Nairobi | Private Day Tour with Pickup',
     metaDescription:
       'Private Giraffe Centre tour in Nairobi: hand-feed Rothschild giraffes in Langata, plus a Nairobi National Park game drive and the Sheldrick elephant orphanage. Hotel & JKIA pickup.',
     keywords: [
@@ -104,7 +104,7 @@ export const excursionLandings: ExcursionLanding[] = [
     slug: 'sheldrick-elephant-orphanage-tour',
     productId: 'nairobi-city-tour',
     h1: 'Sheldrick Elephant Orphanage Tour: Private Nairobi Day Trip',
-    metaTitle: 'Sheldrick Elephant Orphanage Tour Nairobi | Private Tour | C.A.T.S',
+    metaTitle: 'Sheldrick Elephant Orphanage Tour Nairobi | Private Tour',
     metaDescription:
       'Visit the David Sheldrick Wildlife Trust elephant orphanage on a private Nairobi tour with a Nairobi National Park game drive and the Giraffe Centre. Hotel & JKIA pickup included.',
     keywords: [
@@ -144,7 +144,7 @@ export const excursionLandings: ExcursionLanding[] = [
     slug: 'karen-blixen-museum-tour',
     productId: 'nairobi-city-tour',
     h1: 'Karen Blixen Museum Tour: Private Nairobi Wildlife & Culture Day',
-    metaTitle: 'Karen Blixen Museum Tour Nairobi | Private Day Tour | C.A.T.S',
+    metaTitle: 'Karen Blixen Museum Tour Nairobi | Private Day Tour',
     metaDescription:
       'Private Karen Blixen Museum tour in Nairobi, combined with a Nairobi National Park game drive, the Sheldrick elephant orphanage and the Giraffe Centre. Hotel & JKIA pickup.',
     keywords: [
@@ -184,7 +184,7 @@ export const excursionLandings: ExcursionLanding[] = [
     slug: 'nairobi-layover-safari',
     productId: 'nairobi-np-private',
     h1: 'Nairobi Layover Safari: Private Game Drive from JKIA',
-    metaTitle: 'Nairobi Layover Safari | Private Tour from JKIA Airport | C.A.T.S',
+    metaTitle: 'Nairobi Layover Safari | Private Tour from JKIA Airport',
     metaDescription:
       'Turn a long layover at JKIA into a private Nairobi National Park safari. Airport pickup, 4x4 Land Cruiser game drive, park fees and drop-off for your onward flight.',
     keywords: [
@@ -269,7 +269,7 @@ export const excursionLandings: ExcursionLanding[] = [
     slug: 'lake-nakuru-day-trip-from-nairobi',
     productId: 'nakuru-naivasha-day',
     h1: 'Lake Nakuru Day Trip from Nairobi: Rhinos, Flamingos & Lake Naivasha',
-    metaTitle: 'Lake Nakuru Day Trip from Nairobi | Rhino & Flamingos | C.A.T.S',
+    metaTitle: 'Lake Nakuru Day Trip from Nairobi | Rhino & Flamingos',
     metaDescription:
       'Private Lake Nakuru day trip from Nairobi: game drive for black and white rhino, Rothschild giraffe and flamingos, plus a Lake Naivasha boat ride and Crescent Island walk. Lunch & park fees included.',
     keywords: [

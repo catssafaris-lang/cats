@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
 
     const seoTitle = experience.seoKeywords?.length
-        ? `${experience.title} | ${experience.seoKeywords[0].split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} | C.A.T.S Safaris`
-        : `${experience.title} | Collective African Tours & Safaris`;
+        ? `${experience.title} | ${experience.seoKeywords[0].split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`
+        : `${experience.title}`;
 
     return {
         title: seoTitle,

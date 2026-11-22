@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Complete Uganda Safari Lodges & Camps Directory | C.A.T.S Safaris',
+  alternates: { canonical: '/travel-info/uganda-lodges' },
+  title: 'Complete Uganda Safari Lodges & Camps Directory',
   description: 'Comprehensive directory of all safari lodges, tented camps, and guesthouses across Uganda\'s national parks, gorilla trekking areas, and wildlife reserves. Properties with locations, airstrips, and concession details for planning your Uganda safari.',
   openGraph: {
     title: 'Complete Uganda Safari Lodges & Camps Directory',

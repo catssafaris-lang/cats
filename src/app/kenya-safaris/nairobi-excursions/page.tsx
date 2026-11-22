@@ -4,7 +4,7 @@ import SafariListingPage from '@/components/SafariListingPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nairobi Excursions & National Park Safaris | CATS',
+  title: 'Nairobi Excursions & National Park Safaris',
   description: 'Explore Nairobi National Park on private or group safaris, plus city excursions and cultural tours. Half-day, full-day, and combo packages departing daily from Nairobi.',
   alternates: { canonical: '/kenya-safaris/nairobi-excursions' },
 };
