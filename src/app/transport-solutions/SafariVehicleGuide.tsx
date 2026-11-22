@@ -79,7 +79,7 @@ const compare = [
     name: 'Open-Sided Safari Jeep',
     tag: 'For photographers',
     image: '/images/transport/open-sided.webp',
-    alt: 'Open-sided safari jeep in the savannah of Narok County at sunset',
+    alt: 'Open-sided Toyota Land Cruiser safari jeep with tiered seats and canopy for wildlife photographers',
     summary: 'An open game-drive vehicle with tiered seating and no windows between you and the bush. Mostly operated by camps and lodges in the Masai Mara and private conservancies.',
     pros: ['Unobstructed 360° views', 'Best for wildlife photography', 'Feels closest to nature', 'Popular on fly-in safaris to camps and conservancies'],
     cons: ['More exposure to sun, dust and rain', 'Used for game drives inside the park or conservancy, not for road transfers', 'Availability depends on your camp and park'],

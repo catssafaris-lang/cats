@@ -200,7 +200,7 @@ const vehicles: Vehicle[] = [
   {
     id: 'open-sided',
     name: 'Open-Sided Safari Jeep',
-    brand: 'Custom Built',
+    brand: 'Toyota Land Cruiser',
     category: 'Safari Vehicles',
     image: '/images/transport/open-sided.webp',
     passengers: 'Up to 7',
@@ -208,7 +208,7 @@ const vehicles: Vehicle[] = [
     fuel: 'Diesel',
     luggage: 'Rear Rack',
     serviceType: 'Game Drives (Inside Parks Only)',
-    description: 'Purpose-built open-sided vehicle for unobstructed wildlife photography and immersive game drive experiences.',
+    description: 'Open-sided Toyota Land Cruiser for photographers: no windows or roof frame in the way, tiered seats and a canopy for shade on game drives.',
     features: ['360\u00b0 Open Views', 'Tiered Seating', 'Photography-Friendly', 'Canopy Shade', 'Used Exclusively Inside Parks'],
   },
 ];
@@ -373,7 +373,7 @@ export function TransportClient() {
             </h1>
 
             <p className="text-lg text-gray-300 mb-12 leading-relaxed max-w-xl">
-              Airport transfers, self-drive car hire, safari game-drive vehicles, and executive group transport — arranged by a team with 15+ years of East African travel experience and a vetted partner network.
+              Airport transfers, self-drive car hire, safari game-drive vehicles, and executive group transport — arranged by a team with 15+ years of East African travel experience, using 15+ leased vehicles from trusted partners who are bound by a service agreement once your booking is confirmed.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">
@@ -569,7 +569,7 @@ export function TransportClient() {
             {[
               { src: '/images/transport/landcruiser.webp', alt: '4x4 Land Cruiser safari jeep' },
               { src: '/images/transport/safari-van.webp', alt: 'Pop-up roof safari van' },
-              { src: '/images/transport/open-sided.webp', alt: 'Open-sided safari jeep' },
+              { src: '/images/transport/open-sided.webp', alt: 'Open-sided Toyota Land Cruiser safari jeep for photographers' },
               { src: '/images/transport/alphard.webp', alt: 'Executive minivan for airport transfers' },
               { src: '/images/transport/coaster.webp', alt: 'Coaster bus for group transport' },
               { src: '/images/transport/prado.webp', alt: 'Toyota Prado 4x4 for car hire' },
@@ -834,8 +834,8 @@ export function TransportClient() {
           <div className="mt-14 bg-gradient-to-r from-[#0a1a12] to-[#122a1c] rounded-2xl p-8 md:p-10 border border-[#c8962e]/15">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {[
-                { stat: '6', label: 'Dedicated Vehicles Under Our Direct Management' },
-                { stat: 'Vetted', label: 'Partner Fleet for Larger Groups' },
+                { stat: '15+', label: 'Leased Vehicles Through Trusted Partners' },
+                { stat: 'Contracted', label: 'Partners Bound by Agreement on Booking Confirmation' },
                 { stat: '24/7', label: 'Roadside Support' },
                 { stat: '24h', label: 'Quote Response Time' },
               ].map(item => (
