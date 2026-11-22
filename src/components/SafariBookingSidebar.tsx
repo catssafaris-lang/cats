@@ -74,7 +74,7 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
       <div className="p-6 space-y-3">
         <button
           onClick={handleOpenModal}
-          className="w-full flex items-center justify-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl text-base"
+          className="w-full flex items-center justify-center gap-2 bg-[#856d3c] hover:bg-[#8a7343] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl text-base"
         >
           Book This Safari
         </button>
@@ -84,7 +84,7 @@ export default function SafariBookingSidebar({ safari }: { safari: Safari }) {
           href={`https://wa.me/254723951388?text=${encodeURIComponent(`Hello C.A.T.S, I am interested in: ${safari.title} — https://www.catssafaris.com/safari/${safari.slug}`)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#a68b52] hover:text-white font-semibold py-3 rounded-xl transition-all"
+          className="flex items-center justify-center gap-2 w-full border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#856d3c] hover:text-white font-semibold py-3 rounded-xl transition-all"
         >
           WhatsApp Us
         </a>

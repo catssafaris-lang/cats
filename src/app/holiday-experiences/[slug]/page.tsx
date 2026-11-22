@@ -164,7 +164,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                             href="https://metickets.krc.co.ke/" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center bg-[#a68b52] hover:bg-white hover:text-[#5c4d42] px-6 py-3 rounded-full font-bold transition-all group"
+                                            className="inline-flex items-center bg-[#856d3c] hover:bg-white hover:text-[#5c4d42] px-6 py-3 rounded-full font-bold transition-all group"
                                         >
                                             Official Booking Site
                                             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -227,7 +227,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         {/* Overview Card */}
                         <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl shadow-stone-200/50 border border-stone-100 overflow-hidden">
                             <div className="flex items-center gap-4 mb-8">
-                                <div className="w-12 h-1 bg-[#a68b52] rounded-full" />
+                                <div className="w-12 h-1 bg-[#856d3c] rounded-full" />
                                 <h2 className="text-2xl font-bold text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>Overview</h2>
                             </div>
                             <div className="max-w-none overflow-hidden">
@@ -341,7 +341,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                     <ul className="space-y-4">
                                         {experience.whatToExpect.map((item, idx) => (
                                             <li key={idx} className="flex items-start gap-4 group">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-[#a68b52] mt-2 group-hover:scale-150 transition-transform" />
+                                                <span className="w-1.5 h-1.5 rounded-full bg-[#856d3c] mt-2 group-hover:scale-150 transition-transform" />
                                                 <span className="text-stone-700">{item}</span>
                                             </li>
                                         ))}
@@ -377,7 +377,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                             <div className="grid sm:grid-cols-2 gap-8 relative z-10">
                                 {experience.highlights.map((highlight, idx) => (
                                     <div key={idx} className="flex items-start gap-4">
-                                        <div className="w-8 h-8 rounded-full bg-[#a68b52] flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
+                                        <div className="w-8 h-8 rounded-full bg-[#856d3c] flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
                                             {idx + 1}
                                         </div>
                                         <span className="text-white/90 text-sm leading-snug">{highlight}</span>
@@ -390,7 +390,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         {experience.bestTimeToVisit && (
                             <div className="bg-gradient-to-br from-[#f0ede6] to-white rounded-3xl p-8 md:p-10 border border-stone-200">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="p-2 bg-[#a68b52] rounded-xl">
+                                    <div className="p-2 bg-[#856d3c] rounded-xl">
                                         <Sun className="w-5 h-5 text-white" />
                                     </div>
                                     <h3 className="text-base font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Best Time to Visit</h3>
@@ -423,7 +423,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                                 {experience.locations && (
                                     <div className="bg-white rounded-3xl p-8 border border-stone-100 shadow-sm">
                                         <div className="flex items-center gap-3 mb-6">
-                                            <div className="p-2 bg-[#a68b52] rounded-xl">
+                                            <div className="p-2 bg-[#856d3c] rounded-xl">
                                                 <Globe className="w-5 h-5 text-white" />
                                             </div>
                                             <h3 className="text-base font-bold text-[#5c4d42]" style={{ fontFamily: 'var(--font-playfair)' }}>Destinations</h3>
@@ -447,7 +447,7 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
                         <div className="sticky top-32 space-y-8">
                             {/* Booking Form Card */}
                             <div className="bg-white rounded-3xl shadow-2xl shadow-stone-200/50 border border-stone-100 relative overflow-hidden">
-                                <div className="absolute top-0 left-0 w-full h-2 bg-[#a68b52]" />
+                                <div className="absolute top-0 left-0 w-full h-2 bg-[#856d3c]" />
                                 <div className="p-5 sm:p-8 text-center">
                                     <h3 className="text-2xl font-bold mb-2 text-[#5c4d42] font-serif" style={{ fontFamily: 'var(--font-playfair)' }}>
                                         Interested in this experience?

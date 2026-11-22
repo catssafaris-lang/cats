@@ -329,7 +329,7 @@ return (
             <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/images/categories/flight-safaris.jpg"
+                        src="https://images.pexels.com/photos/16444267/pexels-photo-16444267.jpeg?auto=compress&cs=tinysrgb&w=1920"
                         alt="Bush plane on an African safari airstrip"
                         fill
                         className="object-cover"
@@ -412,7 +412,7 @@ return (
                         <Link
                             href="/domestic-flights"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90"
-                            style={{ backgroundColor: '#a68b52' }}
+                            style={{ backgroundColor: '#856d3c' }}
                         >
                             Request a Kenya Flight Quote
                             <ArrowRight size={18} />
@@ -463,7 +463,7 @@ return (
                         <Link
                             href="/domestic-flights"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90"
-                            style={{ backgroundColor: '#a68b52' }}
+                            style={{ backgroundColor: '#856d3c' }}
                         >
                             Request a Tanzania Flight Quote
                             <ArrowRight size={18} />
@@ -614,7 +614,7 @@ return (
             <section className="py-16 md:py-20" style={{ backgroundColor: '#f7f4ed' }}>
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="text-center mb-12">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: '#a68b52', color: 'white' }}>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: '#856d3c', color: 'white' }}>
                             <HelpCircle size={16} />
                             Frequently Asked Questions
                         </span>

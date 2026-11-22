@@ -327,7 +327,7 @@ function DatePickerField({
                   onClick={() => selectDay(d)}
                   className={`w-[38px] h-[38px] rounded-lg text-sm font-semibold transition-colors flex items-center justify-center
                     ${disabled ? 'text-stone-300 cursor-not-allowed' : 'text-[#5c4d42] hover:bg-[#f7f4ed] active:bg-[#e8dfd0] cursor-pointer'}
-                    ${isSelected ? 'bg-[#a68b52] text-white hover:bg-[#a68b52]' : ''}
+                    ${isSelected ? 'bg-[#856d3c] text-white hover:bg-[#856d3c]' : ''}
                     ${isToday && !isSelected ? 'ring-2 ring-[#a68b52]/40' : ''}
                   `}
                 >
@@ -560,7 +560,7 @@ function PassengerPicker({
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="mt-3 w-full bg-[#a68b52] hover:bg-[#8a7343] text-white py-2 rounded-lg font-semibold text-sm transition-colors"
+            className="mt-3 w-full bg-[#856d3c] hover:bg-[#8a7343] text-white py-2 rounded-lg font-semibold text-sm transition-colors"
           >
             Done
           </button>
@@ -637,7 +637,7 @@ function FlightResultCard({ result }: { result: FlightResult }) {
           href={bookUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap shadow-md hover:shadow-lg"
+          className="inline-flex items-center gap-2 bg-[#856d3c] hover:bg-[#8a7343] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap shadow-md hover:shadow-lg"
         >
           <span>Book This Flight</span>
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -751,7 +751,7 @@ export default function FlightSearchForm() {
               onClick={() => setTripType('round')}
               className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all ${
                 tripType === 'round'
-                  ? 'bg-[#a68b52] text-white shadow-md'
+                  ? 'bg-[#856d3c] text-white shadow-md'
                   : 'text-white/70 hover:text-white'
               }`}
             >
@@ -762,7 +762,7 @@ export default function FlightSearchForm() {
               onClick={() => setTripType('oneway')}
               className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all ${
                 tripType === 'oneway'
-                  ? 'bg-[#a68b52] text-white shadow-md'
+                  ? 'bg-[#856d3c] text-white shadow-md'
                   : 'text-white/70 hover:text-white'
               }`}
             >
@@ -775,7 +775,7 @@ export default function FlightSearchForm() {
               onClick={() => setCabinClass('Y')}
               className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                 cabinClass === 'Y'
-                  ? 'bg-[#a68b52] text-white shadow-md'
+                  ? 'bg-[#856d3c] text-white shadow-md'
                   : 'text-white/70 hover:text-white'
               }`}
             >
@@ -786,7 +786,7 @@ export default function FlightSearchForm() {
               onClick={() => setCabinClass('C')}
               className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                 cabinClass === 'C'
-                  ? 'bg-[#a68b52] text-white shadow-md'
+                  ? 'bg-[#856d3c] text-white shadow-md'
                   : 'text-white/70 hover:text-white'
               }`}
             >
@@ -866,7 +866,7 @@ export default function FlightSearchForm() {
             type="button"
             onClick={handleSearch}
             disabled={!isValid || searching}
-            className="w-full flex items-center justify-center gap-3 bg-[#a68b52] hover:bg-[#8a7343] disabled:bg-stone-300 disabled:cursor-not-allowed text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
+            className="w-full flex items-center justify-center gap-3 bg-[#856d3c] hover:bg-[#8a7343] disabled:bg-stone-300 disabled:cursor-not-allowed text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
           >
             <SearchIcon />
             <span>{searching ? 'Searching...' : 'Search Flights'}</span>
@@ -961,7 +961,7 @@ export default function FlightSearchForm() {
                 href={buildAviasalesUrl() || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-[#856d3c] hover:bg-[#8a7343] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
               >
                 <SearchIcon />
                 Search Live Flight Prices

@@ -320,7 +320,7 @@ export function QuoteModalProvider({ children }: { children: ReactNode }) {
                     ? 'Thank you — your request has reached our excursions team. For fast, same-day assistance, message us on WhatsApp at +254 723 951 388. Nothing is booked or charged until you confirm.'
                     : 'Our safari specialists will reply within 24 hours with a personalised itinerary and quote (responses may be slightly delayed on public holidays). Nothing is booked or charged until you confirm and pay the deposit.'}
                 </p>
-                <button onClick={closeModal} className="mt-6 rounded-xl bg-[#a68b52] px-8 py-3 font-semibold text-white hover:bg-[#8a7343] transition">Close</button>
+                <button onClick={closeModal} className="mt-6 rounded-xl bg-[#856d3c] px-8 py-3 font-semibold text-white hover:bg-[#8a7343] transition">Close</button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="p-6 space-y-5">

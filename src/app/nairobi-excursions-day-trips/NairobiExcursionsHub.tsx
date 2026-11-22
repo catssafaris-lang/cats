@@ -244,7 +244,7 @@ function FeaturedCard({ safari, badge }: { safari: Safari; badge: string }) {
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-        <div className="absolute top-3 left-3 bg-[#a68b52] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">
+        <div className="absolute top-3 left-3 bg-[#856d3c] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">
           {badge}
         </div>
       </div>
@@ -272,7 +272,7 @@ function FeaturedCard({ safari, badge }: { safari: Safari; badge: string }) {
           </Link>
           <Link
             href={`/safari/${safari.slug}`}
-            className="flex-1 text-center bg-[#a68b52] text-white font-semibold py-2.5 rounded-lg hover:bg-[#8a7343] transition"
+            className="flex-1 text-center bg-[#856d3c] text-white font-semibold py-2.5 rounded-lg hover:bg-[#8a7343] transition"
           >
             Book This Tour
           </Link>
@@ -370,7 +370,7 @@ export default function NairobiExcursionsHub() {
             <button
               type="button"
               onClick={scrollToExcursions}
-              className="rounded-xl bg-[#a68b52] px-8 py-3.5 font-bold text-white shadow-lg transition hover:bg-[#8a7343] hover:shadow-xl"
+              className="rounded-xl bg-[#856d3c] px-8 py-3.5 font-bold text-white shadow-lg transition hover:bg-[#8a7343] hover:shadow-xl"
             >
               Explore Excursions
             </button>
@@ -398,7 +398,7 @@ export default function NairobiExcursionsHub() {
       <div className="bg-[#2d3530] text-white">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-3 px-4 py-4 text-sm font-semibold">
           <span className="text-white/70">Choose your style:</span>
-          <Link href="/private-tours" className="rounded-full bg-[#a68b52] px-4 py-2 hover:bg-[#8a7343]">Private Tours</Link>
+          <Link href="/private-tours" className="rounded-full bg-[#856d3c] px-4 py-2 hover:bg-[#8a7343]">Private Tours</Link>
           <Link href="/group-tours" className="rounded-full bg-[#4f5d56] px-4 py-2 hover:bg-[#3f4b45]">Group Joining Tours</Link>
           <Link href="/festive-season-safaris" className="rounded-full border border-[#d8c08a] px-4 py-2 text-[#d8c08a] hover:bg-white/10">Christmas &amp; New Year 2026/27</Link>
         </div>
@@ -507,7 +507,7 @@ export default function NairobiExcursionsHub() {
               </div>
               <Link
                 href={`/safari/${t.slug}`}
-                className="shrink-0 rounded-lg bg-[#a68b52] px-4 py-2 text-sm font-bold text-white transition hover:bg-[#8a7343]"
+                className="shrink-0 rounded-lg bg-[#856d3c] px-4 py-2 text-sm font-bold text-white transition hover:bg-[#8a7343]"
               >
                 Book This Tour
               </Link>
@@ -663,7 +663,7 @@ export default function NairobiExcursionsHub() {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-xl bg-[#a68b52] px-8 py-3.5 font-bold text-white shadow-lg transition hover:bg-[#8a7343] hover:shadow-xl"
+              className="rounded-xl bg-[#856d3c] px-8 py-3.5 font-bold text-white shadow-lg transition hover:bg-[#8a7343] hover:shadow-xl"
             >
               Request a Quote
             </Link>

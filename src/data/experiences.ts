@@ -574,10 +574,6 @@ Learn about satellite-linked collars, camera trap arrays, and acoustic monitorin
             {
                 url: 'https://images.unsplash.com/photo-1609848930155-cd505cf3cd38?w=800&auto=format&fit=crop&q=80',
                 alt: "Wildlife conservation research at Ol Pejeta"
-            },
-            {
-                url: 'https://images.unsplash.com/photo-1598894000056-7df67caaed68?w=800&auto=format&fit=crop&q=80',
-                alt: "Rhino tracking at Ol Pejeta"
             }
         ],
         safariType: "wildlife",
@@ -865,42 +861,37 @@ Our wellness safaris are not off-the-shelf packages. Every itinerary is hand-cra
         featuredProperties: [
             {
                 name: "The Retreat at Giraffe Manor",
-                imageUrl: "/images/wellness/card-giraffe-manor.jpg",
                 location: "Nairobi, Kenya",
                 description: "With its traditional charm, this iconic hotel is elegant with a unique twist: guests interact with the resident Rothschild giraffes right on the property. Enjoy bespoke spa treatments, guided nature walks through the adjacent AFEW Giraffe Centre, and an atmosphere of old-world romance that sets the tone for your entire wellness journey.",
                 link: "https://www.thesafaricollection.com/experiences/wellness-and-wilderness/",
             },
             {
                 name: "Chyulu Spa at Finch Hattons Camp",
-                imageUrl: "/images/wellness/card-finch-hattons.jpg",
                 location: "Tsavo West National Park, Kenya",
                 description: "Chyulu Spa provides two open-air massage pavilions, a yoga deck, a spa pool, a hammam, and a gym — all boasting sensational views of the African wilderness. The perfect environment for a tranquil and harmonious Feng Shui wellness retreat, nestled at the foot of the Chyulu Hills with natural volcanic springs nearby.",
                 link: "https://www.virginlimitededition.com/finch-hattons/spa/",
             },
             {
                 name: "Angama Mara",
-                imageUrl: "/images/wellness/card-angama-mara.jpg",
+                imageUrl: "https://ik.imagekit.io/axd1riwnv/Kenya_MasaiMara_AngamaLandscape-copy.jpg",
                 location: "Masai Mara National Reserve, Kenya",
                 description: "Situated high above the Great Rift Valley, Angama Mara offers large tented suites with magnificent views from the fitness centre, the heated infinity pool, or even your four-poster bed. Enjoy guided Maasai beading workshops, bush picnics on the Mara, and a spa menu designed around African botanicals — all suspended above one of the world's greatest wildlife theatres.",
                 link: "https://angama.com/experience/just-relax/",
             },
             {
                 name: "Kani Spa at Four Seasons Safari Lodge",
-                imageUrl: "/images/wellness/card-four-seasons.jpg",
                 location: "Serengeti National Park, Tanzania",
                 description: "Enjoy a deep reconnection with nature nourishing the self with indigenous botanicals and immersive moments such as the Sunset Kopje Meditation. The rooftop terrace overlooks a watering hole where elephants, buffalo, and zebra gather — making every spa treatment a front-row wildlife spectacle.",
                 link: "https://www.fourseasons.com/serengeti/spa/",
             },
             {
                 name: "Chem Chem Lodge",
-                imageUrl: "/images/wellness/card-chem-chem.jpg",
                 location: "Lake Manyara National Park, Tanzania",
                 description: "Sunrise yoga? Sure. But how about a sunrise run over the savannah alongside a Maasai warrior? A most inspirational training partner. Or you can just opt for a massage in your luxury tented suite. Chem Chem combines conservation, community, and wellness into one transformative experience at the edge of Tanzania's Great Rift Valley.",
                 link: "https://auberge.com/wellness/",
             },
             {
                 name: "Hemingways Nairobi",
-                imageUrl: "/images/wellness/hemingways-karen.jpg",
                 location: "Karen, Nairobi, Kenya",
                 description: "A plantation-style boutique hotel in the leafy Karen suburb, Hemingways offers a skilled spa with hydrotherapy, aromatherapy, and personalised wellness programmes. The perfect pre- or post-safari wellness stopover, combining Nairobi's cultural richness with five-star rejuvenation in one of the city's most peaceful settings.",
                 link: "https://www.hemingways-collection.com/nairobi/wellness/",

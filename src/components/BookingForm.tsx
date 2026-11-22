@@ -146,7 +146,7 @@ export default function BookingForm({ title, pageUrl, subjectTag = '[Safari Enqu
       <button
         type="submit"
         disabled={status === 'sending'}
-        className="w-full flex items-center justify-center gap-2 bg-[#a68b52] hover:bg-[#8a7343] text-white py-3.5 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+        className="w-full flex items-center justify-center gap-2 bg-[#856d3c] hover:bg-[#8a7343] text-white py-3.5 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed text-sm"
       >
         <Send className="w-4 h-4" />
         {status === 'sending' ? 'Opening email...' : ctaLabel}

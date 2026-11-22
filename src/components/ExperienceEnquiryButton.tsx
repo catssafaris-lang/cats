@@ -24,8 +24,8 @@ export default function ExperienceEnquiryButton({ experienceName, slug, experien
 
   const baseClasses = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold transition-all text-base";
   const variantClasses = variant === 'outline'
-    ? "border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#a68b52] hover:text-white"
-    : "bg-[#a68b52] hover:bg-[#8a7343] text-white shadow-lg hover:shadow-xl";
+    ? "border-2 border-[#a68b52] text-[#5c4d42] hover:bg-[#856d3c] hover:text-white"
+    : "bg-[#856d3c] hover:bg-[#8a7343] text-white shadow-lg hover:shadow-xl";
 
   return (
     <button

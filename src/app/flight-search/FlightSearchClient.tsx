@@ -176,7 +176,7 @@ export default function FlightSearchClient() {
           </div>
           <Link
             href="/"
-            className="rounded-lg border-2 border-[#a68b52] px-5 py-2 text-sm font-semibold text-[#a68b52] transition hover:bg-[#a68b52] hover:text-white"
+            className="rounded-lg border-2 border-[#a68b52] px-5 py-2 text-sm font-semibold text-[#a68b52] transition hover:bg-[#856d3c] hover:text-white"
           >
             Back to Website
           </Link>
@@ -218,7 +218,7 @@ export default function FlightSearchClient() {
               { step: '4', title: 'Book & Pay', desc: 'Click Book to pay directly with the airline or agency' },
             ].map((s) => (
               <div key={s.step} className="text-center">
-                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#a68b52] text-xl font-bold text-white">
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#856d3c] text-xl font-bold text-white">
                   {s.step}
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white">{s.title}</h3>
@@ -314,10 +314,10 @@ export default function FlightSearchClient() {
             Book your flight, then let our team coordinate arrival pickups, domestic connections and your safari schedule. 15 years of seamless East Africa travel logistics.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/kenya-safaris" className="rounded-lg bg-[#a68b52] px-8 py-3 text-sm font-bold text-white transition hover:bg-[#8b7343]">
+            <Link href="/kenya-safaris" className="rounded-lg bg-[#856d3c] px-8 py-3 text-sm font-bold text-white transition hover:bg-[#8b7343]">
               Explore Safari Packages
             </Link>
-            <a href="https://wa.me/254723951388" target="_blank" rel="noopener noreferrer" className="rounded-lg border-2 border-[#a68b52] px-8 py-3 text-sm font-bold text-[#a68b52] transition hover:bg-[#a68b52] hover:text-white">
+            <a href="https://wa.me/254723951388" target="_blank" rel="noopener noreferrer" className="rounded-lg border-2 border-[#a68b52] px-8 py-3 text-sm font-bold text-[#a68b52] transition hover:bg-[#856d3c] hover:text-white">
               WhatsApp Us
             </a>
           </div>
@@ -401,7 +401,7 @@ export default function FlightSearchClient() {
           </p>
           <a
             href="#flight-search-engine"
-            className="inline-block rounded-lg bg-[#a68b52] px-10 py-4 text-lg font-bold text-white transition hover:bg-[#8b7343]"
+            className="inline-block rounded-lg bg-[#856d3c] px-10 py-4 text-lg font-bold text-white transition hover:bg-[#8b7343]"
           >
             Search Flights Now
           </a>

@@ -104,10 +104,10 @@ export default async function ExcursionLandingPage({ params }: { params: Promise
             <span className="px-4 py-2 rounded-full bg-white/10 border border-white/20">{durationText}</span>
             <span className="px-4 py-2 rounded-full bg-white/10 border border-white/20">Private tour</span>
             <span className="px-4 py-2 rounded-full bg-white/10 border border-white/20">Hotel &amp; JKIA pickup</span>
-            <span className="px-4 py-2 rounded-full bg-[#a68b52] font-semibold">From {product.currency || 'USD'} {product.priceFrom.toLocaleString()}</span>
+            <span className="px-4 py-2 rounded-full bg-[#856d3c] font-semibold">From {product.currency || 'USD'} {product.priceFrom.toLocaleString()}</span>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href={productUrl} className="px-7 py-3 rounded-full bg-[#a68b52] hover:bg-[#8a7343] font-semibold transition-colors">Book This Tour</Link>
+            <Link href={productUrl} className="px-7 py-3 rounded-full bg-[#856d3c] hover:bg-[#8a7343] font-semibold transition-colors">Book This Tour</Link>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full border border-white/60 hover:bg-white hover:text-[#2d3530] font-semibold transition-colors">WhatsApp Us</a>
           </div>
         </div>
@@ -209,7 +209,7 @@ export default async function ExcursionLandingPage({ params }: { params: Promise
           <h2 className="font-serif text-2xl md:text-3xl font-bold mb-3">Ready to Book?</h2>
           <p className="text-white/85 mb-6">Choose your date and send your request. Our excursions team confirms availability and replies with your quote.</p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href={productUrl} className="px-7 py-3 rounded-full bg-[#a68b52] hover:bg-[#8a7343] font-semibold transition-colors">Book This Tour</Link>
+            <Link href={productUrl} className="px-7 py-3 rounded-full bg-[#856d3c] hover:bg-[#8a7343] font-semibold transition-colors">Book This Tour</Link>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full border border-white/60 hover:bg-white hover:text-[#2d3530] font-semibold transition-colors">WhatsApp +254 723 951 388</a>
           </div>
         </div>

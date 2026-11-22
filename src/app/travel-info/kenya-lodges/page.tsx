@@ -325,7 +325,6 @@ const regions: Region[] = [
 
 const dividerImages: Record<number, string> = {
   2: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&h=400&fit=crop',
-  4: 'https://images.unsplash.com/photo-1535338454528-1b5c8bb9b1de?w=1600&h=400&fit=crop',
   7: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=1600&h=400&fit=crop'
 }
 

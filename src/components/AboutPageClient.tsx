@@ -143,7 +143,7 @@ const itineraries = [
 ];
 
 const destinations = [
-    { title: "Masai Mara, Kenya", img: 'https://ik.imagekit.io/axd1riwnv/lion-panthera-leo-masai-mara-kenya_53282529954_o.jpg', desc: "The world's greatest wildlife arena. Home to over 2 million wildebeest.", best: "Big Five, Great Migration, big cats, hot air balloons." },
+    { title: "Masai Mara, Kenya", img: 'https://ik.imagekit.io/axd1riwnv/banner-masai-mara-game-reserve.jpg', desc: "The world's greatest wildlife arena. Home to over 2 million wildebeest.", best: "Big Five, Great Migration, big cats, hot air balloons." },
     { title: "Amboseli, Kenya", img: 'https://ik.imagekit.io/axd1riwnv/sunset-at-amboseli-national-300x213.jpg', desc: "Giant herds of elephants silhouetted against Mount Kilimanjaro.", best: "Elephants, Kilimanjaro views, photography." },
     { title: "Serengeti, Tanzania", img: 'https://ik.imagekit.io/axd1riwnv/Safari%20PHOTOS/WhatsApp%20Image%202026-05-31%20at%2009.22.33.jpeg', desc: "Endless plains stretching to the horizon holding vast plains game.", best: "Great Migration, big cats, vast landscapes." },
     { title: "Ngorongoro, Tanzania", img: 'https://ik.imagekit.io/axd1riwnv/114036745.avif', desc: "A self-contained Eden of 25,000 animals including the black rhino.", best: "Big Five in one day, unique landscapes." },
@@ -233,7 +233,7 @@ export default function AboutPageClient() {
             <section className="relative pt-48 pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src={'https://ik.imagekit.io/axd1riwnv/lion-panthera-leo-masai-mara-kenya_53282529954_o.jpg'}
+                        src={'https://ik.imagekit.io/axd1riwnv/banner-masai-mara-game-reserve.jpg'}
                         alt="Sweeping savannah"
                         fill
                         className="object-cover object-center"
@@ -309,8 +309,8 @@ export default function AboutPageClient() {
                     </div>
                     <div className="relative h-[400px] md:h-[600px] rounded-t-[100px] md:rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl border-4 md:border-8 border-[var(--color-savannah-dust)]">
                         <Image
-                            src={'/images/blog/transport-fleet-hero.jpg'}
-                            alt="C.A.T.S fleet of Land Cruiser 4x4 safari vehicles with Kenyan plates on the Masai Mara"
+                            src={'/images/transport/landcruiser.webp'}
+                            alt="C.A.T.S fleet of Land Cruiser 4x4 safari vehicles with CATSSAFARIS plates"
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
                             className="object-cover"
@@ -535,7 +535,7 @@ export default function AboutPageClient() {
                                 </p>
                                 <footer className="flex items-center gap-3">
                                     <div className="h-px flex-1 bg-white/15" />
-                                    <cite className="text-sm not-italic text-[var(--color-golden-savannah)] font-semibold tracking-wide">Verified Guest &bull; 18-Day Kenya Safari</cite>
+                                    <cite className="text-sm not-italic text-[var(--color-golden-savannah)] font-semibold tracking-wide">Verified Guest &bull; 8-Day Kenya Safari</cite>
                                 </footer>
                             </blockquote>
 
@@ -784,7 +784,7 @@ export default function AboutPageClient() {
                     {/* What's Included */}
                     <div className="bg-[var(--color-forest-canopy)] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
                         <div className="absolute -right-20 -top-20 opacity-5">
-                            <Image src="/images/cats-logo.jpg" alt="Watermark" width={300} height={300} className="rounded-full" />
+                            <Image src="/cats-logo.png" alt="Watermark" width={300} height={300} className="rounded-full" />
                         </div>
                         <h2 className="text-sm font-bold tracking-[0.2em] text-[var(--color-golden-savannah)] mb-2 uppercase">Transparent Value</h2>
                         <h3 className="text-3xl lg:text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>

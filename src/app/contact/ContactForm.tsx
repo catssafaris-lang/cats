@@ -282,7 +282,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full rounded-full bg-[#a68b52] px-7 py-3.5 font-semibold text-white transition-all hover:bg-[#8b7343] hover:shadow-lg disabled:opacity-50"
+        className="w-full rounded-full bg-[#856d3c] px-7 py-3.5 font-semibold text-white transition-all hover:bg-[#8b7343] hover:shadow-lg disabled:opacity-50"
       >
         {sending ? 'Sending...' : 'Send Enquiry'}
       </button>
