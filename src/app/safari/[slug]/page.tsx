@@ -10,6 +10,7 @@ import SafariBookingSidebar from '@/components/SafariBookingSidebar';
 import { getIKUrl } from '@/lib/imagekit';
 import BookingNote from '@/components/BookingNote';
 import PricingTable from '@/components/PricingTable';
+import { safariPricing } from '@/data/pricing';
 import SeasonGuide from '@/components/SeasonGuide';
 
 type Params = { slug: string };
@@ -517,6 +518,11 @@ export default async function SafariDetailPage({ params }: { params: Promise<Par
                             <SeasonGuide />
                             {/* Pricing Table */}
                             <PricingTable slug={safari.slug} />
+                            {safariPricing[safari.slug] && (
+                                <div className="mt-4 rounded-xl border-l-4 border-[#a68b52] bg-[#f7f4ed] px-5 py-4 text-sm text-gray-700">
+                                    <strong className="text-[#2d3530]">Christmas, New Year (16 Dec – 2 Jan) &amp; Easter:</strong> all festive and Easter holiday safaris are subject to supplements / extra costs, which are confirmed with you upon booking, before any payment.
+                                </div>
+                            )}
                             {['kenya', 'kenya-tanzania', 'beach'].includes(safari.destination) && safari.durationUnit !== 'hours' && safari.duration > 1 && (
                                 <div className="mt-10 rounded-2xl bg-[#2d3530] text-white p-6 md:p-8">
                                     <p className="uppercase tracking-[0.2em] text-xs text-[#d4b97a] mb-2">Before or after your safari</p>
