@@ -537,8 +537,9 @@ return (
                                     </div>
                                     <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: '#e8e3d9' }}>
                                         <div>
-                                            <p className="text-xs" style={{ color: '#9ca3af' }}>Starting from</p>
+                                            <p className="text-xs" style={{ color: '#6b7280' }}>Indicative fare from*</p>
                                             <p className="text-lg font-bold" style={{ color: '#1a3d2b' }}>{route.startingFrom}</p>
+                                            <p className="text-[10px] leading-tight" style={{ color: '#6b7280' }}>Guide price, not a live fare</p>
                                         </div>
                                         <a
                                             href="/flight-search"
@@ -553,6 +554,7 @@ return (
                             </div>
                         ))}
                     </div>
+                    <p className="mt-6 text-center text-xs" style={{ color: '#6b7280' }}>*Indicative economy guide prices only, not live or guaranteed fares. Actual fares, availability and baggage rules are set by the airline or booking agent and are confirmed at the time of booking via our flight search.</p>
 
                     {/* Search flights CTA */}
                     <div className="text-center mt-10">
@@ -624,7 +626,7 @@ return (
                         {[
                             {
                                 q: 'What is the cheapest time to fly to East Africa?',
-                                a: 'The most affordable fares to Nairobi, Kilimanjaro, and Entebbe are typically found during the low season (April to mid-June and November). Booking 8 to 12 weeks in advance and flying midweek can save 20 to 40 percent compared to peak-season pricing. Use our international flight search to compare over 700 airlines in real time.',
+                                a: 'The most affordable fares to Nairobi, Kilimanjaro, and Entebbe are typically found during the low season (April to mid-June and November). Booking 8 to 12 weeks in advance and flying midweek can often lower the fare compared with peak-season travel. Use our international flight search to compare over 700 airlines in real time.',
                             },
                             {
                                 q: 'What is the baggage allowance on bush flights?',
