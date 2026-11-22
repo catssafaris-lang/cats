@@ -4662,7 +4662,7 @@ By 3:30 PM, the Jeep turns south for the 220 km return. The group is quieter now
             'Tips and gratuities',
         ],
         currency: 'USD',
-        image: 'https://ik.imagekit.io/axd1riwnv/grey-headed-kingfisher-halcyon-leucocephala-ol-pejeta-conservancy-kenya_28974841985_o.jpg',
+        image: 'https://ik.imagekit.io/axd1riwnv/white-rhinos-ol-pejeta-conservancy-kenya_28689032410_o.jpg',
         gallery: [
             'https://ik.imagekit.io/axd1riwnv/ol-pejeta-conservancy-kenya_28689032270_o.jpg',
             'https://ik.imagekit.io/axd1riwnv/ol-pejeta-conservancy-kenya_28869967882_o.jpg',
