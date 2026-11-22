@@ -19,7 +19,7 @@ export default function Page() {
       title="Group Safari Tours from Nairobi"
       subtitle="Shared Kenya Safari Adventures"
       description="Set out from Nairobi with fellow travellers on a sociable, expertly guided Kenya group safari. Share sunrise game drives, Masai Mara wildlife sightings and memorable evenings in the bush while experienced guides reveal the parks, animals and stories that make Kenya extraordinary."
-      heroImage="/images/transport/cats-landcruiser-5.webp"
+      heroImage="https://ik.imagekit.io/axd1riwnv/4-days-masai-mara-and-lake-nakuru-park-group-joining-landcruiser_Urf4r.jpeg"
       safaris={filtered}
       destination="kenya"
       introContent={
